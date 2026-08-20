@@ -1,0 +1,18 @@
+# Serve os feeds RSS (feed/index.xml) na URL /feed/
+DirectoryIndex index.html index.xml
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^www\.safirion\.com\.br$ [NC]
+RewriteRule ^(.*)$ https://safirion.com.br/$1 [R=301,L]
+RewriteRule ^\?p=156$ /corretoras-digitais-plataformas-online-diferencas/ [R=301,L]
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+</IfModule>
