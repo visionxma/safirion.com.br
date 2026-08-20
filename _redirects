@@ -1,0 +1,10 @@
+# Feeds RSS: o Cloudflare Pages so serve index.html em URL de diretorio,
+# entao /feed/ precisa apontar para o arquivo .xml explicitamente.
+/feed/                                    /feed/index.xml                                    301
+/comments/feed/                           /comments/feed/index.xml                           301
+/category/uncategorized/feed/             /category/uncategorized/feed/index.xml             301
+/author/lionblackjack21gmail-com/feed/    /author/lionblackjack21gmail-com/feed/index.xml    301
+/corretoras-digitais-plataformas-online-diferencas/feed/  /corretoras-digitais-plataformas-online-diferencas/feed/index.xml  301
+
+# URL antiga do WordPress (o /embed/ era um 301 para a home)
+/embed/                                   /                                                  301

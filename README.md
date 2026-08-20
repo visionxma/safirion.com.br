@@ -1,44 +1,62 @@
-# safirion.com.br — arquivos prontos para publicação
+# safirion.com.br
 
-Build estático gerado em 2026-08-20 a partir da cópia de `safirion.net`.
-Envie **o conteúdo desta pasta** para a raiz do domínio (`public_html/` na Hostinger).
+Site estático hospedado no **Cloudflare Pages**. O conteúdo veio do site
+`safirion.net` (WordPress + Elementor), convertido para arquivos estáticos.
 
-## O que foi trocado
+## Como publicar
 
-- Todas as URLs `safirion.net` → `safirion.com.br`: canonical, `og:url`, `og:image`,
-  Twitter Cards, JSON-LD (`WebSite` e `FAQPage`), links internos, sitemaps e feeds.
-- **`go.safirion.net` foi mantido de propósito** — é o redirecionador de afiliado dos
-  botões de CTA (leva a `trade.safirion.com/register?aff=815344`). Trocar o domínio dele
-  quebraria o rastreamento da afiliação. Se o `.net` for desligado, esse subdomínio
-  precisa continuar no ar ou os CTAs param de funcionar.
-- JS do LiteSpeed convertido de lazy-load (`data-src`) para carregamento normal, para não
-  depender do plugin.
-- Nomes de arquivo normalizados (removido o sufixo `@ver=` que o wget cria).
-- Removidas as tags `<link>` de endpoints do WordPress (`wp-json`, `xmlrpc.php`,
-  `shortlink`) que retornariam 404 em hospedagem estática.
+O repositório é a fonte: cada push na branch `main` dispara um deploy automático
+no Cloudflare Pages. Não há etapa de build — o diretório raiz já é o site pronto.
 
-## SEO
+**Configuração no painel do Pages:**
+- Build command: *(vazio)*
+- Build output directory: `/`
 
-- `robots.txt` e os 4 sitemaps foram **regerados** para o novo domínio.
-- O `post-sitemap.xml` agora aponta para o post real. O sitemap do site antigo listava
-  `/hello-world/`, que era **404**.
-- `.htaccess` incluído: HTTPS forçado, `www` → raiz, 301 de `?p=156` para o post e
-  `DirectoryIndex index.html index.xml` (necessário para os feeds RSS responderem em `/feed/`).
+## Caminhos: raiz-relativos, de propósito
 
-## Depois de publicar
+Os assets usam caminhos raiz-relativos (`/wp-content/...`), não URLs absolutas.
+É o que faz o site funcionar igual em `*.pages.dev`, no domínio final e em qualquer
+preview de branch. **Não troque para URLs absolutas** — o site quebra no preview.
 
-1. **Redirecione `safirion.net` → `safirion.com.br` com 301.** Os dois domínios com o mesmo
-   conteúdo no ar = conteúdo duplicado; o 301 transfere a autoridade em vez de dividi-la.
-2. Cadastre `safirion.com.br` no Google Search Console e envie `sitemap_index.xml`.
-   Se o `.net` já estiver no Search Console, use a ferramenta **Mudança de endereço**.
-3. Atualize o ID do Google Tag / Site Kit (`GT-TB7PKRR4`) para incluir o novo domínio.
-4. Adicione um `favicon.ico` na raiz — o site antigo não tinha (404).
+As tags de SEO são a exceção e continuam absolutas, porque exigem URL completa:
+`canonical`, `og:url`, `og:image`, `twitter:image` e o JSON-LD.
 
-## Limitações conhecidas
+## Configuração que mora em arquivos
 
-- **Formulário de comentários do post não funciona**: ele envia para `wp-comments-post.php`,
-  que exige WordPress. Em hospedagem estática o envio falha em silêncio. Remova o formulário
-  ou publique em WordPress de verdade.
-- Sem WordPress, não há painel administrativo nem como editar o conteúdo pelo navegador —
-  as alterações são feitas direto nos arquivos HTML.
-- Scripts de terceiros (Google Tag, AnyTrack, Firebase) continuam carregando da origem remota.
+| Arquivo | Função |
+|---|---|
+| `_redirects` | Feeds RSS: o Pages só serve `index.html` em URL de diretório, então `/feed/` precisa apontar para `/feed/index.xml`. Também redireciona `/embed/`. |
+| `_headers` | Cache de 1 ano para `/wp-content/*` e `/wp-includes/*`, mais `X-Content-Type-Options` e `Referrer-Policy`. |
+| `robots.txt` | Aponta para `sitemap_index.xml`. |
+| `sitemap_index.xml` + 3 sitemaps | Regerados para este domínio. |
+
+## Configuração que precisa do painel da Cloudflare
+
+O `_redirects` **não** consegue casar query string nem hostname. Estes dois casos
+exigem **Redirect Rules** (Rules → Redirect Rules), não dão para resolver em arquivo:
+
+1. **`www.safirion.com.br` → `safirion.com.br`** (redirect de hostname)
+2. **`/?p=156` → `/corretoras-digitais-plataformas-online-diferencas/`** (query string)
+
+## Links de afiliado
+
+Os CTAs de cadastro apontam para
+`https://trade.safirion.com/register?aff=818084&aff_model=revenue&afftrack=`.
+
+O parâmetro `afftrack` está **vazio** em todos os botões. Se quiser saber qual botão
+converteu, preencha com um identificador diferente por botão (ex.: `afftrack=hero`,
+`afftrack=rodape`).
+
+⚠️ O botão **LOGIN** ainda usa o afiliado antigo: `aff=815344`, em
+`trade.safirion.com/pt/login`.
+
+## Limitações
+
+- **Formulário de comentários não funciona**: envia para `wp-comments-post.php`, que
+  exige WordPress. Em site estático o envio falha em silêncio.
+- **Sem banner de cookies**: o WPConsent foi removido. O site carrega Google Tag
+  (`GT-TB7PKRR4`), AnyTrack e Firebase, que gravam cookies de rastreamento — não há
+  registro de consentimento (relevante para LGPD).
+- **Sem política de privacidade**: o site não tem essa página.
+- **Sem favicon**: o site de origem também não tinha.
+- Editar conteúdo significa editar HTML — não há painel administrativo.
