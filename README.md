@@ -21,6 +21,50 @@ preview de branch. **Não troque para URLs absolutas** — o site quebra no prev
 As tags de SEO são a exceção e continuam absolutas, porque exigem URL completa:
 `canonical`, `og:url`, `og:image`, `twitter:image` e o JSON-LD.
 
+## Como mexer no design
+
+O visual vem de duas camadas:
+
+1. `wp-content/litespeed/css/*.css` — o CSS combinado que o LiteSpeed gerou no
+   WordPress. **Não edite**: é um arquivo minificado de ~250 KB gerado por
+   ferramenta, e qualquer regeneração descarta o que você escrever ali.
+2. `wp-content/custom/safirion-ui.css` + `safirion-ui.js` — a camada própria,
+   carregada depois. **É aqui que se mexe.**
+
+A camada própria usa a mesma especificidade das regras do Elementor e vence
+por ordem de carregamento, sem precisar de `!important`.
+
+### Duas armadilhas do Elementor
+
+**Lazy-load de fundo.** O Elementor traz esta regra:
+
+```css
+.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) *
+  { background-image: none !important }
+```
+
+Ou seja: todo `background-image` dentro do 4º container em diante fica apagado
+até o JS do Elementor marcar o elemento como `.e-lazyloaded`. Era isso que
+apagava o gradiente dos CTAs das seções de baixo. Todo `.e-con.e-parent` no HTML
+recebeu a classe `e-no-lazyload` para desligar esse comportamento — o site é
+estático e tem três imagens, o lazy-load só trazia risco.
+
+**IDs dos elementos.** Os seletores dependem de IDs como
+`.elementor-element-354d8575`, que o Elementor gera. Se a página for reeditada
+no WordPress e reexportada, esses IDs podem mudar e as regras param de casar.
+
+### Animação de entrada
+
+`safirion-ui.js` aplica um fade-up nos blocos conforme entram na tela. O
+conteúdo **nunca** depende do JS para ficar visível:
+
+- a classe que esconde o bloco é aplicada pelo próprio JS, não vem no CSS;
+- blocos já visíveis no carregamento não são tocados;
+- um timeout de 2,5 s revela tudo caso o observer falhe;
+- `prefers-reduced-motion` desliga a animação.
+
+Mantenha essas quatro garantias em qualquer alteração.
+
 ## Configuração que mora em arquivos
 
 | Arquivo | Função |
