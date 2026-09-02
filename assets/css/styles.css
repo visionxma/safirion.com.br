@@ -55,6 +55,8 @@
   /* ---- Ritmo ---- */
   --wrap:1200px;
   --gutter:clamp(20px,5vw,32px);
+  /* distância da borda do .wrap até a borda da tela, para fotos que sangram */
+  --bleed:calc((100vw - min(1200px,100vw)) / 2 + var(--gutter));
   --section-y:clamp(80px,9vw,132px);
   --r-xs:10px;
   --r-sm:14px;
@@ -417,6 +419,43 @@ strong,b{font-weight:600;color:var(--ink-strong)}
 .split--top{align-items:start}
 .split--top .split__media{position:sticky;top:132px}
 @media (max-width:1024px){.split--top .split__media{position:static;top:auto}}
+
+/* --------------------------------------------------------------------------
+   Foto sangrando até a borda da tela e dissolvendo no fundo — o tratamento
+   de imagem do safirion.com: sem moldura, sem card, sem raio.
+   -------------------------------------------------------------------------- */
+.section--clip{overflow:hidden}
+.split--bleed{align-items:center}
+.split--bleed.split--top{align-items:stretch}
+.split--bleed.split--top .split__txt{align-self:start}
+.split--bleed .split__media{
+  position:relative;align-self:stretch;
+  min-height:clamp(340px,40vw,560px);
+  margin-block:calc(-1 * var(--section-y));
+  margin-right:calc(-1 * var(--bleed));
+}
+.split--bleed.split--rev .split__media{margin-right:0;margin-left:calc(-1 * var(--bleed))}
+.split--bleed.split--top .split__media{position:relative;top:auto}
+.split--bleed .split__media img{
+  position:absolute;inset:0;
+  width:100%;height:100%;max-width:none;object-fit:cover;
+  border:0;border-radius:0;box-shadow:none;
+  filter:saturate(.92) brightness(.88);
+}
+/* o véu que apaga a foto no fundo: horizontal na direção do texto + topo/base */
+.split--bleed .split__media::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:
+    linear-gradient(90deg,var(--bg) 0%,rgba(4,9,15,.86) 12%,rgba(4,9,15,0) 52%),
+    linear-gradient(180deg,var(--bg) 0%,rgba(4,9,15,0) 17%,rgba(4,9,15,0) 83%,var(--bg) 100%);
+}
+.split--bleed.split--rev .split__media::after{
+  background:
+    linear-gradient(270deg,var(--bg) 0%,rgba(4,9,15,.86) 12%,rgba(4,9,15,0) 52%),
+    linear-gradient(180deg,var(--bg) 0%,rgba(4,9,15,0) 17%,rgba(4,9,15,0) 83%,var(--bg) 100%);
+}
+/* o brilho azul da moldura antiga não faz mais sentido aqui */
+.split--bleed .split__media::before{content:none}
 .split__txt>*+*{margin-top:16px}
 .split__txt .eyebrow+.h2{margin-top:18px}
 .split__txt p{color:var(--muted);font-size:15.4px;line-height:1.76}
@@ -425,7 +464,7 @@ strong,b{font-weight:600;color:var(--ink-strong)}
 .frame{position:relative;border-radius:var(--r-lg);padding:1px;background:linear-gradient(160deg,rgba(39,49,63,0) 0%,rgba(160,176,197,.4) 38%,rgba(0,0,0,.9) 100%)}
 .frame img{width:100%;height:auto;border-radius:calc(var(--r-lg) - 1px);display:block}
 .split__media{position:relative}
-.split__media::after{
+.split:not(.split--bleed) .split__media::after{
   content:"";position:absolute;left:10%;right:10%;bottom:-14px;height:96px;z-index:0;
   background:rgba(35,137,230,.4);filter:blur(56px);opacity:.5;pointer-events:none;
 }
@@ -452,6 +491,18 @@ strong,b{font-weight:600;color:var(--ink-strong)}
 .panel::after{
   content:"";position:absolute;inset:0;pointer-events:none;z-index:-1;
   background:radial-gradient(600px 340px at 88% -6%,rgba(35,137,230,.26),transparent 70%);
+}
+
+/* Celular do app: solto no painel, sem moldura */
+.app__art{position:relative;align-self:center;display:flex;justify-content:center}
+.app__art img{
+  position:relative;z-index:1;
+  width:auto;height:auto;max-width:100%;max-height:min(52vh,470px);object-fit:contain;
+  filter:drop-shadow(0 32px 64px rgba(0,0,0,.7));
+}
+.app__art::after{
+  content:"";position:absolute;left:14%;right:14%;bottom:4%;height:120px;z-index:0;
+  background:rgba(35,137,230,.42);filter:blur(60px);opacity:.6;pointer-events:none;
 }
 
 /* Grade de argumentos dentro de um panel */
@@ -652,6 +703,15 @@ strong,b{font-weight:600;color:var(--ink-strong)}
   .hero__stats{grid-template-columns:1fr 1fr}
   .split{grid-template-columns:1fr;gap:34px}
   .split--rev .split__media{order:0}
+  .split--bleed .split__media,
+  .split--bleed.split--rev .split__media{
+    min-height:clamp(240px,50vw,360px);
+    margin-block:0;margin-inline:calc(-1 * var(--gutter));
+  }
+  .split--bleed .split__media::after,
+  .split--bleed.split--rev .split__media::after{
+    background:linear-gradient(180deg,var(--bg) 0%,rgba(4,9,15,0) 22%,rgba(4,9,15,0) 78%,var(--bg) 100%);
+  }
   .panel-grid{grid-template-columns:1fr;gap:30px}
 }
 @media (max-width:860px){
@@ -668,8 +728,9 @@ strong,b{font-weight:600;color:var(--ink-strong)}
   .bento{grid-template-columns:1fr}
   .bento .card:nth-child(1),.bento .card:nth-child(4){grid-column:auto}
   .hero__stats{grid-template-columns:1fr}
-  .hero__art::after,.split__media::after{display:none}
+  .hero__art::after,.split:not(.split--bleed) .split__media::after,.app__art::after{display:none}
   .hero__art img{max-height:42vh}
+  .app__art img{max-height:46vh}
   .hero__acts .btn{flex:1 1 100%}
   .ft__cols{grid-template-columns:1fr}
 }
