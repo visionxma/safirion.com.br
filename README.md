@@ -35,7 +35,9 @@ _headers _redirects   cache, segurança e redirects do Cloudflare Pages
 ## Home: copy e identidade
 
 - **Copy:** a mesma do site anterior, preservada texto a texto — títulos, negritos,
-  rótulos de botão, o passo a passo do cadastro, o FAQ e os avisos de risco e da CVM.
+  rótulos de botão, o passo a passo do cadastro e o FAQ.
+  **Exceções pedidas pelo cliente:** os avisos de "site não oficial / afiliado" e,
+  depois, o bloco "Aviso de risco" (CVM e derivativos) do rodapé foram removidos.
 - **Identidade visual:** a de `safirion.com` — azul de marca `#2389e6` sobre base
   noturna, tipografia Mazzard, logo e ícone oficiais.
 - **Linguagem de layout:** inspirada em `app.polariumbroker.com` — base quase preta
@@ -56,7 +58,7 @@ _headers _redirects   cache, segurança e redirects do Cloudflare Pages
 | `.lit__txt` | frase grande que acende palavra a palavra conforme entra na tela |
 | `.steps` | passo a passo em linha do tempo numerada |
 | `.faq` | bloco claro (`#f7fafd`) invertido, com ícone +/− |
-| `.ft` | rodapé em colunas, avisos legais e copyright |
+| `.ft` | rodapé em colunas e copyright |
 
 Só há duas dependências de JavaScript no design: `assets/js/main.js` (todas as animações
 acima) e as âncoras internas. Sem build, sem framework, sem requisições externas.
