@@ -37,10 +37,29 @@ _headers _redirects   cache, segurança e redirects do Cloudflare Pages
 - **Copy:** a mesma do site anterior, preservada texto a texto — títulos, negritos,
   rótulos de botão, o passo a passo do cadastro, o FAQ e os avisos de risco e da CVM.
 - **Identidade visual:** a de `safirion.com` — azul de marca `#2389e6` sobre base
-  noturna `#060b18`, tipografia Mazzard, logo e ícone oficiais.
-- O ritmo visual alterna faixas de luz (`.section--alt`) com o fundo base, para a
-  página não ficar chapada de escuro.
+  noturna, tipografia Mazzard, logo e ícone oficiais.
+- **Linguagem de layout:** inspirada em `app.polariumbroker.com` — base quase preta
+  (`#04090f`), texto branco-gelo (`#e0f1ff`), cards de raio 16px com borda em gradiente
+  (claro no topo-esquerdo, apagando para o preto), botões em pílula, rótulos de seção
+  em caixa alta com espaçamento largo e um bloco claro invertido no FAQ.
 
+### Componentes da home
+
+| Componente | O que faz |
+| --- | --- |
+| `.ticker` | barra fixa no topo com frases que se alternam a cada 5 s |
+| `.hdr` | header flutuante em pílula, com navegação por âncoras e fundo de vidro ao rolar |
+| `.hero` | planeta + mapa-múndi de fundo, título revelado letra a letra e faixa de 4 indicadores |
+| `.marquee` | esteira infinita com os recursos da plataforma (pausa no hover) |
+| `.bento` | grade assimétrica: um card grande com o mapa-múndi + três menores |
+| `.card` / `.panel` | superfícies com borda em gradiente e brilho azul no hover |
+| `.lit__txt` | frase grande que acende palavra a palavra conforme entra na tela |
+| `.steps` | passo a passo em linha do tempo numerada |
+| `.faq` | bloco claro (`#f7fafd`) invertido, com ícone +/− |
+| `.ft` | rodapé em colunas, avisos legais e copyright |
+
+Só há duas dependências de JavaScript no design: `assets/js/main.js` (todas as animações
+acima) e as âncoras internas. Sem build, sem framework, sem requisições externas.
 ## SEO da home
 
 - `title`, `description`, `keywords`, `robots`, `googlebot`, `canonical` e `hreflang`.
