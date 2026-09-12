@@ -1,4 +1,18 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://safirion.com.br/sitemap_index.xml
+# Sobras do WordPress que viraram pagina no espelho estatico. Nao ha o que
+# indexar nelas, e a de autor ainda expoe um e-mail dentro da propria URL.
+Disallow: /author/
+Disallow: /category/
+Disallow: /comments/
+Disallow: /embed/
+Disallow: /feed/
+Disallow: /wp-includes/
+Disallow: /cdn-cgi/
+
+# o Googlebot precisa dos assets para renderizar a pagina
+Allow: /assets/
+Allow: /wp-content/
+
+Sitemap: https://safirion.com.br/sitemap.xml

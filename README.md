@@ -1,6 +1,16 @@
 # safirion.com.br
 
-Site estático hospedado no **Cloudflare Pages**. A home foi reconstruída do zero em
+> ⚠️ **Onde este site roda hoje:** o domínio `safirion.com.br` é servido pela
+> **Vercel** (`Server: Vercel`, IP `216.198.79.1`), não pelo Cloudflare Pages.
+> O deploy do Pages continua vivo em `safirion-com-br.pages.dev`, com o mesmo
+> conteúdo, mas o domínio não aponta mais pra lá.
+>
+> Consequência prática: **`_headers` e `_redirects` são arquivos do Cloudflare
+> Pages e a Vercel ignora os dois.** Os cabeçalhos de segurança não chegavam ao
+> navegador (0 de 4). Por isso existe o `vercel.json` — ele porta cache,
+> cabeçalhos e redirect pro formato que a Vercel lê. **Mexeu num, mexa no outro.**
+
+Site estático originalmente feito para o **Cloudflare Pages**. A home foi reconstruída do zero em
 HTML, CSS e JavaScript puros; o blog e os feeds continuam sendo os arquivos estáticos
 gerados a partir do WordPress + Elementor.
 

@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  O Google ja conhece esta URL (o robots.txt antigo apontava pra ca), entao ela
+  fica viva, apontando pro sitemap unico. A lista antiga (page/post/category)
+  saiu: a de categoria mandava o robo pra /category/uncategorized/, pagina vazia.
+-->
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-	<sitemap><loc>https://safirion.com.br/page-sitemap.xml</loc><lastmod>2026-07-20T17:59:07+00:00</lastmod></sitemap>
-	<sitemap><loc>https://safirion.com.br/post-sitemap.xml</loc><lastmod>2026-07-04T21:42:45+00:00</lastmod></sitemap>
-	<sitemap><loc>https://safirion.com.br/category-sitemap.xml</loc><lastmod>2026-07-04T21:42:45+00:00</lastmod></sitemap>
+	<sitemap>
+		<loc>https://safirion.com.br/sitemap.xml</loc>
+		<lastmod>2026-08-28T00:00:00+00:00</lastmod>
+	</sitemap>
 </sitemapindex>
