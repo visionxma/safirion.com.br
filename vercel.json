@@ -1,6 +1,5 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "//": "Os arquivos _headers e _redirects deste repositorio sao do CLOUDFLARE PAGES. Este site e servido pela VERCEL, que IGNORA os dois — os cabecalhos de seguranca nao chegavam no navegador (conferido: 0 de 3) e os 301 dos feeds nunca valeram. Este arquivo porta as duas coisas pro formato que a Vercel le. Mexeu num, mexa no outro.",
   "headers": [
     {
       "source": "/(.*)",
