@@ -8,3 +8,8 @@
 
 # URL antiga do WordPress (o /embed/ era um 301 para a home)
 /embed/                                   /                                                  301
+
+# Link de cadastro (afiliado). 302 e nao 301: o destino pode mudar e o
+# navegador nao deve guardar o redirect em cache.
+/bemvindo                                 https://trade.safirion.com/register?aff=835403&aff_model=revenue&afftrack=  302
+/bemvindo/                                https://trade.safirion.com/register?aff=835403&aff_model=revenue&afftrack=  302

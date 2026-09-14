@@ -31,6 +31,8 @@
     }
   ],
   "redirects": [
-    { "source": "/embed", "destination": "/", "permanent": true }
+    { "source": "/embed", "destination": "/", "permanent": true },
+    { "source": "/bemvindo", "destination": "https://trade.safirion.com/register?aff=835403&aff_model=revenue&afftrack=", "permanent": false },
+    { "source": "/bemvindo/", "destination": "https://trade.safirion.com/register?aff=835403&aff_model=revenue&afftrack=", "permanent": false }
   ]
 }
