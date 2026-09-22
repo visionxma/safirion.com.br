@@ -47,7 +47,8 @@
     { "source": "/page-sitemap.xml", "destination": "/sitemap.xml", "statusCode": 301 },
     { "source": "/post-sitemap.xml", "destination": "/sitemap.xml", "statusCode": 301 },
     { "source": "/category-sitemap.xml", "destination": "/sitemap.xml", "statusCode": 301 },
-    { "source": "/embed", "destination": "/", "permanent": true },
+    { "source": "/embed/", "destination": "/", "statusCode": 301 },
+    { "source": "/embed", "destination": "/", "statusCode": 301 },
     { "source": "/bemvindo", "destination": "https://safirion.com/cadastro/?afftrack=bemvindo", "statusCode": 302 },
     { "source": "/bemvindo/", "destination": "https://safirion.com/cadastro/?afftrack=bemvindo", "statusCode": 302 }
   ]
