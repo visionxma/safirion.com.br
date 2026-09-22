@@ -6,7 +6,7 @@
    rastreio do kv-track) e textos nos 4 idiomas do site. */
 (function () {
   "use strict";
-  var CADASTRO = "/cadastro/";
+  var CADASTRO = "https://safirion.com/cadastro/";
   var CHAVE = "safirion_promo_v3";
   var ATRASO = 2000, ROLAGEM = 0.35;
 
