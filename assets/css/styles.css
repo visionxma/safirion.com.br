@@ -637,6 +637,17 @@ strong,b{font-weight:600;color:var(--ink-strong)}
   .faq__a{padding:0 20px 20px}
 }
 
+
+/* Trilha de navegacao e nota de rodape das paginas internas. Antes estas duas
+   usavam .mini, que e display:grid para LISTA DE CARTOES — a trilha saia
+   empilhada, um link por linha. */
+.trilha{display:flex;flex-wrap:wrap;align-items:center;gap:8px;color:var(--muted-3);font-size:13px;line-height:1.5}
+.trilha a{color:var(--muted-2);transition:color .25s var(--ease)}
+.trilha a:hover{color:var(--brand-300)}
+.trilha span[aria-hidden]{color:var(--muted-3);opacity:.7}
+.nota{color:var(--muted-3);font-size:13px;line-height:1.6}
+.nota a{color:var(--brand-400)}
+
 /* ==========================================================================
    Rodapé
    ========================================================================== */

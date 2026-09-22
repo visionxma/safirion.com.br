@@ -33,7 +33,7 @@
 
 <link rel="preload" href="/assets/fonts/MazzardM-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/MazzardM-Regular.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/styles.css?v=6">
+<link rel="stylesheet" href="/assets/css/styles.css?v=7">
 <link rel="stylesheet" href="/assets/css/popup-promo.css?v=1">
 
 <script type="application/ld+json">
@@ -109,10 +109,10 @@
 
   <section class="section section--tight" aria-labelledby="titulo">
     <div class="wrap">
-      <nav class="mini" aria-label="Trilha"><a href="/">Início</a> <span aria-hidden="true">›</span> <a href="/corujao/">Corujão de Traders</a> <span aria-hidden="true">›</span> <span>3ª edição</span></nav>
+      <nav class="trilha" aria-label="Trilha"><a href="/">Início</a> <span aria-hidden="true">›</span> <a href="/corujao/">Corujão de Traders</a> <span aria-hidden="true">›</span> <span>3ª edição</span></nav>
       <div class="section-head rv" style="margin-top:14px">
         <p class="eyebrow">18 de setembro de 2026</p>
-        <h1 class="h-display" id="titulo">3ª edição do <em>Corujão de Traders</em></h1>
+        <h1 class="h2" id="titulo">3ª edição do <em>Corujão de Traders</em></h1>
         <p class="lead">A edição mais documentada do Corujão: live oficial às 18h, traders operando ao vivo e R$ 30.000 distribuídos entre os três primeiros colocados.</p>
       </div>
     </div>
@@ -123,11 +123,11 @@
     <div class="wrap">
       <div class="panel rv">
         <h2 class="h2" id="qd-titulo">Quando <em>aconteceu</em></h2>
-        <div class="hero__stats" style="margin-top:22px">
-          <div class="hero__stat"><strong>18/09/2026</strong><span>Data da 3ª edição</span></div>
-          <div class="hero__stat"><strong>18h</strong><span>Live oficial de abertura</span></div>
-          <div class="hero__stat"><strong>R$ 30.000</strong><span>Em prêmios</span></div>
-        </div>
+        <dl class="hero__stats" style="margin-top:22px">
+          <div class="hero__stat"><dt>Data da 3ª edição</dt><dd>18/09/2026<small>uma quinta-feira</small></dd></div>
+          <div class="hero__stat"><dt>Live oficial</dt><dd>18h<small>horário de abertura</small></dd></div>
+          <div class="hero__stat"><dt>Premiação</dt><dd>R$ 30.000<small>entre os três primeiros</small></dd></div>
+        </dl>
       </div>
     </div>
   </section>
@@ -175,9 +175,8 @@
   </section>
 
 
-  <section class="section section--alt" aria-labelledby="cta-titulo">
-    <div class="wrap cta">
-      <div class="cta__in rv">
+  <section class="section section--alt cta" aria-labelledby="cta-titulo">
+    <div class="wrap cta__in rv">
         <p class="eyebrow">Participe</p>
         <h2 class="h2" id="cta-titulo">Para entrar no <em>Corujão</em>, você precisa de uma conta Safirion</h2>
         <p>O cadastro é feito no próprio site, leva cerca de dois minutos e dá acesso à plataforma, às campanhas e aos eventos da Safirion.</p>
@@ -185,8 +184,7 @@
           CRIAR MINHA CONTA
           <span class="btn__ic" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8h9m0 0-3.4-3.4M12 8l-3.4 3.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </a>
-        <p class="mini" style="margin-top:18px">Já tem conta? <a href="https://safirion.com/login/">Entrar na plataforma</a>.</p>
-      </div>
+      <p class="nota" style="margin-top:18px">Já tem conta? <a href="https://safirion.com/login/">Entrar na plataforma</a>.</p>
     </div>
   </section>
 
