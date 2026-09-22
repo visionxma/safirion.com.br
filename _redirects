@@ -6,6 +6,13 @@
 /author/lionblackjack21gmail-com/feed/    /author/lionblackjack21gmail-com/feed/index.xml    301
 /corretoras-digitais-plataformas-online-diferencas/feed/  /corretoras-digitais-plataformas-online-diferencas/feed/index.xml  301
 
+# URL canonica da home e das paginas: /index.html responde 200 sozinho e
+# duplica cada pagina. 301 para a versao com barra, que e a do <link canonical>.
+/index.html                               /                                                  301
+/cadastro/index.html                      /cadastro/                                         301
+/login/index.html                         /login/                                            301
+/corretoras-digitais-plataformas-online-diferencas/index.html  /corretoras-digitais-plataformas-online-diferencas/  301
+
 # URL antiga do WordPress (o /embed/ era um 301 para a home)
 /embed/                                   /                                                  301
 
