@@ -8,11 +8,16 @@ Disallow: /category/
 Disallow: /comments/
 Disallow: /embed/
 Disallow: /feed/
-Disallow: /wp-includes/
-Disallow: /cdn-cgi/
 
-# o Googlebot precisa dos assets para renderizar a pagina
+# O Googlebot precisa destes diretorios para renderizar as paginas, e eles
+# nao sao paginas: sao arquivos. /wp-includes/ e /cdn-cgi/ estavam na lista
+# de cima por engano — o post do blog, que esta no sitemap e pede indexacao,
+# carrega jquery.min.js de /wp-includes/ e email-decode.min.js de /cdn-cgi/.
+# Bloqueados, a unica pagina de conteudo do dominio era rastreada sem os
+# scripts que ela mesma pede.
 Allow: /assets/
 Allow: /wp-content/
+Allow: /wp-includes/
+Allow: /cdn-cgi/
 
 Sitemap: https://safirion.com.br/sitemap.xml
