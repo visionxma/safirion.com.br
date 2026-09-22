@@ -81,7 +81,7 @@
         '<button class="pp__x" type="button" aria-label="' + T.fechar + '">&#10005;</button>' +
         '<div class="pp__fig">' +
           '<span class="pp__selo">' + T.selo + '</span>' +
-          '<img src="assets/img/popup-promo.webp" alt="" width="760" height="1000" loading="lazy" decoding="async">' +
+          '<img src="/assets/img/popup-promo.webp" alt="" width="760" height="1000" loading="lazy" decoding="async">' +
         '</div>' +
         '<div class="pp__cont">' +
           '<h2 id="ppTit">' + T.tit + '</h2>' +
