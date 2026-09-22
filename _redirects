@@ -18,6 +18,8 @@
 /corretoras-digitais-plataformas-online-diferencas/index.html  /corretoras-digitais-plataformas-online-diferencas/  301
 
 # Paginas que sairam do site: respondem 301, nao 404.
+/corujao/*                                /                                                  301
+/corujao                                  /                                                  301
 /author/*                                 /                                                  301
 /page-sitemap.xml                         /sitemap.xml                                       301
 /post-sitemap.xml                         /sitemap.xml                                       301
