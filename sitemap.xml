@@ -1,32 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  Sitemap unico do site. Substitui o conjunto herdado do WordPress
-  (sitemap_index + page/post/category), que listava a categoria
-  "uncategorized" — pagina sem conteudo que so gastava rastreio.
+  Sitemap unico do site, no mesmo formato do de safirion.com: loc, lastmod
+  (so a data), changefreq e priority, com os hreflang da home declarados
+  como xhtml:link. Este dominio e so pt-BR, entao a home aponta para si
+  mesma em pt-BR e em x-default, igual ao que o <head> ja declara.
   As quatro URLs abaixo sao as unicas paginas de verdade deste dominio.
-  /cadastro/ e /login/ entraram em 2026-09-21, com meta robots index,follow.
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-	<url>
-		<loc>https://safirion.com.br/</loc>
-		<lastmod>2026-09-21T00:00:00+00:00</lastmod>
-		<priority>1.0</priority>
-	</url>
-	<url>
-		<loc>https://safirion.com.br/cadastro/</loc>
-		<lastmod>2026-09-21T00:00:00+00:00</lastmod>
-		<priority>0.9</priority>
-	</url>
-	<url>
-		<loc>https://safirion.com.br/login/</loc>
-		<lastmod>2026-09-21T00:00:00+00:00</lastmod>
-		<priority>0.7</priority>
-	</url>
-	<url>
-		<loc>https://safirion.com.br/corretoras-digitais-plataformas-online-diferencas/</loc>
-		<lastmod>2026-07-04T21:42:45+00:00</lastmod>
-		<priority>0.8</priority>
-		<image:image><image:loc>https://safirion.com.br/wp-content/uploads/2026/07/image.jpeg</image:loc></image:image>
-	</url>
+  <url>
+    <loc>https://safirion.com.br/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://safirion.com.br/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://safirion.com.br/"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://safirion.com.br/cadastro/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://safirion.com.br/login/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://safirion.com.br/corretoras-digitais-plataformas-online-diferencas/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://safirion.com.br/wp-content/uploads/2026/07/image.jpeg</image:loc></image:image>
+  </url>
 </urlset>
