@@ -17,6 +17,12 @@
 /corujao/ranking/index.html               /corujao/ranking/                                  301
 /corretoras-digitais-plataformas-online-diferencas/index.html  /corretoras-digitais-plataformas-online-diferencas/  301
 
+# Paginas que sairam do site: respondem 301, nao 404.
+/author/*                                 /                                                  301
+/page-sitemap.xml                         /sitemap.xml                                       301
+/post-sitemap.xml                         /sitemap.xml                                       301
+/category-sitemap.xml                     /sitemap.xml                                       301
+
 # URL antiga do blog (o /embed/ era um 301 para a home)
 /embed/                                   /                                                  301
 

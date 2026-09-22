@@ -1,19 +1,22 @@
 User-agent: *
 Allow: /
 
-# Paginas herdadas do blog antigo, sem conteudo proprio. Nao ha o que
-# indexar nelas, e a de autor ainda expoe um e-mail dentro da propria URL.
-Disallow: /author/
-Disallow: /category/
+# Estas duas paginas herdadas do blog antigo nao devem aparecer na busca, e por
+# isso trazem <meta name="robots" content="noindex">. Elas NAO sao bloqueadas
+# aqui de proposito: bloquear impede o Google de rastrear e, sem rastrear, ele
+# nunca le o noindex — a URL fica na busca para sempre. Deixar passar e a unica
+# forma de tirar uma pagina do indice.
+#   /category/uncategorized/   -> noindex
+#   /author/...                -> removida do site; responde 301 para a home
+
+# Sem conteudo para indexar, e sem noindex para ler:
 Disallow: /comments/
 Disallow: /embed/
 Disallow: /feed/
 
-# O Googlebot precisa destes diretorios para renderizar as paginas, e eles
-# nao sao paginas: sao arquivos. Os dois ultimos estavam na lista de cima por
-# engano — o post do blog, que esta no sitemap e pede indexacao, carrega
-# jquery.min.js e email-decode.min.js deles. Bloqueados, a unica pagina de
-# conteudo do dominio era rastreada sem os scripts que ela mesma pede.
+# O Googlebot precisa destes diretorios para renderizar as paginas, e eles nao
+# sao paginas: sao arquivos. O post do blog, que pede indexacao, carrega
+# jquery.min.js e email-decode.min.js deles.
 Allow: /assets/
 Allow: /wp-content/
 Allow: /wp-includes/

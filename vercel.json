@@ -1,5 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "trailingSlash": true,
   "headers": [
     {
       "source": "/(.*)",
@@ -38,6 +39,10 @@
     { "source": "/corujao/alavancagem-zero-risco/index.html", "destination": "/corujao/alavancagem-zero-risco/", "statusCode": 301 },
     { "source": "/corujao/ranking/index.html", "destination": "/corujao/ranking/", "statusCode": 301 },
     { "source": "/corretoras-digitais-plataformas-online-diferencas/index.html", "destination": "/corretoras-digitais-plataformas-online-diferencas/", "statusCode": 301 },
+    { "source": "/author/:caminho*", "destination": "/", "statusCode": 301 },
+    { "source": "/page-sitemap.xml", "destination": "/sitemap.xml", "statusCode": 301 },
+    { "source": "/post-sitemap.xml", "destination": "/sitemap.xml", "statusCode": 301 },
+    { "source": "/category-sitemap.xml", "destination": "/sitemap.xml", "statusCode": 301 },
     { "source": "/embed", "destination": "/", "permanent": true },
     { "source": "/bemvindo", "destination": "/cadastro/?aff=835403&afftrack=bemvindo", "statusCode": 302 },
     { "source": "/bemvindo/", "destination": "/cadastro/?aff=835403&afftrack=bemvindo", "statusCode": 302 }

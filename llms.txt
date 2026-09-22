@@ -16,5 +16,11 @@ Operar nos mercados financeiros envolve risco de perda do capital. O conteúdo d
 - [Criar conta na Safirion](https://safirion.com.br/cadastro/): Abertura de conta. O formulário oficial da corretora, em português, dentro da própria página.
 - [Login Safirion](https://safirion.com.br/login/): Acesso à conta já criada.
 
+## Corujão de Traders
+- [Corujão de Traders by Safirion](https://safirion.com.br/corujao/): O evento ao vivo da Safirion — traders operando em tempo real, Alavancagem Zero Risco, alavancagens de bancas, bônus, Sorteio de Bancas, ranking e premiação em dinheiro. Formato, edições e como participar.
+- [3ª edição do Corujão de Traders](https://safirion.com.br/corujao/3a-edicao/): A edição de 18 de setembro de 2026, com abertura às 18h e R$ 30.000 em prêmios divididos entre os três primeiros colocados, com troféu, Kit Premium e ingresso VIP.
+- [Alavancagem Zero Risco](https://safirion.com.br/corujao/alavancagem-zero-risco/): A mecânica mais característica do Corujão, conduzida ao vivo durante a transmissão.
+- [Ranking do Corujão](https://safirion.com.br/corujao/ranking/): Onde a classificação dos participantes é publicada e em que período o painel fica disponível.
+
 ## A marca em outros idiomas
 - [Safirion | Plataforma de Trading Online](https://safirion.com/): O mesmo conteúdo em inglês, espanhol e francês, com o blog completo.
