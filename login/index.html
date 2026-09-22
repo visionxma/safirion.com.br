@@ -181,7 +181,27 @@ article ul li::before{content:"";position:absolute;left:2px;top:11px;width:6px;h
 </defs>
 </svg><svg viewBox="0 0 16 8" overflow="visible" id="svg51886358_389"><path d="M 0 0 L 16 0 M 0 8 L 16 8" fill="transparent" stroke-width="2" stroke="var(--token-5b13bd57-8876-424d-a570-6e637160eff5, rgb(0, 0, 0)) /* {&quot;name&quot;:&quot;Preto&quot;} */" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/></svg></div>
 
-<style id="kv-sem-topo">/* topbar removida destas duas paginas: o padding-top do _ext/site-topo.v1.css (imutavel 1 ano) reservava 89px pro topo fixo e viraria faixa vazia */body{padding-top:0!important}</style><style id="kv-pag-css">.cheio{width:100%;background:#fff;line-height:0}.cheio iframe{display:block;width:100%;border:0;height:100vh;min-height:560px}@supports(height:100dvh){.cheio iframe{height:100dvh}}.pag{max-width:1000px;margin:0 auto;padding:26px 22px 34px}.pag h1{font-size:clamp(24px,3vw,34px);line-height:1.15;letter-spacing:-.02em;margin:0 0 8px;color:#fff}.pag .sub{color:#a1b8c3;font-size:15.5px;line-height:1.55;margin:0 0 4px;max-width:70ch}.pag .fora{color:#7a8f9b;font-size:13px;line-height:1.55;margin:0 0 12px}.pag .fora a{color:#4ba3f0}.pag .tb{margin:0;padding:12px 0 0;border-top:1px solid rgba(255,255,255,.08);color:#7a8f9b;font-size:13px;line-height:1.6}.pag .tb a{color:#4ba3f0}@media(max-width:640px){.pag{padding:20px 16px 26px}.cheio iframe{min-height:520px}}</style><div class="cheio"><iframe id="kv-quadro" src="https://trade.safirion.com/pwa/oauth/login?aff=818084&amp;aff_model=revenue&amp;afftrack=combr&amp;aff_track=combr&amp;redirect_url=https%3A%2F%2Ftrade.safirion.com%2Ftraderoom" height="760" title="Acesse sua conta Safirion" referrerpolicy="strict-origin-when-cross-origin"></iframe></div><div class="pag"><h1>Entrar na sua conta Safirion</h1>
+<style id="kv-sem-topo">/* topbar removida destas duas paginas: o padding-top do _ext/site-topo.v1.css (imutavel 1 ano) reservava 89px pro topo fixo e viraria faixa vazia */body{padding-top:0!important}</style><style id="kv-pag-css">.cheio{width:100%;background:#fff;line-height:0}.cheio iframe{display:block;width:100%;border:0;height:100vh;min-height:560px}@supports(height:100dvh){.cheio iframe{height:100dvh}}.pag{max-width:1000px;margin:0 auto;padding:26px 22px 34px}.pag h1{font-size:clamp(24px,3vw,34px);line-height:1.15;letter-spacing:-.02em;margin:0 0 8px;color:#fff}.pag .sub{color:#a1b8c3;font-size:15.5px;line-height:1.55;margin:0 0 4px;max-width:70ch}.pag .fora{color:#7a8f9b;font-size:13px;line-height:1.55;margin:0 0 12px}.pag .fora a{color:#4ba3f0}.pag .tb{margin:0;padding:12px 0 0;border-top:1px solid rgba(255,255,255,.08);color:#7a8f9b;font-size:13px;line-height:1.6}.pag .tb a{color:#4ba3f0}@media(max-width:640px){.pag{padding:20px 16px 26px}.cheio iframe{min-height:520px}}</style><div class="cheio"><iframe id="kv-quadro" src="https://trade.safirion.com/pwa/oauth/login?aff=818084&amp;aff_model=revenue&amp;afftrack=combr&amp;aff_track=combr&amp;redirect_url=https%3A%2F%2Ftrade.safirion.com%2Ftraderoom" height="760" title="Acesse sua conta Safirion" referrerpolicy="strict-origin-when-cross-origin"></iframe></div><script>
+/* Rastreio por campanha: /cadastro/ e /login/ aceitam ?aff= e ?afftrack= na URL
+   e repassam os dois para o formulario da corretora. Sem parametro, valem os
+   padroes que ja estao no src do iframe. Serve para rotas como /bemvindo, que
+   antes mandavam o visitante direto para o link de afiliado, fora do site. */
+(function () {
+  "use strict";
+  var q = new URLSearchParams(location.search);
+  var aff = q.get("aff"), track = q.get("afftrack");
+  if (!aff && !track) return;
+  var f = document.getElementById("kv-quadro");
+  if (!f) return;
+  var u = new URL(f.src);
+  if (aff && /^[0-9]{1,10}$/.test(aff)) u.searchParams.set("aff", aff);
+  if (track && /^[a-zA-Z0-9_-]{1,40}$/.test(track)) {
+    u.searchParams.set("afftrack", track);
+    u.searchParams.set("aff_track", track);
+  }
+  f.src = u.toString();
+})();
+</script><div class="pag"><h1>Entrar na sua conta Safirion</h1>
 <p class="sub">O formulário acima é o login oficial da Safirion. Use o mesmo e-mail e a mesma senha do cadastro: o acesso é o mesmo no navegador e no aplicativo.</p>
 <p class="fora">Depois de entrar você acompanha posições abertas, histórico, depósitos e saques na mesma tela. Se quiser entender o caminho de uma ordem antes de operar, leia <a href="https://safirion.com/blog/como-funciona-o-trading/">como funciona o trading</a>.</p>
 <p class="tb">Ainda não tem conta? <a href="/cadastro/">Crie a sua</a>. Não consegue entrar? Fale com a gente pela <a href="https://safirion.com/contato/">página de contato</a>. Para saber quem está por trás da plataforma, veja a página <a href="https://safirion.com/sobre/">Sobre a Safirion</a>. Operar em mercados financeiros envolve risco de perda do capital investido.</p></div><footer class="kvf">

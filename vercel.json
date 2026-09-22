@@ -35,7 +35,7 @@
     { "source": "/login/index.html", "destination": "/login/", "statusCode": 301 },
     { "source": "/corretoras-digitais-plataformas-online-diferencas/index.html", "destination": "/corretoras-digitais-plataformas-online-diferencas/", "statusCode": 301 },
     { "source": "/embed", "destination": "/", "permanent": true },
-    { "source": "/bemvindo", "destination": "https://trade.safirion.com/register?aff=835403&aff_model=revenue&afftrack=", "permanent": false },
-    { "source": "/bemvindo/", "destination": "https://trade.safirion.com/register?aff=835403&aff_model=revenue&afftrack=", "permanent": false }
+    { "source": "/bemvindo", "destination": "/cadastro/?aff=835403&afftrack=bemvindo", "statusCode": 302 },
+    { "source": "/bemvindo/", "destination": "/cadastro/?aff=835403&afftrack=bemvindo", "statusCode": 302 }
   ]
 }
