@@ -26,7 +26,9 @@
 # URL antiga do blog (o /embed/ era um 301 para a home)
 /embed/                                   /                                                  301
 
-# Campanha /bemvindo. Nao sai mais do site: cai em /cadastro/, que repassa
-# aff e afftrack para o formulario. 302 e nao 301 porque o destino pode mudar.
-/bemvindo                                 /cadastro/?aff=835403&afftrack=bemvindo            302
-/bemvindo/                                /cadastro/?aff=835403&afftrack=bemvindo            302
+# Campanha /bemvindo -> cadastro do safirion.com. Aquela pagina LE o parametro
+# afftrack e o injeta no formulario, entao o rastreio da campanha sobrevive.
+# O aff=835403 NAO sobrevive: o afiliado e fixo (818084) do lado de la.
+# 302 e nao 301 porque o destino pode mudar.
+/bemvindo                                 https://safirion.com/cadastro/?afftrack=bemvindo   302
+/bemvindo/                                https://safirion.com/cadastro/?afftrack=bemvindo   302
