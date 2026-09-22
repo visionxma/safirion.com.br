@@ -12,7 +12,7 @@
 
 Site estático originalmente feito para o **Cloudflare Pages**. A home foi reconstruída do zero em
 HTML, CSS e JavaScript puros; o blog e os feeds continuam sendo os arquivos estáticos
-gerados a partir do WordPress + Elementor.
+herdados do blog antigo.
 
 ## Como publicar
 
@@ -34,7 +34,7 @@ assets/               camada da home nova — só ela usa estes arquivos
   fonts/              Mazzard Regular + SemiBold (woff2)
   icons/              logo, ícone, favicons, mapa-múndi
   img/                planeta, imagens de conteúdo e og-image
-wp-content/           legado do WordPress — ainda usado pelo post do blog
+wp-content/           legado do blog antigo — ainda usado pelo post
 wp-includes/          idem
 corretoras-.../       post do blog (mantido, indexado)
 feed/ comments/ ...   feeds RSS (ver _redirects)
@@ -88,7 +88,7 @@ acima) e as âncoras internas. Sem build, sem framework, sem requisições exter
 **Da home:** tudo em `assets/css/styles.css`. Os tokens ficam no `:root` no topo do
 arquivo — mudar `--brand`, `--bg` ou `--bg-band` repercute na página inteira.
 
-**Do blog:** o visual vem de duas camadas do WordPress:
+**Do blog:** o visual vem de duas camadas herdadas do blog antigo:
 
 1. `wp-content/litespeed/css/*.css` — CSS combinado gerado pelo LiteSpeed.
    **Não edite:** é minificado, gerado por ferramenta, e qualquer regeneração

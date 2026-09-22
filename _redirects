@@ -13,7 +13,7 @@
 /login/index.html                         /login/                                            301
 /corretoras-digitais-plataformas-online-diferencas/index.html  /corretoras-digitais-plataformas-online-diferencas/  301
 
-# URL antiga do WordPress (o /embed/ era um 301 para a home)
+# URL antiga do blog (o /embed/ era um 301 para a home)
 /embed/                                   /                                                  301
 
 # Link de cadastro (afiliado). 302 e nao 301: o destino pode mudar e o

@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-# Sobras do WordPress que viraram pagina no espelho estatico. Nao ha o que
+# Paginas herdadas do blog antigo, sem conteudo proprio. Nao ha o que
 # indexar nelas, e a de autor ainda expoe um e-mail dentro da propria URL.
 Disallow: /author/
 Disallow: /category/
@@ -10,11 +10,10 @@ Disallow: /embed/
 Disallow: /feed/
 
 # O Googlebot precisa destes diretorios para renderizar as paginas, e eles
-# nao sao paginas: sao arquivos. /wp-includes/ e /cdn-cgi/ estavam na lista
-# de cima por engano — o post do blog, que esta no sitemap e pede indexacao,
-# carrega jquery.min.js de /wp-includes/ e email-decode.min.js de /cdn-cgi/.
-# Bloqueados, a unica pagina de conteudo do dominio era rastreada sem os
-# scripts que ela mesma pede.
+# nao sao paginas: sao arquivos. Os dois ultimos estavam na lista de cima por
+# engano — o post do blog, que esta no sitemap e pede indexacao, carrega
+# jquery.min.js e email-decode.min.js deles. Bloqueados, a unica pagina de
+# conteudo do dominio era rastreada sem os scripts que ela mesma pede.
 Allow: /assets/
 Allow: /wp-content/
 Allow: /wp-includes/
