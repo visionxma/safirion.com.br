@@ -6,7 +6,7 @@
    rastreio do kv-track) e textos nos 4 idiomas do site. */
 (function () {
   "use strict";
-  var CADASTRO = "https://trade.safirion.com/register?aff=818084&aff_model=revenue&afftrack=";
+  var CADASTRO = "/cadastro/";
   var CHAVE = "safirion_promo_v3";
   var ATRASO = 2000, ROLAGEM = 0.35;
 
@@ -88,7 +88,7 @@
           '<p>' + T.p1 + '</p>' +
           '<p>' + T.p2 + '</p>' +
           '<p class="pp__nota">' + T.nota + '</p>' +
-          '<a class="pp__btn" href="' + CADASTRO + '" rel="nofollow noopener" target="_blank">' + T.btn + ' <span aria-hidden="true">&rsaquo;</span></a>' +
+          '<a class="pp__btn" href="' + CADASTRO + '">' + T.btn + ' <span aria-hidden="true">&rsaquo;</span></a>' +
           '<p class="pp__mini">' + T.mini + '</p>' +
         '</div>' +
       '</div>';
