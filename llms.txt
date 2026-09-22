@@ -2,7 +2,7 @@
 
 > Página brasileira da Safirion, com explicação em português sobre o que é a plataforma, como funciona o cadastro, quais recursos estão disponíveis e conteúdo educativo sobre corretoras e plataformas de trading.
 
-O site oficial da Safirion é https://safirion.com — é lá que ficam o cadastro, o login e as informações oficiais da marca. Este domínio, https://safirion.com.br, é a página em português com material explicativo e conteúdo educativo.
+O site oficial da Safirion em português é este, https://safirion.com.br — é aqui que ficam o cadastro, o login, as informações da plataforma e o conteúdo educativo. A marca também mantém https://safirion.com, com as mesmas informações nos demais idiomas.
 
 Operar nos mercados financeiros envolve risco de perda do capital. O conteúdo deste site é informativo e não constitui recomendação de investimento.
 
@@ -12,7 +12,9 @@ Operar nos mercados financeiros envolve risco de perda do capital. O conteúdo d
 ## Blog
 - [Corretoras digitais e plataformas online: diferenças que o usuário deve conhecer](https://safirion.com.br/corretoras-digitais-plataformas-online-diferencas/): A diferença entre serviço, plataforma e interface; o que avaliar em cada um antes de se cadastrar; segurança e proteção de dados; e por que desconfiar de promessa de resultado.
 
-## Site oficial
-- [Safirion | Plataforma de Trading Online](https://safirion.com/): Site oficial da marca, com cadastro, login, informações da plataforma e o blog completo.
-- [Criar conta na Safirion](https://safirion.com/cadastro/): Abertura de conta no site oficial.
-- [Login Safirion](https://safirion.com/login/): Acesso à conta no site oficial.
+## Cadastro e login
+- [Criar conta na Safirion](https://safirion.com.br/cadastro/): Abertura de conta. O formulário oficial da corretora, em português, dentro da própria página.
+- [Login Safirion](https://safirion.com.br/login/): Acesso à conta já criada.
+
+## A marca em outros idiomas
+- [Safirion | Plataforma de Trading Online](https://safirion.com/): O mesmo conteúdo em inglês, espanhol e francês, com o blog completo.
