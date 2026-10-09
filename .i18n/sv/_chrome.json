@@ -1,0 +1,31 @@
+{
+  "_nota": "Textos que não estão no corpo da página: metadados, barra do topo, seletor de idioma e pop-up.",
+  "og_alt": "Safirion – tradingplattform online",
+  "slogan": "Ta vara på varje rörelse på marknaden",
+  "inicio": "Start",
+  "idioma_aria": "Välj språk",
+  "passos": [
+    "Gå till Safirions officiella webbplats",
+    "Klicka på ”Skapa konto”",
+    "Fyll i dina uppgifter",
+    "Välj ett starkt lösenord",
+    "Bekräfta registreringen",
+    "Logga in"
+  ],
+  "ticker": [
+    "Skapa ditt konto på några minuter och börja handla.",
+    "Handla med <b>över 30 tillgångar</b> – enkelt och smidigt.",
+    "Säkerhet med <b>2FA</b> och avancerad kryptering.",
+    "Professionell och personlig support, när du behöver den."
+  ],
+  "popup": {
+    "selo": "Kampanj",
+    "fechar": "Stäng",
+    "tit": "Riskfri affär på US$ 10",
+    "p1": "Använd kampanjkoden <strong>RISKFREE10</strong> när du gör en insättning för att få en riskfri affär.",
+    "p2": "Om din nästa riktiga optionsaffär slutar med förlust återbetalar vi upp till US$ 10 av din investering.",
+    "nota": "Den första affären som öppnas efter aktiveringen räknas som riskfri.",
+    "btn": "Skapa konto",
+    "mini": "Kampanjvillkor gäller. Handel med hävstångsprodukter innebär risk för förlust."
+  }
+}

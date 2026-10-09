@@ -1,0 +1,31 @@
+{
+  "_nota": "Textos que não estão no corpo da página: metadados, barra do topo, seletor de idioma e pop-up.",
+  "og_alt": "Safirion — piattaforma di trading online",
+  "slogan": "Cogli ogni movimento del mercato",
+  "inicio": "Home",
+  "idioma_aria": "Scegli la lingua",
+  "passos": [
+    "Vai al sito ufficiale di Safirion",
+    "Clicca su “Apri un conto”",
+    "Inserisci i tuoi dati",
+    "Crea una password sicura",
+    "Conferma la registrazione",
+    "Accedi"
+  ],
+  "ticker": [
+    "Apri il tuo conto in pochi minuti e inizia a operare.",
+    "Opera su <b>oltre 30 asset</b> in modo semplice e immediato.",
+    "Sicurezza con <b>2FA</b> e crittografia avanzata.",
+    "Assistenza professionale e dal volto umano, quando ne hai bisogno."
+  ],
+  "popup": {
+    "selo": "Promozione",
+    "fechar": "Chiudi",
+    "tit": "Operazione senza rischio da US$ 10",
+    "p1": "Usa il codice promozionale <strong>RISKFREE10</strong> al momento del deposito per ottenere un'operazione senza rischio.",
+    "p2": "Se la tua prossima operazione reale su Opzioni si chiude in perdita, ti rimborsiamo fino a US$ 10 del tuo investimento.",
+    "nota": "La prima operazione aperta dopo l'attivazione sarà considerata senza rischio.",
+    "btn": "Apri un conto",
+    "mini": "Soggetto alle condizioni della promozione. Operare con prodotti a leva comporta il rischio di perdite."
+  }
+}

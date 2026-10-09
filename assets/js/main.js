@@ -84,14 +84,23 @@
   /* ---------- Texto que acende palavra a palavra ---------- */
   var aceso = document.querySelector('[data-acende]');
   if (aceso) {
-    var palavras = aceso.textContent.trim().split(/\s+/);
+    var frase = aceso.textContent.trim();
+    var palavras = frase.split(/\s+/);
+    var cola = ' ';
+    /* tailandês e chinês não separam palavras com espaço: o navegador segmenta */
+    if (palavras.length < 6 && window.Intl && Intl.Segmenter) {
+      palavras = [];
+      var seg = new Intl.Segmenter(document.documentElement.lang || 'pt', { granularity: 'word' }).segment(frase);
+      for (var s of seg) palavras.push(s.segment);
+      cola = '';
+    }
     aceso.textContent = '';
     palavras.forEach(function (p, idx) {
       var w = document.createElement('span');
       w.className = 'wd';
       w.textContent = p;
       aceso.appendChild(w);
-      if (idx < palavras.length - 1) aceso.appendChild(document.createTextNode(' '));
+      if (cola && idx < palavras.length - 1) aceso.appendChild(document.createTextNode(cola));
     });
 
     var wds = [].slice.call(aceso.querySelectorAll('.wd'));
@@ -150,6 +159,17 @@
           if (other !== item) other.open = false;
         });
       });
+    });
+  }
+
+  /* ---------- Seletor de idioma: fecha ao clicar fora ou com Esc ---------- */
+  var lng = document.querySelector('.lng');
+  if (lng) {
+    document.addEventListener('click', function (e) {
+      if (lng.open && !lng.contains(e.target)) lng.open = false;
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') lng.open = false;
     });
   }
 

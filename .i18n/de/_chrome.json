@@ -1,0 +1,31 @@
+{
+  "_nota": "Textos que não estão no corpo da página: metadados, barra do topo, seletor de idioma e pop-up.",
+  "og_alt": "Safirion – Online-Trading-Plattform",
+  "slogan": "Nutzen Sie jede Bewegung des Marktes",
+  "inicio": "Startseite",
+  "idioma_aria": "Sprache wählen",
+  "passos": [
+    "Offizielle Safirion-Website aufrufen",
+    "Auf „Konto eröffnen“ klicken",
+    "Daten eintragen",
+    "Sicheres Passwort festlegen",
+    "Registrierung bestätigen",
+    "Einloggen"
+  ],
+  "ticker": [
+    "Eröffnen Sie Ihr Konto in wenigen Minuten und beginnen Sie zu handeln.",
+    "Handeln Sie <b>über 30 Assets</b> – einfach und unkompliziert.",
+    "Sicherheit mit <b>2FA</b> und fortschrittlicher Verschlüsselung.",
+    "Professioneller, persönlicher Support – immer wenn Sie ihn brauchen."
+  ],
+  "popup": {
+    "selo": "Aktion",
+    "fechar": "Schließen",
+    "tit": "Risikofreier Trade über US$ 10",
+    "p1": "Verwenden Sie bei Ihrer Einzahlung den Aktionscode <strong>RISKFREE10</strong>, um einen risikofreien Trade zu erhalten.",
+    "p2": "Endet Ihr nächster echter Optionshandel mit einem Verlust, erstatten wir Ihnen bis zu US$ 10 Ihres Einsatzes.",
+    "nota": "Der erste nach der Aktivierung eröffnete Trade gilt als risikofrei.",
+    "btn": "Konto eröffnen",
+    "mini": "Es gelten die Aktionsbedingungen. Der Handel mit Hebelprodukten birgt ein Verlustrisiko."
+  }
+}

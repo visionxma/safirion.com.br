@@ -1,0 +1,31 @@
+{
+  "_nota": "Textos que não estão no corpo da página: metadados, barra do topo, seletor de idioma e pop-up.",
+  "og_alt": "Safirion — platform trading online",
+  "slogan": "Manfaatkan setiap pergerakan pasar",
+  "inicio": "Beranda",
+  "idioma_aria": "Pilih bahasa",
+  "passos": [
+    "Kunjungi situs resmi Safirion",
+    "Klik “Buat akun”",
+    "Isi data Anda",
+    "Buat kata sandi yang kuat",
+    "Konfirmasi pendaftaran",
+    "Masuk"
+  ],
+  "ticker": [
+    "Buat akun Anda dalam beberapa menit dan mulai trading.",
+    "Trading <b>30+ aset</b> dengan cara yang sederhana dan mudah.",
+    "Keamanan dengan <b>2FA</b> dan enkripsi canggih.",
+    "Dukungan profesional dan ramah, kapan pun Anda butuhkan."
+  ],
+  "popup": {
+    "selo": "Promo",
+    "fechar": "Tutup",
+    "tit": "Trading bebas risiko senilai US$ 10",
+    "p1": "Gunakan kode promo <strong>RISKFREE10</strong> saat melakukan deposit untuk mendapatkan satu trading bebas risiko.",
+    "p2": "Jika trading Opsi riil Anda berikutnya berakhir rugi, kami mengembalikan hingga US$ 10 dari investasi Anda.",
+    "nota": "Trading pertama yang dibuka setelah aktivasi akan dianggap bebas risiko.",
+    "btn": "Buat akun",
+    "mini": "Tunduk pada ketentuan promosi. Trading produk dengan leverage mengandung risiko kerugian."
+  }
+}

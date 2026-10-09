@@ -1,0 +1,31 @@
+{
+  "_nota": "Textos que não estão no corpo da página: metadados, barra do topo, seletor de idioma e pop-up.",
+  "og_alt": "Safirion — plataforma de trading online",
+  "slogan": "Aproveite cada movimento do mercado",
+  "inicio": "Início",
+  "idioma_aria": "Escolher idioma",
+  "passos": [
+    "Acesse o site oficial da Safirion",
+    "Clique em “Criar conta”",
+    "Preencha seus dados",
+    "Crie uma senha forte",
+    "Confirme o cadastro",
+    "Faça login"
+  ],
+  "ticker": [
+    "Crie sua conta em poucos minutos e comece a operar.",
+    "Trabalhe com <b>+de 30 ativos</b> de forma simples e fácil.",
+    "Segurança com <b>2FA</b> e criptografia avançada.",
+    "Suporte profissional e humanizado, quando você precisar."
+  ],
+  "popup": {
+    "selo": "Promoção",
+    "fechar": "Fechar",
+    "tit": "Negociação sem risco de US$ 10",
+    "p1": "Use o código promocional <strong>RISKFREE10</strong> ao depositar para obter uma negociação sem risco.",
+    "p2": "Se sua próxima negociação real de Opções resultar em perda, reembolsamos até US$ 10 do seu investimento.",
+    "nota": "A primeira negociação aberta após a ativação será considerada livre de risco.",
+    "btn": "Criar conta",
+    "mini": "Sujeito às condições da promoção. Operar produtos alavancados envolve risco de perda."
+  }
+}

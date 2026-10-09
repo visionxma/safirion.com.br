@@ -50,7 +50,8 @@
     }
   };
   var lang = (document.documentElement.lang || "pt").slice(0, 2).toLowerCase();
-  var T = TXT[lang] || TXT.pt;
+  /* as páginas montadas pelo .i18n/montar.js trazem o texto do próprio idioma */
+  var T = window.safirionPromoTxt || TXT[lang] || TXT.pt;
 
   function guardado() {
     try { return sessionStorage.getItem(CHAVE) ? 1 : 0; } catch (e) { return 0; }

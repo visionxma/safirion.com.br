@@ -1,0 +1,31 @@
+{
+  "_nota": "Textos que não estão no corpo da página: metadados, barra do topo, seletor de idioma e pop-up.",
+  "og_alt": "Safirion — nền tảng giao dịch trực tuyến",
+  "slogan": "Nắm bắt mọi biến động của thị trường",
+  "inicio": "Trang chủ",
+  "idioma_aria": "Chọn ngôn ngữ",
+  "passos": [
+    "Truy cập trang web chính thức của Safirion",
+    "Nhấn vào “Mở tài khoản”",
+    "Điền thông tin của bạn",
+    "Tạo mật khẩu mạnh",
+    "Xác nhận đăng ký",
+    "Đăng nhập"
+  ],
+  "ticker": [
+    "Mở tài khoản chỉ trong vài phút và bắt đầu giao dịch.",
+    "Giao dịch <b>hơn 30 tài sản</b> một cách đơn giản và dễ dàng.",
+    "Bảo mật với <b>2FA</b> và mã hóa nâng cao.",
+    "Hỗ trợ chuyên nghiệp và tận tâm, bất cứ khi nào bạn cần."
+  ],
+  "popup": {
+    "selo": "Khuyến mãi",
+    "fechar": "Đóng",
+    "tit": "Giao dịch không rủi ro trị giá US$ 10",
+    "p1": "Dùng mã khuyến mãi <strong>RISKFREE10</strong> khi nạp tiền để nhận một giao dịch không rủi ro.",
+    "p2": "Nếu giao dịch Quyền chọn thật tiếp theo của bạn thua lỗ, chúng tôi sẽ hoàn lại tối đa US$ 10 từ khoản đầu tư của bạn.",
+    "nota": "Giao dịch đầu tiên được mở sau khi kích hoạt sẽ được coi là không rủi ro.",
+    "btn": "Mở tài khoản",
+    "mini": "Áp dụng theo điều kiện của chương trình khuyến mãi. Giao dịch các sản phẩm có đòn bẩy tiềm ẩn rủi ro thua lỗ."
+  }
+}

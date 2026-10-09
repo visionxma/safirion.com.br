@@ -1,0 +1,31 @@
+{
+  "_nota": "Textos que não estão no corpo da página: metadados, barra do topo, seletor de idioma e pop-up.",
+  "og_alt": "Safirion — online trading platform",
+  "slogan": "Make the most of every market move",
+  "inicio": "Home",
+  "idioma_aria": "Choose language",
+  "passos": [
+    "Go to the official Safirion website",
+    "Click “Create account”",
+    "Fill in your details",
+    "Create a strong password",
+    "Confirm your registration",
+    "Log in"
+  ],
+  "ticker": [
+    "Create your account in a few minutes and start trading.",
+    "Trade <b>30+ assets</b> simply and easily.",
+    "Security with <b>2FA</b> and advanced encryption.",
+    "Professional, personal support whenever you need it."
+  ],
+  "popup": {
+    "selo": "Promotion",
+    "fechar": "Close",
+    "tit": "Risk-free trade of US$ 10",
+    "p1": "Use promo code <strong>RISKFREE10</strong> when you deposit to get a risk-free trade.",
+    "p2": "If your next real Options trade results in a loss, we refund up to US$ 10 of your investment.",
+    "nota": "The first trade opened after activation is considered risk-free.",
+    "btn": "Create account",
+    "mini": "Subject to the promotion terms. Trading leveraged products involves risk of loss."
+  }
+}

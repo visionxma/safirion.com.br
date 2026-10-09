@@ -1,0 +1,31 @@
+{
+  "_nota": "Textos que não estão no corpo da página: metadados, barra do topo, seletor de idioma e pop-up.",
+  "og_alt": "Safirion — online trading platform",
+  "slogan": "Samantalahin ang bawat galaw ng merkado",
+  "inicio": "Home",
+  "idioma_aria": "Pumili ng wika",
+  "passos": [
+    "Pumunta sa opisyal na website ng Safirion",
+    "I-click ang “Mag-register”",
+    "Ilagay ang iyong impormasyon",
+    "Gumawa ng malakas na password",
+    "Kumpirmahin ang pag-register",
+    "Mag-log in"
+  ],
+  "ticker": [
+    "Gumawa ng account sa loob ng ilang minuto at magsimulang mag-trade.",
+    "Mag-trade ng <b>mahigit 30 asset</b> nang simple at madali.",
+    "Seguridad na may <b>2FA</b> at advanced na encryption.",
+    "Propesyonal at makataong suporta, kailan mo man kailanganin."
+  ],
+  "popup": {
+    "selo": "Promo",
+    "fechar": "Isara",
+    "tit": "Risk-free na trade na US$ 10",
+    "p1": "Gamitin ang promo code na <strong>RISKFREE10</strong> sa pag-deposit para makakuha ng isang risk-free na trade.",
+    "p2": "Kung malugi ang susunod mong totoong Options trade, ire-refund namin ang hanggang US$ 10 ng iyong investment.",
+    "nota": "Ang unang trade na bubuksan pagkatapos ng activation ang ituturing na risk-free.",
+    "btn": "Mag-register",
+    "mini": "Napapailalim sa mga kundisyon ng promo. May panganib na malugi sa pag-trade ng mga leveraged na produkto."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "_nota": "Textos que não estão no corpo da página: metadados, barra do topo, seletor de idioma e pop-up.",
+  "og_alt": "Safirion — 在线交易平台",
+  "slogan": "把握市场的每一次波动",
+  "inicio": "首页",
+  "idioma_aria": "选择语言",
+  "passos": [
+    "访问 Safirion 官方网站",
+    "点击“创建账户”",
+    "填写您的信息",
+    "设置高强度密码",
+    "确认注册",
+    "登录"
+  ],
+  "ticker": [
+    "只需几分钟即可创建账户并开始交易。",
+    "简单轻松地交易 <b>30 多种资产</b>。",
+    "<b>2FA</b> 与高级加密，守护安全。",
+    "专业且人性化的支持，在您需要时随时为您服务。"
+  ],
+  "popup": {
+    "selo": "优惠活动",
+    "fechar": "关闭",
+    "tit": "US$ 10 无风险交易",
+    "p1": "存款时使用优惠码 <strong>RISKFREE10</strong>，即可获得一笔无风险交易。",
+    "p2": "如果您的下一笔真实期权交易出现亏损，我们将退还您投资金额中最多 US$ 10。",
+    "nota": "激活后开立的第一笔交易将被视为无风险交易。",
+    "btn": "创建账户",
+    "mini": "须遵守活动条件。交易杠杆产品存在亏损风险。"
+  }
+}

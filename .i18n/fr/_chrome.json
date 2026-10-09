@@ -1,0 +1,31 @@
+{
+  "_nota": "Textos que não estão no corpo da página: metadados, barra do topo, seletor de idioma e pop-up.",
+  "og_alt": "Safirion — plateforme de trading en ligne",
+  "slogan": "Profitez de chaque mouvement du marché",
+  "inicio": "Accueil",
+  "idioma_aria": "Choisir la langue",
+  "passos": [
+    "Rendez-vous sur le site officiel de Safirion",
+    "Cliquez sur « Créer un compte »",
+    "Renseignez vos données",
+    "Créez un mot de passe robuste",
+    "Confirmez votre inscription",
+    "Connectez-vous"
+  ],
+  "ticker": [
+    "Créez votre compte en quelques minutes et commencez à trader.",
+    "Tradez <b>plus de 30 actifs</b> en toute simplicité.",
+    "Sécurité avec <b>2FA</b> et chiffrement avancé.",
+    "Un support professionnel et humain, quand vous en avez besoin."
+  ],
+  "popup": {
+    "selo": "Promotion",
+    "fechar": "Fermer",
+    "tit": "Transaction sans risque de 10 US$",
+    "p1": "Utilisez le code promo <strong>RISKFREE10</strong> lors de votre dépôt pour obtenir une transaction sans risque.",
+    "p2": "Si votre prochaine transaction réelle d'Options se solde par une perte, nous remboursons jusqu'à 10 US$ de votre investissement.",
+    "nota": "La première transaction ouverte après l'activation est considérée sans risque.",
+    "btn": "Créer un compte",
+    "mini": "Soumis aux conditions de la promotion. Trader des produits à effet de levier comporte un risque de perte."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "_nota": "Textos que não estão no corpo da página: metadados, barra do topo, seletor de idioma e pop-up.",
+  "og_alt": "Safirion — online işlem platformu",
+  "slogan": "Piyasanın her hareketini değerlendirin",
+  "inicio": "Ana sayfa",
+  "idioma_aria": "Dil seçin",
+  "passos": [
+    "Safirion’un resmî sitesine gidin",
+    "“Hesap oluştur” düğmesine tıklayın",
+    "Bilgilerinizi girin",
+    "Güçlü bir şifre oluşturun",
+    "Kaydınızı onaylayın",
+    "Giriş yapın"
+  ],
+  "ticker": [
+    "Hesabınızı birkaç dakikada oluşturun ve işlem yapmaya başlayın.",
+    "<b>30’dan fazla varlıkla</b> basit ve kolay şekilde işlem yapın.",
+    "<b>2FA</b> ve gelişmiş şifrelemeyle güvenlik.",
+    "İhtiyaç duyduğunuz her an profesyonel ve insan odaklı destek."
+  ],
+  "popup": {
+    "selo": "Kampanya",
+    "fechar": "Kapat",
+    "tit": "US$ 10 değerinde risksiz işlem",
+    "p1": "Risksiz bir işlem elde etmek için para yatırırken <strong>RISKFREE10</strong> promosyon kodunu kullanın.",
+    "p2": "Bir sonraki gerçek Opsiyon işleminiz zararla sonuçlanırsa, yatırımınızın US$ 10’a kadar olan kısmını iade ediyoruz.",
+    "nota": "Etkinleştirmeden sonra açılan ilk işlem risksiz sayılır.",
+    "btn": "Hesap oluştur",
+    "mini": "Kampanya koşullarına tabidir. Kaldıraçlı ürünlerle işlem yapmak zarar riski içerir."
+  }
+}
