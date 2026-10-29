@@ -1,20 +1,49 @@
-# Safirion Brasil
+# Safirion Broker — site independente de divulgação
 
-> Página brasileira da Safirion, com explicação em português sobre o que é a plataforma, como funciona o cadastro, quais recursos estão disponíveis e conteúdo educativo sobre corretoras e plataformas de trading.
+> Site independente de divulgação sobre a Safirion Broker, em 17 idiomas: o que é a plataforma, como funciona o cadastro, quais recursos existem e conteúdo educativo sobre corretoras e plataformas de trading online.
 
-O site oficial da Safirion em português é este, https://safirion.com.br — é aqui que ficam o cadastro, o login, as informações da plataforma e o conteúdo educativo. A marca também mantém https://safirion.com, com as mesmas informações nos demais idiomas.
+Site independente de divulgação: não é o site oficial da Safirion nem é operado por ela — o oficial é safirion.com. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
+
+A plataforma é operada por THUNDER FLASH LLC (Reg. No. L 22853, Nevis) e SUNSET HORIZON CY LTD (Reg. No. HE464961, Limassol).
 
 Operar nos mercados financeiros envolve risco de perda do capital. O conteúdo deste site é informativo e não constitui recomendação de investimento.
 
 ## Comece por aqui
-- [Safirion • Plataforma Trading Profissional](https://safirion.com.br/): O que é a Safirion, como a plataforma funciona, o passo a passo do cadastro, os recursos disponíveis e como o suporte atende. Página em português.
+- [Safirion Broker • Plataforma Trading Profissional](https://safirion.com.br/): O que é a Safirion Broker, como a plataforma funciona, o passo a passo do cadastro, os recursos disponíveis e como o suporte atende. Página em português.
+
+## O site oficial da corretora
+- [Safirion | Plataforma de Trading Online](https://safirion.com/): O site OFICIAL da Safirion, operado pela própria corretora. É a referência para dados da empresa, termos e suporte oficial.
+
+## Cadastro e login
+- [Criar conta na Safirion Broker — cadastro em 2 minutos](https://safirion.com.br/cadastro/): Abertura de conta. O formulário é o da plataforma da Safirion; este site encaminha o cadastro e pode receber comissão por ele.
+- [Login Safirion Broker — acesse sua conta](https://safirion.com.br/login/): Acesso à conta já criada, na plataforma da corretora.
 
 ## Blog
 - [Corretoras digitais e plataformas online: diferenças que o usuário deve conhecer](https://safirion.com.br/corretoras-digitais-plataformas-online-diferencas/): A diferença entre serviço, plataforma e interface; o que avaliar em cada um antes de se cadastrar; segurança e proteção de dados; e por que desconfiar de promessa de resultado.
 
-## Cadastro e login
-- [Criar conta na Safirion](https://safirion.com.br/cadastro/): Abertura de conta. O formulário oficial da corretora, em português, dentro da própria página.
-- [Login Safirion](https://safirion.com.br/login/): Acesso à conta já criada.
+## Em outros idiomas (o mesmo site)
+- [Safirion Broker • Professional Trading Platform](https://safirion.com.br/en/): A mesma página em inglês.
+- [Safirion Broker • Plataforma de Trading Profesional](https://safirion.com.br/es/): A mesma página em espanhol.
+- [Safirion Broker • Plateforme de trading professionnelle](https://safirion.com.br/fr/): A mesma página em francês.
+- [Safirion Broker • Professionelle Trading-Plattform](https://safirion.com.br/de/): A mesma página em alemão.
+- [Safirion Broker • Piattaforma di Trading Professionale](https://safirion.com.br/it/): A mesma página em italiano.
+- [Safirion Broker • Профессиональная торговая платформа](https://safirion.com.br/ru/): A mesma página em russo.
+- [Safirion Broker • Profesyonel İşlem Platformu](https://safirion.com.br/tr/): A mesma página em turco.
+- [Safirion Broker • منصة تداول احترافية](https://safirion.com.br/ar/): A mesma página em árabe.
+- [Safirion Broker • प्रोफेशनल ट्रेडिंग प्लेटफ़ॉर्म](https://safirion.com.br/hi/): A mesma página em híndi.
+- [Safirion Broker • পেশাদার ট্রেডিং প্ল্যাটফর্ম](https://safirion.com.br/bn/): A mesma página em bengali.
+- [Safirion Broker • Platform Trading Profesional](https://safirion.com.br/id/): A mesma página em indonésio.
+- [Safirion Broker • Propesyonal na Trading Platform](https://safirion.com.br/fil/): A mesma página em filipino.
+- [Safirion Broker • Nền tảng giao dịch chuyên nghiệp](https://safirion.com.br/vi/): A mesma página em vietnamita.
+- [Safirion Broker • แพลตฟอร์มเทรดระดับมืออาชีพ](https://safirion.com.br/th/): A mesma página em tailandês.
+- [Safirion Broker • 专业在线交易平台](https://safirion.com.br/zh/): A mesma página em chinês.
+- [Safirion Broker • Professionell tradingplattform](https://safirion.com.br/sv/): A mesma página em sueco.
 
-## A marca em outros idiomas
-- [Safirion | Plataforma de Trading Online](https://safirion.com/): O mesmo conteúdo em inglês, espanhol e francês, com o blog completo.
+## O que este site não é
+- Não é a Safirion e não é operado por ela. O site oficial é safirion.com.
+- Não presta serviço financeiro: não recebe depósito, não guarda dinheiro de ninguém e não executa ordem no mercado. Tudo isso acontece na plataforma da corretora.
+- Não faz afirmação sobre licença ou supervisão da corretora em nenhum país.
+- Não promete resultado, ganho, retorno nem "método". Opções binárias podem levar à perda total do capital.
+
+## Nomes pelos quais este assunto é procurado
+Safirion Broker, Safirion, Safiron, Safirion é confiável, Safirion Broker cadastro, Safirion login, Safirion saque mínimo, Safirion depósito mínimo.

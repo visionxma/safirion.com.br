@@ -57,22 +57,35 @@
   if (titulo) {
     var texto = titulo.textContent.trim();
     titulo.textContent = '';
-    for (var l = 0; l < texto.length; l++) {
-      var span = document.createElement('span');
-      span.className = 'ltr';
-      span.textContent = texto[l];
-      if (!reduced) {
-        span.style.opacity = '0';
-        span.style.transform = 'translateY(0.34em)';
-        span.style.transition = 'opacity .55s cubic-bezier(.22,.61,.36,1) ' + (l * 55) + 'ms,' +
-                                'transform .55s cubic-bezier(.22,.61,.36,1) ' + (l * 55) + 'ms';
+    // Uma caixa por PALAVRA: as letras sao inline-block e, soltas, a linha pode
+    // quebrar entre duas delas — SAFIRION BROKER virava "SAFIRION BRO / KER" em
+    // 390px. O involucro .pal nao deixa quebrar dentro da palavra; entre palavras
+    // vai um espaco de texto normal, que e onde a quebra deve cair (29/10/2026).
+    var palavrasH = texto.split(' ');
+    var l = 0;
+    for (var pw = 0; pw < palavrasH.length; pw++) {
+      var caixa = document.createElement('span');
+      caixa.className = 'pal';
+      for (var c = 0; c < palavrasH[pw].length; c++) {
+        var span = document.createElement('span');
+        span.className = 'ltr';
+        span.textContent = palavrasH[pw][c];
+        if (!reduced) {
+          span.style.opacity = '0';
+          span.style.transform = 'translateY(0.34em)';
+          span.style.transition = 'opacity .55s cubic-bezier(.22,.61,.36,1) ' + (l * 55) + 'ms,' +
+                                  'transform .55s cubic-bezier(.22,.61,.36,1) ' + (l * 55) + 'ms';
+        }
+        caixa.appendChild(span);
+        l++;
       }
-      titulo.appendChild(span);
+      titulo.appendChild(caixa);
+      if (pw < palavrasH.length - 1) titulo.appendChild(document.createTextNode(' '));
     }
     if (!reduced) {
       requestAnimationFrame(function () {
         requestAnimationFrame(function () {
-          [].forEach.call(titulo.children, function (el) {
+          [].forEach.call(titulo.querySelectorAll('.ltr'), function (el) {
             el.style.opacity = '1';
             el.style.transform = 'none';
           });
