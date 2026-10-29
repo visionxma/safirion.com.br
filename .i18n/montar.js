@@ -8,9 +8,10 @@
 const fs = require('fs');
 const path = require('path');
 const { spawnSync } = require('child_process');
+const { createHash } = require('crypto');
 const RAIZ = path.join(__dirname, '..');
 const SITE = 'https://safirion.com.br';
-const V_MAIN = 6, V_POPUP = 5, V_IDIOMAS = 1;   // suba quando mexer no arquivo (cache de 7 dias)
+const V_MAIN = 7, V_POPUP = 5, V_IDIOMAS = 1;   // suba quando mexer no arquivo (cache de 7 dias)
 
 const ler = (...p) => fs.readFileSync(path.join(...p), 'utf8');
 const idiomas = JSON.parse(ler(__dirname, 'idiomas.json'));
@@ -54,10 +55,13 @@ function rodapeIdiomas(atual) {
 function comSeletor(html, atual) {
   html = html.replace(/\s*<!--idiomas-->[\s\S]*?<!--\/idiomas-->/g, '');
   if (prontos.length < 2) return html;
-  const a = '<div class="hdr__side">', b = '<div class="wrap ft__copy">';
+  // o rodapé de idiomas entra ACIMA da declaração de independência (bloco .ft__legal),
+  // que é onde ela está nos HTML publicados; se um dia não houver declaração, dá erro
+  // de propósito: nenhuma página do site pode ir ao ar sem ela.
+  const a = '<div class="hdr__side">', b = '<div class="wrap ft__legal">';
   if (!html.includes(a) || !html.includes(b)) throw new Error('não achei onde pôr o seletor de idioma');
   html = troca(html, a, a + '\n      ' + seletor(atual));
-  return html.replace(/([ \t]*)<div class="wrap ft__copy">/, (m, e) => `${e}${rodapeIdiomas(atual)}\n\n${m}`);
+  return html.replace(/([ \t]*)<div class="wrap ft__legal">/, (m, e) => `${e}${rodapeIdiomas(atual)}\n\n${m}`);
 }
 function hreflang() {
   const padrao = prontos.find(i => i.pasta === 'en') || PT;
@@ -69,9 +73,44 @@ function comHreflang(html) {
   html = html.replace(/\s*<!--hreflang-->[\s\S]*?<!--\/hreflang-->/, '').replace(/\n<link rel="alternate" hreflang="[^"]*" href="[^"]*">/g, '');
   return html.replace(/(<link rel="canonical" href="[^"]*">)/, (m, a) => a + '\n' + hreflang());
 }
+// Versão de imagem, ícone e fonte: md5[:8] do CONTEÚDO do arquivo, calculado aqui.
+// Arquivo que muda de conteúdo tem de mudar de endereço, senão quem já visitou
+// continua vendo o antigo (cache de 1 ano nos assets). A conta mora no gerador de
+// propósito: se morasse num script de fora, toda montagem publicaria mídia sem
+// `?v=` e a correção se perderia na montagem seguinte.
+const MIDIA = /\.(?:woff2?|ttf|otf|png|jpe?g|webp|svg|ico|gif|avif|mp4|webm)$/i;
+const _cacheV = new Map();
+function versaoDoArquivo(url) {
+  let caminho = url.split(/[?#]/)[0];
+  if (caminho.startsWith(SITE)) caminho = caminho.slice(SITE.length);   // og:image vem absoluto
+  if (!caminho.startsWith('/') || caminho.startsWith('//')) return null;  // externo ou relativo: não é nosso
+  if (!MIDIA.test(caminho)) return null;
+  if (_cacheV.has(caminho)) return _cacheV.get(caminho);
+  let v = null;
+  try { v = createHash('md5').update(fs.readFileSync(path.join(RAIZ, caminho.slice(1)))).digest('hex').slice(0, 8); } catch {}
+  _cacheV.set(caminho, v);
+  return v;
+}
+function comVersaoDeMidia(html) {
+  const trocar = (url) => {
+    const v = versaoDoArquivo(url);
+    return v ? url.split(/[?#]/)[0] + '?v=' + v : url;
+  };
+  return html
+    .replace(/(\s(?:src|href|content|poster|data-src)=")([^"]+)(")/g, (m, a, u, z) => a + trocar(u) + z)
+    .replace(/(\ssrcset=")([^"]+)(")/g, (m, a, lista, z) => a + lista.split(',').map(it => {
+      const p = it.trim().split(/\s+/);
+      if (p[0]) p[0] = trocar(p[0]);
+      return p.join(' ');
+    }).join(', ') + z)
+    .replace(/url\(\s*(["']?)([^"')\s]+)\1\s*\)/g, (m, q, u) => `url(${q}${trocar(u)}${q})`);
+}
 function comVersoes(html) {
   if (!html.includes('idiomas.css')) html = html.replace(/(<link rel="stylesheet" href="\/?assets\/css\/popup-promo\.css\?v=\d+">)/, (m, a) => `${a}\n<link rel="stylesheet" href="/assets/css/idiomas.css?v=${V_IDIOMAS}">`);
-  return html.replace(/idiomas\.css\?v=\d+/, `idiomas.css?v=${V_IDIOMAS}`).replace(/main\.js\?v=\d+/, `main.js?v=${V_MAIN}`).replace(/popup-promo\.js\?v=\d+/, `popup-promo.js?v=${V_POPUP}`);
+  return comVersaoDeMidia(html
+    .replace(/idiomas\.css\?v=\d+/, `idiomas.css?v=${V_IDIOMAS}`)
+    .replace(/main\.js\?v=\d+/, `main.js?v=${V_MAIN}`)
+    .replace(/popup-promo\.js\?v=\d+/, `popup-promo.js?v=${V_POPUP}`));
 }
 
 // ---------------------------------------------------------------- home em português
@@ -148,7 +187,9 @@ for (const i of prontos) {
 
   const popup = JSON.stringify(C.popup).replace(/</g, '\\u003c');
   let html = `${h}</head>\n<body>\n\n${corpo}\n\n<script>window.safirionPromoTxt=${popup};</script>\n<script src="/assets/js/main.js?v=${V_MAIN}" defer></script>\n<script src="/assets/js/popup-promo.js?v=${V_POPUP}" defer></script>\n</body>\n</html>\n`;
-  html = comSeletor(html, i);
+  // o corpo traduzido vem da fonte sem versão nas mídias: cada idioma passa pelo
+  // mesmo comVersoes do português, senão só a home em pt sai com `?v=`
+  html = comVersoes(comSeletor(html, i));
   fs.mkdirSync(path.join(RAIZ, i.pasta), { recursive: true });
   fs.writeFileSync(path.join(RAIZ, i.pasta, 'index.html'), html);
 }
