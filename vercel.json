@@ -151,6 +151,146 @@
       "source": "/bemvindo/",
       "destination": "https://trade.safirion.com/pt/register?aff=836698&aff_model=revenue&afftrack=safirion.com.br/bemvindo",
       "statusCode": 302
+    },
+    {
+      "source": "/safirion-ativos-disponiveis",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/safirion-ativos-disponiveis/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/safirion-broker-o-que-e",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/safirion-broker-o-que-e/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/safirion-como-abrir-conta",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/safirion-como-abrir-conta/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/safirion-como-sacar-dinheiro",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/safirion-como-sacar-dinheiro/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/safirion-deposito-minimo",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/safirion-deposito-minimo/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/safirion-documentos-para-verificacao",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/safirion-documentos-para-verificacao/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/safirion-e-golpe-ou-nao",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/safirion-e-golpe-ou-nao/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/safirion-e-regulada-pela-cvm",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/safirion-e-regulada-pela-cvm/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/safirion-reclame-aqui",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/safirion-reclame-aqui/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/safirion-suporte-como-falar",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/safirion-suporte-como-falar/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/safirion-taxas-e-custos",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/safirion-taxas-e-custos/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/safirion-vs-outras-corretoras",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/safirion-vs-outras-corretoras/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/safirium-ou-safirion-o-nome-correto",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/safirium-ou-safirion-o-nome-correto/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/safiriun-safirio-safirun-variacoes-do-nome",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/safiriun-safirio-safirun-variacoes-do-nome/",
+      "destination": "/",
+      "permanent": false
     }
   ]
 }

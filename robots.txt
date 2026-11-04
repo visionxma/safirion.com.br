@@ -83,3 +83,29 @@ User-agent: YouBot
 Allow: /
 
 Sitemap: https://safirion.com.br/sitemap.xml
+
+# Buscadores e assistentes de IA nomeados (lista da alavancagem): mesmas regras do grupo "*".
+User-agent: Googlebot
+User-agent: Googlebot-Image
+User-agent: DuckDuckBot
+User-agent: YandexBot
+User-agent: anthropic-ai
+User-agent: CCBot
+User-agent: Bytespider
+User-agent: meta-externalagent
+User-agent: FacebookBot
+User-agent: LinkedInBot
+User-agent: Twitterbot
+User-agent: WhatsApp
+User-agent: Diffbot
+User-agent: ImagesiftBot
+User-agent: PetalBot
+User-agent: Timpibot
+Allow: /
+Disallow: /comments/
+Disallow: /embed/
+Disallow: /feed/
+Allow: /assets/
+Allow: /wp-content/
+Allow: /wp-includes/
+Allow: /cdn-cgi/
