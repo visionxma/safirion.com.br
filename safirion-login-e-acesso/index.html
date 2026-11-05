@@ -1,0 +1,4261 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Login Safirion: o endereço certo e o acesso com 2FA</title>
+<meta name="description" content="Login da Safirion: o acesso é em trade.safirion.com, com 2FA e KYC. Como conferir o endereço antes de digitar a senha e o que fazer quando o login falha.">
+<meta name="keywords" content="safirion login, safirion entrar, safirion acesso, safirion area do cliente, trade safirion login, safirion esqueci a senha, safirion 2fa, safirion conta bloqueada">
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+<meta name="theme-color" content="#04090f">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://safirion.com.br/safirion-login-e-acesso/">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="safirion.com.br">
+<meta property="og:title" content="Login Safirion: o endereço certo e o acesso com 2FA">
+<meta property="og:description" content="Login da Safirion: o acesso é em trade.safirion.com, com 2FA e KYC. Como conferir o endereço antes de digitar a senha e o que fazer quando o login falha.">
+<meta property="og:url" content="https://safirion.com.br/safirion-login-e-acesso/">
+<meta property="article:modified_time" content="2026-10-29">
+<meta property="og:image" content="https://safirion.com.br/assets/img/painel-safirion.webp?v=7e871d09">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="671">
+<meta property="og:image:alt" content="Plataforma da Safirion em trade.safirion.com: gráfico de velas do EUR/USD com os botões Higher e Lower">
+<meta name="twitter:image" content="https://safirion.com.br/assets/img/painel-safirion.webp?v=7e871d09">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/icons/safirion-icon.svg?v=fc1d510b" type="image/svg+xml">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png?v=ded2a46b">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png?v=62ae66f6">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://trade.safirion.com?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/safirion-login-e-acesso">
+<link rel="preload" href="/assets/fonts/MazzardM-SemiBold.woff2?v=bd39b657" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/MazzardM-Regular.woff2?v=8aed3f50" as="font" type="font/woff2" crossorigin>
+<style>
+@import "/assets/css/styles.css?v=9" layer(chassi);
+</style>
+<style>
+@import "/assets/css/popup-promo.css?v=1" layer(chassi);
+</style>
+<style>
+@import "/assets/css/idiomas.css?v=1" layer(chassi);
+</style>
+<style>
+@import "/assets/css/conteudo.css?v=ba371bcb" layer(chassi);
+</style>
+<style id="mx-estilo">
+.mx-raiz {
+  --m-fundo: #04090f;
+  --m-fundo-2: #060d15;
+  --m-superficie: #09121b;
+  --m-superficie-2: #111d2f;
+  --m-borda: #181d22;
+  --m-texto: #e0f1ff;
+  --m-texto-suave: #a0b4c8;
+  --m-texto-fraco: #8496aa;
+  --m-primaria: #0d63b0;
+  --m-primaria-2: #2389e6;
+  --m-sobre-primaria: #ffffff;
+  --m-destaque: #4ba3f0;
+  --m-sobre-destaque: #04090f;
+  --m-alta: #3ed59d;
+  --m-baixa: #f0776b;
+  --m-inv-fundo: #e0f1ff;
+  --m-inv-texto: #04090f;
+  --m-f-titulo:
+    "Mazzard",
+    "Mazzard M",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    sans-serif;
+  --m-f-corpo:
+    "Mazzard",
+    "Mazzard M",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    sans-serif;
+  --m-f-mono:
+    ui-monospace,
+    "SF Mono",
+    Menlo,
+    Consolas,
+    monospace;
+  --m-raio: 10px;
+  --m-raio-botao: 10px;
+}
+.mx-raiz {
+  --mx-b-fundo: var(--m-superficie);
+  --mx-b-borda: var(--m-borda);
+  --mx-b-texto: var(--m-texto-suave);
+  --mx-b-forte: var(--m-texto);
+  --mx-b-suave: var(--m-texto-fraco);
+  --mx-b-marca: var(--m-destaque, var(--m-primaria));
+  --mx-b-raio: var(--m-raio, 12px);
+  --mx-b-ok: var(--m-alta, var(--m-primaria));
+  --mx-b-nao: var(--m-baixa, var(--m-primaria));
+  --mx-b-atencao: var(--m-destaque, var(--m-primaria));
+  --mx-b-letra: var(--m-f-corpo);
+  --mx-b-letra-titulo: var(--m-f-titulo);
+  overflow-wrap: anywhere;
+}
+.mx-raiz [id] {
+  scroll-margin-top: calc(var(--pg-nav-h, 0px) + 1rem);
+}
+.mx-raiz [hidden] {
+  display: none !important;
+}
+.mx-raiz .az {
+  color: var(--mx-b-marca);
+}
+.mx-raiz :is(h1, h2) em {
+  font-style: normal;
+  color: var(--mx-b-marca);
+}
+.mx-raiz :is(h1, h2, h3) {
+  text-wrap: balance;
+}
+.mx-raiz p {
+  text-wrap: pretty;
+}
+.mx-raiz img {
+  max-width: 100%;
+  height: auto;
+}
+.mx-raiz :is(a, button, summary):focus-visible {
+  outline: 2px solid var(--mx-b-marca);
+  outline-offset: 2px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .mx-js .mx-raiz .mx-rev:not(.mx-vis) {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  .mx-js .mx-raiz .mx-rev {
+    transition: opacity .4s cubic-bezier(.22, 1, .36, 1) var(--mx-atraso, 0ms), transform .4s cubic-bezier(.22, 1, .36, 1) var(--mx-atraso, 0ms);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mx-js .mx-raiz .mx-rev:not(.mx-vis) {
+    opacity: 0;
+  }
+  .mx-js .mx-raiz .mx-rev {
+    transition: opacity .2s linear;
+  }
+}
+.mx-raiz .mx-sec__eyebrow {
+  margin: 0 0 .5rem;
+  font-family: var(--mx-b-letra);
+  font-size: .9375rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--mx-b-marca);
+}
+.mx-raiz .mx-sec__h2 {
+  margin: 0 0 .75rem;
+  font-family: var(--mx-b-letra-titulo);
+  font-size: clamp(1.5rem, 1.2rem + 1.35vw, 2.25rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -.01em;
+  color: var(--m-texto);
+}
+.mx-raiz .mx-sec__sub {
+  margin: 0 0 1.25rem;
+  font-family: var(--mx-b-letra);
+  font-size: clamp(1rem, .96rem + .25vw, 1.125rem);
+  line-height: 1.6;
+  color: var(--m-texto-suave);
+  max-width: 60ch;
+}
+.mx-raiz .mx-b {
+  margin: 0 0 1rem;
+  font-family: var(--mx-b-letra);
+}
+.mx-raiz .mx-b:last-child {
+  margin-bottom: 0;
+}
+.mx-raiz .mx-b:has(+ .mx-b-fonte) {
+  margin-bottom: .5rem;
+}
+.mx-raiz .mx-icone {
+  flex: 0 0 1.125rem;
+  width: 1.125rem;
+  height: 1.125rem;
+  margin-top: .125rem;
+  color: var(--mx-b-marca);
+}
+.mx-raiz .mx-icone--check,
+.mx-raiz .mx-icone--ok {
+  color: var(--mx-b-ok);
+}
+.mx-raiz .mx-icone--x {
+  color: var(--mx-b-nao);
+}
+.mx-raiz .mx-icone--alerta {
+  color: var(--mx-b-atencao);
+}
+.mx-raiz .mx-b-texto > p {
+  font-size: clamp(1rem, .97rem + .2vw, 1.0625rem);
+  line-height: 1.72;
+  color: var(--mx-b-texto);
+  max-width: 66ch;
+  margin: 0 0 1rem;
+}
+.mx-raiz .mx-b-texto > p:last-child {
+  margin-bottom: 0;
+}
+.mx-raiz .mx-b :is(strong, b) {
+  color: var(--mx-b-forte);
+  font-weight: 700;
+}
+.mx-raiz .mx-b em {
+  font-style: normal;
+  color: var(--mx-b-marca);
+}
+.mx-raiz .mx-b a:not([class]) {
+  color: var(--mx-b-marca);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.mx-raiz .mx-b code {
+  font-family: var(--m-f-mono, ui-monospace, monospace);
+  font-size: .92em;
+}
+.mx-raiz .mx-b-citavel {
+  position: relative;
+  background: var(--mx-b-fundo);
+  border: 1px solid var(--mx-b-borda);
+  border-radius: var(--mx-b-raio);
+  padding: clamp(1rem, .8rem + .9vw, 1.5rem) clamp(1rem, .8rem + .9vw, 1.75rem) clamp(1rem, .8rem + .9vw, 1.5rem) clamp(1.125rem, .9rem + 1vw, 1.875rem);
+  max-width: 68ch;
+}
+.mx-raiz .mx-b-citavel::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .875rem;
+  bottom: .875rem;
+  width: 3px;
+  border-radius: 0 3px 3px 0;
+  background: var(--mx-b-marca);
+}
+.mx-raiz .mx-b-citavel p {
+  font-size: clamp(1.0625rem, 1rem + .3vw, 1.1875rem);
+  line-height: 1.62;
+  font-weight: 500;
+  color: var(--mx-b-forte);
+  margin: 0;
+}
+.mx-raiz .mx-b-dados {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .625rem;
+  list-style: none;
+  padding: 0;
+}
+.mx-raiz .mx-b-dados[data-n="3"] {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+@media (min-width: 48rem) {
+  .mx-raiz .mx-b-dados {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: .875rem;
+  }
+  .mx-raiz .mx-b-dados:is([data-n="3"], [data-n="6"], [data-n="9"]) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .mx-raiz .mx-b-dados:is([data-n="5"], [data-n="10"]) {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+  .mx-raiz .mx-b-dados[data-n="2"] {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.mx-raiz .mx-b-dado {
+  background: var(--mx-b-fundo);
+  border: 1px solid var(--mx-b-borda);
+  border-radius: var(--mx-b-raio);
+  padding: clamp(.8125rem, .7rem + .5vw, 1.125rem);
+  min-width: 0;
+  height: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-content: start;
+  gap: .1875rem;
+}
+.mx-raiz .mx-b-dado > * {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.mx-raiz .mx-b-numeros .mx-b-dado {
+  text-align: center;
+  justify-items: center;
+}
+.mx-raiz .mx-b-dado__rotulo {
+  order: -1;
+  font-size: .875rem;
+  font-weight: 600;
+  color: var(--mx-b-suave);
+  line-height: 1.3;
+}
+.mx-raiz .mx-b-dado__valor {
+  font-family: var(--mx-b-letra-titulo);
+  font-size: clamp(1.25rem, 1.05rem + .8vw, 1.875rem);
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--mx-b-forte);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -.01em;
+}
+.mx-raiz .mx-b-ficha .mx-b-dado__valor {
+  font-size: 1.25rem;
+}
+.mx-raiz .mx-b-dado__apoio {
+  font-size: .8125rem;
+  line-height: 1.4;
+  color: var(--mx-b-suave);
+}
+.mx-raiz :is(.mx-b-cartoes, .mx-b-naoe) {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .625rem;
+  list-style: none;
+  padding: 0;
+}
+@media (min-width: 48rem) {
+  .mx-raiz :is(.mx-b-cartoes, .mx-b-naoe) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: .875rem;
+  }
+  .mx-raiz :is(.mx-b-cartoes, .mx-b-naoe):is([data-n="2"], [data-n="4"], [data-n="7"]) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .mx-raiz :is(.mx-b-cartoes, .mx-b-naoe)[data-n="8"] {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .mx-raiz :is(.mx-b-cartoes, .mx-b-naoe)[data-n="7"] > li:last-child {
+    grid-column: 1 / -1;
+  }
+}
+.mx-raiz .mx-b-cartao {
+  background: var(--mx-b-fundo);
+  border: 1px solid var(--mx-b-borda);
+  border-radius: var(--mx-b-raio);
+  padding: clamp(.875rem, .75rem + .5vw, 1.25rem);
+  min-width: 0;
+  height: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-content: start;
+  gap: .375rem;
+}
+.mx-raiz .mx-b-cartao > * {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.mx-raiz .mx-b-cartao--naoe {
+  border-left: 3px solid var(--mx-b-nao);
+}
+.mx-raiz .mx-b-cartao__titulo {
+  display: flex;
+  align-items: flex-start;
+  gap: .5rem;
+  font-family: var(--mx-b-letra-titulo);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--mx-b-forte);
+  margin: 0;
+}
+.mx-raiz .mx-b-cartao__titulo > span {
+  min-width: 0;
+}
+.mx-raiz .mx-b-cartao__texto {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--mx-b-texto);
+  margin: 0;
+}
+@media (max-width: 22.49rem) {
+  .mx-raiz .mx-b-cartao {
+    padding: .625rem;
+  }
+  .mx-raiz .mx-b-cartao__texto {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphenate-limit-chars: 8 4 3;
+  }
+}
+@media (max-width: 47.99rem) {
+  .mx-raiz :is(.mx-b-dados:not([data-n="3"]), .mx-b-cartoes, .mx-b-naoe) > li:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+}
+.mx-raiz .mx-b-passos {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: .5rem;
+  list-style: none;
+  padding: 0;
+}
+@media (min-width: 48rem) {
+  .mx-raiz .mx-b-passos {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: .875rem;
+  }
+  .mx-raiz .mx-b-passos:is([data-n="2"], [data-n="4"]) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.mx-raiz .mx-b-passo {
+  background: var(--mx-b-fundo);
+  border: 1px solid var(--mx-b-borda);
+  border-radius: var(--mx-b-raio);
+  padding: clamp(.75rem, .65rem + .4vw, 1.125rem);
+  min-width: 0;
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-content: start;
+  column-gap: .75rem;
+  row-gap: .25rem;
+}
+.mx-raiz .mx-b-passo > * {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.mx-raiz .mx-b-passo__n {
+  grid-row: 1 / span 2;
+  align-self: start;
+  font-family: var(--mx-b-letra-titulo);
+  font-size: 1.375rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--mx-b-marca);
+  font-variant-numeric: tabular-nums;
+}
+.mx-raiz .mx-b-passo__titulo {
+  font-family: var(--mx-b-letra-titulo);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--mx-b-forte);
+  margin: 0;
+}
+.mx-raiz .mx-b-passo__texto {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--mx-b-texto);
+  margin: 0;
+}
+@media (min-width: 48rem) {
+  .mx-raiz .mx-b-passo {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: .3125rem;
+  }
+  .mx-raiz .mx-b-passo__n {
+    grid-row: auto;
+    font-size: 1.25rem;
+  }
+}
+.mx-raiz .mx-b-tabela-box {
+  max-width: 100%;
+}
+.mx-raiz .mx-b-tabela {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--mx-b-letra);
+}
+@media (max-width: 47.99rem) {
+  .mx-raiz .mx-b-tabela,
+  .mx-raiz .mx-b-tabela tbody {
+    display: block;
+    width: 100%;
+  }
+  .mx-raiz .mx-b-tabela thead {
+    position: absolute;
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .mx-raiz .mx-b-tabela tr {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: .375rem .75rem;
+    background: var(--mx-b-fundo);
+    border: 1px solid var(--mx-b-borda);
+    border-radius: var(--mx-b-raio);
+    padding: .8125rem .875rem;
+    margin-bottom: .5rem;
+  }
+  .mx-raiz .mx-b-tabela tr:last-child {
+    margin-bottom: 0;
+  }
+  .mx-raiz .mx-b-tabela[data-cel-cols="2"] tr {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .mx-raiz .mx-b-tabela[data-cel-cols="3"] tr {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .mx-raiz .mx-b-tabela[data-cel-cols="4"] tr {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .mx-raiz .mx-b-tabela[data-cel-cols="5"] tr {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+  .mx-raiz .mx-b-tabela td {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    align-content: start;
+    gap: .125rem;
+    min-width: 0;
+    padding: 0;
+    border: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--mx-b-texto);
+    overflow-wrap: anywhere;
+  }
+  .mx-raiz .mx-b-tabela td::before {
+    content: attr(data-rotulo);
+    font-size: .8125rem;
+    font-weight: 700;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    color: var(--mx-b-suave);
+  }
+  .mx-raiz .mx-b-tabela td:first-child {
+    font-weight: 700;
+    color: var(--mx-b-forte);
+  }
+}
+@media (min-width: 48rem) {
+  .mx-raiz .mx-b-tabela {
+    background: var(--mx-b-fundo);
+    border: 1px solid var(--mx-b-borda);
+    border-radius: var(--mx-b-raio);
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: clip;
+    font-size: 1rem;
+  }
+  .mx-raiz .mx-b-tabela :is(th, td) {
+    padding: .75rem .875rem;
+    text-align: left;
+    border-bottom: 1px solid var(--mx-b-borda);
+    vertical-align: top;
+    line-height: 1.5;
+    color: var(--mx-b-texto);
+  }
+  .mx-raiz .mx-b-tabela thead th {
+    font-size: .8125rem;
+    font-weight: 700;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    color: var(--mx-b-suave);
+    border-bottom-color: color-mix(in srgb, var(--mx-b-marca) 32%, transparent);
+  }
+  .mx-raiz .mx-b-tabela tbody tr:last-child td {
+    border-bottom: 0;
+  }
+  .mx-raiz .mx-b-tabela tbody td:first-child {
+    font-weight: 700;
+    color: var(--mx-b-forte);
+  }
+}
+.mx-raiz .mx-b-aviso {
+  display: flex;
+  gap: .75rem;
+  align-items: flex-start;
+  background: color-mix(in srgb, var(--mx-b-atencao) 9%, var(--mx-b-fundo));
+  border: 1px solid color-mix(in srgb, var(--mx-b-atencao) 30%, transparent);
+  border-left: 3px solid var(--mx-b-atencao);
+  border-radius: var(--mx-b-raio);
+  padding: clamp(.875rem, .75rem + .5vw, 1.125rem);
+}
+.mx-raiz .mx-b-aviso p {
+  min-width: 0;
+  font-size: 1rem;
+  line-height: 1.62;
+  color: var(--mx-b-texto);
+  margin: 0;
+  max-width: 66ch;
+}
+.mx-raiz .mx-b-lista {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: .5rem;
+  max-width: 66ch;
+}
+.mx-raiz .mx-b-lista--curta {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 1rem;
+  max-width: 40rem;
+}
+.mx-raiz .mx-b-lista > li {
+  position: relative;
+  min-width: 0;
+  padding-left: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.62;
+  color: var(--mx-b-texto);
+}
+.mx-raiz .mx-b-lista > li::before {
+  content: "";
+  position: absolute;
+  left: .3125rem;
+  top: .6875rem;
+  width: .375rem;
+  height: .375rem;
+  border-radius: 50%;
+  background: var(--mx-b-marca);
+}
+.mx-raiz .mx-b-fonte {
+  margin: 0 0 1rem;
+  font-family: var(--mx-b-letra);
+  font-size: .8125rem;
+  line-height: 1.5;
+  color: var(--mx-b-suave);
+  overflow-wrap: anywhere;
+}
+.mx-raiz .mx-b-fonte:last-child {
+  margin-bottom: 0;
+}
+.mx-raiz .mx-b-fonte a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.mx-raiz .mx-migalha ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 .5rem;
+  font-family: var(--mx-b-letra);
+  font-size: .875rem;
+  line-height: 1.4;
+  color: var(--m-texto-fraco);
+}
+.mx-raiz .mx-migalha li {
+  min-width: 0;
+}
+.mx-raiz .mx-migalha li + li::before {
+  content: "/";
+  margin-right: .5rem;
+  opacity: .6;
+}
+.mx-raiz .mx-migalha a {
+  color: inherit;
+  text-decoration: none;
+  min-height: 44px;
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+.mx-raiz .mx-migalha [aria-current] {
+  color: var(--m-texto-suave);
+}
+.mx-raiz .mx-indep {
+  margin: 0;
+  font-family: var(--mx-b-letra);
+  font-size: .875rem;
+  line-height: 1.5;
+  color: var(--m-texto-fraco);
+  max-width: 70ch;
+}
+.mx-raiz .mx-indep a {
+  color: var(--m-texto-suave);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.mx-raiz .mx-indep strong {
+  color: var(--m-texto-suave);
+}
+.mx-raiz .mx-faq__lista {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: .5rem;
+}
+@media (min-width: 48rem) {
+  .mx-raiz .mx-faq__lista {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: .75rem;
+  }
+}
+.mx-raiz .mx-faq__item {
+  min-width: 0;
+  background: var(--mx-b-fundo);
+  border: 1px solid var(--mx-b-borda);
+  border-radius: var(--mx-b-raio);
+}
+.mx-raiz .mx-faq__item[hidden] {
+  display: none;
+}
+.mx-raiz .mx-faq__q {
+  display: block;
+  list-style: none;
+  cursor: pointer;
+  min-height: 44px;
+  padding: .875rem 3rem .875rem 1rem;
+  position: relative;
+  font-family: var(--mx-b-letra-titulo);
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: var(--mx-b-forte);
+  transition: color .2s ease;
+}
+.mx-raiz .mx-faq__q::-webkit-details-marker {
+  display: none;
+}
+.mx-raiz .mx-faq__q::after {
+  content: "+";
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--mx-b-marca);
+  transition: transform .2s ease;
+}
+.mx-raiz .mx-faq__item[open] .mx-faq__q::after {
+  transform: translateY(-50%) rotate(45deg);
+}
+.mx-raiz .mx-faq__a {
+  padding: 0 1rem 1rem;
+  font-family: var(--mx-b-letra);
+}
+.mx-raiz .mx-faq__a p {
+  margin: 0 0 .75rem;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--mx-b-texto);
+}
+.mx-raiz .mx-faq__a p:last-child {
+  margin-bottom: 0;
+}
+.mx-raiz .mx-faq__mais {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.mx-raiz .mx-faq__mais[hidden] {
+  display: none;
+}
+.mx-raiz [data-mx-faq-mais] {
+  min-height: 44px;
+  padding: .625rem 1.25rem;
+  border-radius: var(--m-raio-botao, 999px);
+  border: 1px solid var(--mx-b-borda);
+  background: transparent;
+  color: var(--mx-b-forte);
+  font: 600 .9375rem/1.2 var(--mx-b-letra);
+  cursor: pointer;
+  transition:
+    transform .15s ease,
+    border-color .2s ease,
+    color .2s ease;
+}
+.mx-raiz [data-mx-faq-mais]:active {
+  transform: scale(.98);
+}
+@media (hover: hover) and (pointer: fine) {
+  .mx-raiz .mx-faq__q:hover {
+    color: var(--mx-b-marca);
+  }
+  .mx-raiz [data-mx-faq-mais]:hover {
+    border-color: var(--mx-b-marca);
+    color: var(--mx-b-marca);
+  }
+  .mx-raiz .mx-fecho__fontes a:hover {
+    color: var(--m-texto);
+  }
+}
+.mx-raiz .mx-fecho {
+  padding-block: clamp(1.75rem, 1.45rem + 1.4vw, 2.75rem);
+  background: var(--m-fundo-2, var(--m-fundo));
+  border-top: 1px solid var(--m-borda);
+  font-family: var(--mx-b-letra);
+}
+.mx-raiz .mx-fecho__wrap {
+  width: min(100% - 2rem, 72rem);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+}
+.mx-raiz .mx-fecho__h2 {
+  margin: 0;
+  font-family: var(--mx-b-letra-titulo);
+  font-size: clamp(1.125rem, 1rem + .5vw, 1.375rem);
+  font-weight: 700;
+  color: var(--m-texto);
+}
+.mx-raiz .mx-fecho__fontes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 1rem;
+}
+@media (min-width: 48rem) {
+  .mx-raiz .mx-fecho__fontes {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+.mx-raiz .mx-fecho__fontes li {
+  min-width: 0;
+}
+.mx-raiz .mx-fecho__fontes a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: .875rem;
+  line-height: 1.4;
+  color: var(--m-texto-suave);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  overflow-wrap: anywhere;
+  transition: color .2s ease;
+}
+.mx-raiz .mx-fecho__aviso {
+  display: flex;
+  gap: .75rem;
+  align-items: flex-start;
+  padding: 1rem;
+  border: 1px solid var(--m-borda);
+  border-radius: var(--m-raio, 12px);
+  background: var(--m-superficie);
+}
+.mx-raiz .mx-fecho__aviso p {
+  min-width: 0;
+  margin: 0;
+  font-size: .9375rem;
+  line-height: 1.6;
+  color: var(--m-texto-suave);
+  max-width: 80ch;
+}
+.mx-raiz .mx-fecho__aviso a {
+  color: var(--m-texto);
+  text-decoration: underline;
+}
+.mx-raiz .mx-fecho__aviso strong {
+  color: var(--m-texto);
+}
+body:has(.mx-raiz) > .ticker {
+  background-color: var(--bg, #04090f);
+}
+:where(.mx-u04d40, .mx-u04d40 *:not(svg *), .mx-u04d40 ::before, .mx-u04d40 ::after) {
+  all: revert;
+}
+.mx-u04d40 {
+  --mx-rem: 16px;
+  font-size: var(--mx-rem);
+  display: block;
+  position: relative;
+  isolation: isolate;
+}
+.mx-u04d40 *,
+.mx-u04d40 ::before,
+.mx-u04d40 ::after {
+  box-sizing: border-box;
+}
+.mx-u04d40 {
+  --verde: var(--m-destaque);
+  --verde-fundo: var(--m-primaria);
+  --verde-vivo: var(--m-primaria-2);
+  --verde-claro: var(--m-superficie-2);
+  --verde-botao: var(--m-primaria);
+  --verde-luz: var(--m-destaque);
+  --app-barra: var(--m-destaque);
+  --trigo: var(--m-destaque);
+  --vermelho: var(--m-baixa);
+  --vermelho-claro: var(--m-superficie-2);
+  --tinta: var(--m-texto);
+  --tinta-2: var(--m-texto-suave);
+  --tinta-3: var(--m-texto-fraco);
+  --papel: var(--m-claro, transparent);
+  --superficie: var(--m-superficie);
+  --linha: var(--m-borda);
+  --noite: var(--m-fundo-2);
+  --noite-2: var(--m-fundo-2);
+  --f-titulo: var(--m-f-titulo);
+  --f-texto: var(--m-f-corpo);
+  --t-h1: clamp(calc(2 * var(--mx-rem)), calc(1.25 * var(--mx-rem)) + 3.35vw, calc(4.25 * var(--mx-rem)));
+  --t-h2: clamp(calc(1.75 * var(--mx-rem)), calc(1.28 * var(--mx-rem)) + 2.1vw, calc(2.875 * var(--mx-rem)));
+  --t-h3: clamp(calc(1.125 * var(--mx-rem)), calc(1.03 * var(--mx-rem)) + .42vw, calc(1.375 * var(--mx-rem)));
+  --t-corpo: clamp(calc(1.0625 * var(--mx-rem)), calc(1.01 * var(--mx-rem)) + .23vw, calc(1.1875 * var(--mx-rem)));
+  --t-apoio: clamp(calc(1.0625 * var(--mx-rem)), calc(.97 * var(--mx-rem)) + .45vw, calc(1.3125 * var(--mx-rem)));
+  --t-peq: calc(.9375 * var(--mx-rem));
+  --gutter: clamp(calc(1 * var(--mx-rem)), calc(.6 * var(--mx-rem)) + 1.8vw, calc(2 * var(--mx-rem)));
+  --casca: calc(75 * var(--mx-rem));
+  --sp-sec: clamp(calc(3 * var(--mx-rem)), calc(1.9 * var(--mx-rem)) + 4.8vw, calc(6 * var(--mx-rem)));
+  --raio: clamp(calc(1.125 * var(--mx-rem)), calc(.9 * var(--mx-rem)) + .9vw, calc(1.75 * var(--mx-rem)));
+  --sombra-1: 0 1px 2px rgb(0 0 0 / .05), 0 8px 22px -14px rgb(0 0 0 / .2);
+  --sombra-2: 0 2px 4px rgb(0 0 0 / .05), 0 22px 46px -24px rgb(0 0 0 / .34);
+  --saida: cubic-bezier(.22, 1, .36, 1);
+  --topo-h: calc(4.5 * var(--mx-rem));
+  color-scheme: light;
+}
+.mx-u04d40 *,
+.mx-u04d40 *::before,
+.mx-u04d40 *::after {
+  box-sizing: border-box;
+}
+.mx-u04d40 * {
+  margin: 0;
+}
+.mx-u04d40 {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-padding-top: calc(var(--topo-h) + calc(.75 * var(--mx-rem)));
+}
+@media (prefers-reduced-motion: no-preference) {
+  .mx-u04d40 {
+    scroll-behavior: smooth;
+  }
+}
+.mx-u04d40 {
+  min-height: 100svh;
+  background: var(--papel);
+  color: var(--tinta);
+  font-family: var(--f-texto);
+  font-size: calc(1.0625 * var(--mx-rem));
+  font-size: var(--t-corpo);
+  line-height: 1.55;
+  font-feature-settings: "kern";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+.mx-u04d40 img,
+.mx-u04d40 video,
+.mx-u04d40 svg,
+.mx-u04d40 picture {
+  display: block;
+  max-width: 100%;
+}
+.mx-u04d40 img,
+.mx-u04d40 video {
+  height: auto;
+}
+.mx-u04d40 svg {
+  fill: none;
+}
+.mx-u04d40 a {
+  color: inherit;
+  text-decoration: none;
+}
+.mx-u04d40 button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+.mx-u04d40 ul,
+.mx-u04d40 ol {
+  list-style: none;
+  padding: 0;
+}
+.mx-u04d40 h1,
+.mx-u04d40 h2,
+.mx-u04d40 h3,
+.mx-u04d40 h4 {
+  font-family: var(--f-titulo);
+  line-height: 1.15;
+  letter-spacing: -.02em;
+  text-wrap: balance;
+}
+.mx-u04d40 h3,
+.mx-u04d40 h4 {
+  line-height: 1.28;
+}
+.mx-u04d40 p {
+  text-wrap: pretty;
+}
+.mx-u04d40 :focus-visible {
+  outline: 3px solid var(--verde-vivo);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+.mx-u04d40 .pular {
+  position: absolute;
+  left: calc(1 * var(--mx-rem));
+  top: calc(-4 * var(--mx-rem));
+  z-index: 100;
+  padding: calc(.75 * var(--mx-rem)) calc(1 * var(--mx-rem));
+  border-radius: 12px;
+  background: var(--superficie);
+  color: var(--tinta);
+  font-weight: 600;
+}
+.mx-u04d40 .pular:focus {
+  top: calc(1 * var(--mx-rem));
+}
+.mx-u04d40 .casca {
+  width: 100%;
+  max-width: var(--casca);
+  margin-left: auto;
+  margin-right: auto;
+}
+.mx-u04d40 .heroi,
+.mx-u04d40 .secao,
+.mx-u04d40 .chamada,
+.mx-u04d40 .rodape,
+.mx-u04d40 .artigo-pagina {
+  padding-left: calc(1 * var(--mx-rem));
+  padding-right: calc(1 * var(--mx-rem));
+}
+@media (min-width: 48rem) {
+  .mx-u04d40 .heroi,
+  .mx-u04d40 .secao,
+  .mx-u04d40 .chamada,
+  .mx-u04d40 .rodape,
+  .mx-u04d40 .artigo-pagina {
+    padding-left: calc(1.5 * var(--mx-rem));
+    padding-right: calc(1.5 * var(--mx-rem));
+  }
+}
+@media (min-width: 80rem) {
+  .mx-u04d40 .heroi,
+  .mx-u04d40 .secao,
+  .mx-u04d40 .chamada,
+  .mx-u04d40 .rodape,
+  .mx-u04d40 .artigo-pagina {
+    padding-left: calc(2 * var(--mx-rem));
+    padding-right: calc(2 * var(--mx-rem));
+  }
+}
+.mx-u04d40 .so-cel {
+  display: none;
+}
+@media (max-width: 47.99rem) {
+  .mx-u04d40 .so-pc {
+    display: none;
+  }
+  .mx-u04d40 .so-cel {
+    display: inline;
+  }
+}
+.mx-u04d40 .botao {
+  --altura: calc(3 * var(--mx-rem));
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: calc(.55 * var(--mx-rem));
+  min-height: var(--altura);
+  min-width: 44px;
+  padding: calc(.6 * var(--mx-rem)) calc(1.35 * var(--mx-rem));
+  border-radius: 999px;
+  font-family: var(--f-titulo);
+  font-size: calc(1 * var(--mx-rem));
+  font-weight: 650;
+  letter-spacing: -.005em;
+  white-space: nowrap;
+  transition:
+    transform .18s var(--saida),
+    background-color .2s ease,
+    border-color .2s ease,
+    box-shadow .2s ease;
+}
+.mx-u04d40 .botao svg {
+  width: calc(1.25 * var(--mx-rem));
+  height: calc(1.25 * var(--mx-rem));
+  flex: none;
+}
+.mx-u04d40 .botao--grande {
+  --altura: calc(3.5 * var(--mx-rem));
+  padding: calc(.75 * var(--mx-rem)) calc(1.75 * var(--mx-rem));
+  font-size: calc(1.0625 * var(--mx-rem));
+}
+.mx-u04d40 .botao--cheio {
+  color: var(--m-sobre-primaria);
+  background:
+    var(--verde-botao) linear-gradient(
+      100deg,
+      transparent 30%,
+      var(--m-primaria-2) 50%,
+      transparent 70%) -160% 0 / 55% 100% no-repeat;
+  box-shadow: 0 10px 22px -14px rgb(0 0 0 / .55), inset 0 1px 0 color-mix(in srgb, var(--m-sobre-primaria) 14%, transparent);
+}
+.mx-u04d40 .botao--vidro {
+  color: var(--m-sobre-primaria);
+  background: color-mix(in srgb, var(--m-fundo) 50%, transparent);
+  border: 1px solid color-mix(in srgb, var(--m-sobre-primaria) 38%, transparent);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+.mx-u04d40 .botao--linha {
+  color: var(--verde-fundo);
+  border: 1.5px solid currentColor;
+  background: transparent;
+}
+.mx-u04d40 .botao:active {
+  transform: scale(.98);
+}
+@media (hover: hover) and (pointer: fine) {
+  .mx-u04d40 .botao--cheio:hover {
+    background-color: var(--verde-fundo);
+    transform: translateY(-2px);
+    box-shadow: 0 14px 26px -16px rgb(0 0 0 / .6), inset 0 1px 0 color-mix(in srgb, var(--m-sobre-primaria) 14%, transparent);
+  }
+  .mx-u04d40 .botao--vidro:hover {
+    background-color: color-mix(in srgb, var(--m-fundo) 66%, transparent);
+    border-color: color-mix(in srgb, var(--m-sobre-primaria) 60%, transparent);
+    transform: translateY(-2px);
+  }
+  .mx-u04d40 .botao--linha:hover {
+    background: var(--verde-claro);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .mx-u04d40 .botao--cheio {
+    animation: mx-u04d40-brilho 5.5s ease-in-out 2.2s infinite;
+  }
+}
+@keyframes mx-u04d40-brilho {
+  0%, 62% {
+    background-position: -160% 0;
+  }
+  100% {
+    background-position: 260% 0;
+  }
+}
+.mx-u04d40 .topo {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 60;
+  padding-top: env(safe-area-inset-top);
+  container-type: inline-size;
+  pointer-events: none;
+}
+.mx-u04d40 .topo__barra {
+  --largo: calc(88 * var(--mx-rem));
+  --capsula: min(100cqw - 2 * var(--gutter) - calc(3 * var(--mx-rem)), calc(66 * var(--mx-rem)));
+  --dx: calc((min(100cqw - 2 * var(--gutter), var(--largo)) - var(--capsula)) / 2);
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: calc(1 * var(--mx-rem));
+  width: min(100% - 2 * var(--gutter), var(--largo));
+  height: var(--topo-h);
+  margin-inline: auto;
+  pointer-events: auto;
+  transition: translate .5s var(--saida);
+}
+.mx-u04d40 .topo__barra::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--m-superficie) 95%, transparent);
+  border: 1px solid color-mix(in srgb, var(--m-primaria) 9%, transparent);
+  box-shadow: 0 12px 30px -20px rgb(0 0 0 / .4);
+  -webkit-backdrop-filter: blur(14px) saturate(160%);
+  backdrop-filter: blur(14px) saturate(160%);
+  opacity: 0;
+  clip-path: inset(0 0 round 999px);
+  transition: opacity .35s ease, clip-path .5s var(--saida);
+}
+.mx-u04d40 .topo__marca {
+  grid-column: 1;
+  justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  transition: translate .5s var(--saida);
+}
+.mx-u04d40 .topo__marca img {
+  width: auto;
+  height: calc(2.5 * var(--mx-rem));
+  border-radius: calc(.5 * var(--mx-rem));
+}
+.mx-u04d40 .topo__nav {
+  display: none;
+  grid-column: 2;
+}
+.mx-u04d40 .topo__acoes {
+  grid-column: 3;
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: calc(.35 * var(--mx-rem));
+  transition: translate .5s var(--saida);
+}
+.mx-u04d40 .topo__entrar {
+  display: none;
+  align-items: center;
+  min-height: 44px;
+  padding: calc(.5 * var(--mx-rem)) calc(.9 * var(--mx-rem));
+  border-radius: 999px;
+  font-family: var(--f-titulo);
+  font-weight: 600;
+  font-size: calc(.9875 * var(--mx-rem));
+  color: var(--m-sobre-primaria);
+  transition: color .3s ease, background-color .2s ease;
+}
+.mx-u04d40 .topo__baixar {
+  --altura: calc(2.75 * var(--mx-rem));
+  padding: calc(.5 * var(--mx-rem)) calc(1.1 * var(--mx-rem));
+  font-size: calc(.9375 * var(--mx-rem));
+}
+.mx-u04d40 .topo__menu {
+  display: inline-grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  color: var(--m-sobre-primaria);
+  transition: color .3s ease, background-color .2s ease;
+}
+.mx-u04d40 .topo__menu svg {
+  width: calc(1.5 * var(--mx-rem));
+  height: calc(1.5 * var(--mx-rem));
+}
+.mx-u04d40 .topo__menu [data-fechar] {
+  display: none;
+}
+.mx-u04d40 .topo__menu[aria-expanded=true] [data-abrir] {
+  display: none;
+}
+.mx-u04d40 .topo__menu[aria-expanded=true] [data-fechar] {
+  display: block;
+}
+.mx-u04d40 .topo__painel {
+  position: absolute;
+  top: calc(100% + calc(.5 * var(--mx-rem)));
+  left: 0;
+  right: 0;
+  display: grid;
+  gap: calc(.25 * var(--mx-rem));
+  padding: calc(.75 * var(--mx-rem));
+  border-radius: calc(1.5 * var(--mx-rem));
+  background: color-mix(in srgb, var(--m-superficie) 97%, transparent);
+  border: 1px solid color-mix(in srgb, var(--m-primaria) 10%, transparent);
+  box-shadow: var(--sombra-2);
+  pointer-events: auto;
+}
+.mx-u04d40 .topo__painel[hidden] {
+  display: none;
+}
+.mx-u04d40 .topo__painel a {
+  display: flex;
+  align-items: center;
+  min-height: calc(3 * var(--mx-rem));
+  padding: calc(.6 * var(--mx-rem)) calc(1 * var(--mx-rem));
+  border-radius: calc(.875 * var(--mx-rem));
+  font-family: var(--f-titulo);
+  font-weight: 600;
+  color: var(--tinta);
+}
+.mx-u04d40 .topo__painel a:active {
+  background: var(--verde-claro);
+}
+.mx-u04d40 .topo__painel .botao {
+  justify-content: center;
+  margin-top: calc(.25 * var(--mx-rem));
+  color: var(--m-sobre-primaria);
+}
+.mx-u04d40 .topo--flutua .topo__barra {
+  translate: 0 calc(.625 * var(--mx-rem));
+}
+.mx-u04d40 .topo--flutua .topo__barra::before {
+  opacity: 1;
+  clip-path: inset(calc(.375 * var(--mx-rem)) var(--dx) round 999px);
+}
+.mx-u04d40 .topo--flutua .topo__marca {
+  translate: calc(var(--dx) + calc(.5 * var(--mx-rem))) 0;
+}
+.mx-u04d40 .topo--flutua .topo__acoes {
+  translate: calc(-1 * var(--dx) - calc(.375 * var(--mx-rem))) 0;
+}
+.mx-u04d40 .topo--flutua .topo__entrar,
+.mx-u04d40 .topo--flutua .topo__menu {
+  color: var(--tinta);
+}
+.mx-u04d40 .topo--flutua .topo__nav a {
+  color: var(--tinta);
+}
+@media (min-width: 62rem) {
+  .mx-u04d40 .topo__nav {
+    display: flex;
+    align-items: center;
+    gap: calc(.125 * var(--mx-rem));
+  }
+  .mx-u04d40 .topo__nav a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: calc(.5 * var(--mx-rem)) calc(.6 * var(--mx-rem));
+    border-radius: 999px;
+    font-family: var(--f-titulo);
+    font-size: calc(.9875 * var(--mx-rem));
+    font-weight: 500;
+    color: color-mix(in srgb, var(--m-sobre-primaria) 90%, transparent);
+    white-space: nowrap;
+    transition: color .3s ease, background-color .2s ease;
+  }
+  .mx-u04d40 .topo__nav a[aria-current=true] {
+    color: var(--verde-luz);
+  }
+  .mx-u04d40 .topo--flutua .topo__nav a[aria-current=true] {
+    color: var(--verde-fundo);
+  }
+  .mx-u04d40 .topo__entrar {
+    display: inline-flex;
+  }
+  .mx-u04d40 .topo__menu {
+    display: none;
+  }
+  .mx-u04d40 .topo__painel {
+    display: none !important;
+  }
+}
+@media (min-width: 80rem) {
+  .mx-u04d40 .topo__nav a {
+    padding-left: calc(.85 * var(--mx-rem));
+    padding-right: calc(.85 * var(--mx-rem));
+  }
+}
+@media (min-width: 62rem) and (hover: hover) and (pointer: fine) {
+  .mx-u04d40 .topo__nav a:hover,
+  .mx-u04d40 .topo__entrar:hover {
+    color: var(--m-sobre-primaria);
+    background: color-mix(in srgb, var(--m-superficie) 12%, transparent);
+  }
+  .mx-u04d40 .topo--flutua .topo__nav a:hover,
+  .mx-u04d40 .topo--flutua .topo__entrar:hover {
+    color: var(--verde-fundo);
+    background: var(--verde-claro);
+  }
+}
+@media (max-width: 22.4rem) {
+  .mx-u04d40 .topo__baixar {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mx-u04d40 .topo__barra,
+  .mx-u04d40 .topo__barra::before,
+  .mx-u04d40 .topo__marca,
+  .mx-u04d40 .topo__acoes {
+    transition: none;
+  }
+}
+.mx-u04d40 .celular {
+  --u: calc(100cqw / 441);
+  position: relative;
+  width: var(--celular-w, calc(18 * var(--mx-rem)));
+  aspect-ratio: 441 / 916;
+  container-type: inline-size;
+  flex: none;
+}
+.mx-u04d40 .celular__corpo {
+  position: absolute;
+  left: calc(var(--u) * 1);
+  top: calc(var(--u) * .5);
+  width: calc(var(--u) * 436);
+  height: calc(var(--u) * 915);
+  border-radius: calc(var(--u) * 40);
+  background:
+    linear-gradient(
+      140deg,
+      #e7e9ea 0%,
+      #a9aeb0 16%,
+      #f6f7f7 33%,
+      #8f9597 55%,
+      #dcdfe0 76%,
+      #9fa4a6 100%);
+  box-shadow:
+    inset 0 0 0 calc(var(--u) * .7) rgb(0 0 0 / .28),
+    0 calc(var(--u) * 40) calc(var(--u) * 70) calc(var(--u) * -26) rgb(0 0 0 / .55),
+    0 calc(var(--u) * 14) calc(var(--u) * 26) calc(var(--u) * -14) rgb(0 0 0 / .4);
+}
+.mx-u04d40 .celular__corpo::before {
+  content: "";
+  position: absolute;
+  inset: calc(var(--u) * 5.5);
+  border-radius: calc(var(--u) * 34.5);
+  background: #0b0d0c;
+  box-shadow: inset 0 0 0 calc(var(--u) * .8) color-mix(in srgb, var(--m-sobre-primaria) 7%, transparent);
+}
+.mx-u04d40 .celular__tela {
+  position: absolute;
+  left: calc(var(--u) * 12);
+  top: calc(var(--u) * 11.5);
+  width: calc(var(--u) * 412);
+  height: calc(var(--u) * 891);
+  border-radius: calc(var(--u) * 30);
+  overflow: clip;
+  background: var(--m-superficie);
+  display: grid;
+  grid-template-rows: calc(var(--u) * 36) minmax(0, 1fr) calc(var(--u) * 20);
+}
+.mx-u04d40 .celular__tela::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      118deg,
+      color-mix(in srgb, var(--m-superficie) 9%, transparent),
+      transparent 36%);
+}
+.mx-u04d40 .celular__hora::before {
+  content: "7:30";
+}
+.mx-u04d40 .celular__status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: calc(var(--u) * 3) calc(var(--u) * 22) 0 calc(var(--u) * 26);
+  background: var(--app-barra);
+  color: var(--m-sobre-primaria);
+  font: 600 calc(var(--u) * 14) / 1 var(--f-texto);
+  letter-spacing: .01em;
+}
+.mx-u04d40 .celular__icones {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--u) * 5);
+}
+.mx-u04d40 .celular__icones svg {
+  height: calc(var(--u) * 11.5);
+  width: auto;
+  fill: currentColor;
+}
+.mx-u04d40 .celular__icones .i-wifi {
+  width: calc(var(--u) * 15);
+}
+.mx-u04d40 .celular__icones .i-rede {
+  width: calc(var(--u) * 14);
+}
+.mx-u04d40 .celular__icones .i-bateria {
+  width: calc(var(--u) * 23);
+}
+.mx-u04d40 .celular__app {
+  position: relative;
+  overflow: clip;
+  background: var(--m-superficie);
+}
+.mx-u04d40 .celular__app img,
+.mx-u04d40 .celular__app video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 0;
+}
+.mx-u04d40 .celular__video {
+  opacity: 0;
+  transition: opacity .6s ease;
+}
+.mx-u04d40 .celular__video.toca {
+  opacity: 1;
+}
+.mx-u04d40 .celular__gestos {
+  display: grid;
+  place-items: center;
+  background: var(--app-barra);
+}
+.mx-u04d40 .celular__gestos::before {
+  content: "";
+  width: calc(var(--u) * 108);
+  height: calc(var(--u) * 4);
+  border-radius: 99px;
+  background: color-mix(in srgb, var(--m-superficie) 82%, transparent);
+}
+.mx-u04d40 .celular__camera {
+  position: absolute;
+  left: calc(var(--u) * 212.4);
+  top: calc(var(--u) * 29.1);
+  width: calc(var(--u) * 11.2);
+  height: calc(var(--u) * 11.2);
+  border-radius: 50%;
+  background:
+    radial-gradient(
+      circle at 36% 34%,
+      #3a4652 0 14%,
+      #0e1214 42%,
+      #050707 100%);
+  box-shadow: 0 0 0 calc(var(--u) * 1.4) #050707;
+}
+.mx-u04d40 .celular__botao {
+  position: absolute;
+  left: calc(var(--u) * 436.4);
+  width: calc(var(--u) * 3.4);
+  border-radius: 0 calc(var(--u) * 2) calc(var(--u) * 2) 0;
+  background:
+    linear-gradient(
+      90deg,
+      #7f8486,
+      #d5d8d9 70%,
+      #a2a6a8);
+}
+.mx-u04d40 .celular__botao--volume {
+  top: calc(var(--u) * 174);
+  height: calc(var(--u) * 108);
+}
+.mx-u04d40 .celular__botao--liga {
+  top: calc(var(--u) * 338);
+  height: calc(var(--u) * 72);
+}
+.mx-u04d40 .heroi {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
+  min-height: calc(100svh / var(--zoom, 1));
+  padding-top: calc(var(--topo-h) + env(safe-area-inset-top));
+  color: var(--m-sobre-primaria);
+  background: var(--noite);
+  overflow: clip;
+}
+.mx-u04d40 .heroi__fundo {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+.mx-u04d40 .heroi__fundo picture,
+.mx-u04d40 .heroi__capa,
+.mx-u04d40 .heroi__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.mx-u04d40 .heroi__capa,
+.mx-u04d40 .heroi__video {
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+.mx-u04d40 .heroi__video {
+  opacity: 0;
+  transition: opacity 1.1s ease;
+}
+.mx-u04d40 .heroi__video.toca {
+  opacity: 1;
+}
+.mx-u04d40 .heroi__veu {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      95% 62% at 34% 46%,
+      color-mix(in srgb, var(--m-fundo) 72%, transparent),
+      color-mix(in srgb, var(--m-fundo) 46%, transparent) 55%,
+      transparent 85%),
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--m-fundo) 66%, transparent) 0%,
+      color-mix(in srgb, var(--m-fundo) 32%, transparent) 18%,
+      color-mix(in srgb, var(--m-fundo) 36%, transparent) 62%,
+      color-mix(in srgb, var(--m-fundo) 88%, transparent) 100%);
+}
+.mx-u04d40 .heroi__veu::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: .07;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+}
+.mx-u04d40 .heroi__grade {
+  --heroi-celular: clamp(calc(8.5 * var(--mx-rem)), 35vw, calc(12.5 * var(--mx-rem)));
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) var(--heroi-celular);
+  column-gap: clamp(calc(.875 * var(--mx-rem)), 3vw, calc(1.5 * var(--mx-rem)));
+  align-content: center;
+  align-items: center;
+  padding-block: clamp(calc(1 * var(--mx-rem)), 4svh, calc(2.5 * var(--mx-rem)));
+}
+.mx-u04d40 .heroi__texto {
+  display: contents;
+}
+.mx-u04d40 .selo-nota {
+  grid-column: 1 / -1;
+  justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  gap: calc(.55 * var(--mx-rem));
+  min-height: calc(2.25 * var(--mx-rem));
+  margin-bottom: calc(1 * var(--mx-rem));
+  padding: calc(.45 * var(--mx-rem)) calc(.95 * var(--mx-rem)) calc(.45 * var(--mx-rem)) calc(.8 * var(--mx-rem));
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--m-fundo) 66%, transparent);
+  border: 1px solid color-mix(in srgb, var(--m-sobre-primaria) 20%, transparent);
+  font-size: calc(.9375 * var(--mx-rem));
+  color: color-mix(in srgb, var(--m-sobre-primaria) 94%, transparent);
+}
+.mx-u04d40 .selo-nota strong {
+  font-family: var(--f-titulo);
+  font-weight: 700;
+  color: var(--m-sobre-primaria);
+}
+.mx-u04d40 .selo-nota__estrelas {
+  display: inline-flex;
+  gap: 1px;
+  color: var(--trigo);
+}
+.mx-u04d40 .selo-nota__estrelas svg {
+  width: calc(.95 * var(--mx-rem));
+  height: calc(.95 * var(--mx-rem));
+}
+.mx-u04d40 .heroi h1 {
+  grid-column: 1;
+  grid-row: 2;
+  font-size: calc(3 * var(--mx-rem));
+  font-size: var(--t-h1);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -.03em;
+  text-shadow: 0 2px 20px rgb(0 0 0 / .3);
+}
+.mx-u04d40 .heroi h1 .destaque {
+  color: var(--verde-luz);
+}
+.mx-u04d40 .heroi__apoio {
+  grid-column: 1;
+  grid-row: 3;
+  align-self: start;
+  margin-top: calc(.85 * var(--mx-rem));
+  font-size: var(--t-apoio);
+  line-height: 1.5;
+  color: color-mix(in srgb, var(--m-sobre-primaria) 90%, transparent);
+  max-width: calc(34 * var(--mx-rem));
+}
+.mx-u04d40 .heroi__aparelho {
+  grid-column: 2;
+  grid-row: 2 / span 2;
+  display: grid;
+  justify-items: center;
+}
+.mx-u04d40 .heroi__acoes {
+  grid-column: 1 / -1;
+  grid-row: 4;
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(.625 * var(--mx-rem));
+  margin-top: calc(1.5 * var(--mx-rem));
+}
+.mx-u04d40 .heroi__acoes .botao {
+  flex: 1 1 calc(9.5 * var(--mx-rem));
+}
+.mx-u04d40 .heroi__nota {
+  grid-column: 1 / -1;
+  grid-row: 5;
+  margin-top: calc(.85 * var(--mx-rem));
+  font-size: calc(.9375 * var(--mx-rem));
+  color: color-mix(in srgb, var(--m-sobre-primaria) 82%, transparent);
+}
+.mx-u04d40 .celular--heroi {
+  width: 100%;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .mx-u04d40 .celular--heroi {
+    animation: mx-u04d40-flutuar 7s ease-in-out infinite;
+  }
+}
+@keyframes mx-u04d40-flutuar {
+  0%, 100% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 0 calc(-.75 * var(--mx-rem));
+  }
+}
+.mx-u04d40 .heroi__fatos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: calc(.5 * var(--mx-rem)) calc(.75 * var(--mx-rem));
+  padding-top: calc(1 * var(--mx-rem));
+  padding-bottom: calc(1.25 * var(--mx-rem));
+  padding-bottom: calc(calc(1.25 * var(--mx-rem)) + env(safe-area-inset-bottom));
+  border-top: 1px solid color-mix(in srgb, var(--m-sobre-primaria) 16%, transparent);
+}
+.mx-u04d40 .heroi__fatos li {
+  display: flex;
+  align-items: center;
+  gap: calc(.55 * var(--mx-rem));
+  font-size: calc(.875 * var(--mx-rem));
+  line-height: 1.3;
+  color: color-mix(in srgb, var(--m-sobre-primaria) 86%, transparent);
+}
+.mx-u04d40 .heroi__fatos strong {
+  color: var(--m-sobre-primaria);
+  font-weight: 600;
+}
+.mx-u04d40 .heroi__fatos svg {
+  width: calc(1.25 * var(--mx-rem));
+  height: calc(1.25 * var(--mx-rem));
+  flex: none;
+  color: var(--verde-luz);
+}
+@media (min-width: 48rem) {
+  .mx-u04d40 .heroi__grade {
+    --heroi-celular: clamp(calc(13 * var(--mx-rem)), min(26vw, (100svh / var(--zoom, 1) - calc(16.5 * var(--mx-rem))) * .4814), calc(20.5 * var(--mx-rem)));
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
+    column-gap: clamp(calc(2 * var(--mx-rem)), 4vw, calc(4 * var(--mx-rem)));
+  }
+  .mx-u04d40 .heroi__texto {
+    display: block;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .mx-u04d40 .heroi__aparelho {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .mx-u04d40 .celular--heroi {
+    width: var(--heroi-celular);
+  }
+  .mx-u04d40 .heroi__acoes .botao {
+    flex: 0 0 auto;
+  }
+  .mx-u04d40 .heroi__veu {
+    background:
+      radial-gradient(
+        48% 62% at 24% 52%,
+        color-mix(in srgb, var(--m-fundo) 56%, transparent),
+        transparent 100%),
+      linear-gradient(
+        90deg,
+        color-mix(in srgb, var(--m-fundo) 78%, transparent) 0%,
+        color-mix(in srgb, var(--m-fundo) 60%, transparent) 36%,
+        color-mix(in srgb, var(--m-fundo) 20%, transparent) 60%,
+        color-mix(in srgb, var(--m-fundo) 6%, transparent) 100%),
+      linear-gradient(
+        180deg,
+        color-mix(in srgb, var(--m-fundo) 66%, transparent) 0%,
+        color-mix(in srgb, var(--m-fundo) 48%, transparent) 8%,
+        transparent 21%,
+        transparent 72%,
+        color-mix(in srgb, var(--m-fundo) 82%, transparent) 100%);
+  }
+  .mx-u04d40 .heroi__fatos {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: calc(1 * var(--mx-rem));
+    padding-top: calc(1.1 * var(--mx-rem));
+    padding-bottom: calc(1.5 * var(--mx-rem));
+  }
+  .mx-u04d40 .heroi__fatos li {
+    font-size: calc(.9375 * var(--mx-rem));
+  }
+}
+@media (min-width: 48rem) and (max-width: 79.99rem) {
+  .mx-u04d40 .heroi__veu {
+    background:
+      radial-gradient(
+        60% 68% at 28% 52%,
+        color-mix(in srgb, var(--m-fundo) 62%, transparent),
+        transparent 100%),
+      linear-gradient(
+        90deg,
+        color-mix(in srgb, var(--m-fundo) 80%, transparent) 0%,
+        color-mix(in srgb, var(--m-fundo) 68%, transparent) 44%,
+        color-mix(in srgb, var(--m-fundo) 30%, transparent) 66%,
+        color-mix(in srgb, var(--m-fundo) 8%, transparent) 100%),
+      linear-gradient(
+        180deg,
+        color-mix(in srgb, var(--m-fundo) 66%, transparent) 0%,
+        color-mix(in srgb, var(--m-fundo) 48%, transparent) 8%,
+        transparent 21%,
+        transparent 72%,
+        color-mix(in srgb, var(--m-fundo) 82%, transparent) 100%);
+  }
+}
+@media (min-width: 48rem) and (orientation: portrait) {
+  .mx-u04d40 .heroi__grade {
+    --heroi-celular: clamp(calc(13 * var(--mx-rem)), min(38vw, (100svh / var(--zoom, 1) - calc(18 * var(--mx-rem))) * .4814), calc(26 * var(--mx-rem)));
+  }
+}
+.mx-u04d40 .secao {
+  padding-top: calc(4 * var(--mx-rem));
+  padding-bottom: calc(4 * var(--mx-rem));
+  padding-top: var(--sp-sec);
+  padding-bottom: var(--sp-sec);
+}
+.mx-u04d40 .cabeca {
+  max-width: calc(46 * var(--mx-rem));
+  margin: 0 auto clamp(calc(1.75 * var(--mx-rem)), calc(1.2 * var(--mx-rem)) + 2.4vw, calc(3.25 * var(--mx-rem)));
+  text-align: center;
+}
+.mx-u04d40 .cabeca h2 {
+  font-size: calc(2.25 * var(--mx-rem));
+  font-size: var(--t-h2);
+  font-weight: 800;
+  color: var(--tinta);
+}
+.mx-u04d40 .cabeca p {
+  margin-top: calc(.65 * var(--mx-rem));
+  font-size: var(--t-apoio);
+  line-height: 1.5;
+  color: var(--tinta-2);
+}
+.mx-u04d40 .cabeca--esquerda {
+  text-align: left;
+  margin-inline: 0;
+}
+.mx-u04d40 .icone {
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  width: calc(2.75 * var(--mx-rem));
+  height: calc(2.75 * var(--mx-rem));
+  border-radius: calc(.9 * var(--mx-rem));
+  background: var(--verde);
+  color: var(--m-sobre-primaria);
+}
+.mx-u04d40 .icone svg {
+  width: calc(1.375 * var(--mx-rem));
+  height: calc(1.375 * var(--mx-rem));
+}
+.mx-u04d40 .icone--claro {
+  background: var(--verde-claro);
+  color: var(--verde-fundo);
+}
+.mx-u04d40 .cena-legenda {
+  font-size: calc(.875 * var(--mx-rem));
+  line-height: 1.35;
+  color: var(--tinta-3);
+}
+.mx-u04d40 .parceiro {
+  background: var(--papel);
+}
+.mx-u04d40 .parceiro__par {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(calc(.625 * var(--mx-rem)), 2vw, calc(2 * var(--mx-rem)));
+}
+.mx-u04d40 .lado {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  overflow: clip;
+  border-radius: var(--raio);
+  background: var(--superficie);
+  border: 1px solid var(--linha);
+  box-shadow: var(--sombra-1);
+}
+.mx-u04d40 .lado__cena {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: clip;
+}
+.mx-u04d40 .lado__cena img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mx-u04d40 .lado--antes .lado__cena img {
+  filter: saturate(.72) contrast(1.02);
+}
+.mx-u04d40 .lado__cena--app {
+  display: grid;
+  justify-items: center;
+  background:
+    radial-gradient(
+      90% 80% at 50% 100%,
+      var(--m-primaria) 0%,
+      var(--verde) 45%,
+      var(--verde-fundo) 100%);
+}
+.mx-u04d40 .lado__cena--app .celular {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  width: 52%;
+  translate: -50% 0;
+}
+.mx-u04d40 .lado__cena--app .cena-legenda {
+  position: absolute;
+  left: calc(.75 * var(--mx-rem));
+  right: calc(.75 * var(--mx-rem));
+  bottom: calc(.75 * var(--mx-rem));
+  z-index: 2;
+  padding: calc(.45 * var(--mx-rem)) calc(.75 * var(--mx-rem));
+  border-radius: calc(.75 * var(--mx-rem));
+  background: color-mix(in srgb, var(--m-superficie) 94%, transparent);
+  color: var(--tinta-2);
+  box-shadow: var(--sombra-1);
+}
+.mx-u04d40 .lado__texto {
+  padding: clamp(calc(.9 * var(--mx-rem)), calc(.6 * var(--mx-rem)) + 1.4vw, calc(1.75 * var(--mx-rem)));
+}
+.mx-u04d40 .lado__texto h3 {
+  display: flex;
+  align-items: center;
+  gap: calc(.6 * var(--mx-rem));
+  font-size: calc(1.25 * var(--mx-rem));
+  font-size: var(--t-h3);
+  font-weight: 700;
+  color: var(--tinta);
+}
+.mx-u04d40 .marca-x,
+.mx-u04d40 .marca-v {
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  width: calc(2 * var(--mx-rem));
+  height: calc(2 * var(--mx-rem));
+  border-radius: 50%;
+}
+.mx-u04d40 .marca-x {
+  background: var(--vermelho-claro);
+  color: var(--vermelho);
+}
+.mx-u04d40 .marca-v {
+  background: var(--verde-claro);
+  color: var(--verde);
+}
+.mx-u04d40 .marca-x svg,
+.mx-u04d40 .marca-v svg {
+  width: calc(1.05 * var(--mx-rem));
+  height: calc(1.05 * var(--mx-rem));
+}
+.mx-u04d40 .lista {
+  display: grid;
+  gap: calc(.55 * var(--mx-rem));
+  margin-top: calc(1 * var(--mx-rem));
+}
+.mx-u04d40 .lista li {
+  position: relative;
+  padding-left: calc(1.5 * var(--mx-rem));
+  line-height: 1.4;
+  color: var(--tinta-2);
+}
+.mx-u04d40 .lista li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .5em;
+  width: calc(.55 * var(--mx-rem));
+  height: calc(.55 * var(--mx-rem));
+  border-radius: 50%;
+}
+.mx-u04d40 .lista--nao li::before {
+  background: var(--m-baixa);
+}
+.mx-u04d40 .lista--sim li::before {
+  background: var(--verde-vivo);
+}
+.mx-u04d40 .lista--sim li {
+  color: var(--tinta);
+}
+@media (max-width: 47.99rem) {
+  .mx-u04d40 .lado__cena--app .cena-legenda {
+    display: none;
+  }
+  .mx-u04d40 .lado__texto h3 {
+    font-size: calc(1.0625 * var(--mx-rem));
+    gap: calc(.45 * var(--mx-rem));
+  }
+  .mx-u04d40 .marca-x,
+  .mx-u04d40 .marca-v {
+    width: calc(1.6 * var(--mx-rem));
+    height: calc(1.6 * var(--mx-rem));
+  }
+  .mx-u04d40 .lista {
+    gap: calc(.45 * var(--mx-rem));
+    margin-top: calc(.75 * var(--mx-rem));
+  }
+  .mx-u04d40 .lista li {
+    padding-left: calc(1.05 * var(--mx-rem));
+    font-size: calc(.9375 * var(--mx-rem));
+  }
+  .mx-u04d40 .lista li::before {
+    width: calc(.45 * var(--mx-rem));
+    height: calc(.45 * var(--mx-rem));
+  }
+}
+.mx-u04d40 .funcoes {
+  background: var(--superficie);
+}
+.mx-u04d40 .bento {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: calc(.75 * var(--mx-rem));
+}
+.mx-u04d40 .cartao {
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  gap: calc(.6 * var(--mx-rem));
+  align-content: start;
+  padding: clamp(calc(1 * var(--mx-rem)), calc(.75 * var(--mx-rem)) + 1vw, calc(1.75 * var(--mx-rem)));
+  border-radius: var(--raio);
+  background: var(--papel);
+  border: 1px solid var(--linha);
+  overflow: clip;
+}
+.mx-u04d40 .cartao__topo {
+  display: flex;
+  align-items: center;
+  gap: calc(.75 * var(--mx-rem));
+}
+.mx-u04d40 .cartao h3 {
+  font-size: calc(1.25 * var(--mx-rem));
+  font-size: var(--t-h3);
+  font-weight: 700;
+  color: var(--tinta);
+}
+.mx-u04d40 .cartao > p {
+  color: var(--tinta-2);
+  line-height: 1.45;
+}
+.mx-u04d40 .cartao--a,
+.mx-u04d40 .cartao--b {
+  grid-column: 1 / -1;
+}
+.mx-u04d40 .cartao--c,
+.mx-u04d40 .cartao--d,
+.mx-u04d40 .cartao--e {
+  grid-column: 1 / -1;
+}
+.mx-u04d40 .recorte {
+  align-self: end;
+  margin-top: calc(.4 * var(--mx-rem));
+}
+.mx-u04d40 .recorte img {
+  width: 100%;
+  max-width: calc(30 * var(--mx-rem));
+  margin-inline: auto;
+  border-radius: calc(.875 * var(--mx-rem));
+  background: var(--m-superficie);
+  box-shadow: var(--sombra-2);
+  border: 1px solid color-mix(in srgb, var(--m-primaria) 8%, transparent);
+}
+.mx-u04d40 .recorte--alto {
+  max-height: calc(15 * var(--mx-rem));
+  overflow: clip;
+  border-radius: calc(.875 * var(--mx-rem));
+  -webkit-mask-image:
+    linear-gradient(
+      180deg,
+      #000 72%,
+      transparent);
+  mask-image:
+    linear-gradient(
+      180deg,
+      #000 72%,
+      transparent);
+}
+.mx-u04d40 .cartao > .aviso-do-app,
+.mx-u04d40 .aviso-do-app {
+  display: flex;
+  gap: calc(.7 * var(--mx-rem));
+  align-items: flex-start;
+  align-self: end;
+  margin-top: calc(.4 * var(--mx-rem));
+  padding: calc(1 * var(--mx-rem)) calc(1.1 * var(--mx-rem));
+  border-radius: calc(.875 * var(--mx-rem));
+  background: var(--noite);
+  color: var(--m-sobre-primaria);
+  font-size: calc(1 * var(--mx-rem));
+  line-height: 1.45;
+  box-shadow: var(--sombra-2);
+}
+.mx-u04d40 .palco-cena {
+  align-self: end;
+  display: grid;
+  place-content: center;
+  gap: calc(.6 * var(--mx-rem));
+  height: calc(12.5 * var(--mx-rem));
+  margin-top: calc(.4 * var(--mx-rem));
+  padding: calc(1 * var(--mx-rem));
+  border-radius: calc(.9 * var(--mx-rem));
+  background: var(--m-superficie-2);
+  overflow: clip;
+}
+.mx-u04d40 .palco-cena .recorte {
+  align-self: auto;
+  margin-top: 0;
+}
+.mx-u04d40 .palco-cena .recorte img {
+  max-width: 100%;
+  box-shadow: var(--sombra-1);
+}
+.mx-u04d40 .palco-cena--alto {
+  height: calc(14 * var(--mx-rem));
+}
+.mx-u04d40 .palco-cena--alto .recorte img {
+  width: min(100%, calc(30 * var(--mx-rem)));
+}
+.mx-u04d40 .palco-cena--topo {
+  place-content: start center;
+  padding-bottom: 0;
+  -webkit-mask-image:
+    linear-gradient(
+      180deg,
+      #000 70%,
+      transparent);
+  mask-image:
+    linear-gradient(
+      180deg,
+      #000 70%,
+      transparent);
+}
+.mx-u04d40 .palco-cena .aviso-do-app {
+  margin-top: 0;
+}
+.mx-u04d40 .aviso-do-app svg {
+  width: calc(1.375 * var(--mx-rem));
+  height: calc(1.375 * var(--mx-rem));
+  flex: none;
+  margin-top: calc(.1 * var(--mx-rem));
+  color: var(--verde-luz);
+}
+.mx-u04d40 .aviso-do-app strong {
+  display: block;
+  margin-bottom: calc(.15 * var(--mx-rem));
+  font-family: var(--f-titulo);
+  font-weight: 650;
+  color: var(--m-sobre-primaria);
+}
+@media (max-width: 47.99rem) {
+  .mx-u04d40 .cartao {
+    gap: calc(.5 * var(--mx-rem));
+    padding: calc(.95 * var(--mx-rem));
+  }
+  .mx-u04d40 .cartao--a > p,
+  .mx-u04d40 .cartao--b > p,
+  .mx-u04d40 .cartao--c > p,
+  .mx-u04d40 .cartao--e > p:not(.aviso-do-app) {
+    display: none;
+  }
+  .mx-u04d40 .cartao--d,
+  .mx-u04d40 .cartao--e {
+    grid-column: span 1;
+  }
+  .mx-u04d40 .cartao--d .palco-cena {
+    display: none;
+  }
+  .mx-u04d40 .palco-cena,
+  .mx-u04d40 .palco-cena--alto {
+    height: auto;
+    padding: calc(.75 * var(--mx-rem));
+  }
+  .mx-u04d40 .palco-cena--topo {
+    height: calc(11 * var(--mx-rem));
+  }
+  .mx-u04d40 .cartao--d > p {
+    font-size: calc(.9375 * var(--mx-rem));
+  }
+  .mx-u04d40 .recorte--alto {
+    max-height: calc(11 * var(--mx-rem));
+  }
+  .mx-u04d40 .cartao--e .palco-cena {
+    padding: 0;
+    background: none;
+  }
+  .mx-u04d40 .cartao h3 {
+    font-size: calc(1.0625 * var(--mx-rem));
+  }
+  .mx-u04d40 .cartao .icone {
+    width: calc(2.25 * var(--mx-rem));
+    height: calc(2.25 * var(--mx-rem));
+    border-radius: calc(.75 * var(--mx-rem));
+  }
+  .mx-u04d40 .cartao .icone svg {
+    width: calc(1.15 * var(--mx-rem));
+    height: calc(1.15 * var(--mx-rem));
+  }
+  .mx-u04d40 .cartao--e .aviso-do-app {
+    flex-direction: column;
+    gap: calc(.4 * var(--mx-rem));
+    padding: calc(.85 * var(--mx-rem));
+    font-size: calc(.9375 * var(--mx-rem));
+  }
+}
+@media (min-width: 48rem) {
+  .mx-u04d40 .bento {
+    gap: calc(1 * var(--mx-rem));
+  }
+  .mx-u04d40 .cartao--a,
+  .mx-u04d40 .cartao--b,
+  .mx-u04d40 .cartao--c,
+  .mx-u04d40 .cartao--d {
+    grid-column: span 1;
+  }
+  .mx-u04d40 .cartao--e {
+    grid-column: 1 / -1;
+  }
+  .mx-u04d40 .recorte--alto {
+    max-height: calc(15 * var(--mx-rem));
+  }
+}
+@media (min-width: 48rem) and (max-width: 63.99rem) {
+  .mx-u04d40 .cartao--e .palco-cena {
+    height: auto;
+    padding: calc(1.5 * var(--mx-rem));
+  }
+}
+@media (min-width: 64rem) {
+  .mx-u04d40 .bento {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+  .mx-u04d40 .cartao--a,
+  .mx-u04d40 .cartao--b {
+    grid-column: span 3;
+  }
+  .mx-u04d40 .cartao--c,
+  .mx-u04d40 .cartao--d,
+  .mx-u04d40 .cartao--e {
+    grid-column: span 2;
+  }
+}
+.mx-u04d40 .por-dentro {
+  position: relative;
+  isolation: isolate;
+  background: var(--noite);
+  color: var(--m-sobre-primaria);
+  overflow: clip;
+}
+.mx-u04d40 .por-dentro::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(
+      60% 55% at 50% 30%,
+      color-mix(in srgb, var(--m-primaria-2) 28%, transparent),
+      transparent 70%),
+    radial-gradient(
+      40% 40% at 85% 90%,
+      color-mix(in srgb, var(--m-destaque) 10%, transparent),
+      transparent 70%);
+}
+.mx-u04d40 .por-dentro .cabeca h2 {
+  color: var(--m-sobre-primaria);
+}
+.mx-u04d40 .por-dentro .cabeca p {
+  color: color-mix(in srgb, var(--m-sobre-primaria) 80%, transparent);
+}
+.mx-u04d40 .galeria {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: calc(1.5 * var(--mx-rem)) calc(.75 * var(--mx-rem));
+  justify-items: center;
+}
+.mx-u04d40 .galeria__item {
+  display: grid;
+  justify-items: center;
+  gap: calc(.9 * var(--mx-rem));
+  width: 100%;
+}
+.mx-u04d40 .celular--galeria {
+  --celular-w: min(100%, calc(13 * var(--mx-rem)));
+  width: min(100%, calc(13 * var(--mx-rem)));
+}
+.mx-u04d40 .galeria__legenda {
+  text-align: center;
+  font-size: calc(.9375 * var(--mx-rem));
+  line-height: 1.35;
+  color: color-mix(in srgb, var(--m-sobre-primaria) 78%, transparent);
+}
+.mx-u04d40 .galeria__legenda strong {
+  display: block;
+  margin-bottom: calc(.1 * var(--mx-rem));
+  font-family: var(--f-titulo);
+  font-size: calc(1.0625 * var(--mx-rem));
+  font-weight: 650;
+  color: var(--m-sobre-primaria);
+}
+.mx-u04d40 .galeria__abas {
+  display: none;
+}
+@media (max-width: 47.99rem) {
+  .mx-u04d40 .js .galeria {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .mx-u04d40 .js .galeria__item {
+    grid-area: 1 / 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .45s ease, visibility 0s linear .45s;
+  }
+  .mx-u04d40 .js .galeria__item.ativo {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .45s ease, visibility 0s;
+  }
+  .mx-u04d40 .js .celular--galeria {
+    width: min(70vw, calc(17 * var(--mx-rem)));
+  }
+  .mx-u04d40 .js .galeria__abas {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: calc(.4 * var(--mx-rem));
+    margin-top: calc(1.1 * var(--mx-rem));
+  }
+  .mx-u04d40 .galeria__abas button {
+    position: relative;
+    min-height: 44px;
+    padding: calc(.5 * var(--mx-rem)) calc(.3 * var(--mx-rem));
+    overflow: clip;
+    border-radius: calc(.8 * var(--mx-rem));
+    background: color-mix(in srgb, var(--m-superficie) 8%, transparent);
+    border: 1px solid color-mix(in srgb, var(--m-sobre-primaria) 16%, transparent);
+    color: color-mix(in srgb, var(--m-sobre-primaria) 86%, transparent);
+    font: 600 calc(.875 * var(--mx-rem))/1.35 var(--f-titulo);
+  }
+  .mx-u04d40 .galeria__abas button[aria-selected=true] {
+    background: var(--verde-botao);
+    border-color: transparent;
+    color: var(--m-sobre-primaria);
+  }
+  .mx-u04d40 .galeria__abas button::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    background: var(--verde-vivo);
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  .mx-u04d40 .galeria--roda .galeria__abas button[aria-selected=true]::after {
+    animation: mx-u04d40-progresso var(--passo, 3.6s) linear forwards;
+  }
+}
+@keyframes mx-u04d40-progresso {
+  to {
+    transform: scaleX(1);
+  }
+}
+@media (min-width: 48rem) {
+  .mx-u04d40 .galeria {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: calc(1.5 * var(--mx-rem));
+    align-items: start;
+  }
+  .mx-u04d40 .celular--galeria {
+    --celular-w: min(100%, calc(16.5 * var(--mx-rem)));
+    width: min(100%, calc(16.5 * var(--mx-rem)));
+  }
+  .mx-u04d40 .galeria__item:nth-child(even) {
+    margin-top: calc(2.5 * var(--mx-rem));
+  }
+}
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .mx-u04d40 .celular--galeria {
+    transition: translate .45s var(--saida);
+  }
+  .mx-u04d40 .galeria__item:hover .celular--galeria {
+    translate: 0 calc(-.5 * var(--mx-rem));
+  }
+}
+.mx-u04d40 .beneficios {
+  background: var(--papel);
+}
+.mx-u04d40 .beneficios__grade {
+  display: grid;
+  gap: clamp(calc(1.75 * var(--mx-rem)), 4vw, calc(4 * var(--mx-rem)));
+  align-items: center;
+}
+.mx-u04d40 .beneficios__lista {
+  display: grid;
+  gap: calc(1.1 * var(--mx-rem));
+}
+.mx-u04d40 .beneficios__lista li {
+  display: flex;
+  gap: calc(.9 * var(--mx-rem));
+  align-items: flex-start;
+}
+.mx-u04d40 .beneficios__lista h3 {
+  font-size: calc(1.25 * var(--mx-rem));
+  font-size: var(--t-h3);
+  font-weight: 700;
+  color: var(--tinta);
+}
+.mx-u04d40 .beneficios__lista p {
+  margin-top: calc(.2 * var(--mx-rem));
+  color: var(--tinta-2);
+  line-height: 1.45;
+}
+.mx-u04d40 .beneficios__cena {
+  padding-top: calc(1.25 * var(--mx-rem));
+}
+.mx-u04d40 .beneficios__palco {
+  position: relative;
+  margin-bottom: calc(3.25 * var(--mx-rem));
+}
+.mx-u04d40 .beneficios__foto {
+  width: 100%;
+  aspect-ratio: 16 / 11;
+  object-fit: cover;
+  border-radius: var(--raio);
+  box-shadow: var(--sombra-2);
+}
+.mx-u04d40 .flutua {
+  position: absolute;
+  width: min(72%, calc(19 * var(--mx-rem)));
+}
+.mx-u04d40 .flutua img {
+  width: 100%;
+  border-radius: calc(.9 * var(--mx-rem));
+  box-shadow: 0 2px 6px rgb(0 0 0 / .08), 0 26px 48px -24px rgb(0 0 0 / .5);
+}
+.mx-u04d40 .flutua--a {
+  left: calc(-.25 * var(--mx-rem));
+  bottom: calc(-1.6 * var(--mx-rem));
+}
+.mx-u04d40 .flutua--b {
+  right: calc(-.25 * var(--mx-rem));
+  top: calc(-1.25 * var(--mx-rem));
+}
+.mx-u04d40 .cena-legenda--sobre {
+  margin-top: calc(.9 * var(--mx-rem));
+  text-align: right;
+  color: var(--tinta-2);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .mx-u04d40 .flutua--a {
+    animation: mx-u04d40-flutuar 8s ease-in-out infinite;
+  }
+  .mx-u04d40 .flutua--b {
+    animation: mx-u04d40-flutuar 8s ease-in-out 1.3s infinite;
+  }
+}
+@media (min-width: 48rem) {
+  .mx-u04d40 .beneficios__grade {
+    grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+  }
+  .mx-u04d40 .flutua--a {
+    left: calc(-1.75 * var(--mx-rem));
+    bottom: calc(-1.75 * var(--mx-rem));
+  }
+  .mx-u04d40 .flutua--b {
+    right: calc(-1.5 * var(--mx-rem));
+    top: calc(-1.5 * var(--mx-rem));
+  }
+}
+.mx-u04d40 .passos {
+  background: var(--superficie);
+}
+.mx-u04d40 .passos__lista {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: calc(1.5 * var(--mx-rem)) calc(.75 * var(--mx-rem));
+  counter-reset: passo;
+}
+.mx-u04d40 .passo {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  text-align: center;
+  gap: calc(.35 * var(--mx-rem));
+}
+.mx-u04d40 .passo__num {
+  display: grid;
+  place-items: center;
+  width: calc(3.25 * var(--mx-rem));
+  height: calc(3.25 * var(--mx-rem));
+  margin-bottom: calc(.35 * var(--mx-rem));
+  border-radius: 50%;
+  background: var(--verde);
+  color: var(--m-sobre-primaria);
+  font-family: var(--f-titulo);
+  font-size: calc(1.375 * var(--mx-rem));
+  font-weight: 700;
+  box-shadow: 0 0 0 calc(.4 * var(--mx-rem)) var(--superficie), 0 0 0 calc(calc(.4 * var(--mx-rem)) + 1px) var(--linha);
+}
+.mx-u04d40 .passo__cena {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: calc(6.25 * var(--mx-rem));
+  margin: calc(.35 * var(--mx-rem)) 0 calc(.45 * var(--mx-rem));
+  padding: calc(.6 * var(--mx-rem));
+  border-radius: calc(1 * var(--mx-rem));
+  background: var(--papel);
+  border: 1px solid var(--linha);
+  overflow: clip;
+}
+.mx-u04d40 .passo__cena img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: calc(5 * var(--mx-rem));
+  border-radius: calc(.55 * var(--mx-rem));
+  box-shadow: var(--sombra-1);
+}
+.mx-u04d40 .passo__cena--loja img {
+  box-shadow: none;
+  max-height: calc(4 * var(--mx-rem));
+}
+@media (hover: hover) and (pointer: fine) {
+  .mx-u04d40 .passo__cena--loja {
+    transition: border-color .2s ease;
+  }
+  .mx-u04d40 .passo__cena--loja:hover {
+    border-color: var(--verde-vivo);
+  }
+}
+@media (min-width: 64rem) {
+  .mx-u04d40 .passo__cena {
+    height: calc(8 * var(--mx-rem));
+    padding: calc(.85 * var(--mx-rem));
+  }
+  .mx-u04d40 .passo__cena img {
+    max-height: calc(6.25 * var(--mx-rem));
+  }
+  .mx-u04d40 .passo__cena--loja img {
+    max-height: calc(4.5 * var(--mx-rem));
+  }
+}
+.mx-u04d40 .passo h3 {
+  font-size: calc(1.25 * var(--mx-rem));
+  font-size: var(--t-h3);
+  font-weight: 700;
+  color: var(--tinta);
+}
+.mx-u04d40 .passo p {
+  max-width: calc(15 * var(--mx-rem));
+  font-size: calc(1 * var(--mx-rem));
+  line-height: 1.45;
+  color: var(--tinta-2);
+}
+.mx-u04d40 .passos__acao {
+  display: flex;
+  justify-content: center;
+  margin-top: clamp(calc(1.75 * var(--mx-rem)), 3vw, calc(2.75 * var(--mx-rem)));
+}
+@media (min-width: 48rem) {
+  .mx-u04d40 .passos__lista {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: calc(1.5 * var(--mx-rem));
+  }
+  .mx-u04d40 .passos__lista::before,
+  .mx-u04d40 .passos__lista::after {
+    content: "";
+    position: absolute;
+    top: calc(1.625 * var(--mx-rem));
+    left: 12.5%;
+    right: 12.5%;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--linha);
+  }
+  .mx-u04d40 .passos__lista::after {
+    background: var(--verde-vivo);
+    transform-origin: left center;
+    transform: scaleX(0);
+    transition: transform 1.6s var(--saida) .2s;
+  }
+  .mx-u04d40 .passos__lista.ativo::after {
+    transform: scaleX(1);
+  }
+}
+.mx-u04d40 .para-quem {
+  background: var(--papel);
+}
+.mx-u04d40 .perfis {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: calc(.75 * var(--mx-rem));
+}
+.mx-u04d40 .perfil {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  overflow: clip;
+  border-radius: var(--raio);
+  background: var(--superficie);
+  border: 1px solid var(--linha);
+  box-shadow: var(--sombra-1);
+}
+.mx-u04d40 .perfil__foto {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+.mx-u04d40 .perfil__texto {
+  padding: calc(.85 * var(--mx-rem)) calc(.95 * var(--mx-rem)) calc(1 * var(--mx-rem));
+}
+.mx-u04d40 .perfil__texto h3 {
+  font-size: calc(1.25 * var(--mx-rem));
+  font-size: var(--t-h3);
+  font-weight: 700;
+  color: var(--tinta);
+}
+.mx-u04d40 .perfil__texto p {
+  margin-top: calc(.2 * var(--mx-rem));
+  font-size: calc(.9375 * var(--mx-rem));
+  line-height: 1.4;
+  color: var(--tinta-2);
+}
+.mx-u04d40 .perfil__app {
+  display: none;
+}
+@media (min-width: 48rem) {
+  .mx-u04d40 .perfis {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: calc(1.25 * var(--mx-rem));
+  }
+  .mx-u04d40 .perfil__texto {
+    padding: calc(1.1 * var(--mx-rem)) calc(1.25 * var(--mx-rem)) calc(1.3 * var(--mx-rem));
+  }
+  .mx-u04d40 .perfil__foto {
+    aspect-ratio: 16 / 10;
+  }
+}
+@media (min-width: 64rem) {
+  .mx-u04d40 .perfil__texto {
+    padding-right: calc(10.5 * var(--mx-rem));
+    min-height: calc(7 * var(--mx-rem));
+  }
+  .mx-u04d40 .perfil__app {
+    display: block;
+    position: absolute;
+    right: calc(.9 * var(--mx-rem));
+    bottom: calc(.9 * var(--mx-rem));
+    width: calc(9 * var(--mx-rem));
+  }
+  .mx-u04d40 .perfil__app img {
+    width: 100%;
+    border-radius: calc(.75 * var(--mx-rem));
+    border: 3px solid var(--superficie);
+    box-shadow: 0 18px 34px -18px rgb(0 0 0 / .5);
+  }
+}
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .mx-u04d40 .perfil__foto {
+    transition: scale .6s var(--saida);
+  }
+  .mx-u04d40 .perfil:hover .perfil__foto {
+    scale: 1.04;
+  }
+}
+.mx-u04d40 .avaliacao {
+  background: var(--superficie);
+}
+.mx-u04d40 .depoimento {
+  display: grid;
+  gap: calc(1.25 * var(--mx-rem));
+  max-width: calc(52 * var(--mx-rem));
+  margin-inline: auto;
+  padding: clamp(calc(1.25 * var(--mx-rem)), calc(1 * var(--mx-rem)) + 2vw, calc(2.75 * var(--mx-rem)));
+  border-radius: var(--raio);
+  background: var(--papel);
+  border: 1px solid var(--linha);
+  box-shadow: var(--sombra-1);
+}
+.mx-u04d40 .depoimento__nota {
+  display: flex;
+  align-items: center;
+  gap: calc(.75 * var(--mx-rem));
+  flex-wrap: wrap;
+}
+.mx-u04d40 .depoimento__nota strong {
+  font-family: var(--f-titulo);
+  font-size: clamp(calc(2.5 * var(--mx-rem)), calc(2 * var(--mx-rem)) + 2vw, calc(3.5 * var(--mx-rem)));
+  font-weight: 800;
+  line-height: 1;
+  color: var(--tinta);
+}
+.mx-u04d40 .depoimento__nota .selo-nota__estrelas svg {
+  width: calc(1.35 * var(--mx-rem));
+  height: calc(1.35 * var(--mx-rem));
+}
+.mx-u04d40 .depoimento__nota .selo-nota__estrelas {
+  color: #d79b0b;
+}
+.mx-u04d40 .depoimento__nota > span:last-child {
+  width: 100%;
+  font-size: calc(.9375 * var(--mx-rem));
+  color: var(--tinta-3);
+}
+@media (max-width: 47.99rem) {
+  .mx-u04d40 .depoimento {
+    text-align: center;
+  }
+  .mx-u04d40 .depoimento__nota {
+    flex-direction: column;
+    align-items: center;
+    gap: calc(.45 * var(--mx-rem));
+  }
+  .mx-u04d40 .depoimento figcaption {
+    justify-content: center;
+  }
+}
+.mx-u04d40 .depoimento blockquote p {
+  font-family: var(--f-titulo);
+  font-size: clamp(calc(1.375 * var(--mx-rem)), calc(1.1 * var(--mx-rem)) + 1.2vw, calc(2 * var(--mx-rem)));
+  font-weight: 600;
+  line-height: 1.34;
+  letter-spacing: -.015em;
+  color: var(--tinta);
+}
+.mx-u04d40 .depoimento figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: calc(.75 * var(--mx-rem)) calc(1.5 * var(--mx-rem));
+  padding-top: calc(1 * var(--mx-rem));
+  border-top: 1px solid var(--linha);
+}
+.mx-u04d40 .depoimento__quem {
+  display: grid;
+  font-size: calc(.9375 * var(--mx-rem));
+  line-height: 1.4;
+  color: var(--tinta-3);
+}
+.mx-u04d40 .depoimento__quem strong {
+  font-size: calc(1.0625 * var(--mx-rem));
+  color: var(--tinta);
+}
+.mx-u04d40 .link-seta {
+  display: inline-flex;
+  align-items: center;
+  gap: calc(.4 * var(--mx-rem));
+  min-height: 44px;
+  padding: calc(.5 * var(--mx-rem)) 0;
+  font-family: var(--f-titulo);
+  font-weight: 600;
+  color: var(--verde-fundo);
+}
+.mx-u04d40 .link-seta svg {
+  width: calc(1.15 * var(--mx-rem));
+  height: calc(1.15 * var(--mx-rem));
+  transition: translate .2s var(--saida);
+}
+@media (hover: hover) and (pointer: fine) {
+  .mx-u04d40 .link-seta:hover svg {
+    translate: calc(.25 * var(--mx-rem)) 0;
+  }
+}
+@media (min-width: 48rem) {
+  .mx-u04d40 .depoimento {
+    grid-template-columns: calc(11 * var(--mx-rem)) minmax(0, 1fr);
+    column-gap: calc(2.5 * var(--mx-rem));
+  }
+  .mx-u04d40 .depoimento__nota {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-right: calc(2 * var(--mx-rem));
+    border-right: 1px solid var(--linha);
+  }
+  .mx-u04d40 .depoimento__nota > span:last-child {
+    width: auto;
+  }
+  .mx-u04d40 .depoimento blockquote {
+    align-self: center;
+  }
+  .mx-u04d40 .depoimento figcaption {
+    grid-column: 2;
+  }
+}
+.mx-u04d40 .perguntas {
+  background: var(--papel);
+}
+.mx-u04d40 .faq {
+  display: grid;
+  gap: calc(.625 * var(--mx-rem));
+  align-items: start;
+}
+.mx-u04d40 .faq details {
+  border-radius: calc(1 * var(--mx-rem));
+  background: var(--superficie);
+  border: 1px solid var(--linha);
+}
+.mx-u04d40 .faq details.extra {
+  display: none;
+}
+.mx-u04d40 .faq.aberto details.extra {
+  display: block;
+}
+.mx-u04d40 .faq summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: calc(1 * var(--mx-rem));
+  min-height: calc(3.5 * var(--mx-rem));
+  padding: calc(.9 * var(--mx-rem)) calc(1.1 * var(--mx-rem));
+  cursor: pointer;
+  list-style: none;
+  font-family: var(--f-titulo);
+  font-size: calc(1.0625 * var(--mx-rem));
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--tinta);
+}
+.mx-u04d40 .faq summary::-webkit-details-marker {
+  display: none;
+}
+.mx-u04d40 .faq summary::after {
+  content: "";
+  flex: none;
+  width: calc(1.75 * var(--mx-rem));
+  height: calc(1.75 * var(--mx-rem));
+  border-radius: 50%;
+  background: var(--verde-claro) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 6v12M6 12h12' stroke='%234ba3f0' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E") center / calc(1 * var(--mx-rem)) no-repeat;
+  transition: rotate .3s var(--saida);
+}
+.mx-u04d40 .faq details[open] summary::after {
+  rotate: 45deg;
+}
+.mx-u04d40 .faq details p {
+  padding: 0 calc(1.1 * var(--mx-rem)) calc(1.1 * var(--mx-rem));
+  color: var(--tinta-2);
+  line-height: 1.55;
+}
+.mx-u04d40 .ver-mais {
+  display: flex;
+  margin: calc(1.25 * var(--mx-rem)) auto 0;
+}
+@media (min-width: 48rem) {
+  .mx-u04d40 .faq {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: calc(.875 * var(--mx-rem));
+  }
+}
+.mx-u04d40 .chamada {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  place-items: center;
+  min-height: clamp(calc(26 * var(--mx-rem)), 60svh, calc(38 * var(--mx-rem)));
+  padding-top: calc(4 * var(--mx-rem));
+  padding-bottom: calc(4 * var(--mx-rem));
+  padding-top: var(--sp-sec);
+  padding-bottom: var(--sp-sec);
+  text-align: center;
+  color: var(--m-sobre-primaria);
+  overflow: clip;
+  background: var(--noite);
+}
+.mx-u04d40 .chamada__fundo {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+.mx-u04d40 .chamada__fundo picture {
+  position: absolute;
+  inset: 0;
+}
+.mx-u04d40 .chamada__fundo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mx-u04d40 .chamada__fundo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--m-fundo) 78%, transparent),
+      color-mix(in srgb, var(--m-fundo) 62%, transparent) 45%,
+      color-mix(in srgb, var(--m-fundo) 86%, transparent));
+}
+.mx-u04d40 .chamada__conteudo {
+  max-width: calc(46 * var(--mx-rem));
+}
+.mx-u04d40 .chamada h2 {
+  font-size: calc(2.25 * var(--mx-rem));
+  font-size: var(--t-h2);
+  font-weight: 800;
+}
+.mx-u04d40 .chamada p {
+  margin: calc(.9 * var(--mx-rem)) auto 0;
+  max-width: calc(38 * var(--mx-rem));
+  font-size: var(--t-apoio);
+  color: color-mix(in srgb, var(--m-sobre-primaria) 90%, transparent);
+}
+.mx-u04d40 .chamada .chamada__zap {
+  margin-top: calc(1.1 * var(--mx-rem));
+  font-size: calc(1 * var(--mx-rem));
+}
+.mx-u04d40 .chamada__zap a {
+  display: inline-flex;
+  align-items: center;
+  gap: calc(.4 * var(--mx-rem));
+  min-height: 44px;
+  padding: calc(.4 * var(--mx-rem)) calc(.15 * var(--mx-rem));
+  font-weight: 650;
+  color: var(--m-sobre-primaria);
+  text-decoration: underline;
+  text-underline-offset: .25em;
+  text-decoration-thickness: 1.5px;
+  transition: opacity .2s ease;
+}
+.mx-u04d40 .chamada__zap a svg {
+  width: calc(1.2 * var(--mx-rem));
+  height: calc(1.2 * var(--mx-rem));
+  flex: none;
+}
+.mx-u04d40 .chamada__zap a:active {
+  opacity: .8;
+}
+@media (hover: hover) and (pointer: fine) {
+  .mx-u04d40 .chamada__zap a:hover {
+    text-decoration-color: transparent;
+  }
+}
+.mx-u04d40 .heroi__acoes--centro {
+  justify-content: center;
+}
+.mx-u04d40 .rodape {
+  padding-top: clamp(calc(2.5 * var(--mx-rem)), calc(2 * var(--mx-rem)) + 2vw, calc(4 * var(--mx-rem)));
+  padding-bottom: calc(1.5 * var(--mx-rem));
+  padding-bottom: calc(calc(1.5 * var(--mx-rem)) + env(safe-area-inset-bottom));
+  background: var(--m-fundo);
+  color: color-mix(in srgb, var(--m-sobre-primaria) 80%, transparent);
+}
+.mx-u04d40 .rodape__grade {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: calc(2 * var(--mx-rem)) calc(1.25 * var(--mx-rem));
+}
+.mx-u04d40 .rodape__marca {
+  grid-column: 1 / -1;
+  display: grid;
+  gap: calc(.9 * var(--mx-rem));
+  align-content: start;
+  max-width: calc(26 * var(--mx-rem));
+}
+.mx-u04d40 .rodape__marca picture {
+  justify-self: start;
+}
+.mx-u04d40 .rodape__marca img {
+  width: auto;
+  height: calc(2.75 * var(--mx-rem));
+  border-radius: calc(.5 * var(--mx-rem));
+}
+.mx-u04d40 .rodape__marca p {
+  font-size: calc(1 * var(--mx-rem));
+  line-height: 1.5;
+  color: color-mix(in srgb, var(--m-sobre-primaria) 74%, transparent);
+}
+.mx-u04d40 .rodape h2 {
+  margin-bottom: calc(.6 * var(--mx-rem));
+  font-size: calc(1.0625 * var(--mx-rem));
+  font-weight: 700;
+  letter-spacing: -.005em;
+  color: var(--m-sobre-primaria);
+}
+.mx-u04d40 .rodape ul {
+  display: grid;
+  gap: calc(.1 * var(--mx-rem));
+}
+@media (max-width: 47.99rem) {
+  .mx-u04d40 .rodape__contato {
+    grid-column: 1 / -1;
+  }
+}
+.mx-u04d40 .rodape li a {
+  display: inline-flex;
+  align-items: center;
+  gap: calc(.45 * var(--mx-rem));
+  min-height: 44px;
+  padding: calc(.4 * var(--mx-rem)) 0;
+  font-size: calc(.9875 * var(--mx-rem));
+  color: color-mix(in srgb, var(--m-sobre-primaria) 78%, transparent);
+  transition: color .2s ease;
+}
+.mx-u04d40 .rodape li a svg {
+  width: calc(1.1 * var(--mx-rem));
+  height: calc(1.1 * var(--mx-rem));
+}
+@media (hover: hover) and (pointer: fine) {
+  .mx-u04d40 .rodape li a:hover {
+    color: var(--m-sobre-primaria);
+  }
+}
+.mx-u04d40 .rodape__base {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: calc(.75 * var(--mx-rem)) calc(2 * var(--mx-rem));
+  margin-top: calc(2.5 * var(--mx-rem));
+  padding-top: calc(1.25 * var(--mx-rem));
+  border-top: 1px solid color-mix(in srgb, var(--m-sobre-primaria) 12%, transparent);
+  font-size: calc(.875 * var(--mx-rem));
+  color: color-mix(in srgb, var(--m-sobre-primaria) 72%, transparent);
+}
+.mx-u04d40 .assinatura {
+  display: inline-flex;
+  align-items: center;
+  gap: calc(.55 * var(--mx-rem));
+  min-height: 44px;
+  padding: calc(.5 * var(--mx-rem)) 0;
+  color: color-mix(in srgb, var(--m-sobre-primaria) 78%, transparent);
+  transition: color .2s ease;
+}
+.mx-u04d40 .assinatura svg {
+  width: calc(1.15 * var(--mx-rem));
+  height: auto;
+  fill: currentColor;
+}
+@media (hover: hover) and (pointer: fine) {
+  .mx-u04d40 .assinatura:hover {
+    color: var(--m-sobre-primaria);
+  }
+}
+@media (min-width: 48rem) {
+  .mx-u04d40 .rodape__grade {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: calc(2 * var(--mx-rem));
+  }
+}
+@media (min-width: 64rem) {
+  .mx-u04d40 .rodape__grade {
+    grid-template-columns: minmax(0, 1.5fr) repeat(3, minmax(0, 1fr));
+    gap: calc(2.5 * var(--mx-rem));
+  }
+  .mx-u04d40 .rodape__marca {
+    grid-column: auto;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .mx-u04d40 .js .revelar {
+    opacity: 0;
+    translate: 0 calc(1 * var(--mx-rem));
+    transition: opacity .5s var(--saida), translate .6s var(--saida);
+    transition-delay: var(--atraso, 0ms);
+  }
+  .mx-u04d40 .js .revelar.visivel {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mx-u04d40 .js .revelar {
+    opacity: 0;
+    transition: opacity .35s ease;
+  }
+  .mx-u04d40 .js .revelar.visivel {
+    opacity: 1;
+  }
+}
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) and (min-width: 48rem) {
+    .mx-u04d40 .galeria__item:nth-child(odd) .celular--galeria {
+      animation: mx-u04d40-deriva-sobe linear both;
+      animation-timeline: view();
+      animation-range: entry 0% exit 100%;
+    }
+    .mx-u04d40 .galeria__item:nth-child(even) .celular--galeria {
+      animation: mx-u04d40-deriva-desce linear both;
+      animation-timeline: view();
+      animation-range: entry 0% exit 100%;
+    }
+    .mx-u04d40 .heroi__texto {
+      animation: mx-u04d40-heroi-texto linear both;
+      animation-timeline: scroll(root);
+      animation-range: 0 calc(100svh / var(--zoom, 1));
+    }
+    .mx-u04d40 .heroi__aparelho {
+      animation: mx-u04d40-heroi-aparelho linear both;
+      animation-timeline: scroll(root);
+      animation-range: 0 calc(100svh / var(--zoom, 1));
+    }
+  }
+}
+@keyframes mx-u04d40-deriva-sobe {
+  from {
+    translate: 0 calc(2.5 * var(--mx-rem));
+  }
+  to {
+    translate: 0 calc(-2.5 * var(--mx-rem));
+  }
+}
+@keyframes mx-u04d40-deriva-desce {
+  from {
+    translate: 0 calc(-1.5 * var(--mx-rem));
+  }
+  to {
+    translate: 0 calc(1.5 * var(--mx-rem));
+  }
+}
+@keyframes mx-u04d40-heroi-texto {
+  to {
+    translate: 0 calc(-4.5 * var(--mx-rem));
+    opacity: .35;
+  }
+}
+@keyframes mx-u04d40-heroi-aparelho {
+  to {
+    translate: 0 calc(-2 * var(--mx-rem));
+  }
+}
+@property --pia-a { syntax:"<angle>";inherits:false;initial-value:0deg }
+.mx-u04d40 .pia {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 760px;
+  margin: clamp(28px, 4vw, 44px) auto 0;
+  padding-top: clamp(24px, 3.4vw, 36px);
+  display: grid;
+  gap: 12px;
+  justify-items: center;
+  text-align: center;
+  font-family: var(--pia-fonte,inherit);
+}
+.mx-u04d40 .pia[data-alinha=start] {
+  margin-inline: 0;
+  justify-items: start;
+  text-align: start;
+}
+.mx-u04d40 .pia::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(var(--pia-linha), .75) 50%,
+      transparent);
+  pointer-events: none;
+}
+.mx-u04d40 .pia[data-alinha=start]::before {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(var(--pia-linha), .75),
+      transparent 85%);
+}
+.mx-u04d40 .pia *,
+.mx-u04d40 .pia *::before,
+.mx-u04d40 .pia *::after {
+  box-sizing: border-box;
+}
+.mx-u04d40 .pia-t {
+  margin: 0;
+  color: var(--pia-apoio);
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 500;
+  text-wrap: balance;
+}
+.mx-u04d40 .pia[data-vidro] .pia-t {
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--pia-vidro);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+.mx-u04d40 .pia-l {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(8px, 1.4vw, 14px);
+  width: 100%;
+}
+.mx-u04d40 .pia-l li {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+.mx-u04d40 .pia-l li::before,
+.mx-u04d40 .pia-l li::marker {
+  content: none;
+}
+.mx-u04d40 .pia-b {
+  display: block;
+  padding: 1px;
+  border-radius: var(--pia-raio);
+  background:
+    conic-gradient(
+      from var(--pia-a),
+      transparent 0 58%,
+      rgba(var(--c), .95) 72%,
+      var(--m-superficie) 77%,
+      rgba(var(--c), .95) 82%,
+      transparent 94%),
+    rgba(var(--c), .34);
+  box-shadow: var(--pia-sombra,0 16px 30px -18px rgba(0,0,0,.9));
+  color: var(--pia-texto);
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  animation: mx-u04d40-pia-gira 4.2s linear var(--d,0s) infinite;
+  transition: transform .2s cubic-bezier(.22, 1, .36, 1), box-shadow .2s cubic-bezier(.22, 1, .36, 1);
+}
+@keyframes mx-u04d40-pia-gira {
+  to {
+    --pia-a:360deg;
+  }
+}
+.mx-u04d40 .pia-in {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 60px;
+  padding: 0 14px;
+  border-radius: max(0px, calc(var(--pia-raio) - 1px));
+  background:
+    radial-gradient(
+      120% 150% at 50% -40%,
+      rgba(var(--c), .3),
+      transparent 62%),
+    radial-gradient(
+      70% 90% at 50% 140%,
+      rgba(var(--c), .18),
+      transparent 70%),
+    var(--pia-fundo);
+  color: var(--pia-texto);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -.01em;
+  white-space: nowrap;
+}
+.mx-u04d40 .pia-logo {
+  flex: none;
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+  color: var(--l,var(--m-sobre-primaria));
+}
+.mx-u04d40 .pia-sai {
+  flex: none;
+  width: 15px;
+  height: 15px;
+  opacity: .6;
+  transition: transform .2s cubic-bezier(.22, 1, .36, 1), opacity .2s;
+}
+.mx-u04d40 .pia-b:active {
+  transform: scale(.98);
+}
+.mx-u04d40 .pia-b:focus-visible {
+  outline: 2px solid var(--pia-texto);
+  outline-offset: 3px;
+}
+@media (hover: hover) and (pointer: fine) {
+  .mx-u04d40 .pia-b:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 34px -18px rgba(0, 0, 0, .95);
+  }
+  .mx-u04d40 .pia-b:hover .pia-sai {
+    opacity: 1;
+    transform: translate(2px, -2px);
+  }
+}
+@media (max-width: 599px) {
+  .mx-u04d40 .pia-in {
+    flex-direction: column;
+    gap: 7px;
+    min-height: 76px;
+    padding: 10px 6px;
+    font-size: 14px;
+  }
+  .mx-u04d40 .pia-logo {
+    width: 24px;
+    height: 24px;
+  }
+  .mx-u04d40 .pia-sai {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 12px;
+    height: 12px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mx-u04d40 .pia-b {
+    animation: none;
+    background: rgba(var(--c), .5);
+    transition: none;
+  }
+}
+.mx-u04d40.mx-raiz {
+  --papel: transparent;
+  --noite: transparent;
+  --sp-sec: clamp(24px, 12px + 3vw, 48px);
+  background: var(--m-fundo);
+  color: var(--m-texto);
+  color-scheme: dark;
+  overflow-wrap: break-word;
+}
+.mx-u04d40.mx-raiz :is(.secao, .funcoes, .passos, .por-dentro, .parceiro, .beneficios, .para-quem, .perguntas) {
+  background: transparent;
+}
+.mx-u04d40.mx-raiz .por-dentro::before {
+  display: none;
+}
+.mx-u04d40 :is(h1, h2, h3) {
+  text-wrap: balance;
+}
+.mx-u04d40 .destaque {
+  color: var(--verde-luz);
+}
+.mx-u04d40 .cabeca {
+  margin-bottom: clamp(16px, 2.4vw, 36px);
+}
+.mx-u04d40 .cabeca h2 {
+  color: var(--m-texto);
+}
+.mx-u04d40 .cabeca p {
+  color: var(--m-texto-suave);
+}
+.mx-u04d40 .fg-rotulo {
+  margin: 0 0 8px;
+  font-size: 13px;
+  font-weight: 650;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--m-destaque);
+}
+.mx-u04d40 .fg-lead {
+  margin: 12px auto 0;
+  max-width: 62ch;
+  color: var(--m-texto-suave);
+}
+.mx-u04d40 .cabeca--esquerda .fg-lead {
+  margin-inline: 0;
+}
+.mx-u04d40 .fg-heroi {
+  min-height: 100svh;
+}
+.mx-u04d40 .fg-heroi .heroi__fundo {
+  -webkit-mask-image:
+    linear-gradient(
+      180deg,
+      #000 82%,
+      transparent);
+  mask-image:
+    linear-gradient(
+      180deg,
+      #000 82%,
+      transparent);
+}
+.mx-u04d40 .fg-heroi h1 {
+  font-size: clamp(36px, 8px + 3.6vw, 60px);
+  line-height: 1.06;
+  hyphens: auto;
+}
+.mx-u04d40 .fg-heroi h1 em {
+  font-style: normal;
+  color: var(--verde-luz);
+}
+.mx-u04d40 .fg-chip {
+  font-size: 14px;
+  line-height: 1.3;
+  padding: 6px 14px;
+  border-radius: 999px;
+  color: var(--m-sobre-primaria);
+  background: color-mix(in srgb, var(--m-primaria) 34%, transparent);
+  border: 1px solid color-mix(in srgb, var(--m-destaque) 40%, transparent);
+  max-width: 100%;
+}
+.mx-u04d40 .fg-heroi .heroi__fatos a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  color: inherit;
+  text-decoration: none;
+}
+.mx-u04d40 .fg-heroi .heroi__fatos li {
+  font-size: 14px;
+}
+@media (hover: hover) and (pointer: fine) {
+  .mx-u04d40 .fg-heroi .heroi__fatos a:hover {
+    color: var(--m-sobre-primaria);
+  }
+}
+@media (max-width: 47.99rem) {
+  .mx-u04d40 .fg-heroi h1 {
+    font-size: clamp(24px, 6.6vw, 34px);
+    line-height: 1.1;
+  }
+  .mx-u04d40 .fg-heroi .heroi__apoio {
+    font-size: 15px;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+.mx-u04d40 .fg-ja-tem {
+  font-size: 15px;
+  color: var(--m-texto-suave);
+}
+.mx-u04d40 .fg-ja-tem a {
+  color: var(--m-destaque);
+}
+.mx-u04d40.mx-raiz .fg-btn {
+  --altura: 52px;
+  box-sizing: border-box;
+  min-height: 52px;
+  min-width: 0;
+  max-width: 100%;
+  padding: 0 24px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.mx-u04d40.mx-raiz a.fg-btn:not(.fg-btn--2),
+body:has(.mx-u04d40.mx-raiz) :is(.hdr, header, .ft, footer) a.btn--primary,
+body:has(.mx-u04d40.mx-raiz) a.pp__btn {
+  background: var(--m-primaria);
+  background-image: none;
+  color: #fff;
+  font-weight: 700;
+}
+.mx-u04d40.mx-raiz a.fg-btn:not(.fg-btn--2) *,
+body:has(.mx-u04d40.mx-raiz) :is(.hdr, header, .ft, footer) a.btn--primary *,
+body:has(.mx-u04d40.mx-raiz) a.pp__btn * {
+  color: inherit;
+}
+body:has(.mx-u04d40.mx-raiz) :is(.ft, footer) a.btn--primary,
+body:has(.mx-u04d40.mx-raiz) a.pp__btn {
+  box-sizing: border-box;
+  min-height: 52px;
+  padding-block: 12px;
+  border-radius: 999px;
+  font-size: 16px;
+  line-height: 1.2;
+}
+@media (min-width: 48rem) {
+  body:has(.mx-u04d40.mx-raiz) :is(.hdr, header) a.btn--primary {
+    box-sizing: border-box;
+    min-height: 52px;
+    padding-block: 12px;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+}
+.mx-u04d40.mx-raiz .fg-btn:focus-visible {
+  outline: 3px solid var(--m-destaque);
+  outline-offset: 3px;
+}
+.mx-u04d40 .passos__acao {
+  display: flex;
+  justify-content: center;
+  margin-top: clamp(20px, 3vw, 36px);
+}
+@media (max-width: 47.99rem) {
+  .mx-u04d40 .heroi__acoes:not(.heroi__acoes--centro) {
+    flex-wrap: nowrap;
+  }
+  .mx-u04d40 .heroi__acoes:not(.heroi__acoes--centro) .fg-btn {
+    flex: 1 1 0;
+    padding-inline: 12px;
+    font-size: 15px;
+  }
+  .mx-u04d40 :is(.heroi__acoes--centro, .passos__acao) .fg-btn {
+    font-size: 15px;
+  }
+}
+.mx-u04d40 .fg-par .lado__texto {
+  color: var(--m-texto-suave);
+}
+.mx-u04d40 .fg-par .cena-legenda {
+  font-size: 14px;
+}
+@media (max-width: 47.99rem) {
+  .mx-u04d40 .fg-par .parceiro__par {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+}
+.mx-u04d40 .parceiro__par.fg-par--um {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: calc(48 * var(--mx-rem));
+  margin-inline: auto;
+}
+.mx-u04d40 .fg-bento .cartao {
+  position: relative;
+}
+.mx-u04d40 .fg-cartao-link {
+  color: inherit;
+  text-decoration: none;
+}
+.mx-u04d40 .fg-cartao-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+}
+.mx-u04d40 .fg-cartao-link:focus-visible {
+  outline: none;
+}
+.mx-u04d40 .fg-cartao-link:focus-visible::after {
+  outline: 3px solid var(--m-destaque);
+  outline-offset: 2px;
+}
+.mx-u04d40 .fg-bento .icone {
+  font-family: var(--m-f-titulo);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--m-destaque);
+  background: color-mix(in srgb, var(--m-primaria) 24%, transparent);
+}
+.mx-u04d40 .fg-bento .cartao:active {
+  transform: scale(.99);
+}
+@media (hover: hover) and (pointer: fine) {
+  .mx-u04d40 .fg-bento .cartao {
+    transition: border-color .2s ease, translate .25s var(--saida);
+  }
+  .mx-u04d40 .fg-bento .cartao:hover {
+    border-color: var(--m-destaque);
+    translate: 0 -2px;
+  }
+}
+@media (max-width: 47.99rem) {
+  .mx-u04d40 .fg-bento .cartao {
+    grid-column: span 1;
+  }
+  .mx-u04d40 .fg-bento .bento:is([data-n="3"], [data-n="5"]) .cartao--a {
+    grid-column: 1 / -1;
+  }
+  .mx-u04d40 .fg-bento .cartao--d .palco-cena {
+    display: grid;
+  }
+}
+@media (min-width: 48rem) and (max-width: 63.99rem) {
+  .mx-u04d40 .fg-bento .bento[data-n="3"] .cartao--c {
+    grid-column: 1 / -1;
+  }
+}
+@media (min-width: 64rem) {
+  .mx-u04d40 .fg-bento .bento[data-n="4"] :is(.cartao--c, .cartao--d) {
+    grid-column: span 3;
+  }
+  .mx-u04d40 .fg-bento .bento[data-n="3"] .cartao--c {
+    grid-column: 1 / -1;
+  }
+}
+.mx-u04d40 .fg-dentro .galeria__legenda {
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--m-texto-suave);
+}
+.mx-u04d40 .fg-dentro .galeria__legenda strong {
+  display: block;
+  color: var(--m-texto);
+}
+.mx-u04d40 .fg-dentro .galeria__abas button {
+  font-size: 13px;
+}
+.mx-u04d40 .fg-passos .passo h3 {
+  color: var(--m-texto);
+}
+.mx-u04d40 .fg-passos .passo p {
+  color: var(--m-texto-suave);
+}
+.mx-u04d40 .fg-corpo--centro {
+  max-width: 70ch;
+  margin: 0 auto clamp(16px, 2.4vw, 32px);
+}
+.mx-u04d40 .fg-passos :is(.passos__lista, .passos__acao) + .fg-corpo--centro {
+  margin-top: clamp(16px, 2.4vw, 32px);
+}
+@media (max-width: 47.99rem) {
+  .mx-u04d40 .fg-passos .passos__lista {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+  .mx-u04d40 .fg-passos .passo {
+    grid-template-columns: calc(4.75 * var(--mx-rem)) minmax(0, 1fr);
+    grid-template-rows: auto 1fr;
+    justify-items: start;
+    align-items: start;
+    column-gap: 14px;
+    row-gap: 4px;
+    text-align: left;
+    padding: 12px;
+    border-radius: 16px;
+    background: var(--m-superficie);
+    border: 1px solid var(--m-borda);
+  }
+  .mx-u04d40 .fg-passos .passo > :not(.passo__cena):not(h3):not(p) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .mx-u04d40 .fg-passos .passo__cena {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 6px;
+  }
+  .mx-u04d40 .fg-passos .passo__cena img {
+    max-height: calc(5.5 * var(--mx-rem));
+  }
+  .mx-u04d40 .fg-passos .passo h3 {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 17px;
+  }
+  .mx-u04d40 .fg-passos .passo p {
+    grid-column: 2;
+    grid-row: 2;
+    max-width: none;
+    font-size: 15px;
+  }
+}
+@media (min-width: 48rem) {
+  .mx-u04d40 .fg-passos .passos__lista {
+    --n: 4;
+    grid-template-columns: repeat(var(--n), minmax(0, 1fr));
+  }
+  .mx-u04d40 .fg-passos .passos__lista[data-n="2"] {
+    --n: 2;
+  }
+  .mx-u04d40 .fg-passos .passos__lista:is([data-n="3"], [data-n="6"]) {
+    --n: 3;
+  }
+  .mx-u04d40 .fg-passos .passos__lista[data-n="5"] {
+    --n: 5;
+  }
+  .mx-u04d40 .fg-passos .passos__lista::before,
+  .mx-u04d40 .fg-passos .passos__lista::after {
+    left: calc(50% / var(--n));
+    right: calc(50% / var(--n));
+  }
+  .mx-u04d40 .fg-passos .passos__lista[data-n="6"]::before,
+  .mx-u04d40 .fg-passos .passos__lista[data-n="6"]::after {
+    display: none;
+  }
+}
+.mx-u04d40 .fg-corpo {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 14px;
+  min-width: 0;
+  color: var(--m-texto-suave);
+}
+.mx-u04d40 .fg-corpo :is(h3, h4, strong) {
+  color: var(--m-texto);
+}
+.mx-u04d40 .fg-corpo a {
+  color: var(--m-destaque);
+}
+.mx-u04d40 .beneficios__texto .fg-corpo {
+  margin-top: 4px;
+}
+.mx-u04d40 .fg-corpo--largo {
+  margin-top: clamp(20px, 3vw, 40px);
+}
+.mx-u04d40 .beneficios__palco {
+  margin-bottom: calc(1.75 * var(--mx-rem));
+}
+.mx-u04d40 .beneficios .cena-legenda {
+  font-size: 13px;
+}
+@media (max-width: 47.99rem) {
+  .mx-u04d40 .beneficios__palco .flutua--a {
+    top: 14%;
+    bottom: calc(-1.6 * var(--mx-rem));
+  }
+  .mx-u04d40 .beneficios__palco .flutua--b {
+    top: calc(-1.25 * var(--mx-rem));
+    bottom: 14%;
+  }
+  .mx-u04d40 .beneficios__palco .flutua {
+    width: auto;
+    aspect-ratio: 7 / 15;
+    max-width: 60%;
+  }
+  .mx-u04d40 .beneficios__palco .flutua :is(picture, img) {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .mx-u04d40 .beneficios__palco .flutua img {
+    object-fit: cover;
+    object-position: top;
+  }
+}
+@media (min-width: 48rem) {
+  .mx-u04d40 .flutua--a {
+    left: calc(-1.25 * var(--mx-rem));
+  }
+  .mx-u04d40 .flutua--b {
+    right: calc(-1.25 * var(--mx-rem));
+  }
+  .mx-u04d40 .fg-inverte .beneficios__grade {
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr);
+  }
+  .mx-u04d40 .fg-inverte .beneficios__texto {
+    order: 2;
+  }
+}
+.mx-u04d40 .fg-rel .perfil__texto h3 {
+  color: var(--m-texto);
+}
+.mx-u04d40 .fg-perfil-link {
+  color: inherit;
+  text-decoration: none;
+}
+.mx-u04d40 .fg-perfil-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+.mx-u04d40 .fg-perfil-link:focus-visible {
+  outline: none;
+}
+.mx-u04d40 .fg-perfil-link:focus-visible::after {
+  outline: 3px solid var(--m-destaque);
+  outline-offset: -3px;
+  border-radius: var(--raio);
+}
+.mx-u04d40 .fg-selo {
+  display: inline-block;
+  margin: 0 0 6px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  line-height: 1.3;
+  color: var(--m-destaque);
+  background: color-mix(in srgb, var(--m-primaria) 22%, transparent);
+}
+.mx-u04d40 .fg-rel .link-seta {
+  color: var(--m-destaque);
+  font-size: 15px;
+}
+.mx-u04d40 .fg-rel .perfil:active {
+  transform: scale(.99);
+}
+@media (max-width: 47.99rem) {
+  .mx-u04d40 .fg-rel .perfis[data-n="3"] .perfil:first-child {
+    grid-column: 1 / -1;
+  }
+  .mx-u04d40 .fg-rel .perfil__texto h3 {
+    font-size: 16px;
+  }
+}
+@media (min-width: 48rem) {
+  .mx-u04d40 .fg-rel .perfis:is([data-n="2"], [data-n="4"]) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.mx-u04d40 .faq details {
+  background: var(--m-superficie);
+  border-color: var(--m-borda);
+}
+.mx-u04d40 .fg-q {
+  margin: 0;
+  font-family: var(--m-f-corpo);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--m-texto);
+}
+.mx-u04d40 .fg-r {
+  color: var(--m-texto-suave);
+}
+.mx-u04d40 .fg-r p {
+  margin: 0;
+}
+.mx-u04d40 .fg-ver-mais {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  margin: clamp(16px, 2.4vw, 28px) auto 0;
+  padding: 0 22px;
+  border-radius: 999px;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--m-texto);
+  background: transparent;
+  border: 1px solid color-mix(in srgb, var(--m-texto) 30%, transparent);
+  transition: border-color .2s ease, transform .15s ease;
+}
+.mx-u04d40 .fg-ver-mais:active {
+  transform: scale(.98);
+}
+@media (hover: hover) and (pointer: fine) {
+  .mx-u04d40 .fg-ver-mais:hover {
+    border-color: var(--m-destaque);
+  }
+}
+.mx-u04d40 .fg-chamada {
+  min-height: 0;
+  padding-top: clamp(32px, 4vw, 56px);
+  padding-bottom: clamp(32px, 4vw, 56px);
+}
+.mx-u04d40 .fg-chamada .chamada__fundo {
+  -webkit-mask-image:
+    linear-gradient(
+      180deg,
+      transparent,
+      #000 22%,
+      #000 78%,
+      transparent);
+  mask-image:
+    linear-gradient(
+      180deg,
+      transparent,
+      #000 22%,
+      #000 78%,
+      transparent);
+}
+.mx-u04d40 .fg-chamada h2 {
+  color: var(--m-texto);
+}
+.mx-u04d40 .fg-risco {
+  margin: 14px auto 0;
+  max-width: 70ch;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--m-texto-suave);
+}
+.mx-u04d40 .fg-indep {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--m-texto-suave);
+}
+.mx-u04d40 .fg-fecho {
+  padding-block: clamp(12px, 2vw, 32px);
+}
+body:has(footer.ft) .mx-u04d40.mx-raiz .fg-fecho {
+  background:
+    linear-gradient(
+      to bottom,
+      transparent 35%,
+      #060d17 100%);
+}
+.mx-u04d40 .fg-fecho__wrap {
+  box-sizing: border-box;
+  width: min(100%, var(--casca));
+  margin: 0 auto;
+  padding-inline: clamp(16px, 4vw, 32px);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 14px;
+}
+.mx-u04d40 .fg-fecho__h2 {
+  margin: 0;
+  font-size: clamp(20px, 2vw, 28px);
+  color: var(--m-texto);
+}
+.mx-u04d40 .fg-fecho__fontes {
+  margin: 0;
+  padding-left: 1.2em;
+  display: grid;
+  gap: 6px;
+}
+.mx-u04d40 .fg-fecho__fontes a {
+  color: var(--m-destaque);
+}
+.mx-u04d40 .fg-fecho__aviso {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid var(--m-borda);
+  color: var(--m-texto-suave);
+}
+.mx-u04d40 .fg-fecho__aviso svg {
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+}
+.mx-u04d40 .fg-fecho__aviso p {
+  margin: 0;
+}
+</style>
+<script>
+(function() {
+  var r = document.documentElement;
+  function escala() {
+    var w = window.innerWidth, h = window.innerHeight;
+    var f = w >= 1200 ? Math.max(1, Math.min(w / 1200, h / 930)) : 1;
+    r.style.zoom = f > 1.02 ? f.toFixed(3) : "";
+    r.style.setProperty("--zoom", f > 1.02 ? f.toFixed(3) : "1");
+  }
+  escala();
+  window.addEventListener("resize", escala);
+})();
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://safirion.com.br/#publisher","name":"safirion.com.br","url":"https://safirion.com.br/","description":"Site independente de divulgação sobre a plataforma Safirion. Não é o site oficial da corretora nem é operado por ela, e pode receber comissão pelos cadastros feitos a partir dos seus links.","email":"contato@safirion.com"},{"@type":["Organization","FinancialService"],"@id":"https://safirion.com.br/#organization","name":"Safirion","alternateName":["Safiron"],"legalName":"THUNDER FLASH LLC","url":"https://safirion.com/","areaServed":"BR","sameAs":["https://www.instagram.com/safirionbroker/","https://t.me/+S7-egF_BUsI2NmM5"]},{"@type":"WebSite","@id":"https://safirion.com.br/#website","url":"https://safirion.com.br/","name":"safirion.com.br","inLanguage":"pt-BR","publisher":{"@id":"https://safirion.com.br/#publisher"}},{"@type":"WebPage","@id":"https://safirion.com.br/safirion-login-e-acesso/#webpage","url":"https://safirion.com.br/safirion-login-e-acesso/","name":"Login Safirion: o endereço certo e o acesso com 2FA","description":"Login da Safirion: o acesso é em trade.safirion.com, com 2FA e KYC. Como conferir o endereço antes de digitar a senha e o que fazer quando o login falha.","inLanguage":"pt-BR","isPartOf":{"@id":"https://safirion.com.br/#website"},"datePublished":"2026-10-29","dateModified":"2026-10-29","primaryImageOfPage":{"@type":"ImageObject","@id":"https://safirion.com.br/safirion-login-e-acesso/#imagem","url":"https://safirion.com.br/assets/img/painel-safirion.webp?v=7e871d09","contentUrl":"https://safirion.com.br/assets/img/painel-safirion.webp?v=7e871d09","width":1200,"height":671,"caption":"Plataforma da Safirion em trade.safirion.com: gráfico de velas do EUR/USD com os botões Higher e Lower"},"about":{"@id":"https://safirion.com.br/#organization"},"publisher":{"@id":"https://safirion.com.br/#publisher"},"citation":[{"@type":"CreativeWork","name":"Plataforma de operação (tela de login e área da conta)","url":"https://trade.safirion.com/?aff=836698&aff_model=revenue&afftrack=safirion.com.br/safirion-login-e-acesso"},{"@type":"CreativeWork","name":"Site oficial da corretora","url":"https://safirion.com/"},{"@type":"CreativeWork","name":"Reclame Aqui — Safirion (nota, reclamações, tempo de resposta)","url":"https://www.reclameaqui.com.br/empresa/safirion/"},{"@type":"CreativeWork","name":"CVM — Corretoras e distribuidoras: consulta pelo Cadastro Geral","url":"https://www.gov.br/cvm/pt-br/assuntos/regulados/consultas-por-participante/corretoras-e-distribuidoras"}]},{"@type":"BreadcrumbList","@id":"https://safirion.com.br/safirion-login-e-acesso/#migalha","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://safirion.com.br/"},{"@type":"ListItem","position":2,"name":"Login Safirion: o endereço certo e o acesso com 2FA","item":"https://safirion.com.br/safirion-login-e-acesso/"}]},{"@type":"FAQPage","@id":"https://safirion.com.br/safirion-login-e-acesso/#faq","isPartOf":{"@id":"https://safirion.com.br/safirion-login-e-acesso/#webpage"},"mainEntity":[{"@type":"Question","name":"Onde faço o login da Safirion?","acceptedAnswer":{"@type":"Answer","text":"Na plataforma, em trade.safirion.com, com o e-mail e a senha do cadastro. O mesmo acesso vale no aplicativo Android. Confira o endereço na barra do navegador antes de digitar a senha. Este site é de afiliado e não tem tela de login."}},{"@type":"Question","name":"Esqueci a senha da Safirion. Como recupero?","acceptedAnswer":{"@type":"Answer","text":"Pela opção de senha esquecida na própria tela de login da plataforma. A mensagem chega no e-mail do cadastro; abra o link e confira o endereço antes de definir a nova senha. Nenhum atendimento legítimo pede a sua senha ou o código de duas etapas por telefone, WhatsApp ou mensagem."}},{"@type":"Question","name":"O que é o 2FA da Safirion e como ligo?","acceptedAnswer":{"@type":"Answer","text":"2FA (confirmação em duas etapas) é o código temporário pedido depois da senha. O site informa que a plataforma trabalha com 2FA, criptografia e KYC. Ative nas configurações de segurança da conta, de preferência antes de depositar. É o que torna uma senha roubada inútil."}},{"@type":"Question","name":"Meu código 2FA não funciona. O que fazer?","acceptedAnswer":{"@type":"Answer","text":"Confira a hora do celular: o código depende do relógio do aparelho, e hora errada derruba códigos válidos. Ajuste para hora automática e tente de novo. Se você trocou de aparelho sem restaurar o aplicativo de códigos, o caminho é o suporte oficial. Guarde protocolo, porque isso leva tempo."}},{"@type":"Question","name":"Dá para entrar na Safirion pelo celular?","acceptedAnswer":{"@type":"Answer","text":"Sim. Há aplicativo Android; no iPhone, o site anuncia o app como \"em breve\" e o acesso é pelo navegador do próprio aparelho. A conta é a mesma nos dois caminhos: um login, um 2FA."}},{"@type":"Question","name":"Como saber se o site de login da Safirion é verdadeiro?","acceptedAnswer":{"@type":"Answer","text":"O login oficial fica em trade.safirion.com, e o site institucional é safirion.com. Qualquer outro endereço pedindo a sua senha não está nessa lista. Salve a plataforma nos favoritos e entre sempre por ali — nunca por link de anúncio, mensagem ou encurtador."}},{"@type":"Question","name":"Minha conta Safirion está bloqueada. Por quê?","acceptedAnswer":{"@type":"Answer","text":"Os motivos mais comuns em plataformas desse tipo são verificação de identidade pendente, dado de cadastro divergente ou tentativa de acesso suspeita. O site não publica uma lista de regras de bloqueio. Abra caso no suporte oficial com documento e protocolo. Sem solução, registre a cronologia no canal público."}},{"@type":"Question","name":"Preciso fazer KYC para entrar na conta?","acceptedAnswer":{"@type":"Answer","text":"Para entrar, não necessariamente; para operar com dinheiro e retirar, a plataforma trabalha com KYC (conferência de identidade). A política publica o prazo de análise: 24 horas, podendo chegar a 30 dias úteis. Envie com a conta tranquila, antes de precisar sacar."}},{"@type":"Question","name":"Este site é a área de cliente da Safirion?","acceptedAnswer":{"@type":"Answer","text":"Não. Este é um site independente de divulgação — uma página de afiliado — e não tem área de cliente nem tela de login. A área da conta é em trade.safirion.com, e o site oficial da corretora é safirion.com."}},{"@type":"Question","name":"Se eu perder o acesso, a quem recorro no Brasil?","acceptedAnswer":{"@type":"Answer","text":"À própria empresa e, se não resolver, ao canal público de reclamação: a Safirion respondeu 100% das 37 reclamações do período, com média de 4d 11h. Não há órgão brasileiro para acionar: a plataforma é operada pela THUNDER FLASH LLC, de Nevis, e não é regulada pela CVM."}}]}]}</script>
+</head>
+<body class="pg-corpo mx-corpo" data-u62118="u04d40-lp" data-dec="," data-mais="Ver mais (+" data-menos="Ver menos (−">
+
+
+<a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+
+<div class="ticker" id="ticker">
+  <a class="ticker__link" href="https://trade.safirion.com/pt/register?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/safirion-login-e-acesso">
+    <span class="ticker__msg" id="ticker-msg" data-msgs='["Crie sua conta em poucos minutos e comece a operar.","Trabalhe com <b>+de 30 ativos</b> de forma simples e fácil.","Segurança com <b>2FA</b> e criptografia avançada.","Suporte profissional e humanizado, quando você precisar."]'>Crie sua conta em poucos minutos e comece a operar.</span>
+    <svg class="ticker__arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h9m0 0-3.4-3.4M12 8l-3.4 3.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
+</div>
+
+
+<header class="hdr" id="hdr">
+  <div class="hdr__in">
+    <a class="hdr__logo" href="/" aria-label="Safirion — página inicial">
+      <img src="/assets/icons/safirion-logo-horizontal.svg?v=b8bdab6a" alt="Safirion" width="260" height="26">
+    </a>
+    <nav class="hdr__nav" aria-label="Seções da página">
+      <a href="/#o-que-e">A plataforma</a>
+      <a href="/#como-funciona">Como funciona</a>
+      <a href="/#recursos">Recursos</a>
+      <a href="/#como-se-cadastrar">Cadastro</a>
+      <a href="/#duvidas-frequentes">Dúvidas</a>
+    </nav>
+    <div class="hdr__side">
+      <details class="lng"><summary aria-label="Escolher idioma"><img src="/assets/img/bandeiras/pt.svg?v=d5fc3717" alt="" width="20" height="15" loading="lazy" decoding="async"><span>pt</span></summary><ul class="lng__lista"><li><a href="/" hreflang="pt-BR" lang="pt-BR" aria-current="true"><img src="/assets/img/bandeiras/pt.svg?v=d5fc3717" alt="" width="20" height="15" loading="lazy" decoding="async">Português</a></li><li><a href="/en/" hreflang="en" lang="en"><img src="/assets/img/bandeiras/en.svg?v=1d23b950" alt="" width="20" height="15" loading="lazy" decoding="async">English</a></li><li><a href="/es/" hreflang="es" lang="es"><img src="/assets/img/bandeiras/es.svg?v=1f23da73" alt="" width="20" height="15" loading="lazy" decoding="async">Español</a></li><li><a href="/ar/" hreflang="ar" lang="ar"><img src="/assets/img/bandeiras/ar.svg?v=cf69a304" alt="" width="20" height="15" loading="lazy" decoding="async">العربية</a></li><li><a href="/bn/" hreflang="bn" lang="bn"><img src="/assets/img/bandeiras/bn.svg?v=e99cb11f" alt="" width="20" height="15" loading="lazy" decoding="async">বাংলা</a></li><li><a href="/de/" hreflang="de" lang="de"><img src="/assets/img/bandeiras/de.svg?v=e88d8860" alt="" width="20" height="15" loading="lazy" decoding="async">Deutsch</a></li><li><a href="/fil/" hreflang="fil" lang="fil"><img src="/assets/img/bandeiras/fil.svg?v=64c3d8b0" alt="" width="20" height="15" loading="lazy" decoding="async">Filipino</a></li><li><a href="/fr/" hreflang="fr" lang="fr"><img src="/assets/img/bandeiras/fr.svg?v=bf4cae9b" alt="" width="20" height="15" loading="lazy" decoding="async">Français</a></li><li><a href="/hi/" hreflang="hi" lang="hi"><img src="/assets/img/bandeiras/hi.svg?v=230b82c4" alt="" width="20" height="15" loading="lazy" decoding="async">हिन्दी</a></li><li><a href="/id/" hreflang="id" lang="id"><img src="/assets/img/bandeiras/id.svg?v=f5aa8121" alt="" width="20" height="15" loading="lazy" decoding="async">Bahasa Indonesia</a></li><li><a href="/it/" hreflang="it" lang="it"><img src="/assets/img/bandeiras/it.svg?v=1d72a5de" alt="" width="20" height="15" loading="lazy" decoding="async">Italiano</a></li><li><a href="/ru/" hreflang="ru" lang="ru"><img src="/assets/img/bandeiras/ru.svg?v=8b2aa18f" alt="" width="20" height="15" loading="lazy" decoding="async">Русский</a></li><li><a href="/sv/" hreflang="sv" lang="sv"><img src="/assets/img/bandeiras/sv.svg?v=79da0f18" alt="" width="20" height="15" loading="lazy" decoding="async">Svenska</a></li><li><a href="/th/" hreflang="th" lang="th"><img src="/assets/img/bandeiras/th.svg?v=bcc03a3c" alt="" width="20" height="15" loading="lazy" decoding="async">ไทย</a></li><li><a href="/tr/" hreflang="tr" lang="tr"><img src="/assets/img/bandeiras/tr.svg?v=a00c7dfb" alt="" width="20" height="15" loading="lazy" decoding="async">Türkçe</a></li><li><a href="/vi/" hreflang="vi" lang="vi"><img src="/assets/img/bandeiras/vi.svg?v=076d5956" alt="" width="20" height="15" loading="lazy" decoding="async">Tiếng Việt</a></li><li><a href="/zh/" hreflang="zh-CN" lang="zh-CN"><img src="/assets/img/bandeiras/zh.svg?v=347824ed" alt="" width="20" height="15" loading="lazy" decoding="async">简体中文</a></li></ul></details>
+      <a class="btn btn--ghost" href="https://safirion.com/login/">LOGIN</a>
+      <a class="btn btn--primary" href="https://trade.safirion.com/pt/register?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/safirion-login-e-acesso">CRIAR CONTA</a>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo"><div class="mx-u04d40 mx-raiz"><div class="fg-js"><section class="heroi fg-heroi" data-mx-secao="0" aria-labelledby="fg-h1"><div class="heroi__fundo" aria-hidden="true"><picture><img class="heroi__capa" src="/assets/img/mx/u04d40-lp/fundo-poster.webp?v=0a74029e" width="1280" height="720" alt="" loading="eager" fetchpriority="high" decoding="async"></picture><video class="heroi__video" muted loop playsinline autoplay preload="metadata" poster="/assets/img/mx/u04d40-lp/fundo-poster.webp?v=0a74029e" data-fg-video tabindex="-1" disablepictureinpicture><source src="/assets/img/mx/u04d40-lp/fundo.webm?v=b7171074" type="video/webm"><source src="/assets/img/mx/u04d40-lp/fundo.mp4?v=bd541ade" type="video/mp4"></video><span class="heroi__veu"></span></div><div class="casca heroi__grade"><div class="heroi__texto"><p class="selo-nota fg-chip">Guia com fonte · lido em 29/10/2026</p><h1 id="fg-h1">Login e acesso na <em>Safirion</em></h1><p class="heroi__apoio">O endereço certo <span class="az">antes da senha</span></p><div class="heroi__acoes"><a class="botao botao--cheio botao--grande fg-btn" href="https://trade.safirion.com/pt/register?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/safirion-login-e-acesso" target="_blank" rel="noopener sponsored" data-mx-cadastro>Abrir conta</a><a class="botao botao--vidro botao--grande fg-btn fg-btn--2" href="#enderecos">Ver os endereços oficiais</a></div><p class="heroi__nota fg-ja-tem">Já tem conta? <a href="https://safirion.com/login/" target="_blank" rel="noopener">Entrar na plataforma</a></p></div><div class="heroi__aparelho"><div class="celular celular--heroi"><span class="celular__botao celular__botao--volume" aria-hidden="true"></span><span class="celular__botao celular__botao--liga" aria-hidden="true"></span><div class="celular__corpo"><div class="celular__tela"><div class="celular__status" aria-hidden="true"><span class="celular__hora" data-fg-hora>9:41</span><span class="celular__icones"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h3v-4H3zM9 20h3v-8H9zM15 20h3V8h-3zM21 20h0V4" fill="currentColor"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 8.5a15 15 0 0 1 20 0M5.5 12a10 10 0 0 1 13 0M9 15.5a5 5 0 0 1 6 0" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><circle cx="12" cy="19" r="1.6" fill="currentColor"/></svg><svg viewBox="0 0 28 24" aria-hidden="true"><rect x="2" y="6" width="21" height="12" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="4.5" y="8.5" width="15" height="7" rx="1.5" fill="currentColor"/><path d="M25 10v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></div><div class="celular__app"><picture><img src="/assets/img/mx/u04d40-lp/safirion-tela-ordem.webp?v=0e6c0e18" width="804" height="1746" alt="Tela real da plataforma Safirion" loading="eager" decoding="async" fetchpriority="high"></picture><video class="celular__video" muted loop playsinline autoplay preload="metadata" poster="/assets/img/mx/u04d40-lp/celular-poster.webp?v=cbf74c3c" data-fg-video tabindex="-1" disablepictureinpicture aria-hidden="true"><source src="/assets/img/mx/u04d40-lp/celular.webm?v=1b78dbae" type="video/webm"><source src="/assets/img/mx/u04d40-lp/celular.mp4?v=e3855e6d" type="video/mp4"></video></div><div class="celular__gestos" aria-hidden="true"></div></div><span class="celular__camera" aria-hidden="true"></span></div></div></div></div><ul class="heroi__fatos casca" aria-label="Neste guia"><li><a href="#resposta"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Onde se faz o login da Safirion</span></a></li><li><a href="#enderecos"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Os endereços oficiais — e este não é um deles</span></a></li><li><a href="#passos"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Os três passos para entrar</span></a></li><li><a href="#falhou"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Seis motivos para o login falhar</span></a></li></ul></section><section class="secao parceiro fg-par" id="resposta" data-mx-secao="1" aria-labelledby="h-resposta"><div class="casca"><header class="cabeca revelar"><p class="fg-rotulo">A resposta curta</p><h2 id="h-resposta">Onde se faz o <em>login da Safirion</em></h2><p>O endereço e as condições, em um parágrafo.</p><p class="fg-lead">Login de plataforma de operação é alvo fácil: basta um endereço parecido para a senha ir embora. Aqui estão os endereços oficiais, o caminho do acesso com confirmação em duas etapas e o que fazer quando a entrada falha.</p></header><div class="parceiro__par"><article class="lado lado--antes revelar"><figure class="lado__cena"><img src="/assets/img/mx/u04d40-lp/painel-safirion.webp?v=7e871d09" width="1200" height="671" alt="Tela real da plataforma Safirion" loading="eager" decoding="async"><figcaption class="cena-legenda">A plataforma no computador</figcaption></figure><div class="lado__texto fg-corpo"><blockquote class="mx-b mx-b-citavel mx-rev"><p>O login da Safirion é feito na plataforma, em trade.safirion.com, com o e-mail e a senha do cadastro. A conta usa 2FA (confirmação em duas etapas) e exige KYC (conferência de identidade) para operar com dinheiro. O mesmo acesso vale no navegador e no aplicativo Android; no iPhone, o app é anunciado como "em breve".</p></blockquote></div></article><article class="lado lado--agora revelar" style="--atraso: 90ms"><figure class="lado__cena lado__cena--app"><div class="celular celular--deitado" aria-hidden="true"><span class="celular__botao celular__botao--volume" aria-hidden="true"></span><span class="celular__botao celular__botao--liga" aria-hidden="true"></span><div class="celular__corpo"><div class="celular__tela"><div class="celular__status" aria-hidden="true"><span class="celular__hora" data-fg-hora>9:41</span><span class="celular__icones"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h3v-4H3zM9 20h3v-8H9zM15 20h3V8h-3zM21 20h0V4" fill="currentColor"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 8.5a15 15 0 0 1 20 0M5.5 12a10 10 0 0 1 13 0M9 15.5a5 5 0 0 1 6 0" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><circle cx="12" cy="19" r="1.6" fill="currentColor"/></svg><svg viewBox="0 0 28 24" aria-hidden="true"><rect x="2" y="6" width="21" height="12" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="4.5" y="8.5" width="15" height="7" rx="1.5" fill="currentColor"/><path d="M25 10v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></div><div class="celular__app"><picture><img src="/assets/img/mx/u04d40-lp/safirion-tela-ordem.webp?v=0e6c0e18" width="804" height="1746" alt="" loading="eager" decoding="async"></picture></div><div class="celular__gestos" aria-hidden="true"></div></div><span class="celular__camera" aria-hidden="true"></span></div></div><figcaption class="cena-legenda">A mesma conta no celular</figcaption></figure><div class="lado__texto fg-corpo"><div class="mx-b mx-b-texto"><p>Guarde o endereço, não o resultado da busca. A maior parte do prejuízo com login de plataforma de operação não vem de falha da plataforma: vem de gente digitando a senha num endereço parecido, aberto a partir de anúncio, mensagem ou link encurtado.</p></div></div></article></div></div></section><section class="secao funcoes fg-bento" id="fg-indice" data-mx-secao="2" aria-labelledby="fg-h-indice"><div class="casca"><header class="cabeca revelar"><h2 id="fg-h-indice">Tudo o que este guia cobre</h2><p>Toque num tema para ir direto a ele.</p></header><div class="bento" data-n="5"><article class="cartao cartao--a revelar" style="--atraso: 0ms"><div class="cartao__topo"><span class="icone" aria-hidden="true">01</span><h3><a class="fg-cartao-link" href="#resposta">Onde se faz o login da Safirion</a></h3></div><div class="palco-cena palco-cena--alto"><picture class="recorte"><img src="/assets/img/mx/u04d40-lp/safirion-app-ativos-tablet.webp?v=3f11b390" width="1400" height="1113" alt="" loading="eager" decoding="async"></picture></div></article><article class="cartao cartao--b revelar" style="--atraso: 60ms"><div class="cartao__topo"><span class="icone" aria-hidden="true">02</span><h3><a class="fg-cartao-link" href="#enderecos">Os endereços oficiais — e este não é um deles</a></h3></div><div class="palco-cena palco-cena--alto palco-cena--topo"><picture class="recorte"><img src="/assets/img/mx/u04d40-lp/safirion-tela-ordem.webp?v=0e6c0e18" width="804" height="1746" alt="" loading="eager" decoding="async"></picture></div></article><article class="cartao cartao--c revelar" style="--atraso: 120ms"><div class="cartao__topo"><span class="icone" aria-hidden="true">03</span><h3><a class="fg-cartao-link" href="#passos">Os três passos para entrar</a></h3></div><div class="palco-cena"><picture class="recorte"><img src="/assets/img/mx/u04d40-lp/painel-safirion.webp?v=7e871d09" width="1200" height="671" alt="" loading="eager" decoding="async"></picture></div></article><article class="cartao cartao--d revelar" style="--atraso: 180ms"><div class="cartao__topo"><span class="icone" aria-hidden="true">04</span><h3><a class="fg-cartao-link" href="#falhou">Seis motivos para o login falhar</a></h3></div><div class="palco-cena palco-cena--topo"><picture class="recorte"><img src="/assets/img/mx/u04d40-lp/safirion-tela-suporte.webp?v=a19a94f4" width="804" height="1746" alt="" loading="eager" decoding="async"></picture></div></article><article class="cartao cartao--e revelar" style="--atraso: 240ms"><div class="cartao__topo"><span class="icone" aria-hidden="true">05</span><h3><a class="fg-cartao-link" href="#senha">Recuperar acesso sem cair em golpe</a></h3></div><div class="palco-cena"><picture class="recorte"><img src="/assets/img/mx/u04d40-lp/safirion-app-ativos-celular.webp?v=189aa783" width="1100" height="767" alt="" loading="eager" decoding="async"></picture></div></article></div></div></section><section class="secao por-dentro fg-dentro" id="fg-por-dentro" data-mx-secao="3" aria-labelledby="fg-h-dentro"><div class="casca"><header class="cabeca revelar"><h2 id="fg-h-dentro">A plataforma <span class="destaque">por dentro</span></h2><p>Telas reais da plataforma Safirion.</p></header><ul class="galeria" data-galeria><li class="galeria__item revelar ativo" id="fg-tela-0" role="tabpanel" style="--atraso: 0ms"><div class="celular celular--galeria" aria-hidden="true"><span class="celular__botao celular__botao--volume" aria-hidden="true"></span><span class="celular__botao celular__botao--liga" aria-hidden="true"></span><div class="celular__corpo"><div class="celular__tela"><div class="celular__status" aria-hidden="true"><span class="celular__hora" data-fg-hora>9:41</span><span class="celular__icones"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h3v-4H3zM9 20h3v-8H9zM15 20h3V8h-3zM21 20h0V4" fill="currentColor"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 8.5a15 15 0 0 1 20 0M5.5 12a10 10 0 0 1 13 0M9 15.5a5 5 0 0 1 6 0" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><circle cx="12" cy="19" r="1.6" fill="currentColor"/></svg><svg viewBox="0 0 28 24" aria-hidden="true"><rect x="2" y="6" width="21" height="12" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="4.5" y="8.5" width="15" height="7" rx="1.5" fill="currentColor"/><path d="M25 10v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></div><div class="celular__app"><picture><img src="/assets/img/mx/u04d40-lp/safirion-tela-ordem.webp?v=0e6c0e18" width="804" height="1746" alt="" loading="eager" decoding="async"></picture></div><div class="celular__gestos" aria-hidden="true"></div></div><span class="celular__camera" aria-hidden="true"></span></div></div><p class="galeria__legenda"><strong>Ordem</strong>Valor, expiração e retorno antes de operar</p></li><li class="galeria__item revelar" id="fg-tela-1" role="tabpanel" style="--atraso: 70ms"><div class="celular celular--galeria" aria-hidden="true"><span class="celular__botao celular__botao--volume" aria-hidden="true"></span><span class="celular__botao celular__botao--liga" aria-hidden="true"></span><div class="celular__corpo"><div class="celular__tela"><div class="celular__status" aria-hidden="true"><span class="celular__hora" data-fg-hora>9:41</span><span class="celular__icones"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h3v-4H3zM9 20h3v-8H9zM15 20h3V8h-3zM21 20h0V4" fill="currentColor"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 8.5a15 15 0 0 1 20 0M5.5 12a10 10 0 0 1 13 0M9 15.5a5 5 0 0 1 6 0" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><circle cx="12" cy="19" r="1.6" fill="currentColor"/></svg><svg viewBox="0 0 28 24" aria-hidden="true"><rect x="2" y="6" width="21" height="12" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="4.5" y="8.5" width="15" height="7" rx="1.5" fill="currentColor"/><path d="M25 10v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></div><div class="celular__app"><picture><img src="/assets/img/mx/u04d40-lp/safirion-tela-grafico-limpo.webp?v=2fbcb69a" width="352" height="733" alt="" loading="eager" decoding="async"></picture></div><div class="celular__gestos" aria-hidden="true"></div></div><span class="celular__camera" aria-hidden="true"></span></div></div><p class="galeria__legenda"><strong>Gráfico</strong>O preço do ativo em tempo real</p></li><li class="galeria__item revelar" id="fg-tela-2" role="tabpanel" style="--atraso: 140ms"><div class="celular celular--galeria" aria-hidden="true"><span class="celular__botao celular__botao--volume" aria-hidden="true"></span><span class="celular__botao celular__botao--liga" aria-hidden="true"></span><div class="celular__corpo"><div class="celular__tela"><div class="celular__status" aria-hidden="true"><span class="celular__hora" data-fg-hora>9:41</span><span class="celular__icones"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h3v-4H3zM9 20h3v-8H9zM15 20h3V8h-3zM21 20h0V4" fill="currentColor"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 8.5a15 15 0 0 1 20 0M5.5 12a10 10 0 0 1 13 0M9 15.5a5 5 0 0 1 6 0" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><circle cx="12" cy="19" r="1.6" fill="currentColor"/></svg><svg viewBox="0 0 28 24" aria-hidden="true"><rect x="2" y="6" width="21" height="12" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="4.5" y="8.5" width="15" height="7" rx="1.5" fill="currentColor"/><path d="M25 10v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></div><div class="celular__app"><picture><img src="/assets/img/mx/u04d40-lp/safirion-painel-ordem.webp?v=2a1c19d1" width="280" height="600" alt="" loading="eager" decoding="async"></picture></div><div class="celular__gestos" aria-hidden="true"></div></div><span class="celular__camera" aria-hidden="true"></span></div></div><p class="galeria__legenda"><strong>No computador</strong>A mesma ordem na plataforma web</p></li><li class="galeria__item revelar" id="fg-tela-3" role="tabpanel" style="--atraso: 210ms"><div class="celular celular--galeria" aria-hidden="true"><span class="celular__botao celular__botao--volume" aria-hidden="true"></span><span class="celular__botao celular__botao--liga" aria-hidden="true"></span><div class="celular__corpo"><div class="celular__tela"><div class="celular__status" aria-hidden="true"><span class="celular__hora" data-fg-hora>9:41</span><span class="celular__icones"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h3v-4H3zM9 20h3v-8H9zM15 20h3V8h-3zM21 20h0V4" fill="currentColor"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 8.5a15 15 0 0 1 20 0M5.5 12a10 10 0 0 1 13 0M9 15.5a5 5 0 0 1 6 0" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><circle cx="12" cy="19" r="1.6" fill="currentColor"/></svg><svg viewBox="0 0 28 24" aria-hidden="true"><rect x="2" y="6" width="21" height="12" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="4.5" y="8.5" width="15" height="7" rx="1.5" fill="currentColor"/><path d="M25 10v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></div><div class="celular__app"><picture><img src="/assets/img/mx/u04d40-lp/safirion-tela-suporte.webp?v=a19a94f4" width="804" height="1746" alt="" loading="eager" decoding="async"></picture></div><div class="celular__gestos" aria-hidden="true"></div></div><span class="celular__camera" aria-hidden="true"></span></div></div><p class="galeria__legenda"><strong>Suporte</strong>Conversa com o suporte dentro do app</p></li></ul><div class="galeria__abas" role="tablist" aria-label="Telas da plataforma"><button type="button" role="tab" aria-selected="true" aria-controls="fg-tela-0" data-tela="0">Ordem</button><button type="button" role="tab" aria-selected="false" aria-controls="fg-tela-1" data-tela="1">Gráfico</button><button type="button" role="tab" aria-selected="false" aria-controls="fg-tela-2" data-tela="2">No computador</button><button type="button" role="tab" aria-selected="false" aria-controls="fg-tela-3" data-tela="3">Suporte</button></div></div></section><section class="secao beneficios fg-largo" id="enderecos" data-mx-secao="4" aria-labelledby="h-enderecos"><div class="casca beneficios__grade"><div class="beneficios__texto"><header class="cabeca cabeca--esquerda revelar"><p class="fg-rotulo">A lista curta</p><h2 id="h-enderecos">Os endereços <em>oficiais</em> — e este não é um deles</h2><p>Qualquer outro endereço com nome parecido não está nesta lista.</p></header></div><figure class="beneficios__cena revelar" aria-hidden="true" style="--atraso: 90ms"><div class="beneficios__palco"><picture><img class="beneficios__foto" src="/assets/img/mx/u04d40-lp/painel-safirion.webp?v=7e871d09" width="1200" height="671" alt="" loading="eager" decoding="async"></picture><div class="flutua flutua--a"><picture><img src="/assets/img/mx/u04d40-lp/safirion-tela-grafico-limpo.webp?v=2fbcb69a" width="352" height="733" alt="" loading="eager" decoding="async"></picture></div><div class="flutua flutua--b"><picture><img src="/assets/img/mx/u04d40-lp/safirion-tela-suporte.webp?v=a19a94f4" width="804" height="1746" alt="" loading="eager" decoding="async"></picture></div></div><figcaption class="cena-legenda cena-legenda--sobre">Tela real da plataforma</figcaption></figure></div><div class="casca fg-corpo fg-corpo--largo"><ul class="mx-b mx-b-dados mx-b-ficha" data-n="4"><li class="mx-b-dado mx-rev"><span class="mx-b-dado__valor">trade.safirion.com</span><span class="mx-b-dado__rotulo">Plataforma e login</span><span class="mx-b-dado__apoio">onde se entra na conta</span></li><li class="mx-b-dado mx-rev"><span class="mx-b-dado__valor">safirion.com</span><span class="mx-b-dado__rotulo">Site da corretora</span><span class="mx-b-dado__apoio">o site oficial, não é este</span></li><li class="mx-b-dado mx-rev"><span class="mx-b-dado__valor">2FA</span><span class="mx-b-dado__rotulo">Segurança da conta</span><span class="mx-b-dado__apoio">com criptografia e KYC</span></li><li class="mx-b-dado mx-rev"><span class="mx-b-dado__valor">Android</span><span class="mx-b-dado__rotulo">Aplicativo</span><span class="mx-b-dado__apoio">iOS anunciado como "em breve"</span></li></ul><p class="mx-b-fonte">site e plataforma oficiais · lidos em 29/10/2026</p><div class="mx-b mx-b-texto"><p>Dizendo com todas as letras: <strong>este site é de afiliado</strong> e não tem tela de login nenhuma. Se em algum lugar você vir um formulário pedindo a sua senha da Safirion fora de <a href="https://trade.safirion.com/?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/safirion-login-e-acesso" rel="noopener">trade.safirion.com</a> — inclusive numa página que se pareça com esta —, não digite nada.</p><p>O hábito que protege é simples: salve a plataforma nos favoritos do navegador e entre sempre por ali. Nunca pelo primeiro resultado de busca, nunca por link recebido em mensagem.</p></div></div></section><section class="secao passos fg-passos" id="passos" data-mx-secao="5" aria-labelledby="h-passos"><div class="casca"><header class="cabeca revelar"><p class="fg-rotulo">O acesso</p><h2 id="h-passos">Os três passos para <em>entrar</em></h2><p>Vale igual no navegador e no aplicativo Android.</p></header><ol class="passos__lista" data-linha data-n="3"><li class="passo revelar" style="--atraso: 0ms"><span class="passo__num" aria-hidden="true">1</span><div class="passo__cena"><picture><img src="/assets/img/mx/u04d40-lp/safirion-tela-ordem.webp?v=0e6c0e18" width="804" height="1746" alt="" loading="eager" decoding="async"></picture></div><h3>Abra o endereço pelos favoritos</h3><p>Vá a trade.safirion.com digitando ou pelo favorito, e confira o endereço na barra antes de tocar no campo de senha. Endereço conferido primeiro, senha depois.</p></li><li class="passo revelar" style="--atraso: 80ms"><span class="passo__num" aria-hidden="true">2</span><div class="passo__cena"><picture><img src="/assets/img/mx/u04d40-lp/safirion-tela-grafico-limpo.webp?v=2fbcb69a" width="352" height="733" alt="" loading="eager" decoding="async"></picture></div><h3>Entre com e-mail e senha</h3><p>Use o e-mail do cadastro. Senha exclusiva desta conta, nunca repetida de outro serviço — e de preferência guardada num gerenciador de senhas.</p></li><li class="passo revelar" style="--atraso: 160ms"><span class="passo__num" aria-hidden="true">3</span><div class="passo__cena"><picture><img src="/assets/img/mx/u04d40-lp/safirion-painel-ordem.webp?v=2a1c19d1" width="280" height="600" alt="" loading="eager" decoding="async"></picture></div><h3>Confirme no 2FA</h3><p>Com a confirmação em duas etapas ligada, a plataforma pede o código do seu aplicativo. Se chegar um pedido de código que você não iniciou, alguém tem a sua senha: troque na hora.</p></li></ol><div class="fg-corpo fg-corpo--centro"><div class="mx-b mx-b-texto"><p>Se você ainda não ligou o <strong>2FA (confirmação em duas etapas)</strong>, esse é o ajuste mais barato de segurança que existe nesta conta: leva dois minutos e transforma a senha roubada em senha inútil. Faça antes de depositar, não depois.</p></div></div><div class="passos__acao revelar"><a class="botao botao--cheio botao--grande fg-btn" href="https://trade.safirion.com/pt/register?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/safirion-login-e-acesso" target="_blank" rel="noopener sponsored" data-mx-cadastro>Abrir conta</a></div></div></section><section class="secao beneficios fg-largo fg-inverte" id="falhou" aria-labelledby="h-falhou"><div class="casca beneficios__grade"><div class="beneficios__texto"><header class="cabeca cabeca--esquerda revelar"><p class="fg-rotulo">Quando não entra</p><h2 id="h-falhou">Seis motivos para o login <em>falhar</em></h2><p>Do mais banal ao que exige suporte.</p></header></div><figure class="beneficios__cena revelar" aria-hidden="true" style="--atraso: 90ms"><div class="beneficios__palco"><picture><img class="beneficios__foto" src="/assets/img/mx/u04d40-lp/safirion-app-operacao-tablet.webp?v=123dd73f" width="1600" height="2222" alt="" loading="eager" decoding="async"></picture><div class="flutua flutua--a"><picture><img src="/assets/img/mx/u04d40-lp/safirion-painel-ordem.webp?v=2a1c19d1" width="280" height="600" alt="" loading="eager" decoding="async"></picture></div><div class="flutua flutua--b"><picture><img src="/assets/img/mx/u04d40-lp/safirion-tela-ordem.webp?v=0e6c0e18" width="804" height="1746" alt="" loading="eager" decoding="async"></picture></div></div><figcaption class="cena-legenda cena-legenda--sobre">Tela real da plataforma</figcaption></figure></div><div class="casca fg-corpo fg-corpo--largo"><ul class="mx-b mx-b-cartoes" data-n="6"><li class="mx-b-cartao mx-rev"><h3 class="mx-b-cartao__titulo"><svg class="mx-icone mx-icone--info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4m0-4h.01"/></svg><span>E-mail diferente do cadastro</span></h3><p class="mx-b-cartao__texto">Conta criada com outro e-mail — do trabalho, antigo, com ponto a mais no Gmail. Procure na caixa de entrada a mensagem de criação da conta.</p></li><li class="mx-b-cartao mx-rev"><h3 class="mx-b-cartao__titulo"><svg class="mx-icone mx-icone--info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4m0-4h.01"/></svg><span>Senha salva de outro site</span></h3><p class="mx-b-cartao__texto">O navegador preenche a senha de um serviço parecido. Apague o campo e digite à mão uma vez para conferir.</p></li><li class="mx-b-cartao mx-rev"><h3 class="mx-b-cartao__titulo"><svg class="mx-icone mx-icone--alerta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 9v4m0 4h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg><span>Código 2FA fora de hora</span></h3><p class="mx-b-cartao__texto">O código muda a cada poucos segundos e depende do relógio do celular. Se o seu aparelho está com hora errada, o código válido é recusado.</p></li><li class="mx-b-cartao mx-rev"><h3 class="mx-b-cartao__titulo"><svg class="mx-icone mx-icone--alerta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 9v4m0 4h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg><span>Celular do 2FA trocado</span></h3><p class="mx-b-cartao__texto">Aparelho novo sem restaurar o aplicativo de códigos deixa você fora da conta. Isso se resolve com o suporte, e leva tempo.</p></li><li class="mx-b-cartao mx-rev"><h3 class="mx-b-cartao__titulo"><svg class="mx-icone mx-icone--x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg><span>Verificação pendente</span></h3><p class="mx-b-cartao__texto">Entrar é uma coisa; operar e sacar é outra. Documento de KYC pendente pode limitar a conta mesmo com o login funcionando.</p></li><li class="mx-b-cartao mx-rev"><h3 class="mx-b-cartao__titulo"><svg class="mx-icone mx-icone--x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg><span>Endereço errado desde o começo</span></h3><p class="mx-b-cartao__texto">Se você digitou a senha num endereço parecido, o login não falha: ele "funciona" e nada acontece. Troque a senha imediatamente.</p></li></ul></div></section><section class="secao beneficios" id="senha" aria-labelledby="h-senha"><div class="casca beneficios__grade"><div class="beneficios__texto"><header class="cabeca cabeca--esquerda revelar"><p class="fg-rotulo">Esqueceu a senha</p><h2 id="h-senha">Recuperar acesso <em>sem cair em golpe</em></h2><p>A regra é uma: o pedido parte de você, dentro da plataforma.</p></header><div class="fg-corpo"><div class="mx-b mx-b-texto"><p>A recuperação se faz na própria tela de login da plataforma, pela opção de senha esquecida, e a mensagem chega no e-mail do cadastro. Abra o link do e-mail e confira o endereço na barra do navegador antes de definir a nova senha.</p><p>O que nunca acontece de forma legítima: alguém ligar, chamar no WhatsApp ou mandar mensagem pedindo a sua senha, o código do 2FA ou acesso remoto ao seu computador "para ajudar a recuperar a conta". <strong>Nenhum atendimento legítimo pede o código de duas etapas.</strong> Esse pedido, por si só, identifica o golpe.</p></div><div class="mx-b mx-b-aviso mx-rev" role="note"><svg class="mx-icone mx-icone--alerta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 9v4m0 4h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg><p>Nunca informe senha, código de confirmação em duas etapas ou imagem da tela com esses dados a quem te procurar. Esta página é de um site independente de divulgação, não tem tela de login e não pede dado nenhum da sua conta.</p></div></div></div><figure class="beneficios__cena revelar" aria-hidden="true" style="--atraso: 90ms"><div class="beneficios__palco"><picture><img class="beneficios__foto" src="/assets/img/mx/u04d40-lp/safirion-app-ativos-tablet.webp?v=3f11b390" width="1400" height="1113" alt="" loading="eager" decoding="async"></picture><div class="flutua flutua--a"><picture><img src="/assets/img/mx/u04d40-lp/safirion-tela-suporte.webp?v=a19a94f4" width="804" height="1746" alt="" loading="eager" decoding="async"></picture></div><div class="flutua flutua--b"><picture><img src="/assets/img/mx/u04d40-lp/safirion-tela-grafico-limpo.webp?v=2fbcb69a" width="352" height="733" alt="" loading="eager" decoding="async"></picture></div></div><figcaption class="cena-legenda cena-legenda--sobre">Tela real da plataforma</figcaption></figure></div></section><section class="secao beneficios fg-inverte" id="nao-publicado" aria-labelledby="h-nao-publicado"><div class="casca beneficios__grade"><div class="beneficios__texto"><header class="cabeca cabeca--esquerda revelar"><p class="fg-rotulo">O que falta</p><h2 id="h-nao-publicado">O que o site <em>não publica</em> sobre a conta</h2><p>Escrito como está, sem número inventado.</p></header><div class="fg-corpo"><ul class="mx-b mx-b-lista"><li><strong>Prazo da análise de KYC:</strong> a política diz 24 horas, com até 30 dias úteis em certos casos.</li><li><strong>Endereço físico de atendimento:</strong> o site não publica; o contato é digital.</li><li><strong>Nome dos sócios:</strong> o site não publica as pessoas físicas responsáveis.</li><li><strong>Valor mínimo de saque:</strong> o site não publica; o prazo são três dias úteis.</li><li><strong>Tabela de spread por ativo:</strong> o site não publica o custo embutido em cada mercado.</li><li><strong>Política de reembolso:</strong> o site não publica regra de devolução de valor depositado.</li></ul><div class="mx-b mx-b-texto"><p>Isso importa para quem está trancado fora da conta: sem endereço de atendimento e sem prazo publicado, o caminho é o suporte digital e, se travar, o canal público. No Reclame Aqui a empresa respondeu <strong>100% das 37 reclamações</strong> do período, mas com tempo médio de <strong>4d 11h</strong> — não espere resposta no mesmo dia.</p></div></div></div><figure class="beneficios__cena revelar" aria-hidden="true" style="--atraso: 90ms"><div class="beneficios__palco"><picture><img class="beneficios__foto" src="/assets/img/mx/u04d40-lp/safirion-app-suporte-celular.webp?v=34f17b01" width="1600" height="1906" alt="" loading="eager" decoding="async"></picture><div class="flutua flutua--a"><picture><img src="/assets/img/mx/u04d40-lp/safirion-tela-ordem.webp?v=0e6c0e18" width="804" height="1746" alt="" loading="eager" decoding="async"></picture></div><div class="flutua flutua--b"><picture><img src="/assets/img/mx/u04d40-lp/safirion-painel-ordem.webp?v=2a1c19d1" width="280" height="600" alt="" loading="eager" decoding="async"></picture></div></div><figcaption class="cena-legenda cena-legenda--sobre">Tela real da plataforma</figcaption></figure></div></section><section class="secao beneficios fg-largo" id="reputacao" aria-labelledby="h-reputacao"><div class="casca beneficios__grade"><div class="beneficios__texto"><header class="cabeca cabeca--esquerda revelar"><p class="fg-rotulo">Se precisar cobrar</p><h2 id="h-reputacao">O ritmo da resposta, em <em>números públicos</em></h2><p>Reclame Aqui, lido em 29/10/2026.</p></header></div><figure class="beneficios__cena revelar" aria-hidden="true" style="--atraso: 90ms"><div class="beneficios__palco"><picture><img class="beneficios__foto" src="/assets/img/mx/u04d40-lp/safirion-app-conta-celular.webp?v=0bb3f1bf" width="1600" height="2490" alt="" loading="eager" decoding="async"></picture><div class="flutua flutua--a"><picture><img src="/assets/img/mx/u04d40-lp/safirion-tela-grafico-limpo.webp?v=2fbcb69a" width="352" height="733" alt="" loading="eager" decoding="async"></picture></div><div class="flutua flutua--b"><picture><img src="/assets/img/mx/u04d40-lp/safirion-tela-suporte.webp?v=a19a94f4" width="804" height="1746" alt="" loading="eager" decoding="async"></picture></div></div><figcaption class="cena-legenda cena-legenda--sobre">Tela real da plataforma</figcaption></figure></div><div class="casca fg-corpo fg-corpo--largo"><ul class="mx-b mx-b-dados mx-b-numeros" data-n="4"><li class="mx-b-dado mx-rev"><span class="mx-b-dado__valor" data-conta="100" data-dec-casas="0" data-pos="%">100%</span><span class="mx-b-dado__rotulo">Respondidas</span><span class="mx-b-dado__apoio">das 37, nenhuma aguardando</span></li><li class="mx-b-dado mx-rev"><span class="mx-b-dado__valor">4d 11h</span><span class="mx-b-dado__rotulo">Tempo de resposta</span><span class="mx-b-dado__apoio">tempo médio para responder</span></li><li class="mx-b-dado mx-rev"><span class="mx-b-dado__valor" data-conta="75" data-dec-casas="0" data-pos="%">75%</span><span class="mx-b-dado__rotulo">Resolvidas</span><span class="mx-b-dado__apoio">das reclamações, segundo o site</span></li><li class="mx-b-dado mx-rev"><span class="mx-b-dado__valor" data-conta="7.8" data-dec-casas="1">7,8</span><span class="mx-b-dado__rotulo">Nota</span><span class="mx-b-dado__apoio">de 10, faixa "Boa"</span></li></ul><p class="mx-b-fonte">reclameaqui.com.br/empresa/safirion · lido em 29/10/2026</p><div class="mx-b mx-b-texto"><p>Para problema de acesso, a ordem prática é: suporte oficial da plataforma com protocolo e imagem de tela; canal público somente se o suporte não resolver. Conte com a média de 4d 11h até a primeira resposta por lá e guarde a cronologia desde o primeiro contato.</p></div></div></section><section class="secao beneficios fg-largo fg-inverte" id="empresa" aria-labelledby="h-empresa"><div class="casca beneficios__grade"><div class="beneficios__texto"><header class="cabeca cabeca--esquerda revelar"><p class="fg-rotulo">Quem guarda a sua conta</p><h2 id="h-empresa">A conta é de uma empresa <em>de fora</em></h2><p>O que isso muda para quem está trancado fora dela.</p></header></div><figure class="beneficios__cena revelar" aria-hidden="true" style="--atraso: 90ms"><div class="beneficios__palco"><picture><img class="beneficios__foto" src="/assets/img/mx/u04d40-lp/safirion-app-ativos-celular.webp?v=189aa783" width="1100" height="767" alt="" loading="eager" decoding="async"></picture><div class="flutua flutua--a"><picture><img src="/assets/img/mx/u04d40-lp/safirion-painel-ordem.webp?v=2a1c19d1" width="280" height="600" alt="" loading="eager" decoding="async"></picture></div><div class="flutua flutua--b"><picture><img src="/assets/img/mx/u04d40-lp/safirion-tela-ordem.webp?v=0e6c0e18" width="804" height="1746" alt="" loading="eager" decoding="async"></picture></div></div><figcaption class="cena-legenda cena-legenda--sobre">Tela real da plataforma</figcaption></figure></div><div class="casca fg-corpo fg-corpo--largo"><ul class="mx-b mx-b-dados mx-b-ficha" data-n="4"><li class="mx-b-dado mx-rev"><span class="mx-b-dado__valor">THUNDER FLASH LLC</span><span class="mx-b-dado__rotulo">Empresa</span><span class="mx-b-dado__apoio">operadora da plataforma</span></li><li class="mx-b-dado mx-rev"><span class="mx-b-dado__valor" data-conta="22853" data-dec-casas="0" data-pre="L ">L 22853</span><span class="mx-b-dado__rotulo">Registro</span><span class="mx-b-dado__apoio">em Nevis, Caribe</span></li><li class="mx-b-dado mx-rev"><span class="mx-b-dado__valor">Não existe</span><span class="mx-b-dado__rotulo">Regulação no Brasil</span><span class="mx-b-dado__apoio">não é regulada pela CVM</span></li><li class="mx-b-dado mx-rev"><span class="mx-b-dado__valor">SUNSET HORIZON CY LTD</span><span class="mx-b-dado__rotulo">Pagamentos</span><span class="mx-b-dado__apoio">Reg. HE464961, Chipre</span></li></ul><p class="mx-b-fonte">rodapé e documentos oficiais da plataforma · lido em 29/10/2026</p><div class="mx-b mx-b-texto"><p>A plataforma é operada pela <strong>THUNDER FLASH LLC</strong>, de Nevis (L 22853), com pagamentos pela <strong>SUNSET HORIZON CY LTD</strong>, de Chipre (HE464961). A Safirion <strong>não é regulada pela CVM</strong>, e nenhum órgão brasileiro fiscaliza a operação nem garante o saldo da conta.</p><p>Na prática: não há ouvidoria de órgão brasileiro para acionar se o acesso não voltar. É por isso que 2FA ligado, senha exclusiva, e-mail do cadastro ativo e endereço nos favoritos valem mais aqui do que numa corretora cadastrada no Brasil, cuja lista pública fica no Cadastro Geral da CVM.</p></div></div></section><section class="secao para-quem fg-rel" id="mx-continue" data-mx-secao="6" aria-labelledby="mx-h-continue"><div class="casca"><header class="cabeca revelar"><h2 id="mx-h-continue">Guias relacionados</h2></header><ul class="perfis" data-n="6"><li class="perfil revelar" style="--atraso: 0ms"><picture><img class="perfil__foto" src="/assets/img/mx/u04d40-lp/safirion-app-operacao-tablet.webp?v=123dd73f" width="1600" height="2222" alt="" loading="eager" decoding="async"></picture><div class="perfil__texto"><span class="fg-selo">Guia com fonte · lido em 29/10/2026</span><h3><a class="fg-perfil-link" href="/safirion-plataforma-como-funciona/">Como funciona a plataforma da Safirion</a></h3><p class="link-seta">Ler o guia <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></p></div><picture class="perfil__app"><img src="/assets/img/mx/u04d40-lp/safirion-tela-ordem.webp?v=0e6c0e18" width="804" height="1746" alt="" loading="eager" decoding="async"></picture></li><li class="perfil revelar" style="--atraso: 60ms"><picture><img class="perfil__foto" src="/assets/img/mx/u04d40-lp/safirion-app-ativos-tablet.webp?v=3f11b390" width="1400" height="1113" alt="" loading="eager" decoding="async"></picture><div class="perfil__texto"><span class="fg-selo">Reputação com fonte · lida em 29/10/2026</span><h3><a class="fg-perfil-link" href="/safirion-reclame-aqui/">Safirion no Reclame Aqui</a></h3><p class="link-seta">Ler o guia <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></p></div><picture class="perfil__app"><img src="/assets/img/mx/u04d40-lp/safirion-tela-grafico-limpo.webp?v=2fbcb69a" width="352" height="733" alt="" loading="eager" decoding="async"></picture></li><li class="perfil revelar" style="--atraso: 120ms"><picture><img class="perfil__foto" src="/assets/img/mx/u04d40-lp/safirion-app-suporte-celular.webp?v=34f17b01" width="1600" height="1906" alt="" loading="eager" decoding="async"></picture><div class="perfil__texto"><h3><a class="fg-perfil-link" href="/safirion-suporte-como-falar/">Como falar com o suporte da Safirion</a></h3><p class="link-seta">Ler o guia <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></p></div><picture class="perfil__app"><img src="/assets/img/mx/u04d40-lp/safirion-painel-ordem.webp?v=2a1c19d1" width="280" height="600" alt="" loading="eager" decoding="async"></picture></li><li class="perfil revelar" style="--atraso: 180ms"><picture><img class="perfil__foto" src="/assets/img/mx/u04d40-lp/safirion-app-conta-celular.webp?v=0bb3f1bf" width="1600" height="2490" alt="" loading="eager" decoding="async"></picture><div class="perfil__texto"><span class="fg-selo">Análise com fonte · lida em 29/10/2026</span><h3><a class="fg-perfil-link" href="/safirion-taxas-e-custos/">Taxas e custos da Safirion</a></h3><p class="link-seta">Ler o guia <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></p></div><picture class="perfil__app"><img src="/assets/img/mx/u04d40-lp/safirion-tela-suporte.webp?v=a19a94f4" width="804" height="1746" alt="" loading="eager" decoding="async"></picture></li><li class="perfil revelar" style="--atraso: 240ms"><picture><img class="perfil__foto" src="/assets/img/mx/u04d40-lp/safirion-app-ativos-celular.webp?v=189aa783" width="1100" height="767" alt="" loading="eager" decoding="async"></picture><div class="perfil__texto"><span class="fg-selo">Comparativo por categoria · 29/10/2026</span><h3><a class="fg-perfil-link" href="/safirion-vs-outras-corretoras/">Safirion contra as outras corretoras</a></h3><p class="link-seta">Ler o guia <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></p></div><picture class="perfil__app"><img src="/assets/img/mx/u04d40-lp/safirion-tela-ordem.webp?v=0e6c0e18" width="804" height="1746" alt="" loading="eager" decoding="async"></picture></li><li class="perfil revelar" style="--atraso: 300ms"><picture><img class="perfil__foto" src="/assets/img/mx/u04d40-lp/painel-safirion.webp?v=7e871d09" width="1200" height="671" alt="" loading="eager" decoding="async"></picture><div class="perfil__texto"><h3><a class="fg-perfil-link" href="/safirium-ou-safirion-o-nome-correto/">Safirium ou Safirion?</a></h3><p class="link-seta">Ler o guia <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></p></div><picture class="perfil__app"><img src="/assets/img/mx/u04d40-lp/safirion-tela-grafico-limpo.webp?v=2fbcb69a" width="352" height="733" alt="" loading="eager" decoding="async"></picture></li></ul></div></section><section class="secao perguntas" id="duvidas" data-mx-secao="8" aria-labelledby="fg-h-faq"><div class="casca" id="perguntas"><header class="cabeca revelar"><h2 id="fg-h-faq">Perguntas frequentes</h2></header><div class="faq" data-mx-faq-lista><details name="mx-faq" data-mx-faq-item><summary><h3 class="fg-q">Onde faço o login da Safirion?</h3></summary><div class="fg-r"><p>Na plataforma, em <a href="https://trade.safirion.com/?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/safirion-login-e-acesso" rel="noopener">trade.safirion.com</a>, com o e-mail e a senha do cadastro. O mesmo acesso vale no aplicativo Android.</p><p>Confira o endereço na barra do navegador antes de digitar a senha. Este site é de afiliado e não tem tela de login.</p><p class="mx-b-fonte">Fonte: <a href="https://safirion.com/" target="_blank" rel="noopener nofollow">Site oficial da corretora</a></p></div></details><details name="mx-faq" data-mx-faq-item><summary><h3 class="fg-q">Esqueci a senha da Safirion. Como recupero?</h3></summary><div class="fg-r"><p>Pela opção de senha esquecida na própria tela de login da plataforma. A mensagem chega no e-mail do cadastro; abra o link e confira o endereço antes de definir a nova senha.</p><p>Nenhum atendimento legítimo pede a sua senha ou o código de duas etapas por telefone, WhatsApp ou mensagem.</p></div></details><details name="mx-faq" data-mx-faq-item><summary><h3 class="fg-q">O que é o 2FA da Safirion e como ligo?</h3></summary><div class="fg-r"><p><strong>2FA (confirmação em duas etapas)</strong> é o código temporário pedido depois da senha. O site informa que a plataforma trabalha com 2FA, criptografia e KYC.</p><p>Ative nas configurações de segurança da conta, de preferência antes de depositar. É o que torna uma senha roubada inútil.</p></div></details><details name="mx-faq" data-mx-faq-item><summary><h3 class="fg-q">Meu código 2FA não funciona. O que fazer?</h3></summary><div class="fg-r"><p>Confira a hora do celular: o código depende do relógio do aparelho, e hora errada derruba códigos válidos. Ajuste para hora automática e tente de novo.</p><p>Se você trocou de aparelho sem restaurar o aplicativo de códigos, o caminho é o suporte oficial. Guarde protocolo, porque isso leva tempo.</p></div></details><details name="mx-faq" data-mx-faq-item><summary><h3 class="fg-q">Dá para entrar na Safirion pelo celular?</h3></summary><div class="fg-r"><p>Sim. Há aplicativo <strong>Android</strong>; no iPhone, o site anuncia o app como <strong>"em breve"</strong> e o acesso é pelo navegador do próprio aparelho.</p><p>A conta é a mesma nos dois caminhos: um login, um 2FA.</p></div></details><details name="mx-faq" data-mx-faq-item><summary><h3 class="fg-q">Como saber se o site de login da Safirion é verdadeiro?</h3></summary><div class="fg-r"><p>O login oficial fica em <strong>trade.safirion.com</strong>, e o site institucional é <strong>safirion.com</strong>. Qualquer outro endereço pedindo a sua senha não está nessa lista.</p><p>Salve a plataforma nos favoritos e entre sempre por ali — nunca por link de anúncio, mensagem ou encurtador.</p></div></details><details name="mx-faq" data-mx-faq-item><summary><h3 class="fg-q">Minha conta Safirion está bloqueada. Por quê?</h3></summary><div class="fg-r"><p>Os motivos mais comuns em plataformas desse tipo são verificação de identidade pendente, dado de cadastro divergente ou tentativa de acesso suspeita. O site não publica uma lista de regras de bloqueio.</p><p>Abra caso no suporte oficial com documento e protocolo. Sem solução, registre a cronologia no canal público.</p></div></details><details name="mx-faq" data-mx-faq-item><summary><h3 class="fg-q">Preciso fazer KYC para entrar na conta?</h3></summary><div class="fg-r"><p>Para entrar, não necessariamente; para operar com dinheiro e retirar, a plataforma trabalha com <strong>KYC (conferência de identidade)</strong>.</p><p><strong>A política publica</strong> o prazo de análise: 24 horas, podendo chegar a 30 dias úteis. Envie com a conta tranquila, antes de precisar sacar.</p></div></details><details name="mx-faq" data-mx-faq-item><summary><h3 class="fg-q">Este site é a área de cliente da Safirion?</h3></summary><div class="fg-r"><p>Não. Este é um site independente de divulgação — uma <strong>página de afiliado</strong> — e não tem área de cliente nem tela de login.</p><p>A área da conta é em <a href="https://trade.safirion.com/?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/safirion-login-e-acesso" rel="noopener">trade.safirion.com</a>, e o site oficial da corretora é <a href="https://safirion.com/" rel="noopener">safirion.com</a>.</p></div></details><details name="mx-faq" data-mx-faq-item><summary><h3 class="fg-q">Se eu perder o acesso, a quem recorro no Brasil?</h3></summary><div class="fg-r"><p>À própria empresa e, se não resolver, ao canal público de reclamação: a Safirion respondeu <strong>100% das 37 reclamações</strong> do período, com média de <strong>4d 11h</strong>.</p><p>Não há órgão brasileiro para acionar: a plataforma é operada pela <strong>THUNDER FLASH LLC</strong>, de Nevis, e <strong>não é regulada pela CVM</strong>.</p><p class="mx-b-fonte">Fonte: <a href="https://www.reclameaqui.com.br/empresa/safirion/" target="_blank" rel="noopener nofollow">reclameaqui.com.br/empresa/safirion</a></p></div></details></div><div class="fg-ver-mais"><button type="button" class="fg-ver-mais-botao" data-mx-faq-mais data-rotulo="Ver mais perguntas (+" data-rotulo-menos="Ver menos perguntas (−" aria-expanded="false">Ver mais perguntas (+<span data-mx-faq-n>5</span>)</button></div></div></section><section class="chamada fg-chamada" data-mx-secao="9" aria-labelledby="fg-h-chamada"><div class="chamada__fundo" aria-hidden="true"><picture><img src="/assets/img/mx/u04d40-lp/fundo-poster.webp?v=0a74029e" width="1280" height="720" alt="" loading="eager" decoding="async"></picture></div><div class="casca chamada__conteudo revelar"><h2 id="fg-h-chamada">Ainda não tem conta? <em>Comece pela demonstração</em></h2><p>Se você chegou aqui procurando login e ainda não tem cadastro, use o botão CRIAR CONTA desta página, ligue o 2FA no primeiro acesso e teste a plataforma na conta de demonstração.</p><p>Depósito só depois, começando pelo mínimo de US$ 10. Operar envolve risco de perder o capital investido, e nenhum órgão brasileiro garante o saldo da conta.</p><div class="heroi__acoes heroi__acoes--centro"><a class="botao botao--cheio botao--grande fg-btn" href="https://trade.safirion.com/pt/register?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/safirion-login-e-acesso" target="_blank" rel="noopener sponsored" data-mx-cadastro>Abrir conta</a></div><p class="chamada__zap fg-ja-tem">Já tem conta? <a href="https://safirion.com/login/" target="_blank" rel="noopener">Entrar na plataforma</a></p><p class="fg-risco">Operar envolve risco de perda do capital investido. Só para maiores de 18 anos. Link de afiliado.</p></div></section><section class="fg-fecho" id="fontes" data-mx-obrigatorio="fecho"><div class="fg-fecho__wrap"><p class="fg-indep" data-mx-obrigatorio="indep"><span>Esta é uma <strong>página de afiliado</strong>, não o site oficial da Safirion — o oficial é <a href="https://safirion.com/" target="_blank" rel="noopener">safirion.com</a>. Podemos receber comissão pelos cadastros feitos a partir dos nossos links. Isso não muda nenhum número desta página.</span></p><h2 class="fg-fecho__h2">Fontes desta página</h2><ul class="fg-fecho__fontes"><li><a href="https://trade.safirion.com/?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/safirion-login-e-acesso" target="_blank" rel="noopener nofollow">Plataforma de operação (tela de login e área da conta)</a></li><li><a href="https://safirion.com/" target="_blank" rel="noopener nofollow">Site oficial da corretora</a></li><li><a href="https://www.reclameaqui.com.br/empresa/safirion/" target="_blank" rel="noopener nofollow">Reclame Aqui — Safirion (nota, reclamações, tempo de resposta)</a></li><li><a href="https://www.gov.br/cvm/pt-br/assuntos/regulados/consultas-por-participante/corretoras-e-distribuidoras" target="_blank" rel="noopener nofollow">CVM — Corretoras e distribuidoras: consulta pelo Cadastro Geral</a></li></ul><div class="fg-fecho__aviso" role="note"><svg class="mx-icone mx-icone--info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4m0-4h.01"/></svg><p>Este site é uma página independente de divulgação e <strong>não é operado pela Safirion</strong>. A plataforma é operada pela <strong>THUNDER FLASH LLC</strong> (Reg. L 22853, Nevis) e os pagamentos são processados pela <strong>SUNSET HORIZON CY LTD</strong> (Reg. HE464961, Chipre). A Safirion <strong>não é regulada pela CVM</strong>. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.</p></div></div></section></div></div></main>
+
+
+<footer class="ft">
+  <div class="wrap ft__top">
+    <div class="ft__brand">
+      <img src="/assets/icons/safirion-logo-horizontal.svg?v=b8bdab6a" alt="Safirion" width="280" height="28">
+      <p>Safirion Broker é uma plataforma moderna e segura para opções binárias, com ferramentas avançadas e suporte especializado para investidores.</p>
+
+      <a class="ft__mail" href="mailto:contato@safirion.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M3 7l9 6 9-6"/></svg>
+        contato@safirion.com
+      </a>
+
+      <div class="ft__social">
+        <a href="https://www.instagram.com/safirionbroker/" target="_blank" rel="noopener" aria-label="Instagram oficial da Safirion">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><defs><radialGradient id="sfrIg" cx="28%" cy="106%" r="145%"><stop offset="0" stop-color="#FED576"/><stop offset=".26" stop-color="#F47133"/><stop offset=".61" stop-color="#BC3081"/><stop offset="1" stop-color="#4F5BD5"/></radialGradient></defs><rect width="40" height="40" rx="11" fill="url(#sfrIg)"/><rect x="11.2" y="11.2" width="17.6" height="17.6" rx="5.3" fill="none" stroke="#fff" stroke-width="2.1"/><circle cx="20" cy="20" r="4.5" fill="none" stroke="#fff" stroke-width="2.1"/><circle cx="25.7" cy="14.3" r="1.45" fill="#fff"/></svg>
+        </a>
+        <a href="https://t.me/+S7-egF_BUsI2NmM5" target="_blank" rel="noopener" aria-label="Canal oficial da Safirion no Telegram">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="sfrTg" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="0" stop-color="#2AABEE"/><stop offset="1" stop-color="#229ED9"/></linearGradient></defs><rect width="40" height="40" rx="11" fill="url(#sfrTg)"/><path fill="#fff" d="M29.6 12.2 10.7 19.5c-.86.33-.85 1.56.02 1.87l4.68 1.64 1.8 5.44c.2.62.98.8 1.43.33l2.53-2.64 4.66 3.42c.57.42 1.38.11 1.53-.58l3.14-15.06c.16-.77-.58-1.4-1.31-1.12z"/><path fill="#CCE5F2" d="m16.3 22.7 9.83-6.05c.4-.25.83.3.48.62l-8 7.27-.3 3.6z"/></svg>
+        </a>
+      </div>
+
+      <div class="ft__acts">
+        <a class="btn btn--ghost" href="https://safirion.com/login/">LOGIN</a>
+        <a class="btn btn--primary" href="https://trade.safirion.com/pt/register?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/safirion-login-e-acesso">CRIAR CONTA</a>
+      </div>
+    </div>
+
+    <nav class="ft__cols" aria-label="Rodapé">
+      <div class="ft__col">
+        <h3>Plataforma</h3>
+        <ul>
+          <li><a href="#topo">Início</a></li>
+          <li><a href="/#o-que-e">O que é a Safirion</a></li>
+          <li><a href="/#como-funciona">Como funciona</a></li>
+          <li><a href="/#seguranca">Segurança</a></li>
+          <li><a href="/#recursos">Recursos</a></li>
+          <li><a href="/#ferramentas">Ferramentas</a></li>
+          <li><a href="/#por-que-escolher">Por que a Safirion</a></li>
+          <li><a href="/#app">Aplicativo</a></li>
+          <li><a href="/corretoras-digitais-plataformas-online-diferencas/">Blog</a></li>
+        </ul>
+      </div>
+      <div class="ft__col">
+        <h3>Conta</h3>
+        <ul>
+          <li><a href="https://trade.safirion.com/pt/register?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/safirion-login-e-acesso">Criar conta</a></li>
+          <li><a href="https://safirion.com/login/">Entrar</a></li>
+          <li><a href="/#como-se-cadastrar">Como se cadastrar</a></li>
+          <li><a href="/#duvidas-frequentes">Dúvidas frequentes</a></li>
+          <li><a href="/#comece-agora">Comece agora</a></li>
+          <li><a href="https://safirion.com/blog/" target="_blank" rel="noopener">Blog</a></li>
+          <li><a href="https://safirion.com/sobre/" target="_blank" rel="noopener">Sobre</a></li>
+          <li><a href="https://safirion.com/contato/" target="_blank" rel="noopener">Contato</a></li>
+        </ul>
+      </div>
+      <div class="ft__col">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="https://safirion.com/legal/terms/" target="_blank" rel="noopener">Termos e Condições</a></li>
+          <li><a href="https://safirion.com/legal/privacy/" target="_blank" rel="noopener">Política de Privacidade</a></li>
+          <li><a href="https://fsms.trade.safirion.com/storage/public/d5/j3/m5fvhhge5gv5vabg/Safirion%20AML%20and%20KYC%20Policy.pdf" target="_blank" rel="noopener">Política AML e KYC</a></li>
+          <li><a href="https://fsms.trade.safirion.com/storage/public/d5/j3/m5fvhhge5gv5vacg/Safirion%20General%20Fees.pdf" target="_blank" rel="noopener">Taxas Gerais</a></li>
+          <li><a href="https://fsms.trade.safirion.com/storage/public/d5/j3/m5fvhhge5gv5vad0/Safirion%20Order%20Execution%20Policy.pdf" target="_blank" rel="noopener">Política de Execução</a></li>
+          <li><a href="https://fsms.trade.safirion.com/storage/public/d5/j3/m58ggnfho3e37pf0/Safirion%20Payment%20Policy.pdf" target="_blank" rel="noopener">Política de Pagamento</a></li>
+          <li><a href="https://fsms.trade.safirion.com/storage/public/d5/j3/m58ggnfho3e37peg/Safirion%20Cookies%20Policy.pdf" target="_blank" rel="noopener">Política de Cookies</a></li>
+          <li><a href="https://fsms.trade.safirion.com/storage/public/d5/j3/m5fvhhge5gv5vab0/Safirion%20Demo%20Account.pdf" target="_blank" rel="noopener">Contas Demo</a></li>
+          <li><a href="https://fsms.trade.safirion.com/storage/public/d5/j3/m5fvhhge5gv5vae0/Safirion%20Risk%20Disclosure.pdf" target="_blank" rel="noopener">Divulgação de Risco</a></li>
+          <li><a href="https://fsms.trade.safirion.com/storage/public/d5/j3/m58ggnfho3e37pgg/Safirion%20Withdrawal%20Policy.pdf" target="_blank" rel="noopener">Política de Saque</a></li>
+          <li><a href="https://fsms.trade.safirion.com/storage/public/d5/j3/m58ggnfho3e37pfg/Safirion%20Margin%20Trading.pdf" target="_blank" rel="noopener">Margin Trading</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <nav class="wrap ft__lng" aria-label="Escolher idioma"><a href="/" hreflang="pt-BR" lang="pt-BR" aria-current="true"><img src="/assets/img/bandeiras/pt.svg?v=d5fc3717" alt="" width="20" height="15" loading="lazy" decoding="async">Português</a><a href="/en/" hreflang="en" lang="en"><img src="/assets/img/bandeiras/en.svg?v=1d23b950" alt="" width="20" height="15" loading="lazy" decoding="async">English</a><a href="/es/" hreflang="es" lang="es"><img src="/assets/img/bandeiras/es.svg?v=1f23da73" alt="" width="20" height="15" loading="lazy" decoding="async">Español</a><a href="/ar/" hreflang="ar" lang="ar"><img src="/assets/img/bandeiras/ar.svg?v=cf69a304" alt="" width="20" height="15" loading="lazy" decoding="async">العربية</a><a href="/bn/" hreflang="bn" lang="bn"><img src="/assets/img/bandeiras/bn.svg?v=e99cb11f" alt="" width="20" height="15" loading="lazy" decoding="async">বাংলা</a><a href="/de/" hreflang="de" lang="de"><img src="/assets/img/bandeiras/de.svg?v=e88d8860" alt="" width="20" height="15" loading="lazy" decoding="async">Deutsch</a><a href="/fil/" hreflang="fil" lang="fil"><img src="/assets/img/bandeiras/fil.svg?v=64c3d8b0" alt="" width="20" height="15" loading="lazy" decoding="async">Filipino</a><a href="/fr/" hreflang="fr" lang="fr"><img src="/assets/img/bandeiras/fr.svg?v=bf4cae9b" alt="" width="20" height="15" loading="lazy" decoding="async">Français</a><a href="/hi/" hreflang="hi" lang="hi"><img src="/assets/img/bandeiras/hi.svg?v=230b82c4" alt="" width="20" height="15" loading="lazy" decoding="async">हिन्दी</a><a href="/id/" hreflang="id" lang="id"><img src="/assets/img/bandeiras/id.svg?v=f5aa8121" alt="" width="20" height="15" loading="lazy" decoding="async">Bahasa Indonesia</a><a href="/it/" hreflang="it" lang="it"><img src="/assets/img/bandeiras/it.svg?v=1d72a5de" alt="" width="20" height="15" loading="lazy" decoding="async">Italiano</a><a href="/ru/" hreflang="ru" lang="ru"><img src="/assets/img/bandeiras/ru.svg?v=8b2aa18f" alt="" width="20" height="15" loading="lazy" decoding="async">Русский</a><a href="/sv/" hreflang="sv" lang="sv"><img src="/assets/img/bandeiras/sv.svg?v=79da0f18" alt="" width="20" height="15" loading="lazy" decoding="async">Svenska</a><a href="/th/" hreflang="th" lang="th"><img src="/assets/img/bandeiras/th.svg?v=bcc03a3c" alt="" width="20" height="15" loading="lazy" decoding="async">ไทย</a><a href="/tr/" hreflang="tr" lang="tr"><img src="/assets/img/bandeiras/tr.svg?v=a00c7dfb" alt="" width="20" height="15" loading="lazy" decoding="async">Türkçe</a><a href="/vi/" hreflang="vi" lang="vi"><img src="/assets/img/bandeiras/vi.svg?v=076d5956" alt="" width="20" height="15" loading="lazy" decoding="async">Tiếng Việt</a><a href="/zh/" hreflang="zh-CN" lang="zh-CN"><img src="/assets/img/bandeiras/zh.svg?v=347824ed" alt="" width="20" height="15" loading="lazy" decoding="async">简体中文</a></nav>
+
+  <div class="wrap ft__legal">
+    <p class="aviso-indep">Site independente de divulgação: não é o site oficial da Safirion nem é operado por ela — o oficial é safirion.com. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.</p>
+  </div>
+
+  <div class="wrap ft__copy">
+    <span>Direitos autorais © 2026.</span>
+    <span>Todos os direitos reservados.</span>
+  </div>
+</footer>
+
+<button class="top" id="top" type="button" aria-label="Rolar para cima">
+  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 13V3m0 0L3.6 7.4M8 3l4.4 4.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script src="/assets/js/main.js?v=7" defer></script>
+<script src="/assets/js/popup-promo.js?v=5" defer></script>
+
+<script src="/assets/js/mx.js?v=e56b72c7" defer></script>
+<script>
+(function() {
+  "use strict";
+  var menos = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function cada(lista, fn) {
+    Array.prototype.forEach.call(lista, fn);
+  }
+  function iniciar() {
+    var raiz = document.querySelector(".mx-u04d40");
+    if (!raiz || raiz.getAttribute("data-fg-ok")) return;
+    raiz.setAttribute("data-fg-ok", "1");
+    var casca = raiz.querySelector(".fg-js");
+    if (!casca) return;
+    casca.classList.add("js");
+    var heroi = raiz.querySelector(".fg-heroi");
+    function medir() {
+      var cab = document.querySelector("header, .hdr, [data-mx-cabecalho]");
+      var y = window.scrollY || 0, cobre = 0;
+      if (cab && heroi) {
+        var c = cab.getBoundingClientRect();
+        var fixo = /fixed|sticky/.test(getComputedStyle(cab).position);
+        var h = heroi.getBoundingClientRect();
+        cobre = Math.max(0, Math.round((fixo ? c.bottom : c.bottom + y) - (h.top + y)));
+        if (cobre > 240) cobre = 0;
+      }
+      raiz.style.setProperty("--topo-h", cobre + "px");
+    }
+    medir();
+    window.addEventListener("resize", medir);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(medir);
+    var agora = /* @__PURE__ */ new Date();
+    var hora = agora.getHours() + ":" + ("0" + agora.getMinutes()).slice(-2);
+    cada(raiz.querySelectorAll("[data-fg-hora]"), function(h) {
+      h.textContent = hora;
+    });
+    var videos = raiz.querySelectorAll("video[data-fg-video]");
+    cada(videos, function(v) {
+      if (menos) {
+        v.removeAttribute("autoplay");
+        v.pause();
+        return;
+      }
+      v.addEventListener("playing", function() {
+        v.classList.add("toca");
+      });
+      if (!v.paused && v.readyState > 2) v.classList.add("toca");
+      if ("IntersectionObserver" in window) {
+        new IntersectionObserver(function(es) {
+          es.forEach(function(e) {
+            if (e.isIntersecting) {
+              var p = v.play();
+              if (p && p.catch) p.catch(function() {
+              });
+            } else v.pause();
+          });
+        }, { threshold: 0.05 }).observe(v.parentNode);
+      }
+    });
+    var revelar = casca.querySelectorAll(".revelar, .passos__lista");
+    if ("IntersectionObserver" in window) {
+      var io = new IntersectionObserver(function(es) {
+        es.forEach(function(e) {
+          if (!e.isIntersecting) return;
+          var el = e.target;
+          if (el.classList.contains("passos__lista")) el.classList.add("ativo");
+          else el.classList.add("visivel");
+          io.unobserve(el);
+        });
+      }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
+      cada(revelar, function(el) {
+        io.observe(el);
+      });
+    } else cada(revelar, function(el) {
+      el.classList.add("visivel", "ativo");
+    });
+    cada(casca.querySelectorAll(".fg-dentro"), function(sec) {
+      var itens = sec.querySelectorAll(".galeria__item");
+      var abas = sec.querySelectorAll('.galeria__abas [role="tab"]');
+      if (!itens.length || !abas.length) return;
+      var atual = 0, timer = null, visivel = false, parado = menos;
+      function mostrar(i, foco) {
+        atual = (i + itens.length) % itens.length;
+        cada(itens, function(it, k) {
+          it.classList.toggle("ativo", k === atual);
+        });
+        cada(abas, function(b, k) {
+          b.setAttribute("aria-selected", k === atual ? "true" : "false");
+          b.tabIndex = k === atual ? 0 : -1;
+          if (k === atual && foco) b.focus();
+        });
+      }
+      function rodar() {
+        clearInterval(timer);
+        if (parado || !visivel) {
+          sec.classList.remove("galeria--roda");
+          return;
+        }
+        sec.classList.add("galeria--roda");
+        timer = setInterval(function() {
+          mostrar(atual + 1);
+        }, 3600);
+      }
+      cada(abas, function(b, k) {
+        b.addEventListener("click", function() {
+          parado = true;
+          rodar();
+          mostrar(k);
+        });
+        b.addEventListener("keydown", function(e) {
+          var d = e.key === "ArrowRight" ? 1 : e.key === "ArrowLeft" ? -1 : 0;
+          if (!d) return;
+          e.preventDefault();
+          parado = true;
+          rodar();
+          mostrar(atual + d, true);
+        });
+      });
+      mostrar(0);
+      if ("IntersectionObserver" in window) {
+        new IntersectionObserver(function(es) {
+          visivel = es[0].isIntersecting;
+          rodar();
+        }, { threshold: 0.35 }).observe(sec);
+      }
+      document.addEventListener("visibilitychange", function() {
+        visivel = !document.hidden && visivel;
+        rodar();
+      });
+    });
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", iniciar);
+  else iniciar();
+})();
+</script>
+<style id="alvo-de-toque-44">
+main#conteudo {
+  font-size: 1rem;
+}
+main#conteudo input,
+main#conteudo textarea,
+main#conteudo select {
+  font-size: 1rem;
+}
+article.kvdep__card div.kvdep__quem div.kvdep__tag {
+  font-size: 14px;
+}
+div.kvf__app div.kvf__app-marca span small {
+  font-size: 14px;
+}
+div.kvf__app-btns a.kvf__badge span small,
+div.kvf__app-btns span.kvf__badge span small {
+  font-size: 13px;
+}
+footer.kvf div.kvf__legal p {
+  font-size: 14px;
+}
+div.pp4 div.pp4__cup small {
+  font-size: 14px;
+}
+div.kvfaq__wrap button.kvfaq__q span.kvfaq__n {
+  font-size: 13px;
+}
+.framer-styles-preset-1jknzp0:not(.rich-text-wrapper) {
+  font-size: max(13px, calc(var(--framer-blockquote-font-size,var(--framer-font-size,16px))*var(--framer-font-size-scale,1)));
+}
+button.kvdl {
+  min-height: 44px;
+}
+div.pp4 .pp4__cup {
+  padding-block: 4px;
+}
+div.pp4 button.pp4__cp {
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 14px;
+  padding: 7px 14px;
+}
+div.pp4 button.pp4__x {
+  min-width: 44px;
+  min-height: 44px;
+  line-height: 1.3;
+}
+div.pp4 p.pp4__mini {
+  font-size: 13px;
+}
+@media (max-width: 47.99rem) {
+  footer.kvf ul {
+    gap: 0;
+  }
+  footer.kvf li a {
+    padding: 12px 0;
+  }
+  footer.kvf a.kvf__mail {
+    min-height: 44px;
+  }
+  a.kvsup__mail {
+    min-height: 44px;
+    border-bottom: 0;
+    text-decoration: underline;
+    text-decoration-color: rgba(75, 163, 240, .35);
+    text-underline-offset: 3px;
+  }
+  a.kvsup__mail:hover {
+    text-decoration-color: #7cc0ff;
+  }
+  #site-oficial nav.kvo__links a {
+    min-height: 44px;
+  }
+  footer.kvf div.kvf__social a {
+    min-width: 44px;
+    min-height: 44px;
+  }
+  p.vx-aviso-indep a {
+    padding-block: 14px;
+  }
+}
+</style>
+</body>
+</html>
