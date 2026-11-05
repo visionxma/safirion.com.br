@@ -1766,3 +1766,4 @@ main#conteudo {
   max-width: none;
   padding-inline: 0;
 }
+/* acabamento-titulos */.pg-cartao__titulo,.pg-passo__titulo{text-wrap:balance}.pg-dado__valor{line-height:1.22}@media (max-width:29.99rem){.pg-sec__h2,.pg-cta__h2{line-height:1.22}}
