@@ -1,49 +1,34 @@
-# Safirion Broker — site independente de divulgação
+# Safirion Broker Brasil
 
-> Site independente de divulgação sobre a Safirion Broker, em 17 idiomas: o que é a plataforma, como funciona o cadastro, quais recursos existem e conteúdo educativo sobre corretoras e plataformas de trading online.
+> Site independente de divulgação sobre a Safirion Broker, em português: o que é a plataforma, como funciona o cadastro, quais recursos existem, taxas, saque, suporte, e conteúdo educativo sobre corretoras no exterior e o que verificar antes de se cadastrar.
 
-Site independente de divulgação: não é o site oficial da Safirion nem é operado por ela — o oficial é safirion.com. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
+Esta é a página brasileira sobre a Safirion, https://safirion.com.br — aqui ficam as informações da plataforma, o passo a passo do cadastro e o conteúdo educativo; a conta é criada e acessada em https://trade.safirion.com. O site oficial da marca é https://safirion.com. Quem opera a plataforma é a THUNDER FLASH LLC, registrada em Nevis (Reg. No. L 22853); os pagamentos são processados pela SUNSET HORIZON CY LTD, registrada no Chipre (Reg. No. HE464961, Limassol).
 
-A plataforma é operada por THUNDER FLASH LLC (Reg. No. L 22853, Nevis); os pagamentos são processados por SUNSET HORIZON CY LTD (Reg. No. HE464961, Limassol).
+Quem publica este site: https://safirion.com.br é um site independente de divulgação. Não é o site oficial da Safirion nem é operado por ela, e pode receber comissão pelos cadastros feitos a partir dos seus links. A Safirion não é regulada pela Comissão de Valores Mobiliários (CVM) nem autorizada por ela a ofertar serviços no Brasil, e não consta do cadastro de participantes do mercado que a CVM mantém. Este site não presta serviço financeiro: não recebe depósito, não guarda dinheiro de ninguém e não executa ordem no mercado — tudo isso acontece na plataforma da corretora. Para falar com a empresa, use os canais de https://safirion.com.
 
-Operar nos mercados financeiros envolve risco de perda do capital. O conteúdo deste site é informativo e não constitui recomendação de investimento.
+Operar nos mercados financeiros, inclusive opções, envolve risco de perda do capital investido e pode não ser adequado a todos. O conteúdo deste site é informativo e não constitui recomendação de investimento. Somente para maiores de 18 anos.
 
-## Comece por aqui
-- [Safirion Broker • Plataforma Trading Profissional](https://safirion.com.br/): O que é a Safirion Broker, como a plataforma funciona, o passo a passo do cadastro, os recursos disponíveis e como o suporte atende. Página em português.
+Texto completo das páginas, em um arquivo só: https://safirion.com.br/llms-full.txt
 
-## O site oficial da corretora
-- [Safirion | Plataforma de Trading Online](https://safirion.com/): O site OFICIAL da Safirion, operado pela própria corretora. É a referência para dados da empresa, termos e suporte oficial.
+## Página inicial
+- [Safirion Broker • Plataforma Trading Profissional](https://safirion.com.br/): Safirion Broker é uma plataforma moderna e segura para opções binárias, com ferramentas avançadas e suporte especializado para investidores.
 
-## Cadastro e login
-- [Criar conta na Safirion Broker — cadastro em 2 minutos](https://safirion.com.br/cadastro/): Abertura de conta. O formulário é o da plataforma da Safirion; este site encaminha o cadastro e pode receber comissão por ele.
-- [Login Safirion Broker — acesse sua conta](https://safirion.com.br/login/): Acesso à conta já criada, na plataforma da corretora.
+## Páginas (4)
+- [Safirion app: Android existe, iPhone não — e o risco](https://safirion.com.br/safirion-app-para-celular/): App da Safirion para celular: o site anuncia Android disponível e iOS "em breve". Onde baixar sem cair em arquivo falso e o que o site não publica.
+- [Safirion conta demo: como usar sem depositar nada](https://safirion.com.br/safirion-conta-demo/): Conta demo da Safirion: como abrir, o que ela mostra dos +130 ativos e as seis coisas que a demonstração não ensina. Guia de afiliado, lido em 29/10/2026.
+- [Safirion: documentos para verificação da conta (KYC)](https://safirion.com.br/safirion-documentos-para-verificacao/): Verificação de conta na Safirion: o que a conferência de identidade costuma pedir, por que pedem, o que reprova a foto e para onde vai o seu documento.
+- [Plataforma Safirion: como funciona, ativos e aplicativo](https://safirion.com.br/safirion-plataforma-como-funciona/): Como funciona a plataforma da Safirion: +130 ativos em CFD, acesso no navegador e app Android, 2FA e KYC. O que ela não publica, lido em 29/10/2026.
 
-## Blog
-- [Corretoras digitais e plataformas online: diferenças que o usuário deve conhecer](https://safirion.com.br/corretoras-digitais-plataformas-online-diferencas/): A diferença entre serviço, plataforma e interface; o que avaliar em cada um antes de se cadastrar; segurança e proteção de dados; e por que desconfiar de promessa de resultado.
+## Políticas da Safirion (PDF)
+- [Política AML e KYC](https://fsms.trade.safirion.com/storage/public/d5/j3/m5fvhhge5gv5vabg/Safirion%20AML%20and%20KYC%20Policy.pdf)
+- [Taxas Gerais](https://fsms.trade.safirion.com/storage/public/d5/j3/m5fvhhge5gv5vacg/Safirion%20General%20Fees.pdf)
+- [Política de Execução](https://fsms.trade.safirion.com/storage/public/d5/j3/m5fvhhge5gv5vad0/Safirion%20Order%20Execution%20Policy.pdf)
+- [Política de Pagamento](https://fsms.trade.safirion.com/storage/public/d5/j3/m58ggnfho3e37pf0/Safirion%20Payment%20Policy.pdf)
+- [Política de Cookies](https://fsms.trade.safirion.com/storage/public/d5/j3/m58ggnfho3e37peg/Safirion%20Cookies%20Policy.pdf)
+- [Contas Demo](https://fsms.trade.safirion.com/storage/public/d5/j3/m5fvhhge5gv5vab0/Safirion%20Demo%20Account.pdf)
+- [Divulgação de Risco](https://fsms.trade.safirion.com/storage/public/d5/j3/m5fvhhge5gv5vae0/Safirion%20Risk%20Disclosure.pdf)
+- [Política de Saque](https://fsms.trade.safirion.com/storage/public/d5/j3/m58ggnfho3e37pgg/Safirion%20Withdrawal%20Policy.pdf)
+- [Margin Trading](https://fsms.trade.safirion.com/storage/public/d5/j3/m58ggnfho3e37pfg/Safirion%20Margin%20Trading.pdf)
 
-## Em outros idiomas (o mesmo site)
-- [Safirion Broker • Professional Trading Platform](https://safirion.com.br/en/): A mesma página em inglês.
-- [Safirion Broker • Plataforma de Trading Profesional](https://safirion.com.br/es/): A mesma página em espanhol.
-- [Safirion Broker • Plateforme de trading professionnelle](https://safirion.com.br/fr/): A mesma página em francês.
-- [Safirion Broker • Professionelle Trading-Plattform](https://safirion.com.br/de/): A mesma página em alemão.
-- [Safirion Broker • Piattaforma di Trading Professionale](https://safirion.com.br/it/): A mesma página em italiano.
-- [Safirion Broker • Профессиональная торговая платформа](https://safirion.com.br/ru/): A mesma página em russo.
-- [Safirion Broker • Profesyonel İşlem Platformu](https://safirion.com.br/tr/): A mesma página em turco.
-- [Safirion Broker • منصة تداول احترافية](https://safirion.com.br/ar/): A mesma página em árabe.
-- [Safirion Broker • प्रोफेशनल ट्रेडिंग प्लेटफ़ॉर्म](https://safirion.com.br/hi/): A mesma página em híndi.
-- [Safirion Broker • পেশাদার ট্রেডিং প্ল্যাটফর্ম](https://safirion.com.br/bn/): A mesma página em bengali.
-- [Safirion Broker • Platform Trading Profesional](https://safirion.com.br/id/): A mesma página em indonésio.
-- [Safirion Broker • Propesyonal na Trading Platform](https://safirion.com.br/fil/): A mesma página em filipino.
-- [Safirion Broker • Nền tảng giao dịch chuyên nghiệp](https://safirion.com.br/vi/): A mesma página em vietnamita.
-- [Safirion Broker • แพลตฟอร์มเทรดระดับมืออาชีพ](https://safirion.com.br/th/): A mesma página em tailandês.
-- [Safirion Broker • 专业在线交易平台](https://safirion.com.br/zh/): A mesma página em chinês.
-- [Safirion Broker • Professionell tradingplattform](https://safirion.com.br/sv/): A mesma página em sueco.
-
-## O que este site não é
-- Não é a Safirion e não é operado por ela. O site oficial é safirion.com.
-- Não presta serviço financeiro: não recebe depósito, não guarda dinheiro de ninguém e não executa ordem no mercado. Tudo isso acontece na plataforma da corretora.
-- Não faz afirmação sobre licença ou supervisão da corretora em nenhum país.
-- Não promete resultado, ganho, retorno nem "método". Opções binárias podem levar à perda total do capital.
-
-## Nomes pelos quais este assunto é procurado
-Safirion Broker, Safirion, Safiron, Safirion é confiável, Safirion Broker cadastro, Safirion login, Safirion saque mínimo, Safirion depósito mínimo.
+## A marca
+- [Safirion](https://safirion.com/): o site oficial da marca, em vários idiomas.
