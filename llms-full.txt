@@ -5,7 +5,7 @@ Fonte: https://safirion.com.br/
 Idioma: português (Brasil)
 Resumo e índice: https://safirion.com.br/llms.txt
 
-> Texto integral, em português (Brasil), das páginas de https://safirion.com.br/ (5 páginas: a inicial e 4 guias).
+> Texto integral, em português (Brasil), das páginas de https://safirion.com.br/ (6 páginas: a inicial e 5 guias).
 
 Esta é a página brasileira sobre a Safirion, https://safirion.com.br — aqui ficam as informações da plataforma, o passo a passo do cadastro e o conteúdo educativo; a conta é criada e acessada em https://trade.safirion.com. O site oficial da marca é https://safirion.com. Quem opera a plataforma é a THUNDER FLASH LLC, registrada em Nevis (Reg. No. L 22853); os pagamentos são processados pela SUNSET HORIZON CY LTD, registrada no Chipre (Reg. No. HE464961, Limassol).
 
@@ -99,6 +99,11 @@ Sim. A plataforma é compatível com navegadores móveis e também está dispon�
 #### Como abrir um chamado de suporte?
 
 Acesse o menu “Ajuda” ou “Suporte” dentro do painel e envie sua solicitação.
+
+## Corretoras Digitais e Plataformas Online
+URL: https://safirion.com.br/corretoras-digitais-plataformas-online-diferencas/
+
+#### Deixe um comentário Cancelar resposta
 
 ## Safirion app: Android existe, iPhone não — e o risco
 URL: https://safirion.com.br/safirion-app-para-celular/

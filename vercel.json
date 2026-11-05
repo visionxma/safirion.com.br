@@ -301,6 +301,36 @@
       "source": "/safirion-login-e-acesso/",
       "destination": "/",
       "permanent": false
+    },
+    {
+      "source": "/comments/feed",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/comments/feed/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/corretoras-digitais-plataformas-online-diferencas/feed",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/corretoras-digitais-plataformas-online-diferencas/feed/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/feed",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/feed/",
+      "destination": "/",
+      "permanent": false
     }
   ]
 }

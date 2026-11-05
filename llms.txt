@@ -13,7 +13,8 @@ Texto completo das páginas, em um arquivo só: https://safirion.com.br/llms-ful
 ## Página inicial
 - [Safirion Broker • Plataforma Trading Profissional](https://safirion.com.br/): Safirion Broker é uma plataforma moderna e segura para opções binárias, com ferramentas avançadas e suporte especializado para investidores.
 
-## Páginas (4)
+## Páginas (5)
+- [Corretoras Digitais e Plataformas Online](https://safirion.com.br/corretoras-digitais-plataformas-online-diferencas/): Entenda as diferenças entre corretoras digitais e plataformas online, incluindo acesso, recursos, segurança, app, suporte e cuidados antes do cadastro.
 - [Safirion app: Android existe, iPhone não — e o risco](https://safirion.com.br/safirion-app-para-celular/): App da Safirion para celular: o site anuncia Android disponível e iOS "em breve". Onde baixar sem cair em arquivo falso e o que o site não publica.
 - [Safirion conta demo: como usar sem depositar nada](https://safirion.com.br/safirion-conta-demo/): Conta demo da Safirion: como abrir, o que ela mostra dos +130 ativos e as seis coisas que a demonstração não ensina. Guia de afiliado, lido em 29/10/2026.
 - [Safirion: documentos para verificação da conta (KYC)](https://safirion.com.br/safirion-documentos-para-verificacao/): Verificação de conta na Safirion: o que a conferência de identidade costuma pedir, por que pedem, o que reprova a foto e para onde vai o seu documento.
