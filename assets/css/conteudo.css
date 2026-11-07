@@ -619,7 +619,7 @@ main#conteudo {
 .pg-dado__valor {
   font-size: clamp(1.25rem, 1.05rem + .8vw, 1.875rem);
   font-weight: 800;
-  line-height: 1.1;
+  line-height: 1.22;
   color: var(--pg-ink-forte);
   font-variant-numeric: tabular-nums;
   letter-spacing: -.01em;
@@ -668,6 +668,7 @@ main#conteudo {
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.35;
+  text-wrap: balance;
   color: var(--pg-ink-forte);
 }
 .pg-cartao__texto {
@@ -741,6 +742,7 @@ main#conteudo {
   font-weight: 700;
   line-height: 1.35;
   color: var(--pg-ink-forte);
+  text-wrap: balance;
 }
 .pg-passo__texto {
   font-size: 1rem;
@@ -1058,6 +1060,12 @@ main#conteudo {
 .pg-cta__h2 em {
   font-style: normal;
   color: var(--pg-marca-400);
+}
+@media (max-width: 29.99rem) {
+  .pg-sec__h2,
+  .pg-cta__h2 {
+    line-height: 1.22;
+  }
 }
 .pg-cta p {
   font-size: clamp(1rem, .97rem + .25vw, 1.0625rem);
@@ -1766,4 +1774,3 @@ main#conteudo {
   max-width: none;
   padding-inline: 0;
 }
-/* acabamento-titulos */.pg-cartao__titulo,.pg-passo__titulo{text-wrap:balance}.pg-dado__valor{line-height:1.22}@media (max-width:29.99rem){.pg-sec__h2,.pg-cta__h2{line-height:1.22}}

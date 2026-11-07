@@ -448,105 +448,306 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
+  <!--blog-->
   <url>
-    <loc>https://safirion.com.br/safirion-app-para-celular/</loc>
-    <lastmod>2026-11-04</lastmod>
-  </url>
-  <url>
-    <loc>https://safirion.com.br/safirion-conta-demo/</loc>
-    <lastmod>2026-11-04</lastmod>
-  </url>
-  <url>
-    <loc>https://safirion.com.br/safirion-plataforma-como-funciona/</loc>
-    <lastmod>2026-11-04</lastmod>
-  </url>
-  <url>
-    <loc>https://safirion.com.br/safirion-documentos-para-verificacao/</loc>
+    <loc>https://safirion.com.br/blog/</loc>
     <lastmod>2026-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://safirion.com.br/imposto-de-renda-em-corretora-no-exterior/</loc>
+    <loc>https://safirion.com.br/blog/pagina/2/</loc>
     <lastmod>2026-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://safirion.com.br/safarion-ou-safirion-a-corretora-certa/</loc>
+    <loc>https://safirion.com.br/blog/pagina/3/</loc>
     <lastmod>2026-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://safirion.com.br/safirion-alavancagem-o-que-e/</loc>
-    <lastmod>2026-11-03</lastmod>
-  </url>
-  <url>
-    <loc>https://safirion.com.br/safirion-ativos-disponiveis/</loc>
+    <loc>https://safirion.com.br/blog/pagina/4/</loc>
     <lastmod>2026-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://safirion.com.br/safirion-broker-o-que-e/</loc>
-    <lastmod>2026-11-01</lastmod>
-  </url>
-  <url>
-    <loc>https://safirion.com.br/safirion-como-abrir-conta/</loc>
-    <lastmod>2026-11-03</lastmod>
-  </url>
-  <url>
-    <loc>https://safirion.com.br/safirion-como-sacar-dinheiro/</loc>
+    <loc>https://safirion.com.br/blog/tema/primeiros-passos/</loc>
     <lastmod>2026-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://safirion.com.br/safirion-deposito-minimo/</loc>
+    <loc>https://safirion.com.br/blog/tema/como-operar/</loc>
     <lastmod>2026-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://safirion.com.br/safirion-e-golpe-ou-nao/</loc>
+    <loc>https://safirion.com.br/blog/tema/estrategias/</loc>
     <lastmod>2026-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://safirion.com.br/safirion-e-regulada-pela-cvm/</loc>
+    <loc>https://safirion.com.br/blog/tema/gestao-de-banca/</loc>
     <lastmod>2026-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://safirion.com.br/safirion-horario-do-mercado/</loc>
+    <loc>https://safirion.com.br/blog/tema/analise-tecnica/</loc>
     <lastmod>2026-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://safirion.com.br/safirion-login-e-acesso/</loc>
+    <loc>https://safirion.com.br/blog/tema/safirion/</loc>
     <lastmod>2026-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://safirion.com.br/safirion-reclame-aqui/</loc>
+    <loc>https://safirion.com.br/blog/tema/financas/</loc>
     <lastmod>2026-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://safirion.com.br/safirion-suporte-como-falar/</loc>
-    <lastmod>2026-11-03</lastmod>
-  </url>
-  <url>
-    <loc>https://safirion.com.br/safirion-taxas-e-custos/</loc>
+    <loc>https://safirion.com.br/blog/tema/seguranca/</loc>
     <lastmod>2026-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://safirion.com.br/safirion-vs-outras-corretoras/</loc>
+    <loc>https://safirion.com.br/blog/autor/equipe-editorial/</loc>
     <lastmod>2026-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://safirion.com.br/safirium-ou-safirion-o-nome-correto/</loc>
+    <loc>https://safirion.com.br/blog/como-comecar-na-safirion-passo-a-passo/</loc>
     <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://safirion.com.br/safiriun-safirio-safirun-variacoes-do-nome/</loc>
-    <lastmod>2026-11-01</lastmod>
-  </url>
-  <url>
-    <loc>https://safirion.com.br/safrion-ou-safirion-qual-e-o-certo/</loc>
-    <lastmod>2026-11-04</lastmod>
-  </url>
-  <url>
-    <loc>https://safirion.com.br/thunder-flash-llc-quem-e/</loc>
+    <loc>https://safirion.com.br/blog/conta-demo-safirion-como-treinar/</loc>
     <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://safirion.com.br/safirion-vale-a-pena/</loc>
+    <loc>https://safirion.com.br/blog/day-trade-para-iniciantes/</loc>
     <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://safirion.com.br/blog/safirion-antes-do-primeiro-deposito/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://safirion.com.br/blog/safirion-broker-o-que-e/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://safirion.com.br/blog/safirion-como-abrir-conta/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://safirion.com.br/blog/safirion-deposito-minimo/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://safirion.com.br/blog/safirion-conta-demo/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://safirion.com.br/blog/safirion-documentos-para-verificacao/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://safirion.com.br/blog/safirion-login-e-acesso/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://safirion.com.br/blog/como-operar-na-safirion/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://safirion.com.br/blog/safirion-alavancagem-o-que-e/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://safirion.com.br/blog/safirion-app-para-celular/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://safirion.com.br/blog/safirion-ativos-disponiveis/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://safirion.com.br/blog/safirion-horario-do-mercado/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://safirion.com.br/blog/safirion-plataforma-como-funciona/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://safirion.com.br/blog/erros-de-iniciante-no-day-trade/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://safirion.com.br/blog/estrategias-de-day-trade-para-iniciantes/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://safirion.com.br/blog/gerenciamento-de-banca-no-day-trade/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://safirion.com.br/blog/analise-tecnica-para-iniciantes/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://safirion.com.br/blog/safirion-cartao-de-credito/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://safirion.com.br/blog/safirion-como-sacar-dinheiro/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://safirion.com.br/blog/safirion-instagram-e-telegram-oficiais/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://safirion.com.br/blog/safirion-taxas-e-custos/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://safirion.com.br/blog/safirion-vale-a-pena/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://safirion.com.br/blog/safarion-ou-safirion-a-corretora-certa/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://safirion.com.br/blog/safirion-suporte-como-falar/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://safirion.com.br/blog/safirion-vs-outras-corretoras/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://safirion.com.br/blog/safirium-ou-safirion-o-nome-correto/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://safirion.com.br/blog/safiriun-safirio-safirun-variacoes-do-nome/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://safirion.com.br/blog/safrion-ou-safirion-qual-e-o-certo/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://safirion.com.br/blog/safirion-conta-em-dolar-e-conversao/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://safirion.com.br/blog/imposto-de-renda-em-corretora-no-exterior/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://safirion.com.br/blog/safirion-e-golpe-ou-nao/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://safirion.com.br/blog/safirion-e-regulada-pela-cvm/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://safirion.com.br/blog/safirion-reclame-aqui/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://safirion.com.br/blog/thunder-flash-llc-quem-e/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!--/blog-->
 </urlset>

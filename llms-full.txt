@@ -7,7 +7,7 @@ Resumo e índice: https://safirion.com.br/llms.txt
 
 > Texto integral, em português (Brasil), das páginas de https://safirion.com.br/ (27 páginas: a inicial e 26 guias).
 
-Esta é a página brasileira sobre a Safirion, https://safirion.com.br — aqui ficam as informações da plataforma, o passo a passo do cadastro e o conteúdo educativo; a conta é criada e acessada em https://trade.safirion.com. O site oficial da marca é https://safirion.com. Quem opera a plataforma é a THUNDER FLASH LLC, registrada em Nevis (Reg. No. L 22853); os pagamentos são processados pela SUNSET HORIZON CY LTD, registrada no Chipre (Reg. No. HE464961, Limassol).
+Esta é a página brasileira sobre a Safirion, https://safirion.com.br — aqui ficam as informações da plataforma, o passo a passo do cadastro e o conteúdo educativo; a conta é criada e acessada em https://trade.safirion.com. O site oficial da marca é https://safirion.com. Quem opera a plataforma é a THUNDER FLASH LLC, registrada em Nevis (Reg. No. L 22853); os pagamentos são processados pela THUNDER FLASH CY LTD, registrada no Chipre (Reg. No. HE458373, Limassol).
 
 Quem publica este site: https://safirion.com.br é um site independente de divulgação. Não é o site oficial da Safirion nem é operado por ela, e pode receber comissão pelos cadastros feitos a partir dos seus links. A Safirion não é regulada pela Comissão de Valores Mobiliários (CVM) nem autorizada por ela a ofertar serviços no Brasil, e não consta do cadastro de participantes do mercado que a CVM mantém. Este site não presta serviço financeiro: não recebe depósito, não guarda dinheiro de ninguém e não executa ordem no mercado — tudo isso acontece na plataforma da corretora. Para falar com a empresa, use os canais de https://safirion.com.
 
@@ -106,7 +106,7 @@ URL: https://safirion.com.br/corretoras-digitais-plataformas-online-diferencas/
 #### Deixe um comentário Cancelar resposta
 
 ## Imposto de renda em corretora no exterior: o que declarar
-URL: https://safirion.com.br/imposto-de-renda-em-corretora-no-exterior/
+URL: https://safirion.com.br/blog/imposto-de-renda-em-corretora-no-exterior/
 
 Guia com fonte oficial 29/10/2026
 
@@ -220,7 +220,7 @@ Cálculo de imposto. Plataforma estrangeira não apura tributo brasileiro por vo
 
 Retenção na fonte. O site não publica retenção de imposto brasileiro. Se existisse, apareceria no extrato — confira o seu antes de supor que alguém já pagou algo por você.
 
-Prestação de contas em seu nome. O contrato é com a THUNDER FLASH LLC, de Nevis, e os pagamentos com a SUNSET HORIZON CY LTD, de Chipre. Nenhuma das duas presta conta à Receita por você.
+Prestação de contas em seu nome. O contrato é com a THUNDER FLASH LLC, de Nevis, e os pagamentos com a THUNDER FLASH CY LTD, de Chipre. Nenhuma das duas presta conta à Receita por você.
 
 Nada disso é irregularidade da plataforma: empresa de fora não tem obrigação acessória brasileira. É só o custo de operar assim — o trabalho de registro migra inteiro para o seu lado.
 
@@ -275,11 +275,11 @@ Regulação no Brasil
 
 não é regulada pela CVM
 
-SUNSET HORIZON CY LTD
+THUNDER FLASH CY LTD
 
 Pagamentos
 
-Reg. HE464961, Chipre
+Reg. HE458373, Chipre
 
 rodapé e documentos oficiais da plataforma · lido em 29/10/2026
 
@@ -404,10 +404,10 @@ Operar envolve risco de perda do capital investido. Só para maiores de 18 anos.
 - gov.br — Emitir DARF para pagamento de tributos federais
 - Banco Central — Capitais Brasileiros no Exterior (CBE)
 
-Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela SUNSET HORIZON CY LTD (Reg. HE464961, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
+Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela THUNDER FLASH CY LTD (Reg. HE458373, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
 
 ## Safarion ou Safirion? A corretora certa
-URL: https://safirion.com.br/safarion-ou-safirion-a-corretora-certa/
+URL: https://safirion.com.br/blog/safarion-ou-safirion-a-corretora-certa/
 
 Moedas
 
@@ -534,11 +534,11 @@ Safirion é marca. Quem opera a plataforma está registrado com outro nome.
 - Empresa THUNDER FLASH LLC
 - Registro L 22853
 - Regulação no Brasil Não existe
-- Pagamentos SUNSET HORIZON CY LTD
+- Pagamentos THUNDER FLASH CY LTD
 
 rodapé e documentos oficiais da plataforma · lido em 29/10/2026
 
-São três nomes para o mesmo serviço: a marca (Safirion), a empresa que opera (THUNDER FLASH LLC, de Nevis, registro L 22853) e a empresa que move o dinheiro (SUNSET HORIZON CY LTD, de Chipre). Nenhuma é brasileira.
+São três nomes para o mesmo serviço: a marca (Safirion), a empresa que opera (THUNDER FLASH LLC, de Nevis, registro L 22853) e a empresa que move o dinheiro (THUNDER FLASH CY LTD, de Chipre). Nenhuma é brasileira.
 
 Por isso a informação que pesa mais do que a vogal é esta: a plataforma não é regulada pela CVM, a Comissão de Valores Mobiliários, e nenhum órgão do país garante o dinheiro depositado. Quem opera por fora troca proteção por acesso. Quem é a operadora está em THUNDER FLASH LLC: quem é.
 
@@ -646,7 +646,7 @@ Este endereço, safirion.com.br, divulga a corretora e não é ela: pode haver c
 
 #### A Safarion é regulada no Brasil?
 
-Não. A plataforma é operada pela THUNDER FLASH LLC, de Nevis, e os pagamentos pela SUNSET HORIZON CY LTD, de Chipre, registro HE464961. Ela não é regulada pela CVM e não está sob nenhum outro órgão do país.
+Não. A plataforma é operada pela THUNDER FLASH LLC, de Nevis, e os pagamentos pela THUNDER FLASH CY LTD, de Chipre, registro HE458373. Ela não é regulada pela CVM e não está sob nenhum outro órgão do país.
 
 Quem tem registro aparece no Cadastro Geral da CVM. A Safirion não está nessa lista e não finge estar.
 
@@ -702,10 +702,10 @@ Esta é uma página de afiliado, não o site oficial da Safirion — o oficial �
 - Perfil oficial no Instagram
 - CVM — Corretoras e distribuidoras: consulta pelo Cadastro Geral
 
-Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela SUNSET HORIZON CY LTD (Reg. HE464961, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
+Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela THUNDER FLASH CY LTD (Reg. HE458373, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
 
 ## Safirion: o que é alavancagem e o risco que ela cria
-URL: https://safirion.com.br/safirion-alavancagem-o-que-e/
+URL: https://safirion.com.br/blog/safirion-alavancagem-o-que-e/
 
 Educacional · informações lidas em 29/10/2026
 
@@ -820,7 +820,7 @@ Operar com alavancagem envolve risco de perda total do capital investido. Só op
 - Reclame Aqui — Safirion (nota, reclamações, tempo de resposta)
 
 ## Safirion app: Android existe, iPhone não — e o risco
-URL: https://safirion.com.br/safirion-app-para-celular/
+URL: https://safirion.com.br/blog/safirion-app-para-celular/
 
 Ficha do aplicativo · lida em 29/10/2026
 
@@ -1077,12 +1077,12 @@ Dados do rodapé do próprio site e dos documentos oficiais.
 
 - THUNDER FLASH LLC Empresa operadora da plataforma
 - L 22853 Registro em Nevis, Caribe
-- SUNSET HORIZON CY LTD Pagamentos Reg. HE464961, Chipre
+- THUNDER FLASH CY LTD Pagamentos Reg. HE458373, Chipre
 - Não existe Regulação no Brasil não é regulada pela CVM
 
 rodapé e documentos oficiais da plataforma · lido em 29/10/2026
 
-O aplicativo que pede acesso ao seu celular é de uma empresa de fora: a THUNDER FLASH LLC, de Nevis, com pagamentos pela SUNSET HORIZON CY LTD, de Chipre. A Safirion não é regulada pela CVM, e nenhum órgão brasileiro responde por travamento, perda de ordem ou falha do app.
+O aplicativo que pede acesso ao seu celular é de uma empresa de fora: a THUNDER FLASH LLC, de Nevis, com pagamentos pela THUNDER FLASH CY LTD, de Chipre. A Safirion não é regulada pela CVM, e nenhum órgão brasileiro responde por travamento, perda de ordem ou falha do app.
 
 No canal público em que ela aparece, o histórico é medido: nota 7,8 de 10 no Reclame Aqui, 37 reclamações em 6 meses, 75% resolvidas e 100% respondidas. Histórico curto, com os números bons e os ruins à vista — e é com ele que você decide se instala.
 
@@ -1177,10 +1177,10 @@ Fonte: reclameaqui.com.br/empresa/safirion
 - Reclame Aqui — Safirion (nota, reclamações, tempo de resposta)
 - CVM — Corretoras e distribuidoras: consulta pelo Cadastro Geral
 
-Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela SUNSET HORIZON CY LTD (Reg. HE464961, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
+Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela THUNDER FLASH CY LTD (Reg. HE458373, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
 
 ## Safirion: ativos disponíveis, +130 e o que isso quer dizer
-URL: https://safirion.com.br/safirion-ativos-disponiveis/
+URL: https://safirion.com.br/blog/safirion-ativos-disponiveis/
 
 Catálogo 29/10/2026
 
@@ -1306,9 +1306,9 @@ em Nevis, Caribe
 
 Pagamentos
 
-#### SUNSET HORIZON CY LTD
+#### THUNDER FLASH CY LTD
 
-Reg. HE464961, Chipre
+Reg. HE458373, Chipre
 
 Regulação no Brasil
 
@@ -1318,7 +1318,7 @@ não é regulada pela CVM
 
 rodapé e documentos oficiais da plataforma · lido em 29/10/2026
 
-Em CFD, o seu contrato é com a plataforma: a THUNDER FLASH LLC, de Nevis, com pagamentos pela SUNSET HORIZON CY LTD, de Chipre. A Safirion não é regulada pela CVM, e nenhum órgão brasileiro fiscaliza a formação do preço que aparece na sua tela nem a lista de ativos oferecida.
+Em CFD, o seu contrato é com a plataforma: a THUNDER FLASH LLC, de Nevis, com pagamentos pela THUNDER FLASH CY LTD, de Chipre. A Safirion não é regulada pela CVM, e nenhum órgão brasileiro fiscaliza a formação do preço que aparece na sua tela nem a lista de ativos oferecida.
 
 No canal público em que ela aparece, o histórico é medido: nota 7,8 de 10 no Reclame Aqui, 37 reclamações em 6 meses, 75% resolvidas e média de 4d 11h para responder. É com esse histórico, e não com o número de ativos, que se decide.
 
@@ -1425,10 +1425,10 @@ Operar envolve risco de perda do capital investido. Só para maiores de 18 anos.
 - Reclame Aqui — Safirion (nota, reclamações, tempo de resposta)
 - CVM — Corretoras e distribuidoras: consulta pelo Cadastro Geral
 
-Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela SUNSET HORIZON CY LTD (Reg. HE464961, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
+Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela THUNDER FLASH CY LTD (Reg. HE458373, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
 
 ## Safirion Broker: o que é e quem está por trás
-URL: https://safirion.com.br/safirion-broker-o-que-e/
+URL: https://safirion.com.br/blog/safirion-broker-o-que-e/
 
 Guia do nome · dados lidos em 29/10/2026
 
@@ -1470,7 +1470,7 @@ Na mesma família aparecem trading (operar), trader (quem opera) e trade (uma op
 
 #### O Safirion Broker é regulado no Brasil?
 
-Não. A plataforma é operada pela THUNDER FLASH LLC, de Nevis, e os pagamentos pela SUNSET HORIZON CY LTD, de Chipre, registro HE464961. Ela não é regulada pela CVM e não está sob nenhum outro órgão do país.
+Não. A plataforma é operada pela THUNDER FLASH LLC, de Nevis, e os pagamentos pela THUNDER FLASH CY LTD, de Chipre, registro HE458373. Ela não é regulada pela CVM e não está sob nenhum outro órgão do país.
 
 O efeito prático: nenhum órgão brasileiro garante o seu saldo. Sobra o atendimento da empresa, o Reclame Aqui ou a via judicial. A conta inteira está na página Safirion é regulada pela CVM? Não — e o que muda.
 
@@ -1535,7 +1535,7 @@ Se decidir seguir, abra a conta, use a demonstração e deixe valor real para de
 - CVM — Corretoras e distribuidoras: consulta pelo Cadastro Geral
 
 ## Safirion: como abrir conta passo a passo (2026)
-URL: https://safirion.com.br/safirion-como-abrir-conta/
+URL: https://safirion.com.br/blog/safirion-como-abrir-conta/
 
 Tutorial · informações lidas em 29/10/2026
 
@@ -1613,7 +1613,7 @@ Digite você mesmo o endereço da plataforma para pedir a recuperação. Página
 
 #### A Safirion é regulada pela CVM?
 
-Não. A plataforma é operada pela THUNDER FLASH LLC, registrada em Nevis sob o número L 22853, e os pagamentos pela SUNSET HORIZON CY LTD, de Chipre. Não é regulada pela CVM nem por outro órgão brasileiro.
+Não. A plataforma é operada pela THUNDER FLASH LLC, registrada em Nevis sob o número L 22853, e os pagamentos pela THUNDER FLASH CY LTD, de Chipre. Não é regulada pela CVM nem por outro órgão brasileiro.
 
 Na prática: a CVM não media o seu caso e não existe fundo garantidor brasileiro sobre o saldo da conta de operação. Vale saber disso antes de preencher o cadastro.
 
@@ -1650,7 +1650,7 @@ Operar envolve risco de perder o capital investido. Só opere com dinheiro que v
 - CVM — Corretoras e distribuidoras: consulta pelo Cadastro Geral
 
 ## Como sacar dinheiro da Safirion: o que o site não diz
-URL: https://safirion.com.br/safirion-como-sacar-dinheiro/
+URL: https://safirion.com.br/blog/safirion-como-sacar-dinheiro/
 
 ### Como sacar dinheiro da Safirion
 
@@ -1674,7 +1674,7 @@ A resposta curta
 
 O caminho em uma frase, antes do detalhe.
 
-Para sacar na Safirion, você pede a retirada dentro da plataforma, pelo mesmo método usado no depósito, com a conta já verificada por KYC (conferência de identidade). A Política de Saque publica três dias úteis, e quem processa os pagamentos é a SUNSET HORIZON CY LTD, de Chipre. Meça o prazo você mesmo, com um saque pequeno.
+Para sacar na Safirion, você pede a retirada dentro da plataforma, pelo mesmo método usado no depósito, com a conta já verificada por KYC (conferência de identidade). A Política de Saque publica três dias úteis, e quem processa os pagamentos é a THUNDER FLASH CY LTD, de Chipre. Meça o prazo você mesmo, com um saque pequeno.
 
 Essa é a parte que dá para afirmar com fonte. O resto do que circula sobre saque na Safirion é chute: há sites dizendo "cai em 24 horas" e outros "até 5 dias úteis", sem mostrar onde leram. A Política de Saque da corretora publica três dias úteis, e a página inicial fala em menos de 24 horas.
 
@@ -1768,14 +1768,14 @@ O outro lado
 
 O dado que define a quem você cobra se o dinheiro não vier.
 
-- SUNSET HORIZON CY LTD Pagamentos Reg. HE464961, Chipre
+- THUNDER FLASH CY LTD Pagamentos Reg. HE458373, Chipre
 - THUNDER FLASH LLC Empresa operadora da plataforma
 - L 22853 Registro em Nevis, Caribe
 - Não existe Regulação no Brasil não é regulada pela CVM
 
 rodapé e documentos oficiais da plataforma · lido em 29/10/2026
 
-São duas empresas de fora. A plataforma é operada pela THUNDER FLASH LLC, registrada em Nevis sob o número L 22853, e o pagamento passa pela SUNSET HORIZON CY LTD, de Chipre, registro HE464961. O dinheiro que você pede de volta vem desse segundo lado.
+São duas empresas de fora. A plataforma é operada pela THUNDER FLASH LLC, registrada em Nevis sob o número L 22853, e o pagamento passa pela THUNDER FLASH CY LTD, de Chipre, registro HE458373. O dinheiro que você pede de volta vem desse segundo lado.
 
 Isso muda a rota de cobrança. Quem cadastra intermediário no Brasil é a CVM, e a consulta é pública no Cadastro Geral dela; a Safirion não é regulada pela CVM e não aparece nessa lista. Sem órgão brasileiro por trás, não existe fundo garantidor cobrindo o saldo, e a cobrança é: suporte da corretora, canal público de reclamação, Justiça.
 
@@ -1919,7 +1919,7 @@ Fonte: reclameaqui.com.br/empresa/safirion
 
 #### Para quem eu cobro se o dinheiro não vier?
 
-A plataforma é operada pela THUNDER FLASH LLC, registrada em Nevis (L 22853), e os pagamentos passam pela SUNSET HORIZON CY LTD, de Chipre (HE464961). São duas empresas de fora do Brasil.
+A plataforma é operada pela THUNDER FLASH LLC, registrada em Nevis (L 22853), e os pagamentos passam pela THUNDER FLASH CY LTD, de Chipre (HE458373). São duas empresas de fora do Brasil.
 
 A Safirion não é regulada pela CVM, nenhum órgão brasileiro fiscaliza a operação e não existe fundo garantidor cobrindo o saldo. A cobrança é: suporte, canal público de reclamação e, no limite, Justiça.
 
@@ -1961,10 +1961,10 @@ Esta é uma página de afiliado, não o site oficial da Safirion — o oficial �
 - CVM — Como escolher a corretora (ou outro participante do mercado)
 - CVM — Corretoras e distribuidoras: consulta pelo Cadastro Geral
 
-Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela SUNSET HORIZON CY LTD (Reg. HE464961, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
+Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela THUNDER FLASH CY LTD (Reg. HE458373, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
 
 ## Safirion conta demo: como usar sem depositar nada
-URL: https://safirion.com.br/safirion-conta-demo/
+URL: https://safirion.com.br/blog/safirion-conta-demo/
 
 Guia com fonte 29/10/2026
 
@@ -2125,15 +2125,15 @@ Regulação no Brasil
 
 não é regulada pela CVM
 
-SUNSET HORIZON CY LTD
+THUNDER FLASH CY LTD
 
 Pagamentos
 
-Reg. HE464961, Chipre
+Reg. HE458373, Chipre
 
 rodapé e documentos oficiais da plataforma · lido em 29/10/2026
 
-A plataforma é operada pela THUNDER FLASH LLC, de Nevis (L 22853), e os pagamentos passam pela SUNSET HORIZON CY LTD, de Chipre (HE464961). A Safirion não é regulada pela CVM: nenhum órgão brasileiro fiscaliza a operação nem garante o saldo da conta.
+A plataforma é operada pela THUNDER FLASH LLC, de Nevis (L 22853), e os pagamentos passam pela THUNDER FLASH CY LTD, de Chipre (HE458373). A Safirion não é regulada pela CVM: nenhum órgão brasileiro fiscaliza a operação nem garante o saldo da conta.
 
 Na demo isso é irrelevante, porque não há dinheiro seu lá. No dia em que houver, passa a ser o dado mais importante da página — e é por isso que ele está aqui, e não escondido no rodapé.
 
@@ -2246,10 +2246,10 @@ Operar envolve risco de perda do capital investido. Só para maiores de 18 anos.
 - Reclame Aqui — Safirion (nota, reclamações, resolução, tempo de resposta)
 - CVM — Como escolher a corretora (ou outro participante do mercado)
 
-Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela SUNSET HORIZON CY LTD (Reg. HE464961, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
+Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela THUNDER FLASH CY LTD (Reg. HE458373, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
 
 ## Safirion depósito mínimo: US$ 10, segundo o site
-URL: https://safirion.com.br/safirion-deposito-minimo/
+URL: https://safirion.com.br/blog/safirion-deposito-minimo/
 
 Ficha 29/10/2026
 
@@ -2357,7 +2357,7 @@ Não vamos escrever uma lista de métodos que não conseguimos ler em fonte ofic
 
 Telas reais da plataforma Safirion.
 
-O que podemos afirmar: o processamento de pagamento é da SUNSET HORIZON CY LTD, de Chipre (Reg. HE464961), empresa diferente da que opera a plataforma. Isso aparece no rodapé do próprio site.
+O que podemos afirmar: o processamento de pagamento é da THUNDER FLASH CY LTD, de Chipre (Reg. HE458373), empresa diferente da que opera a plataforma. Isso aparece no rodapé do próprio site.
 
 Deposite de dentro da conta Só pela área de depósito da plataforma, logado. Depósito combinado em conversa privada não é depósito.
 
@@ -2441,11 +2441,11 @@ Regulação no Brasil
 
 não é regulada pela CVM
 
-SUNSET HORIZON CY LTD
+THUNDER FLASH CY LTD
 
 Pagamentos
 
-Reg. HE464961, Chipre
+Reg. HE458373, Chipre
 
 rodapé e documentos oficiais da plataforma · lido em 29/10/2026
 
@@ -2525,7 +2525,7 @@ O que pesa não é o piso, é a ausência do resto: a Safirion não é regulada 
 
 #### 10 Para quem vou transferir o dinheiro?
 
-O processamento de pagamento é da SUNSET HORIZON CY LTD, de Chipre, registro HE464961. A plataforma é operada pela THUNDER FLASH LLC, de Nevis, registro L 22853.
+O processamento de pagamento é da THUNDER FLASH CY LTD, de Chipre, registro HE458373. A plataforma é operada pela THUNDER FLASH LLC, de Nevis, registro L 22853.
 
 São duas empresas de fora do Brasil, e nenhuma tem registro na CVM. Não existe fundo garantidor brasileiro sobre o saldo da conta de operação.
 
@@ -2546,10 +2546,10 @@ Operar envolve risco de perda do capital investido. Só para maiores de 18 anos.
 - Reclame Aqui — Safirion (nota, reclamações, tempo de resposta)
 - CVM — Corretoras e distribuidoras: consulta pelo Cadastro Geral
 
-Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela SUNSET HORIZON CY LTD (Reg. HE464961, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
+Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela THUNDER FLASH CY LTD (Reg. HE458373, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
 
 ## Safirion: documentos para verificação da conta (KYC)
-URL: https://safirion.com.br/safirion-documentos-para-verificacao/
+URL: https://safirion.com.br/blog/safirion-documentos-para-verificacao/
 
 Tutorial · informações lidas em 29/10/2026
 
@@ -2730,12 +2730,12 @@ Dados do rodapé do próprio site e dos documentos oficiais.
 
 - THUNDER FLASH LLC Empresa operadora da plataforma
 - L 22853 Registro em Nevis, Caribe
-- SUNSET HORIZON CY LTD Pagamentos Reg. HE464961, Chipre
+- THUNDER FLASH CY LTD Pagamentos Reg. HE458373, Chipre
 - Não existe Regulação no Brasil não é regulada pela CVM
 
 rodapé e documentos oficiais da plataforma · lido em 29/10/2026
 
-A foto do seu documento vai para uma empresa de fora: a THUNDER FLASH LLC, de Nevis, com pagamentos pela SUNSET HORIZON CY LTD, de Chipre. A Safirion não é regulada pela CVM e nenhum órgão brasileiro fiscaliza como esse arquivo é guardado.
+A foto do seu documento vai para uma empresa de fora: a THUNDER FLASH LLC, de Nevis, com pagamentos pela THUNDER FLASH CY LTD, de Chipre. A Safirion não é regulada pela CVM e nenhum órgão brasileiro fiscaliza como esse arquivo é guardado.
 
 Em termos práticos: cobrar exclusão de dado pessoal de empresa registrada em Nevis é caminho mais incerto do que cobrar de empresa com sede no Brasil. Isso não impede o uso, mas entra na conta — envie o que a tela pedir, nada além, e guarde registro do que enviou.
 
@@ -2791,7 +2791,7 @@ Se a sua tela pedir, faça com rosto inteiro, sem boné e sem óculos escuros, c
 
 A corretora mantém política de conferência de identidade, mas o site não publica por quanto tempo o arquivo fica guardado nem com quem é compartilhado.
 
-Vale pesar que a empresa é a THUNDER FLASH LLC, de Nevis, com pagamentos pela SUNSET HORIZON CY LTD, de Chipre. Envie o que a tela pedir e nada além.
+Vale pesar que a empresa é a THUNDER FLASH LLC, de Nevis, com pagamentos pela THUNDER FLASH CY LTD, de Chipre. Envie o que a tela pedir e nada além.
 
 #### Alguém do suporte pediu minha senha para verificar a conta. É normal?
 
@@ -2830,10 +2830,10 @@ Esta é uma página de afiliado, não o site oficial da Safirion — o oficial �
 - Reclame Aqui — Safirion (nota, reclamações, tempo de resposta)
 - CVM — Corretoras e distribuidoras: consulta pelo Cadastro Geral
 
-Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela SUNSET HORIZON CY LTD (Reg. HE464961, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
+Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela THUNDER FLASH CY LTD (Reg. HE458373, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
 
 ## Safirion é golpe? O que dá para provar em 2026
-URL: https://safirion.com.br/safirion-e-golpe-ou-nao/
+URL: https://safirion.com.br/blog/safirion-e-golpe-ou-nao/
 
 Dúvida crua 29/10/2026
 
@@ -3020,11 +3020,11 @@ Regulação no Brasil
 
 não é regulada pela CVM
 
-SUNSET HORIZON CY LTD
+THUNDER FLASH CY LTD
 
 Pagamentos
 
-Reg. HE464961, Chipre
+Reg. HE458373, Chipre
 
 rodapé e documentos oficiais da plataforma · lido em 29/10/2026
 
@@ -3086,7 +3086,7 @@ A medida real é a sua: deposite o mínimo, peça um saque pequeno e cronometre.
 
 #### 03 A Safirion é uma corretora regulada no Brasil?
 
-Não. A plataforma é operada pela THUNDER FLASH LLC, de Nevis, e os pagamentos pela SUNSET HORIZON CY LTD, de Chipre. Não é regulada pela CVM nem por outro órgão brasileiro.
+Não. A plataforma é operada pela THUNDER FLASH LLC, de Nevis, e os pagamentos pela THUNDER FLASH CY LTD, de Chipre. Não é regulada pela CVM nem por outro órgão brasileiro.
 
 Quem tem registro aparece no Cadastro Geral da CVM, na Central de Sistemas do órgão. A Safirion não está lá — e não se apresenta como se estivesse.
 
@@ -3158,10 +3158,10 @@ Operar envolve risco de perda do capital investido. Só para maiores de 18 anos.
 - CVM — Corretoras e distribuidoras: consulta pelo Cadastro Geral
 - CVM — Como escolher a corretora (ou outro participante do mercado)
 
-Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela SUNSET HORIZON CY LTD (Reg. HE464961, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
+Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela THUNDER FLASH CY LTD (Reg. HE458373, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
 
 ## Safirion é regulada pela CVM? Não — e o que muda
-URL: https://safirion.com.br/safirion-e-regulada-pela-cvm/
+URL: https://safirion.com.br/blog/safirion-e-regulada-pela-cvm/
 
 ### A Safirion é regulada pela CVM?
 
@@ -3175,7 +3175,7 @@ Continue rolando
 
 Resposta sem rodeio, com o dado da empresa.
 
-A resposta curta Não. A Safirion não é regulada pela CVM nem por outro órgão brasileiro. A plataforma é operada pela THUNDER FLASH LLC, registrada em Nevis sob o número L 22853, e os pagamentos passam pela SUNSET HORIZON CY LTD, de Chipre. Na prática: a CVM não media o seu caso e não existe fundo garantidor brasileiro sobre o seu saldo.
+A resposta curta Não. A Safirion não é regulada pela CVM nem por outro órgão brasileiro. A plataforma é operada pela THUNDER FLASH LLC, registrada em Nevis sob o número L 22853, e os pagamentos passam pela THUNDER FLASH CY LTD, de Chipre. Na prática: a CVM não media o seu caso e não existe fundo garantidor brasileiro sobre o seu saldo.
 
 #### O órgão
 
@@ -3273,7 +3273,7 @@ L 22853 Registro · em Nevis, Caribe
 
 Não existe Regulação no Brasil · não é regulada pela CVM
 
-SUNSET HORIZON CY LTD Pagamentos · Reg. HE464961, Chipre
+THUNDER FLASH CY LTD Pagamentos · Reg. HE458373, Chipre
 
 rodapé e documentos oficiais da plataforma · lido em 29/10/2026
 
@@ -3360,7 +3360,7 @@ Perguntas
 
 #### 01 A Safirion é regulada pela CVM?
 
-Não. A plataforma é operada pela THUNDER FLASH LLC, registrada em Nevis sob o número L 22853, e os pagamentos pela SUNSET HORIZON CY LTD, de Chipre (HE464961). Não há registro da operadora na CVM nem em outro órgão brasileiro.
+Não. A plataforma é operada pela THUNDER FLASH LLC, registrada em Nevis sob o número L 22853, e os pagamentos pela THUNDER FLASH CY LTD, de Chipre (HE458373). Não há registro da operadora na CVM nem em outro órgão brasileiro.
 
 Quem tem registro no Brasil aparece no Cadastro Geral da CVM, na Central de Sistemas do órgão. A Safirion não aparece lá.
 
@@ -3418,7 +3418,7 @@ Fonte: CVM — corretoras e distribuidoras
 
 #### 09 Nevis e Chipre: por que duas empresas?
 
-A THUNDER FLASH LLC, de Nevis, opera a plataforma; a SUNSET HORIZON CY LTD, de Chipre, processa os pagamentos. É um arranjo comum em plataformas internacionais que aceitam cliente brasileiro.
+A THUNDER FLASH LLC, de Nevis, opera a plataforma; a THUNDER FLASH CY LTD, de Chipre, processa os pagamentos. É um arranjo comum em plataformas internacionais que aceitam cliente brasileiro.
 
 Para você, o efeito é um só: o contrato é com empresa estrangeira, e nenhuma das duas tem registro no Brasil.
 
@@ -3445,10 +3445,10 @@ Operar envolve risco de perda do capital investido. Só para maiores de 18 anos.
 - Reclame Aqui — Safirion (nota, reclamações, tempo de resposta)
 - Site oficial da corretora
 
-Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela SUNSET HORIZON CY LTD (Reg. HE464961, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
+Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela THUNDER FLASH CY LTD (Reg. HE458373, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
 
 ## Safirion: horário do mercado no horário de Brasília
-URL: https://safirion.com.br/safirion-horario-do-mercado/
+URL: https://safirion.com.br/blog/safirion-horario-do-mercado/
 
 ### O horário do mercado na Safirion
 
@@ -3569,11 +3569,11 @@ Registro
 
 em Nevis, Caribe
 
-SUNSET HORIZON CY LTD
+THUNDER FLASH CY LTD
 
 Pagamentos
 
-Reg. HE464961, Chipre
+Reg. HE458373, Chipre
 
 Não existe
 
@@ -3583,7 +3583,7 @@ não é regulada pela CVM
 
 rodapé e documentos oficiais da plataforma · lido em 29/10/2026
 
-A plataforma é operada pela THUNDER FLASH LLC, de Nevis, com pagamentos pela SUNSET HORIZON CY LTD, de Chipre — dois fusos que não são o seu. Horário comercial de quem responde não é o horário comercial daqui, e o site não publica a faixa.
+A plataforma é operada pela THUNDER FLASH LLC, de Nevis, com pagamentos pela THUNDER FLASH CY LTD, de Chipre — dois fusos que não são o seu. Horário comercial de quem responde não é o horário comercial daqui, e o site não publica a faixa.
 
 A Safirion não é regulada pela CVM, e nenhum órgão brasileiro fiscaliza janela de manutenção, horário de processamento ou interrupção de negociação. O único ritmo medido em canal público é o do atendimento: média de 4d 11h para a primeira resposta no Reclame Aqui, com 100% das 37 reclamações respondidas.
 
@@ -3691,10 +3691,10 @@ Operar envolve risco de perda do capital investido. Só para maiores de 18 anos.
 - Site oficial da corretora
 - CVM — Corretoras e distribuidoras: consulta pelo Cadastro Geral
 
-Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela SUNSET HORIZON CY LTD (Reg. HE464961, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
+Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela THUNDER FLASH CY LTD (Reg. HE458373, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
 
 ## Login Safirion: o endereço certo e o acesso com 2FA
-URL: https://safirion.com.br/safirion-login-e-acesso/
+URL: https://safirion.com.br/blog/safirion-login-e-acesso/
 
 Guia com fonte · lido em 29/10/2026
 
@@ -3881,11 +3881,11 @@ Tela real da plataforma
 - THUNDER FLASH LLC Empresa operadora da plataforma
 - L 22853 Registro em Nevis, Caribe
 - Não existe Regulação no Brasil não é regulada pela CVM
-- SUNSET HORIZON CY LTD Pagamentos Reg. HE464961, Chipre
+- THUNDER FLASH CY LTD Pagamentos Reg. HE458373, Chipre
 
 rodapé e documentos oficiais da plataforma · lido em 29/10/2026
 
-A plataforma é operada pela THUNDER FLASH LLC, de Nevis (L 22853), com pagamentos pela SUNSET HORIZON CY LTD, de Chipre (HE464961). A Safirion não é regulada pela CVM, e nenhum órgão brasileiro fiscaliza a operação nem garante o saldo da conta.
+A plataforma é operada pela THUNDER FLASH LLC, de Nevis (L 22853), com pagamentos pela THUNDER FLASH CY LTD, de Chipre (HE458373). A Safirion não é regulada pela CVM, e nenhum órgão brasileiro fiscaliza a operação nem garante o saldo da conta.
 
 Na prática: não há ouvidoria de órgão brasileiro para acionar se o acesso não voltar. É por isso que 2FA ligado, senha exclusiva, e-mail do cadastro ativo e endereço nos favoritos valem mais aqui do que numa corretora cadastrada no Brasil, cuja lista pública fica no Cadastro Geral da CVM.
 
@@ -4010,10 +4010,10 @@ Esta é uma página de afiliado, não o site oficial da Safirion — o oficial �
 - Reclame Aqui — Safirion (nota, reclamações, tempo de resposta)
 - CVM — Corretoras e distribuidoras: consulta pelo Cadastro Geral
 
-Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela SUNSET HORIZON CY LTD (Reg. HE464961, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
+Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela THUNDER FLASH CY LTD (Reg. HE458373, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
 
 ## Plataforma Safirion: como funciona, ativos e aplicativo
-URL: https://safirion.com.br/safirion-plataforma-como-funciona/
+URL: https://safirion.com.br/blog/safirion-plataforma-como-funciona/
 
 Guia com fonte · lido em 29/10/2026
 
@@ -4193,11 +4193,11 @@ Em CFD, isso faz parte da ficha técnica.
 - THUNDER FLASH LLC Empresa operadora da plataforma
 - L 22853 Registro em Nevis, Caribe
 - Não existe Regulação no Brasil não é regulada pela CVM
-- SUNSET HORIZON CY LTD Pagamentos Reg. HE464961, Chipre
+- THUNDER FLASH CY LTD Pagamentos Reg. HE458373, Chipre
 
 rodapé e documentos oficiais da plataforma · lido em 29/10/2026
 
-A plataforma é operada pela THUNDER FLASH LLC, registrada em Nevis sob o número L 22853, e os pagamentos passam pela SUNSET HORIZON CY LTD, de Chipre (HE464961). A Safirion não é regulada pela CVM nem por outro órgão brasileiro.
+A plataforma é operada pela THUNDER FLASH LLC, registrada em Nevis sob o número L 22853, e os pagamentos passam pela THUNDER FLASH CY LTD, de Chipre (HE458373). A Safirion não é regulada pela CVM nem por outro órgão brasileiro.
 
 Quem cadastra intermediário no Brasil é a CVM, com consulta pública no Cadastro Geral dela, e a Safirion não aparece nessa lista. Isso não torna a plataforma inexistente nem a tela ruim — torna o risco diferente, e é informação que pertence à mesma página que explica como ela funciona.
 
@@ -4271,7 +4271,7 @@ Entrada baixa não é sinal de custo baixo: o site não publica tabela de spread
 
 #### Quem é a empresa dona da plataforma?
 
-A operadora é a THUNDER FLASH LLC, registrada em Nevis sob o número L 22853, e os pagamentos passam pela SUNSET HORIZON CY LTD, de Chipre (HE464961).
+A operadora é a THUNDER FLASH LLC, registrada em Nevis sob o número L 22853, e os pagamentos passam pela THUNDER FLASH CY LTD, de Chipre (HE458373).
 
 O site não publica o nome dos sócios nem endereço físico de atendimento. A Safirion não é regulada pela CVM.
 
@@ -4300,10 +4300,10 @@ Operar envolve risco de perda do capital investido. Só para maiores de 18 anos.
 - Reclame Aqui — Safirion (nota, reclamações, tempo de resposta)
 - CVM — Como escolher a corretora (ou outro participante do mercado)
 
-Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela SUNSET HORIZON CY LTD (Reg. HE464961, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
+Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela THUNDER FLASH CY LTD (Reg. HE458373, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
 
 ## Safirion no Reclame Aqui: os 8 números de 2026
-URL: https://safirion.com.br/safirion-reclame-aqui/
+URL: https://safirion.com.br/blog/safirion-reclame-aqui/
 
 Reputação com fonte 29/10/2026
 
@@ -4501,15 +4501,15 @@ Regulação no Brasil
 
 não é regulada pela CVM
 
-SUNSET HORIZON CY LTD
+THUNDER FLASH CY LTD
 
 Pagamentos
 
-Reg. HE464961, Chipre
+Reg. HE458373, Chipre
 
 rodapé e documentos oficiais da plataforma · lido em 29/10/2026
 
-A plataforma é operada pela THUNDER FLASH LLC, registrada em Nevis sob o número L 22853, e os pagamentos passam pela SUNSET HORIZON CY LTD, de Chipre. A empresa não é regulada pela CVM nem por outro órgão brasileiro.
+A plataforma é operada pela THUNDER FLASH LLC, registrada em Nevis sob o número L 22853, e os pagamentos passam pela THUNDER FLASH CY LTD, de Chipre. A empresa não é regulada pela CVM nem por outro órgão brasileiro.
 
 Isso muda a leitura da nota. Quem cadastra intermediários no Brasil é a CVM, e a consulta pública é o Cadastro Geral, na Central de Sistemas dela; a Safirion não está nessa lista e não se apresenta como se estivesse. Com empresa de fora, a rota de cobrança é a própria corretora, depois o Reclame Aqui — média de 4d 11h — e, se nada funcionar, a Justiça. A nota 7,8 vale como informação; não vale como segurança.
 
@@ -4600,7 +4600,7 @@ O jeito honesto de descobrir o prazo é medir: deposite o mínimo, peça um saqu
 
 #### 10 Qual empresa está por trás da Safirion?
 
-A plataforma é operada pela THUNDER FLASH LLC, registrada em Nevis, no Caribe, sob o número L 22853. Os pagamentos são processados pela SUNSET HORIZON CY LTD, de Chipre, registro HE464961.
+A plataforma é operada pela THUNDER FLASH LLC, registrada em Nevis, no Caribe, sob o número L 22853. Os pagamentos são processados pela THUNDER FLASH CY LTD, de Chipre, registro HE458373.
 
 São duas empresas de fora do Brasil. É por isso que a reputação no Reclame Aqui é o dado público mais concreto sobre o atendimento dela aqui — e por isso que esse dado não substitui autorização de órgão nenhum.
 
@@ -4622,10 +4622,10 @@ Operar envolve risco de perda do capital investido. Só para maiores de 18 anos.
 - CVM — Como escolher a corretora (ou outro participante do mercado)
 - CVM — Corretoras e distribuidoras: consulta pelo Cadastro Geral
 
-Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela SUNSET HORIZON CY LTD (Reg. HE464961, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
+Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela THUNDER FLASH CY LTD (Reg. HE458373, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
 
 ## Suporte Safirion: os canais que existem de verdade
-URL: https://safirion.com.br/safirion-suporte-como-falar/
+URL: https://safirion.com.br/blog/safirion-suporte-como-falar/
 
 Ficha de canais · conferida em 29/10/2026
 
@@ -4746,7 +4746,7 @@ Se fizer sentido, crie a conta, use a demonstração e deposite o mínimo. Opera
 - CVM — Corretoras e distribuidoras: consulta pelo Cadastro Geral
 
 ## Safirion: taxas e custos, o que o site publica e o que não
-URL: https://safirion.com.br/safirion-taxas-e-custos/
+URL: https://safirion.com.br/blog/safirion-taxas-e-custos/
 
 Análise com fonte · lida em 29/10/2026
 
@@ -4932,12 +4932,12 @@ O custo tem endereço, e ele não é no Brasil.
 
 - THUNDER FLASH LLC Empresa operadora da plataforma
 - L 22853 Registro em Nevis, Caribe
-- SUNSET HORIZON CY LTD Pagamentos Reg. HE464961, Chipre
+- THUNDER FLASH CY LTD Pagamentos Reg. HE458373, Chipre
 - Não existe Regulação no Brasil não é regulada pela CVM
 
 rodapé e documentos oficiais da plataforma · lido em 29/10/2026
 
-A plataforma é operada pela THUNDER FLASH LLC, de Nevis, e o pagamento passa pela SUNSET HORIZON CY LTD, de Chipre. A Safirion não é regulada pela CVM, e nenhum órgão brasileiro fiscaliza tarifa, spread ou prazo de pagamento dessa operação.
+A plataforma é operada pela THUNDER FLASH LLC, de Nevis, e o pagamento passa pela THUNDER FLASH CY LTD, de Chipre. A Safirion não é regulada pela CVM, e nenhum órgão brasileiro fiscaliza tarifa, spread ou prazo de pagamento dessa operação.
 
 Em corretora cadastrada no Brasil você consulta a lista pública da CVM e tem um órgão a quem reclamar de cobrança indevida. Aqui, a régua é a sua medição e o canal é a própria empresa — mais um motivo para fazer o ciclo de teste com US$ 10 antes de qualquer valor relevante.
 
@@ -4995,7 +4995,7 @@ O valor convertido aparece na própria tela do depósito, no momento do pagament
 
 #### Alguém fiscaliza as tarifas da Safirion no Brasil?
 
-Não. A plataforma é operada pela THUNDER FLASH LLC, de Nevis (L 22853), com pagamentos pela SUNSET HORIZON CY LTD, de Chipre (HE464961).
+Não. A plataforma é operada pela THUNDER FLASH LLC, de Nevis (L 22853), com pagamentos pela THUNDER FLASH CY LTD, de Chipre (HE458373).
 
 A Safirion não é regulada pela CVM. Nenhum órgão brasileiro fiscaliza tarifa, spread ou prazo de pagamento, e não existe fundo garantidor cobrindo o saldo.
 
@@ -5031,10 +5031,10 @@ Esta é uma página de afiliado, não o site oficial da Safirion — o oficial �
 - CVM — Como escolher a corretora (ou outro participante do mercado)
 - CVM — Corretoras e distribuidoras: consulta pelo Cadastro Geral
 
-Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela SUNSET HORIZON CY LTD (Reg. HE464961, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
+Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela THUNDER FLASH CY LTD (Reg. HE458373, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
 
 ## Safirion vale a pena? A decisão honesta, com números
-URL: https://safirion.com.br/safirion-vale-a-pena/
+URL: https://safirion.com.br/blog/safirion-vale-a-pena/
 
 ### A Safirion vale a pena?
 
@@ -5377,10 +5377,10 @@ Já tem conta? Entrar na plataforma
 - Safirion — Contrato de Conta Demo
 - Safirion — site oficial
 
-Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela SUNSET HORIZON CY LTD (Reg. HE464961, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
+Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela THUNDER FLASH CY LTD (Reg. HE458373, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
 
 ## Safirion vs outras corretoras: o que dá para comparar
-URL: https://safirion.com.br/safirion-vs-outras-corretoras/
+URL: https://safirion.com.br/blog/safirion-vs-outras-corretoras/
 
 Comparativo por categoria · 29/10/2026
 
@@ -5553,11 +5553,11 @@ Do lado da Safirion há duas empresas, e nenhuma é brasileira.
 - THUNDER FLASH LLC Empresa operadora da plataforma
 - L 22853 Registro em Nevis, Caribe
 - Não existe Regulação no Brasil não é regulada pela CVM
-- SUNSET HORIZON CY LTD Pagamentos Reg. HE464961, Chipre
+- THUNDER FLASH CY LTD Pagamentos Reg. HE458373, Chipre
 
 rodapé e documentos oficiais da plataforma · lido em 29/10/2026
 
-Do outro lado da tela estão a THUNDER FLASH LLC, de Nevis, e a SUNSET HORIZON CY LTD, de Chipre, que processa os pagamentos. Nenhuma das duas tem registro no Brasil. Quando você compara a Safirion com uma corretora brasileira, está comparando um contrato com empresa de fora contra um contrato sob lei brasileira.
+Do outro lado da tela estão a THUNDER FLASH LLC, de Nevis, e a THUNDER FLASH CY LTD, de Chipre, que processa os pagamentos. Nenhuma das duas tem registro no Brasil. Quando você compara a Safirion com uma corretora brasileira, está comparando um contrato com empresa de fora contra um contrato sob lei brasileira.
 
 Nada disso prova fraude, e nada disso prova segurança. É o contorno da escolha: entrada barata e catálogo largo de um lado, rota de cobrança curta e previsível do outro. Quem decide é você, e é melhor decidir antes do primeiro depósito.
 
@@ -5661,10 +5661,10 @@ Esta é uma página de afiliado, não o site oficial da Safirion — o oficial �
 - Site oficial da corretora
 - Plataforma oficial de operação
 
-Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela SUNSET HORIZON CY LTD (Reg. HE464961, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
+Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela THUNDER FLASH CY LTD (Reg. HE458373, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
 
 ## Safirium ou Safirion? O nome correto
-URL: https://safirion.com.br/safirium-ou-safirion-o-nome-correto/
+URL: https://safirion.com.br/blog/safirium-ou-safirion-o-nome-correto/
 
 Guia do nome · endereços lidos em 29/10/2026
 
@@ -5788,11 +5788,11 @@ Safirion é marca. Quem opera a plataforma está registrado com outro nome.
 - THUNDER FLASH LLC Empresa operadora da plataforma
 - L 22853 Registro em Nevis, Caribe
 - Não existe Regulação no Brasil não é regulada pela CVM
-- SUNSET HORIZON CY LTD Pagamentos Reg. HE464961, Chipre
+- THUNDER FLASH CY LTD Pagamentos Reg. HE458373, Chipre
 
 rodapé e documentos oficiais da plataforma · lido em 29/10/2026
 
-Quem responde por tudo é a THUNDER FLASH LLC, de Nevis, no Caribe, registro L 22853, e quem processa o pagamento é a SUNSET HORIZON CY LTD, de Chipre. Nenhuma das duas é brasileira.
+Quem responde por tudo é a THUNDER FLASH LLC, de Nevis, no Caribe, registro L 22853, e quem processa o pagamento é a THUNDER FLASH CY LTD, de Chipre. Nenhuma das duas é brasileira.
 
 A consequência prática pesa mais do que a terminação do nome: a plataforma não é regulada pela CVM, a Comissão de Valores Mobiliários, e nenhum órgão do país garante o dinheiro depositado. Se der problema, a fila é o atendimento da empresa, o Reclame Aqui e a via judicial. Quem é a operadora está em THUNDER FLASH LLC: quem é.
 
@@ -5872,7 +5872,7 @@ Este endereço, safirion.com.br, divulga a corretora e não é ela: pode haver c
 
 #### A Safirion é regulada no Brasil?
 
-Não. A plataforma é operada pela THUNDER FLASH LLC, de Nevis, e os pagamentos pela SUNSET HORIZON CY LTD, de Chipre, registro HE464961. Ela não é regulada pela CVM e não está sob nenhum outro órgão do país.
+Não. A plataforma é operada pela THUNDER FLASH LLC, de Nevis, e os pagamentos pela THUNDER FLASH CY LTD, de Chipre, registro HE458373. Ela não é regulada pela CVM e não está sob nenhum outro órgão do país.
 
 Quem tem registro aparece no Cadastro Geral da CVM. A Safirion não está nessa lista e não finge estar.
 
@@ -5926,10 +5926,10 @@ Esta é uma página de afiliado, não o site oficial da Safirion — o oficial �
 - Perfil oficial no Instagram
 - CVM — Corretoras e distribuidoras: consulta pelo Cadastro Geral
 
-Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela SUNSET HORIZON CY LTD (Reg. HE464961, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
+Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela THUNDER FLASH CY LTD (Reg. HE458373, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
 
 ## Safiriun, Safirio, Safirun: as variações do nome
-URL: https://safirion.com.br/safiriun-safirio-safirun-variacoes-do-nome/
+URL: https://safirion.com.br/blog/safiriun-safirio-safirun-variacoes-do-nome/
 
 Guia do nome · endereços lidos em 29/10/2026
 
@@ -5995,7 +5995,7 @@ Este endereço, safirion.com.br, divulga a corretora e não é ela: pode haver c
 
 #### A Safirion é regulada no Brasil?
 
-Não. A plataforma é operada pela THUNDER FLASH LLC, de Nevis, e os pagamentos pela SUNSET HORIZON CY LTD, de Chipre, registro HE464961. Ela não é regulada pela CVM e não está sob nenhum outro órgão do país.
+Não. A plataforma é operada pela THUNDER FLASH LLC, de Nevis, e os pagamentos pela THUNDER FLASH CY LTD, de Chipre, registro HE458373. Ela não é regulada pela CVM e não está sob nenhum outro órgão do país.
 
 Quem tem registro aparece no Cadastro Geral da CVM. A Safirion não está nessa lista e não finge estar.
 
@@ -6043,7 +6043,7 @@ Se decidir seguir, abra a conta, use a demonstração e deixe valor real para de
 - CVM — Corretoras e distribuidoras: consulta pelo Cadastro Geral
 
 ## Safrion ou Safirion? Qual é o nome certo
-URL: https://safirion.com.br/safrion-ou-safirion-qual-e-o-certo/
+URL: https://safirion.com.br/blog/safrion-ou-safirion-qual-e-o-certo/
 
 Safirion
 
@@ -6123,7 +6123,7 @@ Conteúdo
 - Fontes
 
 ## THUNDER FLASH LLC: quem é a empresa da Safirion
-URL: https://safirion.com.br/thunder-flash-llc-quem-e/
+URL: https://safirion.com.br/blog/thunder-flash-llc-quem-e/
 
 Investigação · fontes abertas em 29/10/2026
 
@@ -6159,7 +6159,7 @@ Respondidas
 
 Cadastro
 
-A Safirion é operada pela THUNDER FLASH LLC, registrada em Nevis sob o número L 22853, e os pagamentos passam pela SUNSET HORIZON CY LTD, de Chipre (HE464961). Registro em Nevis é certidão de existência da empresa: na lista de entidades com licença do órgão de Nevis não existe categoria de corretora de valores.
+A Safirion é operada pela THUNDER FLASH LLC, registrada em Nevis sob o número L 22853, e os pagamentos passam pela THUNDER FLASH CY LTD, de Chipre (HE458373). Registro em Nevis é certidão de existência da empresa: na lista de entidades com licença do órgão de Nevis não existe categoria de corretora de valores.
 
 Essa distinção é a coisa mais importante desta página. Registro de empresa e licença para intermediar dinheiro de terceiro são documentos diferentes, emitidos por processos diferentes, com exigências diferentes. Confundir os dois é o erro que faz site de divulgação escrever que a plataforma tem "regulação internacional".
 
@@ -6174,7 +6174,7 @@ Dados do rodapé e dos documentos oficiais da própria plataforma.
 - THUNDER FLASH LLC Empresa operadora da plataforma
 - L 22853 Registro em Nevis, Caribe
 - Não existe Regulação no Brasil não é regulada pela CVM
-- SUNSET HORIZON CY LTD Pagamentos Reg. HE464961, Chipre
+- THUNDER FLASH CY LTD Pagamentos Reg. HE458373, Chipre
 
 rodapé e documentos oficiais da plataforma · lido em 29/10/2026
 
@@ -6266,11 +6266,11 @@ Aqui é um site independente de divulgação. O oficial da marca é safirion.com
 
 O lado de Chipre
 
-### A SUNSET HORIZON CY LTD e o número HE
+### A THUNDER FLASH CY LTD e o número HE
 
 Quatro coisas que esse segundo registro significa — e uma que não significa.
 
-- HE é prefixo do registro de empresas de Chipre. O número HE464961 identifica a pessoa jurídica no cadastro mercantil cipriota, mantido pelo Departamento do Registro de Empresas e Propriedade Intelectual.
+- HE é prefixo do registro de empresas de Chipre. O número HE458373 identifica a pessoa jurídica no cadastro mercantil cipriota, mantido pelo Departamento do Registro de Empresas e Propriedade Intelectual.
 - Cadastro mercantil não é licença de mercado. Quem cuida de mercado de capitais em Chipre é a CySEC, a comissão de valores do país, que mantém a própria relação de empresas sob a competência dela — outro órgão, outra lista, outro processo.
 - Processadora de pagamento cuida do caminho do dinheiro. O papel descrito é receber e repassar: cartão, transferência, conversão. Não é custódia do seu saldo de operação, e não é quem responde pela plataforma.
 - Esta página não afirma nem desmente o cadastro das duas. Os números vêm dos documentos da própria plataforma, e a consulta cipriota exige formulário com sessão aberta — não publicamos resultado que não lemos.
@@ -6362,13 +6362,13 @@ Vale saber que, pela descrição da própria comissão de Nevis, uma LLC de lá 
 
 Fonte: Nevis FSRC — LLCs, Legal Framework
 
-#### O que é a SUNSET HORIZON CY LTD?
+#### O que é a THUNDER FLASH CY LTD?
 
-É a empresa que processa os pagamentos da plataforma, registrada em Chipre sob o número HE464961. É o nome que tende a aparecer na cobrança, e não é o mesmo nome do contrato da plataforma.
+É a empresa que processa os pagamentos da plataforma, registrada em Chipre sob o número HE458373. É o nome que tende a aparecer na cobrança, e não é o mesmo nome do contrato da plataforma.
 
 Guarde isso: comprovante com um nome e contrato com outro é normal nesse arranjo, mas confunde na hora de cobrar. Salve os dois.
 
-#### O que significa o número HE464961?
+#### O que significa o número HE458373?
 
 HE é o prefixo usado no registro de empresas de Chipre, mantido pelo departamento cipriota de registro de empresas e propriedade intelectual. O número identifica a pessoa jurídica no cadastro mercantil.
 
@@ -6421,4 +6421,4 @@ Esta é uma página de afiliado, não o site oficial da Safirion — o oficial �
 - CVM — Corretoras e distribuidoras: consulta pelo Cadastro Geral
 - Reclame Aqui — Safirion (nota, reclamações, respostas)
 
-Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela SUNSET HORIZON CY LTD (Reg. HE464961, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
+Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela THUNDER FLASH CY LTD (Reg. HE458373, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.

@@ -191,6 +191,376 @@
       "source": "/safirion-antes-do-primeiro-deposito/",
       "destination": "/",
       "permanent": false
+    },
+    {
+      "source": "/analise-tecnica-para-iniciantes/",
+      "destination": "/blog/analise-tecnica-para-iniciantes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/analise-tecnica-para-iniciantes",
+      "destination": "/blog/analise-tecnica-para-iniciantes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/como-comecar-na-safirion-passo-a-passo/",
+      "destination": "/blog/como-comecar-na-safirion-passo-a-passo/",
+      "statusCode": 301
+    },
+    {
+      "source": "/como-comecar-na-safirion-passo-a-passo",
+      "destination": "/blog/como-comecar-na-safirion-passo-a-passo/",
+      "statusCode": 301
+    },
+    {
+      "source": "/como-operar-na-safirion/",
+      "destination": "/blog/como-operar-na-safirion/",
+      "statusCode": 301
+    },
+    {
+      "source": "/como-operar-na-safirion",
+      "destination": "/blog/como-operar-na-safirion/",
+      "statusCode": 301
+    },
+    {
+      "source": "/conta-demo-safirion-como-treinar/",
+      "destination": "/blog/conta-demo-safirion-como-treinar/",
+      "statusCode": 301
+    },
+    {
+      "source": "/conta-demo-safirion-como-treinar",
+      "destination": "/blog/conta-demo-safirion-como-treinar/",
+      "statusCode": 301
+    },
+    {
+      "source": "/day-trade-para-iniciantes/",
+      "destination": "/blog/day-trade-para-iniciantes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/day-trade-para-iniciantes",
+      "destination": "/blog/day-trade-para-iniciantes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/erros-de-iniciante-no-day-trade/",
+      "destination": "/blog/erros-de-iniciante-no-day-trade/",
+      "statusCode": 301
+    },
+    {
+      "source": "/erros-de-iniciante-no-day-trade",
+      "destination": "/blog/erros-de-iniciante-no-day-trade/",
+      "statusCode": 301
+    },
+    {
+      "source": "/estrategias-de-day-trade-para-iniciantes/",
+      "destination": "/blog/estrategias-de-day-trade-para-iniciantes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/estrategias-de-day-trade-para-iniciantes",
+      "destination": "/blog/estrategias-de-day-trade-para-iniciantes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gerenciamento-de-banca-no-day-trade/",
+      "destination": "/blog/gerenciamento-de-banca-no-day-trade/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gerenciamento-de-banca-no-day-trade",
+      "destination": "/blog/gerenciamento-de-banca-no-day-trade/",
+      "statusCode": 301
+    },
+    {
+      "source": "/imposto-de-renda-em-corretora-no-exterior/",
+      "destination": "/blog/imposto-de-renda-em-corretora-no-exterior/",
+      "statusCode": 301
+    },
+    {
+      "source": "/imposto-de-renda-em-corretora-no-exterior",
+      "destination": "/blog/imposto-de-renda-em-corretora-no-exterior/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safarion-ou-safirion-a-corretora-certa/",
+      "destination": "/blog/safarion-ou-safirion-a-corretora-certa/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safarion-ou-safirion-a-corretora-certa",
+      "destination": "/blog/safarion-ou-safirion-a-corretora-certa/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-alavancagem-o-que-e/",
+      "destination": "/blog/safirion-alavancagem-o-que-e/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-alavancagem-o-que-e",
+      "destination": "/blog/safirion-alavancagem-o-que-e/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-antes-do-primeiro-deposito/",
+      "destination": "/blog/safirion-antes-do-primeiro-deposito/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-antes-do-primeiro-deposito",
+      "destination": "/blog/safirion-antes-do-primeiro-deposito/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-app-para-celular/",
+      "destination": "/blog/safirion-app-para-celular/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-app-para-celular",
+      "destination": "/blog/safirion-app-para-celular/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-ativos-disponiveis/",
+      "destination": "/blog/safirion-ativos-disponiveis/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-ativos-disponiveis",
+      "destination": "/blog/safirion-ativos-disponiveis/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-broker-o-que-e/",
+      "destination": "/blog/safirion-broker-o-que-e/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-broker-o-que-e",
+      "destination": "/blog/safirion-broker-o-que-e/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-cartao-de-credito/",
+      "destination": "/blog/safirion-cartao-de-credito/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-cartao-de-credito",
+      "destination": "/blog/safirion-cartao-de-credito/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-como-abrir-conta/",
+      "destination": "/blog/safirion-como-abrir-conta/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-como-abrir-conta",
+      "destination": "/blog/safirion-como-abrir-conta/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-como-sacar-dinheiro/",
+      "destination": "/blog/safirion-como-sacar-dinheiro/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-como-sacar-dinheiro",
+      "destination": "/blog/safirion-como-sacar-dinheiro/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-conta-demo/",
+      "destination": "/blog/safirion-conta-demo/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-conta-demo",
+      "destination": "/blog/safirion-conta-demo/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-conta-em-dolar-e-conversao/",
+      "destination": "/blog/safirion-conta-em-dolar-e-conversao/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-conta-em-dolar-e-conversao",
+      "destination": "/blog/safirion-conta-em-dolar-e-conversao/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-deposito-minimo/",
+      "destination": "/blog/safirion-deposito-minimo/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-deposito-minimo",
+      "destination": "/blog/safirion-deposito-minimo/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-documentos-para-verificacao/",
+      "destination": "/blog/safirion-documentos-para-verificacao/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-documentos-para-verificacao",
+      "destination": "/blog/safirion-documentos-para-verificacao/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-e-golpe-ou-nao/",
+      "destination": "/blog/safirion-e-golpe-ou-nao/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-e-golpe-ou-nao",
+      "destination": "/blog/safirion-e-golpe-ou-nao/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-e-regulada-pela-cvm/",
+      "destination": "/blog/safirion-e-regulada-pela-cvm/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-e-regulada-pela-cvm",
+      "destination": "/blog/safirion-e-regulada-pela-cvm/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-horario-do-mercado/",
+      "destination": "/blog/safirion-horario-do-mercado/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-horario-do-mercado",
+      "destination": "/blog/safirion-horario-do-mercado/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-instagram-e-telegram-oficiais/",
+      "destination": "/blog/safirion-instagram-e-telegram-oficiais/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-instagram-e-telegram-oficiais",
+      "destination": "/blog/safirion-instagram-e-telegram-oficiais/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-login-e-acesso/",
+      "destination": "/blog/safirion-login-e-acesso/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-login-e-acesso",
+      "destination": "/blog/safirion-login-e-acesso/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-plataforma-como-funciona/",
+      "destination": "/blog/safirion-plataforma-como-funciona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-plataforma-como-funciona",
+      "destination": "/blog/safirion-plataforma-como-funciona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-reclame-aqui/",
+      "destination": "/blog/safirion-reclame-aqui/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-reclame-aqui",
+      "destination": "/blog/safirion-reclame-aqui/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-suporte-como-falar/",
+      "destination": "/blog/safirion-suporte-como-falar/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-suporte-como-falar",
+      "destination": "/blog/safirion-suporte-como-falar/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-taxas-e-custos/",
+      "destination": "/blog/safirion-taxas-e-custos/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-taxas-e-custos",
+      "destination": "/blog/safirion-taxas-e-custos/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-vale-a-pena/",
+      "destination": "/blog/safirion-vale-a-pena/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-vale-a-pena",
+      "destination": "/blog/safirion-vale-a-pena/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-vs-outras-corretoras/",
+      "destination": "/blog/safirion-vs-outras-corretoras/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirion-vs-outras-corretoras",
+      "destination": "/blog/safirion-vs-outras-corretoras/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirium-ou-safirion-o-nome-correto/",
+      "destination": "/blog/safirium-ou-safirion-o-nome-correto/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safirium-ou-safirion-o-nome-correto",
+      "destination": "/blog/safirium-ou-safirion-o-nome-correto/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safiriun-safirio-safirun-variacoes-do-nome/",
+      "destination": "/blog/safiriun-safirio-safirun-variacoes-do-nome/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safiriun-safirio-safirun-variacoes-do-nome",
+      "destination": "/blog/safiriun-safirio-safirun-variacoes-do-nome/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safrion-ou-safirion-qual-e-o-certo/",
+      "destination": "/blog/safrion-ou-safirion-qual-e-o-certo/",
+      "statusCode": 301
+    },
+    {
+      "source": "/safrion-ou-safirion-qual-e-o-certo",
+      "destination": "/blog/safrion-ou-safirion-qual-e-o-certo/",
+      "statusCode": 301
+    },
+    {
+      "source": "/thunder-flash-llc-quem-e/",
+      "destination": "/blog/thunder-flash-llc-quem-e/",
+      "statusCode": 301
+    },
+    {
+      "source": "/thunder-flash-llc-quem-e",
+      "destination": "/blog/thunder-flash-llc-quem-e/",
+      "statusCode": 301
     }
   ]
 }
