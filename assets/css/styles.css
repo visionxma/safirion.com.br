@@ -751,3 +751,94 @@ strong,b{font-weight:600;color:var(--ink-strong)}
   .hero__acts .btn{flex:1 1 100%}
   .ft__cols{grid-template-columns:1fr}
 }
+
+/* ==========================================================================
+   Ferramentas: a imagem de cada cartão (print real da plataforma no aparelho)
+   ========================================================================== */
+#ferramentas .bento{grid-auto-rows:minmax(270px,auto)}
+#ferramentas .bento .card{container-type:inline-size}
+#ferramentas .card>.card__vis{
+  position:absolute;z-index:0;max-width:none;height:auto;min-height:0;
+  pointer-events:none;user-select:none;-webkit-user-drag:none;
+  transform:translateY(var(--vis-y,0)) rotate(var(--vis-r,0deg));
+  transition:transform .6s var(--ease);
+}
+#ferramentas .card:hover>.card__vis{--vis-y:-6px}
+/* o título fica por cima da imagem, sempre */
+#ferramentas .bento .card .h3{position:relative;z-index:2;text-wrap:balance;overflow-wrap:break-word}
+
+/* 1. Ferramentas: o painel de operação no MacBook, alto e à direita */
+#ferramentas .card__vis--mac{
+  width:84%;inset-inline-end:-9%;top:7%;--vis-r:-2deg;
+  filter:drop-shadow(0 26px 40px rgba(0,0,0,.6));
+  -webkit-mask-image:linear-gradient(180deg,#000 72%,transparent 100%);
+  mask-image:linear-gradient(180deg,#000 72%,transparent 100%);
+}
+/* 2. Operações: o bilhete de ordem (Comprar / Vender) no iPhone */
+#ferramentas .card__vis--ordem{
+  width:clamp(52px,26%,92px);inset-inline-end:9%;top:clamp(10px,5%,18px);--vis-r:-8deg;
+  filter:drop-shadow(0 16px 22px rgba(0,0,0,.6));
+}
+/* 3. Ativos: a lista de ativos no tablet, na quina de cima */
+#ferramentas .card__vis--ativos{
+  width:clamp(118px,70%,250px);inset-inline-end:-10%;top:clamp(6px,4%,14px);
+  filter:drop-shadow(0 16px 22px rgba(0,0,0,.55));
+  -webkit-mask-image:linear-gradient(212deg,#000 62%,transparent 96%);
+  mask-image:linear-gradient(212deg,#000 62%,transparent 96%);
+}
+/* 4. Suporte: a conversa com o suporte no iPhone, subindo pela borda de baixo */
+#ferramentas .card__vis--suporte{
+  width:clamp(92px,23%,132px);inset-inline-end:9%;top:16%;--vis-r:5deg;
+  filter:drop-shadow(0 18px 28px rgba(0,0,0,.6));
+}
+#ferramentas .bento .card:nth-child(4) .h3{max-width:62%}
+@container (max-width:299px){
+  #ferramentas .bento .card:nth-child(4) .h3{max-width:54%}
+  #ferramentas .card__vis--suporte{width:84px;inset-inline-end:7%}
+}
+
+/* cartão largo (conteúdo de 560px ou mais): o MacBook ao lado, subindo pela borda de baixo */
+@container (min-width:560px){
+  #ferramentas .card__vis--mac{width:min(46%,420px);inset-inline-end:4%;top:auto;bottom:-22%;--vis-r:0deg;
+    -webkit-mask-image:none;mask-image:none}
+  #ferramentas .card:nth-child(1) .h3{max-width:46%}
+}
+/* cartão pequeno com espaço (2 colunas no tablet): o aparelho ao lado do título */
+@container (min-width:280px) and (max-width:559px){
+  #ferramentas .card__vis--ordem{width:96px;inset-inline-end:9%;top:14%}
+  #ferramentas .card__vis--ativos{width:min(230px,62%);inset-inline-end:-14%;top:auto;bottom:-20%;
+    -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 34%);mask-image:linear-gradient(90deg,transparent 0,#000 34%)}
+  #ferramentas .card:nth-child(2) .h3,#ferramentas .card:nth-child(3) .h3{max-width:56%}
+}
+
+@media (max-width:1024px){
+  #ferramentas .bento{grid-auto-rows:auto}
+  #ferramentas .bento .card:nth-child(1){min-height:250px}
+  #ferramentas .bento .card:nth-child(2),#ferramentas .bento .card:nth-child(3){min-height:220px}
+  #ferramentas .bento .card:nth-child(4){min-height:200px}
+}
+/* celular: copia a composição do computador (2 colunas), nunca a pilha de 4 */
+@media (max-width:600px){
+  #ferramentas .bento{grid-template-columns:repeat(2,minmax(0,1fr))}
+  #ferramentas .bento .card:nth-child(1),#ferramentas .bento .card:nth-child(4){grid-column:span 2}
+  #ferramentas .bento .card:nth-child(1){min-height:320px}
+  #ferramentas .bento .card:nth-child(2),#ferramentas .bento .card:nth-child(3){min-height:250px;padding:20px 18px}
+  #ferramentas .bento .card:nth-child(2) .h3,#ferramentas .bento .card:nth-child(3) .h3{font-size:16px;line-height:1.3}
+  #ferramentas .bento .card:nth-child(4){min-height:210px}
+}
+@media (max-width:360px){
+  #ferramentas .bento .card:nth-child(2),#ferramentas .bento .card:nth-child(3){padding:18px 14px}
+  #ferramentas .bento .card:nth-child(2) .h3,#ferramentas .bento .card:nth-child(3) .h3{font-size:15px}
+}
+/* idioma da direita para a esquerda: inclinação e esmaecimento espelhados */
+[dir="rtl"] #ferramentas .card__vis--mac{--vis-r:2deg}
+[dir="rtl"] #ferramentas .card__vis--ordem{--vis-r:8deg}
+[dir="rtl"] #ferramentas .card__vis--suporte{--vis-r:-5deg}
+[dir="rtl"] #ferramentas .card__vis--ativos{-webkit-mask-image:linear-gradient(148deg,#000 62%,transparent 96%);mask-image:linear-gradient(148deg,#000 62%,transparent 96%)}
+@container (min-width:280px) and (max-width:559px){
+  [dir="rtl"] #ferramentas .card__vis--ativos{-webkit-mask-image:linear-gradient(270deg,transparent 0,#000 34%);mask-image:linear-gradient(270deg,transparent 0,#000 34%)}
+}
+@media (prefers-reduced-motion:reduce){
+  #ferramentas .card>.card__vis{transition:none}
+  #ferramentas .card:hover>.card__vis{--vis-y:0}
+}
