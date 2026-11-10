@@ -66,8 +66,8 @@ cada um numa pasta (`/en/`, `/es/`…). Você traduz **um** idioma.
 - "Diretos autorais © 2026." é "Direitos autorais © 2026." (copyright): traduza o sentido.
 - "Acesse o site oficial da Safirion: https://safirion.com.br": traduza a frase, o
   endereço fica igual.
-- Números: mesmos valores (`+30`, `+de 30 ativos` → o equivalente natural, ex. en
-  "30+ assets"). `01`–`04` do FAQ ficam.
+- Números: mesmos valores (`+130`, `+de 130 ativos` → o equivalente natural, ex. en
+  "130+ assets"). `01`–`04` do FAQ ficam.
 - Árabe: escreva em árabe padrão moderno, sem acrescentar `dir` nem outros atributos (o
   montador cuida disso); algarismos ocidentais (0-9). Chinês: simplificado. Filipino:
   filipino padrão (base tagalo), com empréstimos do inglês onde soa natural. Hindi e
