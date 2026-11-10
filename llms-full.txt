@@ -5,7 +5,7 @@ Fonte: https://safirion.com.br/
 Idioma: português (Brasil)
 Resumo e índice: https://safirion.com.br/llms.txt
 
-> Texto integral, em português (Brasil), das páginas de https://safirion.com.br/ (28 páginas: a inicial e 27 guias).
+> Texto integral, em português (Brasil), das páginas de https://safirion.com.br/ (29 páginas: a inicial e 28 guias).
 
 Esta é a página brasileira sobre a Safirion, https://safirion.com.br — aqui ficam as informações da plataforma, o passo a passo do cadastro e o conteúdo educativo; a conta é criada e acessada em https://trade.safirion.com. O site oficial da marca é https://safirion.com. Quem opera a plataforma é a THUNDER FLASH LLC, registrada em Nevis (Reg. No. L 22853); os pagamentos são processados pela THUNDER FLASH CY LTD, registrada no Chipre (Reg. No. HE458373, Limassol).
 
@@ -5386,11 +5386,11 @@ A resposta curta
 
 ### Qual delas serve para quem mora no Brasil?
 
-Para quem mora no Brasil, o primeiro filtro tira duas: Pocket Option e Stockity declaram que não atendem residentes do Brasil. Entre as três restantes, a Olymp Trade ganha em licença declarada e saque sem taxa; a Safirion, no Pix documentado e na taxa de saque fixa, contra até 10% na Exnova. Este site é afiliado da Safirion.
+Para quem mora no Brasil, o primeiro filtro tira duas: Pocket Option e Stockity declaram que não atendem residentes do Brasil. Entre as três restantes, a Olymp Trade ganha em licença declarada e saque sem taxa; a Safirion, no Pix por escrito e na taxa de saque fixa, contra até 10% na Exnova. Este site é afiliado da Safirion.
 
 - Se você buscaLicença declarada e órgão de disputasOlymp Trade
 - Se você buscaSacar sem taxaOlymp Trade0%, salvo cripto e USDT.
-- Se você buscaDepositar por PixSafirionPix no blog oficial.
+- Se você buscaDepositar por PixSafirionRegras do Pix por escrito no blog oficial.
 - Se você buscaPrimeiro saque do mês sem taxaSafirionDepois, 2%.
 - Se você buscaRegistro na CVMNenhuma declaraConfira no Cadastro Geral da CVM.
 
@@ -5424,7 +5424,7 @@ Empresa que operaEmpatenenhuma tem empresa no Brasil | THUNDER FLASH LLC, Nevis 
 
  | Não publicalei da Costa Rica1808/11/2026
 
- | Digital Smart LLC, Nevis (L 22205)2108/11/2026
+ | Digital Smart LLC, Nevis, segundo os TermosDigital Smart LLC (Nevis)2108/11/2026
 
  | Verte Securities Limited (Vanuatu)2610/11/2026
 
@@ -5514,11 +5514,11 @@ Conta demoEmpateas cinco têm demo | US$ 10.000 virtuais705/11/2026
 
  | 
 
-Prazo de saque por escritoEmpateSafirion e Exnova, três dias úteis | 3 dias úteis, com direito de estender331/10/2026
+Prazo de saque por escritoEmpateSafirion e Exnova: três dias úteis; a Pocket, três ou cinco | 3 dias úteis, com direito de estender331/10/2026
 
  | Até 5 dias úteis no regulamento1407/11/2026
 
- | 5 dias úteis na política de pagamentos1908/11/2026
+ | 3 ou 5 dias úteis, conforme o documento1908/11/2026
 
  | 3 dias úteis, prorrogáveis com aviso2308/11/2026
 
@@ -5588,7 +5588,7 @@ PixSem dadosó a Safirion cita o Pix | Sim, com PicPay e boleto205/11/2026
 
 O número leva à fonte, na seção de fontes; a data é o dia da leitura. "Não publica" e "não confirmado" não são zero: é o que falta para comparar.
 
-A Olymp Trade ganha três linhas: regulador declarado, órgão de disputas e taxa de saque. A Safirion não ganha nenhuma sozinha: empata com a Exnova no prazo de saque e é a única com Pix numa página que lemos. E depósito mínimo não é preço: o custo mora no spread (diferença entre compra e venda) e nas taxas.
+A Olymp Trade ganha três linhas: regulador declarado, órgão de disputas e taxa de saque. A Safirion não ganha nenhuma sozinha: empata com a Exnova no prazo de saque e é a única com regras de Pix por escrito (a Pocket Option só mostra o logo). E depósito mínimo não é preço: o custo mora no spread (diferença entre compra e venda) e nas taxas.
 
 Quer ver a plataforma por dentro?
 
@@ -5647,7 +5647,7 @@ A conta supõe que todo o valor depositado sai em saques iguais no mês e usa s�
 
 Pocket Option e Stockity ficaram fora porque declaram que não atendem quem mora no Brasil. Na Safirion, a taxa tem piso de R$ 5 e teto de R$ 125 por saque, e a conta já aplica os dois.
 
-Na Exnova, a tabela permite de 2% a 10% por saque, a critério da empresa, entre US$ 1 e US$ 30: a conta usa o piso. A Olymp Trade fixa a conversão por meio de pagamento, sem publicar o número.
+Na Exnova, a tabela permite de 2% a 10% por saque, a critério da empresa, entre R$ 5 e R$ 125 por saque: a conta usa o piso de 2%. A Olymp Trade fixa a conversão por meio de pagamento, sem publicar o número.
 
 fontes 4, 13, 14 e 24
 
@@ -5743,7 +5743,7 @@ O prazo
 
 Quase todas anunciam mais rapidez do que o documento garante. A Safirion anuncia menos de 24 horas e fixa três dias úteis na Política de Saque. A Olymp Trade anuncia 70% dos pedidos em 1 hora e se dá até cinco dias úteis.
 
-A Exnova publica três dias úteis, prorrogáveis. A Pocket Option dá três ou cinco, conforme o documento. A Stockity só anuncia a maioria em 24 horas.
+A Exnova publica três dias úteis, prorrogáveis. A Pocket Option dá três ou cinco dias úteis, conforme o documento. A Stockity só anuncia a maioria em 24 horas.
 
 Na Safirion, depósito por boleto espera 72 horas antes do saque. Quando anúncio e documento não batem, vale o documento.
 
