@@ -5,7 +5,7 @@ Fonte: https://safirion.com.br/
 Idioma: português (Brasil)
 Resumo e índice: https://safirion.com.br/llms.txt
 
-> Texto integral, em português (Brasil), das páginas de https://safirion.com.br/ (27 páginas: a inicial e 26 guias).
+> Texto integral, em português (Brasil), das páginas de https://safirion.com.br/ (28 páginas: a inicial e 27 guias).
 
 Esta é a página brasileira sobre a Safirion, https://safirion.com.br — aqui ficam as informações da plataforma, o passo a passo do cadastro e o conteúdo educativo; a conta é criada e acessada em https://trade.safirion.com. O site oficial da marca é https://safirion.com. Quem opera a plataforma é a THUNDER FLASH LLC, registrada em Nevis (Reg. No. L 22853); os pagamentos são processados pela THUNDER FLASH CY LTD, registrada no Chipre (Reg. No. HE458373, Limassol).
 
@@ -5379,289 +5379,545 @@ Já tem conta? Entrar na plataforma
 
 Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela THUNDER FLASH CY LTD (Reg. HE458373, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
 
-## Safirion vs outras corretoras: o que dá para comparar
+## Safirion vs Olymp Trade, Pocket Option, Exnova e Stockity
 URL: https://safirion.com.br/blog/safirion-vs-outras-corretoras/
-
-Comparativo por categoria · 29/10/2026
-
-### Safirion contra as outras corretoras
-
-Comparação sem célula inventada
-
-Já tem conta? Entrar na plataforma
-
-- A Safirion ganha ou perde das outras?
-- O que dá para comparar com fonte
-- Seis pontos em que a Safirion ganha
-
-Filtrar ativos Safirion
-
-Gráfico
-
-Ordem
-
-US$ 10 Depósito
-
-+130 Ativos
-
-2FA Segurança
-
-Nesta página
-
-- A Safirion ganha ou perde das outras?
-- O que dá para comparar com fonte
-- Seis pontos em que a Safirion ganha
-- Seis pontos em que ela perde
-- Quatro comparações que não valem nada
-- O que a Safirion põe na mesa
-- Como montar a sua comparação
-- Com quem você compara quando compara
-- A Safirion ganha ou perde das outras?
-- O que dá para comparar com fonte
-- Seis pontos em que a Safirion ganha
-- Seis pontos em que ela perde
-- Quatro comparações que não valem nada
-- O que a Safirion põe na mesa
-- Como montar a sua comparação
-- Com quem você compara quando compara
 
 A resposta curta
 
-### A Safirion ganha ou perde das outras?
+### Qual delas serve para quem mora no Brasil?
 
-Depende da categoria — e três categorias decidem quase tudo.
+Para quem mora no Brasil, o primeiro filtro tira duas: Pocket Option e Stockity declaram que não atendem residentes do Brasil. Entre as três restantes, a Olymp Trade ganha em licença declarada e saque sem taxa; a Safirion, no Pix documentado e na taxa de saque fixa, contra até 10% na Exnova. Este site é afiliado da Safirion.
 
-- A Safirion ganha ou perde das outras?
-- O que dá para comparar com fonte
-- Seis pontos em que a Safirion ganha
-- Seis pontos em que ela perde
-- Quatro comparações que não valem nada
-- O que a Safirion põe na mesa
+- Se você buscaLicença declarada e órgão de disputasOlymp Trade
+- Se você buscaSacar sem taxaOlymp Trade0%, salvo cripto e USDT.
+- Se você buscaDepositar por PixSafirionPix no blog oficial.
+- Se você buscaPrimeiro saque do mês sem taxaSafirionDepois, 2%.
+- Se você buscaRegistro na CVMNenhuma declaraConfira no Cadastro Geral da CVM.
+
+Este site é afiliado da Safirion: se você abrir conta por aqui, podemos receber comissão, e o site oficial é safirion.com. Por isso as linhas em que a concorrente ganha têm o mesmo peso.
+
+Dado de concorrente só entra com fonte que nós abrimos. Onde a empresa não publica, a célula diz não publica; onde não conseguimos ler, não confirmado. Nenhum dos dois é zero.
 
 Lado a lado
 
-### O que dá para comparar com fonte
+### As cinco na mesma tabela
 
-Coluna da Safirion: site e Reclame Aqui lidos em 29/10/2026.
+Toque no número de uma célula para abrir a fonte.
 
-| O que comparar | Safirion | Corretora brasileira |
-| --- | --- | --- |
-| Registro conferível no país | Não existe. Operadora em Nevis, L 22853 | Consta no Cadastro Geral da CVM |
-| Depósito para começar | US$ 10, segundo o site | não comparável sem o dado publicado |
-| Quantidade de ativo | +130, segundo o site | não comparável sem o dado publicado |
-| Tipo de instrumento | CFD (contrato por diferença) | Valor mobiliário, na competência da CVM |
-| Conta de demonstração | Existe, sem depósito | não comparável sem o dado publicado |
-| Aplicativo | Android; iOS "em breve", segundo o site | não comparável sem o dado publicado |
-| Reputação pública medida | 7,8 de 10, 37 reclamações, 8 meses de cadastro | não comparável sem o dado publicado |
+Safirion e as quatro que o brasileiro pesquisa, critério por critérioCritério | Safirion | Olymp Trade | Pocket Option | Exnova | Stockity | 
 
-site da plataforma e Reclame Aqui (29/10/2026) · CVM, consulta de regulados
+Atende quem mora no Brasil?EmpatePocket e Stockity excluem o Brasil | Sim, com Pix e boleto no blog oficial205/11/2026
 
-Cinco das sete células do lado direito estão vazias de propósito. Não é preguiça: cada corretora brasileira publica a própria tabela de tarifa, o próprio mínimo e a própria lista de ativo, e esses valores mudam por conta, por plano e por mês. Copiar um número de hoje para dentro de uma tabela que fica anos no ar é como se mente em comparativo.
+ | FAQ em português, com valor em reais1110/11/2026
 
-As duas linhas que ficam cheias são justamente as que não dependem de tabela comercial: registro e tipo de instrumento. São categorias, não preços — e são elas que mudam a natureza do que você está contratando.
+ | Não: exclui residentes do Brasil1710/11/2026
 
-A favor
+ | Sim: os Termos citam o Brasil2108/11/2026
 
-### Seis pontos em que a Safirion ganha
+ | Não: o contrato exclui o Brasil2610/11/2026
 
-Todos lidos na fonte. Nenhum é promessa de resultado.
+ | 
 
-#### Entrada barata
+Empresa que operaEmpatenenhuma tem empresa no Brasil | THUNDER FLASH LLC, Nevis (Reg. L 22853)105/11/2026
 
-O site diz que o depósito começa em US$ 10. É o valor de um teste, não de um investimento — e isso reduz o tamanho do erro possível.
+ | Aollikus Limited (Vanuatu)907/11/2026
 
-#### Catálogo largo
+ | Não publicalei da Costa Rica1808/11/2026
 
-São +130 ativos, segundo o site, em uma só tela: câmbio, índice, commodity e cripto no mesmo lugar.
+ | Digital Smart LLC, Nevis (L 22205)2108/11/2026
 
-#### Demonstração sem depósito
+ | Verte Securities Limited (Vanuatu)2610/11/2026
 
-Dá para conhecer as telas e os ativos antes de pôr dinheiro. Teste que custa zero é vantagem real sobre quem exige aporte.
+ | 
 
-#### Cadastro inteiro digital
+Regulador que a empresa declaraVantagem: Olymp Tradenomeia o órgão que a licencia | Nenhum; não é regulada pela CVM105/11/2026
 
-Conta e verificação de identidade acontecem no navegador ou no aplicativo Android, sem agência e sem papel assinado.
+ | Licença da VFSC de Vanuatu, não conferidaLicença da VFSC (Vanuatu)1010/11/2026
 
-#### Responde no canal público
+ | Nenhum; diz não ter licença da CVM1610/11/2026
 
-No Reclame Aqui, 100% das 37 reclamações do período estão respondidas, com 75% marcadas como resolvidas.
+ | Não publicaos Termos não citam regulador2108/11/2026
 
-#### Acesso protegido
+ | Diz-se licenciada; órgão não lido2710/11/2026
 
-A plataforma oferece 2FA (confirmação em duas etapas) e conferência de identidade no cadastro.
+ | 
 
-Contra
+Alerta da CVMSem dadoausência não é prova | Não confirmado
 
-### Seis pontos em que ela perde
+ | Não confirmado
 
-A lista que o comparativo de divulgação costuma deixar fora.
+ | Não confirmado
 
-Cuidado
+ | Alerta de 26/06/2025 sobre a Digital Smart LLCAlerta sobre a Digital Smart LLC2910/11/2026
 
-### Quatro comparações que não valem nada
+ | Não confirmado
 
-Erros de régua que fazem a tabela mentir sem nenhum número falso.
+ | 
 
-- Nota de Reclame Aqui entre empresas de tamanho diferente. A Safirion tem 37 reclamações em 8 meses. Uma empresa com milhões de clientes acumula milhares. Comparar as notas compara denominadores, não atendimento.
-- Depósito mínimo em moeda diferente. US$ 10 contra um mínimo em real depende do câmbio do dia. Mínimo baixo também não diz nada sobre custo de operar: o custo mora no spread, que o site não publica.
-- Quantidade de ativo como qualidade. +130 ativos é variedade, não liquidez nem custo. Operar bem dois ativos vale mais que ter acesso a cento e trinta.
-- Selo, criptografia e 2FA como se fossem supervisão. Proteção de acesso cuida da sua senha. Não cuida do seu saldo, e não substitui registro de órgão nenhum.
+Órgão externo para disputasVantagem: Olymp Tradeórgão privado de disputas | Não confirmado
 
-Se você achou um comparativo que dá nota de estrela para a Safirion e para três concorrentes, pergunte de onde saiu cada estrela. Nenhuma das quatro empresas publica o dado que sustentaria essa nota.
+ | Financial Commission, desde 20161507/11/2026
 
-A oferta dela
+ | Não confirmado
 
-### O que a Safirion põe na mesa
+ | Não publicasó e-mail de queixas2108/11/2026
 
-Quatro valores lidos no site da plataforma em 29/10/2026.
+ | Não confirmado
 
-- US$ 10 Depósito valor em que o site diz que começa
-- +130 Ativos disponíveis para operar
-- 2FA Segurança com criptografia e KYC
-- Android Aplicativo iOS anunciado como "em breve"
+ | 
 
-site da plataforma · lido em 29/10/2026
+Reclame AquiSem dadosó a da Safirion abriu | Nota 7,8; 100% respondidas829/10/2026
 
-A diferença de categoria mora na linha do instrumento. A Safirion trabalha com CFD (contrato por diferença): você não compra o ativo, compra um contrato que acompanha a variação de preço dele. Corretora brasileira com registro na CVM intermedeia valor mobiliário — ação, fundo, título — e você fica com o ativo no nome.
+ | Não confirmado
 
-Essa diferença muda tudo o que vem depois: quem guarda o ativo, como o imposto é apurado, o que acontece se a empresa fechar. Não é melhor nem pior em si; é outra coisa, e comparar as duas pelo preço da tela é comparar aluguel com compra.
+ | Não confirmado
 
-Faça você mesmo
+ | Não confirmado
 
-### Como montar a sua comparação
+ | Não confirmado
 
-Três consultas de graça, que valem mais que qualquer ranking.
+ | 
 
-#### Confira o registro no órgão
+O que se operaSem dadomodos diferentes | CFD em +130 ativos129/10/2026
 
-Abra o Cadastro Geral da CVM, na Central de Sistemas, e busque pela razão social de cada candidata. Quem tem registro aparece; quem não tem, não aparece. Esse é o filtro mais duro.
+ | Tempo Fixo, Forex e ações1207/11/2026
 
-#### Baixe a tabela de tarifa de cada uma
+ | Mais de 100 instrumentos2007/11/2026
 
-Corretora publica a própria tabela. Compare o custo da operação que você pretende fazer, não o mínimo de depósito — é a tarifa que come o resultado todo mês.
+ | Opções digitais, binárias e CFD2108/11/2026
 
-#### Teste nas duas e meça o saque
+ | Copy trading e AI Trading2610/11/2026
 
-Abra a demonstração onde houver, deposite o mínimo onde for operar e peça um saque pequeno. O prazo que você cronometrar vale mais que qualquer prazo prometido.
+ | 
 
-Quem opera
+Depósito mínimoSem dadovalores em conflito | US$ 10129/10/2026
 
-### Com quem você compara quando compara
+ | R$ 50 e US$ 10 na mesma FAQ1110/11/2026
 
-Do lado da Safirion há duas empresas, e nenhuma é brasileira.
+ | US$ 0,10 na oferta pública1810/11/2026
 
-- THUNDER FLASH LLC Empresa operadora da plataforma
-- L 22853 Registro em Nevis, Caribe
-- Não existe Regulação no Brasil não é regulada pela CVM
-- THUNDER FLASH CY LTD Pagamentos Reg. HE458373, Chipre
+ | US$ 102210/11/2026
 
-rodapé e documentos oficiais da plataforma · lido em 29/10/2026
+ | Não publica2810/11/2026
 
-Do outro lado da tela estão a THUNDER FLASH LLC, de Nevis, e a THUNDER FLASH CY LTD, de Chipre, que processa os pagamentos. Nenhuma das duas tem registro no Brasil. Quando você compara a Safirion com uma corretora brasileira, está comparando um contrato com empresa de fora contra um contrato sob lei brasileira.
+ | 
 
-Nada disso prova fraude, e nada disso prova segurança. É o contorno da escolha: entrada barata e catálogo largo de um lado, rota de cobrança curta e previsível do outro. Quem decide é você, e é melhor decidir antes do primeiro depósito.
+Conta demoEmpateas cinco têm demo | US$ 10.000 virtuais705/11/2026
 
-Operar envolve risco de perda do capital investido. Só opere com dinheiro que você pode perder. Somente para maiores de 18 anos. Esta página é de um site independente de divulgação.
+ | 10.000 em moedas demo recarregáveis1110/11/2026
 
-Safirion
+ | US$ 50.000 virtuais2008/11/2026
 
-### Comparou? Teste na demo
+ | Conta demo gratuita2210/11/2026
 
-Você viu as duas colunas, inclusive as cinco células que ficaram vazias por falta de dado publicado.
+ | Demo de US$ 10.0002710/11/2026
 
-Se a Safirion ainda fizer sentido, crie a conta, use a demonstração e deposite o mínimo. Operar envolve risco de perder o capital investido.
+ | 
 
-Já tem conta? Entrar na plataforma
+Prazo de saque por escritoEmpateSafirion e Exnova, três dias úteis | 3 dias úteis, com direito de estender331/10/2026
 
-Operar envolve risco de perda do capital investido. Só para maiores de 18 anos. Link de afiliado.
+ | Até 5 dias úteis no regulamento1407/11/2026
+
+ | 5 dias úteis na política de pagamentos1908/11/2026
+
+ | 3 dias úteis, prorrogáveis com aviso2308/11/2026
+
+ | Anuncia a maioria em 24 horas2810/11/2026
+
+ | 
+
+Taxa de saqueVantagem: Olymp Tradezero no caso geral | 1º do mês grátis; depois 2%431/10/2026
+
+ | 0%, salvo cripto e USDT1307/11/2026
+
+ | 0% nos métodos listados1710/11/2026
+
+ | De 2% a 10%, a critério dela2408/11/2026
+
+ | Não confirmado
+
+ | 
+
+Conversão de real para dólarSem dadofalta dado de três | Até 3% por transação com câmbio431/10/2026
+
+ | Não publica1407/11/2026
+
+ | Não confirmado
+
+ | Até 3% por transação com câmbio2408/11/2026
+
+ | Não confirmado
+
+ | 
+
+Conta paradaSem dadofalta dado de três | US$ 10 por mês após 90 dias431/10/2026
+
+ | Não publica1407/11/2026
+
+ | Não confirmado
+
+ | € 10 por mês após 90 dias2408/11/2026
+
+ | Não confirmado
+
+ | 
+
+Verificação de identidadeSem dadofalta dado de duas | 24 horas a 30 dias úteis531/10/2026
+
+ | Não confirmado
+
+ | 10 dias úteis, até 301910/11/2026
+
+ | 10 dias úteis, até 302508/11/2026
+
+ | Não confirmado
+
+ | 
+
+PixSem dadosó a Safirion cita o Pix | Sim, com PicPay e boleto205/11/2026
+
+ | Não confirmado
+
+ | Não confirmadologo na página; regras não lidas
+
+ | Não confirmado
+
+ | Não confirmado
+
+ | 
+
+O número leva à fonte, na seção de fontes; a data é o dia da leitura. "Não publica" e "não confirmado" não são zero: é o que falta para comparar.
+
+A Olymp Trade ganha três linhas: regulador declarado, órgão de disputas e taxa de saque. A Safirion não ganha nenhuma sozinha: empata com a Exnova no prazo de saque e é a única com Pix numa página que lemos. E depósito mínimo não é preço: o custo mora no spread (diferença entre compra e venda) e nas taxas.
+
+Quer ver a plataforma por dentro?
+
+O cadastro é feito no site oficial da plataforma, trade.safirion.com.
+
+Abrir contaOperar envolve risco de perda do capital investido. Só para maiores de 18 anos. Link de afiliado.
+
+Em reais
+
+### Quanto custa tirar o dinheiro
+
+#### O seu custo em cada uma
+
+Digite quanto vai depositar e quantas vezes vai sacar no mês. A conta usa só as taxas que cada empresa publica.
+
+Depósito (BRL)
+
+Saques no mês−+
+
+Exemplo calculado com R$ 1.000,00 e 2 saques.
+
+- 
+
+#### Safirion
+
+R$ 40,00
+
+- Saque 1 sem taxa · 1 × 2% de R$ 500,00 = R$ 10,00
+- Conversão (teto) 3% de R$ 1.000,00 = R$ 30,00
+- Conta parada US$ 10/mês após 90 dias não entra na conta
+- Total R$ 10,00 + R$ 30,00 = R$ 40,00Fontes4
+
+- 
+
+#### Olymp Trade
+
+Não publica
+
+- Saque 2 × 0% de R$ 500,00 = R$ 0,00
+- Conversão Não publica
+- Conta parada após 6 meses, sem valor não entra na conta
+- Total publicado R$ 0,00 + o que não publicaFontes1314
+
+- 
+
+#### Exnova
+
+R$ 50,00
+
+- Saque (piso de 2%) 2 × 2% de R$ 500,00 = R$ 20,00
+- Conversão (teto) 3% de R$ 1.000,00 = R$ 30,00
+- Conta parada € 10/mês após 90 dias não entra na conta
+- Total R$ 20,00 + R$ 30,00 = R$ 50,00Fontes24
+
+A conta supõe que todo o valor depositado sai em saques iguais no mês e usa só as taxas publicadas nas fontes citadas. O que a corretora não publica fica de fora, marcado como "não publica": o total pode ser maior.
+
+Pocket Option e Stockity ficaram fora porque declaram que não atendem quem mora no Brasil. Na Safirion, a taxa tem piso de R$ 5 e teto de R$ 125 por saque, e a conta já aplica os dois.
+
+Na Exnova, a tabela permite de 2% a 10% por saque, a critério da empresa, entre US$ 1 e US$ 30: a conta usa o piso. A Olymp Trade fixa a conversão por meio de pagamento, sem publicar o número.
+
+fontes 4, 13, 14 e 24
+
+Sem maquiagem
+
+### O que cada uma tem e não tem
+
+- 
+
+#### Safirion: sem regulador
+
+THUNDER FLASH LLC, de Nevis, e pagamentos em Chipre. A Safirion não é regulada pela CVM.
+
+- 
+
+#### Olymp Trade: licença declarada
+
+Diz ter licença da VFSC de Vanuatu; não conferimos no registro do órgão.
+
+- 
+
+#### Olymp Trade: Financial Commission
+
+Membro desde 22/02/2016. É órgão privado de disputas, não regulador.
+
+- 
+
+#### Pocket Option: Brasil fora
+
+O rodapé exclui residentes do Brasil, e a página em português diz que a empresa não tem licença da CVM.
+
+- 
+
+#### Exnova: o nome no alerta
+
+Os Termos nomeiam a Digital Smart LLC, alvo de alerta da CVM de 26/06/2025 (BULLEX); o aviso não cita a Exnova.
+
+- 
+
+#### Stockity: Brasil fora
+
+O contrato exclui residentes do Brasil e diz que a empresa não tem autorização da CVM.
+
+fontes 1, 10, 15, 16, 17, 21, 26 e 29A IQ Option ficou fora da tabela porque não conseguimos ler as condições dela. O alerta da CVM, sim: em 26/04/2021 a autarquia reforçou o Ato Declaratório 17.790, pelo qual a IQ Option Ltd. não pode captar clientes residentes no Brasil, e a página, atualizada em 01/02/2024, diz que o alerta permanece.
+
+fonte 30A Safirion não é regulada, autorizada nem fiscalizada pela CVM. Antes de depositar em qualquer uma, procure a razão social no Cadastro Geral da CVM.
+
+A mecânica
+
+### Onde mora o risco em cada uma
+
+- 
+
+#### Safirion: o preço decide
+
+Em CFD, o resultado depende de quanto o preço anda e do tamanho da posição.
+
+- 
+
+#### Olymp Trade: o relógio decide
+
+No Tempo Fixo, a operação vence na hora escolhida; o retorno declarado vai de 85% a 95%.
+
+- 
+
+#### Exnova: opções e CFD
+
+Os Termos descrevem opções digitais e binárias, além de CFD.
+
+- 
+
+#### Stockity: copiar outra pessoa
+
+O contrato cita copy trading (copiar as operações de outro cliente) e AI Trading.
+
+- 
+
+#### Olymp Trade: o bônus prende
+
+O bônus em regra não é sacável, e sacar o depósito pode cancelá-lo inteiro.
+
+- 
+
+#### Em todas: perda possível
+
+Muda onde mora o risco, não o risco.
+
+fontes 1, 9, 11, 12, 21 e 26
+
+O prazo
+
+### Saques: anúncio contra documento
+
+Quase todas anunciam mais rapidez do que o documento garante. A Safirion anuncia menos de 24 horas e fixa três dias úteis na Política de Saque. A Olymp Trade anuncia 70% dos pedidos em 1 hora e se dá até cinco dias úteis.
+
+A Exnova publica três dias úteis, prorrogáveis. A Pocket Option dá três ou cinco, conforme o documento. A Stockity só anuncia a maioria em 24 horas.
+
+Na Safirion, depósito por boleto espera 72 horas antes do saque. Quando anúncio e documento não batem, vale o documento.
+
+fontes 1, 3, 13, 14, 18, 19, 23 e 28
+
+Decida você
+
+### Para quem é cada uma
+
+- 
+
+#### A Safirion pode servir se…
+
+você quer Pix e aceita empresa de Nevis, sem regulador.
+
+- 
+
+#### A Olymp Trade pode servir se…
+
+você quer licença declarada e aceita o Tempo Fixo.
+
+- 
+
+#### A Exnova pode servir se…
+
+você quer opções digitais e aceita taxa de saque variável.
+
+- 
+
+#### Pocket Option e Stockity, não…
+
+se você mora no Brasil: as duas o excluem por escrito.
+
+- 
+
+#### Já tem conta em outra?
+
+Saldo não se transfere entre empresas.
+
+- 
+
+#### Nenhuma serve se…
+
+o dinheiro é do aluguel ou da reserva de emergência.
+
+Pronto para abrir a sua conta?
+
+O cadastro é feito no site oficial da plataforma, trade.safirion.com.
+
+Abrir contaOperar envolve risco de perda do capital investido. Só para maiores de 18 anos. Link de afiliado.
+
+Sem pressa
+
+### Três passos para testar antes de escolher
+
+- 
+
+#### Leia a linha do Brasil
+
+Confira se a empresa aceita quem mora aqui: duas das cinco dizem que não.
+
+- 
+
+#### Use a demo até entender o custo
+
+Na Safirion, a demo traz US$ 10.000 virtuais, sem prazo de validade. Anote a diferença entre compra e venda.
+
+- 
+
+#### Deposite pouco e cronometre o saque
+
+Comece pelos US$ 10 do mínimo e anote horas e reais. O primeiro saque do mês não paga taxa.
+
+fontes 4, 6 e 7Operar envolve risco de perda do capital investido, em qualquer uma das cinco. Só opere com dinheiro que você pode perder. Somente para maiores de 18 anos.
+
+Transparência
+
+### O que mudou nesta página
+
+Cada correção fica registrada aqui, com a data.
+
+#### Histórico de alterações desta página4
+
+- 10/11/2026Comparação nomeada com quatro concorrentes, fonte por célula, conta em reais e alertas da CVM.
+- 05/11/2026Rodapé relido: pagamentos pela THUNDER FLASH CY LTD; demo e Pix confirmados no blog oficial.
+- 31/10/2026Leitura dos PDFs da Safirion sobre saque, conversão e conta parada.
+- 29/10/2026Primeira versão, contra uma corretora brasileira genérica.
+
+FAQ
 
 ### Perguntas frequentes
 
-Ainda com dúvidas? Cada resposta tem a fonte no fim da página.
+#### Qual é melhor: Safirion, Olymp Trade, Pocket Option, Exnova ou Stockity?
 
-#### A Safirion é melhor que uma corretora brasileira?
+Nenhuma serve a todos. Pocket Option e Stockity declaram que não atendem residentes do Brasil. Das outras, a Olymp Trade ganha em licença declarada e saque sem taxa; a Safirion, no Pix. Este site é afiliado da Safirion.
 
-Em categoria diferente, a resposta muda. Ela ganha em entrada barata (US$ 10, segundo o site), em quantidade de ativo (+130) e em demonstração sem depósito. Perde em registro conferível no Brasil, em garantia sobre o saldo e em dado de custo publicado.
+#### A Pocket Option atende quem mora no Brasil?
 
-Não existe resposta única porque não são a mesma coisa: uma intermedeia valor mobiliário sob lei brasileira, a outra oferece CFD (contrato por diferença) a partir de uma empresa de Nevis.
+Não, segundo o próprio site, que diz não prestar serviços a residentes do Brasil e não ter licença da CVM.
 
-#### Por que esta página não compara a Safirion com uma corretora nomeada?
+Fonte: Pocket Option — meios de pagamento (lido em 10/11/2026)
 
-Porque dado de concorrente só entra com fonte pública aberta por nós, e tarifa, mínimo e lista de ativo de cada corretora mudam por conta, por plano e por mês. Número velho dentro de tabela nova é o erro mais comum do setor.
+#### A Stockity funciona no Brasil?
 
-A comparação honesta é por categoria: registro, tipo de instrumento e o que cada lado publica. Onde falta o dado, a célula diz "não comparável sem o dado publicado".
+Não para quem mora aqui. O contrato diz: «A Stockity e quaisquer de seus serviços não são destinados ou oferecidos a residentes do Brasil», e acrescenta que ela não tem autorização da CVM.
 
-#### O depósito de US$ 10 é mais barato que o de uma corretora brasileira?
+Fonte: Stockity — Acordo do Cliente (lido em 10/11/2026)
 
-Em valor de entrada, provavelmente sim — mas depósito mínimo não é o custo de operar. O custo real mora no spread (diferença entre o preço de compra e o de venda) e nas tarifas, e o site da Safirion não publica tabela de spread por ativo.
+#### A Safirion é regulamentada pela CVM?
 
-Comparar só o mínimo de entrada é escolher corretora pelo preço da porta, não pelo preço do uso.
+Não. A Safirion não é regulada pela CVM nem por outro órgão brasileiro: é operada pela THUNDER FLASH LLC, de Nevis (Reg. L 22853). Nenhuma das outras quatro declara registro na CVM nas páginas que lemos.
 
-#### Dá para comprar ação brasileira na Safirion?
+Fonte: CVM — Corretoras e distribuidoras: Cadastro Geral
 
-A plataforma trabalha com CFD (contrato por diferença): você contrata a variação do preço, não o ativo. Mesmo quando o nome na tela é o de uma ação, você não fica com a ação no seu nome.
+#### A Olymp Trade é confiável?
 
-Quem quer o ativo em custódia no Brasil precisa de intermediário com registro na CVM. Quem quer exposição ao preço, com alavancagem e risco maior, é o público do CFD.
+Ela declara licença da VFSC de Vanuatu, que não conferimos, e é membro da Financial Commission desde 2016. O regulamento permite descontar até 20% de quem deposita e saca sem operar.
 
-Fonte: CVM — corretoras e distribuidoras
+Fonte: Olymp Trade — Regulação (lida em 10/11/2026)
 
-#### Comparar nota de Reclame Aqui entre corretoras funciona?
+#### A Exnova tem alerta da CVM?
 
-Com cuidado. A nota 7,8 de 10 da Safirion sai de 37 reclamações em 8 meses de cadastro. Empresa grande tem milhares de casos e anos de histórico, e as duas notas não medem a mesma coisa.
+Não em nome da Exnova. Em 26/06/2025, a CVM alertou sobre a Digital Smart LLC (BULLEX) no Ato Declaratório 23.539. Os Termos vigentes da Exnova nomeiam a Digital Smart LLC como operadora; o aviso não cita a Exnova.
 
-O que vale comparar é comportamento: percentual respondido, percentual resolvido e tempo médio. Aqui são 100% respondidas, 75% resolvidas e média de 4d 11h.
+Fonte: CVM — alerta sobre a Digital Smart LLC (BULLEX), lido em 10/11/2026
 
-Fonte: reclameaqui.com.br/empresa/safirion
+#### Qual corretora cobra menos para sacar?
 
-#### A Safirion tem mais ativos que as corretoras brasileiras?
+Pelo que publicam, a Olymp Trade: zero no caso geral, salvo cripto e USDT. A Safirion não cobra o primeiro saque do mês e cobra 2% depois. A Exnova pode cobrar de 2% a 10%, a critério dela.
 
-O site da Safirion informa +130 ativos. Quanto cada corretora brasileira oferece é dado que cada uma publica no próprio site, e varia muito — por isso a célula fica como "não comparável sem o dado publicado".
-
-Vale lembrar que variedade não é qualidade: quantidade de ativo não diz nada sobre liquidez, custo de execução ou spread.
-
-#### Dá para usar a Safirion e uma corretora brasileira ao mesmo tempo?
-
-Tecnicamente nada impede ter conta nas duas, e muita gente faz isso para separar propósitos: o patrimônio em intermediário com registro no país, e um valor pequeno de teste na plataforma estrangeira.
-
-Se escolher esse caminho, trate o valor da plataforma de fora como dinheiro de experimento. Operar envolve risco de perda do capital.
-
-#### Onde consulto o registro de uma corretora brasileira?
-
-No Cadastro Geral da CVM, dentro da Central de Sistemas do órgão. A consulta é pública e gratuita, e a própria página de corretoras e distribuidoras da CVM indica esse caminho.
-
-Busque pela razão social, não pela marca, e confira também se existe processo contra o intermediário no site do órgão.
-
-Fonte: CVM — corretoras e distribuidoras
+Fonte: Olymp Trade — Saques (lido em 07/11/2026)
 
 #### A CVM indica qual corretora é a melhor?
 
-Não. Nas palavras do próprio órgão: "não cabe à CVM indicar aos investidores participantes do mercado". Aparecer no Cadastro Geral é prova de registro, não recomendação.
+Não: «não cabe à CVM indicar aos investidores participantes do mercado», diz o órgão. O Cadastro Geral prova registro, não qualidade.
 
-Ou seja: nem com a lista oficial na mão existe ranking oficial. O comparativo é sempre trabalho seu, e é por isso que esta página mostra o método em vez de dar nota.
+Fonte: CVM — Como escolher a corretora
 
-Fonte: CVM — como escolher a corretora
-
-#### No fim, qual critério decide?
-
-O tamanho do dinheiro. Para valor que você não pode perder, o critério que decide é registro no país e rota de cobrança curta. Para valor de teste, pesa mais o custo de entrada e a qualidade da tela.
-
-Se for em frente pela Safirion, vá pelo caminho mais barato: documentos lidos, demonstração usada, primeiro depósito no mínimo e um saque pequeno cronometrado por você.
-
-#### Ver mais perguntas (+5)
-
-Guias relacionados
-
-Esta é uma página de afiliado, não o site oficial da Safirion — o oficial é safirion.com. Podemos receber comissão pelos cadastros feitos a partir dos nossos links. Isso não muda nenhum número desta página.
+Ver mais perguntas (+0)
 
 ### Fontes desta página
 
-- CVM — Corretoras e distribuidoras: consulta pelo Cadastro Geral
-- CVM — Como escolher a corretora (ou outro participante do mercado)
-- Reclame Aqui — Safirion (nota, reclamações, resolução, tempo médio)
-- Site oficial da corretora
-- Plataforma oficial de operação
-
-Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela THUNDER FLASH CY LTD (Reg. HE458373, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
+- 1Safirion, site oficial (05/11/2026)
+- 2Safirion, blog: depósito e saque (05/11/2026)
+- 3Safirion, Política de Saque (31/10/2026)
+- 4Safirion, Taxas Gerais (31/10/2026)
+- 5Safirion, AML e KYC (31/10/2026)
+- 6Safirion, Conta Demo (31/10/2026)
+- 7Safirion, blog: demo (05/11/2026)
+- 8Reclame Aqui, Safirion (29/10/2026)
+- 9Olymp Trade, Acordo de Serviço (07 e 10/11/2026)
+- 10Olymp Trade, Regulação (10/11/2026)
+- 11Olymp Trade, Conta (10/11/2026)
+- 12Olymp Trade, Ativos (07/11/2026)
+- 13Olymp Trade, Saques (07/11/2026)
+- 14Olymp Trade, Non-trading Regulation (07/11/2026)
+- 15Financial Commission, Olymp Trade (07/11/2026)
+- 16Pocket Option, página inicial (10/11/2026)
+- 17Pocket Option, meios de pagamento (10/11/2026)
+- 18Pocket Option, oferta pública (10/11/2026)
+- 19Pocket Option, política de pagamentos (10/11/2026)
+- 20Pocket Option, página em espanhol (08/11/2026)
+- 21Exnova, Termos vigentes (08/11/2026)
+- 22Exnova, página inicial (10/11/2026)
+- 23Exnova, Withdrawal Policy (08/11/2026)
+- 24Exnova, General Fees (08/11/2026)
+- 25Exnova, Payment Policy (08/11/2026)
+- 26Stockity, Acordo do Cliente (10/11/2026)
+- 27Stockity, página inicial (10/11/2026)
+- 28Stockity, perguntas frequentes (10/11/2026)
+- 29CVM, alerta sobre a Digital Smart LLC, 26/06/2025 (10/11/2026)
+- 30CVM, alerta sobre a IQ Option Ltd. (10/11/2026)
+- 31CVM, Cadastro Geral
+- 32CVM, como escolher a corretoraEste site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela THUNDER FLASH CY LTD (Reg. HE458373, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
 
 ## Safirium ou Safirion? O nome correto
 URL: https://safirion.com.br/blog/safirium-ou-safirion-o-nome-correto/

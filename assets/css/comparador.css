@@ -1,0 +1,777 @@
+/* ============================================================================
+   comparador.css — blocos das páginas "corretora × corretora" (10/11/2026).
+   Ligado SÓ nas páginas que usam `veredito`, `comparador`, `custo-total` ou
+   `historico` (usaComparador no gerar.mjs). Lê as pontes --pg-* de cada domínio,
+   então herda a identidade de cada um; nada de variável nova de cor.
+
+   Composição por largura (doutrina, seção 1 + responsivo-de-cara):
+     veredito .......... cartões em 2 (ou 3/3+2/2x3 pela quantidade) já em 360 px
+     comparador 2-3 col. rótulo em cima, colunas embaixo, lado a lado em 360 px
+     comparador 4-5 col. rótulo em cima, 2x2 ou 3+2 com o nome da coluna em cada
+                         célula e o texto curto (`curto`), sem trilho
+     custo-total ....... campos em par e cartões lado a lado (2/3/2x2/3+2)
+     historico ......... <details>, linha com data e texto
+   Nada rola para o lado; o `<table>` vai a display:block no celular para o
+   layout de tabela não medir as colunas pelo conteúdo (doutrina, causa 2).
+
+   O chassi Framer tem `rem` fluido (20 px em 1440): todo tamanho pequeno leva
+   piso em px, porque 13 px é o menor texto permitido em qualquer largura.
+   ========================================================================== */
+
+:where(.cmp, .cmp-ver, .cmp-custo, .cmp-hist) { overflow-wrap: break-word; }
+:where(.cmp, .cmp-ver, .cmp-custo, .cmp-hist) *,
+:where(.cmp, .cmp-ver, .cmp-custo, .cmp-hist) *::before,
+:where(.cmp, .cmp-ver, .cmp-custo, .cmp-hist) *::after { box-sizing: border-box; }
+
+/* ---- marcador de fonte + data da leitura --------------------------------- */
+
+.cmp-ref {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0 .375rem;
+  min-height: 44px;
+  margin-block: -.3125rem;
+  padding-block: .25rem;
+  color: var(--pg-muted);
+  font-size: max(13px, .8125rem);
+  line-height: 1.25;
+  font-variant-numeric: tabular-nums;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.cmp-ref__n {
+  display: inline-grid;
+  place-items: center;
+  min-width: 1.625rem;
+  height: 1.625rem;
+  padding-inline: .25rem;
+  border: 1px solid color-mix(in srgb, var(--pg-marca-400) 45%, transparent);
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--pg-marca-400) 10%, transparent);
+  color: var(--pg-marca-300);
+  font-size: max(13px, .8125rem);
+  font-weight: 700;
+  line-height: 1;
+  transition: transform .18s cubic-bezier(.22, 1, .36, 1), background-color .18s, border-color .18s;
+}
+.cmp-ref__data { white-space: nowrap; }
+.cmp-ref:focus-visible { outline: 2px solid var(--pg-marca-400); outline-offset: 2px; border-radius: 6px; }
+.cmp-ref:active .cmp-ref__n { transform: scale(.94); }
+.cmp-ref--so { min-width: 44px; justify-content: center; }
+@media (hover: hover) and (pointer: fine) {
+  .cmp-ref:hover .cmp-ref__n {
+    background: color-mix(in srgb, var(--pg-marca-400) 22%, transparent);
+    border-color: var(--pg-marca-400);
+  }
+  .cmp-ref:hover .cmp-ref__data { color: var(--pg-marca-300); }
+}
+
+/* ---- "não publica" e "não confirmado": nunca parecem zero nem erro ---------
+   Contorno tracejado e tinta apagada: "falta o dado" é ausência, não falha.
+   Vermelho e traço solto ficam de fora de propósito. */
+
+.cmp-est {
+  display: inline-flex;
+  align-items: center;
+  gap: .3125rem;
+  max-width: 100%;
+  padding: .1875rem .5625rem .1875rem .4375rem;
+  border: 1px dashed color-mix(in srgb, var(--pg-muted) 65%, transparent);
+  border-radius: 999px;
+  color: var(--pg-muted);
+  font-size: max(13px, .8125rem);
+  font-weight: 600;
+  line-height: 1.25;
+  width: fit-content;
+  background: color-mix(in srgb, var(--pg-muted) 6%, transparent);
+}
+.cmp-est::before {
+  content: "";
+  flex: none;
+  width: .5625rem;
+  height: .5625rem;
+  border: 1.5px dashed currentColor;
+  border-radius: 50%;
+}
+.cmp-est--nc {
+  border-color: color-mix(in srgb, var(--pg-atencao) 60%, transparent);
+  background: color-mix(in srgb, var(--pg-atencao) 8%, transparent);
+  color: color-mix(in srgb, var(--pg-atencao) 82%, #fff);
+}
+.cmp-est--nc::before {
+  content: "?";
+  display: grid;
+  place-items: center;
+  width: .9375rem;
+  height: .9375rem;
+  border: 1.5px solid currentColor;
+  font-size: .625rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+/* ---- bloco `veredito` ---------------------------------------------------- */
+
+.cmp-ver {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(.875rem, .75rem + .5vw, 1.25rem);
+  padding: clamp(1rem, .8rem + .9vw, 1.5rem);
+  padding-left: clamp(1.125rem, .9rem + 1vw, 1.875rem);
+  border: 1px solid var(--pg-linha);
+  border-radius: var(--pg-raio, 10px);
+  background: var(--pg-s1);
+}
+.cmp-ver::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .875rem;
+  bottom: .875rem;
+  width: 3px;
+  border-radius: 0 3px 3px 0;
+  background: var(--pg-marca-700);
+}
+.cmp-ver__txt {
+  margin: 0;
+  max-width: 68ch;
+  font-size: clamp(1.0625rem, 1rem + .3vw, 1.1875rem);
+  line-height: 1.62;
+  font-weight: 500;
+  color: var(--pg-ink-forte);
+}
+.cmp-ver__txt strong { color: #fff; }
+
+.cmp-ver__perfis {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.cmp-ver__perfis[data-n="1"] { grid-template-columns: minmax(0, 1fr); }
+.cmp-ver__perfis[data-n="3"] { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.cmp-ver__perfis[data-n="5"] { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+.cmp-ver__perfis[data-n="5"] > li { grid-column: span 2; }
+.cmp-ver__perfis[data-n="5"] > li:nth-child(n + 4) { grid-column: span 3; }
+@media (min-width: 48rem) {
+  .cmp-ver__perfis[data-n="4"] { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .cmp-ver__perfis[data-n="6"] { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+.cmp-ver__perfis > li {
+  display: flex;
+  flex-direction: column;
+  gap: .3125rem;
+  min-width: 0;
+  padding: .75rem .8125rem .8125rem;
+  border: 1px solid var(--pg-linha);
+  border-radius: calc(var(--pg-raio, 10px) * .75);
+  background: var(--pg-s2);
+}
+.cmp-ver__rot {
+  color: var(--pg-muted);
+  font-size: max(13px, .8125rem);
+  line-height: 1.3;
+}
+.cmp-ver__busca {
+  color: var(--pg-ink-forte);
+  font-size: max(15px, .9375rem);
+  font-weight: 600;
+  line-height: 1.32;
+}
+.cmp-ver__quem {
+  display: inline-flex;
+  align-items: baseline;
+  gap: .3125rem;
+  margin-top: auto;
+  padding-top: .25rem;
+  color: var(--pg-marca-300);
+  font-size: max(15px, .9375rem);
+  font-weight: 700;
+  line-height: 1.3;
+}
+.cmp-ver__quem::before { content: "\2192"; flex: none; color: var(--pg-marca-400); }
+.cmp-ver__motivo {
+  color: var(--pg-muted);
+  font-size: max(13px, .8125rem);
+  line-height: 1.42;
+}
+@media (max-width: 47.99rem) {
+  /* copy resumida só no celular, a partir de 3 cartões */
+  .cmp-ver__perfis:not([data-n="1"]):not([data-n="2"]) .cmp-ver__motivo { display: none; }
+}
+@media (min-width: 48rem) {
+  .cmp-ver__perfis > li { padding: .875rem 1rem 1rem; }
+}
+
+/* ---- bloco `comparador`: a tabela ---------------------------------------- */
+
+.cmp { max-width: 100%; }
+/* o cabeçalho colado não cobre a célula para onde o atalho "volver" leva */
+.cmp [id] { scroll-margin-top: calc(var(--pg-nav-h, 0px) + 5.5rem); }
+.cmp-tab {
+  display: block;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.cmp-tab caption {
+  display: block;
+  margin: 0 0 .625rem;
+  padding: 0;
+  color: var(--pg-ink-forte);
+  font-size: clamp(1.0625rem, 1rem + .3vw, 1.1875rem);
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: left;
+}
+
+/* Cabeçalho das colunas: gruda logo abaixo do cabeçalho fixo do site. Fundo
+   opaco (--pg-s3 sobre --pg-s1) para o texto da linha não aparecer através. */
+.cmp-tab thead {
+  display: block;
+  position: sticky;
+  top: var(--pg-nav-h, 0px);
+  z-index: 3;
+}
+.cmp-tab thead tr {
+  display: grid;
+  grid-template-columns: repeat(var(--cmp-n, 2), minmax(0, 1fr));
+  gap: .25rem;
+  padding: .5rem calc(.625rem + 1px);
+  border: 1px solid color-mix(in srgb, var(--pg-marca) 30%, var(--pg-linha));
+  border-radius: 12px;
+  background: var(--pg-s3);
+  box-shadow: 0 10px 18px -14px rgba(0, 0, 0, .7);
+}
+.cmp-tab thead th {
+  min-width: 0;
+  padding: .125rem .25rem;
+  color: var(--pg-ink-forte);
+  font-size: max(14px, .875rem);
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: left;
+}
+.cmp-tab thead th:first-child { display: none; }
+.cmp-tab thead th.cmp-col--dest { color: var(--pg-marca-300); }
+
+.cmp-tab tbody { display: block; }
+.cmp-tab tbody tr {
+  display: grid;
+  grid-template-columns: repeat(var(--cmp-n, 2), minmax(0, 1fr));
+  gap: .25rem;
+  margin-top: .5rem;
+  padding: .625rem;
+  border: 1px solid var(--pg-linha);
+  border-radius: var(--pg-raio, 10px);
+  background: var(--pg-s1);
+}
+.cmp-tab tbody th {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .25rem .5rem;
+  min-width: 0;
+  padding: .125rem .25rem .5rem;
+  text-align: left;
+}
+.cmp-crit {
+  flex: 1 1 8rem;
+  min-width: 0;
+  color: var(--pg-ink-forte);
+  font-size: max(15px, .9375rem);
+  font-weight: 700;
+  line-height: 1.3;
+}
+.cmp-tab tbody td {
+  display: block;
+  min-width: 0;
+  padding: .4375rem .375rem;
+  border-radius: 8px;
+}
+
+.cmp-cel { display: flex; flex-direction: column; gap: .3125rem; min-width: 0; }
+.cmp-cel__txt,
+.cmp-cel__curto,
+.cmp-cel__obs {
+  color: var(--pg-ink);
+  font-size: max(14px, .875rem);
+  line-height: 1.42;
+}
+.cmp-cel__obs { color: var(--pg-muted); font-size: max(13px, .8125rem); }
+.cmp-cel__curto { display: none; }
+
+/* quem leva vantagem na linha */
+.cmp-vant-caixa { display: inline-flex; flex-wrap: wrap; align-items: center; gap: .25rem .4375rem; max-width: 100%; }
+.cmp-vant {
+  display: inline-flex;
+  align-items: center;
+  gap: .3125rem;
+  padding: .1875rem .5rem;
+  border-radius: 999px;
+  font-size: max(13px, .8125rem);
+  font-weight: 700;
+  line-height: 1.25;
+  max-width: 100%;
+}
+.cmp-vant--quem {
+  background: color-mix(in srgb, var(--pg-ok) 13%, transparent);
+  color: var(--pg-ok);
+}
+.cmp-vant--quem::before {
+  content: "";
+  width: .4375rem;
+  height: .4375rem;
+  border-radius: 50%;
+  background: currentColor;
+}
+.cmp-vant--emp {
+  background: color-mix(in srgb, var(--pg-marca-400) 12%, transparent);
+  color: var(--pg-marca-300);
+}
+.cmp-vant--sd {
+  border: 1px dashed color-mix(in srgb, var(--pg-muted) 55%, transparent);
+  color: var(--pg-muted);
+}
+.cmp-vant__mot { color: var(--pg-muted); font-size: max(13px, .8125rem); line-height: 1.35; }
+
+/* célula de quem ganhou: tinta discreta + risco à esquerda (a cor nunca é o
+   único sinal: o selo da linha diz o nome). Vale igual quando quem ganha é o
+   concorrente. */
+.cmp-tab td.cmp-gana {
+  background: color-mix(in srgb, var(--pg-ok) 8%, transparent);
+  box-shadow: inset 2px 0 0 color-mix(in srgb, var(--pg-ok) 55%, transparent);
+}
+
+.cmp-nota {
+  margin: .625rem 0 0;
+  color: var(--pg-muted);
+  font-size: max(13px, .8125rem);
+  line-height: 1.5;
+  max-width: 68ch;
+}
+
+/* --- 4 e 5 colunas no celular: 2x2 e 3+2, com o nome da coluna dentro da
+   célula (o padrão das tabelas da rede, `td::before`), sem o cabeçalho colado:
+   coluna de 62 px não acomoda nome nem texto. O texto curto do JSON (`curto`)
+   entra aqui; o longo fica para o leitor de tela e para o computador. */
+@media (max-width: 47.99rem) {
+  .cmp[data-cols="4"] thead,
+  .cmp[data-cols="5"] thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+  .cmp[data-cols="4"] tbody tr,
+  .cmp[data-cols="5"] tbody tr { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+  .cmp[data-cols="4"] tbody td { grid-column: span 3; }
+  .cmp[data-cols="5"] tbody td { grid-column: span 2; }
+  .cmp[data-cols="5"] tbody td:nth-of-type(n + 4) { grid-column: span 3; }
+  .cmp[data-cols="4"] tbody td::before,
+  .cmp[data-cols="5"] tbody td::before {
+    content: attr(data-col);
+    display: block;
+    margin-bottom: .25rem;
+    color: var(--pg-marca-300);
+    font-size: max(13px, .8125rem);
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  .cmp[data-cols="4"] .cmp-cel--curto .cmp-cel__txt,
+  .cmp[data-cols="5"] .cmp-cel--curto .cmp-cel__txt {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  .cmp[data-cols="4"] .cmp-cel--curto .cmp-cel__curto,
+  .cmp[data-cols="5"] .cmp-cel--curto .cmp-cel__curto { display: block; }
+}
+
+/* --- do tablet para cima volta a ser tabela de verdade (layout fixo: a coluna
+   nunca cresce pelo conteúdo). O `thead` gruda célula a célula. */
+@media (min-width: 48rem) {
+  .cmp-tab {
+    display: table;
+    table-layout: fixed;
+    border: 1px solid var(--pg-linha);
+    border-radius: var(--pg-raio, 10px);
+    background: var(--pg-s1);
+  }
+  .cmp-tab caption { display: table-caption; }
+  .cmp-tab thead { display: table-header-group; position: static; }
+  .cmp-tab thead tr { display: table-row; padding: 0; border: 0; border-radius: 0; background: none; box-shadow: none; }
+  .cmp-tab thead th,
+  .cmp-tab thead th:first-child {
+    display: table-cell;
+    position: sticky;
+    top: var(--pg-nav-h, 0px);
+    z-index: 3;
+    padding: .75rem .875rem;
+    border-bottom: 1px solid color-mix(in srgb, var(--pg-marca) 32%, var(--pg-linha));
+    background: var(--pg-s3);
+    color: var(--pg-ink-forte);
+    font-size: max(14px, .875rem);
+    vertical-align: bottom;
+  }
+  .cmp-tab thead th:first-child {
+    width: 26%;
+    color: var(--pg-muted);
+    font-size: max(13px, .8125rem);
+    font-weight: 700;
+    border-top-left-radius: calc(var(--pg-raio, 10px) - 1px);
+  }
+  .cmp-tab thead th:last-child { border-top-right-radius: calc(var(--pg-raio, 10px) - 1px); }
+  .cmp[data-cols="4"] .cmp-tab thead th:first-child { width: 20%; }
+  .cmp[data-cols="5"] .cmp-tab thead th:first-child { width: 17%; }
+
+  .cmp-tab tbody { display: table-row-group; }
+  .cmp-tab tbody tr { display: table-row; margin: 0; padding: 0; border: 0; border-radius: 0; background: none; }
+  .cmp-tab tbody th {
+    display: table-cell;
+    padding: .75rem .875rem;
+    border-top: 1px solid var(--pg-linha);
+    vertical-align: top;
+  }
+  .cmp-tab tbody tr:first-child th,
+  .cmp-tab tbody tr:first-child td { border-top: 0; }
+  .cmp-crit { display: block; margin-bottom: .375rem; }
+  .cmp-vant-caixa { display: flex; flex-direction: column; align-items: flex-start; }
+  .cmp-tab tbody td {
+    display: table-cell;
+    padding: .75rem .875rem;
+    border-top: 1px solid var(--pg-linha);
+    border-radius: 0;
+    vertical-align: top;
+  }
+  .cmp-tab tbody td::before { content: none; }
+  /* 4 e 5 colunas no computador: coluna de ~110 px pede letra menor que a do
+     corpo (o rem deste chassi chega a 20 px) para palavra longa não partir */
+  .cmp[data-cols="4"] .cmp-cel__txt,
+  .cmp[data-cols="5"] .cmp-cel__txt,
+  .cmp[data-cols="4"] .cmp-cel__obs,
+  .cmp[data-cols="5"] .cmp-cel__obs,
+  .cmp[data-cols="4"] .cmp-ref,
+  .cmp[data-cols="5"] .cmp-ref,
+  .cmp[data-cols="4"] .cmp-ref__n,
+  .cmp[data-cols="5"] .cmp-ref__n,
+  .cmp[data-cols="4"] .cmp-est,
+  .cmp[data-cols="5"] .cmp-est,
+  .cmp[data-cols="4"] .cmp-vant,
+  .cmp[data-cols="5"] .cmp-vant,
+  .cmp[data-cols="4"] .cmp-vant__mot,
+  .cmp[data-cols="5"] .cmp-vant__mot { font-size: max(13px, .7rem); }
+  .cmp[data-cols="4"] .cmp-crit,
+  .cmp[data-cols="5"] .cmp-crit { font-size: max(14px, .75rem); }
+  .cmp[data-cols="4"] .cmp-tab th,
+  .cmp[data-cols="4"] .cmp-tab td,
+  .cmp[data-cols="5"] .cmp-tab th,
+  .cmp[data-cols="5"] .cmp-tab td { padding-inline: .625rem; }
+  /* a última linha não encosta no canto arredondado da moldura */
+  .cmp-tab tbody tr:last-child td:last-child { border-bottom-right-radius: calc(var(--pg-raio, 10px) - 1px); }
+  .cmp-tab tbody tr:last-child th:first-child { border-bottom-left-radius: calc(var(--pg-raio, 10px) - 1px); }
+}
+
+/* ---- bloco `custo-total`: a calculadora ------------------------------------ */
+
+.cmp-custo {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: .875rem;
+  padding: clamp(1rem, .8rem + .9vw, 1.5rem);
+  border: 1px solid var(--pg-linha);
+  border-radius: var(--pg-raio, 10px);
+  background: var(--pg-s1);
+}
+.cmp-custo__tit {
+  margin: 0;
+  color: var(--pg-ink-forte);
+  font-size: clamp(1.0625rem, 1rem + .3vw, 1.1875rem);
+  font-weight: 700;
+  line-height: 1.3;
+}
+.cmp-custo__intro {
+  margin: -.375rem 0 0;
+  color: var(--pg-muted);
+  font-size: max(15px, .9375rem);
+  line-height: 1.5;
+  max-width: 62ch;
+}
+
+.cmp-custo__entrada {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .625rem;
+}
+.cmp-custo__campo { display: grid; grid-template-columns: minmax(0, 1fr); gap: .3125rem; min-width: 0; }
+.cmp-custo__campo label {
+  color: var(--pg-muted);
+  font-size: max(13px, .8125rem);
+  font-weight: 600;
+  line-height: 1.3;
+}
+.cmp-custo__passos { display: grid; grid-template-columns: minmax(0, 1fr); gap: .25rem; align-items: stretch; }
+.cmp-custo--viva .cmp-custo__passos { grid-template-columns: 44px minmax(0, 1fr) 44px; }
+
+.cmp-custo__campo input {
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  padding: .5rem .625rem;
+  border: 1px solid color-mix(in srgb, var(--pg-muted) 28%, transparent);
+  border-radius: calc(var(--pg-raio, 10px) * .75);
+  background: var(--pg-s2);
+  color: var(--pg-ink-forte);
+  font-family: inherit;
+  font-size: max(16px, 1rem);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+.cmp-custo__campo input::-webkit-outer-spin-button,
+.cmp-custo__campo input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.cmp-custo__campo input:focus-visible { outline: 2px solid var(--pg-marca-400); outline-offset: 1px; }
+
+.cmp-custo__passo {
+  display: grid;
+  place-items: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0;
+  border: 1px solid color-mix(in srgb, var(--pg-muted) 28%, transparent);
+  border-radius: calc(var(--pg-raio, 10px) * .75);
+  background: var(--pg-s2);
+  color: var(--pg-ink-forte);
+  font-family: inherit;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  transition: transform .15s cubic-bezier(.22, 1, .36, 1), border-color .15s, background-color .15s;
+  -webkit-tap-highlight-color: transparent;
+}
+.cmp-custo__passo[hidden] { display: none; }
+.cmp-custo__passo:active { transform: scale(.94); }
+.cmp-custo__passo:focus-visible { outline: 2px solid var(--pg-marca-400); outline-offset: 1px; }
+@media (hover: hover) and (pointer: fine) {
+  .cmp-custo__passo:hover { border-color: var(--pg-marca-400); background: var(--pg-s3); }
+}
+
+.cmp-custo__exemplo {
+  margin: 0;
+  color: var(--pg-ink);
+  font-size: max(14px, .875rem);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.cmp-custo__res {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.cmp-custo__res[data-n="3"] { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.cmp-custo__res[data-n="5"] { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+.cmp-custo__res[data-n="5"] > li { grid-column: span 2; }
+.cmp-custo__res[data-n="5"] > li:nth-child(n + 4) { grid-column: span 3; }
+/* 4 corretoras: 2x2 em toda largura. Na coluna do artigo (~41rem), 4 cartões lado a lado ficavam com ~9rem e
+   partiam o total e a pílula "no publica" em duas linhas (medido em 1440, safirion.co, 10/11/2026). */
+.cmp-custo__res .cmp-est { white-space: nowrap; }
+
+.cmp-custo__cartao {
+  display: flex;
+  flex-direction: column;
+  gap: .375rem;
+  min-width: 0;
+  padding: .75rem .8125rem .625rem;
+  border: 1px solid var(--pg-linha);
+  border-radius: calc(var(--pg-raio, 10px) * .75);
+  background: var(--pg-s2);
+}
+.cmp-custo__nome {
+  margin: 0;
+  color: var(--pg-marca-300);
+  font-size: max(15px, .9375rem);
+  font-weight: 700;
+  line-height: 1.25;
+}
+.cmp-custo__total { display: flex; flex-wrap: wrap; align-items: baseline; gap: .125rem .4375rem; margin: 0; }
+.cmp-custo__valor {
+  color: var(--pg-ink-forte);
+  font-size: clamp(1.25rem, 1.05rem + .9vw, 1.625rem);
+  font-weight: 800;
+  line-height: 1.15;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -.01em;
+}
+.cmp-custo__valor--vazio { font-size: inherit; }
+.cmp-custo__mais { color: var(--pg-muted); font-size: max(13px, .8125rem); font-weight: 600; line-height: 1.3; }
+
+.cmp-custo__linhas {
+  display: grid;
+  gap: .4375rem;
+  margin: .1875rem 0 0;
+  padding: .4375rem 0 0;
+  border-top: 1px solid var(--pg-linha);
+  list-style: none;
+  font-size: max(13px, .8125rem);
+  line-height: 1.42;
+}
+.cmp-custo__rot { display: block; color: var(--pg-muted); font-weight: 600; }
+.cmp-custo__conta { color: var(--pg-ink); font-variant-numeric: tabular-nums; }
+.cmp-custo__fora { display: block; color: var(--pg-muted); font-style: normal; }
+.cmp-custo__soma { padding-top: .375rem; border-top: 1px dashed var(--pg-linha); }
+.cmp-custo__soma .cmp-custo__conta { color: var(--pg-ink-forte); font-weight: 700; }
+
+.cmp-custo__fontes { display: flex; flex-wrap: wrap; align-items: center; gap: 0 .125rem; margin: auto 0 -.125rem; color: var(--pg-muted); font-size: max(13px, .8125rem); }
+.cmp-custo__fontes > span { margin-right: .25rem; }
+@media (max-width: 47.99rem) { .cmp-custo__fontes > span { flex-basis: 100%; } }
+
+.cmp-custo__nota {
+  margin: 0;
+  color: var(--pg-muted);
+  font-size: max(13px, .8125rem);
+  line-height: 1.5;
+  max-width: 72ch;
+}
+
+/* ---- bloco `historico`: registro público de alterações ------------------- */
+
+.cmp-hist {
+  border: 1px solid var(--pg-linha);
+  border-radius: var(--pg-raio, 10px);
+  background: var(--pg-s1);
+}
+.cmp-hist__sum {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  min-height: 44px;
+  padding: .625rem 1rem;
+  color: var(--pg-ink-forte);
+  font-size: max(15px, .9375rem);
+  font-weight: 700;
+  line-height: 1.3;
+  list-style: none;
+  cursor: pointer;
+  border-radius: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+.cmp-hist__sum::-webkit-details-marker { display: none; }
+.cmp-hist__sum:focus-visible { outline: 2px solid var(--pg-marca-400); outline-offset: 2px; }
+.cmp-hist__n {
+  display: inline-grid;
+  place-items: center;
+  min-width: 1.375rem;
+  height: 1.375rem;
+  padding-inline: .3125rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--pg-marca-400) 14%, transparent);
+  color: var(--pg-marca-300);
+  font-size: max(13px, .8125rem);
+  font-weight: 700;
+  line-height: 1;
+}
+.cmp-hist__sum::after {
+  content: "";
+  flex: none;
+  margin-left: auto;
+  width: .5625rem;
+  height: .5625rem;
+  border-right: 2px solid var(--pg-muted);
+  border-bottom: 2px solid var(--pg-muted);
+  transform: translateY(-2px) rotate(45deg);
+  transition: transform .2s cubic-bezier(.22, 1, .36, 1);
+}
+.cmp-hist[open] .cmp-hist__sum::after { transform: translateY(2px) rotate(225deg); }
+.cmp-hist__lista {
+  display: grid;
+  gap: .625rem;
+  margin: 0;
+  padding: .125rem 1rem 1rem;
+  list-style: none;
+}
+.cmp-hist__lista > li {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: .125rem .75rem;
+  align-items: baseline;
+  color: var(--pg-ink);
+  font-size: max(14px, .875rem);
+  line-height: 1.45;
+}
+.cmp-hist__lista time {
+  color: var(--pg-marca-300);
+  font-size: max(13px, .8125rem);
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* ---- lista de fontes: o número do marcador e o destino do salto ----------- */
+
+.pg-fontes .cmp-fonte__n {
+  display: inline-grid;
+  place-items: center;
+  min-width: 1.625rem;
+  height: 1.625rem;
+  margin-right: .4375rem;
+  border: 1px solid color-mix(in srgb, var(--pg-marca-400) 45%, transparent);
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--pg-marca-400) 10%, transparent);
+  color: var(--pg-marca-300);
+  font-size: max(13px, .8125rem);
+  font-weight: 700;
+  line-height: 1;
+  vertical-align: middle;
+}
+.pg-fontes > li:target > a {
+  border-color: var(--pg-marca-400);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--pg-marca-400) 55%, transparent);
+}
+/* O `.pg-fontes a` da folha base tem `height: 100%` e fundo de cartão: o atalho
+   "volver" é outro <a> dentro do mesmo <li> e precisava de mais seletor para não
+   herdar o cartão, e o <li> vira coluna para o cartão parar de ocupar 100% e o
+   atalho não invadir a linha de baixo. */
+.pg-fontes > li:has(> .cmp-voltar) { display: flex; flex-direction: column; gap: .125rem; }
+.pg-fontes > li:has(> .cmp-voltar) > a:first-child { height: auto; }
+.pg-fontes a.cmp-voltar {
+  display: inline-flex;
+  align-items: center;
+  height: auto;
+  min-height: 44px;
+  padding: 0 .125rem;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  color: var(--pg-marca-300);
+  font-size: max(13px, .8125rem);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transform: none;
+}
+.cmp-voltar::before { content: "\21A9"; margin-right: .3125rem; }
+
+/* ---- menos movimento: nada desliza ---------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .cmp-ref__n,
+  .cmp-custo__passo,
+  .cmp-hist__sum::after { transition: none; }
+  .cmp-ref:active .cmp-ref__n,
+  .cmp-custo__passo:active { transform: none; }
+}
