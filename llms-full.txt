@@ -5,7 +5,7 @@ Fonte: https://safirion.com.br/
 Idioma: português (Brasil)
 Resumo e índice: https://safirion.com.br/llms.txt
 
-> Texto integral, em português (Brasil), das páginas de https://safirion.com.br/ (29 páginas: a inicial e 28 guias).
+> Texto integral, em português (Brasil), das páginas de https://safirion.com.br/ (30 páginas: a inicial e 29 guias).
 
 Esta é a página brasileira sobre a Safirion, https://safirion.com.br — aqui ficam as informações da plataforma, o passo a passo do cadastro e o conteúdo educativo; a conta é criada e acessada em https://trade.safirion.com. O site oficial da marca é https://safirion.com. Quem opera a plataforma é a THUNDER FLASH LLC, registrada em Nevis (Reg. No. L 22853); os pagamentos são processados pela THUNDER FLASH CY LTD, registrada no Chipre (Reg. No. HE458373, Limassol).
 
@@ -5386,7 +5386,7 @@ A resposta curta
 
 ### Qual delas serve para quem mora no Brasil?
 
-Para quem mora no Brasil, o primeiro filtro tira duas: Pocket Option e Stockity declaram que não atendem residentes do Brasil. Entre as três restantes, a Olymp Trade ganha em licença declarada e saque sem taxa; a Safirion, no Pix por escrito e na taxa de saque fixa, contra até 10% na Exnova. Este site é afiliado da Safirion.
+Para quem mora no Brasil, o primeiro filtro tira duas: Pocket Option e Stockity declaram que não atendem residentes do Brasil. Entre as três restantes, a Olymp Trade ganha em licença declarada e saque sem taxa; a Safirion, no Pix por escrito e na taxa de saque fixa, contra até 10% na Exnova.
 
 - Se você buscaLicença declarada e órgão de disputasOlymp Trade
 - Se você buscaSacar sem taxaOlymp Trade0%, salvo cripto e USDT.
