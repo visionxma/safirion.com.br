@@ -1,0 +1,82 @@
+/* ===== /cupom/: o cupom WELCOME100 em página própria (14/11/2026) =====
+   Mira "safirion cupom", "safirion bônus" e "welcome100" no Google. Usa os tokens de
+   assets/css/styles.css, o bilhete, os fatos e os passos de assets/css/home-marca.css e a
+   moldura de fundo do topo da home (.hero__earth, .hero__glow, .hero__veil).
+   Celular primeiro; as larguras maiores entram por min-width. */
+
+/* ---------- topo: cobre a tela inteira, conteúdo centrado ---------- */
+.cp-hero{min-height:100svh;display:grid;align-content:center;padding-block:clamp(104px,13vw,150px) clamp(40px,5vw,72px)}
+.cp-hero .hero__in{grid-template-columns:minmax(0,1fr);gap:clamp(24px,3.4vw,52px)}
+.cp-hero .hero__txt{gap:14px}
+.cp-h1{margin:2px 0 0;color:var(--ink-strong);font-weight:600;font-size:clamp(34px,5.2vw,64px);line-height:1.04;letter-spacing:-.035em;max-width:16ch}
+.cp-h1 em{font-style:normal;color:var(--brand-400)}
+.cp-lead{margin:0;color:var(--muted);font-size:clamp(15.5px,1.45vw,18px);line-height:1.6;max-width:52ch}
+.cp-lead strong{color:var(--ink-strong);font-weight:600}
+.cp-hero .sb-fatos{margin-top:6px;width:100%;max-width:520px}
+.cp-data{margin:2px 0 0;color:var(--muted-2);font-size:13px}
+
+/* o bilhete do topo é a peça grande da página */
+.cp-hero .sb-bilhete{padding:clamp(20px,3vw,40px);width:100%;max-width:520px;justify-self:center}
+.cp-hero .sb-bilhete__codigo{font-size:clamp(30px,4vw,52px);white-space:nowrap;overflow-wrap:normal}
+.cp-hero .sb-bilhete__acoes .btn{min-height:52px;font-size:15px}
+.cp-bilhete__nota{margin:12px 0 0;color:var(--muted);font-size:13px;line-height:1.5}
+
+/* ---------- o que é + condições à vista ---------- */
+.cp-sec{padding-block:clamp(44px,6vw,88px)}
+.cp-cab{max-width:760px}
+.cp-cab .h2{margin-top:14px}
+.cp-resposta{margin-top:14px;color:var(--ink);font-size:clamp(15.5px,1.5vw,18px);line-height:1.65;max-width:66ch}
+.cp-cond{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:clamp(22px,3vw,34px) 0 0;padding:0;list-style:none}
+.cp-cond li{min-width:0;border:1px solid var(--line);border-radius:var(--r-sm);background:rgba(160,176,197,.045);padding:14px 14px 16px}
+.cp-cond b{display:block;color:var(--ink-strong);font-size:clamp(20px,2.4vw,30px);font-weight:600;letter-spacing:-.02em;line-height:1.1}
+.cp-cond b em{font-style:normal;color:var(--brand-400)}
+.cp-cond span{display:block;margin-top:6px;color:var(--muted);font-size:14px;line-height:1.45}
+.cp-fonte{margin-top:16px;color:var(--muted-2);font-size:13px;line-height:1.55;max-width:80ch}
+.cp-fonte a{color:var(--brand-300);text-decoration:underline;text-underline-offset:2px}
+
+/* ---------- como usar: os 3 passos numa faixa e o par de ações ---------- */
+.cp-uso{padding:clamp(18px,3.4vw,44px)}
+.cp-uso .h2{margin-top:14px}
+.cp-uso .sb-passos{margin-top:clamp(18px,2.6vw,30px)}
+.cp-acoes{display:flex;flex-wrap:wrap;gap:10px;margin-top:clamp(18px,2.4vw,28px)}
+.cp-acoes .btn{flex:1 1 9rem;min-width:0;min-height:50px;justify-content:center}
+
+/* ---------- leia também: 2 colunas no celular, 4 no computador ---------- */
+.cp-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:clamp(20px,2.6vw,30px) 0 0;padding:0;list-style:none}
+.cp-links a{display:flex;flex-direction:column;gap:6px;height:100%;min-height:44px;border:1px solid var(--line);border-radius:var(--r-sm);
+  background:rgba(160,176,197,.04);padding:14px;color:var(--ink);text-decoration:none;
+  transition:border-color .2s var(--ease),transform .2s var(--ease)}
+.cp-links b{color:var(--ink-strong);font-size:15px;font-weight:600;line-height:1.3}
+.cp-links span{color:var(--muted);font-size:14px;line-height:1.45}
+.cp-links a:active{transform:scale(.98)}
+.cp-links a:focus-visible{outline:2px solid var(--brand);outline-offset:3px}
+
+/* ---------- perguntas: pilha no celular, 2 colunas a partir do tablet ---------- */
+.cp-faq .faq__list{max-width:1100px}
+.cp-faq .faq__item[hidden]{display:none}
+
+@media (hover:hover) and (pointer:fine){
+  .cp-links a:hover{border-color:rgba(75,163,240,.45);transform:translateY(-2px)}
+}
+
+@media (min-width:48rem){
+  .cp-faq .faq__list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;gap:16px}
+}
+@media (min-width:64rem){
+  .cp-hero .hero__in{grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr)}
+  .cp-cond{grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+  .cp-cond li{padding:18px 18px 20px}
+  .cp-links{grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+  .cp-links a{padding:18px}
+}
+/* tela baixa de computador: o topo encolhe para caber inteiro */
+@media (min-width:64rem) and (max-height:760px){
+  .cp-hero{padding-top:96px}
+  .cp-h1{font-size:clamp(34px,4.4vw,54px)}
+}
+
+/* trilha (Início › Cupom): a mesma do BreadcrumbList */
+.cp-trilha{display:flex;flex-wrap:wrap;align-items:center;gap:8px;color:var(--muted-2);font-size:13px}
+.cp-trilha a{color:var(--brand-300);text-decoration:none;min-height:44px;min-width:44px;display:inline-flex;align-items:center}
+.cp-trilha a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+.cp-trilha [aria-current]{color:var(--muted)}
