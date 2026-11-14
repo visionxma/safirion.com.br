@@ -14,6 +14,11 @@
      da borda nunca abrem rolagem lateral.
    - Véu RETO (degradê de ponta a ponta), nunca forma: escurece o lado do texto
      e funde o pé da hero no fundo da página.
+   Versão 2 (14/11/2026), a composição do safiron.net, que o Victor aprovou: o
+   touro deixa de disputar com o título. Celular e tablet em pé: o touro INTEIRO
+   num palco próprio no alto, acima do selo e do título, e o texto limpo embaixo.
+   Computador: o quadro maior e mais alto (cabeça e chifres em destaque) e o
+   aparelho no começo da coluna dele, então o touro não se esconde atrás dele.
    ========================================================================== */
 
 /* a hero cobre a tela inteira, no computador e no celular; o conteúdo fica no
@@ -37,14 +42,27 @@
 }
 .hero__cena img{display:block;max-width:none}
 
-/* A arte larga (3:1). Altura pela altura da hero, ancorada à direita e um pouco
-   acima do pé: o touro corre do meio da tela para a direita, atrás do aparelho. */
+/* A arte larga (3:1), no quadro do safiron.net: ancorada à direita, um pouco
+   acima do topo e alta (78% da hero ou 46% da largura, o que for maior). O touro
+   ocupa de 60% a 98,5% da largura da arte; a cabeça e os chifres, de 88% em
+   diante, ficam à direita do aparelho e na altura do título. */
 .cena-quadro{
   position:absolute;
-  right:var(--q-dir,-1cqw);
-  bottom:var(--q-pe,13cqh);
-  height:var(--q-alt,min(78cqh,52cqw));
+  right:var(--q-dir,0);
+  top:var(--q-topo,-3%);
+  bottom:auto;
+  height:var(--q-alt,max(78cqh,46cqw));
   aspect-ratio:3/1;
+}
+/* computador: a arte some no alto e no pé (sem corte reto no cabeçalho nem nos
+   números), e o aparelho encosta no começo da coluna dele, deixando a cabeça e
+   os chifres do touro inteiros ao lado (no árabe, o começo é a direita: espelha) */
+@media (orientation:landscape) and (min-width:1025px){
+  .cena-quadro{
+    -webkit-mask-image:linear-gradient(180deg,transparent 0,#000 16%,#000 80%,transparent 100%);
+    mask-image:linear-gradient(180deg,transparent 0,#000 16%,#000 80%,transparent 100%);
+  }
+  .hero__art{justify-content:flex-start}
 }
 .cena-arte{position:absolute;inset:0;width:100%;height:100%}
 
@@ -109,7 +127,9 @@
 .cena-veu{
   position:absolute;inset:0;
   background-image:
-    linear-gradient(180deg,rgb(4 9 15 / .55) 0%,rgb(4 9 15 / 0) 16%,rgb(4 9 15 / 0) 72%,rgb(4 9 15 / .82) 90%,#04090f 100%),
+    /* o alto fecha mais na faixa do cabeçalho: o quadro alto põe o mapa de pontos atrás do seletor de
+       idioma (contraste no pixel); acaba em 20%, antes dos chifres */
+    linear-gradient(180deg,rgb(4 9 15 / .72) 0%,rgb(4 9 15 / .42) 10%,rgb(4 9 15 / 0) 20%,rgb(4 9 15 / 0) 72%,rgb(4 9 15 / .82) 90%,#04090f 100%),
     linear-gradient(90deg,rgb(0 7 29 / .92) 0%,rgb(0 7 29 / .88) 34%,rgb(0 7 29 / .72) 46%,rgb(0 7 29 / .28) 56%,rgb(0 7 29 / 0) 65%);
 }
 
@@ -135,8 +155,9 @@
 .hero__art img{filter:drop-shadow(0 34px 70px rgba(0,0,0,.65)) drop-shadow(0 0 34px rgb(64 160 255 / .22))}
 
 /* Árabe (/ar/, texto à direita, aparelho à esquerda): a cena inteira em espelho. O touro corre
-   para a esquerda, atrás do aparelho, a luz varre da direita para a esquerda e o véu escurece o
-   lado DIREITO, onde está o texto. O espelho é da caixa da cena (inset:0): não sai da hero. */
+   para a esquerda, com a cabeça e os chifres à esquerda do aparelho, a luz varre da direita para a
+   esquerda e o véu escurece o lado DIREITO, onde está o texto. O espelho é da caixa da cena
+   (inset:0): não sai da hero. */
 [dir="rtl"] .hero__cena{transform:scaleX(-1)}
 
 @keyframes touro-varre{from{transform:translateX(-130%) rotate(16deg)}to{transform:translateX(340%) rotate(16deg)}}
@@ -147,37 +168,49 @@
   0%{opacity:0;transform:translate3d(0,0,0)}
   12%{opacity:.95}
   70%{opacity:.6}
-  100%{opacity:0;transform:translate3d(var(--deriva),-70vh,0)}
+  100%{opacity:0;transform:translate3d(var(--deriva),var(--subida,-70vh),0)}
 }
 
-/* ---------------------------------------------------- tela em pé (celular)
-   O <picture> troca a arte larga pelo recorte no touro (1100 × 716). Ele corre
-   no alto, à direita do título (que ocupa só a metade esquerda), com a cabeça
-   e os chifres na borda; o véu da esquerda apaga o que passa atrás das letras. */
+/* ------------------------------------- tela em pé (celular e tablet em pé)
+   A composição do safiron.net: o <picture> troca a arte larga pelo recorte no
+   touro (1100 × 716), e o touro corre INTEIRO num palco próprio no alto, abaixo
+   do cabeçalho e acima do selo e do título. O texto nasce depois do palco
+   (padding-top = altura do palco + 30 px), então nenhuma letra fica sobre o
+   touro e o véu só escurece o topo (cabeçalho) e o pé (encontro com a página).
+   A poeira e as fagulhas moram no palco: o texto embaixo fica limpo.
+   --arte-w é a largura do quadro; --arte-alt, a altura dele (716/1100). */
 @media (orientation:portrait){
-  .cena-quadro{
-    right:-6cqw;bottom:auto;top:var(--qm-topo,9cqw);
-    width:114cqw;height:auto;
-    aspect-ratio:1100/716;
+  .hero{
+    --arte-w:min(104vw,44rem);
+    --arte-alt:calc(var(--arte-w) * .6509);
+    padding-top:calc(var(--arte-alt) + 30px);
   }
-  .cena-brilho{left:44%;top:18%;width:56%;height:74%}
+  .cena-quadro{
+    right:max(-2cqw,calc((100cqw - var(--arte-w)) / 2));bottom:auto;top:42px;
+    width:var(--arte-w);height:auto;
+    aspect-ratio:1100/716;
+    /* some no alto, no pé e nas laterais: o palco não tem borda */
+    -webkit-mask-image:linear-gradient(180deg,transparent 0,#000 14%,#000 78%,transparent 100%),linear-gradient(90deg,transparent 0,#000 5%,#000 97%,transparent 100%);
+    -webkit-mask-composite:source-in;
+    mask-image:linear-gradient(180deg,transparent 0,#000 14%,#000 78%,transparent 100%),linear-gradient(90deg,transparent 0,#000 5%,#000 97%,transparent 100%);
+    mask-composite:intersect;
+  }
+  .cena-brilho{left:30%;top:14%;width:64%;height:84%}
+  .cena-poeiras{
+    height:calc(42px + var(--arte-alt));
+    -webkit-mask-image:linear-gradient(180deg,#000 72%,transparent);
+    mask-image:linear-gradient(180deg,#000 72%,transparent);
+  }
+  .cena-fagulha{--subida:-15rem}
   .cena-veu{
-    background-image:
-      linear-gradient(180deg,rgb(4 9 15 / .5) 0%,rgb(4 9 15 / 0) 9%,rgb(4 9 15 / 0) 26%,rgb(0 7 29 / .55) 40%,rgb(0 7 29 / .2) 70%,rgb(4 9 15 / .85) 92%,#04090f 100%),
-      /* o lombo do touro passa atrás do fim de "SAFIRION" (até 66% da largura em 360 px): o véu reto
-         fecha mais nessa faixa (título a 4,5:1 no pixel); a cabeça e os chifres, depois de 80%, ficam acesos */
-      linear-gradient(90deg,rgb(0 7 29 / .84) 0%,rgb(0 7 29 / .72) 40%,rgb(0 7 29 / .46) 62%,rgb(0 7 29 / .22) 72%,rgb(0 7 29 / 0) 84%);
+    /* o alto fecha na faixa do cabeçalho (até 112 px, antes dos chifres) e o pé funde na página */
+    background-image:linear-gradient(180deg,rgb(4 9 15 / .66) 0,rgb(4 9 15 / .45) 70px,rgb(4 9 15 / 0) 112px,rgb(4 9 15 / 0) 78%,#04090f 100%);
   }
 }
-/* tablet em pé: o aparelho já aparece na primeira tela, logo abaixo dos botões;
-   o touro corre ATRÁS dele, como no computador, com a cabeça e os chifres à direita */
-@media (orientation:portrait) and (min-width:601px){
-  .cena-quadro{right:0;top:58cqw;width:96cqw}
-  .cena-veu{
-    background-image:
-      linear-gradient(180deg,rgb(4 9 15 / .5) 0%,rgb(4 9 15 / 0) 8%,rgb(4 9 15 / 0) 80%,rgb(4 9 15 / .85) 93%,#04090f 100%),
-      linear-gradient(90deg,rgb(0 7 29 / .6) 0%,rgb(0 7 29 / .2) 30%,rgb(0 7 29 / 0) 45%);
-  }
+/* tela baixa em pé (até 800 px de altura, como 360 × 780): o palco encolhe 8%
+   para os dois botões caberem na primeira tela (o objeto da hero encolhe pela altura) */
+@media (orientation:portrait) and (max-height:800px){
+  .hero{--arte-w:min(96vw,44rem)}
 }
 @media (max-width:600px){
   /* celular: metade das fagulhas e uma camada de poeira só */
