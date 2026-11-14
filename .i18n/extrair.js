@@ -16,6 +16,9 @@ const keywords = um(/<meta name="keywords" content="([^"]*)">/, 'keywords');
 
 let corpo = um(/<body>([\s\S]*?)<script src="\/?assets\/js\/main\.js/, 'body');
 corpo = corpo.replace(/\s*<!--idiomas-->[\s\S]*?<!--\/idiomas-->/g, '');   // seletor posto pelo montar.js
+// blocos só da home em português (cupom WELCOME100, login e cadastro, perguntas de marca: 14/11/2026, pedido
+// do Márcio): ficam fora da fonte dos tradutores, senão o verificar.js reprova os 16 idiomas por contagem de tags
+corpo = corpo.replace(/\s*<!--so-pt-->[\s\S]*?<!--\/so-pt-->/g, '');
 corpo = corpo.replace(/<!--[\s\S]*?-->\n?/g, '');                           // comentários de seção
 
 // frases da barra do topo: moram no _chrome.json

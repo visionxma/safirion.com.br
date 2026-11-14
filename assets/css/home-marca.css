@@ -1,0 +1,95 @@
+/* ===== Home em português: cupom, login e cadastro (14/11/2026) =====
+   Pedido do Márcio (MJX Digital): a home brigar no Google por "safirion cupom", "safirion login" e
+   "safirion cadastro". Só a home em pt carrega esta folha: o <link> mora no <body>, dentro do bloco
+   <!--so-pt-->, fora do <head> que o .i18n/montar.js usa de molde para os outros 16 idiomas.
+   Celular primeiro; as larguras maiores entram por min-width. Tokens de assets/css/styles.css. */
+
+/* ---------- Cupom de boas-vindas ---------- */
+.sb-cupom,.sb-acesso{padding-block:clamp(44px,6vw,88px)}
+.sb-cupom .panel{padding:clamp(18px,4.2vw,58px)}
+.sb-cupom__in{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(22px,3.2vw,44px);align-items:center}
+.sb-cupom__txt{min-width:0}
+.sb-cupom__txt .h2{margin-top:16px;font-size:clamp(28px,4vw,48px)}
+.sb-cupom__lead{margin-top:14px;color:var(--muted);font-size:clamp(15.5px,1.4vw,17.5px);line-height:1.6;max-width:56ch}
+.sb-cupom__lead strong{color:var(--ink-strong);font-weight:600}
+.sb-fatos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:22px 0 0;padding:0;list-style:none}
+.sb-fato{min-width:0;border:1px solid var(--line);border-radius:var(--r-sm);background:rgba(160,176,197,.045);padding:14px 16px}
+.sb-fato b{display:block;font-size:clamp(26px,2.8vw,36px);font-weight:600;letter-spacing:-.02em;line-height:1.05;color:var(--ink-strong);font-variant-numeric:tabular-nums}
+.sb-fato b em{font-style:normal;color:var(--brand-400)}
+.sb-fato>span{display:block;margin-top:6px;color:var(--muted);font-size:14px;line-height:1.4}
+.sb-cupom__nota{margin-top:16px;color:var(--muted-2);font-size:13px;line-height:1.55;max-width:62ch}
+
+/* o bilhete: código grande, picote e as duas ações lado a lado */
+.sb-bilhete{position:relative;isolation:isolate;overflow:hidden;overflow:clip;min-width:0;border-radius:var(--r-md);
+  padding:clamp(16px,2.4vw,30px);text-align:center;
+  background:linear-gradient(160deg,rgba(35,137,230,.24) 0%,rgba(17,29,47,.92) 58%,rgba(6,13,23,.96) 100%);
+  border:1px solid rgba(75,163,240,.38);box-shadow:0 30px 60px -30px rgba(35,137,230,.6)}
+.sb-bilhete__rot{margin:0;color:var(--brand-300);font-size:14px;font-weight:500}
+.sb-bilhete__codigo{margin:8px 0 0;color:#fff;font-weight:600;font-size:clamp(30px,3.8vw,46px);letter-spacing:.05em;line-height:1.1;
+  overflow-wrap:anywhere;-webkit-user-select:all;user-select:all}
+.sb-bilhete__corte{margin:18px -2px;border:0;border-top:2px dashed rgba(130,197,255,.32)}
+.sb-bilhete__acoes{display:flex;flex-wrap:wrap;gap:10px}
+.sb-bilhete__acoes .btn{flex:1 1 7rem;min-width:0;min-height:48px;padding:12px 8px;font-size:14px}
+.sb-bilhete__acoes .btn--primary{padding-right:8px}
+.sb-bilhete__ok{min-height:1.5em;margin:10px 0 0;color:var(--green);font-size:14px;line-height:1.5}
+.sb-copiar{cursor:pointer;font-family:inherit}
+.sb-copiar.is-ok{border-color:rgba(62,213,157,.65);color:#c9f6e4;background:rgba(62,213,157,.1)}
+
+/* ---------- Entrar e criar conta ---------- */
+.sb-acesso .section-head{margin-bottom:clamp(24px,3vw,40px)}
+.sb-acesso .section-head .lead{margin-top:14px}
+.sb-guias{display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
+.sb-guia{display:flex;flex-direction:column;gap:18px;height:100%;padding:clamp(18px,2.6vw,30px)}
+.sb-guia__topo{display:flex;align-items:center;gap:12px;min-width:0}
+.sb-guia__topo .card__ic{margin:0;flex:0 0 auto}
+.sb-guia .h3{margin:0}
+.sb-passos{list-style:none;margin:0;padding:0;counter-reset:sbp;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.sb-passos li{counter-increment:sbp;min-width:0;border:1px solid var(--line-soft);border-radius:var(--r-sm);background:rgba(160,176,197,.04);padding:12px 10px}
+.sb-passos li::before{content:counter(sbp);display:flex;align-items:center;justify-content:center;width:28px;height:28px;margin-bottom:10px;
+  border-radius:50%;background:rgba(35,137,230,.16);color:var(--brand-300);font-size:14px;font-weight:600}
+.sb-passos b{display:block;color:var(--ink-strong);font-size:14px;font-weight:600;line-height:1.3}
+.sb-passos li>span{display:none;margin-top:6px;color:var(--muted);font-size:14px;line-height:1.45}
+.sb-end{overflow-wrap:anywhere;color:var(--brand-300)}
+.sb-nw{white-space:nowrap}
+.sb-guia__btn{margin-top:auto;align-self:stretch;min-height:48px}
+.sb-guia__btn.btn--primary{padding-right:26px}
+
+/* ---------- FAQ: 5 à vista e um botão "Ver mais perguntas (+N)" (o N é conta, no JS) ---------- */
+.faq__item[hidden]{display:none}
+.sb-faq-mais{display:flex;justify-content:center;margin-top:22px}
+.sb-faq-mais button{min-height:48px;padding:12px 26px;border-radius:var(--r-pill);border:1px solid var(--lt-line);background:var(--lt-card);
+  color:var(--lt-ink);font:inherit;font-size:15px;font-weight:600;cursor:pointer;box-shadow:0 8px 20px -8px rgba(40,93,138,.14);
+  transition:transform .16s var(--ease),box-shadow .2s var(--ease),border-color .2s var(--ease)}
+.sb-faq-mais button:focus-visible,.sb-copiar:focus-visible{outline:2px solid var(--brand);outline-offset:3px}
+
+/* toque e ponteiro: responde ao dedo; o hover fica só para mouse */
+.sb-bilhete__acoes .btn:active,.sb-guia__btn:active,.sb-faq-mais button:active{transform:scale(.98)}
+@media (hover:hover) and (pointer:fine){
+  .sb-faq-mais button:hover{border-color:rgba(35,137,230,.5);box-shadow:0 14px 30px -10px rgba(40,93,138,.24)}
+  .sb-copiar:hover{border-color:rgba(75,163,240,.55);background:rgba(35,137,230,.12);color:#fff}
+  .sb-passos li{transition:border-color .25s var(--ease),transform .25s var(--ease)}
+  .sb-passos li:hover{border-color:rgba(75,163,240,.4);transform:translateY(-2px)}
+}
+
+/* brilho que atravessa o bilhete: só transform, dentro do próprio bilhete (overflow: clip) */
+@media (prefers-reduced-motion:no-preference){
+  .sb-bilhete::after{content:"";position:absolute;top:-10%;bottom:-10%;left:-55%;width:45%;z-index:-1;pointer-events:none;
+    background:linear-gradient(100deg,transparent,rgba(130,197,255,.16),transparent);
+    transform:translateX(0) skewX(-14deg);animation:sb-brilho 6.5s cubic-bezier(.22,1,.36,1) infinite}
+  @keyframes sb-brilho{0%,45%{transform:translateX(0) skewX(-14deg)}100%{transform:translateX(480%) skewX(-14deg)}}
+}
+
+/* ---------- tablet: passos com o detalhe; cupom com texto e bilhete lado a lado ---------- */
+@media (min-width:37.5rem){
+  .sb-passos{gap:10px}
+  .sb-passos li{padding:16px 14px}
+  .sb-passos b{font-size:15px}
+  .sb-passos li>span{display:block}
+}
+@media (min-width:48rem){
+  .sb-cupom__in{grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr)}
+}
+/* computador largo: os dois guias lado a lado (abaixo disso o passo fica estreito demais para o endereço) */
+@media (min-width:72rem){
+  .sb-guias{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+}
