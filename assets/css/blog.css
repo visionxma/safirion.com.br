@@ -841,3 +841,4 @@
     transition: none;
   }
 }
+.bl-corpo .pg-texto a.pg-botao{padding-block:.75rem;text-decoration:none}.bl-corpo .pg-texto a.pg-botao--cheio{color:#fff}.bl-corpo .pg-texto a.pg-botao--vazio{color:var(--pg-ink-forte)}

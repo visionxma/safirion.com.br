@@ -26,14 +26,14 @@ Texto completo das páginas, em um arquivo só: https://safirion.com.br/llms-ful
 - [RSS](https://safirion.com.br/blog/feed.xml)
 - [Primeiros passos](https://safirion.com.br/blog/tema/primeiros-passos/): 10 guias
 - [Como operar](https://safirion.com.br/blog/tema/como-operar/): 6 guias
-- [Estratégias](https://safirion.com.br/blog/tema/estrategias/): 2 guias
-- [Gestão de banca](https://safirion.com.br/blog/tema/gestao-de-banca/): 1 guia
-- [Análise técnica](https://safirion.com.br/blog/tema/analise-tecnica/): 1 guia
+- [Estratégias](https://safirion.com.br/blog/tema/estrategias/): 3 guias
+- [Gestão de banca](https://safirion.com.br/blog/tema/gestao-de-banca/): 2 guias
+- [Análise técnica](https://safirion.com.br/blog/tema/analise-tecnica/): 4 guias
 - [Safirion](https://safirion.com.br/blog/tema/safirion/): 11 guias
-- [Finanças](https://safirion.com.br/blog/tema/financas/): 2 guias
-- [Segurança](https://safirion.com.br/blog/tema/seguranca/): 4 guias
+- [Finanças](https://safirion.com.br/blog/tema/financas/): 5 guias
+- [Segurança](https://safirion.com.br/blog/tema/seguranca/): 6 guias
 
-## Páginas (26)
+## Páginas (36)
 - [Corretoras Digitais e Plataformas Online](https://safirion.com.br/corretoras-digitais-plataformas-online-diferencas/): Entenda as diferenças entre corretoras digitais e plataformas online, incluindo acesso, recursos, segurança, app, suporte e cuidados antes do cadastro.
 - [Imposto de renda em corretora no exterior: o que declarar](https://safirion.com.br/blog/imposto-de-renda-em-corretora-no-exterior/): Corretora no exterior e imposto de renda: o que a Receita Federal trata no carnê-leão, o que vai no ganho de capital, o que a plataforma não envia e onde ler.
 - [Safarion ou Safirion? A corretora certa](https://safirion.com.br/blog/safarion-ou-safirion-a-corretora-certa/): Safarion é troca de vogal: a corretora se escreve Safirion, com i depois do f. Site oficial safirion.com, operada pela THUNDER FLASH LLC, de Nevis.
@@ -60,6 +60,16 @@ Texto completo das páginas, em um arquivo só: https://safirion.com.br/llms-ful
 - [Safiriun, Safirio, Safirun: as variações do nome](https://safirion.com.br/blog/safiriun-safirio-safirun-variacoes-do-nome/): Safiriun, Safirio, Safirun e Safiriom são a mesma corretora: o nome é Safirion. Site oficial safirion.com, operada pela THUNDER FLASH LLC, de Nevis.
 - [Safrion ou Safirion? Qual é o nome certo](https://safirion.com.br/blog/safrion-ou-safirion-qual-e-o-certo/): Safrion é a grafia que o dedo deixa escapar: o nome certo é Safirion, com i depois do f. O site oficial é safirion.com e quem opera é a THUNDER FLASH LLC.
 - [THUNDER FLASH LLC: quem é a empresa da Safirion](https://safirion.com.br/blog/thunder-flash-llc-quem-e/): THUNDER FLASH LLC, de Nevis (L 22853), opera a Safirion e a THUNDER FLASH CY LTD, de Chipre, cuida dos pagamentos. O que um registro em Nevis dá e não dá.
+- [DARF de day trade: como calcular e pagar em 2026](https://safirion.com.br/blog/darf-day-trade/): DARF de day trade passo a passo: alíquota de 20%, desconto do IRRF de 1%, código 6015, prazo, valor mínimo de R$ 10, Sicalc e multa, com a conta pronta.
+- [Day trade no imposto de renda: como declarar](https://safirion.com.br/blog/day-trade-no-imposto-de-renda/): Day trade no imposto de renda: quem precisa declarar, a ficha de renda variável mês a mês, prejuízo, IRRF e DARF pago, com exemplo e erros que levam à malha.
+- [Swing trade paga imposto? Alíquota, isenção e DARF](https://safirion.com.br/blog/swing-trade-paga-imposto/): Swing trade paga 15% sobre o lucro do mês, com isenção para vendas de ações até R$ 20 mil. Veja a conta com exemplo, o dedo-duro, o DARF e os erros comuns.
+- [Opções binárias é crime no Brasil? O que diz a lei](https://safirion.com.br/blog/opcoes-binarias-e-crime/): Opções binárias é crime? Operar como cliente não tem crime previsto; oferecer sem autorização tem. Veja os dois artigos de lei, o papel da CVM e o risco real.
+- [Opções binárias é seguro ou aposta? Os riscos reais](https://safirion.com.br/blog/opcoes-binarias-e-seguro-ou-aposta/): Opções binárias é seguro? É aposta? Como o payout decide a conta, a taxa de acerto que empata, o risco da plataforma, os sinais de golpe e o que diz a lei.
+- [Bandas de Bollinger: o que são e como usar, com exemplo](https://safirion.com.br/blog/bandas-de-bollinger-como-usar/): Bandas de Bollinger: a média de 20 e os 2 desvios calculados na sua frente, o que cada toque indica e não indica, squeeze, %b e como usar na Safirion.
+- [MACD: o que é e como interpretar, com a conta na sua frente](https://safirion.com.br/blog/macd-como-interpretar/): MACD: o que é e como interpretar a linha, o sinal e o histograma, com a conta 12, 26 e 9 feita na sua frente e uma tabela do que cada leitura não indica.
+- [Price action: o que é e como ler o gráfico sem indicador](https://safirion.com.br/blog/price-action-o-que-e/): Price action sem indicador: topos, fundos, zonas, doji, pin bar, engolfo e inside bar, um exemplo com preços lido na sua frente e a demo de US$ 10.000.
+- [Catalogador de opções binárias: o que é e onde ele falha](https://safirion.com.br/blog/catalogador-de-opcoes-binarias/): Catalogador de opções binárias: o que ele conta, a conta do payout na sua frente, o truque da taxa com gale e o teste de 30 dias na demo antes de confiar.
+- [Planilha de gerenciamento de banca: modelo com fórmulas](https://safirion.com.br/blog/planilha-de-gerenciamento-de-banca/): Planilha de gerenciamento de banca para copiar: 11 colunas, a fórmula de cada uma, stop do dia e do mês automáticos e um dia de exemplo preenchido.
 
 ## Políticas da Safirion (PDF)
 - [Política AML e KYC](https://fsms.trade.safirion.com/storage/public/d5/j3/m5fvhhge5gv5vabg/Safirion%20AML%20and%20KYC%20Policy.pdf)
