@@ -1,0 +1,181 @@
+/* ==========================================================================
+   HERO COM O TOURO DE LUZ (home em português) — 14/11/2026
+   A hero que existe fica (texto, botões, ordem, links, aparelho e números) e
+   ganha a arte do touro como FUNDO VIVO, no lugar da Terra e do mapa: o touro
+   de luz azul correndo sobre o mapa-múndi em pontos, gerado a partir do post
+   "A Safirion não chegou agora no mercado" do @safirionbroker, a mesma cena do
+   painel de tráfego (mjx-trafego/components/cena/cena-touro.css), portada para
+   HTML e CSS puros.
+   - O quadro imita o `cover` ancorado no touro: o brilho que pulsa fica preso
+     no peito dele em qualquer largura.
+   - Por cima, só transform e opacity: a luz que varre, a poeira que sobe, as
+     fagulhas e o pulso do brilho. "Menos movimento": tudo parado.
+   - contain: paint + overflow: clip: a faixa de luz GIRADA e a poeira que passa
+     da borda nunca abrem rolagem lateral.
+   - Véu RETO (degradê de ponta a ponta), nunca forma: escurece o lado do texto
+     e funde o pé da hero no fundo da página.
+   ========================================================================== */
+
+/* a hero cobre a tela inteira, no computador e no celular; o conteúdo fica no
+   centro e a sobra se divide entre cima e baixo */
+.hero{
+  min-height:100vh;
+  min-height:100svh;
+  display:flex;flex-direction:column;justify-content:center;
+  padding-top:clamp(124px,12vw,150px);
+  padding-bottom:clamp(28px,3.4vw,44px);
+}
+.hero__stats{margin-top:clamp(32px,3.6vw,48px)}
+
+.hero__cena{
+  position:absolute;inset:0;z-index:-3;
+  container-type:size;
+  contain:paint;overflow:clip;
+  pointer-events:none;user-select:none;
+  /* a cor das quatro bordas da arte, medida no arquivo: onde a arte acaba, não há emenda */
+  background-color:#00071d;
+}
+.hero__cena img{display:block;max-width:none}
+
+/* A arte larga (3:1). Altura pela altura da hero, ancorada à direita e um pouco
+   acima do pé: o touro corre do meio da tela para a direita, atrás do aparelho. */
+.cena-quadro{
+  position:absolute;
+  right:var(--q-dir,-1cqw);
+  bottom:var(--q-pe,9cqh);
+  height:var(--q-alt,min(78cqh,52cqw));
+  aspect-ratio:3/1;
+}
+.cena-arte{position:absolute;inset:0;width:100%;height:100%}
+
+/* o pulso do brilho: luz de FUNDO (degradê radial na própria caixa) sobre o peito do touro */
+.cena-brilho{
+  position:absolute;left:62%;top:16%;width:36%;height:80%;
+  background-image:radial-gradient(closest-side,rgb(64 160 255 / .34),rgb(64 160 255 / .12) 55%,transparent 100%);
+  opacity:.55;
+  animation:touro-pulsa 5.5s ease-in-out infinite alternate;
+  will-change:opacity,transform;
+}
+
+/* a luz que varre: uma faixa inclinada que atravessa a cena devagar */
+.cena-varredura{
+  position:absolute;top:-40%;bottom:-40%;left:0;width:38%;
+  background-image:linear-gradient(90deg,transparent 0%,rgb(110 185 255 / .05) 28%,rgb(170 220 255 / .17) 50%,rgb(110 185 255 / .05) 72%,transparent 100%);
+  transform:translateX(-130%) rotate(16deg);
+  animation:touro-varre 13s cubic-bezier(.45,.05,.55,.95) infinite;
+  will-change:transform;
+}
+
+/* a poeira de luz que sobe (duas camadas de pontos em ladrilho, em velocidades
+   diferentes) e as fagulhas soltas; só na primeira tela */
+.cena-poeiras{
+  position:absolute;left:0;right:0;top:0;height:min(100%,100svh);
+  overflow:clip;
+  -webkit-mask-image:linear-gradient(0deg,#000 0%,#000 40%,transparent 100%);
+  mask-image:linear-gradient(0deg,#000 0%,#000 40%,transparent 100%);
+}
+.cena-poeira{position:absolute;left:0;right:0;top:0;background-repeat:repeat;will-change:transform}
+.cena-poeira--a{
+  height:calc(100% + 18rem);
+  background-image:
+    radial-gradient(circle at 22px 38px,rgb(190 228 255 / .85) 0 1.2px,transparent 2px),
+    radial-gradient(circle at 150px 120px,rgb(150 210 255 / .6) 0 1px,transparent 1.8px),
+    radial-gradient(circle at 96px 230px,rgb(190 228 255 / .7) 0 1.4px,transparent 2.2px),
+    radial-gradient(circle at 210px 64px,rgb(120 190 255 / .55) 0 .9px,transparent 1.6px),
+    radial-gradient(circle at 60px 170px,rgb(150 210 255 / .5) 0 .8px,transparent 1.5px);
+  background-size:15rem 18rem;
+  animation:touro-sobe-a 30s linear infinite;
+}
+.cena-poeira--b{
+  height:calc(100% + 13rem);opacity:.7;
+  background-image:
+    radial-gradient(circle at 40px 20px,rgb(170 220 255 / .8) 0 .9px,transparent 1.6px),
+    radial-gradient(circle at 120px 140px,rgb(120 190 255 / .7) 0 1.1px,transparent 1.9px),
+    radial-gradient(circle at 160px 70px,rgb(200 235 255 / .6) 0 .7px,transparent 1.4px);
+  background-size:11rem 13rem;
+  animation:touro-sobe-b 21s linear infinite;
+}
+.cena-fagulha{
+  position:absolute;left:var(--x);bottom:-.5rem;
+  width:3px;height:3px;border-radius:50%;
+  background-color:#d4eeff;
+  box-shadow:0 0 6px 2px rgb(75 163 240 / .75);
+  opacity:0;
+  animation:touro-fagulha var(--d) linear var(--a) infinite;
+}
+
+/* Véu reto, de ponta a ponta (nunca forma): da esquerda (o texto) para a direita
+   (o touro), e de cima para baixo só no pé, onde a hero encontra a página. */
+.cena-veu{
+  position:absolute;inset:0;
+  background-image:
+    linear-gradient(180deg,rgb(4 9 15 / .55) 0%,rgb(4 9 15 / 0) 16%,rgb(4 9 15 / 0) 72%,rgb(4 9 15 / .82) 90%,#04090f 100%),
+    linear-gradient(90deg,rgb(0 7 29 / .92) 0%,rgb(0 7 29 / .86) 32%,rgb(0 7 29 / .6) 44%,rgb(0 7 29 / .18) 54%,rgb(0 7 29 / 0) 63%);
+}
+
+/* hero de uma coluna (tablet e notebook pequeno deitados): o texto ocupa a
+   largura, então o touro corre no ALTO, à direita do título, pela largura */
+@media (max-width:1024px) and (orientation:landscape){
+  .cena-quadro{right:0;bottom:auto;top:clamp(56px,7cqw,96px);height:auto;width:104cqw}
+  .cena-veu{
+    background-image:
+      linear-gradient(180deg,rgb(4 9 15 / .5) 0%,rgb(4 9 15 / 0) 12%,rgb(4 9 15 / 0) 30%,rgb(0 7 29 / .5) 42%,rgb(0 7 29 / .25) 70%,rgb(4 9 15 / .85) 92%,#04090f 100%),
+      linear-gradient(90deg,rgb(0 7 29 / .88) 0%,rgb(0 7 29 / .7) 40%,rgb(0 7 29 / .15) 62%,rgb(0 7 29 / 0) 74%);
+  }
+}
+
+/* o aparelho entra na luz do touro: contorno azul suave, além da sombra que já tinha */
+.hero__art img{filter:drop-shadow(0 34px 70px rgba(0,0,0,.65)) drop-shadow(0 0 34px rgb(64 160 255 / .22))}
+
+@keyframes touro-varre{from{transform:translateX(-130%) rotate(16deg)}to{transform:translateX(340%) rotate(16deg)}}
+@keyframes touro-pulsa{from{opacity:.35;transform:scale(.96)}to{opacity:1;transform:scale(1.06)}}
+@keyframes touro-sobe-a{to{transform:translate3d(0,-18rem,0)}}
+@keyframes touro-sobe-b{to{transform:translate3d(0,-13rem,0)}}
+@keyframes touro-fagulha{
+  0%{opacity:0;transform:translate3d(0,0,0)}
+  12%{opacity:.95}
+  70%{opacity:.6}
+  100%{opacity:0;transform:translate3d(var(--deriva),-70vh,0)}
+}
+
+/* ---------------------------------------------------- tela em pé (celular)
+   O <picture> troca a arte larga pelo recorte no touro (1100 × 716). Ele corre
+   no alto, à direita do título (que ocupa só a metade esquerda), com a cabeça
+   e os chifres na borda; o véu da esquerda apaga o que passa atrás das letras. */
+@media (orientation:portrait){
+  .cena-quadro{
+    right:-6cqw;bottom:auto;top:var(--qm-topo,9cqw);
+    width:114cqw;height:auto;
+    aspect-ratio:1100/716;
+  }
+  .cena-brilho{left:44%;top:18%;width:56%;height:74%}
+  .cena-veu{
+    background-image:
+      linear-gradient(180deg,rgb(4 9 15 / .5) 0%,rgb(4 9 15 / 0) 9%,rgb(4 9 15 / 0) 26%,rgb(0 7 29 / .55) 40%,rgb(0 7 29 / .2) 70%,rgb(4 9 15 / .85) 92%,#04090f 100%),
+      linear-gradient(90deg,rgb(0 7 29 / .82) 0%,rgb(0 7 29 / .62) 38%,rgb(0 7 29 / .12) 66%,rgb(0 7 29 / 0) 80%);
+  }
+}
+/* tablet em pé: o aparelho já aparece na primeira tela, logo abaixo dos botões;
+   o touro corre ATRÁS dele, como no computador, com a cabeça e os chifres à direita */
+@media (orientation:portrait) and (min-width:601px){
+  .cena-quadro{right:0;top:58cqw;width:96cqw}
+  .cena-veu{
+    background-image:
+      linear-gradient(180deg,rgb(4 9 15 / .5) 0%,rgb(4 9 15 / 0) 8%,rgb(4 9 15 / 0) 80%,rgb(4 9 15 / .85) 93%,#04090f 100%),
+      linear-gradient(90deg,rgb(0 7 29 / .6) 0%,rgb(0 7 29 / .2) 30%,rgb(0 7 29 / 0) 45%);
+  }
+}
+@media (max-width:600px){
+  /* celular: metade das fagulhas e uma camada de poeira só */
+  .cena-fagulha:nth-child(2n+3),.cena-poeira--b{display:none}
+  /* números da hero: 2 colunas, como no computador (nunca pilha de 4) */
+  .hero__stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hero__stat{padding:16px 16px}
+}
+
+/* Menos movimento: a cena fica parada, inteira (sem a faixa de luz e sem fagulhas). */
+@media (prefers-reduced-motion:reduce){
+  .hero__cena *,.hero__cena *::before,.hero__cena *::after{animation:none !important}
+  .cena-varredura,.cena-fagulha{display:none}
+}
+@media print{.hero__cena{display:none !important}}
