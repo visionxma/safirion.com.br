@@ -42,7 +42,7 @@
 .cena-quadro{
   position:absolute;
   right:var(--q-dir,-1cqw);
-  bottom:var(--q-pe,9cqh);
+  bottom:var(--q-pe,13cqh);
   height:var(--q-alt,min(78cqh,52cqw));
   aspect-ratio:3/1;
 }
@@ -110,7 +110,7 @@
   position:absolute;inset:0;
   background-image:
     linear-gradient(180deg,rgb(4 9 15 / .55) 0%,rgb(4 9 15 / 0) 16%,rgb(4 9 15 / 0) 72%,rgb(4 9 15 / .82) 90%,#04090f 100%),
-    linear-gradient(90deg,rgb(0 7 29 / .92) 0%,rgb(0 7 29 / .86) 32%,rgb(0 7 29 / .6) 44%,rgb(0 7 29 / .18) 54%,rgb(0 7 29 / 0) 63%);
+    linear-gradient(90deg,rgb(0 7 29 / .92) 0%,rgb(0 7 29 / .88) 34%,rgb(0 7 29 / .72) 46%,rgb(0 7 29 / .28) 56%,rgb(0 7 29 / 0) 65%);
 }
 
 /* hero de uma coluna (tablet e notebook pequeno deitados): o texto ocupa a
@@ -123,6 +123,13 @@
       linear-gradient(90deg,rgb(0 7 29 / .88) 0%,rgb(0 7 29 / .7) 40%,rgb(0 7 29 / .15) 62%,rgb(0 7 29 / 0) 74%);
   }
 }
+
+/* os números ficam sobre a luz do chão do touro: o cartão fecha um pouco mais (contraste medido no pixel) */
+.hero__stat{background:linear-gradient(180deg,#111d2f,#09121b)}
+.hero__stat dt{color:var(--muted)}
+
+/* o selo passa por cima do lombo do touro no celular: vidro escuro atrás das letras */
+.hero .chip{background:rgb(3 10 26 / .74);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
 
 /* o aparelho entra na luz do touro: contorno azul suave, além da sombra que já tinha */
 .hero__art img{filter:drop-shadow(0 34px 70px rgba(0,0,0,.65)) drop-shadow(0 0 34px rgb(64 160 255 / .22))}
