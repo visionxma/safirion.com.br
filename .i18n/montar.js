@@ -11,7 +11,7 @@ const { spawnSync } = require('child_process');
 const { createHash } = require('crypto');
 const RAIZ = path.join(__dirname, '..');
 const SITE = 'https://safirion.com.br';
-const V_MAIN = 7, V_POPUP = 5, V_IDIOMAS = 1;   // suba quando mexer no arquivo (cache de 7 dias)
+const V_MAIN = 7, V_POPUP = 6, V_IDIOMAS = 1;   // suba quando mexer no arquivo (cache de 7 dias)
 
 const ler = (...p) => fs.readFileSync(path.join(...p), 'utf8');
 const idiomas = JSON.parse(ler(__dirname, 'idiomas.json'));
