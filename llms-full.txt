@@ -1,11 +1,11 @@
 # safirion.com.br: texto completo das páginas públicas
 
 Fonte: https://safirion.com.br/
-Última atualização: 2026-11-05
+Última atualização: 2026-11-14
 Idioma: português (Brasil)
 Resumo e índice: https://safirion.com.br/llms.txt
 
-> Texto integral, em português (Brasil), das páginas de https://safirion.com.br/ (30 páginas: a inicial e 29 guias).
+> Texto integral, em português (Brasil), das páginas de https://safirion.com.br/ (38 páginas: a inicial e 37 guias).
 
 Esta é a página brasileira sobre a Safirion, https://safirion.com.br — aqui ficam as informações da plataforma, o passo a passo do cadastro e o conteúdo educativo; a conta é criada e acessada em https://trade.safirion.com. O site oficial da marca é https://safirion.com. Quem opera a plataforma é a THUNDER FLASH LLC, registrada em Nevis (Reg. No. L 22853); os pagamentos são processados pela THUNDER FLASH CY LTD, registrada no Chipre (Reg. No. HE458373, Limassol).
 
@@ -6697,3 +6697,2311 @@ Esta é uma página de afiliado, não o site oficial da Safirion — o oficial �
 - Reclame Aqui — Safirion (nota, reclamações, respostas)
 
 Este site é uma página independente de divulgação e não é operado pela Safirion. A plataforma é operada pela THUNDER FLASH LLC (Reg. L 22853, Nevis) e os pagamentos são processados pela THUNDER FLASH CY LTD (Reg. HE458373, Chipre). A Safirion não é regulada pela CVM. Operar com alavancagem envolve risco de perda do capital investido. Podemos receber comissão pelos cadastros feitos a partir dos nossos links.
+
+## DARF de day trade: como calcular e pagar
+URL: https://safirion.com.br/blog/darf-day-trade/
+
+A conta do mês em cinco linhas, com a regra oficial ao lado
+
+### O que é o DARF do day trade
+
+É a guia com que você mesmo paga o imposto do mês em que lucrou.
+
+DARF de day trade é a guia com que a pessoa física paga o imposto sobre o lucro de operações abertas e fechadas no mesmo dia na bolsa. A alíquota é de 20% sobre o ganho líquido do mês, com código 6015 e vencimento no último dia útil do mês seguinte.
+
+A corretora brasileira retém só uma antecipação pequena, o chamado dedo-duro. O resto é cálculo seu: somar o que ganhou e perdeu no mês, tirar os custos, abater prejuízo antigo e emitir a guia. Quem deixa para o ano seguinte descobre a multa junto com o imposto.
+
+Um aviso antes da conta: este DARF é o da bolsa brasileira. Resultado em plataforma de fora, como a Safirion, não tem retenção na fonte nem usa este código. Esse caso tem regra própria e está no guia de imposto de renda em corretora no exterior.
+
+### Cinco regras que decidem o valor
+
+Cada linha vem da página de renda variável da Receita Federal.
+
+| Regra | Como funciona |
+| --- | --- |
+| Alíquota | 20% sobre o ganho líquido mensal do day trade |
+| Retenção na fonte | 1% sobre o resultado positivo, descontado do imposto do mês |
+| Código do DARF | 6015, pessoa física, ganhos líquidos em bolsa |
+| Vencimento | Último dia útil do mês seguinte ao do ganho |
+| Valor mínimo | Guia abaixo de R$ 10 não se paga: o valor soma no mês seguinte |
+
+Fonte: Receita Federal — Renda variável, bolsa de valores · lida em 14/11/2026
+
+Day trade, para a Receita, é comprar e vender o mesmo ativo no mesmo dia, pela mesma corretora. Se a venda fica para o dia seguinte, a operação é comum (o swing trade), que tem alíquota de 15% e outra conta. A diferença está explicada em swing trade paga imposto?.
+
+Isenção de vendas até R$ 20 mil no mês não vale para day trade. Ela é só das ações vendidas em operação comum. Um lucro pequeno no day trade já gera imposto.
+
+### O cálculo, linha por linha
+
+Um mês de exemplo, com números redondos, do resultado à guia.
+
+#### Some o resultado do mês
+
+Junte os ganhos e as perdas de todas as operações de day trade do mês, já com corretagem e emolumentos descontados. A nota de corretagem traz os dois.
+
+#### Abata o prejuízo antigo
+
+Prejuízo de day trade de meses anteriores entra aqui e diminui a base. Só prejuízo de day trade: o de operação comum fica na outra conta.
+
+#### Aplique os 20%
+
+Sobre o que sobrou, a alíquota de day trade. Esse é o imposto devido do mês.
+
+#### Desconte o dedo-duro
+
+Tire o 1% que a corretora já reteve. O informe da corretora mostra o valor.
+
+#### Emita a guia
+
+Código 6015, pagamento até o último dia útil do mês seguinte. Abaixo de R$ 10, guarde para o próximo mês.
+
+| Linha da conta | Valor no exemplo |
+| --- | --- |
+| Resultado líquido do mês (com custos) | R$ 2.000 |
+| (−) Prejuízo de day trade de meses anteriores | R$ 500 |
+| (=) Base de cálculo | R$ 1.500 |
+| (×) Alíquota de 20% | R$ 300 |
+| (−) IRRF de 1% retido sobre o resultado positivo | R$ 20 |
+| (=) Valor do DARF, código 6015 | R$ 280 |
+
+Se o mês tivesse fechado com imposto de R$ 8, não haveria guia: o valor fica anotado e soma no mês seguinte. Com R$ 18 no outro mês, o DARF sai com os dois juntos, no prazo do segundo mês.
+
+E se o mês fechar no vermelho? Não há DARF. O prejuízo vira crédito para os próximos meses de day trade, sem prazo para acabar, desde que fique registrado mês a mês na declaração anual.
+
+### Prejuízo e dedo-duro: o que entra e o que não
+
+Os dois descontos permitidos, e onde cada um se esgota.
+
+#### Prejuízo de day trade abate day trade
+
+Perda de um mês reduz o ganho de day trade dos meses seguintes. Nunca se mistura com o resultado das operações comuns.
+
+#### Sem prazo de validade
+
+O prejuízo acumulado não vence. Ele só se perde se não for registrado e você não conseguir provar de onde veio.
+
+#### O 1% já pago vira desconto
+
+A retenção na fonte é antecipação do imposto. Sai do DARF do mês e, sobrando, dos meses seguintes.
+
+#### Custo de mesa não abate
+
+Curso, sinal pago, assinatura de gráfico e internet não são custo da operação. Só entram os custos da nota de corretagem.
+
+Fonte: Receita Federal — Renda variável, bolsa de valores · lida em 14/11/2026
+
+A forma prática de não errar é uma planilha com uma linha por mês e três colunas: resultado do day trade, prejuízo acumulado e imposto pago. A Receita também oferece o ReVar, ferramenta oficial de renda variável dentro do Meu Imposto de Renda, que ajuda a apurar e a emitir a guia.
+
+Quer treinar o controle sem dinheiro na mesa? A conta demo serve para ensaiar a rotina de anotar cada operação antes de operar de verdade.
+
+### Como emitir o DARF no Sicalc
+
+O programa da Receita calcula a guia, inclusive com multa se o prazo passou.
+
+#### Abra o Sicalc Web
+
+Entre no site do Sicalc, escolha o contribuinte pessoa física e o seu domicílio.
+
+#### Informe o código 6015
+
+Digite 6015. O próprio sistema mostra a descrição de ganhos líquidos em operações em bolsa.
+
+#### Período de apuração
+
+Coloque o mês em que o ganho aconteceu, não o mês em que você está pagando.
+
+#### Valor do principal
+
+Informe o imposto já com o dedo-duro descontado. Se o prazo passou, o Sicalc soma multa e juros sozinho.
+
+#### Emita e pague
+
+Gere a guia com o seu CPF e pague no banco, pelo aplicativo ou por Pix quando a guia trouxer o código.
+
+Fonte: Receita Federal — Sicalc Web
+
+### DARF atrasado: multa e juros
+
+Pagar atrasado custa menos do que não pagar. A regra é esta.
+
+| Item | Como se calcula |
+| --- | --- |
+| Multa de mora | 0,33% por dia de atraso, com teto de 20% |
+| Juros | Selic acumulada desde o mês seguinte ao vencimento, mais 1% no mês do pagamento |
+| Pago no mês do vencimento | Só a multa, sem juros |
+| Quem calcula | O próprio Sicalc, pela data de pagamento |
+
+Fonte: Receita Federal — Informações úteis sobre o Sicalc · lida em 14/11/2026
+
+No exemplo do mês com DARF de R$ 280, a multa chega no máximo a 20% do valor, mais os juros. Esquecer o mês inteiro sai mais caro do que qualquer centavo de corretagem.
+
+Pior que atrasar é não pagar e declarar o ganho no ano seguinte: a declaração mostra a diferença e a cobrança chega com multa de ofício. Errou o mês? Pague pelo Sicalc antes que a Receita peça.
+
+### Cupom de boas-vindas e o risco que vem junto
+
+Bônus não muda imposto nem risco. Vale saber os dois antes do depósito.
+
+- WELCOME100 Cupom informado na hora do depósito
+- 100% Bônus sobre o valor depositado
+- US$ 10 Depósito mínimo segundo safirion.com
+- Da Safirion Condições regras da promoção
+
+Fonte: Página do cupom WELCOME100, com as condições segundo safirion.com
+
+O bônus segue as condições da promoção da Safirion, inclusive para saque. Leia tudo na página do cupom WELCOME100 antes de depositar, e veja como funciona o depósito mínimo.
+
+Operar envolve risco de perda do capital investido. Só use dinheiro que você pode perder. Somente para maiores de 18 anos. A Safirion não é regulada pela CVM.
+
+### Erros que viram multa
+
+Os que mais aparecem em quem começa a pagar o próprio imposto.
+
+- Usar a isenção de R$ 20 mil no day trade. Ela não existe para essa modalidade.
+- Misturar prejuízo comum com day trade. Cada um abate só a sua própria conta.
+- Esquecer o dedo-duro. Sem descontar o 1%, você paga a mais.
+- Pôr o mês do pagamento como período. O período é o mês do ganho.
+- Achar que o DARF dispensa a declaração. O ganho e o imposto pago vão para a declaração anual, mês a mês.
+- Usar este código para plataforma de fora. Corretora no exterior segue outra regra.
+
+O passo seguinte é a declaração: o que vai em cada ficha está no guia de day trade no imposto de renda. E se a dúvida é sobre opções binárias, comece por opções binárias é crime? e volte à página inicial para ver como a plataforma funciona.
+
+### Perguntas frequentes
+
+#### Qual é a alíquota do DARF de day trade?
+
+A alíquota é de 20% sobre o ganho líquido do mês nas operações de day trade feitas por pessoa física na bolsa. Operação comum, a que atravessa o dia, paga 15%.
+
+Fonte: Receita Federal — Renda variável, bolsa de valores
+
+#### Qual o código do DARF de day trade?
+
+O código é o 6015, de pessoa física, para ganhos líquidos em operações em bolsa. O mesmo código serve para o imposto das operações comuns.
+
+Fonte: Receita Federal — Sicalc Web
+
+#### Até quando pago o DARF de day trade?
+
+Até o último dia útil do mês seguinte ao mês em que o ganho aconteceu. Lucro em março, pagamento até o último dia útil de abril.
+
+Fonte: Receita Federal — Renda variável, bolsa de valores
+
+#### O que faço se o DARF der menos de R$ 10?
+
+Não emita a guia. O valor abaixo de R$ 10 fica acumulado e é pago junto com o imposto do mês em que a soma passar desse mínimo, no prazo daquele mês.
+
+Fonte: Receita Federal — Renda variável, bolsa de valores
+
+#### O IRRF de 1% do day trade é imposto a mais?
+
+Não. É uma antecipação: a corretora retém 1% do resultado positivo e você desconta esse valor do imposto do mês. O que sobrar abate os meses seguintes.
+
+Fonte: Receita Federal — Renda variável, bolsa de valores
+
+#### Prejuízo no day trade compensa lucro de swing trade?
+
+Não. Prejuízo de day trade só abate ganho de day trade, e prejuízo de operação comum só abate operação comum. As duas contas andam separadas, sem prazo para usar o saldo.
+
+Fonte: Receita Federal — Renda variável, bolsa de valores
+
+#### Quanto custa pagar o DARF atrasado?
+
+Multa de 0,33% por dia de atraso, limitada a 20%, mais juros pela Selic acumulada a partir do mês seguinte ao vencimento e 1% no mês do pagamento. O Sicalc faz a conta.
+
+Fonte: Receita Federal — Informações úteis sobre o Sicalc
+
+#### Opções binárias e forex usam o DARF 6015?
+
+Não. O 6015 é de operação em bolsa brasileira. Resultado em plataforma no exterior segue a regra de aplicação fora do país, explicada no guia de corretora no exterior deste blog.
+
+Fonte: Receita Federal — Sicalc Web
+
+#### Pagar o DARF dispensa a declaração anual?
+
+Não. O DARF quita o imposto do mês; a declaração anual registra o resultado de cada mês, o prejuízo acumulado e o imposto já pago. As duas obrigações existem juntas.
+
+Fonte: Receita Federal — Meu Imposto de Renda
+
+### Fontes desta página
+
+- Receita Federal — Renda variável: bolsa de valores
+- Receita Federal — Sicalc Web (emissão de DARF)
+- Receita Federal — Informações úteis sobre o Sicalc (multa e juros)
+- Receita Federal — Manual do ReVar, renda variável
+- Instrução Normativa RFB nº 1.585/2015 (renda variável)
+- Lei nº 11.033/2004 (tributação em bolsa)
+- Cupom WELCOME100: condições segundo a Safirion
+
+## Day trade no imposto de renda: como declarar
+URL: https://safirion.com.br/blog/day-trade-no-imposto-de-renda/
+
+O imposto se paga no mês; a declaração confere o ano inteiro
+
+### Onde o day trade entra na declaração
+
+Numa ficha própria, mês a mês, separado das operações comuns.
+
+Quem fez day trade na bolsa declara o resultado de cada mês na ficha de Renda Variável da declaração anual, em Operações Comuns/Day-Trade, junto com o prejuízo acumulado, o imposto retido e o DARF pago. O imposto já foi pago mês a mês; a declaração registra e confere.
+
+A declaração não cobra imposto de novo. Ela cruza o que você informou com o que a corretora e a bolsa mandaram para a Receita. Mês com lucro sem DARF pago, prejuízo que aparece do nada ou retenção que não bate viram pendência, e pendência vira malha fina.
+
+O cálculo do mês está no guia do DARF de day trade. Aqui o assunto é o registro anual.
+
+### Quem precisa declarar
+
+Dois gatilhos da bolsa, e um motivo para declarar mesmo sem obrigação.
+
+#### Vendeu mais de R$ 40 mil no ano
+
+Operação em bolsa cuja soma passou de R$ 40 mil no ano obriga a declarar, mesmo sem lucro.
+
+#### Teve ganho tributável
+
+Qualquer ganho líquido sujeito a imposto em bolsa também obriga, seja qual for o valor vendido. Day trade com lucro entra aqui.
+
+#### Tem prejuízo para usar
+
+Sem obrigação, declarar ainda vale a pena: é a declaração que guarda o prejuízo para abater lucros futuros.
+
+#### Os outros critérios continuam
+
+Renda, patrimônio e as demais regras do ano valem junto. Basta um deles para a obrigação existir.
+
+Fonte: Receita Federal — Quem deve declarar · lida em 14/11/2026
+
+### A ficha de Renda Variável
+
+O programa pede um quadro por mês, com day trade e operação comum em colunas separadas.
+
+| Campo do mês | O que informar |
+| --- | --- |
+| Resultado líquido do mês | Ganho ou perda do day trade, já com custos, na coluna de day trade |
+| Resultado negativo até o mês anterior | O prejuízo acumulado de day trade que ainda não foi usado |
+| Imposto retido na fonte | O 1% do day trade que a corretora reteve no mês |
+| Imposto pago | O valor do DARF código 6015 pago para aquele mês |
+| Alíquota | O programa aplica 20% no day trade e 15% na operação comum |
+
+Fonte: Receita Federal — Renda variável, bolsa de valores · lida em 14/11/2026
+
+Mês sem operação fica em branco. Mês com prejuízo leva o número negativo, e o programa carrega o saldo para o mês seguinte sozinho. O cuidado é um só: o resultado tem de ser o mesmo que você usou para pagar o DARF.
+
+### Quatro meses, do lucro ao prejuízo
+
+Como o saldo negativo atravessa os meses e some do imposto.
+
+| Mês | Resultado do day trade | Prejuízo a usar depois | DARF pago |
+| --- | --- | --- | --- |
+| Janeiro | + R$ 1.000 | Zero | R$ 190 (R$ 200 menos R$ 10 retidos) |
+| Fevereiro | − R$ 1.500 | R$ 1.500 | Não há |
+| Março | + R$ 1.000 | R$ 500 | Não há: o prejuízo cobriu o ganho |
+| Abril | + R$ 2.000 | Zero | R$ 280 (R$ 300 sobre R$ 1.500, menos R$ 20 retidos) |
+
+Em março houve lucro e nenhum imposto, porque o prejuízo de fevereiro absorveu o ganho. Em abril sobrou só R$ 500 de prejuízo para abater, e a base caiu de R$ 2.000 para R$ 1.500. Na declaração, os quatro meses aparecem exatamente assim, um embaixo do outro.
+
+Se o prejuízo de fevereiro não estivesse registrado, março e abril pagariam imposto cheio. Por isso o registro mensal vale dinheiro.
+
+### As outras fichas que o day trade toca
+
+Três lugares que costumam ficar para trás.
+
+- Bens e direitos: ações ou outros ativos que você ainda tinha no último dia do ano, pelo custo de compra. Day trade fecha no mesmo dia, mas posição que sobrou de swing trade entra aqui.
+- Rendimentos isentos: ganho de operação comum em mês com vendas de ações até R$ 20 mil. Day trade nunca entra nesta ficha.
+- Informe da corretora: é dele que saem o imposto retido no ano e o saldo em conta para conferir com o que você somou.
+- Saldo em conta na corretora: dinheiro parado também é bem e aparece na declaração.
+
+### Prazo, documentos e o ReVar
+
+O que separar antes de abrir o programa.
+
+#### Junte as notas de corretagem
+
+Uma por pregão. Elas trazem o resultado de cada operação e os custos.
+
+#### Baixe o informe da corretora
+
+Ele resume o imposto retido no ano e as posições no fim do ano.
+
+#### Confira com a sua planilha
+
+Mês a mês: resultado, prejuízo acumulado e DARF pago precisam bater.
+
+#### Use o ReVar se quiser
+
+A ferramenta oficial de renda variável da Receita ajuda a apurar e conferir os meses.
+
+#### Entregue no prazo do ano
+
+A declaração de 2026 terminou em 29/05/2026. O calendário de 2027 sai na página da Receita.
+
+Fonte: Receita Federal — prazo da declaração de 2026 encerrado em 29/05/2026
+
+Quer criar o hábito do registro antes de pôr dinheiro? A conta demo serve para treinar a planilha operação por operação, e o guia de erros de iniciante no day trade mostra o que mais pesa no começo.
+
+### Opções binárias e plataforma de fora
+
+A ficha de renda variável é da bolsa brasileira. O resto segue outra regra.
+
+Resultado em plataforma estrangeira, como a Safirion, não tem nota de corretagem brasileira, retenção na fonte nem DARF 6015. A Lei 14.754/2023 passou a tratar o rendimento de aplicação financeira no exterior na declaração anual, em campo próprio, desde 2024.
+
+Se o resultado de opção binária entra nessa regra é enquadramento que um contador faz com o seu extrato. O mapa do que existe, com as páginas da Receita, está no guia de imposto de renda em corretora no exterior.
+
+Fonte: Lei nº 14.754/2023 (aplicações financeiras no exterior)
+
+- WELCOME100 Cupom informado na hora do depósito
+- 100% Bônus sobre o valor depositado
+- US$ 10 Depósito mínimo segundo safirion.com
+- Da Safirion Condições regras da promoção
+
+Fonte: Página do cupom WELCOME100, com as condições segundo safirion.com
+
+O bônus segue as condições da promoção da Safirion, inclusive para saque, e não muda nada no imposto. As regras estão na página do cupom WELCOME100.
+
+### Erros que levam à malha
+
+Quase todos vêm de não ter registrado o mês na hora.
+
+- Somar o ano inteiro numa linha. A ficha é mensal; total anual não serve.
+- Juntar day trade e operação comum. São colunas e alíquotas diferentes.
+- Esquecer o mês com prejuízo. Sem ele, o saldo para abater some.
+- Não informar o imposto retido. O programa acha que falta imposto e cobra.
+- Declarar lucro sem DARF pago. Pague antes pelo Sicalc, com multa e juros, e só então declare.
+- Pôr plataforma de fora na ficha da bolsa. Exterior tem regra própria.
+
+Para as outras dúvidas da família, leia swing trade paga imposto? e opções binárias é crime?, ou volte à página inicial.
+
+Operar envolve risco de perda do capital investido. Só use dinheiro que você pode perder. Somente para maiores de 18 anos. A Safirion não é regulada pela CVM. Este guia não é consultoria tributária.
+
+### Perguntas frequentes
+
+#### Onde declaro day trade no imposto de renda?
+
+Na ficha Renda Variável, em Operações Comuns/Day-Trade, mês a mês, na coluna de day trade. Cada mês leva o resultado, o prejuízo acumulado, o imposto retido e o DARF pago.
+
+Fonte: Receita Federal — Renda variável, bolsa de valores
+
+#### Quem fez day trade é obrigado a declarar?
+
+É, se teve ganho líquido sujeito a imposto em bolsa ou se as operações em bolsa somaram mais de R$ 40 mil no ano. Os outros critérios da declaração continuam valendo junto.
+
+Fonte: Receita Federal — Quem deve declarar
+
+#### Tive só prejuízo no day trade. Preciso declarar?
+
+Pode não ser obrigado, mas vale declarar: é o registro na declaração que guarda o prejuízo para abater os ganhos de day trade dos próximos meses e anos.
+
+Fonte: Receita Federal — Renda variável, bolsa de valores
+
+#### O prejuízo do day trade vence?
+
+Não há prazo. O saldo negativo de day trade passa de mês em mês e de um ano para o outro, enquanto estiver registrado. Ele só abate ganho de day trade.
+
+Fonte: Receita Federal — Renda variável, bolsa de valores
+
+#### Onde informo o IRRF de 1% do day trade?
+
+No campo de imposto retido na fonte do mês, dentro da ficha de renda variável. O valor sai da nota de corretagem e do informe da corretora.
+
+Fonte: Receita Federal — Renda variável, bolsa de valores
+
+#### Esqueci de pagar um DARF. Declaro mesmo assim?
+
+Pague antes. Emita a guia em atraso no Sicalc, que soma multa e juros, e informe o valor pago no mês certo da ficha. Declarar o lucro sem o DARF deixa a pendência à vista.
+
+Fonte: Receita Federal — Informações úteis sobre o Sicalc
+
+#### Qual foi o prazo da declaração de 2026?
+
+A Receita encerrou o prazo da declaração de 2026 em 29/05/2026. O calendário do ano seguinte é publicado pela própria Receita.
+
+Fonte: Receita Federal — notícia do fim do prazo
+
+#### Opções binárias entram na ficha de renda variável?
+
+Não. A ficha é de operações na bolsa brasileira. Resultado em plataforma no exterior segue a regra de aplicação fora do país, que tem campo próprio na declaração.
+
+Fonte: Lei nº 14.754/2023
+
+#### O ReVar substitui a declaração?
+
+Não. O ReVar é a ferramenta da Receita para apurar a renda variável e ajudar com as guias. A declaração anual continua sendo entregue no programa ou no Meu Imposto de Renda.
+
+Fonte: Receita Federal — Manual do ReVar
+
+### Fontes desta página
+
+- Receita Federal — Renda variável: bolsa de valores
+- Receita Federal — Quem deve declarar
+- Receita Federal — Manual do ReVar, renda variável
+- Receita Federal — Fim do prazo da declaração de 2026 (29/05/2026)
+- Receita Federal — Informações úteis sobre o Sicalc
+- Lei nº 14.754/2023 (aplicações financeiras no exterior)
+- Cupom WELCOME100: condições segundo a Safirion
+
+## Swing trade paga imposto? Paga, com uma isenção
+URL: https://safirion.com.br/blog/swing-trade-paga-imposto/
+
+A regra dos 15%, o limite de R$ 20 mil e a conta pronta
+
+### Sim, swing trade paga imposto
+
+Mas não em todo mês, e não do mesmo jeito que o day trade.
+
+Swing trade paga imposto, sim: 15% sobre o ganho líquido do mês nas operações comuns da bolsa, pago por DARF com código 6015 até o último dia útil do mês seguinte. A exceção é a venda de ações à vista que some até R$ 20 mil no mês, cujo ganho é isento.
+
+Na linguagem da Receita, swing trade é operação comum: qualquer compra e venda que não começa e termina no mesmo dia. O imposto é mensal e é você quem calcula; a corretora só retém um valor simbólico, o dedo-duro, que serve para a Receita saber que houve venda.
+
+Este guia trata da bolsa brasileira. Resultado em plataforma no exterior, como a Safirion, segue outra regra, explicada no guia de imposto de renda em corretora no exterior.
+
+### Swing trade e day trade: o que muda no imposto
+
+Seis diferenças, todas na página de renda variável da Receita Federal.
+
+| Item | Swing trade | Day trade |
+| --- | --- | --- |
+| Alíquota | 15% do ganho líquido | 20% do ganho líquido |
+| Retenção na fonte | 0,005% do valor de venda | 1% do resultado positivo |
+| Isenção | Vendas de ações até R$ 20 mil no mês | Não existe |
+| Prejuízo | Abate só operação comum | Abate só day trade |
+| Código do DARF | 6015 | 6015 |
+| Vencimento | Último dia útil do mês seguinte | Último dia útil do mês seguinte |
+
+Fonte: Receita Federal — Renda variável, bolsa de valores · lida em 14/11/2026
+
+A diferença de cinco pontos na alíquota pesa em quem opera muito. E a isenção, que só o swing trade tem, muda a conta de quem vende pouco por mês. O cálculo do outro lado está em DARF de day trade.
+
+### Os R$ 20 mil sem pegadinha
+
+A regra é curta, e cada palavra dela conta.
+
+#### Conta o total vendido
+
+O limite de R$ 20 mil é sobre a soma das VENDAS de ações no mês, não sobre o lucro. Lucro alto com venda baixa pode ser isento.
+
+#### Só ações no mercado à vista
+
+A lei fala em ações vendidas no mercado à vista da bolsa. Fundo imobiliário e ETF ficam fora da isenção.
+
+#### Passou do limite, tributa tudo
+
+Vendeu acima de R$ 20 mil no mês, o ganho inteiro do mês paga 15%, não só o que passou do limite.
+
+#### Day trade não entra
+
+Operação aberta e fechada no mesmo dia nunca é isenta, mesmo com venda pequena.
+
+Fonte: Lei nº 11.033/2004, art. 3º, inciso I
+
+Quem vende em lotes pode planejar o calendário: dividir a venda entre dois meses mantém cada mês dentro do limite. A regra é por mês do calendário, e a data que vale é a do pregão da venda.
+
+### Dois meses, duas contas
+
+Um mês isento e um mês com imposto, com números redondos.
+
+| Linha da conta | Mês A | Mês B |
+| --- | --- | --- |
+| Total vendido em ações no mês | R$ 18.000 | R$ 35.000 |
+| Ganho líquido (já com custos) | R$ 2.500 | R$ 4.000 |
+| Vendas acima de R$ 20 mil? | Não: ganho isento | Sim: ganho tributado |
+| Imposto de 15% | Zero | R$ 600 |
+| (−) Dedo-duro de 0,005% sobre a venda | Não se aplica | R$ 1,75 |
+| (=) DARF, código 6015 | Não há guia | R$ 598,25 |
+
+Repare no mês B: se o investidor tivesse vendido R$ 21.000 em vez de R$ 35.000, o ganho também seria tributado por inteiro. A linha que decide é a do total vendido.
+
+No mês isento não há guia, mas o ganho vai para a declaração anual, na ficha de rendimentos isentos. Isento não é invisível.
+
+### O que é o IRRF de 0,005%
+
+Um centavo de imposto que serve de aviso à Receita.
+
+Nas operações comuns, a corretora retém 0,005% sobre o valor da venda, não sobre o lucro. Retenção de até R$ 1 é dispensada, por isso muita nota de corretagem mostra zero.
+
+Esse valor é antecipação do imposto: entra como desconto no DARF do mês. A função real dele é outra: avisar a Receita, pelo seu CPF, que você vendeu ativos naquele mês.
+
+Fonte: Lei nº 11.033/2004, art. 2º
+
+Antes de operar com dinheiro, vale treinar a rotina de registro de cada operação. A conta demo e o guia de gerenciamento de banca ajudam a montar o controle desde o primeiro dia.
+
+### Como pagar: DARF 6015 e prazo
+
+A guia é a mesma do day trade; a conta é que muda.
+
+#### Feche o mês
+
+Some os ganhos e as perdas das vendas comuns do mês, com corretagem e emolumentos descontados.
+
+#### Confira o limite
+
+Some o total vendido em ações. Até R$ 20 mil, o ganho de ações é isento e não há guia.
+
+#### Abata prejuízo antigo
+
+Prejuízo de operação comum de meses anteriores reduz a base. Prejuízo de day trade não entra.
+
+#### Calcule e desconte
+
+Aplique 15% e tire o dedo-duro retido no mês.
+
+#### Emita no Sicalc
+
+Código 6015, período de apuração igual ao mês da venda, pagamento até o último dia útil do mês seguinte. Abaixo de R$ 10, o valor soma no mês seguinte.
+
+Fonte: Receita Federal — Sicalc Web
+
+Passou do prazo? O Sicalc calcula multa e juros sozinho. A regra completa do atraso está no guia do DARF de day trade, que vale igual aqui.
+
+### O que vai para a declaração anual
+
+Pagar o mês não encerra o assunto.
+
+- Ficha de renda variável: o resultado de cada mês das operações comuns, o prejuízo acumulado e o imposto pago em DARF.
+- Rendimentos isentos: o ganho dos meses em que as vendas de ações ficaram até R$ 20 mil.
+- Bens e direitos: as ações que você ainda tinha no último dia do ano, pelo custo de compra, nunca pelo preço de tela.
+- Imposto retido: o dedo-duro do ano, que aparece no informe da corretora.
+
+O passo a passo de cada ficha está no guia de day trade no imposto de renda, que cobre também as operações comuns.
+
+### Cupom, risco e erros que custam caro
+
+O bônus não muda o imposto; o descuido muda.
+
+- WELCOME100 Cupom informado na hora do depósito
+- 100% Bônus sobre o valor depositado
+- US$ 10 Depósito mínimo segundo safirion.com
+- Da Safirion Condições regras da promoção
+
+Fonte: Página do cupom WELCOME100, com as condições segundo safirion.com
+
+O bônus segue as condições da promoção da Safirion, inclusive para saque. Leia tudo na página do cupom WELCOME100 antes de depositar.
+
+Os erros mais comuns no swing trade: contar o lucro em vez do total vendido no limite de R$ 20 mil, pôr FII ou ETF na isenção, misturar prejuízo de day trade e esquecer de declarar o mês isento. Para a dúvida sobre outros produtos, leia opções binárias é seguro? ou volte à página inicial.
+
+Operar envolve risco de perda do capital investido. Só use dinheiro que você pode perder. Somente para maiores de 18 anos. A Safirion não é regulada pela CVM.
+
+### Perguntas frequentes
+
+#### Qual a alíquota do imposto no swing trade?
+
+É de 15% sobre o ganho líquido do mês nas operações comuns da bolsa. No day trade a alíquota sobe para 20%.
+
+Fonte: Receita Federal — Renda variável, bolsa de valores
+
+#### Swing trade com lucro pequeno paga imposto?
+
+Depende do total vendido, não do lucro. Se as vendas de ações no mercado à vista somarem até R$ 20 mil no mês, o ganho é isento. Acima disso, todo o ganho paga 15%.
+
+Fonte: Lei nº 11.033/2004, art. 3º
+
+#### A isenção de R$ 20 mil vale para FII e ETF?
+
+Não. A isenção é das ações vendidas no mercado à vista. Cotas de fundo imobiliário e de ETF ficam fora dela e seguem a própria regra de tributação.
+
+Fonte: Receita Federal — Renda variável, bolsa de valores
+
+#### O que é o dedo-duro no swing trade?
+
+É a retenção de 0,005% sobre o valor de cada venda, feita pela corretora. Funciona como antecipação do imposto e como aviso à Receita de que houve venda no seu CPF.
+
+Fonte: Lei nº 11.033/2004, art. 2º
+
+#### Qual o código do DARF do swing trade?
+
+O código é o 6015, o mesmo do day trade, com pagamento até o último dia útil do mês seguinte ao da venda.
+
+Fonte: Receita Federal — Sicalc Web
+
+#### Prejuízo do swing trade pode abater lucro do day trade?
+
+Não. Prejuízo de operação comum só abate ganho de operação comum, e o do day trade só abate day trade. O saldo de cada um não vence.
+
+Fonte: Receita Federal — Renda variável, bolsa de valores
+
+#### Mês isento precisa ir na declaração?
+
+Sim. O ganho isento vai na ficha de rendimentos isentos e não tributáveis da declaração anual. Isento significa que não paga, não que some do registro.
+
+Fonte: Receita Federal — Meu Imposto de Renda
+
+#### E se o DARF der menos de R$ 10?
+
+A guia não é emitida. O valor fica acumulado e é pago junto com o do mês em que a soma passar de R$ 10, no prazo daquele mês.
+
+Fonte: Receita Federal — Renda variável, bolsa de valores
+
+#### Swing trade em plataforma no exterior segue a mesma regra?
+
+Não. Isenção de R$ 20 mil, dedo-duro e DARF 6015 são regras da bolsa brasileira. Aplicação no exterior tem regra própria, explicada no guia de corretora no exterior deste blog.
+
+Fonte: Lei nº 14.754/2023 (aplicações no exterior)
+
+### Fontes desta página
+
+- Receita Federal — Renda variável: bolsa de valores
+- Lei nº 11.033/2004 (alíquota, retenção e isenção em bolsa)
+- Receita Federal — Sicalc Web (emissão de DARF)
+- Instrução Normativa RFB nº 1.585/2015 (renda variável)
+- Lei nº 14.754/2023 (aplicações financeiras no exterior)
+- B3 — Brasil, Bolsa, Balcão
+- Cupom WELCOME100: condições segundo a Safirion
+
+## Opções binárias é crime no Brasil?
+URL: https://safirion.com.br/blog/opcoes-binarias-e-crime/
+
+Quem a lei pune, e o que ela não protege
+
+### Operar não é crime; oferecer sem autorização é
+
+O que a lei descreve é a conduta de quem opera a instituição, não a do cliente.
+
+Operar opções binárias como cliente não está descrito como crime na lei brasileira. O crime previsto é de quem faz operar instituição financeira sem autorização, na Lei 7.492/86, ou atua no mercado de valores mobiliários sem registro, na Lei 6.385/76. Não ser crime, porém, não dá ao cliente proteção de órgão brasileiro.
+
+Muita gente lê que opção binária é ilegal e conclui que quem opera pode ser preso. A lei não diz isso. Ela pune quem monta, opera ou oferece o serviço sem a autorização exigida. O cliente fica de fora do artigo, mas também fica de fora da rede de proteção que existe na bolsa brasileira.
+
+Esta página explica as leis, o papel da CVM e o que conferir antes de abrir conta. Não é parecer jurídico: caso concreto é com advogado.
+
+### As duas leis que tratam do assunto
+
+Os verbos são fazer operar e atuar: condutas de quem oferece o serviço.
+
+| Lei | O que descreve | Pena prevista |
+| --- | --- | --- |
+| Lei 7.492/86, art. 16 | Fazer operar, sem a devida autorização, instituição financeira, inclusive de distribuição de valores mobiliários ou de câmbio | Reclusão de 1 a 4 anos, e multa |
+| Lei 6.385/76, art. 27-E | Atuar no mercado de valores mobiliários em atividade que exige autorização ou registro, sem tê-los | Detenção de 6 meses a 2 anos, e multa |
+
+Fonte: Lei nº 7.492/1986 e Lei nº 6.385/1976, textos atualizados · lidos em 14/11/2026
+
+A primeira é a lei dos crimes contra o sistema financeiro. A segunda é a lei do mercado de valores mobiliários, que criou a CVM. Nas duas, quem responde é a pessoa que faz a instituição funcionar ou exerce a atividade sem a autorização, e não quem abriu uma conta como cliente.
+
+### Quem só opera comete crime?
+
+Não pela lei. Mas há condutas que mudam de lado.
+
+#### Abrir conta e operar
+
+Não há artigo de lei que descreva como crime a conduta de quem só opera como cliente, com o próprio dinheiro.
+
+#### Gerir dinheiro de outros
+
+Receber dinheiro de terceiros para operar por eles, com promessa de retorno, é outra conduta, e ela se aproxima do que as leis descrevem.
+
+#### Prometer lucro garantido
+
+Promessa de ganho certo com depósito de terceiros costuma ser golpe, tratado como estelionato no Código Penal.
+
+#### Esconder o resultado
+
+Não declarar ganho é problema tributário, não penal de saída. Mas é problema, e cresce com multa.
+
+### O que a CVM faz
+
+Ela não registra plataforma estrangeira de opções binárias; ela alerta.
+
+- Não registra. Plataforma de opções binárias de fora que oferece o produto ao público brasileiro não tem registro na CVM.
+- Alerta e suspende. A CVM publica alertas e atos de suspensão, as stop orders, contra quem faz oferta irregular no Brasil.
+- Mantém a consulta pública. O cadastro de participantes mostra quem tem registro; quem não aparece não tem.
+- Recebe denúncia. O canal de atendimento da CVM recebe denúncia de oferta irregular e de golpe.
+
+No caso desta plataforma: a Safirion não é regulada pela CVM. A empresa por trás é a THUNDER FLASH LLC, registrada em Nevis com o número L 22853, e os pagamentos são da THUNDER FLASH CY LTD, de Chipre. O detalhe está em a Safirion e a CVM e em quem é a THUNDER FLASH LLC.
+
+### Não ser crime não é ser protegido
+
+A diferença aparece no dia em que algo dá errado.
+
+| Item | Na bolsa brasileira | Em plataforma de fora |
+| --- | --- | --- |
+| Quem acompanha | CVM e a própria bolsa | Nenhum órgão brasileiro |
+| Falha de corretora | MRP, o mecanismo de ressarcimento da BSM | O contrato com a empresa, no foro dela |
+| Imposto | DARF e ficha de renda variável | Regra de aplicação no exterior |
+| Informe de rendimentos | Enviado pela corretora | Não vem no padrão brasileiro |
+
+Fonte: CVM, B3 e BSM Supervisão de Mercados · páginas oficiais lidas em 14/11/2026
+
+Quem decide operar fora sabe que o risco é duplo: o do mercado, que pode levar o dinheiro da operação, e o da empresa, que fica fora do alcance de qualquer órgão daqui. O primeiro se controla com gestão de banca; o segundo, só com a escolha de onde depositar.
+
+Se for testar, comece pela conta demo, que não usa dinheiro real.
+
+### Cinco conferências que levam dez minutos
+
+Servem para qualquer plataforma, inclusive esta.
+
+#### Consulte a CVM
+
+Procure o nome da empresa na consulta de participantes e na lista de alertas. Saber que não há registro já é informação.
+
+#### Leia quem é a empresa
+
+Rodapé, termos e contrato dizem o nome jurídico e o país. Desconfie de site que não diz.
+
+#### Confira o endereço
+
+O oficial da Safirion é safirion.com, com a área de conta em trade.safirion.com. Endereço parecido é risco de página falsa.
+
+#### Recuse promessa de lucro
+
+Gerente que garante ganho ou pede Pix para conta de pessoa física é sinal de golpe.
+
+#### Comece pequeno
+
+Só deposite o que pode perder, depois de testar a plataforma na demo.
+
+Fonte: CVM — consulta de participantes no gov.br
+
+Para a dúvida sobre golpe, leia a Safirion é golpe ou não? e opções binárias é seguro?.
+
+### Imposto, cupom e o risco por escrito
+
+Ser ou não crime não muda a obrigação de declarar.
+
+Ganho em plataforma estrangeira é renda de quem mora no Brasil e entra na declaração anual pela regra de aplicação no exterior. O mapa está no guia de imposto de renda em corretora no exterior; o da bolsa, em DARF de day trade.
+
+- WELCOME100 Cupom informado na hora do depósito
+- 100% Bônus sobre o valor depositado
+- US$ 10 Depósito mínimo segundo safirion.com
+- Da Safirion Condições regras da promoção
+
+Fonte: Página do cupom WELCOME100, com as condições segundo safirion.com
+
+O bônus segue as condições da promoção da Safirion, inclusive para saque. Leia tudo na página do cupom WELCOME100 antes de depositar.
+
+### O resumo em quatro linhas
+
+O que a lei diz, o que ela não diz e o que fica com você.
+
+- Operar como cliente: sem crime descrito em lei.
+- Oferecer sem autorização: crime, nas duas leis citadas.
+- Proteção de órgão brasileiro: não existe para plataforma de fora.
+- Imposto: continua devido, pela regra do exterior.
+
+Se decidir conhecer a plataforma, vá pelo endereço oficial e volte à página inicial deste site para os guias de primeiros passos.
+
+Operar envolve risco de perda do capital investido. Só use dinheiro que você pode perder. Somente para maiores de 18 anos. A Safirion não é regulada pela CVM. Esta página não é parecer jurídico.
+
+### Perguntas frequentes
+
+#### Operar opções binárias é crime?
+
+Não há artigo de lei que descreva como crime a conduta de quem opera como cliente. As leis citadas punem quem faz operar instituição ou atua no mercado sem a autorização exigida.
+
+Fonte: Lei nº 7.492/1986, art. 16
+
+#### Posso ser preso por operar opções binárias?
+
+Pela lei, o cliente que opera com o próprio dinheiro não é o alvo dos crimes previstos. A situação muda para quem recebe dinheiro de terceiros ou promete lucro: isso é outra conduta.
+
+Fonte: Lei nº 7.492/1986
+
+#### Opções binárias são proibidas no Brasil?
+
+A oferta ao público brasileiro por quem não tem registro é irregular, e a CVM publica alertas e suspensões contra isso. O que a lei descreve como crime é a oferta sem autorização, não a operação do cliente.
+
+Fonte: CVM — alertas de ofertas e atuações irregulares
+
+#### A Safirion é regulada pela CVM?
+
+Não. A Safirion não é regulada pela CVM. A empresa é a THUNDER FLASH LLC, registrada em Nevis com o número L 22853, e os pagamentos são da THUNDER FLASH CY LTD, de Chipre.
+
+Fonte: CVM — consulta de participantes
+
+#### O que é uma stop order da CVM?
+
+É o ato com que a CVM manda suspender uma oferta irregular feita ao público brasileiro. As decisões ficam na página de alertas do órgão.
+
+Fonte: CVM — alertas de ofertas e atuações irregulares
+
+#### Quem pode ser punido pela Lei 7.492/86?
+
+Quem faz operar instituição financeira, inclusive de distribuição de valores mobiliários ou de câmbio, sem a devida autorização. A pena é de reclusão de 1 a 4 anos, e multa.
+
+Fonte: Lei nº 7.492/1986, art. 16
+
+#### Se não é crime, por que é arriscado?
+
+Porque nenhum órgão brasileiro acompanha a plataforma de fora. Em disputa, vale o contrato com a empresa, no país dela, e não há mecanismo de ressarcimento como o da bolsa.
+
+Fonte: BSM Supervisão de Mercados
+
+#### Preciso declarar ganhos com opções binárias?
+
+Sim. Quem mora no Brasil declara renda e bens, inclusive no exterior. A regra de aplicação fora do país está explicada no guia de corretora no exterior deste blog.
+
+Fonte: Receita Federal — Meu Imposto de Renda
+
+#### Como denunciar golpe com opções binárias?
+
+Pelo canal de atendimento da CVM, no gov.br, e com boletim de ocorrência se houve perda de dinheiro. Guarde prints, comprovantes e o endereço do site.
+
+Fonte: CVM no gov.br
+
+### Fontes desta página
+
+- Lei nº 7.492/1986 (crimes contra o sistema financeiro), texto atualizado
+- Lei nº 6.385/1976 (mercado de valores mobiliários e CVM)
+- CVM — alertas de ofertas e atuações irregulares
+- CVM — consulta de participantes (gov.br)
+- CVM no gov.br
+- BSM Supervisão de Mercados (MRP)
+- Cupom WELCOME100: condições segundo a Safirion
+
+## Opções binárias é seguro? E é aposta?
+URL: https://safirion.com.br/blog/opcoes-binarias-e-seguro-ou-aposta/
+
+A conta do payout, o risco da plataforma e o que diz a lei
+
+### Nem seguro, nem aposta pela lei
+
+Mas com a mecânica de tudo ou nada que lembra uma.
+
+Opções binárias não são seguras no sentido de proteger o dinheiro: cada operação pode perder o valor inteiro, o acerto paga menos do que o erro tira e a plataforma de fora não tem órgão brasileiro por trás. Pela lei também não são aposta, mas a mecânica de tudo ou nada é parecida.
+
+Quem pergunta se é seguro quer saber se pode perder dinheiro. Pode, e a forma como o produto paga explica por quê. Quem pergunta se é aposta quer saber se é jogo de sorte. A resposta honesta separa a categoria jurídica da forma de funcionar, e as duas estão abaixo.
+
+Se a dúvida é legal, o guia opções binárias é crime? trata das leis em detalhe.
+
+### Como uma operação binária paga
+
+Duas saídas possíveis, e elas não têm o mesmo tamanho.
+
+Você escolhe o ativo, a direção (acima ou abaixo) e o prazo, que pode ser de segundos a horas. No fim do prazo há só duas saídas: acertou e recebe um percentual do valor, o payout; errou e perde o valor inteiro da operação.
+
+Com R$ 100 e payout de 85%, o acerto rende R$ 85 e o erro tira R$ 100. É essa diferença entre o que se ganha e o que se perde que decide tudo, mais do que a análise do gráfico.
+
+### A taxa de acerto que só empata
+
+Acertar mais da metade das operações ainda pode dar prejuízo.
+
+| Payout do acerto | Acerto mínimo só para empatar |
+| --- | --- |
+| 70% | 58,8% |
+| 75% | 57,1% |
+| 80% | 55,6% |
+| 85% | 54,1% |
+| 90% | 52,6% |
+
+A conta é 1 dividido por (1 + payout). Com payout de 85%, quem acerta 54,1% das vezes termina no zero; abaixo disso, perde. Em 10 operações de R$ 100 com 5 acertos, o saldo é de R$ 425 ganhos contra R$ 500 perdidos.
+
+Por isso o tamanho de cada operação importa tanto: uma sequência normal de erros consome a banca antes de a média aparecer. O guia de gerenciamento de banca mostra os limites que seguram essa sequência.
+
+### É aposta, cassino ou investimento?
+
+Lado a lado, pelo que cada um é de fato.
+
+| Característica | Opção binária | Aposta de quota fixa | Ação na bolsa |
+| --- | --- | --- | --- |
+| Resultado | Tudo ou nada | Tudo ou nada | Varia com o preço |
+| Prazo | Segundos a horas | Até o fim do evento | Sem prazo |
+| O que define o ganho | Payout fixo | Cotação fixa | Preço e dividendos |
+| Quem acompanha no Brasil | Ninguém, se a plataforma é de fora | Ministério da Fazenda, nas casas que ele libera | CVM e a bolsa |
+
+Fonte: Lei nº 14.790/2023 (apostas de quota fixa) e CVM · lidas em 14/11/2026
+
+Pela lei, aposta de quota fixa é a feita em evento esportivo real ou em jogo on-line, e opção binária não está nesse rol. Então não é aposta no sentido legal. Pela mecânica, a semelhança é grande: valor fechado, prazo curto e resultado de sim ou não. Quem trata a operação como palpite repete o comportamento de quem aposta.
+
+Investimento, no sentido de ser dono de um pedaço de algo que pode crescer, também não é: ninguém fica com o ativo. O que se compra é o direito a um pagamento fixo se a direção estiver certa.
+
+### Três riscos que se somam
+
+Mercado, produto e plataforma. O golpe vem por fora dos três.
+
+#### Risco de mercado
+
+O preço vai para o lado errado e a operação perde o valor inteiro. Acontece com qualquer análise.
+
+#### Risco do produto
+
+Como o acerto paga menos que o erro, a média joga contra quem não acerta bem acima da metade.
+
+#### Risco da plataforma
+
+Empresa de fora, sem órgão brasileiro acompanhando. Na Safirion, a THUNDER FLASH LLC, de Nevis, que não é regulada pela CVM.
+
+#### Risco de golpe
+
+Site falso, gerente que promete lucro e sala de sinais paga atacam quem ainda está começando.
+
+Os dois primeiros não somem com estudo; só se controlam com tamanho de operação e limite de perda. O terceiro se decide na escolha de onde depositar. O quarto se evita com as conferências da próxima seção. Treinar na conta demo mostra o efeito do payout sem dinheiro real.
+
+### Seis sinais de golpe
+
+Nenhum deles depende de saber operar.
+
+- Promessa de lucro certo ou de renda por dia.
+- Pedido de Pix para conta de pessoa, fora da área de depósito da plataforma.
+- Gerente que opera por você com a sua senha.
+- Endereço parecido com o oficial, com uma letra trocada.
+- Taxa para liberar saque cobrada por mensagem.
+- Sala de sinais paga com prints de ganho e nenhum histórico.
+
+O endereço oficial da Safirion é safirion.com, com a conta em trade.safirion.com. O caso dela está em a Safirion é golpe ou não?.
+
+### A Europa proibiu para o varejo
+
+Um dado que ajuda a medir o risco do produto.
+
+Em 2018 a ESMA, autoridade europeia de valores mobiliários, proibiu a oferta, a distribuição e a venda de opções binárias a investidores de varejo na União Europeia, com base nas perdas que o produto vinha causando a esse público.
+
+No Brasil, a CVM não proíbe o cliente de operar, mas alerta contra a oferta feita por quem não tem registro. Os dois órgãos olham o mesmo produto e chegam à mesma desconfiança.
+
+Fonte: ESMA — decisão de intervenção sobre opções binárias
+
+### Como reduzir o risco
+
+Nada aqui elimina a perda; tudo aqui a limita.
+
+#### Treine na demo
+
+Opere com saldo virtual até entender o efeito do payout na sua média.
+
+#### Deposite pouco
+
+Só o que pode perder inteiro, sem dinheiro de conta da casa.
+
+#### Limite por dia
+
+Defina a perda máxima do dia e pare ao atingir.
+
+#### Não recupere
+
+Dobrar a operação depois de perder acelera a perda.
+
+#### Registre tudo
+
+Depósitos, saques e resultados vão para o imposto de renda.
+
+- WELCOME100 Cupom informado na hora do depósito
+- 100% Bônus sobre o valor depositado
+- US$ 10 Depósito mínimo segundo safirion.com
+- Da Safirion Condições regras da promoção
+
+Fonte: Página do cupom WELCOME100, com as condições segundo safirion.com
+
+O bônus segue as condições da promoção da Safirion, inclusive para saque, e não muda a conta do payout. Leia tudo na página do cupom WELCOME100. O imposto do resultado está em imposto de renda em corretora no exterior; volte à página inicial para os primeiros passos.
+
+Operar envolve risco de perda do capital investido. Só use dinheiro que você pode perder. Somente para maiores de 18 anos. A Safirion não é regulada pela CVM.
+
+### Perguntas frequentes
+
+#### Opções binárias é seguro?
+
+Não no sentido de proteger o dinheiro. Cada operação pode perder o valor inteiro, o acerto paga menos que o erro e a plataforma de fora não tem órgão brasileiro acompanhando.
+
+Fonte: CVM — alertas de ofertas e atuações irregulares
+
+#### Opções binárias é aposta?
+
+Pela lei, não: aposta de quota fixa é a feita em evento esportivo real ou jogo on-line. Pela mecânica, parece: valor fechado, prazo curto e resultado de sim ou não.
+
+Fonte: Lei nº 14.790/2023
+
+#### Opções binárias é cassino?
+
+Não é jogo de cassino: o resultado depende do preço de um ativo, não de sorteio. Mas o tudo ou nada e o prazo curto levam muita gente a operar como se fosse.
+
+Fonte: Lei nº 14.790/2023
+
+#### Quanto preciso acertar para não perder?
+
+Depende do payout. A conta é 1 dividido por (1 + payout): com 85%, é preciso acertar 54,1% das operações só para empatar; com 70%, 58,8%.
+
+#### Dá para viver de opções binárias?
+
+Não há garantia de ganho, e a conta do payout joga contra quem não acerta bem acima da metade. Trate como risco alto, com dinheiro que pode perder inteiro.
+
+#### Por que a Europa proibiu opções binárias?
+
+Em 2018 a ESMA proibiu a oferta, a distribuição e a venda a investidores de varejo na União Europeia, citando as perdas desse público com o produto.
+
+Fonte: ESMA — decisão sobre opções binárias
+
+#### A Safirion é regulada pela CVM?
+
+Não. A Safirion não é regulada pela CVM. A empresa é a THUNDER FLASH LLC, registrada em Nevis, e os pagamentos são da THUNDER FLASH CY LTD, de Chipre.
+
+Fonte: CVM — consulta de participantes
+
+#### Como saber se um site de opções binárias é golpe?
+
+Desconfie de promessa de lucro, Pix para conta de pessoa, gerente que opera com a sua senha, taxa para liberar saque e endereço com letra trocada. Confira o nome na consulta da CVM.
+
+Fonte: CVM — consulta de participantes
+
+#### Para que serve a conta demo?
+
+Para operar com saldo virtual e ver o efeito do payout na sua média antes de arriscar dinheiro. Ela não prova ganho futuro, mas mostra o tamanho do risco.
+
+### Fontes desta página
+
+- Lei nº 14.790/2023 (apostas de quota fixa)
+- ESMA — renovação da decisão de intervenção sobre opções binárias
+- CVM — alertas de ofertas e atuações irregulares
+- CVM — consulta de participantes (gov.br)
+- Lei nº 7.492/1986, texto atualizado
+- Cupom WELCOME100: condições segundo a Safirion
+
+## Bandas de Bollinger: o que são e como usar
+URL: https://safirion.com.br/blog/bandas-de-bollinger-como-usar/
+
+O que a faixa mostra e o que ela não promete
+
+### O que são Bandas de Bollinger?
+
+Três linhas e uma pergunta: o preço está alto ou baixo?
+
+Bandas de Bollinger são um indicador criado por John Bollinger: uma média móvel de 20 períodos com duas bandas a 2 desvios-padrão (o afastamento típico) acima e abaixo. Banda estreita avisa que o mercado está calmo e pode se mexer forte; preço colado numa banda indica força, não reversão. Use para ler o contexto, nunca como sinal sozinho.
+
+- Média de 20 Linha do meio média dos últimos 20 fechamentos
+- Média + 2 desvios Banda de cima teto relativo do preço
+- Média − 2 desvios Banda de baixo piso relativo do preço
+- John Bollinger Criador começo dos anos 1980
+
+bollingerbands.com/bollinger-bands e tradingview.com (Bollinger Bands) · 14/11/2026
+
+A palavra-chave é relativo: a banda de cima não marca preço caro, só preço alto para as últimas 20 velas. Antes delas, vale saber ler velas e tendência, o básico de análise técnica para iniciantes. Para acompanhar com o gráfico aberto, abra uma conta na Safirion e use a demo.
+
+### Como as bandas são calculadas
+
+Um exemplo com 20 fechamentos.
+
+Imagine um ativo que fechou estas 20 velas, da mais antiga à mais recente: 98, 97, 98, 96, 98, 100, 98, 99, 101, 99, 100, 101, 100, 101, 102, 103, 102, 102, 102 e 103.
+
+O desvio-padrão é simples: veja quanto cada fechamento se afasta da média e eleve ao quadrado. O 1º, 98, está 2 abaixo de 100: dá 4. Some os 20 quadrados, divida por 20 e tire a raiz. Bollinger divide pelo total de períodos, como aqui.
+
+| Passo | Conta | Resultado |
+| --- | --- | --- |
+| Média do meio | soma dos 20 fechamentos (2.000) ÷ 20 | 100 |
+| Variância | soma dos desvios ao quadrado (80) ÷ 20 | 4 |
+| Desvio-padrão | raiz quadrada de 4 | 2 |
+| Banda de cima | 100 + 2 × 2 | 104 |
+| Banda de baixo | 100 − 2 × 2 | 96 |
+
+fórmula de bollingerbands.com/bollinger-bands (média de 20, bandas a 2 desvios, desvio populacional); conta feita nesta página · 14/11/2026
+
+Leitura: a faixa vai de 96 a 104, e o último fechamento, 103, está perto do teto relativo. Se o mesmo ativo oscilasse o dobro, com desvio de 4, as bandas iriam para 108 e 92: mesma média, faixa duas vezes mais larga. Na plataforma, o indicador refaz essa conta a cada vela nova.
+
+### O que a largura conta sobre o mercado
+
+Calmaria e agitação se revezam.
+
+A volatilidade anda em ciclos: fases de preço parado e bandas apertadas (a contração, no TradingView) costumam dar lugar a fases de movimento forte e bandas abertas (a expansão). O aperto tem nome: squeeze (aperto, em inglês). Ele avisa que a calmaria pode acabar, mas não diz para que lado nem quando.
+
+#### Bandas apertando
+
+Volatilidade baixa. Marque o topo e o fundo da faixa e espere o preço fechar fora.
+
+#### Bandas abrindo de repente
+
+A volatilidade voltou. Costuma marcar o começo de um movimento, sem dizer quanto ele dura.
+
+#### Bandas muito largas
+
+O mercado já andou bastante. Depois disso, é comum o preço desacelerar e andar de lado.
+
+#### O squeeze não tem lado
+
+Quem mostra o lado é o fechamento fora da faixa, não a sua torcida.
+
+Em número, a largura é o BandWidth (largura da banda): (banda de cima − banda de baixo) ÷ média. No exemplo, (104 − 96) ÷ 100 = 0,08; com desvio de 4, 0,16. Compare com o próprio ativo: BandWidth bem abaixo do normal dele é o squeeze.
+
+### O que cada situação indica e o que não indica
+
+Leia a terceira coluna duas vezes.
+
+| O que você vê | O que costuma indicar | O que NÃO indica |
+| --- | --- | --- |
+| Preço toca a banda de cima | Preço alto para as últimas 20 velas | Não é sinal de venda sozinho |
+| Preço toca a banda de baixo | Preço baixo para as últimas 20 velas | Não é sinal de compra sozinho |
+| Vela fecha fora da banda | Força; para Bollinger, sinal inicial de continuação | Não é reversão anunciada |
+| Preço colado numa banda | Tendência forte naquele sentido | Não quer dizer que vai voltar |
+| Bandas apertadas (squeeze) | Volatilidade baixa; movimento maior pode vir | Não diz a direção nem a hora |
+| Bandas abrindo rápido | Volatilidade subindo, começo de movimento | Não diz quanto o movimento dura |
+| Preço volta à linha do meio | Correção na tendência ou perda de força | Não confirma virada sozinho |
+| Bandas planas, preço indo e voltando | Mercado lateral | Não garante que o toque vai reverter |
+
+bollingerbands.com/bollinger-band-rules (regras 6, 7, 8, 19 e 22), tradingview.com (Bollinger Bands) e safirion.com/blog/bandas-de-bollinger · 14/11/2026
+
+As duas primeiras linhas desmontam o erro mais comum. Nas regras de John Bollinger, toque na banda é só toque, não sinal, e fechar fora das bandas é, de início, sinal de continuação. O que vira decisão é o contexto: a direção da linha do meio e um indicador de outra família, como volume.
+
+### Tendência ou lateral: a leitura muda
+
+A inclinação da linha do meio responde.
+
+Linha do meio subindo é tendência de alta; descendo, de baixa; plana, com bandas quase horizontais, mercado lateral. O blog oficial da Safirion usa as bandas de um jeito em cada cenário:
+
+#### Rompimento depois do squeeze
+
+Faixa estreita e fechamento fora dela: entrada no sentido do rompimento, proteção do outro lado.
+
+#### Recuo à média na tendência
+
+Em alta clara, o toque que importa é na linha do meio, não na banda.
+
+#### Toque na ponta, só em lateral
+
+Com bandas planas, o toque tende a voltar ao meio. Espere uma vela de confirmação.
+
+#### Reversão contra a tendência
+
+Vender cada toque na banda de cima numa alta forte é somar perdas seguidas.
+
+Não sabe dizer se o mercado sobe, cai ou anda de lado? A melhor operação é nenhuma. A leitura sem indicador está em price action (ação do preço): o que é, e as estratégias por cenário, no guia de estratégias para iniciantes.
+
+### %b, divergência e os padrões M e W
+
+Onde o preço está dentro da faixa.
+
+O %b mostra onde o fechamento está dentro da faixa: (fechamento − banda de baixo) ÷ (banda de cima − banda de baixo). Vale 1 na banda de cima, 0,5 na média e 0 na de baixo. No exemplo: (103 − 96) ÷ (104 − 96) = 0,875, ou 87,5% do caminho entre o piso e o teto. Bollinger usa o %b para ler a divergência no fundo em W:
+
+#### Fundo perto da banda
+
+O preço toca ou fura a banda de baixo. O %b fica perto de 0 ou abaixo.
+
+#### Repique até o meio
+
+O preço volta à linha do meio. O topo desse repique vira a referência.
+
+#### Novo fundo dentro da banda
+
+Fundo mais baixo, mas longe da banda de baixo: o %b fica maior que no primeiro. É a divergência.
+
+O preço fez fundo novo, mas o indicador não confirmou a fraqueza; a virada só se confirma quando o preço rompe o topo do repique. O topo em M é o espelho. E o TradingView avisa: em muitos casos o esperado não acontece.
+
+### Como usar as bandas na Safirion
+
+Do gráfico em velas à operação.
+
+#### Troque o gráfico para velas
+
+Ele abre em linha. Troque para velas no primeiro ícone do canto esquerdo e escolha o tempo de cada uma.
+
+#### Ligue as Bandas de Bollinger
+
+No menu do lado esquerdo, em Indicadores, ficam médias móveis, RSI (índice de força relativa), MACD (convergência e divergência de médias) e as bandas. Confira 20 períodos e 2 desvios.
+
+#### Treine na conta demo
+
+Toda conta nova tem demo com US$ 10.000 virtuais, sem prazo para acabar. O saldo, no topo da tela, alterna entre demo e real.
+
+safirion.com/blog/safirion-trade-plataforma · 14/11/2026
+
+Com as bandas na tela, a operação segue feita de cinco escolhas, e o indicador não decide nenhuma:
+
+- Ativo: mais de 130, entre Forex (moedas), ações, índices, commodities (matérias-primas) e criptomoedas. Treine num só.
+- Tempo da vela: define os 20 períodos. Em velas de 1 minuto, a média olha 20 minutos; em velas de 15, 5 horas.
+- Valor (investimento): quanto vai naquela operação, não o saldo. Quem decide é a gestão de banca.
+- Expiração: acompanha o tempo gráfico, segundo o blog oficial. Leitura em velas de 15 minutos não combina com expiração de segundos.
+- Direção: acima (compra) ou abaixo (venda). Toque na banda, sozinho, não escolhe o lado.
+
+A tela botão por botão está em como operar na Safirion, e o roteiro de treino, em como treinar na conta demo. Sem conta ainda? O cadastro é na plataforma da corretora: criar conta na Safirion.
+
+- WELCOME100 Cupom informado na hora do depósito
+- 100% Bônus sobre o valor depositado
+- US$ 10 Depósito mínimo segundo safirion.com
+- As da promoção Condições regras da Safirion, que podem mudar
+
+safirion.com.br/cupom/ e condições da promoção em safirion.com · 14/11/2026
+
+O bônus segue as condições da promoção da Safirion. Antes de depositar, leia as regras de uso e de saque; o passo a passo está na página do cupom WELCOME100. Bônus não muda o risco de nenhuma operação.
+
+### Os erros que mais custam
+
+Todos pedem à banda o que ela não faz.
+
+#### Mexer nos números até concordar
+
+20 e 2 são o padrão. Com média de 10 períodos, Bollinger indica 1,9 desvio; com 50, 2,1.
+
+#### Contar com 95% dentro da faixa
+
+Preço não segue a curva normal. Com o padrão, Bollinger encontra 90% dos dados dentro, não 95%.
+
+#### Somar indicadores parecidos
+
+Dois indicadores de força, como RSI e MACD juntos, repetem a mesma informação. Junte as bandas a um só deles, ou a volume.
+
+#### Operar vela de segundos
+
+Em vela curta o ruído domina. O blog oficial da Safirion prefere 15 ou 30 minutos para cima.
+
+bollingerbands.com/bollinger-band-rules (regras 4, 9, 11 e 14) e safirion.com/blog/bandas-de-bollinger · 14/11/2026
+
+Mais tropeços de quem começa estão em erros de iniciante. Para anotar cada leitura e conferir depois, use a planilha de gerenciamento de banca. O resumo da corretora está na página inicial deste guia.
+
+Bandas de Bollinger não garantem resultado: o próximo movimento pode ir contra a leitura. Operar envolve risco de perda do capital investido. A Safirion é operada pela THUNDER FLASH LLC, de Nevis, e não é regulada pela CVM. Só opere com dinheiro que você pode perder. Somente para maiores de 18 anos.
+
+### Perguntas frequentes
+
+#### Qual a melhor configuração das Bandas de Bollinger?
+
+A padrão: média de 20 períodos e 2 desvios-padrão, a mesma que John Bollinger usa desde a criação.
+
+Se mudar o período, ajuste o desvio: 1,9 para 10 períodos e 2,1 para 50, segundo ele.
+
+Fonte: bollingerbands.com: regras das Bandas de Bollinger
+
+#### Como interpretar as Bandas de Bollinger?
+
+Pela posição do preço e pela largura da faixa. Perto da banda de cima, o preço está alto para as últimas 20 velas; faixa estreita é mercado calmo.
+
+A inclinação da linha do meio diz se há tendência.
+
+#### Quando o preço sai da Banda de Bollinger, ele volta?
+
+Não necessariamente. Para Bollinger, fechar fora das bandas é, de início, sinal de continuação, e não de reversão.
+
+Em tendência forte, o preço anda colado na banda por muitas velas.
+
+Fonte: bollingerbands.com: regras das Bandas de Bollinger
+
+#### O que é squeeze nas Bandas de Bollinger?
+
+É o aperto da faixa: as bandas ficam mais próximas do que costumam ficar naquele ativo, sinal de volatilidade baixa.
+
+Ele avisa que um movimento maior pode vir, mas não diz a direção.
+
+#### Qual a diferença entre %b e BandWidth?
+
+O %b diz onde o preço está dentro da faixa: 1 na banda de cima, 0 na de baixo. O BandWidth mede a largura, dividida pela média.
+
+No exemplo desta página, o %b é 0,875 e o BandWidth, 0,08.
+
+#### Como colocar as Bandas de Bollinger na Safirion?
+
+No menu do lado esquerdo do gráfico, em Indicadores, onde também ficam médias móveis, RSI e MACD, com parâmetros ajustáveis.
+
+Antes, troque o gráfico para velas no primeiro ícone do canto esquerdo.
+
+Fonte: Blog oficial: Safirion Trade, a plataforma
+
+#### Posso usar as Bandas de Bollinger sozinhas?
+
+Não é o indicado. Bollinger sugere confirmar a leitura com um indicador de outra família, como volume ou força do movimento.
+
+O MACD cumpre esse papel de força: veja MACD: como interpretar.
+
+Fonte: bollingerbands.com: regras das Bandas de Bollinger
+
+#### Qual o melhor tempo de vela para as Bandas de Bollinger?
+
+Bollinger diz que elas servem de velas de 5 minutos a semanais, desde que cada vela tenha negócio suficiente.
+
+O blog oficial da Safirion prefere velas de 15 ou 30 minutos para cima.
+
+Fonte: bollingerbands.com: regras das Bandas de Bollinger
+
+#### Dá para treinar Bandas de Bollinger sem dinheiro?
+
+Sim, na conta demo da Safirion, com US$ 10.000 virtuais e sem prazo para acabar.
+
+Anote 20 fechamentos, faça a conta desta página e compare com a banda da tela.
+
+Fonte: Blog oficial: Safirion Trade, a plataforma
+
+### Fontes desta página
+
+- John Bollinger: o que são as Bandas de Bollinger (fórmula e padrão de 20 e 2)
+- John Bollinger: regras para usar as Bandas de Bollinger
+- TradingView: Bollinger Bands (BB)
+- Blog oficial: Bandas de Bollinger, como ler e usar
+- Blog oficial: Safirion Trade, gráfico, indicadores e operação
+- Contrato de Conta Demo (PDF oficial)
+
+## MACD: o que é e como interpretar
+URL: https://safirion.com.br/blog/macd-como-interpretar/
+
+Três linhas, um zero e a conta feita na sua frente
+
+### O que é o MACD?
+
+A definição e as três leituras que importam.
+
+O MACD é um indicador que compara duas médias móveis exponenciais do preço, de 12 e 26 períodos, para medir a força do movimento. Para interpretar, veja se a linha MACD está acima ou abaixo de zero, quando ela cruza a linha de sinal (média de 9 períodos) e se o histograma (as barras) cresce ou encolhe.
+
+Quando a média rápida se afasta da lenta, o movimento ganha momentum (força e velocidade). Quando as duas se aproximam, a força diminui, e isso pode acontecer com o preço ainda em alta. O MACD mede o que o preço já fez; nenhum sinal dele garante o próximo movimento.
+
+Para ler com o gráfico aberto, crie sua conta na Safirion: toda conta nova vem com uma demo de US$ 10.000 virtuais, sem prazo para acabar. Ligue o MACD nela e siga a página.
+
+### As três linhas e o zero
+
+O que aparece no painel do indicador.
+
+- Rápida menos lenta Linha MACD média exponencial de 12 períodos menos a de 26
+- Média da linha MACD Linha de sinal média exponencial de 9 períodos, marca os cruzamentos
+- MACD menos sinal Histograma a distância entre as duas linhas, em barras
+- Médias iguais Linha zero acima dela, a média de 12 está por cima da de 26
+
+chartschool.stockcharts.com (MACD) e safirion.com/blog/macd-estocastico-e-sar-parabolico/ · 14/11/2026
+
+EMA (média móvel exponencial) é uma média que dá mais peso aos preços recentes. A de 12 períodos reage rápido e move a maior parte do MACD; a de 26 é mais lenta. Período é a vela que você escolheu: 12 velas de 1 minuto, 12 de 1 hora ou 12 dias.
+
+### A conta 12, 26 e 9 feita na sua frente
+
+Duas velas de um ativo hipotético, com os números arredondados.
+
+Cada média exponencial anda uma fração da distância até o novo preço, igual a 2 ÷ (períodos + 1): 2 ÷ 13 na média de 12, 2 ÷ 27 na de 26 e 0,2 na linha de sinal, que no exemplo vinha de 0,25.
+
+| Peça | Vela 1 | Vela 2: o preço fecha em 102,15 |
+| --- | --- | --- |
+| Média de 12 (EMA 12) | 105,40 | 105,40 − 3,25 × 2 ÷ 13 = 104,90 |
+| Média de 26 (EMA 26) | 104,90 | 104,90 − 2,75 × 2 ÷ 27 = 104,70 |
+| Linha MACD | 105,40 − 104,90 = 0,50 | 104,90 − 104,70 = 0,20 |
+| Linha de sinal (EMA 9) | 0,2 × 0,50 + 0,8 × 0,25 = 0,30 | 0,2 × 0,20 + 0,8 × 0,30 = 0,28 |
+| Histograma | 0,50 − 0,30 = +0,20 | 0,20 − 0,28 = −0,08 |
+
+conta didática com a fórmula da média exponencial da ChartSchool (chartschool.stockcharts.com) · 14/11/2026
+
+Na vela 1, a média de 12 está 0,50 acima da de 26: MACD acima de zero. O histograma positivo mostra a linha MACD por cima da de sinal, e a alta tem força.
+
+Na vela 2, o preço fecha 3,25 abaixo da média curta. A mesma vela tira 0,50 da média de 12 e só 0,20 da de 26, porque a curta anda uma fração maior. As médias convergem, o MACD cai para 0,20 e cruza para baixo da linha de sinal: histograma em −0,08.
+
+O MACD, porém, segue acima de zero. A leitura correta é "a alta perdeu força"; "começou a queda" ainda não está no gráfico. Numa alta, a conta se espelha: o cruzamento para cima vem antes de o MACD passar de zero.
+
+### Como interpretar: o que cada sinal indica
+
+E o que ele não indica, que é onde a maioria erra.
+
+| Leitura | O que indica | O que NÃO indica |
+| --- | --- | --- |
+| MACD acima de zero | Média de 12 acima da de 26: o impulso de alta é maior | Que o preço vai continuar subindo |
+| MACD abaixo de zero | Média de 12 abaixo da de 26: o impulso de baixa domina | Que é hora de vender |
+| MACD cruza a linha de sinal para cima | O impulso virou para cima | Entrada garantida: no mercado lateral, falha muito |
+| MACD cruza a linha de sinal para baixo | A alta perdeu força ou a baixa ganhou | Que a tendência de alta acabou |
+| Histograma encolhendo | As duas linhas se aproximam: o impulso perde fôlego | Reversão: o preço pode seguir na mesma direção |
+| Preço faz topo mais alto e MACD faz topo mais baixo | Divergência de baixa: a alta está perdendo força | Topo marcado: em alta forte, ela aparece várias vezes |
+| MACD muito alto ou muito baixo | Médias distantes naquele ativo | Sobrecompra ou sobrevenda: o MACD não tem teto nem piso |
+
+ChartSchool da StockCharts (chartschool.stockcharts.com), central de ajuda do TradingView e safirion.com/blog/macd-estocastico-e-sar-parabolico/ · 14/11/2026
+
+Use a coluna da direita como freio. Cruzamento com a linha de sinal e passagem pelo zero são os sinais mais comuns, segundo a ChartSchool, e nenhum deles diz o tamanho do movimento nem quanto ele dura.
+
+Se o gráfico ainda é novidade, comece por análise técnica para iniciantes.
+
+### A perda de força antes do cruzamento
+
+Duas leituras que mostram o impulso mudando.
+
+Barras do histograma encolhendo mostram as linhas se aproximando, e o cruzamento costuma vir em seguida. Na conta acima, a barra foi de +0,20 a −0,08 numa vela; num movimento lento, você veria as barras diminuírem antes.
+
+Divergência (preço e indicador apontando para lados diferentes) compara os topos e fundos do preço com os da linha MACD.
+
+#### Divergência de baixa
+
+O preço faz um topo mais alto e o MACD, um topo mais baixo. A alta continua, mas com menos força.
+
+#### Divergência de alta
+
+O preço faz um fundo mais baixo e o MACD, um fundo mais alto. A queda continua, mas perde ímpeto.
+
+#### Compare fechamentos
+
+As médias do MACD usam o preço de fechamento. Compare o fechamento das velas, não a ponta dos pavios.
+
+#### Em tendência forte, desconfie
+
+Divergência de baixa aparece várias vezes numa alta forte. Enquanto o MACD estiver acima de zero, o impulso de alta ainda vence.
+
+chartschool.stockcharts.com (MACD) e central de ajuda do TradingView · 14/11/2026
+
+### Quando o MACD engana
+
+Seis casos em que o sinal vem e o movimento não.
+
+#### Mercado lateral
+
+Os cruzamentos se repetem e quase todos falham, como avisa o blog oficial da Safirion.
+
+#### Atraso
+
+Feito de médias, o MACD reage depois do preço. Numa virada rápida, o sinal chega com boa parte do movimento já feito.
+
+#### Vela curta demais
+
+Um sinal no gráfico de 1 minuto pesa muito menos que o mesmo sinal no diário. Confira a direção num tempo maior.
+
+#### Cruzamento no extremo
+
+Depois de uma disparada, o impulso desacelera e o MACD cruza para baixo mesmo com a alta seguindo.
+
+#### Comparar ativos
+
+O valor do MACD depende da cotação. O número de um ativo não se compara com o de outro.
+
+#### Indicador repetido
+
+MACD mais uma média móvel é a mesma informação duas vezes. Junte indicadores que medem coisas diferentes.
+
+safirion.com/blog/macd-estocastico-e-sar-parabolico/ e chartschool.stockcharts.com · 14/11/2026
+
+O parâmetro também pesa: médias mais curtas deixam o MACD sensível e cheio de cruzamentos; mais longas, lento e com menos sinais. O blog da Safirion trata 12, 26 e 9 como ponto de partida, e só a demo diz se outro serve para você.
+
+Para contexto, junte algo que meça outra coisa: Bandas de Bollinger (a faixa normal do preço) ou price action (a leitura das próprias velas).
+
+### Passo a passo: o MACD na Safirion
+
+O caminho descrito no blog oficial, do gráfico à direção da operação.
+
+#### Entre na conta demo
+
+Clique no saldo, no topo da tela, para alternar entre a conta de prática e a real. A demo tem US$ 10.000 virtuais e tempo ilimitado.
+
+#### Escolha o ativo e o tempo da vela
+
+O gráfico abre em linha. No primeiro ícone do canto esquerdo, troque para velas. Depois escolha o período da vela, de segundos a horas.
+
+#### Ligue o MACD
+
+No menu de indicadores, à esquerda, ficam médias móveis, RSI (índice de força relativa), MACD e Bandas de Bollinger, com parâmetros ajustáveis. Comece em 12, 26 e 9.
+
+#### Leia antes de clicar
+
+Zero, cruzamento, histograma e divergência. Confira a direção num tempo de vela maior que o seu.
+
+#### Defina valor e expiração
+
+O investimento é o valor daquela operação, não o saldo. A expiração acompanha o tempo gráfico escolhido.
+
+#### Escolha a direção
+
+Acima (compra) ou abaixo (venda). Operações abertas e encerradas ficam no histórico.
+
+safirion.com/blog/safirion-trade-plataforma/ · 14/11/2026
+
+São cinco escolhas por operação: ativo, tempo da vela, valor, expiração e direção. O MACD ajuda só na última, como um dos motivos. Para repetir o caminho, abra sua conta na Safirion e fique na demo até anotar 30 cruzamentos e quantos teriam dado certo.
+
+O treino está em como treinar na conta demo, e a tela, botão por botão, em como operar na Safirion. Primeira vez aqui? A página inicial resume a corretora.
+
+- WELCOME100 Cupom
+- 100% sobre o depósito Bônus
+- US$ 10 Depósito mínimo
+- As da promoção da Safirion Condições
+
+safirion.com.br/cupom/ e condições da promoção em safirion.com · 14/11/2026
+
+O bônus segue as condições da Safirion. Leia as regras de uso e de saque antes de depositar, e não conte o bônus como ganho. O passo a passo está na página do cupom WELCOME100.
+
+### Sinal não é ordem: o que conferir antes
+
+Cinco perguntas e o risco por escrito.
+
+- A tendência num tempo de vela maior aponta para o mesmo lado do sinal?
+- O mercado anda de lado? Então ignore os cruzamentos.
+- O cruzamento veio depois de uma disparada, num extremo do MACD?
+- O valor cabe no seu limite por operação, de 1% a 2% da banca?
+- A leitura já passou por 30 sinais anotados na demo?
+
+A regra de 1% a 2% e o limite do dia estão em gerenciamento de banca no day trade e na planilha de gerenciamento de banca. Os tropeços comuns estão em erros de iniciante no day trade.
+
+O MACD não garante resultado: ele mede a força do que o preço já fez, e o preço pode fazer o contrário do sinal. Operar envolve risco de perda do capital investido. A Safirion é operada pela THUNDER FLASH LLC, de Nevis, e não é regulada pela CVM. Só opere com dinheiro que você pode perder. Somente para maiores de 18 anos.
+
+### Perguntas frequentes
+
+#### O que significa MACD?
+
+É a sigla de Moving Average Convergence Divergence, ou convergência e divergência de médias móveis. O indicador foi criado por Gerald Appel nos anos 1970; o histograma entrou em 1986, com Thomas Aspray.
+
+Fonte: TradingView: indicador MACD
+
+#### Qual a configuração padrão do MACD?
+
+12, 26 e 9: média exponencial de 12 períodos menos a de 26, com linha de sinal de 9. O blog oficial da Safirion trata esses números como ponto de partida, não como regra para todo ativo.
+
+Fonte: Blog oficial: MACD, Estocástico e SAR Parabólico
+
+#### Como interpretar o histograma do MACD?
+
+Cada barra é a linha MACD menos a de sinal. Acima de zero, o MACD está por cima. Barras encolhendo mostram o impulso perdendo força, muitas vezes antes do cruzamento.
+
+#### MACD acima de zero é sinal de compra?
+
+Não. Quer dizer que a média de 12 está acima da de 26 e que o impulso de alta supera o de baixa. O preço pode recuar com o MACD positivo, como mostra a conta desta página.
+
+#### O MACD funciona no gráfico de 1 minuto?
+
+O cálculo funciona, mas o sinal pesa menos: o blog da Safirion lembra que um sinal no gráfico de 1 minuto vale muito menos que no diário. Confira a direção num tempo maior.
+
+Fonte: Blog oficial: MACD, Estocástico e SAR Parabólico
+
+#### Dá para comparar o MACD de dois ativos?
+
+Não. O valor depende da cotação: pela ChartSchool, o MACD de uma ação de US$ 20 pode ficar entre −1,5 e 1,5, e o de uma de US$ 100, entre −10 e 10. Para comparar, use o PPO (oscilador de preço em porcentagem).
+
+Fonte: ChartSchool (StockCharts): MACD
+
+#### Qual indicador usar junto com o MACD?
+
+Um que meça outra coisa: MACD mais uma média móvel repete a informação. O RSI mostra excesso, e as Bandas de Bollinger, a faixa normal do preço, como explica o guia Bandas de Bollinger: como usar.
+
+#### O cruzamento do MACD garante alta ou queda?
+
+Não. Ele mostra que o impulso mudou e chega atrasado, porque o MACD é feito de médias. Em mercado lateral, a maioria falha. Decida o valor pelo seu gerenciamento de banca, nunca pela confiança no sinal.
+
+#### Onde fica o MACD na plataforma da Safirion?
+
+No menu de indicadores do lado esquerdo do gráfico, com parâmetros ajustáveis, segundo o blog oficial. Teste primeiro na conta demo, que vem com US$ 10.000 virtuais.
+
+Fonte: Blog oficial: Safirion Trade, a plataforma
+
+### Fontes desta página
+
+- Blog oficial: MACD, Estocástico e SAR Parabólico (configuração 12, 26 e 9, sinais e limitações)
+- Blog oficial: Safirion Trade, como funciona a plataforma (indicadores e operação)
+- ChartSchool (StockCharts): MACD, linha de sinal, linha zero e divergências
+- ChartSchool (StockCharts): médias móveis simples e exponenciais (fórmula da EMA)
+- TradingView: indicador MACD (história, cálculo e divergência)
+- Contrato de Conta Demo (PDF oficial: tempo ilimitado)
+
+## Price action: o que é e como ler o gráfico
+URL: https://safirion.com.br/blog/price-action-o-que-e/
+
+O preço conta a história antes do indicador
+
+### O que é price action?
+
+Ação do preço, em português: o gráfico lido sem indicador.
+
+Price action (ação do preço) é a leitura do gráfico feita só com o movimento do preço: a sequência de topos e fundos, as zonas onde ele já parou e o formato das velas, sem indicador. Você monta uma hipótese e define, antes de operar, o que a confirma e onde ela fica errada.
+
+A diferença para a análise com indicador é a ordem. Média móvel, RSI (índice de força relativa) e MACD (convergência e divergência de médias móveis) são contas feitas sobre o preço, então chegam depois dele. No price action, o próprio preço é o sinal.
+
+O básico de velas, suporte e indicadores está em análise técnica para iniciantes; aqui a leitura é com o gráfico limpo. Para acompanhar ao vivo, abra a conta na Safirion e use a demo, com US$ 10.000 virtuais e sem obrigação de depositar.
+
+### Topos e fundos: a estrutura do preço
+
+A primeira pergunta: para onde o preço anda?
+
+Topo é o ponto mais alto antes de o preço virar para baixo; fundo, o mais baixo antes de virar para cima. Os dois últimos de cada formam a estrutura do mercado. Ela diz de que lado procurar a entrada e onde a leitura acaba. Vela e padrão vêm depois, como gatilho.
+
+#### Alta
+
+Cada fundo fica acima do anterior, e cada topo também. Vale até um fechamento perder o último fundo.
+
+#### Baixa
+
+Topos e fundos cada vez mais baixos. Vale até um fechamento passar do último topo.
+
+#### Lateral
+
+Topos parecidos e fundos parecidos. As duas pontas da faixa viram as zonas que importam.
+
+#### Correção (pullback)
+
+Pullback é o recuo dentro da tendência. Na alta, a descida para antes do último fundo. Perdeu o fundo, deixou de ser correção.
+
+### Topos e fundos lidos na sua frente
+
+Um ativo hipotético, com preços redondos para a conta ficar fácil.
+
+- 100,20 Fundo 1 onde a subida começa
+- 101,00 Topo 1 a primeira resistência
+- 100,60 Fundo 2 0,40 acima do fundo 1
+- 101,40 Topo 2 passou do topo 1 por 0,40
+
+exemplo didático com preços hipotéticos; as contas estão no texto abaixo · 14/11/2026
+
+Leia na ordem do desenho. O fundo 2, em 100,60, ficou 0,40 acima do fundo 1 (100,60 menos 100,20). O topo 2, em 101,40, ficou 0,40 acima do topo 1. Fundo mais alto e topo mais alto: a estrutura é de alta.
+
+Depois do topo 2, o preço recua até 101,00, o antigo topo 1. O recuo de 0,40 é metade da última subida, de 0,80 (de 100,60 a 101,40), e parou acima do fundo 2: é correção, não virada. E a resistência rompida está sendo testada como suporte. Esse é o reteste (a volta ao nível rompido).
+
+A hipótese numa frase: enquanto 100,60 segurar, a leitura é de alta, e o gatilho é um pin bar (vela de pavio longo e corpo pequeno) em 101,00. Um fechamento abaixo de 100,60 apaga a leitura, porque o fundo mais alto deixa de existir. São só 0,40 de folga entre o reteste e esse ponto.
+
+### Padrões de vela: sugere, confirma, invalida
+
+Nenhum padrão manda sozinho. A tabela diz o que olhar depois dele.
+
+| Padrão | O que sugere | O que confirma | O que invalida |
+| --- | --- | --- | --- |
+| Doji (corpo quase nulo) | Indecisão: abertura e fechamento quase iguais | Vela seguinte fechando contra o movimento anterior | Vela seguinte a favor da tendência, com corpo |
+| Pin bar de alta (martelo) | Rejeição embaixo: pavio de pelo menos 2 vezes o corpo | Estar num suporte, após queda, e a vela seguinte fechar acima dele | Fechamento abaixo da ponta do pavio |
+| Pin bar de baixa (estrela cadente) | Rejeição em cima: pavio superior longo, corpo pequeno | Estar numa resistência, após alta, e a vela seguinte fechar abaixo dele | Fechamento acima da ponta do pavio |
+| Engolfo (vela que engole a anterior) | Troca de comando: o corpo da segunda vela cobre o da primeira | Surgir numa zona, depois de um movimento claro | Preço além do extremo da vela que engoliu |
+| Inside bar (vela de dentro) | Pausa: a vela inteira cabe na anterior, a vela-mãe | Fechamento fora da vela-mãe, a favor da estrutura | Sair por um lado e voltar para dentro |
+| Rompimento falso (fakeout) | Armadilha: o preço passa da zona e volta | Fechamento de volta na faixa, só com o pavio fora | Novo fechamento fora da zona, e o reteste segura |
+
+safirion.com/blog/padroes-de-candles-essenciais/ e ChartSchool da StockCharts (Candlestick Pattern Dictionary e Support and Resistance), lidos em 14/11/2026
+
+Repare: todo padrão pede a vela seguinte ou um lugar certo para valer. O blog oficial da Safirion resume em três contextos: tendência anterior, nível técnico e volume. Martelo no meio de uma queda, longe de suporte, é só uma vela com pavio. Em cima de um fundo anterior, numa alta, é informação.
+
+O inside bar é parente do harami do dicionário de candles da ChartSchool: o harami olha só os corpos; o inside bar, a vela inteira.
+
+### Rompimento, reteste e rompimento falso
+
+Onde quase todo iniciante entra cedo demais.
+
+#### O rompimento
+
+Uma vela fecha além da zona, com corpo. Pavio que passa e volta não conta: só o fechamento mostra quem venceu.
+
+#### O reteste
+
+O preço volta à zona rompida, que trocou de papel: resistência rompida vira suporte, e vice-versa.
+
+#### A confirmação
+
+No reteste aparece uma vela de rejeição, como pin bar ou engolfo, no sentido do rompimento.
+
+O rompimento falso é quando o preço passa do nível, pega quem entrou na hora e volta para a faixa. A ChartSchool lembra que preço volátil fura o nível por pouco e volta; por isso muita gente marca zonas, não linhas finas.
+
+No exemplo, a resistência de 101,00 caiu quando o topo 2 chegou a 101,40, e o recuo até ela é o reteste. Se o preço tivesse passado de 101,00 só com o pavio, seria rompimento falso. Para virar regra escrita, veja estratégias de day trade para iniciantes.
+
+### Contexto e tempo gráfico mudam a leitura
+
+O mesmo desenho diz coisas diferentes em lugares diferentes.
+
+Tempo gráfico é quanto tempo cada vela leva para se formar. Uma alta limpa na vela de 1 minuto pode ser só a correção de uma baixa na de 15 minutos. Leia de cima para baixo e responda três perguntas antes de cada entrada.
+
+#### Onde estou?
+
+No tempo maior, a estrutura é de alta, de baixa ou lateral? Sem resposta, não há operação.
+
+#### O que espero ver?
+
+Uma zona marcada e a vela que confirmaria a leitura nela. Sem zona, padrão de vela é ruído.
+
+#### Onde estou errado?
+
+O fechamento que apaga a hipótese, escrito antes da entrada. No exemplo, abaixo de 100,60.
+
+### Como treinar price action na Safirion
+
+Gráfico limpo, linha horizontal e as cinco escolhas de toda operação.
+
+Segundo o blog oficial, o gráfico abre em linha: troque para velas no primeiro ícone do canto esquerdo. No menu do lado esquerdo ficam os indicadores e as ferramentas gráficas. Para price action, deixe os indicadores desligados e marque topos, fundos e zonas com a linha horizontal.
+
+#### Ativo
+
+São mais de 130. Fique num só por semanas: a leitura melhora com repetição.
+
+#### Tempo da vela
+
+De segundos a horas. Marque a estrutura num tempo maior e opere num menor.
+
+#### Valor
+
+É o investimento daquela operação, não o saldo da conta. Sempre a mesma fração pequena da banca.
+
+#### Expiração
+
+É quando a operação termina. Ela acompanha o tempo gráfico escolhido.
+
+#### Direção
+
+Acima ou abaixo: só a que a sua leitura pediu, conferida antes de confirmar.
+
+Treine na conta demo, com US$ 10.000 virtuais e tempo ilimitado; o saldo no topo da tela alterna entre demo e conta real. Sem cadastro? Crie a conta na Safirion e comece pela demo. O caminho tela a tela está em como operar na Safirion, e o resumo da corretora, na página inicial.
+
+- WELCOME100 Cupom informado na hora do depósito
+- 100% Bônus sobre o depósito
+- US$ 10 Depósito mínimo na conta real
+- As da promoção Condições definidas pela Safirion
+
+safirion.com.br/cupom/ e condições da promoção em safirion.com · 14/11/2026
+
+O bônus segue as condições da Safirion, e vale ler as regras de uso e de saque antes de depositar. O passo a passo está na página do cupom WELCOME100. Bônus não é ganho: ele não muda o risco de nenhuma operação.
+
+### Limites e erros do price action
+
+A leitura tem um lado subjetivo. Estas regras diminuem o quanto.
+
+#### Padrão fora de lugar
+
+Pin bar longe de zona e contra a estrutura. Parece sinal, mas é só uma vela com pavio.
+
+#### Ler o que você quer
+
+Escolher a direção antes e procurar a vela que concorda. A hipótese vem do gráfico.
+
+#### Entrar no pavio
+
+Entrar antes do fechamento da vela que rompeu. É assim que o rompimento falso pega gente.
+
+#### Mudar a regra no meio
+
+Mover o ponto de invalidação depois de entrar. Se o fechamento apagou a hipótese, ela acabou.
+
+A vantagem do price action é ver o movimento sem o atraso do indicador. O limite é que duas pessoas podem marcar zonas diferentes no mesmo gráfico. Por isso a leitura anda junto com a gestão: valor fixo por operação e limite de perda do dia, como em gerenciamento de banca no day trade e na planilha de gerenciamento de banca. Outros tropeços estão em erros de iniciante no day trade.
+
+Price action não garante resultado: um padrão perfeito pode falhar na vela seguinte. Operar envolve risco de perda do capital investido. A Safirion é operada pela THUNDER FLASH LLC, de Nevis, e não é regulada pela CVM. Só opere com dinheiro que você pode perder. Somente para maiores de 18 anos.
+
+### Perguntas frequentes
+
+#### Price action funciona?
+
+Funciona como método de leitura, não como garantia. Ele dá um motivo para entrar e um ponto claro em que a leitura está errada. Nenhum padrão acerta sempre.
+
+O resultado depende de seguir a regra escrita e manter pequeno o valor de cada entrada.
+
+#### Qual a diferença entre price action e análise técnica?
+
+Price action é a parte da análise técnica que lê o gráfico sem indicador. A análise técnica inclui também médias móveis, RSI e outras contas sobre o preço.
+
+Para somar um indicador depois da leitura, veja como interpretar o MACD e como usar as Bandas de Bollinger.
+
+#### O que é pin bar?
+
+É uma vela de corpo pequeno numa ponta e pavio longo na outra, que mostra rejeição de preço. Com o pavio para baixo, é o martelo; para cima, a estrela cadente.
+
+O blog oficial da Safirion pede, no martelo, pavio de pelo menos 2 vezes o corpo, depois de queda e em suporte.
+
+Fonte: Blog oficial: padrões de candles essenciais
+
+#### O que é inside bar?
+
+É a vela cuja máxima e mínima cabem dentro da vela anterior, a vela-mãe. Ela mostra uma pausa, o preço se comprimindo.
+
+A leitura vem do fechamento seguinte: fora da vela-mãe e a favor da estrutura, a pausa terminou a favor dela.
+
+#### Um doji confirma reversão?
+
+Não. O doji mostra indecisão, com abertura e fechamento quase iguais. Ele avisa que algo pode mudar; quem confirma é a vela seguinte, fechando contra o movimento anterior.
+
+Fonte: Blog oficial: padrões de candles essenciais
+
+#### Qual o melhor tempo gráfico para price action?
+
+Para aprender, opere com velas de minutos e marque a estrutura num tempo maior. O curso gratuito da Safirion começa com velas de 1 minuto.
+
+O blog oficial lembra que padrões de três velas ficam mais limpos a partir de 15 minutos. Vela de segundos mostra mais ruído que estrutura.
+
+Fonte: Blog oficial: padrões de candles essenciais e Safirion Trade
+
+#### Price action serve para opções binárias e cripto?
+
+A leitura é a mesma em qualquer gráfico de preço: moeda, ação, índice ou cripto. Em operação com expiração, escolha o tempo da vela pensando em quando ela termina.
+
+Se você usa um catalogador de opções binárias, a leitura de estrutura ajuda a filtrar o que ele mostra.
+
+#### Preciso de volume para usar price action?
+
+Ajuda, mas não é obrigatório. O blog oficial da Safirion põe o volume entre os três contextos que reforçam um padrão, ao lado da tendência anterior e do nível técnico.
+
+Sem ele, estrutura e zonas continuam valendo.
+
+Fonte: Blog oficial: padrões de candles essenciais
+
+#### Dá para aprender price action sem arriscar dinheiro?
+
+Dá. A conta demo da Safirion tem US$ 10.000 virtuais, tempo ilimitado e a mesma plataforma da conta real.
+
+Treine com as regras que usaria com dinheiro. O roteiro está em como treinar na conta demo.
+
+Fonte: Blog oficial: Safirion Trade, a plataforma
+
+### Fontes desta página
+
+- Blog oficial: padrões de candles essenciais (martelo, estrela cadente, engolfo, doji e contexto)
+- Blog oficial: suporte e resistência (zonas, troca de papel, reteste e rompimento falso)
+- Blog oficial: Safirion Trade, gráfico, indicadores, linha horizontal e operação
+- ChartSchool (StockCharts): Candlestick Pattern Dictionary, lido em 14/11/2026
+- ChartSchool (StockCharts): Support and Resistance, lido em 14/11/2026
+- Contrato de Conta Demo (PDF oficial: tempo ilimitado)
+
+## Catalogador de opções binárias: o que ele conta
+URL: https://safirion.com.br/blog/catalogador-de-opcoes-binarias/
+
+O passado em números, e a conta que a propaganda não mostra
+
+### O que é um catalogador?
+
+A definição e o limite dela.
+
+Catalogador de opções binárias é um programa, planilha ou extensão de navegador que varre o histórico de velas de um ativo e conta quantas vezes um padrão apareceu e para que lado a vela seguinte fechou. Ele descreve o passado: a taxa que mostra não é a chance de acerto da próxima operação.
+
+A propaganda vende a ferramenta como "padrão com 85% de acerto". O blog oficial da Safirion descreve o trabalho com menos brilho: catalogar o passado, nada mais. Serve para estudar uma ideia antes de arriscar dinheiro; vira armadilha quando passa a decidir a entrada.
+
+Para testar o que um catalogador mostra sem dinheiro real, crie sua conta na Safirion: toda conta nova vem com uma demo de US$ 10.000 virtuais, sem prazo para acabar.
+
+Fonte: Blog oficial da Safirion: catalogador de opções binárias · 14/11/2026
+
+### Quatro escolhas antes da contagem
+
+O catalogador só conta o que você mandou procurar.
+
+- Um par ou ação Ativo ex.: EUR/USD; cada ativo tem a sua taxa
+- M1, M5, M15 Tempo da vela velas de 1, 5 ou 15 minutos
+- A condição Padrão ex.: três velas de alta seguidas
+- Quantas velas ler Janela ex.: as últimas 500 do histórico
+
+Fonte: safirion.com/blog/catalogador-de-opcoes-binarias/ · 14/11/2026
+
+Com isso, ele devolve três números: quantas vezes o padrão apareceu, em quantas a vela seguinte foi para o lado esperado e a divisão de um pelo outro, a taxa histórica. Nenhum deles olha para a frente: o que vem depois depende do mercado daquele momento, que pode ser outro.
+
+### A taxa e o payout na sua frente
+
+O exemplo do blog oficial, com a conta completa.
+
+O exemplo do blog oficial da Safirion: três velas de alta seguidas no EUR/USD, em velas de 1 minuto. O catalogador lê 500 velas, acha 48 casos e, em 32 deles, a vela seguinte também foi de alta. Taxa histórica: 32 ÷ 48 = 66,7%.
+
+Agora entra o payout (o percentual pago no acerto). Com payout de 85%, o acerto rende R$ 85 a cada R$ 100 e o erro tira os R$ 100. A taxa que só empata é 1 ÷ (1 + 0,85) = 54,1%. Veja o resultado médio conforme a taxa real, que ninguém conhece de antemão.
+
+| Se a taxa real for | A conta a cada R$ 100 | Resultado médio |
+| --- | --- | --- |
+| 66,7%, a do catalogador | 32 acertos × 85 − 16 erros × 100 = 1.120, dividido por 48 | +R$ 23,33 |
+| 60% | 0,60 × 85 − 0,40 × 100 | +R$ 11,00 |
+| 55% | 0,55 × 85 − 0,45 × 100 | +R$ 1,75 |
+| 54,1% | o ponto de empate | R$ 0,00 |
+| 50% | 0,50 × 85 − 0,50 × 100 | −R$ 7,50 |
+
+conta didática com o exemplo de safirion.com/blog/catalogador-de-opcoes-binarias/ e payout hipotético de 85% · 14/11/2026
+
+O catalogador não diz em que linha da tabela você está: ele mostra só a primeira, a do passado. O empate para vários payouts está em opções binárias é seguro ou aposta?.
+
+### 48 casos dizem pouco
+
+A faixa de erro da taxa e outros cinco motivos para desconfiar.
+
+| Casos no histórico | Taxa encontrada | Faixa provável da taxa real (95%) | A faixa fica toda acima de 54,1%? |
+| --- | --- | --- | --- |
+| 48, com 32 acertos | 66,7% | 52,5% a 78,3% | Não: a taxa real pode estar abaixo do empate |
+| 210, com 140 acertos | 66,7% | 60,0% a 72,7% | Sim, no período lido |
+
+Fonte: NIST/SEMATECH e-Handbook of Statistical Methods, 7.2.4.1: intervalo de confiança de proporção pelo método de Wilson · 14/11/2026
+
+Com 48 casos, a faixa provável da taxa real começa abaixo do empate de 54,1%: o padrão pode até dar prejuízo. Por isso o blog oficial da Safirion pede 200 ocorrências ou mais, e em velas de 1 minuto isso exige meses de dados, não dias.
+
+#### Mudança de regime
+
+O padrão da tendência falha no mercado lateral. Os últimos 5 dias podem ser um período que já acabou.
+
+#### Overfitting (sobreajuste)
+
+Procure bastante e você acha padrão com 90% no histórico. Explica o passado, não vale para o futuro.
+
+#### Horário misturado
+
+A taxa muda entre a abertura de Londres e a sessão asiática. Somar as duas esconde a diferença.
+
+#### Payout abaixo de 100%
+
+O acerto paga menos do que o erro tira. Uma taxa um pouco acima de 50% ainda pode dar prejuízo.
+
+#### Outro gráfico
+
+Velas lidas de outra fonte podem fechar diferente na sua plataforma. Confira de onde vêm os dados.
+
+#### Gale embutido
+
+Taxa "com G1" ou "com G2" soma entradas dobradas depois da perda. A próxima seção mostra a conta.
+
+Fonte: safirion.com/blog/catalogador-de-opcoes-binarias/ · 14/11/2026
+
+### 87,5% de acerto e prejuízo
+
+Como a taxa com gale infla um padrão de cara ou coroa.
+
+Muitos catalogadores vendidos no Brasil mostram a taxa "sem gale", "com G1" e "com G2". Gale é o martingale (dobrar a entrada depois de uma perda): G1 é a segunda entrada, com o dobro do valor, e G2 é a terceira, com o quádruplo. O ciclo só conta como erro se as três perderem.
+
+| Taxa de primeira | Mostrada com G1 | Mostrada com G2 |
+| --- | --- | --- |
+| 50%, cara ou coroa | 75,0% | 87,5% |
+| 55% | 79,8% | 90,9% |
+| 60% | 84,0% | 93,6% |
+
+conta didática: taxa com gale = 1 − (1 − taxa de primeira) elevado ao número de entradas · 14/11/2026
+
+- 7 de 8 Acertos mostrados 87,5% com G2
+- +R$ 52,00 Os 7 somam 4 × 8,50 + 2 × 7 + 1 × 4
+- −R$ 70,00 O ciclo que falha 10 + 20 + 40 perdidos
+- −R$ 18,00 Saldo dos 8 ciclos −R$ 2,25 por ciclo, em média
+
+conta didática: 8 ciclos com G2, entrada de R$ 10, payout de 85% e taxa de primeira de 50% · 14/11/2026
+
+Com entrada de R$ 10, o acerto de primeira rende R$ 8,50. No G1, R$ 7: perdeu 10 e ganhou 17 com a entrada de 20. No G2, R$ 4: perdeu 30 e ganhou 34 com a de 40. O ciclo que falha tira R$ 70 de uma vez, e sete acertos não pagam um erro.
+
+Por isso, olhe só a taxa sem gale. O que o martingale faz com a banca está em gerenciamento de banca no day trade.
+
+### O teste de 30 dias antes de confiar
+
+Estudo primeiro, dinheiro depois, como recomenda o blog oficial.
+
+#### Escreva a hipótese
+
+Ativo, vela, padrão e horário numa frase. Ex.: depois de dois pavios longos para baixo no M5, vem vela de alta.
+
+#### Catalogue 200 casos ou mais
+
+Com menos, a faixa de erro engole a taxa. Anote o total de casos ao lado dela.
+
+#### Leia só a taxa sem gale
+
+Compare com o empate: 1 ÷ (1 + payout). Acima de 70% em amostra pequena é sobreajuste.
+
+#### Separe ativo e horário
+
+EUR/USD, GBP/USD e USD/JPY dão taxas diferentes para o mesmo padrão. Compare cada um sozinho.
+
+#### Teste para a frente na demo
+
+Por 30 dias, opere o padrão na demo sempre que ele aparecer, com o valor fixo da sua gestão de banca.
+
+#### Compare e decida
+
+Ficou abaixo do empate? Descarte. Ficou acima? Siga anotando: um mês ainda é amostra curta.
+
+Fonte: safirion.com/blog/catalogador-de-opcoes-binarias/ · 14/11/2026
+
+O teste para a frente vale mais que o histórico, porque usa velas que o catalogador não tinha visto. Anote cada caso na planilha de gerenciamento de banca, com o motivo da entrada, e a taxa real aparece no fim do mês.
+
+Para filtrar o que o catalogador acusa, olhe a estrutura do gráfico com price action ou um indicador como o MACD. Para fazer o teste com saldo virtual, abra sua conta na Safirion e fique na demo até fechar os 30 dias.
+
+### Antes de pagar por um catalogador
+
+Seis sinais de que a ferramenta vende mais do que entrega.
+
+#### Taxa acima de 70%
+
+Em amostra pequena, é sobreajuste. O blog oficial da Safirion trata esse número como sinal de alerta.
+
+#### Entrada automática
+
+Catalogador ligado à corretora que abre operação sozinho entra sem contexto e sem filtro: é a receita para queimar a banca.
+
+#### Preço de R$ 497
+
+Contar velas é tarefa simples. Preço alto é marketing, não tecnologia, segundo o blog oficial.
+
+#### Taxa só com gale
+
+Ferramenta que não mostra a taxa sem gale esconde a conta do ciclo que falha.
+
+#### Pede a sua senha
+
+Ninguém precisa da senha da corretora para contar velas. Extensão ou grupo que pede: não instale e não entregue.
+
+#### Grátis faz o mesmo
+
+Extensões de navegador, planilhas e scripts em Python fazem a contagem básica sem custo.
+
+Fonte: safirion.com/blog/catalogador-de-opcoes-binarias/ · 14/11/2026
+
+O blog oficial pergunta: se o catalogador funcionasse bem o bastante, por que vendê-lo em vez de operar com ele? A resposta do próprio texto é que ele ajuda a estudar, mas não sustenta uma operação sozinho. Quem promete lucro certo com ele vende outra coisa.
+
+Os sinais clássicos de golpe no mercado de opções binárias estão em a Safirion é golpe ou não?.
+
+### Passo a passo: o teste na Safirion
+
+Do gráfico ao registro, no caminho descrito pelo blog oficial.
+
+#### Entre na demo
+
+Clique no saldo, no topo da tela, para alternar entre a conta de prática e a real. A demo tem US$ 10.000 virtuais.
+
+#### Monte o gráfico do padrão
+
+Troque a linha por velas no primeiro ícone do canto esquerdo e use o mesmo ativo e tempo de vela do catalogador.
+
+#### Valor fixo e expiração
+
+O investimento é o valor daquela operação, não o saldo. A expiração acompanha o tempo gráfico.
+
+#### Entre só no padrão
+
+Acima (compra) ou abaixo (venda), quando ele surgir no horário catalogado. Sem dobrar depois de perder.
+
+#### Confira no histórico
+
+Operações abertas e encerradas ficam no histórico. Passe cada uma para a planilha.
+
+Fonte: safirion.com/blog/safirion-trade-plataforma/ · 14/11/2026
+
+O treino completo está em como treinar na conta demo, e a tela, botão por botão, em como operar na Safirion. Primeira vez aqui? A página inicial resume a corretora.
+
+- WELCOME100 Cupom informado na hora do depósito
+- 100% Bônus sobre o valor depositado
+- US$ 10 Depósito mínimo segundo safirion.com
+- Da Safirion Condições regras da promoção
+
+Fonte: Página do cupom WELCOME100, com as condições segundo safirion.com · 14/11/2026
+
+O bônus segue as condições da Safirion. Leia as regras de uso e de saque antes de depositar, e não conte o bônus como ganho. O passo a passo está na página do cupom WELCOME100.
+
+Catalogador não prevê o mercado: a taxa dele descreve velas que já fecharam. Operar envolve risco de perda do capital investido. A Safirion é operada pela THUNDER FLASH LLC, de Nevis, e não é regulada pela CVM. Só opere com dinheiro que você pode perder. Somente para maiores de 18 anos.
+
+### Perguntas frequentes
+
+#### O que é catalogador de opções binárias?
+
+É uma ferramenta, em programa, planilha ou extensão de navegador, que lê o histórico de velas e conta quantas vezes um padrão apareceu e para que lado a vela seguinte fechou. Ela organiza o passado; não prevê a próxima vela.
+
+Fonte: Blog oficial: catalogador de opções binárias
+
+#### Catalogador de opções binárias funciona?
+
+Para contar repetições, sim; como previsão, não. A taxa muda com o período lido, o horário e o tipo de mercado, e o payout abaixo de 100% exige acertar mais que a metade só para empatar.
+
+#### Qual a taxa de acerto de um catalogador?
+
+Não existe uma taxa do catalogador: existe a taxa de cada padrão, no período lido. Com payout de 85%, o empate fica em 54,1%. Desconfie de taxa acima de 70% com poucos casos e de taxa que só aparece com gale.
+
+#### O que é G1 e G2 no catalogador?
+
+São as entradas de gale: G1 é a segunda, com o dobro do valor, depois de uma perda; G2, a terceira, com o quádruplo. Com G2, um padrão de 50% aparece como 87,5% de acerto.
+
+#### Quantos casos preciso para confiar no catalogador?
+
+O blog oficial da Safirion fala em 200 ocorrências ou mais. Com 48 casos e taxa de 66,7%, a faixa provável da taxa real vai de 52,5% a 78,3% e pode ficar abaixo do empate.
+
+Fonte: Blog oficial: catalogador de opções binárias
+
+#### Catalogador grátis funciona?
+
+Para contar padrões, sim: extensões de navegador, planilhas e scripts em Python fazem a mesma contagem básica dos pagos. O blog oficial sugere usar um gratuito por 30 dias, com o teste na demo, antes de pensar em pagar.
+
+Fonte: Blog oficial: catalogador de opções binárias
+
+#### Posso deixar o catalogador operar sozinho?
+
+Não é o recomendado. Catalogador que abre operação automática entra sem contexto e sem filtro, com base numa frequência que pode ter mudado. O blog oficial da Safirion chama isso de receita para queimar a banca.
+
+Fonte: Blog oficial: catalogador de opções binárias
+
+#### Catalogador prevê o mercado?
+
+Não. Ele mostra o que aconteceu nas velas que já fecharam. O mercado muda de regime, de horário e de volatilidade, e a taxa do passado pode não se repetir na próxima operação.
+
+#### Como testar um padrão do catalogador na Safirion?
+
+Na conta demo, com US$ 10.000 virtuais e sem prazo para acabar. Opere o padrão por 30 dias com valor fixo e anote cada caso na planilha de gerenciamento de banca.
+
+Fonte: Contrato de Conta Demo (PDF oficial)
+
+### Fontes desta página
+
+- Blog oficial: catalogador de opções binárias (o que faz, amostra, sobreajuste, uso e versões grátis)
+- Blog oficial: gestão de banca em opções binárias (martingale e regra do 2%)
+- Blog oficial: Safirion Trade, como funciona a plataforma (conta demo, gráfico e operação)
+- NIST/SEMATECH e-Handbook of Statistical Methods: intervalo de confiança de proporção (Wilson)
+- Contrato de Conta Demo (PDF oficial: tempo ilimitado)
+- Cupom WELCOME100: condições segundo a Safirion
+
+## Planilha de gerenciamento de banca: o modelo pronto
+URL: https://safirion.com.br/blog/planilha-de-gerenciamento-de-banca/
+
+Colunas, fórmulas e um dia preenchido para copiar no Excel ou no Google Planilhas
+
+### O que é uma planilha de gerenciamento de banca?
+
+A definição e o que ela faz por você.
+
+Planilha de gerenciamento de banca é uma tabela em que você anota cada operação e que calcula sozinha o saldo, a próxima entrada de 1% a 2% do saldo atual e o momento de parar no dia. Ela não melhora a estratégia: impede que o humor decida o tamanho da entrada.
+
+As regras vêm do guia de gerenciamento de banca no day trade: banca separada, de 1% a 2% por operação sobre o saldo atual e limite de perda no dia e no mês. A planilha transforma essas regras em contas que você não precisa fazer de cabeça no meio da operação.
+
+Para preencher as primeiras linhas sem dinheiro real, crie sua conta na Safirion: toda conta nova vem com uma demo de US$ 10.000 virtuais, sem prazo para acabar.
+
+### Quatro números decididos antes
+
+Ficam nas células B1 a B4, e todas as fórmulas leem deles.
+
+- R$ 500 B1 · Banca do mês o dinheiro separado só para operar
+- 2% B2 · Risco por operação de 1% a 2% do saldo atual
+- 3 B3 · Stop do dia perdas seguidas encerram o dia
+- 20% B4 · Stop do mês de queda sobre a banca do mês
+
+Fonte: safirion.com/blog/gestao-de-banca-opcoes-binarias/ · 14/11/2026
+
+Os R$ 500 são só o exemplo desta página: use o valor que você pode perder inteiro sem mexer nas contas do mês. O blog oficial da Safirion recomenda não passar de 2% por operação, parar o dia depois de 3 perdas seguidas e parar o mês ao perder 20% da banca inicial.
+
+Escreva o risco como percentual (2%, e não 2) para as fórmulas multiplicarem certo. Para mudar uma regra, mude a célula, nunca a fórmula: assim a regra fica sempre à vista.
+
+### As 11 colunas e as fórmulas
+
+Cabeçalho na linha 6, primeira operação na linha 7, fórmulas do Excel e do Google Planilhas em português.
+
+| Coluna | O que vai nela | Fórmula na linha 7 |
+| --- | --- | --- |
+| A · Data e hora | Quando a operação abriu | Digitada |
+| B · Ativo e vela | Ex.: EUR/USD M1 | Digitada |
+| C · Motivo | O sinal que levou à entrada | Digitada |
+| D · Saldo antes | O saldo antes de operar | =$B$1 na linha 7; da linha 8 em diante, o saldo da linha de cima: =I7 |
+| E · Entrada | O risco sobre o saldo antes | =ARRED(D7*$B$2;2) |
+| F · Payout | O percentual pago no acerto, que a plataforma mostra na hora | Digitado, em % |
+| G · Resultado | G (ganhou), P (perdeu) ou E (empate) | Digitado |
+| H · Lucro ou prejuízo | O que a operação rendeu ou tirou | =SE(G7="G";ARRED(E7*F7;2);SE(G7="P";-E7;0)) |
+| I · Saldo depois | O saldo que segue para a próxima linha | =D7+H7 |
+| J · Perdas seguidas | Soma no erro, zera no acerto | =SE(G7="P";1;0) na 1ª linha do dia; nas outras, =SE(G8="P";J7+1;0) |
+| K · Situação | OK ou PARE | =SE(OU(J7>=$B$3;I7<=$B$1*(1-$B$4));"PARE";"OK") |
+
+Fonte: Funções SE, OU, ARRED e CONT.SE: suporte da Microsoft e ajuda do Google Planilhas · 14/11/2026
+
+A coluna K junta os dois stops: mostra PARE quando as perdas seguidas chegam ao número de B3 ou quando o saldo cai até a banca menos os 20% de B4. Na banca de R$ 500, isso acontece em R$ 400.
+
+### Um dia ruim, linha a linha
+
+Banca de R$ 500, 2% por operação e payouts de exemplo. Valores em reais; as colunas A a C ficaram de fora para caber na tela.
+
+| Op. | D · Saldo antes | E · Entrada | F · Payout | G · Resultado | H · Lucro ou prejuízo | I · Saldo depois | J · Perdas seguidas | K · Situação |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 500,00 | 10,00 | 85% | G | +8,50 | 508,50 | 0 | OK |
+| 2 | 508,50 | 10,17 | 80% | P | −10,17 | 498,33 | 1 | OK |
+| 3 | 498,33 | 9,97 | 85% | P | −9,97 | 488,36 | 2 | OK |
+| 4 | 488,36 | 9,77 | 82% | G | +8,01 | 496,37 | 0 | OK |
+| 5 | 496,37 | 9,93 | 85% | P | −9,93 | 486,44 | 1 | OK |
+| 6 | 486,44 | 9,73 | 85% | P | −9,73 | 476,71 | 2 | OK |
+| 7 | 476,71 | 9,53 | 85% | P | −9,53 | 467,18 | 3 | PARE |
+
+conta didática com as fórmulas desta página, banca e payouts hipotéticos · 14/11/2026
+
+Repare na coluna E. Depois de cada perda, a entrada diminui um pouco, porque é calculada sobre um saldo menor: de R$ 10,17 caiu para R$ 9,53 sem você decidir nada. É isso que faz a perda desacelerar quando a fase está ruim.
+
+Na operação 7, a terceira perda seguida faz a coluna K mostrar PARE. O dia fecha em R$ 467,18, ou −R$ 32,82: 6,6% da banca. Dói, mas a banca segue de pé para o dia seguinte, e o stop do mês, em R$ 400, ainda está longe.
+
+### Planilha contra martingale
+
+Os mesmos 7 resultados, agora com a entrada dobrando depois de cada perda.
+
+| Op. | Resultado | 2% do saldo: entrada → saldo | Martingale: entrada → saldo |
+| --- | --- | --- | --- |
+| 1 | Ganhou, 85% | 10,00 → 508,50 | 10,00 → 508,50 |
+| 2 | Perdeu | 10,17 → 498,33 | 10,00 → 498,50 |
+| 3 | Perdeu | 9,97 → 488,36 | 20,00 → 478,50 |
+| 4 | Ganhou, 82% | 9,77 → 496,37 | 40,00 → 511,30 |
+| 5 | Perdeu | 9,93 → 486,44 | 10,00 → 501,30 |
+| 6 | Perdeu | 9,73 → 476,71 | 20,00 → 481,30 |
+| 7 | Perdeu | 9,53 → 467,18 | 40,00 → 441,30 |
+| Depois | Próxima entrada | Nenhuma: 3 perdas seguidas | 80,00, ou 18,1% do saldo |
+
+Fonte: conta didática com a sequência do exemplo; martingale como descrito em safirion.com/blog/gestao-de-banca-opcoes-binarias/ · 14/11/2026
+
+Até a operação 4, o martingale parece melhor: uma entrada de R$ 40 deu certo e o saldo passou de R$ 511. Três perdas depois, ele está em R$ 441,30, com prejuízo quase o dobro do da planilha, e a regra manda entrar com R$ 80. Mais uma perda e a próxima pede R$ 160.
+
+O blog oficial da Safirion faz a conta longa: começando em US$ 10, a oitava entrada depois de 7 perdas seguidas pede US$ 1.280. A planilha existe para que a próxima entrada dependa do saldo, nunca da vontade de recuperar. Outros tropeços parecidos estão em erros de iniciante no day trade.
+
+### Quatro contas no fim do mês
+
+Fórmulas para uma coluna ao lado, lendo da linha 7 à 500. Os valores são os do dia de exemplo.
+
+- −R$ 32,82 Resultado =SOMA(H7:H500)
+- 28,6% Taxa de acerto 2 acertos em 7 operações
+- 54,4% Acerto que empata =1/(1+MÉDIA(F7:F500))
+- R$ 467,18 Menor saldo =MÍNIMO(I7:I500)
+
+conta didática com o dia de exemplo desta página · 14/11/2026
+
+A taxa de acerto sai de =CONT.SE(G7:G500;"G")/(CONT.SE(G7:G500;"G")+CONT.SE(G7:G500;"P")). O acerto que empata usa o payout médio: com 83,9% de média no exemplo, é preciso acertar 54,4% só para não perder. Compare as duas todo mês: é a conta que diz se a estratégia paga o próprio risco.
+
+Um dia não é amostra. Tire conclusão com o mês inteiro e use a coluna C: filtrando por motivo, você vê qual sinal acerta e qual só parece acertar. É o teste do catalogador de opções binárias, feito com as suas próprias operações.
+
+### Monte a sua em seis passos
+
+Funciona no Excel e no Google Planilhas, no computador e no celular.
+
+#### Crie o arquivo
+
+Uma planilha nova, com uma aba por mês e o nome do mês na aba. Fica fácil comparar um com o outro.
+
+#### Preencha B1 a B4
+
+Banca do mês, risco por operação, perdas seguidas do stop do dia e queda do stop do mês.
+
+#### Escreva o cabeçalho
+
+Na linha 6, as 11 colunas de A a K, na ordem da tabela do modelo.
+
+#### Cole as fórmulas
+
+Nas colunas D, E, H, I, J e K da linha 7. Depois, selecione a linha e arraste para baixo.
+
+#### Pinte o PARE
+
+Formatação condicional na coluna K: célula igual a PARE fica vermelha e avisa quando o stop chega.
+
+#### Teste na demo
+
+Use a planilha por algumas semanas na conta demo antes de levar a regra para o dinheiro real.
+
+Fonte: Função SE: ajuda do Google Planilhas · 14/11/2026
+
+Se a planilha estiver em inglês, as funções mudam de nome: SE vira IF, OU vira OR, ARRED vira ROUND e CONT.SE vira COUNTIF, e o ponto e vírgula costuma virar vírgula.
+
+Para o sexto passo, abra sua conta na Safirion e preencha a planilha na demo, com o mesmo risco e os mesmos stops que vai usar depois.
+
+Abra também uma aba Movimentos, para depósitos, saques e taxas. Pelo documento de Taxas Gerais da Safirion, o primeiro saque do mês sai sem comissão e, a partir do segundo, a taxa é de 2%; com câmbio no meio, a conversão pode custar até 3%. Essa aba também ajuda no imposto de renda em corretora no exterior.
+
+Fonte: Taxas Gerais da Safirion (PDF oficial), itens 1.1 e 1.1.a · lido em 31/10/2026
+
+### Da tela da Safirion para a planilha
+
+Onde achar o que vai em cada coluna, no caminho descrito pelo blog oficial.
+
+#### Saldo e conta
+
+O saldo fica no topo da tela; clicando nele, você alterna entre a demo e a real. Use uma planilha para cada conta.
+
+#### Investimento
+
+É o valor daquela operação, não o saldo. Digite ali o valor da coluna E antes de escolher a direção.
+
+#### Expiração
+
+Acompanha o tempo gráfico escolhido. Anote o tempo da vela junto com o ativo, na coluna B.
+
+#### Histórico
+
+Operações abertas e encerradas ficam no histórico. Confira ali o resultado antes de preencher a coluna G.
+
+Fonte: safirion.com/blog/safirion-trade-plataforma/ · 14/11/2026
+
+O treino está em como treinar na conta demo, e a tela, botão por botão, em como operar na Safirion. Primeira vez aqui? A página inicial resume a corretora.
+
+- WELCOME100 Cupom informado na hora do depósito
+- 100% Bônus sobre o valor depositado
+- US$ 10 Depósito mínimo segundo safirion.com
+- Da Safirion Condições regras da promoção
+
+Fonte: Página do cupom WELCOME100, com as condições segundo safirion.com · 14/11/2026
+
+O bônus segue as condições da Safirion. Leia as regras de uso e de saque antes de depositar, e não lance o bônus na planilha como ganho. O passo a passo está na página do cupom WELCOME100.
+
+A planilha organiza o risco, mas não o elimina, e nenhuma regra de banca garante resultado. Operar envolve risco de perda do capital investido. A Safirion é operada pela THUNDER FLASH LLC, de Nevis, e não é regulada pela CVM. Só opere com dinheiro que você pode perder. Somente para maiores de 18 anos.
+
+### Perguntas frequentes
+
+#### Como fazer uma planilha de gerenciamento de banca?
+
+Ponha no topo a banca, o risco por operação, o stop do dia e o do mês. Abaixo, uma linha por operação: saldo antes, entrada, payout, resultado, lucro ou prejuízo, saldo depois, perdas seguidas e situação. As fórmulas estão no modelo desta página.
+
+#### Qual a fórmula de gerenciamento de banca no Excel?
+
+A entrada é o saldo antes vezes o risco: =ARRED(D7*$B$2;2), com 2% em B2. O lucro do acerto é a entrada vezes o payout; o prejuízo do erro é a entrada inteira. O saldo depois é o saldo antes mais o resultado.
+
+Fonte: Microsoft: função SE
+
+#### Quanto arriscar por operação?
+
+A regra mais usada é de 1% a 2% do saldo atual. Com banca de R$ 500 e 2%, a primeira entrada é de R$ 10, e ela encolhe sozinha quando o saldo cai. O blog oficial da Safirion recomenda não passar de 2%.
+
+Fonte: Blog oficial: gestão de banca em opções binárias
+
+#### Como colocar stop diário na planilha?
+
+Com uma coluna que conta as perdas seguidas e uma fórmula SE que mostra PARE ao chegar no limite, como 3 perdas. A contagem volta a zero no primeiro acerto e no começo de cada dia.
+
+#### Como calcular o lucro de uma operação com payout?
+
+Multiplique a entrada pelo payout. Entrada de R$ 10 com payout de 85% rende R$ 8,50 no acerto; no erro, sai a entrada inteira, R$ 10. Por isso o acerto que empata fica acima de 50%.
+
+#### A planilha funciona no Google Planilhas e no celular?
+
+Sim. As fórmulas desta página funcionam no Excel e no Google Planilhas em português, e os dois têm aplicativo para celular. Em inglês, troque SE por IF, OU por OR, ARRED por ROUND e CONT.SE por COUNTIF.
+
+Fonte: Google: função CONT.SE (COUNTIF)
+
+#### Planilha de gerenciamento com martingale funciona?
+
+Não. Martingale dobra a entrada depois da perda, o contrário do que a planilha faz. Na sequência de exemplo desta página, ele termina o dia com R$ 58,70 de prejuízo e pedindo uma entrada de R$ 80.
+
+#### Onde baixar uma planilha de gerenciamento de banca?
+
+Você não precisa baixar: o modelo desta página monta a sua em poucos minutos, com fórmulas que você entende. Se baixar uma pronta, evite arquivo com macro de origem desconhecida e confira cada fórmula antes de usar.
+
+#### A planilha de gerenciamento de banca garante lucro?
+
+Não. Ela limita o tamanho das perdas e mostra se a estratégia paga o próprio risco, mas o resultado depende do mercado. Operar envolve risco de perda do capital investido.
+
+### Fontes desta página
+
+- Blog oficial: gestão de banca em opções binárias (regra do 2%, 3 perdas seguidas, 20% no mês e martingale)
+- Blog oficial: Safirion Trade, como funciona a plataforma (saldo, investimento, expiração e histórico)
+- Taxas Gerais da Safirion (PDF oficial: saque e conversão)
+- Microsoft: função SE no Excel
+- Google Planilhas: função SE
+- Google Planilhas: função CONT.SE (COUNTIF)
+- Contrato de Conta Demo (PDF oficial: tempo ilimitado)
+- Cupom WELCOME100: condições segundo a Safirion
