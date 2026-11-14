@@ -73,7 +73,10 @@
 <link rel="preload" href="/assets/fonts/MazzardM-SemiBold.woff2?v=bd39b657" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/MazzardM-Regular.woff2?v=8aed3f50" as="font" type="font/woff2" crossorigin>
 <link rel="preload" as="image" href="/assets/img/safirion-ativos.png?v=bf7ddb77" fetchpriority="high">
+<link rel="preload" as="image" href="/assets/img/touro/touro-retrato-1100.webp?v=e9ad9a1e" media="(orientation: portrait)" fetchpriority="high">
+<link rel="preload" as="image" href="/assets/img/touro/touro-largo-1920.webp?v=39f24ef3" imagesrcset="/assets/img/touro/touro-largo-960.webp?v=2aecced5 960w, /assets/img/touro/touro-largo-1920.webp?v=39f24ef3 1920w" imagesizes="150vw" media="(orientation: landscape)" fetchpriority="high">
 <link rel="stylesheet" href="/assets/css/styles.css?v=10">
+<link rel="stylesheet" href="/assets/css/hero-touro.css?v=2">
 <link rel="stylesheet" href="/assets/css/popup-promo.css?v=2">
 <link rel="stylesheet" href="/assets/css/idiomas.css?v=1">
 
@@ -262,14 +265,33 @@
 <main id="conteudo">
 
     <section class="hero" id="topo" aria-labelledby="hero-titulo">
-    <div class="hero__earth" aria-hidden="true">
-      <img src="/assets/img/hero-earth.webp?v=d00acecd" alt="" width="2880" height="1610" decoding="async">
+    <div class="hero__cena" aria-hidden="true">
+      <div class="cena-quadro">
+        <picture>
+          <source media="(orientation: portrait)" srcset="/assets/img/touro/touro-retrato-1100.webp?v=e9ad9a1e 1100w" sizes="114vw" width="1100" height="716">
+          <img class="cena-arte" src="/assets/img/touro/touro-largo-1920.webp?v=39f24ef3" srcset="/assets/img/touro/touro-largo-960.webp?v=2aecced5 960w, /assets/img/touro/touro-largo-1920.webp?v=39f24ef3 1920w" sizes="150vw" width="1920" height="640" alt="" fetchpriority="high" decoding="async" draggable="false">
+        </picture>
+        <span class="cena-brilho"></span>
+      </div>
+      <div class="cena-varredura"></div>
+      <div class="cena-poeiras">
+        <div class="cena-poeira cena-poeira--a"></div>
+        <div class="cena-poeira cena-poeira--b"></div>
+        <span class="cena-fagulha" style="--x:6%;--a:-2.1s;--d:11s;--deriva:14px"></span>
+        <span class="cena-fagulha" style="--x:14%;--a:-7.4s;--d:13s;--deriva:-10px"></span>
+        <span class="cena-fagulha" style="--x:23%;--a:-4.2s;--d:10s;--deriva:8px"></span>
+        <span class="cena-fagulha" style="--x:31%;--a:-9.6s;--d:14s;--deriva:-6px"></span>
+        <span class="cena-fagulha" style="--x:42%;--a:-1.3s;--d:12s;--deriva:12px"></span>
+        <span class="cena-fagulha" style="--x:51%;--a:-6.8s;--d:15s;--deriva:-14px"></span>
+        <span class="cena-fagulha" style="--x:58%;--a:-3.5s;--d:11s;--deriva:10px"></span>
+        <span class="cena-fagulha" style="--x:66%;--a:-10.2s;--d:13s;--deriva:-8px"></span>
+        <span class="cena-fagulha" style="--x:73%;--a:-5.1s;--d:10s;--deriva:16px"></span>
+        <span class="cena-fagulha" style="--x:81%;--a:-8.3s;--d:14s;--deriva:-12px"></span>
+        <span class="cena-fagulha" style="--x:88%;--a:-0.7s;--d:12s;--deriva:6px"></span>
+        <span class="cena-fagulha" style="--x:95%;--a:-6.1s;--d:11s;--deriva:-10px"></span>
+      </div>
+      <div class="cena-veu"></div>
     </div>
-    <div class="hero__map" aria-hidden="true">
-      <img src="/assets/icons/mapa-mundi.svg?v=7bbcee91" alt="" width="1600" height="640" decoding="async">
-    </div>
-    <div class="hero__glow" aria-hidden="true"></div>
-    <div class="hero__veil" aria-hidden="true"></div>
 
     <div class="wrap hero__in">
       <div class="hero__txt">

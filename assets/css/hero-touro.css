@@ -134,6 +134,11 @@
 /* o aparelho entra na luz do touro: contorno azul suave, além da sombra que já tinha */
 .hero__art img{filter:drop-shadow(0 34px 70px rgba(0,0,0,.65)) drop-shadow(0 0 34px rgb(64 160 255 / .22))}
 
+/* Árabe (/ar/, texto à direita, aparelho à esquerda): a cena inteira em espelho. O touro corre
+   para a esquerda, atrás do aparelho, a luz varre da direita para a esquerda e o véu escurece o
+   lado DIREITO, onde está o texto. O espelho é da caixa da cena (inset:0): não sai da hero. */
+[dir="rtl"] .hero__cena{transform:scaleX(-1)}
+
 @keyframes touro-varre{from{transform:translateX(-130%) rotate(16deg)}to{transform:translateX(340%) rotate(16deg)}}
 @keyframes touro-pulsa{from{opacity:.35;transform:scale(.96)}to{opacity:1;transform:scale(1.06)}}
 @keyframes touro-sobe-a{to{transform:translate3d(0,-18rem,0)}}
@@ -159,7 +164,9 @@
   .cena-veu{
     background-image:
       linear-gradient(180deg,rgb(4 9 15 / .5) 0%,rgb(4 9 15 / 0) 9%,rgb(4 9 15 / 0) 26%,rgb(0 7 29 / .55) 40%,rgb(0 7 29 / .2) 70%,rgb(4 9 15 / .85) 92%,#04090f 100%),
-      linear-gradient(90deg,rgb(0 7 29 / .82) 0%,rgb(0 7 29 / .62) 38%,rgb(0 7 29 / .12) 66%,rgb(0 7 29 / 0) 80%);
+      /* o lombo do touro passa atrás do fim de "SAFIRION" (até 66% da largura em 360 px): o véu reto
+         fecha mais nessa faixa (título a 4,5:1 no pixel); a cabeça e os chifres, depois de 80%, ficam acesos */
+      linear-gradient(90deg,rgb(0 7 29 / .84) 0%,rgb(0 7 29 / .72) 40%,rgb(0 7 29 / .46) 62%,rgb(0 7 29 / .22) 72%,rgb(0 7 29 / 0) 84%);
   }
 }
 /* tablet em pé: o aparelho já aparece na primeira tela, logo abaixo dos botões;

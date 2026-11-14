@@ -98,7 +98,8 @@ function comVersaoDeMidia(html) {
   };
   return html
     .replace(/(\s(?:src|href|content|poster|data-src)=")([^"]+)(")/g, (m, a, u, z) => a + trocar(u) + z)
-    .replace(/(\ssrcset=")([^"]+)(")/g, (m, a, lista, z) => a + lista.split(',').map(it => {
+    // srcset da <img>/<source> e imagesrcset da pré-carga (a pré-carga tem de pedir o MESMO endereço da imagem)
+    .replace(/(\s(?:image)?srcset=")([^"]+)(")/g, (m, a, lista, z) => a + lista.split(',').map(it => {
       const p = it.trim().split(/\s+/);
       if (p[0]) p[0] = trocar(p[0]);
       return p.join(' ');
@@ -111,6 +112,17 @@ function comVersoes(html) {
     .replace(/idiomas\.css\?v=\d+/, `idiomas.css?v=${V_IDIOMAS}`)
     .replace(/main\.js\?v=\d+/, `main.js?v=${V_MAIN}`)
     .replace(/popup-promo\.js\?v=\d+/, `popup-promo.js?v=${V_POPUP}`));
+}
+// A página de idioma mora em /<pasta>/: endereço relativo "assets/…" dentro de uma lista
+// srcset/imagesrcset ("a.webp 960w, b.webp 1920w") vira absoluto, item a item.
+const listaAbsoluta = s => s.replace(/(\s(?:image)?srcset=")([^"]+)(")/g, (m, a, lista, z) =>
+  a + lista.split(',').map(it => it.trim().replace(/^assets\//, '/assets/')).join(', ') + z);
+// Trava: endereço relativo de assets/ que sobrar na página de idioma é imagem ou folha quebrada
+// (o navegador pede /<pasta>/assets/…). Reprova a montagem em vez de publicar quebrado.
+function semRelativo(html, pasta) {
+  const m = html.match(/(?:\s(?:src|href|srcset|imagesrcset|poster|data-src)="(?:[^"]*,\s*)?|url\(\s*["']?)assets\/[^"')\s,]*/);
+  if (m) throw new Error(`${pasta}: endereço relativo na página de idioma: ${m[0].trim()}`);
+  return html;
 }
 
 // ---------------------------------------------------------------- home em português
@@ -163,7 +175,7 @@ for (const i of prontos) {
   corpo = troca(corpo, 'data-msgs=""></span>', `data-msgs='${msgs}'>${C.ticker[0]}</span>`);
   const fileira = corpo.match(/<div class="marquee__row">([\s\S]*?)<\/div>/)[1];
   corpo = troca(corpo, '<div class="marquee__row"></div>', `<div class="marquee__row">${fileira}</div>`);
-  corpo = corpo.replace(/(src|href)="assets\//g, '$1="/assets/').replace(/href="\/"/g, () => `href="${caminho(i)}"`);
+  corpo = listaAbsoluta(corpo.replace(/(src|href)="assets\//g, '$1="/assets/').replace(/href="\/"/g, () => `href="${caminho(i)}"`));
 
   let h = cabeca.replace(/<html lang="[^"]*"[^>]*>/, `<html lang="${i.codigo}" dir="${i.dir}">`);
   h = h.replace(ldRe, (m, a, json, z) => `${a}\n${JSON.stringify(dados(JSON.parse(json), i, t, C, corpo), null, 2).replace(/</g, '\\u003c')}\n${z}`);
@@ -178,7 +190,7 @@ for (const i of prontos) {
     s = troca(s, 'property="og:locale" content="pt_BR"', `property="og:locale" content="${i.og}"`);
     s = troca(s, `<link rel="canonical" href="${SITE}/">`, `<link rel="canonical" href="${U}">`);
     s = troca(s, `property="og:url" content="${SITE}/"`, `property="og:url" content="${U}"`);
-    s = s.replace(/href="(assets\/|site\.webmanifest)/g, 'href="/$1');
+    s = listaAbsoluta(s.replace(/href="(assets\/|site\.webmanifest)/g, 'href="/$1'));
     fora[k] = s;
   }
   h = fora.join('');
@@ -189,7 +201,7 @@ for (const i of prontos) {
   let html = `${h}</head>\n<body>\n\n${corpo}\n\n<script>window.safirionPromoTxt=${popup};</script>\n<script src="/assets/js/main.js?v=${V_MAIN}" defer></script>\n<script src="/assets/js/popup-promo.js?v=${V_POPUP}" defer></script>\n</body>\n</html>\n`;
   // o corpo traduzido vem da fonte sem versão nas mídias: cada idioma passa pelo
   // mesmo comVersoes do português, senão só a home em pt sai com `?v=`
-  html = comVersoes(comSeletor(html, i));
+  html = semRelativo(comVersoes(comSeletor(html, i)), i.pasta);
   fs.mkdirSync(path.join(RAIZ, i.pasta), { recursive: true });
   fs.writeFileSync(path.join(RAIZ, i.pasta, 'index.html'), html);
 }
