@@ -5,7 +5,7 @@
    Celular primeiro; as larguras maiores entram por min-width. */
 
 /* ---------- topo: cobre a tela inteira, conteúdo centrado ---------- */
-.cp-hero{min-height:100svh;display:grid;align-content:center;padding-block:clamp(104px,13vw,150px) clamp(40px,5vw,72px)}
+.cp-hero{min-height:100svh;display:grid;align-content:center;padding-block:clamp(104px,13vw,150px) clamp(16px,2vw,24px)}
 .cp-hero .hero__in{grid-template-columns:minmax(0,1fr);gap:clamp(24px,3.4vw,52px)}
 .cp-hero .hero__txt{gap:14px}
 .cp-h1{margin:2px 0 0;color:var(--ink-strong);font-weight:600;font-size:clamp(34px,5.2vw,64px);line-height:1.04;letter-spacing:-.035em;max-width:16ch}
@@ -22,7 +22,9 @@
 .cp-bilhete__nota{margin:12px 0 0;color:var(--muted);font-size:13px;line-height:1.5}
 
 /* ---------- o que é + condições à vista ---------- */
-.cp-sec{padding-block:clamp(44px,6vw,88px)}
+/* vão entre blocos: até 112 px no computador e 56 no celular (teto da doutrina: 120 e 72) */
+.cp-sec{padding-block:clamp(22px,3.2vw,46px)}
+.cp-hero+.cp-sec{padding-top:8px}
 .cp-cab{max-width:760px}
 .cp-cab .h2{margin-top:14px}
 .cp-resposta{margin-top:14px;color:var(--ink);font-size:clamp(15.5px,1.5vw,18px);line-height:1.65;max-width:66ch}
@@ -63,6 +65,9 @@
   .cp-faq .faq__list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;gap:16px}
 }
 @media (min-width:64rem){
+  /* computador: a sobra da tela fica dividida em cima e embaixo do conteúdo, sem somar padding ao vão de baixo */
+  .cp-hero{padding-bottom:0}
+  .cp-hero+.cp-sec{padding-top:0}
   .cp-hero .hero__in{grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr)}
   .cp-cond{grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
   .cp-cond li{padding:18px 18px 20px}
