@@ -14,7 +14,7 @@ const erro = (arq, msg) => erros.push(`${arq}: ${msg}`);
 const aviso = (arq, msg) => avisos.push(`${arq}: ${msg}`);
 
 // Atributos cujo valor é texto para o leitor e, portanto, deve ser traduzido.
-const TRADUZIVEIS = ['alt', 'aria-label', 'title', 'placeholder'];
+const TRADUZIVEIS = ['alt', 'aria-label', 'title', 'placeholder', 'data-mais', 'data-menos'];
 // O link de cadastro e o de login carregam o idioma do corretor e o afftrack/aff_track da pasta: isso é POR
 // IDIOMA, não coisa que o tradutor mexeu. Normaliza os dois antes de comparar, para a
 // checagem de destinos continuar pegando qualquer OUTRA alteração de endereço.
