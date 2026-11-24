@@ -665,7 +665,7 @@ html[lang="pt-BR"] #hero-titulo .pal{text-transform:uppercase}
   display:grid;grid-template-columns:1fr 1.85fr;gap:clamp(32px,5vw,64px);
   padding-block:clamp(48px,5.5vw,72px);align-items:start;
 }
-.ft__brand img{height:26px;width:auto;margin-bottom:18px}
+.ft__brand img{height:28px;width:auto;margin-bottom:18px}
 .ft__brand p{color:var(--muted);font-size:14.4px;line-height:1.72;max-width:420px}
 .ft__mail{display:inline-flex;align-items:center;gap:9px;margin-top:20px;
   color:var(--muted);font-size:14.2px;transition:color .25s var(--ease)}
@@ -676,15 +676,41 @@ html[lang="pt-BR"] #hero-titulo .pal{text-transform:uppercase}
 .ft__social a:hover{transform:translateY(-2px);filter:brightness(1.1)}
 .ft__social svg{width:34px;height:34px;display:block}
 .ft__acts{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
-.ft__cols{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,3vw,40px)}
+/* as três colunas (Plataforma, Conta, Legal) ficam lado a lado em TODA largura, inclusive
+   no celular (pedido do Victor, 23/11/2026): coluna em minmax(0,1fr) para nunca crescer
+   pelo conteúdo e estourar a linha */
+.ft__cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(24px,3vw,40px)}
 .ft__col h3{color:var(--muted-2);font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;margin-bottom:16px}
 .ft__col li+li{margin-top:11px}
 .ft__col a{color:var(--muted);font-size:14.2px;transition:color .25s var(--ease)}
 .ft__col a:hover{color:var(--brand-300)}
+.ft a:focus-visible{outline:2px solid var(--brand-400);outline-offset:3px;border-radius:6px}
 .ft__copy{
   border-top:1px solid var(--line-soft);padding-block:22px 32px;
-  color:var(--muted-3);font-size:12.8px;display:flex;gap:8px;flex-wrap:wrap;
+  color:var(--muted-2);font-size:12.8px;display:flex;gap:8px;flex-wrap:wrap;
 }
+/* Base do rodapé: as duas marcas, uma em cada lado (doutrina, seção 10).
+   Produto: logo oficial (o arquivo do cabeçalho) + "© <ano> Safirion. Todos os direitos reservados."
+   VisionX: ícone X + "© <ano> VisionX · Todos os direitos reservados.", link para visionxma.com,
+   sem CNPJ. O ano vem escrito no HTML e o main.js atualiza pelo relógio ([data-ano]). */
+.ft__base{
+  border-top:1px solid var(--line-soft);padding-block:22px 32px;
+  display:flex;align-items:center;justify-content:space-between;gap:14px 28px;flex-wrap:wrap;
+  color:var(--muted-2);font-size:12.8px;line-height:1.5;
+}
+.ft__produto{display:flex;align-items:center;gap:12px;min-width:0}
+.ft__produto img{height:20px;width:auto;flex:none}
+.ft__visionx{display:inline-flex;align-items:center;gap:8px;min-width:0;color:var(--muted-2);
+  transition:color .25s var(--ease)}
+.ft__visionx svg{width:13px;height:13px;flex:none;color:var(--ink);transition:transform .25s var(--ease)}
+.ft__visionx:hover{color:var(--ink)}
+.ft__visionx:hover svg{transform:rotate(90deg)}
+/* o botão redondo de voltar ao topo (fixo, 44px a 20px do canto direito) não pode cobrir a
+   assinatura: até a largura em que a grade se afasta da borda, reserva o canto dele */
+@media (min-width:601px) and (max-width:1279px){
+  .ft__base,.ft__copy{padding-right:max(var(--gutter),76px)}
+}
+@media (prefers-reduced-motion:reduce){.ft__visionx:hover svg{transform:none}}
 
 /* ==========================================================================
    Revelação + botão de topo
@@ -741,7 +767,6 @@ html[lang="pt-BR"] #hero-titulo .pal{text-transform:uppercase}
 @media (max-width:860px){
   .grid-3{grid-template-columns:1fr}
   .ft__top{grid-template-columns:1fr}
-  .ft__cols{grid-template-columns:repeat(2,1fr)}
 }
 @media (max-width:600px){
   .ticker{height:34px;font-size:12px}
@@ -757,7 +782,6 @@ html[lang="pt-BR"] #hero-titulo .pal{text-transform:uppercase}
   .hero__art img{max-height:42vh}
   .app__art img{max-height:46vh}
   .hero__acts .btn{flex:1 1 100%}
-  .ft__cols{grid-template-columns:1fr}
 }
 
 /* ==========================================================================
@@ -852,4 +876,60 @@ html[lang="pt-BR"] #hero-titulo .pal{text-transform:uppercase}
 @media (prefers-reduced-motion:reduce){
   #ferramentas .card>.card__vis{transition:none}
   #ferramentas .card:hover>.card__vis{--vis-y:0}
+}
+
+/* ==========================================================================
+   Rodapé no tablet e no celular (23/11/2026)
+   O celular copia a composição do computador: a marca em cima e as TRÊS colunas de links
+   lado a lado embaixo (nunca pilha, nunca 2 + 1, nunca acordeão). Alvo de toque de 44px.
+   Os idiomas viram uma grade compacta (4 por linha, bandeira sobre o nome, o idioma atual
+   numa faixa inteira no alto), sem trilho. Seletores com .ft na frente porque o
+   idiomas.css (carregado depois) estiliza .ft__lng com o mesmo peso.
+   ========================================================================== */
+/* tablet e celular são toque: todo link do rodapé ganha 44px de altura de alvo */
+@media (max-width:1023px){
+  .ft .ft__lng a{min-height:44px}
+  .ft__mail{display:inline-flex;align-items:center;min-height:44px}
+  .ft__social svg{width:44px;height:44px}
+  .ft__col li+li{margin-top:0}
+  .ft__col a{display:flex;align-items:center;min-height:44px;padding-block:5px;line-height:1.25}
+  .ft__visionx{min-height:44px}
+  /* footer.ft vence o .pg-corpo .ft__cols do conteudo.css (2 colunas), que carrega depois */
+  footer.ft .ft__cols{grid-template-columns:repeat(3,minmax(0,1fr));gap:0 clamp(16px,3vw,40px)}
+}
+@media (max-width:600px){
+  .ft__top{gap:30px;padding-block:44px 30px}
+  .ft__brand img{height:24px;margin-bottom:14px}
+  .ft__brand p{font-size:14px;line-height:1.62}
+  .ft__mail{margin-top:8px}
+  .ft__social{margin-top:4px}
+  .ft__social a{border-radius:12px}
+  .ft__acts{margin-top:16px}
+  .ft__acts .btn{flex:1 1 0;justify-content:center;padding-inline:12px}
+
+  footer.ft .ft__cols{gap:0 10px}
+  .ft__col h3{font-size:11px;letter-spacing:.08em;margin-bottom:2px;line-height:1.3}
+  .ft__col a{font-size:13px;text-wrap:pretty}
+
+  .ft .ft__lng{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;padding-block:20px}
+  .ft .ft__lng a{flex-direction:column;justify-content:center;gap:5px;min-height:52px;
+    padding:6px 4px;border-radius:12px;font-size:12px;line-height:1.2;text-align:center}
+  .ft .ft__lng img{width:18px;height:13.5px}
+  .ft .ft__lng a[aria-current]{grid-column:1/-1;order:-1;flex-direction:row;gap:9px;min-height:44px;
+    font-size:13px;background:rgba(35,137,230,.1)}
+
+  /* as duas marcas continuam em dois lados; o fundo fica livre para o botão de topo */
+  .ft__base{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;gap:16px;
+    font-size:12.5px;padding-block:22px calc(84px + env(safe-area-inset-bottom))}
+  .ft__produto{flex-direction:column;align-items:flex-start;gap:8px}
+  .ft__visionx{flex-direction:column;align-items:flex-end;gap:9px;text-align:end}
+  .ft__copy{padding-bottom:calc(84px + env(safe-area-inset-bottom))}
+}
+/* chinês: "保留所有权利" não se parte entre dois ideogramas do mesmo termo; quebra só na pontuação */
+:lang(zh) .ft__base span{word-break:keep-all}
+@media (max-width:359px){
+  footer.ft .ft__cols{gap:0 8px}
+  .ft__col a{font-size:12.5px}
+  .ft .ft__lng{gap:5px}
+  .ft .ft__lng a{font-size:11.5px;padding-inline:2px}
 }

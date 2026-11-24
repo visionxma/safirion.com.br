@@ -34,6 +34,13 @@
     });
   }
 
+  /* ---------- Rodapé: o ano da linha do produto e da assinatura é conta ----------
+     O HTML já traz "2026" escrito (reserva para quem não roda JS); aqui só atualiza. */
+  var ano = String(new Date().getFullYear());
+  [].forEach.call(document.querySelectorAll('[data-ano]'), function (el) {
+    if (el.textContent !== ano) el.textContent = ano;
+  });
+
   /* ---------- Barra do topo: frases que se alternam ---------- */
   var msg = document.getElementById('ticker-msg');
   if (msg && !reduced) {
