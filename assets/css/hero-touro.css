@@ -32,13 +32,20 @@
 }
 .hero__stats{margin-top:clamp(32px,3.6vw,48px)}
 
+/* O fundo da hero é da PRÓPRIA hero, de ponta a ponta (24/11/2026): o céu da arte (a cor das
+   quatro bordas do touro, medida no arquivo: onde a arte acaba, não há emenda) que desce até o
+   fundo único da página no pé, onde a hero encontra a esteira sem degrau. Antes a cor morava
+   no .hero__cena, um filho, e a hero em si não tinha fundo. O véu da cena continua por cima. */
+.hero{
+  background-color:var(--bg);
+  background-image:linear-gradient(180deg,#00071d 0%,#00071d 78%,var(--bg) 100%);
+}
+
 .hero__cena{
   position:absolute;inset:0;z-index:-3;
   container-type:size;
   contain:paint;overflow:clip;
   pointer-events:none;user-select:none;
-  /* a cor das quatro bordas da arte, medida no arquivo: onde a arte acaba, não há emenda */
-  background-color:#00071d;
 }
 .hero__cena img{display:block;max-width:none}
 
@@ -80,10 +87,12 @@
   will-change:opacity,transform;
 }
 
-/* a luz que varre: uma faixa inclinada que atravessa a cena devagar */
+/* a luz que varre: uma faixa inclinada que atravessa a cena devagar. O miolo é o azul do
+   touro (120 196 255), não o branco-gelo apagado (170 220 255) que, sobre o preto, lia-se
+   como tinta cinza (24/11/2026); a força sobe um pouco para o brilho continuar o mesmo */
 .cena-varredura{
   position:absolute;top:-40%;bottom:-40%;left:0;width:38%;
-  background-image:linear-gradient(90deg,transparent 0%,rgb(110 185 255 / .05) 28%,rgb(170 220 255 / .17) 50%,rgb(110 185 255 / .05) 72%,transparent 100%);
+  background-image:linear-gradient(90deg,transparent 0%,rgb(110 185 255 / .05) 28%,rgb(120 196 255 / .2) 50%,rgb(110 185 255 / .05) 72%,transparent 100%);
   transform:translateX(-130%) rotate(16deg);
   animation:touro-varre 13s cubic-bezier(.45,.05,.55,.95) infinite;
   will-change:transform;

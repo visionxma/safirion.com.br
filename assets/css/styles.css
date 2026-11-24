@@ -103,14 +103,37 @@ strong,b{font-weight:600;color:var(--ink-strong)}
 .wrap{width:100%;max-width:var(--wrap);margin-inline:auto;padding-inline:var(--gutter)}
 .section{position:relative;padding-block:var(--section-y)}
 .section--tight{padding-block:clamp(60px,7vw,96px)}
-.section--alt{background:linear-gradient(180deg,var(--bg) 0%,var(--bg-band) 18%,var(--bg-band) 82%,var(--bg) 100%)}
+/* O encontro das seções (24/11/2026, doutrina seção 2): a página tem UM fundo (o do body) e a
+   faixa .section--alt não pinta mais o próprio fundo (a faixa tingida e os dois fios cinza
+   faziam degrau na fronteira). A separação agora é LUZ que mora numa camada própria, centrada
+   na PRÓPRIA fronteira, na camada de baixo da raiz (z-index:-1): o fio de luz azul da marca e o
+   halo que o envolve atravessam a borda sem corte, porque nenhuma caixa os recorta (a seção não
+   tem overflow e a pseudo não está dentro de outra caixa que corte). ::before é a fronteira de
+   cima, ::after a de baixo. Ao rolar, a luz se abre do centro e acende quando a fronteira chega
+   ao meio da tela (só transform e opacity); sem suporte ou com menos movimento, fica acesa e
+   parada. Largura nunca passa de 100%: zero rolagem lateral. */
+.section--alt{view-timeline:--faixa block}
 .section--alt::before,
 .section--alt::after{
-  content:"";position:absolute;left:10%;right:10%;height:1px;pointer-events:none;
-  background:linear-gradient(90deg,transparent,rgba(160,176,197,.22),transparent);
+  --h:clamp(240px,32vw,460px);
+  content:"";position:absolute;left:0;right:0;z-index:-1;height:var(--h);pointer-events:none;
+  background:
+    linear-gradient(90deg,transparent 10%,rgb(75 163 240 / .36) 50%,transparent 90%) center/100% 1px no-repeat,
+    radial-gradient(46% 50% at 50% 50%,rgb(35 137 230 / .13),rgb(35 137 230 / .045) 48%,transparent 76%);
 }
-.section--alt::before{top:0}
-.section--alt::after{bottom:0;opacity:.6}
+.section--alt::before{top:calc(var(--h) * -.5)}
+.section--alt::after{bottom:calc(var(--h) * -.5);opacity:.6}
+/* a auréola do #como-funciona morava numa caixa com overflow:hidden e era cortada reta na borda
+   de cima; a luz dessa fronteira agora é a do ::before acima */
+.section--alt>.aura{display:none}
+@supports (animation-timeline:view()){
+  @media (prefers-reduced-motion:no-preference){
+    .section--alt::before{animation:faixa-luz linear both;animation-timeline:--faixa;animation-range:entry 0% entry 100%}
+    .section--alt::after{animation:faixa-luz-pe linear both;animation-timeline:--faixa;animation-range:exit 0% exit 100%}
+  }
+}
+@keyframes faixa-luz{0%{opacity:.3;transform:scaleX(.55)}50%{opacity:1;transform:none}100%{opacity:.6;transform:scaleX(.82)}}
+@keyframes faixa-luz-pe{0%{opacity:.2;transform:scaleX(.55)}50%{opacity:.6;transform:none}100%{opacity:.35;transform:scaleX(.82)}}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 
 /* Auréola azul de fundo, reutilizável */
@@ -330,8 +353,9 @@ html[lang="pt-BR"] #hero-titulo .pal{text-transform:uppercase}
    ========================================================================== */
 .marquee{
   position:relative;overflow:hidden;padding-block:22px;
-  border-block:1px solid var(--line-soft);
-  background:linear-gradient(180deg,rgba(9,18,27,.6),rgba(4,9,15,.6));
+  /* sem fundo próprio (24/11/2026): a faixa tingida fazia degrau de 6 níveis no pé da hero;
+     a esteira corre sobre o fundo único da página, entre dois fios de luz da marca */
+  border-block:1px solid rgb(75 163 240 / .16);
   -webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);
   mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);
 }
@@ -450,19 +474,15 @@ html[lang="pt-BR"] #hero-titulo .pal{text-transform:uppercase}
   width:100%;height:100%;max-width:none;object-fit:cover;
   border:0;border-radius:0;box-shadow:none;
   filter:saturate(.92) brightness(.88);
+  /* a foto se APAGA (máscara de transparência) na direção do texto e no alto e no pé, com as
+     mesmas paradas do véu antigo. Antes era um véu opaco na cor do fundo por cima da foto: a
+     caixa dela virava um retângulo chapado que tapava a luz do encontro das seções (24/11/2026) */
+  --foto-lado:linear-gradient(90deg,transparent 0%,rgb(0 0 0 / .14) 12%,#000 52%);
+  --foto-alto:linear-gradient(180deg,transparent 0%,#000 17%,#000 83%,transparent 100%);
+  -webkit-mask-image:var(--foto-lado),var(--foto-alto);-webkit-mask-composite:source-in;
+  mask-image:var(--foto-lado),var(--foto-alto);mask-composite:intersect;
 }
-/* o véu que apaga a foto no fundo: horizontal na direção do texto + topo/base */
-.split--bleed .split__media::after{
-  content:"";position:absolute;inset:0;pointer-events:none;
-  background:
-    linear-gradient(90deg,var(--bg) 0%,rgba(4,9,15,.86) 12%,rgba(4,9,15,0) 52%),
-    linear-gradient(180deg,var(--bg) 0%,rgba(4,9,15,0) 17%,rgba(4,9,15,0) 83%,var(--bg) 100%);
-}
-.split--bleed.split--rev .split__media::after{
-  background:
-    linear-gradient(270deg,var(--bg) 0%,rgba(4,9,15,.86) 12%,rgba(4,9,15,0) 52%),
-    linear-gradient(180deg,var(--bg) 0%,rgba(4,9,15,0) 17%,rgba(4,9,15,0) 83%,var(--bg) 100%);
-}
+.split--bleed.split--rev .split__media img{--foto-lado:linear-gradient(270deg,transparent 0%,rgb(0 0 0 / .14) 12%,#000 52%)}
 /* o brilho azul da moldura antiga não faz mais sentido aqui */
 .split--bleed .split__media::before{content:none}
 .split__txt>*+*{margin-top:16px}
@@ -809,9 +829,10 @@ html[lang="pt-BR"] #hero-titulo .pal{text-transform:uppercase}
     min-height:clamp(240px,50vw,360px);
     margin-block:0;margin-inline:calc(-1 * var(--gutter));
   }
-  .split--bleed .split__media::after,
-  .split--bleed.split--rev .split__media::after{
-    background:linear-gradient(180deg,var(--bg) 0%,rgba(4,9,15,0) 22%,rgba(4,9,15,0) 78%,var(--bg) 100%);
+  .split--bleed .split__media img,
+  .split--bleed.split--rev .split__media img{
+    --foto-lado:linear-gradient(#000,#000);
+    --foto-alto:linear-gradient(180deg,transparent 0%,#000 22%,#000 78%,transparent 100%);
   }
   .panel-grid{grid-template-columns:1fr;gap:30px}
 }
