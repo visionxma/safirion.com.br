@@ -211,8 +211,14 @@ function portaoDoSite(raiz) {
     .replace(/<[^>]+>/g, ' '));
   // corta em fim de frase, NUNCA em dois-pontos: era justo com dois-pontos que a
   // frase retirada hoje se apresentava ("o site oficial da Safirion: safirion.com.br")
-  const frases = t => t.split('safirion.com.br').join(DOMINIO)
-    .split(/[.!?\n]+|[。！？۔؟।]+/).map(s => s.replace(/\s+/g, ' ').trim()).filter(Boolean);
+  // 24/11/2026: cada pedaço guarda se terminava em ponto de interrogação. PERGUNTA não afirma: o FAQ pergunta
+  // "A Safirion é regulada pela CVM?" e responde "Não há registro…"; antes a pergunta virava a frase
+  // "A Safirion é regulada pela CVM" e reprovava como afirmação de regulação (em pt, en, es e fil).
+  const pedacos = t => (t.split('safirion.com.br').join(DOMINIO).match(/[^.!?\n。！？۔؟।]+[.!?\n。！？۔؟।]*/g) || [])
+    .map(s => { const fim = (s.match(/[.!?\n。！？۔؟।]*$/) || [''])[0];
+      return { f: s.slice(0, s.length - fim.length).replace(/\s+/g, ' ').trim(), pergunta: /[?？؟]/.test(fim) }; })
+    .filter(x => x.f);
+  const frases = t => pedacos(t).map(x => x.f);
 
   function arquivos(dir, achados = []) {
     const fora = new Set(['.git', '.i18n', 'node_modules', 'assets', 'cdn-cgi']);
@@ -246,7 +252,9 @@ function portaoDoSite(raiz) {
         if (o) { falha(`frase diz "${o}" junto com safirion.com.br: "${f.split(DOMINIO).join('safirion.com.br').slice(0, 110)}"`); break; }
       }
     }
-    for (const f of unidades) {
+    const afirmacoes = [...pedacos(textoVisivel(html)), ...valoresLd(html).flatMap(v => pedacos(ent(v)))]
+      .filter(x => !x.pergunta && !/^https?:\/\/\S+$/.test(x.f)).map(x => x.f); // endereço também não afirma
+    for (const f of afirmacoes) {
       // a negação conta só ANTES do termo: "não possui autorização" nega mesmo;
       // já em "regulada e autorizada no Brasil" o "no" é preposição do português,
       // não a negativa do inglês — vale a ordem das palavras, não a presença

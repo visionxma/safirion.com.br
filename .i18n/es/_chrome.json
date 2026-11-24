@@ -25,6 +25,8 @@
     "p2": "Si tu próxima operación real de Opciones resulta en pérdida, reembolsamos hasta US$ 10 de tu inversión.",
     "nota": "La primera operación abierta tras la activación se considera libre de riesgo.",
     "btn": "Crear cuenta",
-    "mini": "Sujeto a las condiciones de la promoción. Operar productos apalancados implica riesgo de pérdida."
+    "mini": "Sujeto a las condiciones de la promoción. Operar productos apalancados implica riesgo de pérdida.",
+    "conta": "¿Ya tienes cuenta?",
+    "entrar": "Entrar"
   }
 }

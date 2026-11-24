@@ -25,6 +25,8 @@
     "p2": "Endet Ihr nächster echter Optionshandel mit einem Verlust, erstatten wir Ihnen bis zu US$ 10 Ihres Einsatzes.",
     "nota": "Der erste nach der Aktivierung eröffnete Trade gilt als risikofrei.",
     "btn": "Konto eröffnen",
-    "mini": "Es gelten die Aktionsbedingungen. Der Handel mit Hebelprodukten birgt ein Verlustrisiko."
+    "mini": "Es gelten die Aktionsbedingungen. Der Handel mit Hebelprodukten birgt ein Verlustrisiko.",
+    "conta": "Schon ein Konto?",
+    "entrar": "Anmelden"
   }
 }

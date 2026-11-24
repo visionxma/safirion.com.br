@@ -75,10 +75,10 @@
 <link rel="preload" as="image" href="/assets/img/app/safirion-app-celular-1400.webp?v=67e1f112" imagesrcset="/assets/img/app/safirion-app-celular-800.webp?v=43298d4f 800w, /assets/img/app/safirion-app-celular-1400.webp?v=67e1f112 1400w" imagesizes="(orientation: portrait) 84vw, (max-width: 1024px) 60vw, 46vw" fetchpriority="high">
 <link rel="preload" as="image" href="/assets/img/touro/touro-retrato-1100.webp?v=e9ad9a1e" media="(orientation: portrait)" fetchpriority="high">
 <link rel="preload" as="image" href="/assets/img/touro/touro-largo-1920.webp?v=39f24ef3" imagesrcset="/assets/img/touro/touro-largo-960.webp?v=2aecced5 960w, /assets/img/touro/touro-largo-1920.webp?v=39f24ef3 1920w" imagesizes="150vw" media="(orientation: landscape)" fetchpriority="high">
-<link rel="stylesheet" href="/assets/css/styles.css?v=12">
-<link rel="stylesheet" href="/assets/css/hero-touro.css?v=4">
-<link rel="stylesheet" href="/assets/css/popup-promo.css?v=3">
-<link rel="stylesheet" href="/assets/css/idiomas.css?v=1">
+<link rel="stylesheet" href="/assets/css/styles.css?v=13">
+<link rel="stylesheet" href="/assets/css/hero-touro.css?v=5">
+<link rel="stylesheet" href="/assets/css/popup-promo.css?v=4">
+<link rel="stylesheet" href="/assets/css/idiomas.css?v=2">
 
 <!-- ===== Dados estruturados ===== -->
 <script type="application/ld+json">
@@ -194,10 +194,50 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "เข้าสู่ระบบ Safirion อย่างไร?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "แตะ “เข้าสู่ระบบ” ในหน้านี้ หรือเปิด trade.safirion.com/login ก่อนพิมพ์รหัสผ่าน ให้ตรวจดูว่าที่อยู่เป็น trade.safirion.com จริง ๆ เพราะที่อยู่ของแพลตฟอร์มต่างจากที่อยู่ของเว็บไซต์นี้ และนี่คือความสับสนที่พบบ่อยที่สุดของผู้ที่เข้าสู่ระบบไม่ได้ดูที่อยู่ที่ถูกต้องและวิธีแก้ในแต่ละข้อผิดพลาด"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "เปิดบัญชี Safirion อย่างไร?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "แตะ “เปิดบัญชี” กรอกข้อมูลของคุณ แล้วลงทะเบียนให้เสร็จในไม่กี่นาที บัญชีจะเปิดใช้งานเมื่อฝากเงินครั้งแรก เริ่มต้นที่ US$ 10 และในขั้นตอนนั้นคุณสามารถใส่คูปอง WELCOME100 ได้เลย ส่วนการยืนยันตัวตนจะตามมาภายหลัง เมื่อมีการร้องขอดูขั้นตอนการลงทะเบียนทั้งหมด ทีละขั้น"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "คูปองของ Safirion คืออะไร?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "คือ WELCOME100 ตามที่ Safirion ระบุ ผู้ที่ฝากเงินพร้อมคูปองนี้จะได้รับโบนัส 100% ของจำนวนเงินที่ฝาก ใส่รหัสตอนฝากเงิน โดยโบนัสเป็นไปตามเงื่อนไขของโปรโมชันที่โบรกเกอร์ประกาศไว้บน safirion.com ซึ่งควรอ่านก่อนกดยอมรับดูเงื่อนไขก่อนฝากเงินครั้งแรก"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Safirion น่าเชื่อถือหรือไม่?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ตามเว็บไซต์ของโบรกเกอร์เอง Safirion ดำเนินการโดย THUNDER FLASH LLC (ทะเบียน L 22853 ที่เนวิส) และการชำระเงินผ่าน THUNDER FLASH CY LTD (ทะเบียน HE458373 ที่ไซปรัส) ไม่มีการจดทะเบียนกับ CVM หน่วยงานกำกับหลักทรัพย์ของบราซิล: เข้าผ่าน safirion.com เท่านั้น และอ่านการเปิดเผยความเสี่ยงดูว่าอะไรตรวจสอบได้และอะไรตรวจสอบไม่ได้"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Safirion มีแอปหรือไม่?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "มี แอป Android อยู่บน Google Play และมีเวอร์ชันสำหรับคอมพิวเตอร์ทั้ง Windows และ Mac ส่วนบน App Store เว็บไซต์ของ Safirion แจ้งว่าแอปจะมาเร็ว ๆ นี้ ระหว่างนี้ใช้งานบน iPhone ผ่านเบราว์เซอร์ได้ ด้วยบัญชีเดียวกันและยอดเงินเดียวกันดูว่าดาวน์โหลดแต่ละเวอร์ชันได้ที่ไหน"
+          }
+        },
+        {
+          "@type": "Question",
           "name": "ยอดถอนและยอดฝากขั้นต่ำคือเท่าไร?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "จำนวนขั้นต่ำอาจแตกต่างกันไป แต่โดยทั่วไปเริ่มต้นที่ R$50 (เรียลบราซิล) โปรดตรวจสอบจำนวนที่แน่นอนในหน้าฝากเงิน"
+            "text": "เว็บไซต์ของ Safirion ระบุยอดฝากขั้นต่ำ US$ 10 เพื่อเปิดใช้งานบัญชี ส่วนยอดถอนขั้นต่ำเป็นไปตามนโยบายการถอนเงินของโบรกเกอร์ และแสดงอยู่ในหน้าถอนเงินของแพลตฟอร์ม: หน้าแนะนำนี้ไม่ได้เผยแพร่ตัวเลขไว้ จึงต้องตรวจสอบภายในแพลตฟอร์มดูยอดขั้นต่ำและช่องทางการชำระเงิน"
           }
         },
         {
@@ -205,7 +245,7 @@
           "name": "ถอนเงินได้ทุกเมื่อที่ต้องการหรือไม่?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "ได้ เพียงส่งคำขอถอนเงินภายในแพลตฟอร์มได้ทุกเวลา"
+            "text": "ได้ ส่งคำขอถอนเงินภายในแพลตฟอร์มได้ทุกเวลา ตามขั้นตอนของช่องทางชำระเงินที่คุณใช้ฝาก ระยะเวลาจนเงินถึงขึ้นอยู่กับช่องทางนั้นและธนาคารที่รับเงิน: โบรกเกอร์ไม่ได้เผยแพร่ตารางระยะเวลาเป็นชั่วโมงดูเส้นทางของการถอนเงินจนถึงบัญชีของคุณ"
           }
         },
         {
@@ -213,15 +253,119 @@
           "name": "เทรดผ่านมือถือได้หรือไม่?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "ได้ แพลตฟอร์มรองรับเบราว์เซอร์บนมือถือและมีให้ใช้งานผ่านแอปด้วย"
+            "text": "ได้ แพลตฟอร์มใช้งานได้ในเบราว์เซอร์บนมือถือและผ่านแอป Android ด้วย เป็นบัญชีเดียวกับบนเว็บไซต์ ยอดเงินและประวัติเดียวกัน คุณจึงเริ่มวิเคราะห์บนคอมพิวเตอร์แล้วติดตามการเทรดต่อบนโทรศัพท์ได้ดูว่าแพลตฟอร์มทำงานบนมือถืออย่างไร"
           }
         },
         {
           "@type": "Question",
-          "name": "จะติดต่อขอรับการสนับสนุนได้อย่างไร?",
+          "name": "จะเปิดเรื่องขอความช่วยเหลือจากฝ่ายสนับสนุนได้อย่างไร?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "เข้าไปที่เมนู “ช่วยเหลือ” หรือ “ฝ่ายสนับสนุน” ภายในแผงควบคุม แล้วส่งคำขอของคุณ"
+            "text": "ผ่านเมนูช่วยเหลือหรือฝ่ายสนับสนุนในแผงควบคุมของแพลตฟอร์ม ซึ่งเป็นช่องทางที่โบรกเกอร์รับคำขอ หมายความว่าต้องมีบัญชีและเข้าสู่ระบบก่อนจึงจะคุยกับเจ้าหน้าที่ได้ เก็บหมายเลขของแต่ละเรื่องไว้: นี่คือหลักฐานที่ใช้รองรับการร้องเรียนใด ๆ ในภายหลังดูช่องทางบริการลูกค้าที่มีอยู่"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Safirion มีบัญชีทดลองหรือไม่?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "มี และเป็นจุดที่ควรเริ่มต้น: คุณทดลองใช้แพลตฟอร์มด้วยยอดเงินเสมือน โดยไม่ต้องเสี่ยงเงินของตัวเอง ช่วยให้รู้จักหน้าจอและขั้นตอนของคำสั่งซื้อขาย แต่ไม่ได้จำลองแรงกดดันของการเสียเงินจริง ซึ่งเป็นสิ่งที่ทำให้การตัดสินใจเปลี่ยนไปดูว่าบัญชีทดลองสอนอะไรและไม่ได้สอนอะไร"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "การยืนยันตัวตนต้องใช้เอกสารอะไรบ้าง?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "การยืนยันตัวตน KYC มักขอเอกสารแสดงตัวตนที่มีรูปถ่ายและหลักฐานที่อยู่ และโดยปกติจะต้องทำเมื่อคุณขอถอนเงินครั้งแรก การส่งเอกสารไว้ก่อนที่จะต้องใช้เงินช่วยให้ไม่ต้องรอในตอนที่จะถอนเงินพอดีดูรายการเอกสารที่ยอมรับ"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "เทรดสินทรัพย์อะไรได้บ้าง?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "มากกว่า 130 สินทรัพย์ ตามที่หน้านี้ระบุ ทั้งฟอเร็กซ์ หุ้น ดัชนี สินค้าโภคภัณฑ์ และคริปโทเคอร์เรนซี ทั้งหมดอยู่ในหน้าจอเดียว จำนวนที่เทรดได้ในแต่ละช่วงขึ้นอยู่กับเวลา: หุ้นจะเคลื่อนไหวก็ต่อเมื่อตลาดหลักทรัพย์ที่ซื้อขายหุ้นนั้นเปิดทำการดูรายการสินทรัพย์และเวลาซื้อขาย"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "มีค่าธรรมเนียมและค่าใช้จ่ายอะไรบ้าง?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ค่าใช้จ่ายหลักคือสเปรด ซึ่งเป็นส่วนต่างระหว่างราคาซื้อและราคาขาย ที่เก็บในทุกการเทรด นอกจากนี้ยังมีค่าใช้จ่ายของช่องทางชำระเงิน และค่าใช้จ่ายที่อาจเกิดจากการถือสถานะข้ามวัน อัตราที่ใช้อยู่ในปัจจุบันดูได้ในแพลตฟอร์มดูค่าใช้จ่ายแต่ละรายการ ทีละข้อ"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "เลเวอเรจคืออะไร และทำไมจึงทำให้พอร์ตแตก?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "คือการเทรดด้วยมูลค่าที่มากกว่ายอดเงินของคุณ ซึ่งขยายทั้งกำไรและขาดทุนในสัดส่วนเดียวกัน ในทางปฏิบัติ: เมื่อใช้เลเวอเรจสูง ราคาที่เคลื่อนสวนทางคุณเพียงไม่กี่สิบส่วนของหนึ่งเปอร์เซ็นต์ก็กินเงินในบัญชีไปเป็นส่วนใหญ่ได้ จึงมีคำเตือนเรื่องความเสี่ยงที่จะขาดทุนดูว่าเลเวอเรจกินยอดเงินอย่างไร"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Safirion อยู่ภายใต้การกำกับของ CVM หน่วยงานของบราซิลหรือไม่?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ไม่มีการจดทะเบียนที่เผยแพร่ไว้กับคณะกรรมการกำกับหลักทรัพย์ของบราซิล (Comissão de Valores Mobiliários, CVM) บริษัทเบื้องหลัง Safirion จดทะเบียนที่เนวิสและไซปรัส ไม่ใช่ในบราซิล การดำเนินงานจึงไม่อยู่ภายใต้การกำกับดูแลของบราซิล และไม่อยู่ในช่องทางร้องเรียนในประเทศของบราซิล นี่คือประเด็นที่ควรเข้าใจก่อนฝากเงินดูว่าการไม่จดทะเบียนกับ CVM เปลี่ยนอะไรบ้าง"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ต้องเสียภาษีเงินได้ในบราซิลจากกำไรที่ได้หรือไม่?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ต้องเสีย กำไรจากโบรกเกอร์นอกบราซิลเป็นเงินได้ที่ต้องเสียภาษี และต้องแจ้งต่อกรมสรรพากรกลางของบราซิล (Receita Federal) เหมือนเงินได้อื่น ๆ โดยคุณเป็นผู้ชำระภาษีเอง โบรกเกอร์ไม่ได้หักภาษีไว้และไม่ได้ออกหนังสือรับรองเงินได้ของบราซิล: ประวัติการเทรดของคุณคือฐานในการคำนวณดูวิธียื่นภาษีสำหรับโบรกเกอร์นอกบราซิล"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "DARF สำหรับเดย์เทรดในบราซิลทำงานอย่างไร?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "DARF คือแบบชำระภาษีที่ใช้จ่ายภาษีจากกำไรที่คำนวณได้ในบราซิล และสำหรับเดย์เทรดต้องชำระเป็นรายเดือน ตามผลของเดือนนั้น หากพ้นกำหนดจะมีค่าปรับและดอกเบี้ย การทำบัญชีทุกเดือนจึงคุ้มกว่าการไปจัดการทั้งหมดในเดือนเมษายนดูวิธีคำนวณและออก DARF"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "การเทรดไบนารีออปชันเป็นความผิดทางอาญาในบราซิลหรือไม่?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "การเทรดไม่ใช่ความผิดทางอาญาสำหรับบุคคลธรรมดา แต่การเสนอผลิตภัณฑ์นี้ในบราซิลโดยไม่ได้รับอนุญาตจาก CVM ถือว่าไม่ถูกต้องตามระเบียบ และความแตกต่างอยู่ตรงนี้ ผลในทางปฏิบัติคือคุณเทรดโดยไม่มีการคุ้มครองแบบที่สถาบันที่ได้รับอนุญาตจะให้ดูว่ากฎระบุไว้อย่างไร ในภาษาที่เข้าใจง่าย"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "เว็บไซต์ร้องเรียนของบราซิล Reclame Aqui แสดงอะไรเกี่ยวกับ Safirion?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "หน้าร้องเรียนเป็นเพียงสัญญาณ ไม่ใช่คำตัดสิน: ใช้ดูว่าอะไรเกิดซ้ำในคำร้องเรียน เช่น การถอนเงินล่าช้า การเรียกเก็บเงินที่ไม่คาดคิด หรือการติดต่อที่ยาก ไม่ใช่ใช้สรุปเอาเองจากหน้านั้นเพียงอย่างเดียว น้ำหนักอยู่ที่รูปแบบของคำร้องเรียนและคำตอบที่ได้รับดูวิธีอ่านหน้าร้องเรียน"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "บัญชีสกุลเงินดอลลาร์และการแปลงสกุลเงินทำงานอย่างไร?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "บัญชีเป็นสกุลดอลลาร์ อัตราแลกเปลี่ยนจึงเป็นตัวกำหนดว่าคุณใส่เงินเรียลบราซิลไปเท่าไรตอนฝาก และได้รับกลับเท่าไรตอนถอน คุณอาจจบด้วยกำไรเป็นดอลลาร์แต่ได้เรียลน้อยกว่าที่คาด หรือกลับกัน: นี่เป็นความเสี่ยงที่แยกจากตลาดที่คุณเทรดดูว่าอัตราแลกเปลี่ยนส่งผลต่อยอดเงินของคุณอย่างไร"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Instagram และ Telegram ทางการคือบัญชีไหน?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "บัญชีทางการคือบัญชีที่ Safirion ประกาศไว้เองบน safirion.com และการตรวจสอบที่นั่นก่อนตอบรับคำเชิญใด ๆ คือวิธีที่ช่วยให้ไม่ถูกหลอก โปรไฟล์ที่สัญญาว่าจะมีสัญญาณแบบเสียเงิน กลุ่มปิด หรือรับบริหารบัญชีของคุณ ไม่ใช่ฝ่ายบริการลูกค้าของโบรกเกอร์ดูวิธีแยกแยะช่องทางทางการ"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Safarion, Safirium, Safrion: ชื่อที่ถูกต้องคืออะไร?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ชื่อที่ถูกต้องคือ Safirion และชื่อที่เพี้ยนไปเกิดขึ้นเพราะหลายคนพิมพ์ค้นหาตามที่ได้ยิน เรื่องนี้สำคัญต่อความปลอดภัย: โดเมนที่คล้ายกับโดเมนทางการคือช่องทางที่หน้าเว็บปลอมใช้มากที่สุด จึงควรตรวจตัวสะกดก่อนพิมพ์รหัสผ่านดูชื่อที่เขียนเพี้ยนและโดเมนทางการ"
           }
         }
       ]
@@ -254,6 +398,7 @@
       <a href="#recursos">ฟีเจอร์</a>
       <a href="#como-se-cadastrar">สมัคร</a>
       <a href="#duvidas-frequentes">คำถาม</a>
+      <a href="/blog/">Blog</a>
     </nav>
     <div class="hdr__side">
       <!--idiomas--><details class="lng"><summary aria-label="เลือกภาษา"><img src="/assets/img/bandeiras/th.svg?v=bcc03a3c" alt="" width="20" height="15" loading="lazy" decoding="async"><span>th</span></summary><ul class="lng__lista"><li><a href="/" hreflang="pt-BR" lang="pt-BR"><img src="/assets/img/bandeiras/pt.svg?v=d5fc3717" alt="" width="20" height="15" loading="lazy" decoding="async">Português</a></li><li><a href="/en/" hreflang="en" lang="en"><img src="/assets/img/bandeiras/en.svg?v=1d23b950" alt="" width="20" height="15" loading="lazy" decoding="async">English</a></li><li><a href="/es/" hreflang="es" lang="es"><img src="/assets/img/bandeiras/es.svg?v=1f23da73" alt="" width="20" height="15" loading="lazy" decoding="async">Español</a></li><li><a href="/ar/" hreflang="ar" lang="ar"><img src="/assets/img/bandeiras/ar.svg?v=cf69a304" alt="" width="20" height="15" loading="lazy" decoding="async">العربية</a></li><li><a href="/bn/" hreflang="bn" lang="bn"><img src="/assets/img/bandeiras/bn.svg?v=e99cb11f" alt="" width="20" height="15" loading="lazy" decoding="async">বাংলা</a></li><li><a href="/de/" hreflang="de" lang="de"><img src="/assets/img/bandeiras/de.svg?v=e88d8860" alt="" width="20" height="15" loading="lazy" decoding="async">Deutsch</a></li><li><a href="/fil/" hreflang="fil" lang="fil"><img src="/assets/img/bandeiras/fil.svg?v=64c3d8b0" alt="" width="20" height="15" loading="lazy" decoding="async">Filipino</a></li><li><a href="/fr/" hreflang="fr" lang="fr"><img src="/assets/img/bandeiras/fr.svg?v=bf4cae9b" alt="" width="20" height="15" loading="lazy" decoding="async">Français</a></li><li><a href="/hi/" hreflang="hi" lang="hi"><img src="/assets/img/bandeiras/hi.svg?v=230b82c4" alt="" width="20" height="15" loading="lazy" decoding="async">हिन्दी</a></li><li><a href="/id/" hreflang="id" lang="id"><img src="/assets/img/bandeiras/id.svg?v=f5aa8121" alt="" width="20" height="15" loading="lazy" decoding="async">Bahasa Indonesia</a></li><li><a href="/it/" hreflang="it" lang="it"><img src="/assets/img/bandeiras/it.svg?v=1d72a5de" alt="" width="20" height="15" loading="lazy" decoding="async">Italiano</a></li><li><a href="/ru/" hreflang="ru" lang="ru"><img src="/assets/img/bandeiras/ru.svg?v=8b2aa18f" alt="" width="20" height="15" loading="lazy" decoding="async">Русский</a></li><li><a href="/sv/" hreflang="sv" lang="sv"><img src="/assets/img/bandeiras/sv.svg?v=79da0f18" alt="" width="20" height="15" loading="lazy" decoding="async">Svenska</a></li><li><a href="/th/" hreflang="th" lang="th" aria-current="true"><img src="/assets/img/bandeiras/th.svg?v=bcc03a3c" alt="" width="20" height="15" loading="lazy" decoding="async">ไทย</a></li><li><a href="/tr/" hreflang="tr" lang="tr"><img src="/assets/img/bandeiras/tr.svg?v=a00c7dfb" alt="" width="20" height="15" loading="lazy" decoding="async">Türkçe</a></li><li><a href="/vi/" hreflang="vi" lang="vi"><img src="/assets/img/bandeiras/vi.svg?v=076d5956" alt="" width="20" height="15" loading="lazy" decoding="async">Tiếng Việt</a></li><li><a href="/zh/" hreflang="zh-CN" lang="zh-CN"><img src="/assets/img/bandeiras/zh.svg?v=347824ed" alt="" width="20" height="15" loading="lazy" decoding="async">简体中文</a></li></ul></details><!--/idiomas-->
@@ -621,29 +766,99 @@
 
       <div class="faq__list" id="faq-lista">
         <details class="faq__item" name="faq">
-          <summary class="faq__q"><span class="faq__n">01</span>ยอดถอนและยอดฝากขั้นต่ำคือเท่าไร?<span class="faq__ic" aria-hidden="true"></span></summary>
-          <div class="faq__a">จำนวนขั้นต่ำอาจแตกต่างกันไป แต่โดยทั่วไปเริ่มต้นที่ R$50 (เรียลบราซิล) โปรดตรวจสอบจำนวนที่แน่นอนในหน้าฝากเงิน</div>
+          <summary class="faq__q"><span class="faq__n">01</span>เข้าสู่ระบบ Safirion อย่างไร?<span class="faq__ic" aria-hidden="true"></span></summary>
+          <div class="faq__a"><p>แตะ “เข้าสู่ระบบ” ในหน้านี้ หรือเปิด trade.safirion.com/login ก่อนพิมพ์รหัสผ่าน ให้ตรวจดูว่าที่อยู่เป็น trade.safirion.com จริง ๆ เพราะที่อยู่ของแพลตฟอร์มต่างจากที่อยู่ของเว็บไซต์นี้ และนี่คือความสับสนที่พบบ่อยที่สุดของผู้ที่เข้าสู่ระบบไม่ได้</p><a class="faq__link" href="/blog/safirion-login-e-acesso/">ดูที่อยู่ที่ถูกต้องและวิธีแก้ในแต่ละข้อผิดพลาด</a></div>
         </details>
-
         <details class="faq__item" name="faq">
-          <summary class="faq__q"><span class="faq__n">02</span>ถอนเงินได้ทุกเมื่อที่ต้องการหรือไม่?<span class="faq__ic" aria-hidden="true"></span></summary>
-          <div class="faq__a">ได้ เพียงส่งคำขอถอนเงินภายในแพลตฟอร์มได้ทุกเวลา</div>
+          <summary class="faq__q"><span class="faq__n">02</span>เปิดบัญชี Safirion อย่างไร?<span class="faq__ic" aria-hidden="true"></span></summary>
+          <div class="faq__a"><p>แตะ “เปิดบัญชี” กรอกข้อมูลของคุณ แล้วลงทะเบียนให้เสร็จในไม่กี่นาที บัญชีจะเปิดใช้งานเมื่อฝากเงินครั้งแรก เริ่มต้นที่ US$ 10 และในขั้นตอนนั้นคุณสามารถใส่คูปอง WELCOME100 ได้เลย ส่วนการยืนยันตัวตนจะตามมาภายหลัง เมื่อมีการร้องขอ</p><a class="faq__link" href="/blog/safirion-como-abrir-conta/">ดูขั้นตอนการลงทะเบียนทั้งหมด ทีละขั้น</a></div>
         </details>
-
         <details class="faq__item" name="faq">
-          <summary class="faq__q"><span class="faq__n">03</span>เทรดผ่านมือถือได้หรือไม่?<span class="faq__ic" aria-hidden="true"></span></summary>
-          <div class="faq__a">ได้ แพลตฟอร์มรองรับเบราว์เซอร์บนมือถือและมีให้ใช้งานผ่านแอปด้วย</div>
+          <summary class="faq__q"><span class="faq__n">03</span>คูปองของ Safirion คืออะไร?<span class="faq__ic" aria-hidden="true"></span></summary>
+          <div class="faq__a"><p>คือ WELCOME100 ตามที่ Safirion ระบุ ผู้ที่ฝากเงินพร้อมคูปองนี้จะได้รับโบนัส 100% ของจำนวนเงินที่ฝาก ใส่รหัสตอนฝากเงิน โดยโบนัสเป็นไปตามเงื่อนไขของโปรโมชันที่โบรกเกอร์ประกาศไว้บน safirion.com ซึ่งควรอ่านก่อนกดยอมรับ</p><a class="faq__link" href="/blog/safirion-antes-do-primeiro-deposito/">ดูเงื่อนไขก่อนฝากเงินครั้งแรก</a></div>
         </details>
-
         <details class="faq__item" name="faq">
-          <summary class="faq__q"><span class="faq__n">04</span>จะติดต่อขอรับการสนับสนุนได้อย่างไร?<span class="faq__ic" aria-hidden="true"></span></summary>
-          <div class="faq__a">เข้าไปที่เมนู “ช่วยเหลือ” หรือ “ฝ่ายสนับสนุน” ภายในแผงควบคุม แล้วส่งคำขอของคุณ</div>
+          <summary class="faq__q"><span class="faq__n">04</span>Safirion น่าเชื่อถือหรือไม่?<span class="faq__ic" aria-hidden="true"></span></summary>
+          <div class="faq__a"><p>ตามเว็บไซต์ของโบรกเกอร์เอง Safirion ดำเนินการโดย THUNDER FLASH LLC (ทะเบียน L 22853 ที่เนวิส) และการชำระเงินผ่าน THUNDER FLASH CY LTD (ทะเบียน HE458373 ที่ไซปรัส) ไม่มีการจดทะเบียนกับ CVM หน่วยงานกำกับหลักทรัพย์ของบราซิล: เข้าผ่าน safirion.com เท่านั้น และอ่านการเปิดเผยความเสี่ยง</p><a class="faq__link" href="/blog/safirion-vale-a-pena/">ดูว่าอะไรตรวจสอบได้และอะไรตรวจสอบไม่ได้</a></div>
+        </details>
+        <details class="faq__item" name="faq">
+          <summary class="faq__q"><span class="faq__n">05</span>Safirion มีแอปหรือไม่?<span class="faq__ic" aria-hidden="true"></span></summary>
+          <div class="faq__a"><p>มี แอป Android อยู่บน Google Play และมีเวอร์ชันสำหรับคอมพิวเตอร์ทั้ง Windows และ Mac ส่วนบน App Store เว็บไซต์ของ Safirion แจ้งว่าแอปจะมาเร็ว ๆ นี้ ระหว่างนี้ใช้งานบน iPhone ผ่านเบราว์เซอร์ได้ ด้วยบัญชีเดียวกันและยอดเงินเดียวกัน</p><a class="faq__link" href="/blog/safirion-app-para-celular/">ดูว่าดาวน์โหลดแต่ละเวอร์ชันได้ที่ไหน</a></div>
+        </details>
+        <details class="faq__item" name="faq">
+          <summary class="faq__q"><span class="faq__n">06</span>ยอดถอนและยอดฝากขั้นต่ำคือเท่าไร?<span class="faq__ic" aria-hidden="true"></span></summary>
+          <div class="faq__a"><p>เว็บไซต์ของ Safirion ระบุยอดฝากขั้นต่ำ US$ 10 เพื่อเปิดใช้งานบัญชี ส่วนยอดถอนขั้นต่ำเป็นไปตามนโยบายการถอนเงินของโบรกเกอร์ และแสดงอยู่ในหน้าถอนเงินของแพลตฟอร์ม: หน้าแนะนำนี้ไม่ได้เผยแพร่ตัวเลขไว้ จึงต้องตรวจสอบภายในแพลตฟอร์ม</p><a class="faq__link" href="/blog/safirion-deposito-minimo/">ดูยอดขั้นต่ำและช่องทางการชำระเงิน</a></div>
+        </details>
+        <details class="faq__item" name="faq">
+          <summary class="faq__q"><span class="faq__n">07</span>ถอนเงินได้ทุกเมื่อที่ต้องการหรือไม่?<span class="faq__ic" aria-hidden="true"></span></summary>
+          <div class="faq__a"><p>ได้ ส่งคำขอถอนเงินภายในแพลตฟอร์มได้ทุกเวลา ตามขั้นตอนของช่องทางชำระเงินที่คุณใช้ฝาก ระยะเวลาจนเงินถึงขึ้นอยู่กับช่องทางนั้นและธนาคารที่รับเงิน: โบรกเกอร์ไม่ได้เผยแพร่ตารางระยะเวลาเป็นชั่วโมง</p><a class="faq__link" href="/blog/safirion-como-sacar-dinheiro/">ดูเส้นทางของการถอนเงินจนถึงบัญชีของคุณ</a></div>
+        </details>
+        <details class="faq__item" name="faq">
+          <summary class="faq__q"><span class="faq__n">08</span>เทรดผ่านมือถือได้หรือไม่?<span class="faq__ic" aria-hidden="true"></span></summary>
+          <div class="faq__a"><p>ได้ แพลตฟอร์มใช้งานได้ในเบราว์เซอร์บนมือถือและผ่านแอป Android ด้วย เป็นบัญชีเดียวกับบนเว็บไซต์ ยอดเงินและประวัติเดียวกัน คุณจึงเริ่มวิเคราะห์บนคอมพิวเตอร์แล้วติดตามการเทรดต่อบนโทรศัพท์ได้</p><a class="faq__link" href="/blog/safirion-plataforma-como-funciona/">ดูว่าแพลตฟอร์มทำงานบนมือถืออย่างไร</a></div>
+        </details>
+        <details class="faq__item" name="faq">
+          <summary class="faq__q"><span class="faq__n">09</span>จะเปิดเรื่องขอความช่วยเหลือจากฝ่ายสนับสนุนได้อย่างไร?<span class="faq__ic" aria-hidden="true"></span></summary>
+          <div class="faq__a"><p>ผ่านเมนูช่วยเหลือหรือฝ่ายสนับสนุนในแผงควบคุมของแพลตฟอร์ม ซึ่งเป็นช่องทางที่โบรกเกอร์รับคำขอ หมายความว่าต้องมีบัญชีและเข้าสู่ระบบก่อนจึงจะคุยกับเจ้าหน้าที่ได้ เก็บหมายเลขของแต่ละเรื่องไว้: นี่คือหลักฐานที่ใช้รองรับการร้องเรียนใด ๆ ในภายหลัง</p><a class="faq__link" href="/blog/safirion-suporte-como-falar/">ดูช่องทางบริการลูกค้าที่มีอยู่</a></div>
+        </details>
+        <details class="faq__item" name="faq">
+          <summary class="faq__q"><span class="faq__n">10</span>Safirion มีบัญชีทดลองหรือไม่?<span class="faq__ic" aria-hidden="true"></span></summary>
+          <div class="faq__a"><p>มี และเป็นจุดที่ควรเริ่มต้น: คุณทดลองใช้แพลตฟอร์มด้วยยอดเงินเสมือน โดยไม่ต้องเสี่ยงเงินของตัวเอง ช่วยให้รู้จักหน้าจอและขั้นตอนของคำสั่งซื้อขาย แต่ไม่ได้จำลองแรงกดดันของการเสียเงินจริง ซึ่งเป็นสิ่งที่ทำให้การตัดสินใจเปลี่ยนไป</p><a class="faq__link" href="/blog/safirion-conta-demo/">ดูว่าบัญชีทดลองสอนอะไรและไม่ได้สอนอะไร</a></div>
+        </details>
+        <details class="faq__item" name="faq">
+          <summary class="faq__q"><span class="faq__n">11</span>การยืนยันตัวตนต้องใช้เอกสารอะไรบ้าง?<span class="faq__ic" aria-hidden="true"></span></summary>
+          <div class="faq__a"><p>การยืนยันตัวตน KYC มักขอเอกสารแสดงตัวตนที่มีรูปถ่ายและหลักฐานที่อยู่ และโดยปกติจะต้องทำเมื่อคุณขอถอนเงินครั้งแรก การส่งเอกสารไว้ก่อนที่จะต้องใช้เงินช่วยให้ไม่ต้องรอในตอนที่จะถอนเงินพอดี</p><a class="faq__link" href="/blog/safirion-documentos-para-verificacao/">ดูรายการเอกสารที่ยอมรับ</a></div>
+        </details>
+        <details class="faq__item" name="faq">
+          <summary class="faq__q"><span class="faq__n">12</span>เทรดสินทรัพย์อะไรได้บ้าง?<span class="faq__ic" aria-hidden="true"></span></summary>
+          <div class="faq__a"><p>มากกว่า 130 สินทรัพย์ ตามที่หน้านี้ระบุ ทั้งฟอเร็กซ์ หุ้น ดัชนี สินค้าโภคภัณฑ์ และคริปโทเคอร์เรนซี ทั้งหมดอยู่ในหน้าจอเดียว จำนวนที่เทรดได้ในแต่ละช่วงขึ้นอยู่กับเวลา: หุ้นจะเคลื่อนไหวก็ต่อเมื่อตลาดหลักทรัพย์ที่ซื้อขายหุ้นนั้นเปิดทำการ</p><a class="faq__link" href="/blog/safirion-ativos-disponiveis/">ดูรายการสินทรัพย์และเวลาซื้อขาย</a></div>
+        </details>
+        <details class="faq__item" name="faq">
+          <summary class="faq__q"><span class="faq__n">13</span>มีค่าธรรมเนียมและค่าใช้จ่ายอะไรบ้าง?<span class="faq__ic" aria-hidden="true"></span></summary>
+          <div class="faq__a"><p>ค่าใช้จ่ายหลักคือสเปรด ซึ่งเป็นส่วนต่างระหว่างราคาซื้อและราคาขาย ที่เก็บในทุกการเทรด นอกจากนี้ยังมีค่าใช้จ่ายของช่องทางชำระเงิน และค่าใช้จ่ายที่อาจเกิดจากการถือสถานะข้ามวัน อัตราที่ใช้อยู่ในปัจจุบันดูได้ในแพลตฟอร์ม</p><a class="faq__link" href="/blog/safirion-taxas-e-custos/">ดูค่าใช้จ่ายแต่ละรายการ ทีละข้อ</a></div>
+        </details>
+        <details class="faq__item" name="faq">
+          <summary class="faq__q"><span class="faq__n">14</span>เลเวอเรจคืออะไร และทำไมจึงทำให้พอร์ตแตก?<span class="faq__ic" aria-hidden="true"></span></summary>
+          <div class="faq__a"><p>คือการเทรดด้วยมูลค่าที่มากกว่ายอดเงินของคุณ ซึ่งขยายทั้งกำไรและขาดทุนในสัดส่วนเดียวกัน ในทางปฏิบัติ: เมื่อใช้เลเวอเรจสูง ราคาที่เคลื่อนสวนทางคุณเพียงไม่กี่สิบส่วนของหนึ่งเปอร์เซ็นต์ก็กินเงินในบัญชีไปเป็นส่วนใหญ่ได้ จึงมีคำเตือนเรื่องความเสี่ยงที่จะขาดทุน</p><a class="faq__link" href="/blog/safirion-alavancagem-o-que-e/">ดูว่าเลเวอเรจกินยอดเงินอย่างไร</a></div>
+        </details>
+        <details class="faq__item" name="faq">
+          <summary class="faq__q"><span class="faq__n">15</span>Safirion อยู่ภายใต้การกำกับของ CVM หน่วยงานของบราซิลหรือไม่?<span class="faq__ic" aria-hidden="true"></span></summary>
+          <div class="faq__a"><p>ไม่มีการจดทะเบียนที่เผยแพร่ไว้กับคณะกรรมการกำกับหลักทรัพย์ของบราซิล (Comissão de Valores Mobiliários, CVM) บริษัทเบื้องหลัง Safirion จดทะเบียนที่เนวิสและไซปรัส ไม่ใช่ในบราซิล การดำเนินงานจึงไม่อยู่ภายใต้การกำกับดูแลของบราซิล และไม่อยู่ในช่องทางร้องเรียนในประเทศของบราซิล นี่คือประเด็นที่ควรเข้าใจก่อนฝากเงิน</p><a class="faq__link" href="/blog/safirion-e-regulada-pela-cvm/">ดูว่าการไม่จดทะเบียนกับ CVM เปลี่ยนอะไรบ้าง</a></div>
+        </details>
+        <details class="faq__item" name="faq">
+          <summary class="faq__q"><span class="faq__n">16</span>ต้องเสียภาษีเงินได้ในบราซิลจากกำไรที่ได้หรือไม่?<span class="faq__ic" aria-hidden="true"></span></summary>
+          <div class="faq__a"><p>ต้องเสีย กำไรจากโบรกเกอร์นอกบราซิลเป็นเงินได้ที่ต้องเสียภาษี และต้องแจ้งต่อกรมสรรพากรกลางของบราซิล (Receita Federal) เหมือนเงินได้อื่น ๆ โดยคุณเป็นผู้ชำระภาษีเอง โบรกเกอร์ไม่ได้หักภาษีไว้และไม่ได้ออกหนังสือรับรองเงินได้ของบราซิล: ประวัติการเทรดของคุณคือฐานในการคำนวณ</p><a class="faq__link" href="/blog/imposto-de-renda-em-corretora-no-exterior/">ดูวิธียื่นภาษีสำหรับโบรกเกอร์นอกบราซิล</a></div>
+        </details>
+        <details class="faq__item" name="faq">
+          <summary class="faq__q"><span class="faq__n">17</span>DARF สำหรับเดย์เทรดในบราซิลทำงานอย่างไร?<span class="faq__ic" aria-hidden="true"></span></summary>
+          <div class="faq__a"><p>DARF คือแบบชำระภาษีที่ใช้จ่ายภาษีจากกำไรที่คำนวณได้ในบราซิล และสำหรับเดย์เทรดต้องชำระเป็นรายเดือน ตามผลของเดือนนั้น หากพ้นกำหนดจะมีค่าปรับและดอกเบี้ย การทำบัญชีทุกเดือนจึงคุ้มกว่าการไปจัดการทั้งหมดในเดือนเมษายน</p><a class="faq__link" href="/blog/darf-day-trade/">ดูวิธีคำนวณและออก DARF</a></div>
+        </details>
+        <details class="faq__item" name="faq">
+          <summary class="faq__q"><span class="faq__n">18</span>การเทรดไบนารีออปชันเป็นความผิดทางอาญาในบราซิลหรือไม่?<span class="faq__ic" aria-hidden="true"></span></summary>
+          <div class="faq__a"><p>การเทรดไม่ใช่ความผิดทางอาญาสำหรับบุคคลธรรมดา แต่การเสนอผลิตภัณฑ์นี้ในบราซิลโดยไม่ได้รับอนุญาตจาก CVM ถือว่าไม่ถูกต้องตามระเบียบ และความแตกต่างอยู่ตรงนี้ ผลในทางปฏิบัติคือคุณเทรดโดยไม่มีการคุ้มครองแบบที่สถาบันที่ได้รับอนุญาตจะให้</p><a class="faq__link" href="/blog/opcoes-binarias-e-crime/">ดูว่ากฎระบุไว้อย่างไร ในภาษาที่เข้าใจง่าย</a></div>
+        </details>
+        <details class="faq__item" name="faq">
+          <summary class="faq__q"><span class="faq__n">19</span>เว็บไซต์ร้องเรียนของบราซิล Reclame Aqui แสดงอะไรเกี่ยวกับ Safirion?<span class="faq__ic" aria-hidden="true"></span></summary>
+          <div class="faq__a"><p>หน้าร้องเรียนเป็นเพียงสัญญาณ ไม่ใช่คำตัดสิน: ใช้ดูว่าอะไรเกิดซ้ำในคำร้องเรียน เช่น การถอนเงินล่าช้า การเรียกเก็บเงินที่ไม่คาดคิด หรือการติดต่อที่ยาก ไม่ใช่ใช้สรุปเอาเองจากหน้านั้นเพียงอย่างเดียว น้ำหนักอยู่ที่รูปแบบของคำร้องเรียนและคำตอบที่ได้รับ</p><a class="faq__link" href="/blog/safirion-reclame-aqui/">ดูวิธีอ่านหน้าร้องเรียน</a></div>
+        </details>
+        <details class="faq__item" name="faq">
+          <summary class="faq__q"><span class="faq__n">20</span>บัญชีสกุลเงินดอลลาร์และการแปลงสกุลเงินทำงานอย่างไร?<span class="faq__ic" aria-hidden="true"></span></summary>
+          <div class="faq__a"><p>บัญชีเป็นสกุลดอลลาร์ อัตราแลกเปลี่ยนจึงเป็นตัวกำหนดว่าคุณใส่เงินเรียลบราซิลไปเท่าไรตอนฝาก และได้รับกลับเท่าไรตอนถอน คุณอาจจบด้วยกำไรเป็นดอลลาร์แต่ได้เรียลน้อยกว่าที่คาด หรือกลับกัน: นี่เป็นความเสี่ยงที่แยกจากตลาดที่คุณเทรด</p><a class="faq__link" href="/blog/safirion-conta-em-dolar-e-conversao/">ดูว่าอัตราแลกเปลี่ยนส่งผลต่อยอดเงินของคุณอย่างไร</a></div>
+        </details>
+        <details class="faq__item" name="faq">
+          <summary class="faq__q"><span class="faq__n">21</span>Instagram และ Telegram ทางการคือบัญชีไหน?<span class="faq__ic" aria-hidden="true"></span></summary>
+          <div class="faq__a"><p>บัญชีทางการคือบัญชีที่ Safirion ประกาศไว้เองบน safirion.com และการตรวจสอบที่นั่นก่อนตอบรับคำเชิญใด ๆ คือวิธีที่ช่วยให้ไม่ถูกหลอก โปรไฟล์ที่สัญญาว่าจะมีสัญญาณแบบเสียเงิน กลุ่มปิด หรือรับบริหารบัญชีของคุณ ไม่ใช่ฝ่ายบริการลูกค้าของโบรกเกอร์</p><a class="faq__link" href="/blog/safirion-instagram-e-telegram-oficiais/">ดูวิธีแยกแยะช่องทางทางการ</a></div>
+        </details>
+        <details class="faq__item" name="faq">
+          <summary class="faq__q"><span class="faq__n">22</span>Safarion, Safirium, Safrion: ชื่อที่ถูกต้องคืออะไร?<span class="faq__ic" aria-hidden="true"></span></summary>
+          <div class="faq__a"><p>ชื่อที่ถูกต้องคือ Safirion และชื่อที่เพี้ยนไปเกิดขึ้นเพราะหลายคนพิมพ์ค้นหาตามที่ได้ยิน เรื่องนี้สำคัญต่อความปลอดภัย: โดเมนที่คล้ายกับโดเมนทางการคือช่องทางที่หน้าเว็บปลอมใช้มากที่สุด จึงควรตรวจตัวสะกดก่อนพิมพ์รหัสผ่าน</p><a class="faq__link" href="/blog/safarion-ou-safirion-a-corretora-certa/">ดูชื่อที่เขียนเพี้ยนและโดเมนทางการ</a></div>
         </details>
       </div>
 
       <div class="faq__mais" hidden>
         <button type="button" data-faq-mais aria-expanded="false" aria-controls="faq-lista" data-mais="ดูคำถามเพิ่มเติม (+{n})" data-menos="แสดงคำถามน้อยลง"><span>ดูคำถามเพิ่มเติม</span></button>
       </div>
+      <p class="faq__fonte">คำตอบเหล่านี้รวบรวมสิ่งที่หน้านี้เผยแพร่เกี่ยวกับ Safirion และสิ่งที่เราอธิบายเจาะลึกในบล็อกของเว็บไซต์ ในกรณีที่โบรกเกอร์ไม่ได้เผยแพร่ข้อมูลใด เช่น ระยะเวลาถอนเงินเป็นชั่วโมง หรือการจดทะเบียนกับหน่วยงานกำกับของบราซิล ก็ได้เขียนไว้ว่าไม่ได้เผยแพร่</p>
     </div>
   </section>
 
@@ -687,7 +902,7 @@
           <li><a href="#ferramentas">เครื่องมือ</a></li>
           <li><a href="#por-que-escolher">ทำไมต้อง Safirion</a></li>
           <li><a href="#app">แอปพลิเคชัน</a></li>
-          <li><a href="/corretoras-digitais-plataformas-online-diferencas/">Blog</a></li>
+          <li><a href="/blog/">Blog</a></li>
         </ul>
       </div>
       <div class="ft__col">
@@ -734,8 +949,8 @@
   <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 13V3m0 0L3.6 7.4M8 3l4.4 4.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
 </button>
 
-<script>window.safirionPromoTxt={"selo":"โปรโมชัน","fechar":"ปิด","tit":"การเทรดไร้ความเสี่ยงมูลค่า US$ 10","p1":"ใช้รหัสโปรโมชัน \u003cstrong>RISKFREE10\u003c/strong> เมื่อฝากเงิน เพื่อรับการเทรดไร้ความเสี่ยง","p2":"หากการเทรดออปชั่นจริงครั้งถัดไปของคุณขาดทุน เราจะคืนเงินลงทุนของคุณสูงสุด US$ 10","nota":"การเทรดครั้งแรกที่เปิดหลังจากเปิดใช้งานจะถือเป็นการเทรดไร้ความเสี่ยง","btn":"เปิดบัญชี","mini":"เป็นไปตามเงื่อนไขของโปรโมชัน การเทรดผลิตภัณฑ์ที่ใช้เลเวอเรจมีความเสี่ยงที่จะขาดทุน"};</script>
-<script src="/assets/js/main.js?v=9" defer></script>
-<script src="/assets/js/popup-promo.js?v=6" defer></script>
+<script>window.safirionPromoTxt={"selo":"โปรโมชัน","fechar":"ปิด","tit":"การเทรดไร้ความเสี่ยงมูลค่า US$ 10","p1":"ใช้รหัสโปรโมชัน \u003cstrong>RISKFREE10\u003c/strong> เมื่อฝากเงิน เพื่อรับการเทรดไร้ความเสี่ยง","p2":"หากการเทรดออปชั่นจริงครั้งถัดไปของคุณขาดทุน เราจะคืนเงินลงทุนของคุณสูงสุด US$ 10","nota":"การเทรดครั้งแรกที่เปิดหลังจากเปิดใช้งานจะถือเป็นการเทรดไร้ความเสี่ยง","btn":"เปิดบัญชี","mini":"เป็นไปตามเงื่อนไขของโปรโมชัน การเทรดผลิตภัณฑ์ที่ใช้เลเวอเรจมีความเสี่ยงที่จะขาดทุน","conta":"มีบัญชีอยู่แล้ว?","entrar":"เข้าสู่ระบบ"};</script>
+<script src="/assets/js/main.js?v=10" defer></script>
+<script src="/assets/js/popup-promo.js?v=7" defer></script>
 </body>
 </html>

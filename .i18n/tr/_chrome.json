@@ -25,6 +25,8 @@
     "p2": "Bir sonraki gerçek Opsiyon işleminiz zararla sonuçlanırsa, yatırımınızın US$ 10’a kadar olan kısmını iade ediyoruz.",
     "nota": "Etkinleştirmeden sonra açılan ilk işlem risksiz sayılır.",
     "btn": "Hesap oluştur",
-    "mini": "Kampanya koşullarına tabidir. Kaldıraçlı ürünlerle işlem yapmak zarar riski içerir."
+    "mini": "Kampanya koşullarına tabidir. Kaldıraçlı ürünlerle işlem yapmak zarar riski içerir.",
+    "conta": "Zaten hesabın var mı?",
+    "entrar": "Giriş yap"
   }
 }

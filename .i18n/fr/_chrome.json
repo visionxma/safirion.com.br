@@ -25,6 +25,8 @@
     "p2": "Si votre prochaine transaction réelle d'Options se solde par une perte, nous remboursons jusqu'à 10 US$ de votre investissement.",
     "nota": "La première transaction ouverte après l'activation est considérée sans risque.",
     "btn": "Créer un compte",
-    "mini": "Soumis aux conditions de la promotion. Trader des produits à effet de levier comporte un risque de perte."
+    "mini": "Soumis aux conditions de la promotion. Trader des produits à effet de levier comporte un risque de perte.",
+    "conta": "Déjà un compte ?",
+    "entrar": "Connexion"
   }
 }

@@ -27,6 +27,7 @@
       p2: "Se sua próxima negociação real de Opções resultar em perda, reembolsamos até US$ 10 do seu investimento.",
       nota: "A primeira negociação aberta após a ativação será considerada livre de risco.",
       btn: "Criar conta",
+      conta: "Já tem conta?", entrar: "Entrar",
       mini: "Sujeito às condições da promoção. Operar produtos alavancados envolve risco de perda."
     },
     en: {
@@ -36,6 +37,7 @@
       p2: "If your next real Options trade results in a loss, we refund up to US$ 10 of your investment.",
       nota: "The first trade opened after activation is considered risk-free.",
       btn: "Create account",
+      conta: "Already have an account?", entrar: "Log in",
       mini: "Subject to the promotion terms. Trading leveraged products involves risk of loss."
     },
     es: {
@@ -45,6 +47,7 @@
       p2: "Si tu próxima operación real de Opciones resulta en pérdida, reembolsamos hasta US$ 10 de tu inversión.",
       nota: "La primera operación abierta tras la activación se considera libre de riesgo.",
       btn: "Crear cuenta",
+      conta: "¿Ya tienes cuenta?", entrar: "Entrar",
       mini: "Sujeto a las condiciones de la promoción. Operar productos apalancados implica riesgo de pérdida."
     },
     fr: {
@@ -54,12 +57,23 @@
       p2: "Si votre prochaine transaction réelle d'Options se solde par une perte, nous remboursons jusqu'à 10 US$ de votre investissement.",
       nota: "La première transaction ouverte après l'activation est considérée sans risque.",
       btn: "Créer un compte",
+      conta: "Déjà un compte ?", entrar: "Connexion",
       mini: "Soumis aux conditions de la promotion. Trader des produits à effet de levier comporte un risque de perte."
     }
   };
   var lang = (document.documentElement.lang || "pt").slice(0, 2).toLowerCase();
   /* as páginas montadas pelo .i18n/montar.js trazem o texto do próprio idioma */
   var T = window.safirionPromoTxt || TXT[lang] || TXT.pt;
+  /* "Já tem conta? Entrar" (24/11/2026): o popup abre aos 2 s por cima do "Entrar" do topo; quem já tem conta
+     entra por ele mesmo. O link é o MESMO do topo da página (afftrack do idioma); sem ele, monta-se pelo caminho. */
+  var B = TXT[lang] || TXT.pt;
+  var CONTA = T.conta || B.conta, ENTRAR = T.entrar || B.entrar;
+  var LOGIN = (function (a) {
+    if (a) return a.href;
+    var o = ORIGEM.replace(/\/$/, "") + "/%23login";
+    return "https://trade.safirion.com/pwa/oauth/login?aff=836698&aff_model=revenue&afftrack=" + o + "&aff_track=" + o +
+      "&redirect_url=https%3A%2F%2Ftrade.safirion.com%2Ftraderoom";
+  })(document.querySelector('a[href*="trade.safirion.com/pwa/oauth/login"]'));
 
   function guardado() {
     try { return sessionStorage.getItem(CHAVE) ? 1 : 0; } catch (e) { return 0; }
@@ -98,6 +112,7 @@
           '<p>' + T.p2 + '</p>' +
           '<p class="pp__nota">' + T.nota + '</p>' +
           '<a class="pp__btn" href="' + CADASTRO + '">' + T.btn + ' <span aria-hidden="true">&rsaquo;</span></a>' +
+          '<a class="pp__entrar" href="' + LOGIN.replace(/&/g, "&amp;").replace(/"/g, "&quot;") + '"><span>' + CONTA + '</span><span class="pp__entrar-acao">' + ENTRAR + '</span></a>' +
           '<p class="pp__mini">' + T.mini + '</p>' +
         '</div>' +
       '</div>';
@@ -117,6 +132,7 @@
 
     cx.querySelector(".pp__x").addEventListener("click", function () { fechar(); });
     cx.querySelector(".pp__btn").addEventListener("click", function () { guardar(); });
+    cx.querySelector(".pp__entrar").addEventListener("click", function () { guardar(); });
     cx.addEventListener("click", function (e) { if (e.target === cx) fechar(); });
     document.addEventListener("keydown", tecla);
   }
