@@ -11,9 +11,18 @@ const { spawnSync } = require('child_process');
 const { createHash } = require('crypto');
 const RAIZ = path.join(__dirname, '..');
 const SITE = 'https://safirion.com.br';
-const V_MAIN = 7, V_POPUP = 6, V_IDIOMAS = 1;   // suba quando mexer no arquivo (cache de 7 dias)
 
 const ler = (...p) => fs.readFileSync(path.join(...p), 'utf8');
+// Versões de cache (?v=) dos arquivos próprios: vêm do index.html em português que está no
+// disco, nunca de constante aqui. Quem sobe a versão é quem mexe no arquivo, e o montar
+// só a repete nas 17 homes, para nunca rebaixar. Arquivo sem ?v= no pt é erro de propósito.
+const htmlPt = ler(RAIZ, 'index.html');
+const versaoNoPt = arq => {
+  const m = htmlPt.match(new RegExp(arq.replace(/[.]/g, '\\.') + '\\?v=(\\d+)'));
+  if (!m) throw new Error(`index.html (pt) sem ?v= em ${arq}`);
+  return +m[1];
+};
+const V_MAIN = versaoNoPt('main.js'), V_POPUP = versaoNoPt('popup-promo.js'), V_IDIOMAS = versaoNoPt('idiomas.css');
 const idiomas = JSON.parse(ler(__dirname, 'idiomas.json'));
 const PT = idiomas[0];
 const svgs = JSON.parse(ler(__dirname, 'fonte', '_svg.json'));
@@ -55,13 +64,13 @@ function rodapeIdiomas(atual) {
 function comSeletor(html, atual) {
   html = html.replace(/\s*<!--idiomas-->[\s\S]*?<!--\/idiomas-->/g, '');
   if (prontos.length < 2) return html;
-  // o rodapé de idiomas entra ACIMA da declaração de independência (bloco .ft__legal),
-  // que é onde ela está nos HTML publicados; se um dia não houver declaração, dá erro
-  // de propósito: nenhuma página do site pode ir ao ar sem ela.
-  const a = '<div class="hdr__side">', b = '<div class="wrap ft__legal">';
+  // o rodapé de idiomas entra logo ACIMA da base do rodapé (logo + © ano | assinatura da
+  // VisionX, bloco .ft__base). A declaração de independência saiu a pedido do cliente
+  // (23/11/2026) e não volta.
+  const a = '<div class="hdr__side">', b = '<div class="wrap ft__base">';
   if (!html.includes(a) || !html.includes(b)) throw new Error('não achei onde pôr o seletor de idioma');
   html = troca(html, a, a + '\n      ' + seletor(atual));
-  return html.replace(/([ \t]*)<div class="wrap ft__legal">/, (m, e) => `${e}${rodapeIdiomas(atual)}\n\n${m}`);
+  return html.replace(/([ \t]*)<div class="wrap ft__base">/, (m, e) => `${e}${rodapeIdiomas(atual)}\n\n${m}`);
 }
 function hreflang() {
   const padrao = prontos.find(i => i.pasta === 'en') || PT;
@@ -126,7 +135,7 @@ function semRelativo(html, pasta) {
 }
 
 // ---------------------------------------------------------------- home em português
-let pt = ler(RAIZ, 'index.html');
+let pt = htmlPt;
 pt = comVersoes(comSeletor(comHreflang(pt), PT));
 fs.writeFileSync(path.join(RAIZ, 'index.html'), pt);
 

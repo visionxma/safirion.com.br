@@ -15,12 +15,12 @@ const aviso = (arq, msg) => avisos.push(`${arq}: ${msg}`);
 
 // Atributos cujo valor é texto para o leitor e, portanto, deve ser traduzido.
 const TRADUZIVEIS = ['alt', 'aria-label', 'title', 'placeholder'];
-// O link de cadastro carrega o idioma do corretor e o afftrack da pasta: isso é POR
+// O link de cadastro e o de login carregam o idioma do corretor e o afftrack/aff_track da pasta: isso é POR
 // IDIOMA, não coisa que o tradutor mexeu. Normaliza os dois antes de comparar, para a
 // checagem de destinos continuar pegando qualquer OUTRA alteração de endereço.
 const normLink = s => s
   .replace(/(trade\.safirion\.com)\/[a-z-]{2,3}\/register/g, '$1/<lng>/register')
-  .replace(/(afftrack=safirion\.com\.br)\/(?:[a-z-]{2,3}\/)?/g, '$1/<lng>/');
+  .replace(/(aff_?track=safirion\.com\.br)\/(?:[a-z-]{2,3}\/)?/g, '$1/<lng>/');
 function tags(html) {
   return (html.match(/<\/?[a-zA-Z][^>]*>/g) || []).map(t =>
     normLink(t.replace(new RegExp(`\\s(${TRADUZIVEIS.join('|')})="[^"]*"`, 'g'), ` $1=""`).replace(/\s+/g, ' ')));

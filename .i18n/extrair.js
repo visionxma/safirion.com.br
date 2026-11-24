@@ -20,6 +20,9 @@ corpo = corpo.replace(/\s*<!--idiomas-->[\s\S]*?<!--\/idiomas-->/g, '');   // se
 // do Márcio): ficam fora da fonte dos tradutores, senão o verificar.js reprova os 16 idiomas por contagem de tags
 corpo = corpo.replace(/\s*<!--so-pt-->[\s\S]*?<!--\/so-pt-->/g, '');
 corpo = corpo.replace(/<!--[\s\S]*?-->\n?/g, '');                           // comentários de seção
+// o ?v=<md5> das mídias é posto pelo montar.js (comVersaoDeMidia) em toda home; na fonte dos
+// tradutores ele só atrapalharia, e o verificar.js compararia endereços que mudam a cada imagem
+corpo = corpo.replace(/(\.(?:woff2?|ttf|otf|png|jpe?g|webp|svg|ico|gif|avif|mp4|webm))\?v=[0-9a-f]+/gi, '$1');
 
 // frases da barra do topo: moram no _chrome.json
 if (!/data-msgs='[^']*'>[^<]*<\/span>/.test(corpo)) throw new Error('barra do topo mudou de formato');

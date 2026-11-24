@@ -95,3 +95,8 @@ cada um numa pasta (`/en/`, `/es/`…). Você traduz **um** idioma.
    (ok) ou trecho esquecido (corrija).
 5. Termine com um resumo curto: resultado final do verificador e qualquer decisão de
    tradução que mereça atenção do dono (em português).
+
+## Para quem mantém (não é para o tradutor)
+
+- `node .i18n/montar.js` regera as 17 homes e o sitemap a partir do `index.html` (molde da `<head>`) e das traduções; as versões `?v=` de `main.js`, `popup-promo.js` e `idiomas.css` são LIDAS do `index.html` em português (nunca há constante no script). Sem mudança nas fontes, a saída é idêntica ao que está publicado (só o `<lastmod>` do sitemap muda).
+- Só rode `extrair.js` quando for mandar os idiomas para retradução: ele refaz `fonte/inicio.html` a partir do português de hoje, que tem conteúdo que as traduções ainda não têm, e o verificador passa a acusar erro até cada idioma ser retraduzido.
