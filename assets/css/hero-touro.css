@@ -62,7 +62,12 @@
     -webkit-mask-image:linear-gradient(180deg,transparent 0,#000 16%,#000 80%,transparent 100%);
     mask-image:linear-gradient(180deg,transparent 0,#000 16%,#000 80%,transparent 100%);
   }
-  .hero__art{justify-content:flex-start}
+  /* o aparelho deitado nasce no começo da coluna e passa um pouco da borda dela, sobre o
+     corpo do touro: a cabeça e os chifres ficam à direita e acima da tela do app */
+  .hero__art{justify-content:flex-start;align-self:end;margin-bottom:clamp(8px,2vh,28px)}
+  /* o aparelho nunca passa da borda da tela: no máximo a coluna + a margem lateral - 16 px
+     (entre 1025 e 1100 px a peça girada chegava a 10 px além da borda) */
+  .hero .hero__art .hero__app{width:min(114%,600px,calc(100% + var(--gutter) - 40px))}
 }
 .cena-arte{position:absolute;inset:0;width:100%;height:100%}
 
@@ -151,8 +156,24 @@
 /* o selo passa por cima do lombo do touro no celular: vidro escuro atrás das letras */
 .hero .chip{background:rgb(3 10 26 / .74);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
 
-/* o aparelho entra na luz do touro: contorno azul suave, além da sombra que já tinha */
-.hero__art img{filter:drop-shadow(0 34px 70px rgba(0,0,0,.65)) drop-shadow(0 0 34px rgb(64 160 255 / .22))}
+/* O APARELHO COM O APP REAL (pedido do cliente em 23/11/2026: "coloca nosso app real aqui").
+   A tela é a do aplicativo oficial da Safirion (com.safirion, telas 3 e 4 da loja do Google
+   Play, a corretora mostrando "Tendências de hoje", o gráfico e o Comprar), na moldura preta do
+   iPhone 16 Pro Max da extensão Mobile Simulator, deitado, como o app é usado. A peça fica à
+   direita e GIRA PARA A ESQUERDA, olhando para o texto (no árabe, espelha); flutua devagar só
+   com translate, e para em "menos movimento". Entra na luz do touro: sombra funda e contorno azul. */
+.hero__art{perspective:1800px}
+.hero__art .hero__app{
+  display:block;
+  width:min(100%,560px);max-width:none;height:auto;max-height:none;
+  aspect-ratio:1400/677;object-fit:contain;
+  transform:rotateY(-16deg) rotateX(6deg) rotateZ(-3deg);
+  transform-origin:65% 50%;
+  filter:drop-shadow(0 36px 54px rgb(0 0 0 / .62)) drop-shadow(0 0 38px rgb(64 160 255 / .3));
+  animation:app-flutua 6.5s ease-in-out infinite alternate;
+}
+[dir="rtl"] .hero__art .hero__app{transform:rotateY(16deg) rotateX(6deg) rotateZ(3deg);transform-origin:35% 50%}
+@keyframes app-flutua{from{translate:0 0}to{translate:0 -12px}}
 
 /* Árabe (/ar/, texto à direita, aparelho à esquerda): a cena inteira em espelho. O touro corre
    para a esquerda, com a cabeça e os chifres à esquerda do aparelho, a luz varre da direita para a
@@ -183,8 +204,16 @@
   .hero{
     --arte-w:min(104vw,44rem);
     --arte-alt:calc(var(--arte-w) * .6509);
-    padding-top:calc(var(--arte-alt) + 30px);
+    /* a composição do computador: o touro inteiro (cabeça, chifres, lombo e patas da frente)
+       e o aparelho na frente das patas de trás, embaixo e à esquerda, como se o touro saltasse
+       de dentro do app para a direita */
+    padding-top:calc(42px + var(--arte-alt) * .66);
   }
+  .hero__in{gap:22px}
+  .hero__art{order:-1;justify-content:flex-start}
+  .hero__art .hero__app{width:min(72vw,30rem);margin-left:-1vw;transform:rotateY(-14deg) rotateX(8deg) rotateZ(-4deg)}
+  [dir="rtl"] .hero__art{justify-content:flex-start}
+  [dir="rtl"] .hero__art .hero__app{margin-left:0;margin-right:-1vw;transform:rotateY(14deg) rotateX(8deg) rotateZ(4deg)}
   .cena-quadro{
     right:max(-2cqw,calc((100cqw - var(--arte-w)) / 2));bottom:auto;top:42px;
     width:var(--arte-w);height:auto;
@@ -212,7 +241,98 @@
 @media (orientation:portrait) and (max-height:800px){
   .hero{--arte-w:min(96vw,44rem)}
 }
+/* ------------------------------------- celular em pé (até 600 px): composição PRÓPRIA (24/11/2026)
+   Pedido do Victor: "a do mobile para ficar bonita tem que ser sagaz, a formatação do design dela
+   tem que ser diferente do desktop". No computador o texto fica numa coluna e o touro corre ao
+   fundo, à direita. No celular a hero vira um CARTAZ EM PÉ, lido de cima para baixo:
+   1. a marca primeiro: selo, SAFIRION BROKER e a linha de apoio, logo abaixo do cabeçalho;
+   2. o palco: o touro grande SAI DE DENTRO do app. O aparelho deitado, embaixo e à esquerda, cobre
+      as patas de trás; o lombo, a cabeça e os chifres saltam por cima da tela, à direita, e os
+      dois sobem juntos na diagonal, como o gráfico de alta. O brilho pulsa no peito do touro;
+   3. a chamada e os dois botões no pé, na zona do polegar.
+   O palco mede pela ALTURA que sobra na tela (--palco): o botão principal fica na primeira tela de
+   320 × 640 a 430 × 932, e o touro e o aparelho escalam juntos com ele. O touro do fundo
+   (.cena-quadro) sai: ele passa a morar no palco (::before), com a MESMA arte e o MESMO endereço do
+   <picture> (um download só). A ordem nova vem do CSS (display:contents no bloco de texto), sem
+   mexer no HTML das 17 línguas. */
+@media (orientation:portrait) and (max-width:600px){
+  .hero{
+    /* faixa do topo (34) + cabeçalho (56) + respiro */
+    padding-top:108px;
+    /* o que sobra da tela depois do cabeçalho, do selo, do título, da chamada e do botão principal
+       (434 px), entre 160 px e 84% da largura */
+    --palco:clamp(160px,calc(100svh - 434px),84vw);
+  }
+  .cena-quadro{display:none}
+  .hero__in{display:flex;flex-direction:column;align-items:stretch;gap:0}
+  .hero__txt{display:contents}
+  .hero .chip{order:1;align-self:flex-start;margin:0 0 12px}
+  .hero .h-display{order:2;position:relative;z-index:2}
+  .hero__claim{order:4;position:relative;z-index:2;margin:6px 0 0}
+  .hero__text{order:5}
+  .hero__acts{order:6;position:relative;z-index:2;margin-top:18px}
+
+  /* o palco sangra até as duas bordas da tela */
+  .hero__art{
+    order:3;display:block;position:relative;z-index:1;
+    height:var(--palco);
+    margin:0 calc(50% - 50vw);
+    perspective:none;
+  }
+  /* o touro: chifres a ~4% da borda direita, cauda sumindo na esquerda, subindo 6 graus */
+  .hero__art::before{
+    content:"";position:absolute;z-index:0;pointer-events:none;
+    width:calc(var(--palco) * 1.44);aspect-ratio:1100/716;
+    right:calc(var(--palco) * -.02);top:calc(var(--palco) * -.2);
+    background:url("../img/touro/touro-retrato-1100.webp?v=e9ad9a1e") center/100% 100% no-repeat;
+    transform:rotate(-6deg);transform-origin:72% 55%;
+    -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 24%),linear-gradient(180deg,transparent 0,#000 24%,#000 82%,transparent 100%);
+    -webkit-mask-composite:source-in;
+    mask-image:linear-gradient(90deg,transparent 0,#000 24%),linear-gradient(180deg,transparent 0,#000 24%,#000 82%,transparent 100%);
+    mask-composite:intersect;
+  }
+  /* o pulso do brilho no peito do touro (luz de fundo, degradê radial na própria caixa) */
+  .hero__art::after{
+    display:block;content:"";position:absolute;z-index:1;pointer-events:none;
+    inset:auto;right:calc(var(--palco) * -.02);top:calc(var(--palco) * -.08);
+    width:calc(var(--palco) * .86);height:calc(var(--palco) * .78);
+    background:radial-gradient(closest-side,rgb(64 160 255 / .34),rgb(64 160 255 / .12) 55%,transparent 100%);
+    filter:none;opacity:.55;
+    animation:touro-pulsa 5.5s ease-in-out infinite alternate;
+  }
+  /* o aparelho: na frente das patas de trás, girado para o centro (a peça da esquerda olha para a
+     direita) e subindo na mesma diagonal do touro; perspective() no próprio transform */
+  .hero .hero__art .hero__app{
+    position:absolute;z-index:2;
+    left:calc(var(--palco) * -.03);bottom:calc(var(--palco) * .02);
+    width:calc(var(--palco) * 1.02);max-width:none;margin:0;
+    transform:perspective(1500px) rotateY(16deg) rotateX(8deg) rotateZ(-7deg);
+    transform-origin:30% 60%;
+  }
+  [dir="rtl"] .hero__art::before{right:auto;left:calc(var(--palco) * -.02);transform:scaleX(-1) rotate(-6deg)}
+  [dir="rtl"] .hero__art::after{right:auto;left:calc(var(--palco) * -.02)}
+  [dir="rtl"] .hero .hero__art .hero__app{left:auto;right:calc(var(--palco) * -.03);margin:0;
+    transform:perspective(1500px) rotateY(-16deg) rotateX(8deg) rotateZ(7deg);transform-origin:70% 60%}
+}
+/* celular de tela útil baixa (até 800 px: quase todo celular com as barras do navegador à mostra,
+   como 390 × 664 no iPhone e 360 × 640 no Android): o selo sai (o "+130" já está nos números logo
+   abaixo) e a altura dele vai para o palco */
+@media (orientation:portrait) and (max-width:600px) and (max-height:800px){
+  .hero .chip{display:none}
+  .hero{--palco:clamp(160px,calc(100svh - 384px),84vw)}
+}
+/* até 340 px a linha de apoio do título quebra em duas (+18 px): o palco cede essa altura */
+@media (orientation:portrait) and (max-width:340px) and (max-height:800px){
+  .hero{--palco:clamp(160px,calc(100svh - 404px),84vw)}
+}
 @media (max-width:600px){
+  /* celular: a primeira tela fecha com o app, o título, a chamada e os dois botões; o
+     parágrafo de apoio fica só no computador (copy resumida no celular) */
+  .hero__text{display:none}
+  /* o botão principal numa linha só até 320 px (em pt); idioma de rótulo longo quebra em duas */
+  .hero__acts{gap:10px}
+  .hero__acts .btn--lg{font-size:clamp(12.5px,3.75vw,15.5px);padding:15px 18px;letter-spacing:.01em}
+  .hero__acts .btn--lg.btn--primary{padding-right:12px}
   /* celular: metade das fagulhas e uma camada de poeira só */
   .cena-fagulha:nth-child(2n+3),.cena-poeira--b{display:none}
   /* números da hero: 2 colunas, como no computador (nunca pilha de 4) */
@@ -224,5 +344,6 @@
 @media (prefers-reduced-motion:reduce){
   .hero__cena *,.hero__cena *::before,.hero__cena *::after{animation:none !important}
   .cena-varredura,.cena-fagulha{display:none}
+  .hero__art .hero__app{animation:none}
 }
 @media print{.hero__cena{display:none !important}}
