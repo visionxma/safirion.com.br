@@ -1,17 +1,17 @@
 # Safirion Broker Brasil
 
-> Site independente de divulgação sobre a Safirion Broker, em português: o que é a plataforma, como funciona o cadastro, quais recursos existem, taxas, saque, suporte, e conteúdo educativo sobre corretoras no exterior e o que verificar antes de se cadastrar.
+> Safirion Broker em português: o que é a plataforma, como funciona o cadastro, quais recursos existem, taxas, saque, suporte, e conteúdo educativo sobre corretoras no exterior e o que verificar antes de se cadastrar.
 
 Esta é a página brasileira sobre a Safirion, https://safirion.com.br — aqui ficam as informações da plataforma, o passo a passo do cadastro e o conteúdo educativo; a conta é criada e acessada em https://trade.safirion.com. O site oficial da marca é https://safirion.com. Quem opera a plataforma é a THUNDER FLASH LLC, registrada em Nevis (Reg. No. L 22853); os pagamentos são processados pela THUNDER FLASH CY LTD, registrada no Chipre (Reg. No. HE458373, Limassol).
 
-Quem publica este site: https://safirion.com.br é um site independente de divulgação. Não é o site oficial da Safirion nem é operado por ela, e pode receber comissão pelos cadastros feitos a partir dos seus links. A Safirion não é regulada pela Comissão de Valores Mobiliários (CVM) nem autorizada por ela a ofertar serviços no Brasil, e não consta do cadastro de participantes do mercado que a CVM mantém. Este site não presta serviço financeiro: não recebe depósito, não guarda dinheiro de ninguém e não executa ordem no mercado — tudo isso acontece na plataforma da corretora. Para falar com a empresa, use os canais de https://safirion.com.
+A Safirion não é regulada pela Comissão de Valores Mobiliários (CVM) nem autorizada por ela a ofertar serviços no Brasil, e não consta do cadastro de participantes do mercado que a CVM mantém. Este site não presta serviço financeiro: não recebe depósito, não guarda dinheiro de ninguém e não executa ordem no mercado — tudo isso acontece na plataforma da corretora. Para falar com a empresa, use os canais de https://safirion.com.
 
 Operar nos mercados financeiros, inclusive opções, envolve risco de perda do capital investido e pode não ser adequado a todos. O conteúdo deste site é informativo e não constitui recomendação de investimento. Somente para maiores de 18 anos.
 
 Texto completo das páginas, em um arquivo só: https://safirion.com.br/llms-full.txt
 
 ## Página inicial
-- [Safirion: login, cadastro e bônus com o cupom WELCOME100](https://safirion.com.br/): Entre na Safirion, crie sua conta em 3 passos e use o cupom WELCOME100: 100% de bônus sobre o depósito, a partir de US$ 10. Guia independente de divulgação.
+- [Safirion Broker | Plataforma de Trading, Cadastro e Login](https://safirion.com.br/): Conheça a Safirion Broker, seus recursos de trading, mercados disponíveis, funcionalidades, cadastro, login e informações importantes sobre a plataforma.
 
 ## Cupom, login, cadastro e confiança (as páginas mais procuradas)
 - [Cupom Safirion WELCOME100: bônus de 100% no depósito](https://safirion.com.br/cupom/): O cupom de boas-vindas da Safirion é o WELCOME100. Segundo a própria corretora (safirion.com), quem deposita com esse código recebe 100% de bônus sobre o valor depositado, sujeito às condições da promoção; o depósito mínimo informado em safirion.com é de US$ 10. O código é informado na hora do depósito. Atualizado em 14/11/2026.

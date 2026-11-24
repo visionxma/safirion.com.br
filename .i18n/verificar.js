@@ -125,7 +125,10 @@ process.exit(erros.length ? 1 : 0);
 // Este site é de DIVULGAÇÃO: não é a corretora e não pode se apresentar como ela.
 // Sai 1 e diz qual arquivo falhou quando alguma página:
 //   1. traz "publisher" no JSON-LD (quem publica não é a Safirion);
-//   2. está sem a declaração de independência (classe aviso-indep);
+//   2. (APOSENTADA em 23/11/2026) exigia a declaração de independência no rodapé
+//      (classe aviso-indep). O cliente pediu para TIRAR esse aviso do site todo
+//      ("e tira isso", 23/11/2026, 22:06), então ele não é mais exigido. As regras
+//      1, 3 e 4 continuam: o site segue sem se declarar oficial e sem afirmar regulação.
 //   3. se declara o site OFICIAL da Safirion ("oficial" na mesma frase que
 //      safirion.com.br, em qualquer um dos 17 idiomas);
 //   4. afirma regulação ("regulada", "autorizada", "licenciada", "legal no país").
@@ -233,10 +236,7 @@ function portaoDoSite(raiz) {
     for (const bruto of blocosLd(html))
       if (/"publisher"/.test(bruto)) { falha('JSON-LD traz "publisher" (este site não publica a Safirion)'); break; }
 
-    // 2. declaração de independência — exigida em toda página com rodapé
-    //    (o /embed/ é um desvio 301 de 5 linhas, sem <footer> e sem texto: fica fora)
-    if (/<footer/i.test(html) && !RegExp(CLASSE_AVISO).test(html))
-      falha('sem a declaração de independência (classe aviso-indep)');
+    // 2. aposentada em 23/11/2026 (pedido do cliente: o aviso de independência saiu do rodapé)
 
     // 3 e 4 valem no texto visível E nos valores do JSON-LD
     const unidades = [...frases(textoVisivel(html)), ...valoresLd(html).flatMap(v => frases(ent(v)))];

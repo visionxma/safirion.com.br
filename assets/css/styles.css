@@ -292,6 +292,14 @@ strong,b{font-weight:600;color:var(--ink-strong)}
   color:var(--ink-strong);max-width:20ch;margin-top:-4px;
 }
 .hero__claim .az{color:var(--brand-400)}
+/* H1 da home em pt (pedido de 23/11/2026): "Safirion Broker: conheça a plataforma de trading".
+   A marca segue grande e em maiúsculas (o texto do H1 fica como no pedido); a linha de apoio
+   senta embaixo como a assinatura do logo ("CONFIANÇA PARA INVESTIR"). Os dois-pontos são só
+   para leitor de tela e buscador (.sr-only). As traduções não têm a linha e não mudam. */
+html[lang="pt-BR"] #hero-titulo .pal{text-transform:uppercase}
+.hero__h1-sub{display:block;margin:clamp(4px,.5vw,8px) 0 clamp(8px,.9vw,12px);font-size:clamp(12.5px,1.15vw,15px);font-weight:600;
+  letter-spacing:.2em;line-height:1.4;text-transform:uppercase;text-wrap:balance;color:var(--brand-300)}
+@media (max-width:24.99rem){.hero__h1-sub{letter-spacing:.12em}}
 .hero__text{max-width:520px;color:var(--muted);font-size:clamp(15px,1.35vw,16.5px);line-height:1.68}
 .hero__acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
 

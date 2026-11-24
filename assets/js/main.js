@@ -55,8 +55,17 @@
   /* ---------- Título do hero: letra a letra ---------- */
   var titulo = document.querySelector('[data-letras]');
   if (titulo) {
-    var texto = titulo.textContent.trim();
-    titulo.textContent = '';
+    // So o TEXTO direto do titulo vira letra a letra. Filho elemento fica intacto:
+    // na home em pt o H1 e "Safirion Broker: conheca a plataforma de trading" e a
+    // linha de apoio mora num <span class="hero__h1-sub"> (pedido de 23/11/2026).
+    // Com textContent a linha de apoio virava letras gigantes junto com a marca.
+    var noTexto = null;
+    for (var ni = 0; ni < titulo.childNodes.length; ni++) {
+      var nd = titulo.childNodes[ni];
+      if (nd.nodeType === 3 && nd.nodeValue.trim()) { noTexto = nd; break; }
+    }
+    var texto = noTexto ? noTexto.nodeValue.trim() : '';
+    var alvoLetras = document.createDocumentFragment();
     // Uma caixa por PALAVRA: as letras sao inline-block e, soltas, a linha pode
     // quebrar entre duas delas — SAFIRION BROKER virava "SAFIRION BRO / KER" em
     // 390px. O involucro .pal nao deixa quebrar dentro da palavra; entre palavras
@@ -79,9 +88,10 @@
         caixa.appendChild(span);
         l++;
       }
-      titulo.appendChild(caixa);
-      if (pw < palavrasH.length - 1) titulo.appendChild(document.createTextNode(' '));
+      alvoLetras.appendChild(caixa);
+      if (pw < palavrasH.length - 1) alvoLetras.appendChild(document.createTextNode(' '));
     }
+    if (noTexto) titulo.replaceChild(alvoLetras, noTexto);
     if (!reduced) {
       requestAnimationFrame(function () {
         requestAnimationFrame(function () {
