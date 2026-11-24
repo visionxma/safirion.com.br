@@ -227,7 +227,13 @@ strong,b{font-weight:600;color:var(--ink-strong)}
 @keyframes tick-arrow{0%,100%{transform:translateX(0);opacity:.65}50%{transform:translateX(4px);opacity:1}}
 
 /* ==========================================================================
-   Header flutuante em pílula
+   Header: estendido no topo, cápsula depois de rolar
+   No topo os itens se abrem na largura da página (sem fundo). Ao rolar, a
+   cápsula aparece com a largura do CONTEÚDO: o main.js mede o que o topo pede
+   em cada idioma e escreve o recuo em --recuo; o logo e as ações andam para
+   dentro só com transform, e a pílula (o ::before) acende no lugar.
+   Grade logo | abas | ações com as laterais do mesmo tamanho: as abas ficam no
+   centro da tela. Abas que não cabem centradas saem (classe hdr--sem-abas).
    ========================================================================== */
 .hdr{
   position:fixed;inset:38px 0 auto 0;z-index:80;
@@ -235,34 +241,61 @@ strong,b{font-weight:600;color:var(--ink-strong)}
   transition:padding-top .35s var(--ease);
 }
 .hdr__in{
-  display:flex;align-items:center;gap:14px;
-  width:min(1240px,calc(100% - 2*var(--gutter)));margin-inline:auto;
-  height:62px;padding:0 12px 0 22px;
-  border:1px solid transparent;border-radius:var(--r-pill);
-  transition:background-color .35s var(--ease),border-color .35s var(--ease),
-             backdrop-filter .35s var(--ease),box-shadow .35s var(--ease);
+  --recuo:0px;
+  position:relative;
+  display:grid;align-items:center;column-gap:14px;
+  grid-template-columns:minmax(max-content,1fr) auto minmax(max-content,1fr);
+  width:min(1400px,calc(100% - 2*var(--gutter)));margin-inline:auto;
+  height:62px;padding:0 12px;
 }
-.hdr.is-stuck{padding-top:8px}
-.hdr.is-stuck .hdr__in{
+/* a pílula: só fundo, recuada pelo --recuo; acende ao rolar */
+.hdr__in::before{
+  content:"";position:absolute;inset-block:0;inset-inline:var(--recuo);z-index:-1;
+  border:1px solid var(--line-soft);border-radius:var(--r-pill);
   background:rgba(6,13,23,.72);
-  border-color:var(--line-soft);
   backdrop-filter:saturate(170%) blur(18px);
   -webkit-backdrop-filter:saturate(170%) blur(18px);
   box-shadow:0 18px 44px -22px rgba(0,0,0,.9);
+  opacity:0;transform:scaleX(1.03);
+  transition:opacity .4s var(--ease),transform .5s var(--ease);
+  pointer-events:none;
 }
-.hdr__logo{display:flex;align-items:center;flex:0 0 auto}
+.hdr.is-stuck{padding-top:8px}
+.hdr.is-stuck .hdr__in::before{opacity:1;transform:none}
+.hdr__logo{display:flex;align-items:center;justify-self:start;grid-column:1;min-height:44px;margin-inline-start:10px}
 .hdr__logo img{height:24px;width:auto}
-.hdr__nav{display:flex;align-items:center;gap:4px;margin-inline:auto}
+.hdr__logo .hdr__simbolo{display:none;height:30px}
+.hdr__nav{display:flex;align-items:center;gap:2px;grid-column:2;justify-self:center}
 .hdr__nav a{
-  padding:9px 15px;border-radius:var(--r-pill);
+  padding:9px 12px;border-radius:var(--r-pill);
   font-size:14px;color:var(--muted);letter-spacing:.01em;
   transition:color .25s var(--ease),background-color .25s var(--ease);
 }
 .hdr__nav a:hover{color:#fff;background:rgba(160,176,197,.09)}
-.hdr__side{display:flex;align-items:center;gap:8px;flex:0 0 auto}
-.hdr .btn{font-size:13.5px;padding:11px 20px}
+.hdr__side{display:flex;align-items:center;gap:8px;grid-column:3;justify-self:end}
+.hdr .btn{font-size:13.5px;padding:0 20px;min-height:44px;min-width:44px}
 .hdr .btn--primary{padding-right:20px}
+.hdr .btn .rot-curto{display:none}
 .hdr__toggle{display:none}
+/* logo e ações entram na cápsula só com transform (só no computador: no celular a cápsula
+   tem a largura toda, e transform no .hdr__side prenderia a lista de idiomas nele) */
+@media (min-width:1024px){
+  .hdr__logo,.hdr__side{transition:transform .5s var(--ease)}
+  .hdr.is-stuck .hdr__logo{transform:translateX(var(--recuo))}
+  .hdr.is-stuck .hdr__side{transform:translateX(calc(-1 * var(--recuo)))}
+  [dir="rtl"] .hdr.is-stuck .hdr__logo{transform:translateX(calc(-1 * var(--recuo)))}
+  [dir="rtl"] .hdr.is-stuck .hdr__side{transform:translateX(var(--recuo))}
+}
+/* recolher por etapas, só no idioma e na largura em que não cabe (main.js) */
+.hdr--sem-abas .hdr__nav{display:none}
+.hdr--simbolo .hdr__logo .hdr__marca{display:none}
+.hdr--simbolo .hdr__logo .hdr__simbolo{display:block}
+.hdr--curto .btn .rot-longo{display:none}
+.hdr--curto .btn .rot-curto{display:inline}
+@media (prefers-reduced-motion:reduce){
+  .hdr__in::before,.hdr__logo,.hdr__side{transition:opacity .2s linear}
+  .hdr__in::before{transform:none}
+}
 
 /* ==========================================================================
    Hero
@@ -811,7 +844,6 @@ html[lang="pt-BR"] #hero-titulo .pal{text-transform:uppercase}
    ========================================================================== */
 @media (max-width:1100px){
   .hdr__nav{display:none}
-  .hdr__side{margin-left:auto}
 }
 @media (max-width:1024px){
   .bento{grid-template-columns:1fr 1fr;grid-auto-rows:auto}
@@ -843,10 +875,12 @@ html[lang="pt-BR"] #hero-titulo .pal{text-transform:uppercase}
 @media (max-width:600px){
   .ticker{height:34px;font-size:12px}
   .hdr{inset-block-start:34px}
-  .hdr__in{height:56px;padding:0 10px 0 16px}
+  .hdr__in{height:56px;padding:0 6px;column-gap:6px;width:calc(100% - 24px)}
+  .hdr__logo{margin-inline-start:8px}
   .hdr__logo img{height:21px}
-  .hdr .btn{font-size:12.5px;padding:10px 16px}
-  .hdr .btn--primary{padding-right:16px}
+  .hdr__logo .hdr__simbolo{height:28px}
+  .hdr .btn{font-size:12px;padding:0 12px}
+  .hdr .btn--primary{padding-right:12px}
   .bento{grid-template-columns:1fr}
   .bento .card:nth-child(1),.bento .card:nth-child(4){grid-column:auto}
   .hero__stats{grid-template-columns:1fr}

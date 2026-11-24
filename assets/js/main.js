@@ -27,6 +27,51 @@
   }, { passive: true });
   onScroll();
 
+  /* ---------- Topo: cabe inteiro em todo idioma, abas no centro, cápsula do tamanho do conteúdo ----------
+     Os rótulos mudam de tamanho com o idioma, então o topo mede o que pede (abas no centro exigem as
+     duas laterais do tamanho da maior) e recolhe por etapas só onde não cabe:
+     1) no computador, as abas saem se não couberem centradas com folga para a cápsula encolher;
+     2) o logo por extenso vira o símbolo; 3) o criar conta passa ao rótulo curto.
+     O "Entrar" nunca sai. Depois calcula o recuo da cápsula (--recuo): ao rolar, o logo e as ações
+     andam para dentro só com transform (styles.css, bloco do Header). */
+  var hdrIn = hdr && hdr.querySelector('.hdr__in');
+  function ajustarTopo() {
+    if (!hdrIn) return;
+    var nav = hdrIn.querySelector('.hdr__nav');
+    var logo = hdrIn.querySelector('.hdr__logo');
+    var lado = hdrIn.querySelector('.hdr__side');
+    if (!logo || !lado) return;
+    hdr.classList.remove('hdr--sem-abas', 'hdr--simbolo', 'hdr--curto');
+    var cs = getComputedStyle(hdrIn);
+    var gap = parseFloat(cs.columnGap) || 0;
+    var bordas = parseFloat(cs.paddingLeft) + parseFloat(cs.paddingRight) + parseFloat(cs.borderLeftWidth) + parseFloat(cs.borderRightWidth);
+    var largura = hdrIn.getBoundingClientRect().width;
+    var comAbas = function () { return nav && getComputedStyle(nav).display !== 'none'; };
+    var pede = function () {
+      var l = logo.offsetWidth + (parseFloat(getComputedStyle(logo).marginInlineStart) || 0), s = lado.offsetWidth;
+      return (comAbas() ? nav.offsetWidth + 2 * Math.max(l, s) : l + s) + 2 * gap + bordas + 1;
+    };
+    var computador = window.innerWidth >= 1024;
+    var folga = computador ? 40 : 0;   /* a cápsula encolhe pelo menos 20 px de cada lado */
+    if (comAbas() && pede() + folga > largura) hdr.classList.add('hdr--sem-abas');
+    if (pede() > largura && logo.querySelector('.hdr__simbolo')) hdr.classList.add('hdr--simbolo');
+    if (pede() > largura && lado.querySelector('.rot-curto')) hdr.classList.add('hdr--curto');
+    var recuo = 0;
+    if (computador) {
+      var cabe = pede() + 48;
+      var alvo = Math.min(largura, Math.max(cabe, Math.min(largura - 2 * folga, 760)));
+      recuo = Math.max(0, Math.round((largura - alvo) / 2));
+    }
+    hdrIn.style.setProperty('--recuo', recuo + 'px');
+  }
+  if (hdrIn) {
+    ajustarTopo();
+    var topoEspera;
+    window.addEventListener('resize', function () { clearTimeout(topoEspera); topoEspera = setTimeout(ajustarTopo, 120); });
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(ajustarTopo);
+    window.addEventListener('load', ajustarTopo);
+  }
+
   /* ---------- Voltar ao topo ---------- */
   if (topBtn) {
     topBtn.addEventListener('click', function () {
