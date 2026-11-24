@@ -54,18 +54,11 @@
 .sb-guia__btn{margin-top:auto;align-self:stretch;min-height:48px}
 .sb-guia__btn.btn--primary{padding-right:26px}
 
-/* ---------- FAQ: 5 à vista e um botão "Ver mais perguntas (+N)" (o N é conta, no JS) ---------- */
-.faq__item[hidden]{display:none}
-.sb-faq-mais{display:flex;justify-content:center;margin-top:22px}
-.sb-faq-mais button{min-height:48px;padding:12px 26px;border-radius:var(--r-pill);border:1px solid var(--lt-line);background:var(--lt-card);
-  color:var(--lt-ink);font:inherit;font-size:15px;font-weight:600;cursor:pointer;box-shadow:0 8px 20px -8px rgba(40,93,138,.14);
-  transition:transform .16s var(--ease),box-shadow .2s var(--ease),border-color .2s var(--ease)}
-.sb-faq-mais button:focus-visible,.sb-copiar:focus-visible{outline:2px solid var(--brand);outline-offset:3px}
+.sb-copiar:focus-visible{outline:2px solid var(--brand);outline-offset:3px}
 
 /* toque e ponteiro: responde ao dedo; o hover fica só para mouse */
-.sb-bilhete__acoes .btn:active,.sb-guia__btn:active,.sb-faq-mais button:active{transform:scale(.98)}
+.sb-bilhete__acoes .btn:active,.sb-guia__btn:active{transform:scale(.98)}
 @media (hover:hover) and (pointer:fine){
-  .sb-faq-mais button:hover{border-color:rgba(35,137,230,.5);box-shadow:0 14px 30px -10px rgba(40,93,138,.24)}
   .sb-copiar:hover{border-color:rgba(75,163,240,.55);background:rgba(35,137,230,.12);color:#fff}
   .sb-passos li{transition:border-color .25s var(--ease),transform .25s var(--ease)}
   .sb-passos li:hover{border-color:rgba(75,163,240,.4);transform:translateY(-2px)}

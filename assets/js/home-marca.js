@@ -4,7 +4,7 @@
    o bônus mostra "100%" parado.
    1. "Copiar cupom": área de transferência; se o navegador recusar, cai no execCommand e, por
       último, seleciona o código para a pessoa copiar à mão. O aviso sai num role="status".
-   2. Perguntas: 5 à vista e UM botão "Ver mais perguntas (+N)", com N contado no HTML.
+   2. (saiu em 24/11/2026: o "ver mais" das perguntas mora no main.js, nas 17 línguas.)
    3. "100%" conta de 0 a 100 quando entra na tela (desligado em "menos movimento"). */
 (function () {
   'use strict';
@@ -57,32 +57,10 @@
     });
   });
 
-  // ---------------------------------------------------------------- 2. perguntas: 5 à vista
-  var lista = document.querySelector('#duvidas-frequentes .faq__list');
-  var A_VISTA = 5;
-  if (lista) {
-    var itens = [].slice.call(lista.querySelectorAll('.faq__item'));
-    var resto = itens.slice(A_VISTA);
-    if (resto.length) {
-      resto.forEach(function (it) { it.hidden = true; });
-      var caixa = document.createElement('div');
-      caixa.className = 'sb-faq-mais';
-      var botao = document.createElement('button');
-      botao.type = 'button';
-      botao.textContent = 'Ver mais perguntas (+' + resto.length + ')';
-      caixa.appendChild(botao);
-      lista.parentNode.insertBefore(caixa, lista.nextSibling);
-      botao.addEventListener('click', function () {
-        resto.forEach(function (it) { it.hidden = false; });
-        caixa.parentNode.removeChild(caixa);
-        var primeira = resto[0].querySelector('summary');
-        if (primeira) primeira.focus();
-      });
-      // link direto para uma pergunta escondida (#id): abre a lista antes de rolar
-      var alvo = location.hash && document.getElementById(location.hash.slice(1));
-      if (alvo && resto.indexOf(alvo.closest ? alvo.closest('.faq__item') : null) >= 0) botao.click();
-    }
-  }
+  // ---------------------------------------------------------------- 2. perguntas
+  // (24/11/2026) O "ver mais" das perguntas saiu daqui: este bloco punha um SEGUNDO botão
+  // "Ver mais perguntas (+17)" ao lado do da página, e o portão do FAQ reprovava por dois
+  // controles. O controle único, nas 17 línguas, mora no main.js.
 
   // ---------------------------------------------------------------- 3. contador do bônus
   var calmo = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;

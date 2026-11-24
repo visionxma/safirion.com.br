@@ -618,7 +618,7 @@
         <p class="faq__sub">เลือกคำถามด้านล่างเพื่อดูคำตอบ</p>
       </div>
 
-      <div class="faq__list rv">
+      <div class="faq__list" id="faq-lista">
         <details class="faq__item" name="faq">
           <summary class="faq__q"><span class="faq__n">01</span>ยอดถอนและยอดฝากขั้นต่ำคือเท่าไร?<span class="faq__ic" aria-hidden="true"></span></summary>
           <div class="faq__a">จำนวนขั้นต่ำอาจแตกต่างกันไป แต่โดยทั่วไปเริ่มต้นที่ R$50 (เรียลบราซิล) โปรดตรวจสอบจำนวนที่แน่นอนในหน้าฝากเงิน</div>
@@ -638,6 +638,10 @@
           <summary class="faq__q"><span class="faq__n">04</span>จะติดต่อขอรับการสนับสนุนได้อย่างไร?<span class="faq__ic" aria-hidden="true"></span></summary>
           <div class="faq__a">เข้าไปที่เมนู “ช่วยเหลือ” หรือ “ฝ่ายสนับสนุน” ภายในแผงควบคุม แล้วส่งคำขอของคุณ</div>
         </details>
+      </div>
+
+      <div class="faq__mais" hidden>
+        <button type="button" data-faq-mais aria-expanded="false" aria-controls="faq-lista" data-mais="ดูคำถามเพิ่มเติม (+{n})" data-menos="แสดงคำถามน้อยลง"><span>ดูคำถามเพิ่มเติม</span></button>
       </div>
     </div>
   </section>

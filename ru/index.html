@@ -618,7 +618,7 @@
         <p class="faq__sub">Выберите вопрос ниже и найдите ответ.</p>
       </div>
 
-      <div class="faq__list rv">
+      <div class="faq__list" id="faq-lista">
         <details class="faq__item" name="faq">
           <summary class="faq__q"><span class="faq__n">01</span>Каковы минимальные суммы вывода и депозита?<span class="faq__ic" aria-hidden="true"></span></summary>
           <div class="faq__a">Минимальная сумма может меняться, но обычно начинается от R$50 (бразильских реалов). Точную сумму уточняйте в разделе депозита.</div>
@@ -638,6 +638,10 @@
           <summary class="faq__q"><span class="faq__n">04</span>Как обратиться в службу поддержки?<span class="faq__ic" aria-hidden="true"></span></summary>
           <div class="faq__a">Откройте меню «Помощь» или «Поддержка» в личном кабинете и отправьте обращение.</div>
         </details>
+      </div>
+
+      <div class="faq__mais" hidden>
+        <button type="button" data-faq-mais aria-expanded="false" aria-controls="faq-lista" data-mais="Показать ещё вопросы (+{n})" data-menos="Показать меньше вопросов"><span>Показать ещё вопросы</span></button>
       </div>
     </div>
   </section>

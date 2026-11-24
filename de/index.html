@@ -618,7 +618,7 @@
         <p class="faq__sub">Wählen Sie unten eine Frage aus und finden Sie die Antwort.</p>
       </div>
 
-      <div class="faq__list rv">
+      <div class="faq__list" id="faq-lista">
         <details class="faq__item" name="faq">
           <summary class="faq__q"><span class="faq__n">01</span>Wie hoch sind Mindestauszahlung und Mindesteinzahlung?<span class="faq__ic" aria-hidden="true"></span></summary>
           <div class="faq__a">Der Mindestbetrag kann variieren, beginnt aber in der Regel bei R$50 (brasilianische Real). Den genauen Betrag finden Sie im Einzahlungsbereich.</div>
@@ -638,6 +638,10 @@
           <summary class="faq__q"><span class="faq__n">04</span>Wie eröffne ich eine Support-Anfrage?<span class="faq__ic" aria-hidden="true"></span></summary>
           <div class="faq__a">Öffnen Sie im Dashboard das Menü „Hilfe“ oder „Support“ und senden Sie Ihre Anfrage.</div>
         </details>
+      </div>
+
+      <div class="faq__mais" hidden>
+        <button type="button" data-faq-mais aria-expanded="false" aria-controls="faq-lista" data-mais="Weitere Fragen anzeigen (+{n})" data-menos="Weniger Fragen anzeigen"><span>Weitere Fragen anzeigen</span></button>
       </div>
     </div>
   </section>

@@ -552,40 +552,6 @@
 
   <!-- ==================== FAQ ==================== -->
   <section class="faq" id="duvidas-frequentes" aria-labelledby="faq-titulo">
-    <style id="faq-doutrina-css">
-/* Grade de 2 colunas a partir de 600px (doutrina, secao 1), uma coluna sempre
-   em minmax(0,1fr) para nao abrir rolagem lateral. */
-.faq__list{max-width:1100px;margin-inline:auto;display:grid;grid-template-columns:minmax(0,1fr);gap:12px;align-content:start}
-@media (min-width:37.5rem){.faq__list{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}}
-.faq__item{height:fit-content}
-.faq__q{min-height:44px;padding:18px clamp(16px,2.4vw,24px);gap:14px;font-size:clamp(15px,1.5vw,17px)}
-/* Azul escurecido ate o texto dar 4,5:1 sobre o cartao branco (doutrina:
-   #2389e6 sobre branco da 3,6:1 e reprova no portao). */
-.faq__n{font-size:15px;color:#0D63B0}
-.faq__ic{width:20px;height:20px}
-.faq__ic::before{top:9px;left:1px;width:18px;height:2px}
-.faq__ic::after{left:9px;top:1px;width:2px;height:18px}
-.faq__a{padding:0 clamp(16px,2.4vw,24px) 14px;font-size:15.5px}
-.faq__a p{margin:0;max-width:66ch}
-/* O link que aprofunda e alvo de toque de 44px, nao um trecho sublinhado. */
-.faq__link{display:inline-flex;align-items:center;gap:7px;min-height:44px;color:#0D63B0;font-weight:600;text-decoration:none}
-.faq__link::after{content:"";width:15px;height:15px;flex:none;background:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 12h13M13 6l6 6-6 6' fill='none' stroke='%23000' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 12h13M13 6l6 6-6 6' fill='none' stroke='%23000' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat;transition:transform .25s cubic-bezier(.22,1,.36,1)}
-@media (hover:hover) and (pointer:fine){.faq__link:hover{color:#09518f}.faq__link:hover::after{transform:translateX(3px)}}
-.faq__link:focus-visible,.faq__q:focus-visible,.faq__mais button:focus-visible{outline:2px solid #0D63B0;outline-offset:3px}
-/* A resposta abre e fecha DESLIZANDO, nunca num salto. */
-:root{interpolate-size:allow-keywords}
-.faq__item::details-content{block-size:0;overflow:clip;transition:block-size .32s cubic-bezier(.22,1,.36,1),content-visibility .32s allow-discrete}
-.faq__item[open]::details-content{block-size:auto}
-.faq__mais{display:grid;justify-items:center;margin-top:20px}
-.faq__mais button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 26px;border-radius:999px;border:1px solid #bcd6ef;background:#fff;color:#0D63B0;font:inherit;font-size:15px;font-weight:600;cursor:pointer;box-shadow:0 8px 20px -8px rgba(40,93,138,.14);transition:box-shadow .25s ease,border-color .25s ease,transform .18s cubic-bezier(.22,1,.36,1)}
-@media (hover:hover) and (pointer:fine){.faq__mais button:hover{border-color:#0D63B0;box-shadow:0 14px 30px -10px rgba(40,93,138,.22)}}
-.faq__mais button:active{transform:scale(.98)}
-.faq__fonte{max-width:72ch;margin:18px auto 0;color:#5a6b82;font-size:13px;line-height:1.6;text-align:center}
-@media (prefers-reduced-motion:reduce){
-  .faq__item::details-content{transition:none}
-  .faq__link::after,.faq__mais button{transition:none}
-}
-    </style>
     <div class="wrap">
       <div class="faq__head rv">
         <p class="eyebrow">FAQ</p>
@@ -684,86 +650,11 @@
         </details>
       </div>
 
-      <div class="faq__mais">
-        <button type="button" data-faq-mais aria-expanded="false" aria-controls="faq-lista"><span>Ver mais perguntas</span></button>
+      <div class="faq__mais" hidden>
+        <button type="button" data-faq-mais aria-expanded="false" aria-controls="faq-lista" data-mais="Ver mais perguntas (+{n})" data-menos="Ver menos perguntas"><span>Ver mais perguntas</span></button>
       </div>
       <p class="faq__fonte">As respostas reúnem o que esta página publica sobre a Safirion e o que aprofundamos no blog do site. Onde a corretora não publica um dado — prazo de saque em horas, registro em regulador brasileiro —, está escrito que não publica.</p>
     </div>
-    <script id="faq-doutrina-js">(function(){
-  /* FAQ: abrir um fecha o outro + "ver mais" com a conta certa.
-     Molde provado no axelbroker.net (27/27 no portao-faq). */
-  function faq(){
-    var caixa=document.getElementById('faq-lista');
-    if(!caixa) return;
-    var menos=matchMedia('(prefers-reduced-motion: reduce)');
-
-    /* reserva para navegador sem suporte a <details name> */
-    if(!('name' in document.createElement('details'))){
-      caixa.addEventListener('toggle',function(e){
-        var alvo=e.target;
-        if(alvo.tagName!=='DETAILS'||!alvo.open) return;
-        var todos=caixa.querySelectorAll('details');
-        for(var i=0;i<todos.length;i++) if(todos[i]!==alvo) todos[i].open=false;
-      },true);
-    }
-
-    var botao=document.querySelector('[data-faq-mais]');
-    if(!botao) return;
-    var todas=[].slice.call(caixa.querySelectorAll('details'));
-    var rotulo=botao.querySelector('span')||botao;
-
-    /* Quantas ficam a vista e CONTA, nao texto: 5 numa coluna e 6 quando sao
-       duas, sempre multiplo das colunas; reconta no resize porque a sexta
-       entra e sai do grupo conforme a largura (doutrina, secao 9). */
-    var recontar=function(){
-      var cols=getComputedStyle(caixa).gridTemplateColumns.split(' ').length;
-      var vista=cols>1?6:5;
-      var aberto=botao.getAttribute('aria-expanded')==='true';
-      todas.forEach(function(x,i){x.hidden=!aberto&&i>=vista;});
-      var escondidas=todas.filter(function(x){return x.hidden;}).length;
-      botao.parentElement.hidden=escondidas===0&&!aberto;
-      rotulo.textContent=aberto?"Ver menos perguntas":("Ver mais perguntas"+' (+'+escondidas+')');
-    };
-
-    /* Ao recolher, a rolagem devolve o titulo e o botao a tela. */
-    var voltarAoTitulo=function(){
-      var t=document.getElementById('faq-titulo');
-      if(!t) return;
-      var alvo=t.getBoundingClientRect().top+window.pageYOffset-96;
-      window.scrollTo({top:Math.max(0,alvo),behavior:menos.matches?'auto':'smooth'});
-    };
-
-    botao.addEventListener('click',function(){
-      var abrir=botao.getAttribute('aria-expanded')!=='true';
-      var antes=caixa.offsetHeight;
-      var estavam=todas.map(function(x){return x.hidden;});
-      botao.setAttribute('aria-expanded',abrir?'true':'false');
-      recontar();
-      var depois=caixa.offsetHeight;
-      if(menos.matches||!caixa.animate||antes===depois){
-        if(!abrir) voltarAoTitulo();
-        return;
-      }
-      /* as escondidas ficam a vista ate a animacao de recolher acabar */
-      if(!abrir) todas.forEach(function(x,i){x.hidden=estavam[i];});
-      caixa.style.overflow='clip';
-      var an=caixa.animate(
-        [{height:antes+'px'},{height:depois+'px'}],
-        {duration:320,easing:'cubic-bezier(.22,1,.36,1)'}
-      );
-      var fim=function(){
-        caixa.style.overflow='';
-        if(!abrir){recontar();voltarAoTitulo();}
-      };
-      an.onfinish=fim; an.oncancel=fim;
-    });
-
-    recontar();
-    window.addEventListener('resize',recontar,{passive:true});
-  }
-  if(document.readyState!=='loading') faq();
-  else document.addEventListener('DOMContentLoaded',faq);
-})();</script>
   </section>
 
 </main>

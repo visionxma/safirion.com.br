@@ -377,7 +377,7 @@
         <p class="faq__sub">Selecciona una pregunta y resuelve tus dudas.</p>
       </div>
 
-      <div class="faq__list rv">
+      <div class="faq__list" id="faq-lista">
         <details class="faq__item" name="faq">
           <summary class="faq__q"><span class="faq__n">01</span>¿Cuál es el retiro y el depósito mínimo?<span class="faq__ic" aria-hidden="true"></span></summary>
           <div class="faq__a">El monto mínimo puede variar, pero por lo general empieza en R$50 (reales brasileños). Consulta el área de depósito para confirmar el monto exacto.</div>
@@ -397,6 +397,10 @@
           <summary class="faq__q"><span class="faq__n">04</span>¿Cómo abrir una solicitud de soporte?<span class="faq__ic" aria-hidden="true"></span></summary>
           <div class="faq__a">Entra al menú “Ayuda” o “Soporte” dentro del panel y envía tu solicitud.</div>
         </details>
+      </div>
+
+      <div class="faq__mais" hidden>
+        <button type="button" data-faq-mais aria-expanded="false" aria-controls="faq-lista" data-mais="Ver más preguntas (+{n})" data-menos="Ver menos preguntas"><span>Ver más preguntas</span></button>
       </div>
     </div>
   </section>

@@ -192,6 +192,161 @@
     });
   }
 
+  /* ---------- FAQ da home: "Ver mais perguntas (+N)" ⇄ "Ver menos perguntas" (doutrina, seção 9) ----------
+     Vale nas 17 línguas: o texto do botão vem do HTML de cada página (data-mais com {n}, data-menos).
+     - À vista: 5 numa coluna e 6 em duas (sempre múltiplo das colunas); o N é conta e se refaz no resize.
+     - A lista cresce e recolhe em 300 ms, cubic-bezier(.22,1,.36,1); o relógio é o performance.now() e
+       cada quadro avança no máximo 50 ms (quadro travado não vira salto).
+     - Ao recolher, a rolagem acompanha a lista e devolve o título e o botão à tela.
+     - Com menos movimento, só um esmaecer curto. Sem JS, todas aparecem: o hidden só entra aqui.
+     Antes isto morava num <script> dentro da home em português, e o home-marca.js punha um SEGUNDO
+     botão "Ver mais perguntas (+17)" ao lado: dois controles, e o portão do FAQ reprovava. */
+  (function () {
+    var lista = document.getElementById('faq-lista');
+    var botao = document.querySelector('[data-faq-mais]');
+    if (!lista || !botao) return;
+    var caixa = botao.parentElement;
+    var rotulo = botao.querySelector('span') || botao;
+    var itens = [].slice.call(lista.querySelectorAll('.faq__item'));
+    var MAIS = botao.getAttribute('data-mais') || 'Ver mais perguntas (+{n})';
+    var MENOS = botao.getAttribute('data-menos') || 'Ver menos perguntas';
+    var DUR = 300;
+    var aberto = false;
+    var rodando = null;
+
+    /* a curva da casa, cubic-bezier(.22,1,.36,1), resolvida por bissecção */
+    var curva = (function (x1, y1, x2, y2) {
+      var cx = 3 * x1, bx = 3 * (x2 - x1) - cx, ax = 1 - cx - bx, cy = 3 * y1, by = 3 * (y2 - y1) - cy, ay = 1 - cy - by;
+      var fx = function (t) { return ((ax * t + bx) * t + cx) * t; };
+      var fy = function (t) { return ((ay * t + by) * t + cy) * t; };
+      return function (v) {
+        if (v <= 0) return 0;
+        if (v >= 1) return 1;
+        var lo = 0, hi = 1, t = v;
+        for (var i = 0; i < 30; i++) { if (fx(t) < v) lo = t; else hi = t; t = (lo + hi) / 2; }
+        return fy(t);
+      };
+    })(0.22, 1, 0.36, 1);
+
+    function animar(cada, fim) {
+      var t = 0, ant = performance.now(), id = 0, vivo = true;
+      function passo(agora) {
+        if (!vivo) return;
+        t += Math.min(50, Math.max(0, agora - ant)); ant = agora;
+        var p = Math.min(1, t / DUR);
+        cada(curva(p));
+        if (p < 1) id = requestAnimationFrame(passo); else { vivo = false; rodando = null; fim(); }
+      }
+      id = requestAnimationFrame(passo);
+      return { parar: function () { if (!vivo) return; vivo = false; cancelAnimationFrame(id); cada(1); rodando = null; fim(); } };
+    }
+
+    function colunas() {
+      var g = getComputedStyle(lista).gridTemplateColumns;
+      return g && g !== 'none' ? g.split(' ').filter(Boolean).length : 1;
+    }
+    function aVista() { var c = colunas(); return c > 1 ? Math.ceil(6 / c) * c : 5; }
+
+    function aplicar() {
+      var n = aVista(), escondidas = 0;
+      itens.forEach(function (x, i) { x.hidden = !aberto && i >= n; if (x.hidden) escondidas++; });
+      caixa.hidden = !aberto && escondidas === 0;
+      caixa.classList.toggle('is-aberto', aberto);
+      botao.setAttribute('aria-expanded', aberto ? 'true' : 'false');
+      rotulo.textContent = aberto ? MENOS : MAIS.replace('{n}', escondidas);
+    }
+
+    /* onde o título deve parar: logo abaixo do cabeçalho fixo (faixa + pílula) */
+    function folgaDoTopo() {
+      var b = 0;
+      [document.querySelector('.ticker'), document.getElementById('hdr')].forEach(function (e) {
+        if (!e) return;
+        var r = e.getBoundingClientRect();
+        if (r.top < 60 && r.bottom > b) b = r.bottom;
+      });
+      return Math.round(b) + 16;
+    }
+
+    function esmaecer(novos) {
+      novos.forEach(function (x) { if (x.animate) x.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 180, easing: 'ease-out' }); });
+    }
+
+    botao.addEventListener('click', function () {
+      if (rodando) rodando.parar();
+      var abrir = !aberto;
+      var h0 = lista.getBoundingClientRect().height;
+      var y0 = window.pageYOffset;
+      var estavam = itens.map(function (x) { return x.hidden; });
+      aberto = abrir;
+      aplicar();
+      var h1 = lista.getBoundingClientRect().height;
+      var titulo = document.getElementById('faq-titulo');
+      /* destino da rolagem ao recolher: o título logo abaixo do cabeçalho, nunca rolando para baixo */
+      var y1 = y0;
+      if (!abrir && titulo) y1 = Math.min(y0, Math.max(0, Math.round(titulo.getBoundingClientRect().top + y0 - folgaDoTopo())));
+      var rolar = function (y) { window.scrollTo({ top: y, left: 0, behavior: 'instant' }); };
+
+      if (reduced || Math.abs(h1 - h0) < 2) {
+        if (abrir) esmaecer(itens.filter(function (x, i) { return estavam[i] && !x.hidden; }));
+        else if (y1 !== y0) rolar(y1);
+        return;
+      }
+      /* as que vão sumir ficam à vista até a lista acabar de recolher */
+      if (!abrir) itens.forEach(function (x, i) { x.hidden = estavam[i]; });
+      lista.style.height = h0 + 'px';
+      lista.style.overflow = 'clip';
+      rodando = animar(function (e) {
+        lista.style.height = (h0 + (h1 - h0) * e) + 'px';
+        if (!abrir && y1 !== y0) rolar(y0 + (y1 - y0) * e);
+      }, function () {
+        lista.style.height = '';
+        lista.style.overflow = '';
+        if (!abrir) aplicar();
+      });
+    });
+
+    /* a sexta pergunta entra ou sai do grupo conforme as colunas: recontar no resize */
+    var cols = colunas(), pendente = 0;
+    window.addEventListener('resize', function () {
+      if (pendente) return;
+      pendente = requestAnimationFrame(function () {
+        pendente = 0;
+        var c = colunas();
+        if (c !== cols && !rodando) { cols = c; aplicar(); }
+      });
+    }, { passive: true });
+
+    /* link direto para uma pergunta escondida (#id): abre a lista antes de rolar */
+    var alvo = location.hash && document.getElementById(location.hash.slice(1));
+    var item = alvo && alvo.closest && alvo.closest('.faq__item');
+    if (item && itens.indexOf(item) >= aVista()) aberto = true;
+    aplicar();
+
+    /* resposta: menos movimento = só esmaecer; navegador sem ::details-content = reserva que desliza */
+    var temConteudo = window.CSS && CSS.supports && CSS.supports('selector(::details-content)');
+    itens.forEach(function (it) {
+      var resp = it.querySelector('.faq__a');
+      var cab = it.querySelector('summary');
+      if (!resp || !cab) return;
+      if (reduced) {
+        it.addEventListener('toggle', function () { if (it.open && resp.animate) resp.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 160, easing: 'ease-out' }); });
+        return;
+      }
+      if (temConteudo || !resp.animate) return;
+      cab.addEventListener('click', function (ev) {
+        ev.preventDefault();
+        if (!it.open) {
+          it.open = true;
+          var h = resp.getBoundingClientRect().height;
+          resp.animate([{ height: '0px', overflow: 'hidden' }, { height: h + 'px', overflow: 'hidden' }], { duration: DUR, easing: 'cubic-bezier(.22,1,.36,1)' });
+        } else {
+          var a = resp.animate([{ height: resp.getBoundingClientRect().height + 'px', overflow: 'hidden' }, { height: '0px', overflow: 'hidden' }], { duration: DUR, easing: 'cubic-bezier(.22,1,.36,1)' });
+          a.onfinish = function () { it.open = false; };
+        }
+      });
+    });
+  })();
+
   /* ---------- Seletor de idioma: fecha ao clicar fora ou com Esc ---------- */
   var lng = document.querySelector('.lng');
   if (lng) {

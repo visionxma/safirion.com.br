@@ -377,7 +377,7 @@
         <p class="faq__sub">Seleziona una domanda qui sotto e chiarisci i tuoi dubbi.</p>
       </div>
 
-      <div class="faq__list rv">
+      <div class="faq__list" id="faq-lista">
         <details class="faq__item" name="faq">
           <summary class="faq__q"><span class="faq__n">01</span>Qual è l'importo minimo di prelievo e di deposito?<span class="faq__ic" aria-hidden="true"></span></summary>
           <div class="faq__a">L'importo minimo può variare, ma di norma parte da R$50 (real brasiliani). Controlla nell'area di deposito per confermare l'importo esatto.</div>
@@ -397,6 +397,10 @@
           <summary class="faq__q"><span class="faq__n">04</span>Come si apre una richiesta di assistenza?<span class="faq__ic" aria-hidden="true"></span></summary>
           <div class="faq__a">Apri il menu “Aiuto” o “Assistenza” all'interno del pannello e invia la tua richiesta.</div>
         </details>
+      </div>
+
+      <div class="faq__mais" hidden>
+        <button type="button" data-faq-mais aria-expanded="false" aria-controls="faq-lista" data-mais="Mostra altre domande (+{n})" data-menos="Mostra meno domande"><span>Mostra altre domande</span></button>
       </div>
     </div>
   </section>

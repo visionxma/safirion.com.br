@@ -618,7 +618,7 @@
         <p class="faq__sub">Sélectionnez une question ci-dessous pour obtenir la réponse.</p>
       </div>
 
-      <div class="faq__list rv">
+      <div class="faq__list" id="faq-lista">
         <details class="faq__item" name="faq">
           <summary class="faq__q"><span class="faq__n">01</span>Quels sont les montants minimums de retrait et de dépôt ?<span class="faq__ic" aria-hidden="true"></span></summary>
           <div class="faq__a">Le montant minimum peut varier, mais il commence généralement à R$50 (réaux brésiliens). Consultez l’espace de dépôt pour confirmer le montant exact.</div>
@@ -638,6 +638,10 @@
           <summary class="faq__q"><span class="faq__n">04</span>Comment ouvrir une demande d’assistance ?<span class="faq__ic" aria-hidden="true"></span></summary>
           <div class="faq__a">Accédez au menu « Aide » ou « Support » dans votre tableau de bord et envoyez votre demande.</div>
         </details>
+      </div>
+
+      <div class="faq__mais" hidden>
+        <button type="button" data-faq-mais aria-expanded="false" aria-controls="faq-lista" data-mais="Voir plus de questions (+{n})" data-menos="Voir moins de questions"><span>Voir plus de questions</span></button>
       </div>
     </div>
   </section>

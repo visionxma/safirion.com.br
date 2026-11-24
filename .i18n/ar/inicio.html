@@ -377,7 +377,7 @@
         <p class="faq__sub">اختر السؤال أدناه لتجد الإجابة عن استفساراتك.</p>
       </div>
 
-      <div class="faq__list rv">
+      <div class="faq__list" id="faq-lista">
         <details class="faq__item" name="faq">
           <summary class="faq__q"><span class="faq__n">01</span>ما الحد الأدنى للسحب والإيداع؟<span class="faq__ic" aria-hidden="true"></span></summary>
           <div class="faq__a">قد يختلف الحد الأدنى، لكنه يبدأ عادةً من R$50 (بالريال البرازيلي). راجع قسم الإيداع للتأكد من المبلغ الدقيق.</div>
@@ -397,6 +397,10 @@
           <summary class="faq__q"><span class="faq__n">04</span>كيف أفتح طلب دعم؟<span class="faq__ic" aria-hidden="true"></span></summary>
           <div class="faq__a">ادخل إلى قائمة «المساعدة» أو «الدعم» من لوحة التحكم وأرسل طلبك.</div>
         </details>
+      </div>
+
+      <div class="faq__mais" hidden>
+        <button type="button" data-faq-mais aria-expanded="false" aria-controls="faq-lista" data-mais="عرض المزيد من الأسئلة (+{n})" data-menos="عرض أسئلة أقل"><span>عرض المزيد من الأسئلة</span></button>
       </div>
     </div>
   </section>
