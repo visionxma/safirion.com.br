@@ -16,7 +16,7 @@
 .pp__fig img{width:100%;height:100%;object-fit:cover;object-position:50% 34%;display:block}
 .pp__selo{position:absolute;top:18px;left:18px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
  font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#fff;
- background:rgba(35,137,230,.92);padding:7px 13px;border-radius:999px}
+ background:#1a72c8;padding:7px 13px;border-radius:999px}
 .pp__cont{padding:clamp(26px,4vw,42px);display:flex;flex-direction:column;gap:15px;justify-content:center}
 .pp__cont::before{content:"";width:34px;height:4px;border-radius:999px;background:#2389e6;margin-bottom:3px}
 .pp__cont h2{margin:0;font-size:clamp(22px,3vw,31px);font-weight:600;line-height:1.14;letter-spacing:-.02em}
@@ -24,9 +24,9 @@
 .pp__cont .pp__nota{margin:4px 0 0;padding:14px 17px;border-left:3px solid #2389e6;border-radius:0 10px 10px 0;
  background:var(--pp-sup,rgba(35,137,230,.10));font-size:14.5px;line-height:1.55;color:#fff;font-weight:700}
 .pp__btn{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:8px;padding:16px 24px;
- border-radius:999px;background:#2389e6;color:#fff;font-size:15.5px;font-weight:700;text-decoration:none;
- box-shadow:0 0 30px rgba(35,137,230,.34);transition:filter .2s ease,transform .2s ease}
-.pp__btn:hover{filter:brightness(1.08);transform:translateY(-1px)}
+ border-radius:999px;background:#1a72c8;color:#fff;font-size:15.5px;font-weight:700;text-decoration:none;
+ box-shadow:0 0 30px rgba(35,137,230,.34);transition:background-color .2s ease,transform .2s ease}
+.pp__btn:hover{background:#1667b8;transform:translateY(-1px)}
 .pp__mini{margin:0;font-size:12.5px;line-height:1.5;color:var(--pp-tx3,#6f818f)}
 .pp__x{position:absolute;top:14px;right:14px;width:38px;height:38px;display:flex;align-items:center;
  justify-content:center;border:0;cursor:pointer;border-radius:10px;font-size:19px;line-height:1;
@@ -43,3 +43,6 @@ body.pp-travado{overflow:hidden}
 
 /* v3: titulo nao passa por baixo do x no celular (07/11/2026) */
 @media(max-width:799px){.pp__cont h2{padding-right:48px}}
+
+/* v4: botao e selo em azul escurecido (#1a72c8, o --brand-600 do site) para o texto
+   branco dar 4,9:1 (antes 3,63 e 4,19); o hover escurece, nunca clareia (24/11/2026) */

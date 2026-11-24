@@ -836,10 +836,12 @@ html[lang="pt-BR"] #hero-titulo .pal{text-transform:uppercase}
 }
 
 /* ==========================================================================
-   Ferramentas: a imagem de cada cartão (print real da plataforma no aparelho)
+   Ferramentas: a imagem de cada cartão (print real da plataforma)
    Três faixas de tela, sem vão entre elas: computador (1025+), tablet (601–1024)
    e celular (até 600). A posição horizontal segue o lado em que a linha termina
    (inset-inline-end), então o árabe espelha sozinho.
+   O cartão 1 mostra a plataforma numa janela de navegador discreta, de frente e
+   reta, sem notebook em volta (24/11/2026: aparelho só quando o Victor pede).
    ========================================================================== */
 #ferramentas .bento .card{container-type:inline-size}
 #ferramentas .card>.card__vis{
@@ -856,9 +858,8 @@ html[lang="pt-BR"] #hero-titulo .pal{text-transform:uppercase}
 /* ---------- computador (1025px ou mais): MacBook grande, aparelhos no alto dos cartões pequenos ---------- */
 @media (min-width:1025px){
   #ferramentas .bento{grid-auto-rows:minmax(270px,auto)}
-  #ferramentas .card__vis--mac{width:84%;inset-inline-end:-9%;top:7%;--vis-r:-2deg;
-    filter:drop-shadow(0 26px 40px rgba(0,0,0,.6));
-    -webkit-mask-image:linear-gradient(180deg,#000 72%,transparent 100%);mask-image:linear-gradient(180deg,#000 72%,transparent 100%)}
+  #ferramentas .card__vis--janela{width:86%;inset-inline-end:5%;top:18%;
+    filter:drop-shadow(0 26px 40px rgba(0,0,0,.6))}
   #ferramentas .card__vis--ordem{width:clamp(52px,26%,92px);inset-inline-end:9%;top:clamp(10px,5%,18px);--vis-r:-8deg}
   #ferramentas .card__vis--ativos{width:clamp(118px,70%,250px);inset-inline-end:-10%;top:clamp(6px,4%,14px);
     -webkit-mask-image:linear-gradient(212deg,#000 62%,transparent 96%);mask-image:linear-gradient(212deg,#000 62%,transparent 96%)}
@@ -871,7 +872,7 @@ html[lang="pt-BR"] #hero-titulo .pal{text-transform:uppercase}
   #ferramentas .bento .card:nth-child(1){min-height:250px}
   #ferramentas .bento .card:nth-child(2),#ferramentas .bento .card:nth-child(3){min-height:220px}
   #ferramentas .bento .card:nth-child(4){min-height:200px}
-  #ferramentas .card__vis--mac{width:min(46%,420px);inset-inline-end:4%;bottom:-22%}
+  #ferramentas .card__vis--janela{width:min(46%,440px);inset-inline-end:4%;bottom:12%}
   #ferramentas .bento .card:nth-child(1) .h3{max-width:46%}
   #ferramentas .card__vis--ordem{width:clamp(80px,30%,96px);inset-inline-end:8%;top:14%;--vis-r:-8deg}
   #ferramentas .card__vis--ativos{width:min(230px,62%);inset-inline-end:-14%;bottom:-20%;
@@ -890,8 +891,7 @@ html[lang="pt-BR"] #hero-titulo .pal{text-transform:uppercase}
   #ferramentas .bento .card:nth-child(2),#ferramentas .bento .card:nth-child(3){min-height:250px;padding:20px 18px}
   #ferramentas .bento .card:nth-child(2) .h3,#ferramentas .bento .card:nth-child(3) .h3{font-size:16px;line-height:1.3}
   #ferramentas .bento .card:nth-child(4){min-height:210px}
-  #ferramentas .card__vis--mac{width:min(78%,330px);inset-inline-end:-8%;top:6%;--vis-r:-2deg;
-    -webkit-mask-image:linear-gradient(180deg,#000 72%,transparent 100%);mask-image:linear-gradient(180deg,#000 72%,transparent 100%)}
+  #ferramentas .card__vis--janela{width:min(88%,380px);inset-inline-end:6%;top:22%}
   #ferramentas .card__vis--ordem{width:clamp(52px,26%,92px);inset-inline-end:9%;top:clamp(10px,5%,18px);--vis-r:-8deg}
   #ferramentas .card__vis--ativos{width:clamp(84px,70%,250px);inset-inline-end:-14%;top:clamp(6px,4%,14px);
     -webkit-mask-image:linear-gradient(212deg,#000 62%,transparent 96%);mask-image:linear-gradient(212deg,#000 62%,transparent 96%)}
@@ -911,7 +911,6 @@ html[lang="pt-BR"] #hero-titulo .pal{text-transform:uppercase}
 }
 
 /* idioma da direita para a esquerda: inclinação e esmaecimento espelhados */
-[dir="rtl"] #ferramentas .card__vis--mac{--vis-r:2deg}
 [dir="rtl"] #ferramentas .card__vis--ordem{--vis-r:8deg}
 [dir="rtl"] #ferramentas .card__vis--suporte{--vis-r:-5deg}
 @media (min-width:1025px),(max-width:600px){
@@ -919,10 +918,6 @@ html[lang="pt-BR"] #hero-titulo .pal{text-transform:uppercase}
 }
 @media (min-width:601px) and (max-width:1024px){
   [dir="rtl"] #ferramentas .card__vis--ativos{-webkit-mask-image:linear-gradient(270deg,transparent 0,#000 34%);mask-image:linear-gradient(270deg,transparent 0,#000 34%)}
-  [dir="rtl"] #ferramentas .card__vis--mac{--vis-r:0deg}
-}
-@media (min-width:601px) and (max-width:1024px){
-  #ferramentas .card__vis--mac{--vis-r:0deg}
 }
 @media (prefers-reduced-motion:reduce){
   #ferramentas .card>.card__vis{transition:none}
