@@ -49,8 +49,8 @@
   ];
   // o mesmo galope em imagem animada (webp-animado.py na oficina gera a partir do vídeo)
   const IMAGEM = {
-    800: '/assets/img/touro/touro-galope-800.webp?v=0d183025',
-    1600: '/assets/img/touro/touro-galope-1600.webp?v=ade65146',
+    800: '/assets/img/touro/touro-galope-800.webp?v=e0d0465e',
+    1600: '/assets/img/touro/touro-galope-1600.webp?v=ad5dc9aa',
   };
   const PROVA_MS = 1500;      // o vídeo tem este tempo, depois de aceitar o play(), para andar na tela
   const PARADO_MS = 1200;     // vídeo à vista sem avançar por este tempo = parou sozinho

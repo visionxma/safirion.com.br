@@ -106,7 +106,7 @@
 }
 .touro::before{
   content:"";position:absolute;inset:0;
-  background:url("../img/touro/touro-galope-parado-1600.webp?v=8bc610aa") center/100% 100% no-repeat;
+  background:url("../img/touro/touro-galope-parado-1600.webp?v=971ab160") center/100% 100% no-repeat;
   transition:opacity .7s ease;
 }
 /* o galope em vídeo e, quando o vídeo não pode tocar (Safari em pouca energia), o MESMO galope em
@@ -350,7 +350,7 @@ html.touro-anima .touro--rodando:not(.touro--chegou) .touro__brilho{scale:.72}
     isolation:isolate;
   }
   .touro-palco .touro{left:17.26%;top:23.88%;width:85.8%}
-  .touro-palco .touro::before{background-image:url("../img/touro/touro-galope-parado-800.webp?v=5a76ba0c")}
+  .touro-palco .touro::before{background-image:url("../img/touro/touro-galope-parado-800.webp?v=0264d841")}
   /* o aparelho: na frente das patas de trás, girado para o centro (a peça da esquerda olha para a
      direita) e subindo na mesma diagonal do touro; perspective() no próprio transform */
   .hero .hero__art .hero__app{
