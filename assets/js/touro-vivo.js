@@ -6,10 +6,14 @@
    - Dois jeitos de mostrar o galope (50 quadros a 32 por segundo, em laço):
      1. VÍDEO, que vem por fetch e toca de um blob (o servidor de arquivos responde 200 inteiro a pedido
         parcial, e o Safari não toca vídeo servido assim). É o caminho leve: a placa de vídeo decodifica.
-     2. IMAGEM ANIMADA (AVIF), quando o vídeo não pode tocar. O Safari em modo de pouca energia (Mac na
+     2. IMAGEM ANIMADA (WebP), quando o vídeo não pode tocar. O Safari em modo de pouca energia (Mac na
         bateria, iPhone em economia) recusa play() de vídeo mudo, e imagem animada não passa por essa regra.
         Em 25/11/2026 o Victor viu, no Safari do Mac em pouca energia, o touro "aparecer feio por um
         instante e sumir sem voltar": o vídeo era dado como tocando sem mostrar quadro nenhum.
+        WebP e não AVIF: o Safari decodifica imagem pelo ImageIO, e num M1 em pouca energia o quadro de
+        1600 leva 11 ms em WebP contra 190 ms em AVIF (o AVIF tocaria a ~5 quadros por segundo).
+        A recusa se descobre ANTES de baixar o vídeo: play() no próprio <video>, ainda sem fonte, é
+        recusado na hora em pouca energia; fora dela fica pendente e cai quieto quando a fonte chega.
    - Regra que impede o touro de sumir: o parado só sai quando algo que ANDA está à vista. O vídeo só
      conta como tocando depois de o tempo dele avançar de verdade na tela; se parar sozinho (sistema,
      energia), o parado volta na hora e a imagem animada assume.
@@ -43,10 +47,10 @@
     { q: 38, x: 509 / 800, f: 0.9 },
     { q: 46, x: 400 / 800, f: 0.6 },
   ];
-  // o mesmo galope em imagem animada (avif-animado.py na oficina gera a partir do vídeo)
+  // o mesmo galope em imagem animada (webp-animado.py na oficina gera a partir do vídeo)
   const IMAGEM = {
-    800: '/assets/img/touro/touro-galope-800.avif?v=684c6333',
-    1600: '/assets/img/touro/touro-galope-1600.avif?v=9c8122c1',
+    800: '/assets/img/touro/touro-galope-800.webp?v=0d183025',
+    1600: '/assets/img/touro/touro-galope-1600.webp?v=ade65146',
   };
   const PROVA_MS = 1500;      // o vídeo tem este tempo, depois de aceitar o play(), para andar na tela
   const PARADO_MS = 1200;     // vídeo à vista sem avançar por este tempo = parou sozinho
@@ -239,7 +243,23 @@
     });
     v.addEventListener('error', () => usarImagem(st));
 
-    fetch(url)
+    // sondagem de pouca energia: play() sem fonte é recusado na hora quando o Safari não deixa tocar vídeo
+    // sozinho; aí nem se baixa o vídeo. Com permissão, a promessa fica pendente e cai (AbortError) quando a
+    // fonte entra: é ignorada, e quem toca é o tocar() de sempre
+    const corte = window.AbortController ? new AbortController() : null;
+    if (aVista()) {
+      try {
+        const sonda = v.play();
+        if (sonda && sonda.catch) sonda.catch(e => {
+          if (e && e.name === 'NotAllowedError' && st.modo === 'video' && !st.pronto) {
+            if (corte) corte.abort();
+            usarImagem(st);
+          }
+        });
+      } catch (e) { /* navegador antigo sem promessa: segue pelo caminho normal */ }
+    }
+
+    fetch(url, corte ? { signal: corte.signal } : undefined)
       .then(r => { if (!r.ok) throw new Error(r.status); return r.blob(); })
       .then(b => {
         if (st.modo !== 'video') return;
@@ -247,7 +267,7 @@
         st.pronto = true;
         if (ativa === st) tocar(st);
       })
-      .catch(() => usarImagem(st));
+      .catch(() => { if (st.modo === 'video') usarImagem(st); });
     return st;
   }
 
