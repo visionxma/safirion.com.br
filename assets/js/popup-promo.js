@@ -14,7 +14,12 @@
     p = p.replace(/\/index\.html?$/, "/").replace(/\/+$/, "").replace(/^\/+/, "");
     return "safirion.com.br/" + p.split("/").map(encodeURIComponent).join("/");
   })(location.pathname || "/");
-  var CADASTRO = "https://trade.safirion.com/pt/register?aff=836698&aff_model=revenue&afftrack=" + ORIGEM;
+  /* "Criar conta" = o MESMO cadastro do topo da página (25/11/2026, pedido do Victor: "manda"): fixo em /pt/register,
+     quem estava em inglês, espanhol ou árabe caía no cadastro em português, enquanto o botão do topo da mesma página
+     levava a /en/ ou /es/register com o afftrack do idioma. Sem link de cadastro na página, monta-se em português. */
+  var CADASTRO = (function (a) {
+    return a ? a.href : "https://trade.safirion.com/pt/register?aff=836698&aff_model=revenue&afftrack=" + ORIGEM;
+  })(document.querySelector('a[href^="https://trade.safirion.com/"][href*="/register"]'));
   var CHAVE = "safirion_promo_v3";
   var ATRASO = 2000, ROLAGEM = 0.35;
 
@@ -111,7 +116,7 @@
           '<p>' + T.p1 + '</p>' +
           '<p>' + T.p2 + '</p>' +
           '<p class="pp__nota">' + T.nota + '</p>' +
-          '<a class="pp__btn" href="' + CADASTRO + '">' + T.btn + ' <span aria-hidden="true">&rsaquo;</span></a>' +
+          '<a class="pp__btn" href="' + CADASTRO.replace(/&/g, "&amp;").replace(/"/g, "&quot;") + '">' + T.btn + ' <span aria-hidden="true">&rsaquo;</span></a>' +
           '<a class="pp__entrar" href="' + LOGIN.replace(/&/g, "&amp;").replace(/"/g, "&quot;") + '"><span>' + CONTA + '</span><span class="pp__entrar-acao">' + ENTRAR + '</span></a>' +
           '<p class="pp__mini">' + T.mini + '</p>' +
         '</div>' +
