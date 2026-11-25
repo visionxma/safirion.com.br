@@ -24,7 +24,7 @@
       ]
     },
     {
-      "source": "/assets/(fonts|img|icons)/(.*)",
+      "source": "/assets/(fonts|img|icons|video)/(.*)",
       "headers": [
         {
           "key": "Cache-Control",

@@ -22,7 +22,7 @@ const versaoNoPt = arq => {
   if (!m) throw new Error(`index.html (pt) sem ?v= em ${arq}`);
   return +m[1];
 };
-const V_MAIN = versaoNoPt('main.js'), V_POPUP = versaoNoPt('popup-promo.js'), V_IDIOMAS = versaoNoPt('idiomas.css');
+const V_MAIN = versaoNoPt('main.js'), V_POPUP = versaoNoPt('popup-promo.js'), V_IDIOMAS = versaoNoPt('idiomas.css'), V_TOURO = versaoNoPt('touro-vivo.js');
 const idiomas = JSON.parse(ler(__dirname, 'idiomas.json'));
 const PT = idiomas[0];
 const svgs = JSON.parse(ler(__dirname, 'fonte', '_svg.json'));
@@ -207,7 +207,7 @@ for (const i of prontos) {
     if (h.match(re)[1] === cabeca.match(re)[1]) throw new Error(`${i.pasta}: ${nome} ficou igual ao português`);
 
   const popup = JSON.stringify(C.popup).replace(/</g, '\\u003c');
-  let html = `${h}</head>\n<body>\n\n${corpo}\n\n<script>window.safirionPromoTxt=${popup};</script>\n<script src="/assets/js/main.js?v=${V_MAIN}" defer></script>\n<script src="/assets/js/popup-promo.js?v=${V_POPUP}" defer></script>\n</body>\n</html>\n`;
+  let html = `${h}</head>\n<body>\n\n${corpo}\n\n<script>window.safirionPromoTxt=${popup};</script>\n<script src="/assets/js/main.js?v=${V_MAIN}" defer></script>\n<script src="/assets/js/popup-promo.js?v=${V_POPUP}" defer></script>\n<script src="/assets/js/touro-vivo.js?v=${V_TOURO}" defer></script>\n</body>\n</html>\n`;
   // o corpo traduzido vem da fonte sem versão nas mídias: cada idioma passa pelo
   // mesmo comVersoes do português, senão só a home em pt sai com `?v=`
   html = semRelativo(comVersoes(comSeletor(html, i)), i.pasta);

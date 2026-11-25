@@ -38,10 +38,19 @@
         <div class="hero__cena" aria-hidden="true">
       <div class="cena-quadro">
         <picture>
-          <source media="(orientation: portrait)" srcset="/assets/img/touro/touro-retrato-1100.webp 1100w" sizes="114vw" width="1100" height="716">
-          <img class="cena-arte" src="/assets/img/touro/touro-largo-1920.webp" srcset="/assets/img/touro/touro-largo-960.webp 960w, /assets/img/touro/touro-largo-1920.webp 1920w" sizes="150vw" width="1920" height="640" alt="" fetchpriority="high" decoding="async" draggable="false">
+          <source media="(orientation: portrait)" srcset="/assets/img/touro/touro-fundo-retrato-1100.webp 1100w" sizes="114vw" width="1100" height="716">
+          <img class="cena-arte" src="/assets/img/touro/touro-fundo-largo-1920.webp" srcset="/assets/img/touro/touro-fundo-largo-960.webp 960w, /assets/img/touro/touro-fundo-largo-1920.webp 1920w" sizes="150vw" width="1920" height="640" alt="" fetchpriority="high" decoding="async" draggable="false">
         </picture>
-        <span class="cena-brilho"></span>
+        <div class="touro">
+          <video class="touro__video" muted playsinline loop preload="none" disablepictureinpicture disableremoteplayback>
+            <source data-src="/assets/video/touro-galope-1600.mp4" type="video/mp4" data-largura="1600">
+            <source data-src="/assets/video/touro-galope-1600.webm" type="video/webm" data-largura="1600">
+            <source data-src="/assets/video/touro-galope-800.mp4" type="video/mp4" data-largura="800">
+            <source data-src="/assets/video/touro-galope-800.webm" type="video/webm" data-largura="800">
+          </video>
+          <span class="touro__brilho"></span>
+          <canvas class="touro__efeitos"></canvas>
+        </div>
       </div>
       <div class="cena-varredura"></div>
       <div class="cena-poeiras">
@@ -82,6 +91,18 @@
       </div>
 
       <div class="hero__art rv">
+        <div class="touro-palco" aria-hidden="true">
+          <div class="touro">
+            <video class="touro__video" muted playsinline loop preload="none" disablepictureinpicture disableremoteplayback>
+              <source data-src="/assets/video/touro-galope-1600.mp4" type="video/mp4" data-largura="1600">
+              <source data-src="/assets/video/touro-galope-1600.webm" type="video/webm" data-largura="1600">
+              <source data-src="/assets/video/touro-galope-800.mp4" type="video/mp4" data-largura="800">
+              <source data-src="/assets/video/touro-galope-800.webm" type="video/webm" data-largura="800">
+            </video>
+            <span class="touro__brilho"></span>
+            <canvas class="touro__efeitos"></canvas>
+          </div>
+        </div>
         <img class="hero__app" src="assets/img/app/safirion-app-celular-1400.webp" srcset="assets/img/app/safirion-app-celular-800.webp 800w, assets/img/app/safirion-app-celular-1400.webp 1400w" sizes="(orientation: portrait) 84vw, (max-width: 1024px) 60vw, 46vw" alt="Aplicativo da Safirion no celular, com as tendências do dia e o gráfico em tempo real" width="1400" height="677" fetchpriority="high" decoding="async">
       </div>
     </div>

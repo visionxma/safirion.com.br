@@ -73,12 +73,15 @@
 <link rel="preload" href="/assets/fonts/MazzardM-SemiBold.woff2?v=bd39b657" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/MazzardM-Regular.woff2?v=8aed3f50" as="font" type="font/woff2" crossorigin>
 <link rel="preload" as="image" href="/assets/img/app/safirion-app-celular-1400.webp?v=67e1f112" imagesrcset="/assets/img/app/safirion-app-celular-800.webp?v=43298d4f 800w, /assets/img/app/safirion-app-celular-1400.webp?v=67e1f112 1400w" imagesizes="(orientation: portrait) 84vw, (max-width: 1024px) 60vw, 46vw" fetchpriority="high">
-<link rel="preload" as="image" href="/assets/img/touro/touro-retrato-1100.webp?v=e9ad9a1e" media="(orientation: portrait)" fetchpriority="high">
-<link rel="preload" as="image" href="/assets/img/touro/touro-largo-1920.webp?v=39f24ef3" imagesrcset="/assets/img/touro/touro-largo-960.webp?v=2aecced5 960w, /assets/img/touro/touro-largo-1920.webp?v=39f24ef3 1920w" imagesizes="150vw" media="(orientation: landscape)" fetchpriority="high">
+<link rel="preload" as="image" href="/assets/img/touro/touro-fundo-retrato-1100.webp?v=a228cbc2" media="(orientation: portrait)" fetchpriority="high">
+<link rel="preload" as="image" href="/assets/img/touro/touro-fundo-largo-1920.webp?v=af538e1e" imagesrcset="/assets/img/touro/touro-fundo-largo-960.webp?v=cb8315e2 960w, /assets/img/touro/touro-fundo-largo-1920.webp?v=af538e1e 1920w" imagesizes="150vw" media="(orientation: landscape)" fetchpriority="high">
 <link rel="stylesheet" href="/assets/css/styles.css?v=13">
-<link rel="stylesheet" href="/assets/css/hero-touro.css?v=5">
+<link rel="stylesheet" href="/assets/css/hero-touro.css?v=6">
 <link rel="stylesheet" href="/assets/css/popup-promo.css?v=4">
 <link rel="stylesheet" href="/assets/css/idiomas.css?v=2">
+<!-- o touro de luz entra correndo e galopa no lugar: só com movimento permitido e sem economia de dados;
+     se o script do touro não chegar em 6 s, a classe sai e fica o touro parado -->
+<script>(function(r){try{if(matchMedia('(prefers-reduced-motion: no-preference)').matches&&!(navigator.connection&&navigator.connection.saveData)){r.classList.add('touro-anima');setTimeout(function(){if(!window.touroVivo)r.classList.remove('touro-anima')},6000)}}catch(e){}})(document.documentElement)</script>
 
 <!-- ===== Dados estruturados ===== -->
 <script type="application/ld+json">
@@ -414,10 +417,19 @@
     <div class="hero__cena" aria-hidden="true">
       <div class="cena-quadro">
         <picture>
-          <source media="(orientation: portrait)" srcset="/assets/img/touro/touro-retrato-1100.webp?v=e9ad9a1e 1100w" sizes="114vw" width="1100" height="716">
-          <img class="cena-arte" src="/assets/img/touro/touro-largo-1920.webp?v=39f24ef3" srcset="/assets/img/touro/touro-largo-960.webp?v=2aecced5 960w, /assets/img/touro/touro-largo-1920.webp?v=39f24ef3 1920w" sizes="150vw" width="1920" height="640" alt="" fetchpriority="high" decoding="async" draggable="false">
+          <source media="(orientation: portrait)" srcset="/assets/img/touro/touro-fundo-retrato-1100.webp?v=a228cbc2 1100w" sizes="114vw" width="1100" height="716">
+          <img class="cena-arte" src="/assets/img/touro/touro-fundo-largo-1920.webp?v=af538e1e" srcset="/assets/img/touro/touro-fundo-largo-960.webp?v=cb8315e2 960w, /assets/img/touro/touro-fundo-largo-1920.webp?v=af538e1e 1920w" sizes="150vw" width="1920" height="640" alt="" fetchpriority="high" decoding="async" draggable="false">
         </picture>
-        <span class="cena-brilho"></span>
+        <div class="touro">
+          <video class="touro__video" muted playsinline loop preload="none" disablepictureinpicture disableremoteplayback>
+            <source data-src="/assets/video/touro-galope-1600.mp4?v=2e05f43a" type="video/mp4" data-largura="1600">
+            <source data-src="/assets/video/touro-galope-1600.webm?v=a1b2b5fa" type="video/webm" data-largura="1600">
+            <source data-src="/assets/video/touro-galope-800.mp4?v=37e9c3e4" type="video/mp4" data-largura="800">
+            <source data-src="/assets/video/touro-galope-800.webm?v=aa847767" type="video/webm" data-largura="800">
+          </video>
+          <span class="touro__brilho"></span>
+          <canvas class="touro__efeitos"></canvas>
+        </div>
       </div>
       <div class="cena-varredura"></div>
       <div class="cena-poeiras">
@@ -458,6 +470,18 @@
       </div>
 
       <div class="hero__art rv">
+        <div class="touro-palco" aria-hidden="true">
+          <div class="touro">
+            <video class="touro__video" muted playsinline loop preload="none" disablepictureinpicture disableremoteplayback>
+              <source data-src="/assets/video/touro-galope-1600.mp4?v=2e05f43a" type="video/mp4" data-largura="1600">
+              <source data-src="/assets/video/touro-galope-1600.webm?v=a1b2b5fa" type="video/webm" data-largura="1600">
+              <source data-src="/assets/video/touro-galope-800.mp4?v=37e9c3e4" type="video/mp4" data-largura="800">
+              <source data-src="/assets/video/touro-galope-800.webm?v=aa847767" type="video/webm" data-largura="800">
+            </video>
+            <span class="touro__brilho"></span>
+            <canvas class="touro__efeitos"></canvas>
+          </div>
+        </div>
         <img class="hero__app" src="/assets/img/app/safirion-app-celular-1400.webp?v=67e1f112" srcset="/assets/img/app/safirion-app-celular-800.webp?v=43298d4f 800w, /assets/img/app/safirion-app-celular-1400.webp?v=67e1f112 1400w" sizes="(orientation: portrait) 84vw, (max-width: 1024px) 60vw, 46vw" alt="App de Safirion en el móvil, con las tendencias del día y el gráfico en tiempo real" width="1400" height="677" fetchpriority="high" decoding="async">
       </div>
     </div>
@@ -952,5 +976,6 @@
 <script>window.safirionPromoTxt={"selo":"Promoción","fechar":"Cerrar","tit":"Operación sin riesgo de US$ 10","p1":"Usa el código promocional \u003cstrong>RISKFREE10\u003c/strong> al depositar para obtener una operación sin riesgo.","p2":"Si tu próxima operación real de Opciones resulta en pérdida, reembolsamos hasta US$ 10 de tu inversión.","nota":"La primera operación abierta tras la activación se considera libre de riesgo.","btn":"Crear cuenta","mini":"Sujeto a las condiciones de la promoción. Operar productos apalancados implica riesgo de pérdida.","conta":"¿Ya tienes cuenta?","entrar":"Entrar"};</script>
 <script src="/assets/js/main.js?v=10" defer></script>
 <script src="/assets/js/popup-promo.js?v=7" defer></script>
+<script src="/assets/js/touro-vivo.js?v=1" defer></script>
 </body>
 </html>

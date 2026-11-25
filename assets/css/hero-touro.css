@@ -19,6 +19,9 @@
    num palco próprio no alto, acima do selo e do título, e o texto limpo embaixo.
    Computador: o quadro maior e mais alto (cabeça e chifres em destaque) e o
    aparelho no começo da coluna dele, então o touro não se esconde atrás dele.
+   Versão 3 (24/11/2026), o TOURO VIVO: a arte virou placa (o mesmo mapa, sem o touro) e o touro é
+   um vídeo do galope que entra correndo da esquerda e fica galopando no lugar, com o efeito de cada
+   batida do casco desenhado no compasso do vídeo (bloco .touro, logo abaixo, e assets/js/touro-vivo.js).
    ========================================================================== */
 
 /* a hero cobre a tela inteira, no computador e no celular; o conteúdo fica no
@@ -60,6 +63,7 @@
   bottom:auto;
   height:var(--q-alt,max(78cqh,46cqw));
   aspect-ratio:3/1;
+  isolation:isolate;
 }
 /* computador: a arte some no alto e no pé (sem corte reto no cabeçalho nem nos
    números), e o aparelho encosta no começo da coluna dele, deixando a cabeça e
@@ -78,14 +82,51 @@
 }
 .cena-arte{position:absolute;inset:0;width:100%;height:100%}
 
-/* o pulso do brilho: luz de FUNDO (degradê radial na própria caixa) sobre o peito do touro */
-.cena-brilho{
-  position:absolute;left:62%;top:16%;width:36%;height:80%;
+/* O TOURO VIVO (24/11/2026). Pedido do Victor: "através de frames faça com que este touro venha da
+   esquerda pra direita correndo e fique correndo parado onde ele está, com efeitos bonitos e elegantes
+   quando o casco bater no chão".
+   - O touro é um vídeo: o galope em laço (50 quadros a 32 por segundo = 1,5625 s), gerado a partir da
+     própria arte, ampliado e com a borda dissolvida no preto. A caixa fica onde o touro da arte
+     estava (mesma escala e mesmo chão), e a arte de fundo virou placa: o mesmo mapa, sem o touro.
+   - O preto do vídeo some por mix-blend-mode:screen na PRÓPRIA caixa: ela é o grupo que se mistura
+     com a placa, dentro do quadro isolado (o deslocamento da entrada fica na caixa, sem quebrar a mistura).
+   - touro-vivo.js: escolhe o tamanho (800 ou 1600), faz a entrada correndo da esquerda (só transform,
+     desacelerando até parar no lugar) e desenha no canvas, no compasso do vídeo, cada batida do casco:
+     clarão no chão, anéis que se abrem, faíscas chutadas para trás e um rastro de luz no chão.
+   - Sem script, com menos movimento ou com economia de dados: o touro PARADO (1º quadro do galope) no
+     mesmo lugar, com o pulso do brilho. Com a animação ligada, o parado só aparece se o vídeo não vier.
+   - O brilho que pulsa mora no peito do touro (luz de FUNDO, degradê radial na própria caixa) e anda
+     com ele; ao chegar, cresce até o tamanho cheio. */
+.touro{
+  position:absolute;left:57.71%;top:23.94%;width:43.75%;aspect-ratio:800/456;
+  mix-blend-mode:screen;
+  pointer-events:none;
+}
+.touro::before{
+  content:"";position:absolute;inset:0;
+  background:url("../img/touro/touro-galope-parado-1600.webp?v=8bc610aa") center/100% 100% no-repeat;
+  transition:opacity .7s ease;
+}
+.touro__video{
+  position:absolute;inset:0;display:block;width:100%;height:100%;
+  object-fit:fill;opacity:0;transition:opacity .6s ease;
+}
+.touro__brilho{
+  position:absolute;left:12%;top:-12%;width:78%;height:109%;
   background-image:radial-gradient(closest-side,rgb(64 160 255 / .34),rgb(64 160 255 / .12) 55%,transparent 100%);
   opacity:.55;
   animation:touro-pulsa 5.5s ease-in-out infinite alternate;
   will-change:opacity,transform;
+  transition:scale 1.4s cubic-bezier(.22,1,.36,1);
 }
+/* o canvas dos efeitos passa da caixa: as faíscas voam para trás e os anéis se abrem no chão */
+.touro__efeitos{position:absolute;left:-50%;top:-15%;width:170%;height:135%}
+html.touro-anima .touro:not(.touro--parado)::before{background-image:none;opacity:0}
+html.touro-anima .touro:not(.touro--rodando):not(.touro--parado) .touro__brilho{visibility:hidden}
+html.touro-anima .touro--rodando:not(.touro--chegou) .touro__brilho{scale:.72}
+.touro--rodando .touro__video{opacity:1}
+/* o palco do celular só existe no celular em pé (bloco de baixo) */
+.touro-palco{display:none}
 
 /* a luz que varre: uma faixa inclinada que atravessa a cena devagar. O miolo é o azul do
    touro (120 196 255), não o branco-gelo apagado (170 220 255) que, sobre o preto, lia-se
@@ -233,7 +274,7 @@
     mask-image:linear-gradient(180deg,transparent 0,#000 14%,#000 78%,transparent 100%),linear-gradient(90deg,transparent 0,#000 5%,#000 97%,transparent 100%);
     mask-composite:intersect;
   }
-  .cena-brilho{left:30%;top:14%;width:64%;height:84%}
+  .touro{left:17.26%;top:23.88%;width:85.8%}
   .cena-poeiras{
     height:calc(42px + var(--arte-alt));
     -webkit-mask-image:linear-gradient(180deg,#000 72%,transparent);
@@ -261,8 +302,8 @@
    3. a chamada e os dois botões no pé, na zona do polegar.
    O palco mede pela ALTURA que sobra na tela (--palco): o botão principal fica na primeira tela de
    320 × 640 a 430 × 932, e o touro e o aparelho escalam juntos com ele. O touro do fundo
-   (.cena-quadro) sai: ele passa a morar no palco (::before), com a MESMA arte e o MESMO endereço do
-   <picture> (um download só). A ordem nova vem do CSS (display:contents no bloco de texto), sem
+   (.cena-quadro) sai: ele passa a morar no palco (.touro-palco), com a MESMA placa e o MESMO endereço
+   do <picture> (um download só), e o touro vivo corre dentro dele. A ordem nova vem do CSS (display:contents no bloco de texto), sem
    mexer no HTML das 17 línguas. */
 @media (orientation:portrait) and (max-width:600px){
   .hero{
@@ -288,27 +329,24 @@
     margin:0 calc(50% - 50vw);
     perspective:none;
   }
-  /* o touro: chifres a ~4% da borda direita, cauda sumindo na esquerda, subindo 6 graus */
-  .hero__art::before{
-    content:"";position:absolute;z-index:0;pointer-events:none;
+  /* o palco do touro: chifres a ~4% da borda direita, cauda sumindo na esquerda, subindo 6 graus.
+     O fundo é a placa em pé (o MESMO endereço do <picture>: um download só) e o touro vivo corre
+     dentro dele; a máscara (grupo isolado) dissolve a borda e é por ela que o touro entra correndo.
+     O brilho que pulsa mora no peito do touro (.touro__brilho). */
+  .touro-palco{
+    display:block;position:absolute;z-index:0;pointer-events:none;
     width:calc(var(--palco) * 1.44);aspect-ratio:1100/716;
     right:calc(var(--palco) * -.02);top:calc(var(--palco) * -.2);
-    background:url("../img/touro/touro-retrato-1100.webp?v=e9ad9a1e") center/100% 100% no-repeat;
+    background:url("../img/touro/touro-fundo-retrato-1100.webp?v=a228cbc2") center/100% 100% no-repeat;
     transform:rotate(-6deg);transform-origin:72% 55%;
     -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 24%),linear-gradient(180deg,transparent 0,#000 24%,#000 82%,transparent 100%);
     -webkit-mask-composite:source-in;
     mask-image:linear-gradient(90deg,transparent 0,#000 24%),linear-gradient(180deg,transparent 0,#000 24%,#000 82%,transparent 100%);
     mask-composite:intersect;
+    isolation:isolate;
   }
-  /* o pulso do brilho no peito do touro (luz de fundo, degradê radial na própria caixa) */
-  .hero__art::after{
-    display:block;content:"";position:absolute;z-index:1;pointer-events:none;
-    inset:auto;right:calc(var(--palco) * -.02);top:calc(var(--palco) * -.08);
-    width:calc(var(--palco) * .86);height:calc(var(--palco) * .78);
-    background:radial-gradient(closest-side,rgb(64 160 255 / .34),rgb(64 160 255 / .12) 55%,transparent 100%);
-    filter:none;opacity:.55;
-    animation:touro-pulsa 5.5s ease-in-out infinite alternate;
-  }
+  .touro-palco .touro{left:17.26%;top:23.88%;width:85.8%}
+  .touro-palco .touro::before{background-image:url("../img/touro/touro-galope-parado-800.webp?v=5a76ba0c")}
   /* o aparelho: na frente das patas de trás, girado para o centro (a peça da esquerda olha para a
      direita) e subindo na mesma diagonal do touro; perspective() no próprio transform */
   .hero .hero__art .hero__app{
@@ -318,8 +356,7 @@
     transform:perspective(1500px) rotateY(16deg) rotateX(8deg) rotateZ(-7deg);
     transform-origin:30% 60%;
   }
-  [dir="rtl"] .hero__art::before{right:auto;left:calc(var(--palco) * -.02);transform:scaleX(-1) rotate(-6deg)}
-  [dir="rtl"] .hero__art::after{right:auto;left:calc(var(--palco) * -.02)}
+  [dir="rtl"] .touro-palco{right:auto;left:calc(var(--palco) * -.02);transform:scaleX(-1) rotate(-6deg)}
   [dir="rtl"] .hero .hero__art .hero__app{left:auto;right:calc(var(--palco) * -.03);margin:0;
     transform:perspective(1500px) rotateY(-16deg) rotateX(8deg) rotateZ(7deg);transform-origin:70% 60%}
 }
@@ -351,7 +388,7 @@
 
 /* Menos movimento: a cena fica parada, inteira (sem a faixa de luz e sem fagulhas). */
 @media (prefers-reduced-motion:reduce){
-  .hero__cena *,.hero__cena *::before,.hero__cena *::after{animation:none !important}
+  .hero__cena *,.hero__cena *::before,.hero__cena *::after,.touro *{animation:none !important}
   .cena-varredura,.cena-fagulha{display:none}
   .hero__art .hero__app{animation:none}
 }
