@@ -3,13 +3,21 @@
    fique correndo parado onde ele está, com efeitos bonitos e elegantes quando o casco bater no chão".
    - Só roda com html.touro-anima: o script da cabeça liga a classe quando há movimento permitido e não há
      economia de dados. Sem ela (ou se este arquivo não chegar em 6 s), o CSS mostra o touro parado.
-   - O vídeo (galope em laço, 50 quadros a 32 por segundo) vem por fetch e toca de um blob: o servidor de
-     arquivos responde 200 inteiro a pedido parcial (Range), e o Safari não toca vídeo servido assim.
+   - Dois jeitos de mostrar o galope (50 quadros a 32 por segundo, em laço):
+     1. VÍDEO, que vem por fetch e toca de um blob (o servidor de arquivos responde 200 inteiro a pedido
+        parcial, e o Safari não toca vídeo servido assim). É o caminho leve: a placa de vídeo decodifica.
+     2. IMAGEM ANIMADA (AVIF), quando o vídeo não pode tocar. O Safari em modo de pouca energia (Mac na
+        bateria, iPhone em economia) recusa play() de vídeo mudo, e imagem animada não passa por essa regra.
+        Em 25/11/2026 o Victor viu, no Safari do Mac em pouca energia, o touro "aparecer feio por um
+        instante e sumir sem voltar": o vídeo era dado como tocando sem mostrar quadro nenhum.
+   - Regra que impede o touro de sumir: o parado só sai quando algo que ANDA está à vista. O vídeo só
+     conta como tocando depois de o tempo dele avançar de verdade na tela; se parar sozinho (sistema,
+     energia), o parado volta na hora e a imagem animada assume.
    - A entrada é só transform (Web Animations), desacelerando até o lugar. O canvas anda dentro da caixa
-     do touro e desenha, no compasso do vídeo, cada batida do casco: clarão no chão, anéis que se abrem,
-     faíscas chutadas para trás e um rastro de luz que corre pelo chão. O chão do vídeo anda para trás
+     do touro e desenha, no compasso do galope, cada batida do casco: clarão no chão, anéis que se abrem,
+     faíscas chutadas para trás e um rastro de luz que corre pelo chão. O chão do galope anda para trás
      (a câmera acompanha o touro), e tudo o que nasce no chão anda junto com ele.
-   - Fora da tela ou com a aba escondida, vídeo e desenho param. Se o vídeo não vier, fica o parado. */
+   - Fora da tela ou com a aba escondida, vídeo e desenho param. */
 (() => {
   'use strict';
   const raiz = document.documentElement;
@@ -18,16 +26,15 @@
 
   const hero = document.querySelector('.hero');
   const caixas = Array.from(document.querySelectorAll('.touro'));
-  const parado = el => el.classList.add('touro--parado');
   if (!hero || !caixas.length || !window.fetch || !URL.createObjectURL || !Element.prototype.animate) {
-    caixas.forEach(parado);
+    caixas.forEach(el => el.classList.add('touro--parado'));
     return;
   }
 
-  // ---------------------------------------------------------------- medidas do vídeo
+  // ---------------------------------------------------------------- medidas do galope
   const FPS = 32, QUADROS = 50;
-  const CHAO = 376 / 456;     // linha do chão (fração da altura do vídeo)
-  const ESTEIRA = 0.46;       // o chão anda 0,46 largura do vídeo por segundo para trás
+  const CHAO = 376 / 456;     // linha do chão (fração da altura do quadro)
+  const ESTEIRA = 0.46;       // o chão anda 0,46 largura do quadro por segundo para trás
   const GRAVIDADE = 0.9;      // larguras por segundo²
   // quadro do laço em que o casco toca o chão, x (fração da largura) e força
   const BATIDAS = [
@@ -36,83 +43,211 @@
     { q: 38, x: 509 / 800, f: 0.9 },
     { q: 46, x: 400 / 800, f: 0.6 },
   ];
+  // o mesmo galope em imagem animada (avif-animado.py na oficina gera a partir do vídeo)
+  const IMAGEM = {
+    800: '/assets/img/touro/touro-galope-800.avif?v=684c6333',
+    1600: '/assets/img/touro/touro-galope-1600.avif?v=9c8122c1',
+  };
+  const PROVA_MS = 1500;      // o vídeo tem este tempo, depois de aceitar o play(), para andar na tela
+  const PARADO_MS = 1200;     // vídeo à vista sem avançar por este tempo = parou sozinho
 
   const estados = new Map();
   const visivel = el => el.getClientRects().length > 0;
+  const agora = () => performance.now();
   let ativa = null, emTela = true, raf = 0;
+  const aVista = () => emTela && !document.hidden;
 
-  // ---------------------------------------------------------------- vídeo
+  function largura(st) {
+    return st.el.getBoundingClientRect().width * Math.min(window.devicePixelRatio || 1, 2) > 860 ? '1600' : '800';
+  }
+
   function fonte(st) {
     const v = st.video;
-    const largura = st.el.getBoundingClientRect().width * Math.min(window.devicePixelRatio || 1, 2) > 860 ? '1600' : '800';
     const tipo = v.canPlayType('video/mp4; codecs="avc1.640028"') ? 'mp4'
       : v.canPlayType('video/webm; codecs="vp9"') ? 'webm' : '';
-    const s = tipo && v.querySelector(`source[data-largura="${largura}"][type="video/${tipo}"]`);
+    const s = tipo && v.querySelector(`source[data-largura="${largura(st)}"][type="video/${tipo}"]`);
     return s ? s.getAttribute('data-src') : '';
   }
 
-  function ficarParado(st) {
-    if (st.rodando) return;
-    st.parado = true;
-    parado(st.el);
+  // ---------------------------------------------------------------- fases: esperando → rodando | parado
+  // esperando: nada à vista ainda (o touro vai entrar correndo). parado: o quadro parado à vista.
+  // rodando: vídeo ou imagem animada à vista, andando.
+  function mostrarParado(st) {
+    if (st.fase === 'parado') return;
+    st.fase = 'parado';
+    st.rodando = false;
+    clearTimeout(st.tiraParado);
+    st.el.classList.add('touro--parado');
+    st.el.classList.remove('touro--rodando');
   }
 
-  // rede lenta ou vídeo que não toca: em 4,5 s DE TELA À VISTA fica o touro parado. Aba aberta em
-  // segundo plano não conta (o Safari não toca vídeo em aba escondida): quem chega depois vê a corrida
+  function rodar(st) {
+    if (st.fase === 'rodando') return;
+    const vinhaParado = st.fase === 'parado';
+    st.fase = 'rodando';
+    st.rodando = true;
+    st.provando = 0;
+    clearTimeout(st.relogio);
+    clearTimeout(st.relogioPlay);
+    const el = st.el;
+    el.classList.toggle('touro--imagem', st.modo === 'imagem');
+    el.classList.add('touro--rodando');
+    if (vinhaParado) {
+      // o parado sai só depois de o galope acender por cima dele (troca suave, sem vão)
+      el.classList.add('touro--chegou');
+      clearTimeout(st.tiraParado);
+      st.tiraParado = setTimeout(() => { if (st.fase === 'rodando') el.classList.remove('touro--parado'); }, 700);
+    } else if (!st.entrou) {
+      st.entrou = true;
+      entrar(st);
+    }
+    ligar();
+  }
+
+  // rede lenta: em 4,5 s DE TELA À VISTA sem nada andando, fica o touro parado (e o galope entra por cima
+  // quando chegar). Aba aberta em segundo plano não conta: quem chega depois vê a corrida
   function armar(st) {
     clearTimeout(st.relogio);
-    st.relogio = setTimeout(() => { if (!st.rodando && emTela && !document.hidden) ficarParado(st); }, 4500);
+    st.relogio = setTimeout(() => { if (st.fase === 'esperando' && aVista()) mostrarParado(st); }, 4500);
   }
 
+  // ---------------------------------------------------------------- vídeo
   function tocar(st) {
-    if (!st.pronto || !emTela || document.hidden) return;
-    const p = st.video.play();
-    if (p && p.catch) p.catch(e => { if (e && e.name === 'NotAllowedError') ficarParado(st); });
+    const v = st.video;
+    if (st.modo !== 'video' || !st.pronto || !aVista() || !v.paused) return;
+    st.pausaNossa = false;
+    const p = v.play();
+    // play() que nem aceita nem recusa (já visto no Safari) não pode prender o touro: 3 s e vai a imagem
+    clearTimeout(st.relogioPlay);
+    st.relogioPlay = setTimeout(() => {
+      if (st.modo === 'video' && !st.provando && st.fase !== 'rodando' && aVista()) usarImagem(st);
+    }, 3000);
+    if (p && p.then) {
+      p.then(() => provar(st), e => {
+        // pause() nosso no meio do play() (rolou para fora) não é recusa; o resto é: pouca energia,
+        // política de reprodução automática, formato
+        if (e && e.name === 'AbortError' && st.pausaNossa) return;
+        usarImagem(st);
+      });
+    }
   }
 
+  function pausar(st) {
+    const v = st.video;
+    if (v && !v.paused) { st.pausaNossa = true; v.pause(); }
+  }
+
+  // o vídeo só vale como tocando depois de o tempo dele andar na tela (o laço de quadros conta)
+  function provar(st) {
+    if (st.modo !== 'video' || st.fase === 'rodando' || st.provando) return;
+    st.provando = agora();
+    st.avancos = 0;
+    st.ctAnt = st.video.currentTime;
+    if (!raf) raf = requestAnimationFrame(quadro);
+  }
+
+  function vigiarVideo(st, t) {
+    const v = st.video, ct = v.currentTime;
+    if (ct !== st.ctAnt && !v.paused) { st.ctAnt = ct; st.avancos++; st.ultimoAvanco = t; }
+    if (st.provando) {
+      if (st.avancos >= 3) rodar(st);
+      else if (t - st.provando > PROVA_MS) usarImagem(st);
+    } else if (st.fase === 'rodando' && t - st.ultimoAvanco > PARADO_MS) {
+      usarImagem(st);
+    }
+  }
+
+  // ---------------------------------------------------------------- imagem animada (quando o vídeo não pode)
+  function usarImagem(st) {
+    if (st.modo === 'imagem') return;
+    const tocava = st.fase === 'rodando';
+    st.modo = 'imagem';
+    st.provando = 0;
+    clearTimeout(st.relogioPlay);
+    pausar(st);
+    // o vídeo parou à vista: o parado volta na hora, e a imagem entra por cima dele quando decodificar
+    if (tocava) mostrarParado(st);
+    // sem nada à vista, a imagem tem 2,5 s para chegar; depois disso fica o parado e ela entra por cima
+    if (st.fase === 'esperando') {
+      clearTimeout(st.relogio);
+      st.relogio = setTimeout(() => { if (st.fase === 'esperando' && aVista()) mostrarParado(st); }, 2500);
+    }
+    fetch(IMAGEM[largura(st)])
+      .then(r => { if (!r.ok) throw new Error(r.status); return r.blob(); })
+      .then(b => { st.blobImagem = b; if (ativa === st && aVista()) acenderImagem(st); })
+      .catch(() => mostrarParado(st));
+  }
+
+  // cada (re)início da imagem nasce de um endereço próprio do blob: a animação começa do quadro 0 na hora
+  // em que aparece, e o relógio das batidas parte dali (o canvas não lê o quadro de imagem animada: o
+  // navegador entrega sempre o 1º, regra da especificação)
+  function acenderImagem(st) {
+    if (!st.blobImagem || st.acendendo) return;
+    st.acendendo = true;
+    const img = new Image();
+    img.className = 'touro__img';
+    img.alt = '';
+    img.decoding = 'async';
+    img.draggable = false;
+    const url = URL.createObjectURL(st.blobImagem);
+    img.src = url;
+    const pronto = img.decode ? img.decode() : new Promise((ok, erro) => { img.onload = ok; img.onerror = erro; });
+    pronto.then(() => {
+      st.acendendo = false;
+      if (st.modo !== 'imagem') { URL.revokeObjectURL(url); return; }
+      const velha = st.img;
+      st.el.insertBefore(img, st.el.querySelector('.touro__brilho'));
+      if (velha) { velha.remove(); URL.revokeObjectURL(velha.src); }
+      st.img = img;
+      st.fAnt = null;
+      requestAnimationFrame(t => { st.t0 = t; });
+      st.t0 = agora() + 16;
+      rodar(st);
+    }, () => {
+      st.acendendo = false;
+      URL.revokeObjectURL(url);
+      mostrarParado(st);
+    });
+  }
+
+  // ---------------------------------------------------------------- preparo de cada caixa
   function preparar(el, semEntrada) {
     if (estados.has(el)) return estados.get(el);
     const st = {
       el, video: el.querySelector('video'), tela: el.querySelector('canvas'),
+      fase: 'esperando', modo: 'video', rodando: false,
       batidas: [], faiscas: [], cometas: [], motas: [],
       forca: 0, fAnt: null, tAnt: null, reforco: 1,
     };
     st.ctx = st.tela && st.tela.getContext('2d');
     estados.set(el, st);
-    const v = st.video;
-    if (!v || !st.ctx) { ficarParado(st); return st; }
-    v.muted = true; v.defaultMuted = true; v.playsInline = true; v.loop = true;
+    if (!st.ctx) { mostrarParado(st); return st; }
 
     // quem chega depois de uma troca de composição (girar o celular) já está no lugar: o parado
-    // aparece na hora e o vídeo entra por cima dele, sem a corrida
-    if (semEntrada) ficarParado(st);
-    const url = fonte(st);
-    if (!url) { ficarParado(st); return st; }
+    // aparece na hora e o galope entra por cima dele, sem a corrida
+    if (semEntrada) mostrarParado(st);
     armar(st);
+    const v = st.video;
+    const url = v ? fonte(st) : '';
+    if (!url) { usarImagem(st); return st; }
+    v.muted = true; v.defaultMuted = true; v.playsInline = true; v.loop = true;
 
-    v.addEventListener('playing', () => {
-      if (st.rodando) return;
-      st.rodando = true;
-      clearTimeout(st.relogio);
-      el.classList.add('touro--rodando');
-      if (st.parado) {
-        el.classList.add('touro--chegou');
-        setTimeout(() => el.classList.remove('touro--parado'), 700);
-      } else {
-        entrar(st);
-      }
-      ligar();
+    v.addEventListener('playing', () => provar(st));
+    // pausa que não fomos nós que pedimos, com o touro à vista: o sistema parou o vídeo
+    v.addEventListener('pause', () => {
+      if (!st.pausaNossa && st.modo === 'video' && aVista() && (st.fase === 'rodando' || st.provando)) usarImagem(st);
     });
-    v.addEventListener('error', () => ficarParado(st));
+    v.addEventListener('error', () => usarImagem(st));
 
     fetch(url)
       .then(r => { if (!r.ok) throw new Error(r.status); return r.blob(); })
       .then(b => {
+        if (st.modo !== 'video') return;
         v.src = URL.createObjectURL(b);
         st.pronto = true;
         if (ativa === st) tocar(st);
       })
-      .catch(() => ficarParado(st));
+      .catch(() => usarImagem(st));
     return st;
   }
 
@@ -162,41 +297,53 @@
     }
   }
 
-  function bater(st, b, agora) {
+  function bater(st, b, t) {
     const W = st.W, s = b.f * st.reforco;
     st.reforco = 1;
     const x = b.x * W, y = CHAO * st.H;
-    st.batidas.push({ x, y, s, t: agora });
+    st.batidas.push({ x, y, s, t });
     const n = Math.round(6 + 8 * b.f);
     for (let i = 0; i < n; i++) {
       st.faiscas.push({
         x: x + (Math.random() - 0.5) * 0.02 * W, y: y - 0.004 * W,
         vx: (-0.04 - Math.random() * 0.3) * W * s,      // chutadas para trás
         vy: (-0.15 - Math.random() * 0.36) * W * s,
-        vida: 0.45 + Math.random() * 0.5, t: agora, tam: 0.7 + Math.random() * 0.9,
+        vida: 0.45 + Math.random() * 0.5, t, tam: 0.7 + Math.random() * 0.9,
       });
     }
-    if (b.f >= 0.85) st.cometas.push({ x, y, s, t: agora });
+    if (b.f >= 0.85) st.cometas.push({ x, y, s, t });
   }
 
-  function desenhar(st, agora) {
-    const v = st.video, ctx = st.ctx;
+  // em que quadro do laço o galope está agora: no vídeo, pelo tempo do próprio vídeo; na imagem animada,
+  // pelo relógio contado do quadro 0 de quando ela apareceu
+  function quadroDoGalope(st, t) {
+    if (st.modo === 'imagem') {
+      if (t < st.t0) return null;
+      return (((t - st.t0) / 1000) * FPS) % QUADROS;
+    }
+    const v = st.video;
+    if (v.paused) return null;
+    const dur = isFinite(v.duration) && v.duration > 0 ? v.duration : QUADROS / FPS;
+    return ((v.currentTime % dur) / dur) * QUADROS;
+  }
+
+  function desenhar(st, t) {
+    const ctx = st.ctx;
     if (!st.W && !medir(st)) return;
     const W = st.W, H = st.H, dpr = st.dpr, esc = st.esc;
-    const dt = st.tAnt == null ? 0 : Math.min(0.05, (agora - st.tAnt) / 1000);
-    st.tAnt = agora;
+    const dt = st.tAnt == null ? 0 : Math.min(0.05, (t - st.tAnt) / 1000);
+    st.tAnt = t;
     st.forca = Math.min(1, st.forca + dt / 0.6);
 
-    // a batida do casco sai do compasso do VÍDEO (quadro do laço), nunca de um relógio à parte
-    const dur = isFinite(v.duration) && v.duration > 0 ? v.duration : QUADROS / FPS;
-    const f = ((v.currentTime % dur) / dur) * QUADROS;
-    if (st.fAnt != null && !v.paused) {
+    // a batida do casco sai do compasso do GALOPE (quadro do laço), nunca de um relógio solto
+    const f = quadroDoGalope(st, t);
+    if (st.fAnt != null && f != null) {
       const a = st.fAnt;
       let b = f;
       if (b < a) b += QUADROS;
       if (b - a < 12) {
         for (const bt of BATIDAS) {
-          if ((bt.q > a && bt.q <= b) || (bt.q + QUADROS > a && bt.q + QUADROS <= b)) bater(st, bt, agora);
+          if ((bt.q > a && bt.q <= b) || (bt.q + QUADROS > a && bt.q + QUADROS <= b)) bater(st, bt, t);
         }
       }
     }
@@ -214,17 +361,17 @@
       m.x -= chao * m.vel * dt;
       if (m.x < -0.48 * W) m.x += 1.66 * W;
       const j = (m.x - 0.55 * W) / (0.42 * W);
-      const al = 0.5 * F * Math.exp(-j * j) * (0.55 + 0.45 * Math.sin(agora / 1000 * 2.2 + m.fase));
+      const al = 0.5 * F * Math.exp(-j * j) * (0.55 + 0.45 * Math.sin(t / 1000 * 2.2 + m.fase));
       if (al < 0.02) continue;
-      const t = m.tam * esc;
+      const tm = m.tam * esc;
       ctx.fillStyle = `rgba(170,220,255,${al.toFixed(3)})`;
-      ctx.fillRect(m.x - t / 2, m.y - t / 2, t, t);
+      ctx.fillRect(m.x - tm / 2, m.y - tm / 2, tm, tm);
     }
 
     // 2. cada batida: clarão no chão e anéis que se abrem (o eco só nas batidas fortes)
-    st.batidas = st.batidas.filter(b => (agora - b.t) / 1000 < 1.05);
+    st.batidas = st.batidas.filter(b => (t - b.t) / 1000 < 1.05);
     for (const b of st.batidas) {
-      const a = (agora - b.t) / 1000;
+      const a = (t - b.t) / 1000;
       const x = b.x - chao * a;
       if (a < 0.5) {
         const k = 1 - a / 0.5, al = 0.5 * b.s * k * k * F;
@@ -258,9 +405,9 @@
     }
 
     // 3. o rastro de luz que corre pelo chão, para trás, nas batidas fortes
-    st.cometas = st.cometas.filter(c => (agora - c.t) / 1000 < 0.6);
+    st.cometas = st.cometas.filter(c => (t - c.t) / 1000 < 0.6);
     for (const c of st.cometas) {
-      const a = (agora - c.t) / 1000, p = a / 0.6;
+      const a = (t - c.t) / 1000, p = a / 0.6;
       const cab = c.x - (ESTEIRA + 0.85) * W * a, L = W * 0.16 * (1 - 0.5 * p);
       const al = 0.65 * c.s * Math.pow(1 - p, 1.3) * F;
       const g = ctx.createLinearGradient(cab, 0, cab + L, 0);
@@ -281,50 +428,64 @@
 
     // 4. faíscas chutadas para trás: no ar elas ficam no mundo, então andam com o chão
     const piso = CHAO * H + 0.01 * W;
-    st.faiscas = st.faiscas.filter(s => (agora - s.t) / 1000 < s.vida && s.y < piso);
+    st.faiscas = st.faiscas.filter(s => (t - s.t) / 1000 < s.vida && s.y < piso);
     ctx.lineCap = 'round';
     for (const s of st.faiscas) {
       const vx = s.vx - chao;
       s.vy += GRAVIDADE * W * dt;
       s.x += vx * dt;
       s.y += s.vy * dt;
-      const al = Math.pow(1 - (agora - s.t) / 1000 / s.vida, 1.2) * F;
+      const al = Math.pow(1 - (t - s.t) / 1000 / s.vida, 1.2) * F;
       ctx.lineWidth = s.tam * esc;
       ctx.strokeStyle = `rgba(150,210,255,${(al * 0.75).toFixed(3)})`;
       ctx.beginPath();
       ctx.moveTo(s.x, s.y);
       ctx.lineTo(s.x - vx * 0.035, s.y - s.vy * 0.035);
       ctx.stroke();
-      const t = s.tam * esc * 1.3;
+      const tm = s.tam * esc * 1.3;
       ctx.fillStyle = `rgba(235,247,255,${al.toFixed(3)})`;
-      ctx.fillRect(s.x - t / 2, s.y - t / 2, t, t);
+      ctx.fillRect(s.x - tm / 2, s.y - tm / 2, tm, tm);
     }
   }
 
   // ---------------------------------------------------------------- laço, tela e troca de composição
-  function quadro(agora) {
+  function quadro(t) {
     raf = 0;
-    if (!ativa || !ativa.rodando || !emTela || document.hidden) return;
-    desenhar(ativa, agora);
-    raf = requestAnimationFrame(quadro);
+    const st = ativa;
+    if (!st || !aVista()) return;
+    if (st.modo === 'video' && st.pronto) vigiarVideo(st, t);
+    if (st.fase === 'rodando') desenhar(st, t);
+    if (st.fase === 'rodando' || st.provando) raf = requestAnimationFrame(quadro);
   }
 
   function ligar() {
-    if (!ativa) return;
-    if (emTela && !document.hidden) {
-      if (!ativa.rodando && !ativa.parado && ativa.video) armar(ativa);
-      if (ativa.video && ativa.video.paused) tocar(ativa);
-      ativa.tAnt = null;
-      if (!raf && ativa.rodando) raf = requestAnimationFrame(quadro);
-    } else if (ativa.video && !ativa.video.paused) {
-      ativa.video.pause();
+    const st = ativa;
+    if (!st) return;
+    if (aVista()) {
+      const t = agora();
+      if (st.fase === 'esperando') armar(st);
+      if (st.modo === 'video') {
+        // o vídeo ficou pausado por nós enquanto escondido: o prazo de andar recomeça agora
+        st.ultimoAvanco = t;
+        if (st.provando) st.provando = t;
+        tocar(st);
+      } else if (st.blobImagem && (st.fase !== 'rodando' || st.escondida)) {
+        // a imagem animada para fora da vista; na volta ela recomeça do quadro 0 e o relógio também
+        acenderImagem(st);
+      }
+      st.escondida = false;
+      st.tAnt = null;
+      if (!raf && (st.fase === 'rodando' || st.provando)) raf = requestAnimationFrame(quadro);
+    } else {
+      st.escondida = true;
+      pausar(st);
     }
   }
 
   function escolher(semEntrada) {
     const nova = caixas.find(visivel) || null;
     if (nova && estados.has(nova) && ativa && ativa.el === nova) { medir(ativa); return; }
-    if (ativa && ativa.video && !ativa.video.paused) ativa.video.pause();
+    if (ativa) { pausar(ativa); ativa.escondida = true; }
     ativa = nova ? preparar(nova, semEntrada) : null;
     if (ativa) { ativa.W = 0; ligar(); }
   }

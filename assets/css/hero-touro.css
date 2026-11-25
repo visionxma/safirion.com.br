@@ -94,7 +94,9 @@
      desacelerando até parar no lugar) e desenha no canvas, no compasso do vídeo, cada batida do casco:
      clarão no chão, anéis que se abrem, faíscas chutadas para trás e um rastro de luz no chão.
    - Sem script, com menos movimento ou com economia de dados: o touro PARADO (1º quadro do galope) no
-     mesmo lugar, com o pulso do brilho. Com a animação ligada, o parado só aparece se o vídeo não vier.
+     mesmo lugar, com o pulso do brilho. Com a animação ligada, o parado só sai quando algo que ANDA
+     está à vista (vídeo provado andando, ou a imagem animada .touro__img quando o vídeo é recusado:
+     Safari em pouca energia, 25/11/2026), e volta na hora se o galope parar.
    - O brilho que pulsa mora no peito do touro (luz de FUNDO, degradê radial na própria caixa) e anda
      com ele; ao chegar, cresce até o tamanho cheio. */
 .touro{
@@ -107,7 +109,9 @@
   background:url("../img/touro/touro-galope-parado-1600.webp?v=8bc610aa") center/100% 100% no-repeat;
   transition:opacity .7s ease;
 }
-.touro__video{
+/* o galope em vídeo e, quando o vídeo não pode tocar (Safari em pouca energia), o MESMO galope em
+   imagem animada (AVIF), posta pelo script no mesmo lugar */
+.touro__video,.touro__img{
   position:absolute;inset:0;display:block;width:100%;height:100%;
   object-fit:fill;opacity:0;transition:opacity .6s ease;
 }
@@ -124,7 +128,7 @@
 html.touro-anima .touro:not(.touro--parado)::before{background-image:none;opacity:0}
 html.touro-anima .touro:not(.touro--rodando):not(.touro--parado) .touro__brilho{visibility:hidden}
 html.touro-anima .touro--rodando:not(.touro--chegou) .touro__brilho{scale:.72}
-.touro--rodando .touro__video{opacity:1}
+.touro--rodando:not(.touro--imagem) .touro__video,.touro--rodando.touro--imagem .touro__img{opacity:1}
 /* o palco do celular só existe no celular em pé (bloco de baixo) */
 .touro-palco{display:none}
 
