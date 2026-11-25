@@ -7,7 +7,8 @@ const FONTE = path.join(__dirname, 'fonte');
 const pasta = process.argv[2];
 if (!pasta) { console.log('uso: node .i18n/verificar.js <pasta|--site>'); process.exit(2); }
 // --site: o portão de conformidade dos HTML PUBLICADOS (a função está no fim do arquivo)
-if (pasta === '--site') process.exit(portaoDoSite(path.join(__dirname, '..')));
+// --site <pasta>: a mesma conferência sobre outra raiz (é por aí que o verificar.casos.mjs prova as regras)
+if (pasta === '--site') process.exit(portaoDoSite(process.argv[3] ? path.resolve(process.argv[3]) : path.join(__dirname, '..')));
 const DEST = path.join(__dirname, pasta);
 const erros = [], avisos = [];
 const erro = (arq, msg) => erros.push(`${arq}: ${msg}`);
@@ -139,6 +140,23 @@ process.exit(erros.length ? 1 : 0);
 //     comum reprova, de propósito (frase solta sobre "oficial" é defeito);
 //   · a NEGAÇÃO das palavras de regulação, que existe de propósito ("a Safirion
 //     não possui autorização da CVM") — a negativa conta só ANTES do termo.
+// 25/11/2026, regra 4 com precisão (4 falsos positivos no blog, nenhum afirmava regulação):
+//   · "regulad" casava "regulador declarado" (o ÓRGÃO, não a empresa regulada): a palavra
+//     inteira que começa por "regulador" não conta;
+//   · frase em que quem age é o REGULADOR ("Quem cadastra e autoriza intermediários no Brasil
+//     é a CVM", "A CVM cadastra ou concede autorização aos participantes") descreve o papel do
+//     órgão: não conta quando nomeia um órgão, NÃO nomeia a corretora (Safirion, corretora,
+//     broker, plataforma, safirion.com.br) e o termo NÃO é particípio. "A Safirion é regulada
+//     pela CVM", "a corretora é autorizada", "Safirion is regulated by", "A CVM autoriza a
+//     Safirion" e "a Safirion possui autorização da CVM" continuam reprovando;
+//   · título de documento citado como FONTE (o texto do link dentro de .pg-fonte/.pg-fontes,
+//     ex. "Nevis FSRC — Regulated Entities") é o nome do papel de outro, não frase da página;
+//     o que a página escreve em volta do link ("Fonte: …, lido em …") continua conferido.
+//   · a frase acaba também onde acaba o bloco (<p>, <li>, <tr>, tabela, lista, <details>):
+//     antes a linha de uma tabela, a nota de fonte e o parágrafo seguinte viravam UMA frase,
+//     e o "oficial" de "este endereço não é o canal oficial" casava com o safirion.com.br da
+//     célula de cima. Célula com célula (<td>) e título com texto continuam juntos: "Site
+//     oficial | safirion.com.br" numa linha de tabela segue reprovando (verificar.casos.mjs).
 
 // Tudo mora DENTRO da função: ela é chamada na linha 10, antes de qualquer `const`
 // do fim do arquivo existir (hoisting vale para `function`, não para `const`).
@@ -190,25 +208,69 @@ function portaoDoSite(raiz) {
 
   // os blocos de JSON-LD, como texto e como valores de string
   const blocosLd = h => [...h.matchAll(/<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/gi)].map(m => m[1]);
-  function valoresLd(h) {
+  // `pular(chave, pai, valor)` deixa a regra 4 fora de um campo (ver `naoAfirmaNoLd`)
+  function valoresLd(h, pular = () => false) {
     const v = [];
     for (const bruto of blocosLd(h)) {
       let j; try { j = JSON.parse(bruto); } catch { v.push(bruto); continue; }
-      (function anda(x) {
-        if (typeof x === 'string') v.push(x);
-        else if (Array.isArray(x)) x.forEach(anda);
-        else if (x && typeof x === 'object') Object.values(x).forEach(anda);
+      (function anda(x, chave, pai) {
+        if (typeof x === 'string') { if (!pular(chave, pai, x)) v.push(x); }
+        else if (Array.isArray(x)) x.forEach(y => anda(y, chave, pai));
+        else if (x && typeof x === 'object') Object.entries(x).forEach(([k, y]) => anda(y, k, x));
       })(j);
     }
     return v;
   }
+  // Regra 4, 25/11/2026: no JSON-LD não afirmam (1) `keywords`, que é a lista do que as pessoas
+  // BUSCAM ("safirion é regulada" é a busca de quem desconfia, como o <meta name="keywords">,
+  // que a regra já não lia) e (2) o `name` de uma Question que termina em "?": a pergunta do FAQ
+  // é UMA pergunta mesmo com ponto no meio ("Vi um site dizendo que a Safirion é regulada. Quem
+  // está certo?"), e cortada no ponto a primeira metade virava afirmação.
+  const PERGUNTA_NO_FIM = /[?？؟]\s*$/;
+  const naoAfirmaNoLd = (chave, pai, valor) => chave === 'keywords' ||
+    (chave === 'name' && pai && pai['@type'] === 'Question' && PERGUNTA_NO_FIM.test(valor));
+  // o mesmo no texto visível: <summary> que termina em "?" é a pergunta do FAQ, inteira
+  const semPerguntaDeFaq = h => h.replace(/<summary\b[^>]*>([\s\S]*?)<\/summary>/gi,
+    (m, c) => PERGUNTA_NO_FIM.test(c.replace(/<[^>]+>/g, '').trim()) ? '\n' : m);
   // o texto que a pessoa lê, sem script, sem estilo e sem a declaração de independência
+  // Abrir ou fechar bloco vira quebra de linha, que o `pedacos` trata como fim de frase (25/11/2026).
+  // `\b` depois do nome: <p\b não casa <path, <li\b não casa <link.
+  const FIM_DE_BLOCO = /<\/?(?:p|li|tr|table|ul|ol|blockquote|details)\b[^>]*>/gi;
   const textoVisivel = h => ent(h
     .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, ' ')
     .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, ' ')
     .replace(/<!--[\s\S]*?-->/g, ' ')
     .replace(RegExp(`<p[^>]*${CLASSE_AVISO}[^>]*>[\\s\\S]*?</p>`, 'g'), ' ')
+    .replace(FIM_DE_BLOCO, '\n')
     .replace(/<[^>]+>/g, ' '));
+  // Só para a regra 4: a nota de fonte (.pg-fonte) e a lista de fontes (.pg-fontes) CITAM o documento
+  // de outro. Saem do texto corrido e são conferidas à parte, já sem o texto do link (o título do
+  // documento citado); o que a página escreve em volta ("Fonte: …, lida em …") continua conferido.
+  const NOTA_DE_FONTE = /<(span|ul|ol|li|p|div)\b[^>]*class="(?:[^"]*\s)?pg-fontes?(?:\s[^"]*)?"[^>]*>[\s\S]*?<\/\1>/gi;
+  const semNotasDeFonte = h => h.replace(NOTA_DE_FONTE, '\n');
+  const notasDeFonte = h => (h.match(NOTA_DE_FONTE) || []).map(m => m.replace(/<a\b[^>]*>[\s\S]*?<\/a>/gi, ' ')).join('\n');
+  // órgãos reguladores: a sigla casa com a caixa exata (SEC, não "sec"); o nome por extenso, sem caixa
+  const ORGAO_SIGLA = /(?<!\p{L})(?:CVM|CNV|CMF|SMV|SFC|CNBV|SEC|FCA|CySEC|ASIC|FSRC|IFSC|FSC|FSA|VFSC|FINRA|CFTC|NFA|BaFin|CONSOB|AMF|CNMV|Bacen|SUSEP)(?!\p{L})/u;
+  const ORGAO_NOME = /banco central|comiss[ãa]o de valores|superintendencia financiera|comisi[oó]n (?:nacional|para el mercado)|regulatory (?:commission|authority)|financial services (?:commission|authority)/i;
+  const nomeiaOrgao = f => ORGAO_SIGLA.test(f) || ORGAO_NOME.test(f);
+  const MARCA = /safirion|corretora|corredora|broker|thunder flash|plataforma|platform/i;
+  const palavraEm = (f, i) => (f.slice(i).match(/^[\p{L}]+/u) || [''])[0];
+  const ehParticipio = p => /(?:ad[oa]s?|ed)$/i.test(p);   // regulada, autorizado, regulated, licensed
+  // a frase descreve o papel do ÓRGÃO: nomeia um regulador e não nomeia a corretora nem este domínio
+  const orgaoAge = f => nomeiaOrgao(f) && !MARCA.test(f) && !f.includes(DOMINIO);
+  // negação logo DEPOIS do substantivo, na oração que o completa: "autorização que não tem",
+  // "licencia que no tiene" (o sinal de golpe na tabela da página safirion-e-golpe-ou-nao)
+  // termo DENTRO de aspas é menção, não afirmação: a página cita a frase que circula para
+  // desmentir ("Regulada internacionalmente." Não é categoria…). A mesma frase sem aspas reprova.
+  const entreAspas = (f, i) => {
+    const a = f.slice(0, i);
+    return (a.match(/"/g) || []).length % 2 === 1 || a.lastIndexOf('“') > a.lastIndexOf('”') ||
+      a.lastIndexOf('«') > a.lastIndexOf('»');
+  };
+  const negadoDepois = (f, i) => /^\p{L}+\s+que\s+(?:n[ãa]o|no)\s+(?:tem|têm|possui|possuem|tiene|tienen|existe)(?!\p{L})/iu.test(f.slice(i));
+  const ocorrencias = (frase, termo) => SEM_ESPACO.test(termo)
+    ? [...frase.matchAll(new RegExp(esc(termo), 'g'))].map(m => m.index)
+    : [...frase.matchAll(new RegExp(`(?<!\\p{L})${esc(termo)}`, 'giu'))].map(m => m.index);
   // corta em fim de frase, NUNCA em dois-pontos: era justo com dois-pontos que a
   // frase retirada hoje se apresentava ("o site oficial da Safirion: safirion.com.br")
   // 24/11/2026: cada pedaço guarda se terminava em ponto de interrogação. PERGUNTA não afirma: o FAQ pergunta
@@ -252,17 +314,31 @@ function portaoDoSite(raiz) {
         if (o) { falha(`frase diz "${o}" junto com safirion.com.br: "${f.split(DOMINIO).join('safirion.com.br').slice(0, 110)}"`); break; }
       }
     }
-    const afirmacoes = [...pedacos(textoVisivel(html)), ...valoresLd(html).flatMap(v => pedacos(ent(v)))]
-      .filter(x => !x.pergunta && !/^https?:\/\/\S+$/.test(x.f)).map(x => x.f); // endereço também não afirma
-    for (const f of afirmacoes) {
+    const soAfirma = xs => xs.filter(x => !x.pergunta && !/^https?:\/\/\S+$/.test(x.f)).map(x => x.f); // endereço também não afirma
+    const afirmacoes = [
+      ...soAfirma([...pedacos(textoVisivel(semPerguntaDeFaq(semNotasDeFonte(html)))),
+        ...valoresLd(html, naoAfirmaNoLd).flatMap(v => pedacos(ent(v)))]).map(f => ({ f })),
+      ...soAfirma(pedacos(textoVisivel(notasDeFonte(html)))).map(f => ({ f, fonte: true })),
+    ];
+    for (const { f, fonte } of afirmacoes) {
       // a negação conta só ANTES do termo: "não possui autorização" nega mesmo;
       // já em "regulada e autorizada no Brasil" o "no" é preposição do português,
-      // não a negativa do inglês — vale a ordem das palavras, não a presença
+      // não a negativa do inglês — vale a ordem das palavras, não a presença.
+      // Cada ocorrência do termo é julgada (não só a primeira): "o regulador … ela é regulada" reprova.
       let r = null;
       for (const t of REGULACAO) {
-        const i = posRaiz(f, t);
-        if (i < 0 || NEGACAO.some(n => temPalavra(f.slice(0, i), n))) continue;
-        r = t; break;
+        for (const i of ocorrencias(f, t)) {
+          if (NEGACAO.some(n => temPalavra(f.slice(0, i), n))) continue;
+          const p = palavraEm(f, i);
+          if (/^regulador/i.test(p)) continue;              // o órgão, não a empresa regulada
+          if (negadoDepois(f, i)) continue;                 // "autorização que não tem"
+          if (entreAspas(f, i)) continue;                   // citada para ser desmentida: "Regulada internacionalmente"
+          // o órgão autoriza/cadastra: papel dele. Na nota de fonte vale até o particípio, porque ali
+          // ele é o nome do documento do órgão ("consulta de regulados", "página Regulated Entities")
+          if (orgaoAge(f) && (fonte || !ehParticipio(p))) continue;
+          r = t; break;
+        }
+        if (r) break;
       }
       if (r) {
         falha(`afirma regulação ("${r}", sem negação antes): "${f.split(DOMINIO).join('safirion.com.br').slice(0, 110)}"`);
