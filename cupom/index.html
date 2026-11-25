@@ -137,7 +137,34 @@
   ]
 }
 </script>
-</head>
+<link id="kv-cta-css" rel="stylesheet" href="/_ext/kv-cta.css?v=959cb939"><style id="kv-cta-site">/* molde Safirion Broker (safirion.com.br): ajustes do kv-cta (25/11/2026, medidos no kv-cta-medir) */
+/* par da hero: o LOGIN/plataforma (btn--lg, 17px de respiro + linha de 25px) dava 61px e esticava o kv-cta junto;
+   o secundário acompanha a altura do botão (56 no computador, 52 no celular), sem mudar cor nem texto */
+.hero__acts>.btn--ghost{min-height:56px;padding-block:0;display:inline-flex;align-items:center;justify-content:center}
+@media (max-width:640px){.hero__acts>.btn--ghost{min-height:52px}}
+/* cupom (WELCOME100) e rodapé: o par dividia a linha ao meio e "Criar conta" saía com reticências (151px em 1024,
+   113px em 320; o árabe nem cabia). O secundário fica do tamanho do rótulo dele e o kv-cta leva o resto da linha */
+.sb-bilhete__acoes>.btn--ghost,.ft__acts>.btn--ghost{flex:0 1 auto;padding-inline:14px}
+.sb-bilhete__acoes>.kv-cta.kv-cta.kv-cta,.ft__acts>.kv-cta.kv-cta.kv-cta{flex:1 1 0;padding-right:7px;font-size:15px}
+@media (max-width:420px){
+  .sb-bilhete__acoes>.kv-cta.kv-cta.kv-cta,.ft__acts>.kv-cta.kv-cta.kv-cta{--kv-cta-bola:32px;gap:8px;padding:0 6px 0 14px}
+  .sb-bilhete__acoes>.btn--ghost,.ft__acts>.btn--ghost{padding-inline:12px}
+}
+/* árabe (dir="rtl"): o kit é desenhado da esquerda para a direita (respiro de 28px antes do texto e 8px antes do
+   círculo, seta que aponta e anda para a direita). Em rtl a fila se invertia e o respiro ficava do lado errado.
+   O botão mantém a geometria do kit e só o rótulo corre da direita para a esquerda */
+[dir=rtl] .kv-cta.kv-cta.kv-cta{direction:ltr}
+[dir=rtl] .kv-cta .kv-cta__txt{direction:rtl;unicode-bidi:isolate}
+/* hero no celular: o site empilhava o par (.hero__acts .btn{flex:1 1 100%} até 600px). Agora fica lado a lado
+   até 320, como no computador: o kv-cta leva 57% da linha e o rótulo longo (de, bn, fil, fr) quebra em até duas
+   linhas dentro da pílula, nunca reticências; o secundário também quebra em duas */
+@media (max-width:600px){
+  .hero__acts{flex-wrap:nowrap}
+  .hero__acts>.btn{flex:1 1 0;min-width:0}
+  .hero__acts>.kv-cta.kv-cta.kv-cta{flex:1.32 1 0;--kv-cta-bola:30px;gap:6px;padding:0 6px 0 12px;font-size:14px;line-height:1.15}
+  .hero__acts>.kv-cta .kv-cta__txt{white-space:normal;text-overflow:clip;overflow-wrap:normal;hyphens:none;text-wrap:balance}
+  .hero__acts>.btn--ghost{padding:6px 10px;font-size:13px;line-height:1.2;text-align:center;white-space:normal;text-wrap:balance}
+}</style></head>
 <body>
 
 <!-- ==================== HEADER ==================== -->
@@ -155,7 +182,7 @@
     </nav>
     <div class="hdr__side">
       <a class="btn btn--ghost" href="https://trade.safirion.com/pwa/oauth/login?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/cupom%23login&amp;aff_track=safirion.com.br/cupom%23login&amp;redirect_url=https%3A%2F%2Ftrade.safirion.com%2Ftraderoom">LOGIN</a>
-      <a class="btn btn--primary" href="https://trade.safirion.com/register?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/cupom%23cabecalho">CRIAR CONTA</a>
+      <a class="btn btn--primary kv-cta kv-cta--barra" href="https://trade.safirion.com/register?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/cupom%23cabecalho"><span class="kv-cta__luz" aria-hidden="true"></span><span class="kv-cta__txt">Criar conta</span><span class="kv-cta__seta" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
     </div>
   </div>
 </header>
@@ -194,7 +221,7 @@
         <hr class="sb-bilhete__corte">
         <div class="sb-bilhete__acoes">
           <button type="button" class="btn btn--ghost sb-copiar" data-copiar="WELCOME100" data-codigo="cupom-codigo" data-aviso="cupom-aviso"><span data-rotulo>Copiar cupom</span></button>
-          <a class="btn btn--primary" href="https://trade.safirion.com/register?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/cupom%23topo">Criar conta</a>
+          <a class="btn btn--primary kv-cta" href="https://trade.safirion.com/register?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/cupom%23topo"><span class="kv-cta__luz" aria-hidden="true"></span><span class="kv-cta__txt">Criar conta</span><span class="kv-cta__seta" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
         </div>
         <p class="sb-bilhete__ok" id="cupom-aviso" role="status" aria-live="polite"></p>
         <p class="cp-bilhete__nota">Sujeito às condições da promoção da Safirion. Somente para maiores de 18 anos.</p>
@@ -232,7 +259,7 @@
           <li><b>Leia as condições</b><span>O bônus segue as regras da promoção, em safirion.com.</span></li>
         </ol>
         <div class="cp-acoes">
-          <a class="btn btn--primary" href="https://trade.safirion.com/register?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/cupom%23como-usar">Criar conta</a>
+          <a class="btn btn--primary kv-cta" href="https://trade.safirion.com/register?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/cupom%23como-usar"><span class="kv-cta__luz" aria-hidden="true"></span><span class="kv-cta__txt">Criar conta</span><span class="kv-cta__seta" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
           <button type="button" class="btn btn--ghost sb-copiar" data-copiar="WELCOME100" data-codigo="cupom-codigo" data-aviso="uso-aviso"><span data-rotulo>Copiar cupom</span></button>
         </div>
         <p class="sb-bilhete__ok" id="uso-aviso" role="status" aria-live="polite"></p>
@@ -323,7 +350,7 @@
 
       <div class="ft__acts">
         <a class="btn btn--ghost" href="https://trade.safirion.com/pwa/oauth/login?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/cupom%23login&amp;aff_track=safirion.com.br/cupom%23login&amp;redirect_url=https%3A%2F%2Ftrade.safirion.com%2Ftraderoom">LOGIN</a>
-        <a class="btn btn--primary" href="https://trade.safirion.com/register?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/cupom%23rodape">CRIAR CONTA</a>
+        <a class="btn btn--primary kv-cta" href="https://trade.safirion.com/register?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/cupom%23rodape"><span class="kv-cta__luz" aria-hidden="true"></span><span class="kv-cta__txt">Criar conta</span><span class="kv-cta__seta" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
       </div>
     </div>
 
@@ -381,5 +408,5 @@
 <script src="/assets/js/main.js?v=10" defer></script>
 <script src="/assets/js/home-marca.js?v=2" defer></script>
 <script src="/assets/js/cupom.js?v=1" defer></script>
-</body>
+<script id="kv-cta-js" src="/_ext/kv-cta.js?v=22467d10" data-dinamico=".pp__btn=&gt;popup" defer></script></body>
 </html>

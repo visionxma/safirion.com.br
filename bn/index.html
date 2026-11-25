@@ -377,7 +377,34 @@
 }
 </script>
 <style>.ft__legal{border-top:1px solid var(--line-soft);padding-block:20px;color:var(--muted-2);font-size:13px;line-height:1.65}.ft__legal p{margin:0}.ft__legal p+p{margin-top:6px}</style>
-</head>
+<link id="kv-cta-css" rel="stylesheet" href="/_ext/kv-cta.css?v=959cb939"><style id="kv-cta-site">/* molde Safirion Broker (safirion.com.br): ajustes do kv-cta (25/11/2026, medidos no kv-cta-medir) */
+/* par da hero: o LOGIN/plataforma (btn--lg, 17px de respiro + linha de 25px) dava 61px e esticava o kv-cta junto;
+   o secundário acompanha a altura do botão (56 no computador, 52 no celular), sem mudar cor nem texto */
+.hero__acts>.btn--ghost{min-height:56px;padding-block:0;display:inline-flex;align-items:center;justify-content:center}
+@media (max-width:640px){.hero__acts>.btn--ghost{min-height:52px}}
+/* cupom (WELCOME100) e rodapé: o par dividia a linha ao meio e "Criar conta" saía com reticências (151px em 1024,
+   113px em 320; o árabe nem cabia). O secundário fica do tamanho do rótulo dele e o kv-cta leva o resto da linha */
+.sb-bilhete__acoes>.btn--ghost,.ft__acts>.btn--ghost{flex:0 1 auto;padding-inline:14px}
+.sb-bilhete__acoes>.kv-cta.kv-cta.kv-cta,.ft__acts>.kv-cta.kv-cta.kv-cta{flex:1 1 0;padding-right:7px;font-size:15px}
+@media (max-width:420px){
+  .sb-bilhete__acoes>.kv-cta.kv-cta.kv-cta,.ft__acts>.kv-cta.kv-cta.kv-cta{--kv-cta-bola:32px;gap:8px;padding:0 6px 0 14px}
+  .sb-bilhete__acoes>.btn--ghost,.ft__acts>.btn--ghost{padding-inline:12px}
+}
+/* árabe (dir="rtl"): o kit é desenhado da esquerda para a direita (respiro de 28px antes do texto e 8px antes do
+   círculo, seta que aponta e anda para a direita). Em rtl a fila se invertia e o respiro ficava do lado errado.
+   O botão mantém a geometria do kit e só o rótulo corre da direita para a esquerda */
+[dir=rtl] .kv-cta.kv-cta.kv-cta{direction:ltr}
+[dir=rtl] .kv-cta .kv-cta__txt{direction:rtl;unicode-bidi:isolate}
+/* hero no celular: o site empilhava o par (.hero__acts .btn{flex:1 1 100%} até 600px). Agora fica lado a lado
+   até 320, como no computador: o kv-cta leva 57% da linha e o rótulo longo (de, bn, fil, fr) quebra em até duas
+   linhas dentro da pílula, nunca reticências; o secundário também quebra em duas */
+@media (max-width:600px){
+  .hero__acts{flex-wrap:nowrap}
+  .hero__acts>.btn{flex:1 1 0;min-width:0}
+  .hero__acts>.kv-cta.kv-cta.kv-cta{flex:1.32 1 0;--kv-cta-bola:30px;gap:6px;padding:0 6px 0 12px;font-size:14px;line-height:1.15}
+  .hero__acts>.kv-cta .kv-cta__txt{white-space:normal;text-overflow:clip;overflow-wrap:normal;hyphens:none;text-wrap:balance}
+  .hero__acts>.btn--ghost{padding:6px 10px;font-size:13px;line-height:1.2;text-align:center;white-space:normal;text-wrap:balance}
+}</style></head>
 <body>
 
 <a class="skip-link" href="#conteudo">মূল কনটেন্টে যান</a>
@@ -406,7 +433,7 @@
     <div class="hdr__side">
       <!--idiomas--><details class="lng"><summary aria-label="ভাষা নির্বাচন করুন"><img src="/assets/img/bandeiras/bn.svg?v=e99cb11f" alt="" width="20" height="15" loading="lazy" decoding="async"><span>bn</span></summary><ul class="lng__lista"><li><a href="/" hreflang="pt-BR" lang="pt-BR"><img src="/assets/img/bandeiras/pt.svg?v=d5fc3717" alt="" width="20" height="15" loading="lazy" decoding="async">Português</a></li><li><a href="/en/" hreflang="en" lang="en"><img src="/assets/img/bandeiras/en.svg?v=1d23b950" alt="" width="20" height="15" loading="lazy" decoding="async">English</a></li><li><a href="/es/" hreflang="es" lang="es"><img src="/assets/img/bandeiras/es.svg?v=1f23da73" alt="" width="20" height="15" loading="lazy" decoding="async">Español</a></li><li><a href="/ar/" hreflang="ar" lang="ar"><img src="/assets/img/bandeiras/ar.svg?v=cf69a304" alt="" width="20" height="15" loading="lazy" decoding="async">العربية</a></li><li><a href="/bn/" hreflang="bn" lang="bn" aria-current="true"><img src="/assets/img/bandeiras/bn.svg?v=e99cb11f" alt="" width="20" height="15" loading="lazy" decoding="async">বাংলা</a></li><li><a href="/de/" hreflang="de" lang="de"><img src="/assets/img/bandeiras/de.svg?v=e88d8860" alt="" width="20" height="15" loading="lazy" decoding="async">Deutsch</a></li><li><a href="/fil/" hreflang="fil" lang="fil"><img src="/assets/img/bandeiras/fil.svg?v=64c3d8b0" alt="" width="20" height="15" loading="lazy" decoding="async">Filipino</a></li><li><a href="/fr/" hreflang="fr" lang="fr"><img src="/assets/img/bandeiras/fr.svg?v=bf4cae9b" alt="" width="20" height="15" loading="lazy" decoding="async">Français</a></li><li><a href="/hi/" hreflang="hi" lang="hi"><img src="/assets/img/bandeiras/hi.svg?v=230b82c4" alt="" width="20" height="15" loading="lazy" decoding="async">हिन्दी</a></li><li><a href="/id/" hreflang="id" lang="id"><img src="/assets/img/bandeiras/id.svg?v=f5aa8121" alt="" width="20" height="15" loading="lazy" decoding="async">Bahasa Indonesia</a></li><li><a href="/it/" hreflang="it" lang="it"><img src="/assets/img/bandeiras/it.svg?v=1d72a5de" alt="" width="20" height="15" loading="lazy" decoding="async">Italiano</a></li><li><a href="/ru/" hreflang="ru" lang="ru"><img src="/assets/img/bandeiras/ru.svg?v=8b2aa18f" alt="" width="20" height="15" loading="lazy" decoding="async">Русский</a></li><li><a href="/sv/" hreflang="sv" lang="sv"><img src="/assets/img/bandeiras/sv.svg?v=79da0f18" alt="" width="20" height="15" loading="lazy" decoding="async">Svenska</a></li><li><a href="/th/" hreflang="th" lang="th"><img src="/assets/img/bandeiras/th.svg?v=bcc03a3c" alt="" width="20" height="15" loading="lazy" decoding="async">ไทย</a></li><li><a href="/tr/" hreflang="tr" lang="tr"><img src="/assets/img/bandeiras/tr.svg?v=a00c7dfb" alt="" width="20" height="15" loading="lazy" decoding="async">Türkçe</a></li><li><a href="/vi/" hreflang="vi" lang="vi"><img src="/assets/img/bandeiras/vi.svg?v=076d5956" alt="" width="20" height="15" loading="lazy" decoding="async">Tiếng Việt</a></li><li><a href="/zh/" hreflang="zh-CN" lang="zh-CN"><img src="/assets/img/bandeiras/zh.svg?v=347824ed" alt="" width="20" height="15" loading="lazy" decoding="async">简体中文</a></li></ul></details><!--/idiomas-->
       <a class="btn btn--ghost" href="https://trade.safirion.com/pwa/oauth/login?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/bn/%23login&amp;aff_track=safirion.com.br/bn/%23login&amp;redirect_url=https%3A%2F%2Ftrade.safirion.com%2Ftraderoom">লগইন</a>
-      <a class="btn btn--primary" href="https://trade.safirion.com/en/register?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/bn/"><span class="rot-longo">অ্যাকাউন্ট খুলুন</span><span class="rot-curto">নিবন্ধন</span></a>
+      <a class="btn btn--primary kv-cta kv-cta--barra" href="https://trade.safirion.com/en/register?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/bn/"><span class="kv-cta__luz" aria-hidden="true"></span><span class="kv-cta__txt"><span class="rot-longo">অ্যাকাউন্ট খুলুন</span><span class="rot-curto">নিবন্ধন</span></span><span class="kv-cta__seta" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
     </div>
   </div>
 </header>
@@ -461,10 +488,7 @@
         <p class="hero__claim"><span class="az">বাজারের</span> প্রতিটি ওঠানামা কাজে লাগান</p>
         <p class="hero__text">Safirion-এর সঙ্গে যুক্ত হোন আর্থিক ট্রেডিংয়ের ভবিষ্যতের সাথে — যেখানে অত্যাধুনিক প্রযুক্তি ও বিশেষজ্ঞ সাপোর্ট একসঙ্গে মিলে আপনাকে দেয় বিশেষ সব সুযোগ।</p>
         <div class="hero__acts">
-          <a class="btn btn--primary btn--lg" href="https://trade.safirion.com/en/register?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/bn/">
-            ব্রোকারে নিবন্ধন করুন
-            <span class="btn__ic" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8h9m0 0-3.4-3.4M12 8l-3.4 3.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-          </a>
+          <a class="btn btn--primary btn--lg kv-cta kv-cta--hero" href="https://trade.safirion.com/en/register?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/bn/"><span class="kv-cta__luz" aria-hidden="true"></span><span class="kv-cta__txt">ব্রোকারে নিবন্ধন করুন</span><span class="kv-cta__seta" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
           <a class="btn btn--ghost btn--lg" href="#o-que-e">প্ল্যাটফর্ম সম্পর্কে জানুন</a>
         </div>
       </div>
@@ -565,10 +589,7 @@
 
       <div class="rv" style="max-width:720px;margin:clamp(36px,4.4vw,56px) auto 0;text-align:center">
         <p class="lead">আপনার পছন্দের পেমেন্ট পদ্ধতি বেছে নিন, সহজেই ডিপোজিট করুন এবং যখন ইচ্ছা আপনার আয় উত্তোলনের অনুরোধ করুন।</p>
-        <a class="btn btn--primary btn--lg" style="margin-top:28px" href="https://trade.safirion.com/en/register?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/bn/">
-          এখনই ব্রোকারে যোগ দিন &gt;
-          <span class="btn__ic" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8h9m0 0-3.4-3.4M12 8l-3.4 3.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        </a>
+        <a class="btn btn--primary btn--lg kv-cta" style="margin-top:28px" href="https://trade.safirion.com/en/register?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/bn/"><span class="kv-cta__luz" aria-hidden="true"></span><span class="kv-cta__txt">এখনই ব্রোকারে যোগ দিন</span><span class="kv-cta__seta" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
       </div>
     </div>
   </section>
@@ -582,10 +603,7 @@
         <p>একটি উদ্ভাবনী মডেলের ওপর ভিত্তি করে Safirion ব্যবহারকারীদের প্রচলিত আর্থিক প্রতিষ্ঠানের ওপর নির্ভর না করেই বিকল্প ও প্রচলিত — উভয় ধরনের বাজারে স্বাধীনভাবে ট্রেড করার সুযোগ দেয়। আর এর সবই হয় একটি নিরাপদ ও স্বচ্ছ পরিবেশে, যার কাঠামো নতুন এবং অভিজ্ঞ — দুই ধরনের ট্রেডারের কথা ভেবেই সাজানো।</p>
         <p>ব্যবহারকারীর অভিজ্ঞতাকে প্রাধান্য দিয়ে Safirion দিচ্ছে একটি সহজবোধ্য সিস্টেম, বিশেষজ্ঞ টেকনিক্যাল সাপোর্ট এবং এমন সব ফিচার, যা শেখা ও প্রতিদিনের কৌশল বাস্তবায়ন — দুটোকেই সহজ করে।</p>
         <p>বাধা দূর করে ও প্রক্রিয়া সহজ করে প্ল্যাটফর্মটি নিজেকে তুলে ধরে একটি সহজলভ্য ও কার্যকর সমাধান হিসেবে — তাঁদের জন্য, যাঁরা আত্মবিশ্বাস ও স্বাধীনতার সঙ্গে ডিজিটাল আর্থিক জগৎ ঘুরে দেখতে চান।</p>
-        <a class="btn btn--primary btn--lg" href="https://trade.safirion.com/en/register?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/bn/">
-          নিবন্ধন সম্পন্ন করুন &gt;
-          <span class="btn__ic" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8h9m0 0-3.4-3.4M12 8l-3.4 3.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        </a>
+        <a class="btn btn--primary btn--lg kv-cta" href="https://trade.safirion.com/en/register?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/bn/"><span class="kv-cta__luz" aria-hidden="true"></span><span class="kv-cta__txt">নিবন্ধন সম্পন্ন করুন</span><span class="kv-cta__seta" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
       </div>
       <div class="split__media rv"><img src="/assets/img/safirion-02-1368.webp?v=829ae6f8" srcset="/assets/img/safirion-02-800.webp?v=f4115612 800w, /assets/img/safirion-02-1368.webp?v=829ae6f8 1368w" sizes="(max-width: 1024px) 100vw, 48vw" alt="safirion" width="1368" height="2052" loading="lazy" decoding="async"></div>
     </div>
@@ -619,10 +637,7 @@
         <p>আমরা ব্যবহার করি <strong>বহুস্তরের নিরাপত্তাসম্পন্ন অত্যাধুনিক প্রযুক্তি</strong>, যার মধ্যে রয়েছে উন্নত এনক্রিপশন, টু-ফ্যাক্টর অথেনটিকেশন (2FA) এবং সন্দেহজনক লেনদেনের সার্বক্ষণিক পর্যবেক্ষণ।</p>
         <p><strong>সব ডেটা সম্পূর্ণ গোপনীয়তার সঙ্গে পরিচালনা করা হয় এবং নিরাপদ সার্ভারে সংরক্ষিত থাকে</strong>, ডিজিটাল সুরক্ষার সেরা আন্তর্জাতিক মান অনুসরণ করে।</p>
         <p>আমাদের অঙ্গীকার একটি নির্ভরযোগ্য পরিবেশ নিশ্চিত করা, যাতে আপনি নিশ্চিন্তে এবং নিজের লক্ষ্যে মনোযোগ রেখে বিনিয়োগ করতে পারেন।</p>
-        <a class="btn btn--primary btn--lg" href="https://trade.safirion.com/en/register?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/bn/">
-          আপনার অ্যাকাউন্ট খুলুন
-          <span class="btn__ic" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8h9m0 0-3.4-3.4M12 8l-3.4 3.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        </a>
+        <a class="btn btn--primary btn--lg kv-cta" href="https://trade.safirion.com/en/register?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/bn/"><span class="kv-cta__luz" aria-hidden="true"></span><span class="kv-cta__txt">আপনার অ্যাকাউন্ট খুলুন</span><span class="kv-cta__seta" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
       </div>
       <div class="split__media rv"><img src="/assets/img/safirion-06-1368.webp?v=2fdf878f" srcset="/assets/img/safirion-06-800.webp?v=c95a17d6 800w, /assets/img/safirion-06-1368.webp?v=2fdf878f 1368w" sizes="(max-width: 1024px) 100vw, 48vw" alt="safirion" width="1368" height="2052" loading="lazy" decoding="async"></div>
     </div>
@@ -733,10 +748,7 @@
       </div>
 
       <div class="rv" style="display:flex;justify-content:center;margin-top:clamp(32px,4vw,48px)">
-        <a class="btn btn--primary btn--lg" href="https://trade.safirion.com/en/register?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/bn/">
-          এখনই ব্রোকারে যোগ দিন &gt;
-          <span class="btn__ic" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8h9m0 0-3.4-3.4M12 8l-3.4 3.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        </a>
+        <a class="btn btn--primary btn--lg kv-cta" href="https://trade.safirion.com/en/register?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/bn/"><span class="kv-cta__luz" aria-hidden="true"></span><span class="kv-cta__txt">এখনই ব্রোকারে যোগ দিন</span><span class="kv-cta__seta" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
       </div>
     </div>
   </section>
@@ -773,10 +785,7 @@
       <p>Safirion-এ আপনি পাচ্ছেন একটি আধুনিক ও নিরাপদ প্ল্যাটফর্ম, যা আপনার ট্রেডে গতি, আস্থা ও পূর্ণ নিয়ন্ত্রণ দেওয়ার কথা ভেবে তৈরি।</p>
       <p>কয়েক মিনিটেই অ্যাকাউন্ট খুলুন এবং সঙ্গে সঙ্গে প্রবেশ করুন একটি কার্যকর, স্বচ্ছ ও সম্পূর্ণ স্কেলযোগ্য পরিবেশে।</p>
       <p>পরের পদক্ষেপটি নিন। Safirion-এর সঙ্গে ট্রেড করার এক নতুন উপায় আবিষ্কার করুন।</p>
-      <a class="btn btn--primary btn--lg" href="https://trade.safirion.com/en/register?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/bn/">
-        এখনই শুরু করুন
-        <span class="btn__ic" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8h9m0 0-3.4-3.4M12 8l-3.4 3.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-      </a>
+      <a class="btn btn--primary btn--lg kv-cta" href="https://trade.safirion.com/en/register?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/bn/"><span class="kv-cta__luz" aria-hidden="true"></span><span class="kv-cta__txt">এখনই শুরু করুন</span><span class="kv-cta__seta" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
     </div>
   </section>
 
@@ -910,7 +919,7 @@
 
       <div class="ft__acts">
         <a class="btn btn--ghost" href="https://trade.safirion.com/pwa/oauth/login?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/bn/%23login&amp;aff_track=safirion.com.br/bn/%23login&amp;redirect_url=https%3A%2F%2Ftrade.safirion.com%2Ftraderoom">লগইন</a>
-        <a class="btn btn--primary" href="https://trade.safirion.com/en/register?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/bn/">অ্যাকাউন্ট খুলুন</a>
+        <a class="btn btn--primary kv-cta" href="https://trade.safirion.com/en/register?aff=836698&amp;aff_model=revenue&amp;afftrack=safirion.com.br/bn/"><span class="kv-cta__luz" aria-hidden="true"></span><span class="kv-cta__txt">অ্যাকাউন্ট খুলুন</span><span class="kv-cta__seta" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
       </div>
     </div>
 
@@ -975,7 +984,7 @@
 
 <script>window.safirionPromoTxt={"selo":"প্রোমোশন","fechar":"বন্ধ করুন","tit":"US$ 10-এর ঝুঁকিমুক্ত ট্রেড","p1":"ডিপোজিট করার সময় প্রোমো কোড \u003cstrong>RISKFREE10\u003c/strong> ব্যবহার করে একটি ঝুঁকিমুক্ত ট্রেড পান।","p2":"আপনার পরবর্তী রিয়েল অপশন ট্রেডে লোকসান হলে আমরা আপনার বিনিয়োগের সর্বোচ্চ US$ 10 ফেরত দেব।","nota":"অ্যাক্টিভেশনের পর খোলা প্রথম ট্রেডটি ঝুঁকিমুক্ত হিসেবে গণ্য হবে।","btn":"অ্যাকাউন্ট খুলুন","mini":"প্রোমোশনের শর্তাবলি প্রযোজ্য। লিভারেজড পণ্যে ট্রেড করলে লোকসানের ঝুঁকি থাকে।","conta":"আগে থেকেই অ্যাকাউন্ট আছে?","entrar":"লগইন"};</script>
 <script src="/assets/js/main.js?v=10" defer></script>
-<script src="/assets/js/popup-promo.js?v=8" defer></script>
+<script src="/assets/js/popup-promo.js?v=9" defer></script>
 <script src="/assets/js/touro-vivo.js?v=5" defer></script>
-</body>
+<script id="kv-cta-js" src="/_ext/kv-cta.js?v=22467d10" data-dinamico=".pp__btn=&gt;popup" defer></script></body>
 </html>

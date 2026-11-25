@@ -1,0 +1,97 @@
+/* ===== kv-cta: o botão de criar conta da rede Safirion, IGUAL em toda instância (barra, menu do celular, hero, seções,
+   popup) e em todo site da rede. Nasceu no safirion.com.co (25/11/2026, pedido do Victor: "chamar o máximo de atenção
+   sem tirar a beleza") e virou kit em _oficina/kv-cta/ para as outras LPs.
+   Parado: degradê azul na matiz da página (209–214°, a do #2389e6), borda de cima acesa, lábio embaixo, halo e o
+   círculo escuro com a seta. O que puxa o olho é um EVENTO periódico (kv-cta.js), não movimento contínuo: o botão dá
+   um pulo de 4,5%, um anel se abre para fora, o halo acende, a luz atravessa a face e a seta voa. Um botão por vez.
+   A luz forte fica na borda de cima e no halo, FORA da letra: na faixa do texto o véu é de 7% e o branco segue
+   ≥4,7:1 em todo quadro. Só transform, scale e opacity; "menos movimento" = parado.
+   Seletor triplo (.kv-cta.kv-cta.kv-cta, especificidade 0,3,0) para vencer as regras antigas de cada molde.
+   Cor e fonte por variável, para o site ajustar sem reescrever: --kv-cta-fonte, --kv-cta-face, --kv-cta-base. */
+.kv-cta.kv-cta.kv-cta{--kv-cta-h:56px;--kv-cta-bola:40px;position:relative;isolation:isolate;display:inline-flex;align-items:center;justify-content:center;
+  gap:14px;min-height:var(--kv-cta-h);height:auto;min-width:0;max-width:100%;box-sizing:border-box;padding:0 8px 0 28px;margin:0;border-radius:999px;overflow:visible;
+  font-family:var(--kv-cta-fonte,inherit);font-size:17px;font-weight:600;font-style:normal;line-height:1.1;
+  letter-spacing:.005em;text-transform:none;text-decoration:none;text-shadow:none;white-space:nowrap;color:#fff;cursor:pointer;opacity:1;
+  background-color:var(--kv-cta-base,#1462c2);
+  background-image:var(--kv-cta-face,linear-gradient(180deg,#3a8fe8 0,#1d71d0 14%,#1767c8 28%,#1360bf 50%,#0b4a9c 100%));
+  border:1px solid rgb(150 205 255/.42);
+  box-shadow:inset 0 1px 0 rgb(255 255 255/.4),inset 0 -3px 0 rgb(0 16 56/.42),0 14px 32px -12px rgb(35 137 230/.92),0 0 0 4px rgb(35 137 230/.14);
+  filter:none;transform:none;translate:var(--kv-cta-mx,0px) var(--kv-cta-my,0px);-webkit-tap-highlight-color:transparent;
+  transition:transform .18s cubic-bezier(.22,1,.36,1),translate .32s cubic-bezier(.22,1,.36,1)}
+/* halo forte (acende no pulso e no hover) e anel que se abre: atrás da face, fora dela */
+.kv-cta.kv-cta.kv-cta::before,.kv-cta.kv-cta.kv-cta::after{content:"";display:block;position:absolute;inset:-1px;z-index:-1;border-radius:inherit;pointer-events:none;opacity:0;
+  background:none;width:auto;height:auto;margin:0}
+.kv-cta.kv-cta.kv-cta::before{box-shadow:0 0 0 5px rgb(64 160 255/.2),0 0 30px 4px rgb(52 150 255/.5),0 20px 44px -12px rgb(35 137 230/1);
+  transition:opacity .35s ease}
+.kv-cta.kv-cta.kv-cta::after{border:2px solid rgb(130 200 255/.85);transform:scale(1)}
+/* a luz que atravessa: forte na borda de cima, 7% na faixa da letra */
+.kv-cta .kv-cta__luz{position:absolute;inset:0;z-index:-1;border-radius:inherit;overflow:hidden;pointer-events:none}
+.kv-cta .kv-cta__luz::before{content:"";position:absolute;top:0;bottom:0;left:0;width:48%;transform:translateX(-120%) skewX(-18deg);
+  background-image:linear-gradient(180deg,rgb(255 255 255/.55) 0,rgb(255 255 255/.18) 18%,rgb(255 255 255/.07) 28%,rgb(255 255 255/.07) 74%,rgb(255 255 255/.16) 100%);
+  -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 38%,#000 62%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 38%,#000 62%,transparent 100%)}
+/* o texto ocupa a sobra e centra nela: no botão do tamanho do conteúdo não muda nada; no esticado (menu, popup, par
+   do celular) a bola vai para a borda direita em vez de ficar solta no meio com o texto */
+.kv-cta .kv-cta__txt{position:relative;display:block;flex:1 1 auto;min-width:0;text-align:center;color:#fff;font:inherit;letter-spacing:inherit;text-transform:none;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:0;margin:0;background:none}
+.kv-cta .kv-cta__seta{position:relative;display:inline-grid;place-items:center;flex:none;width:var(--kv-cta-bola);height:var(--kv-cta-bola);
+  border-radius:50%;overflow:hidden;color:#fff;background-color:#062656;background-image:linear-gradient(180deg,#0b3878 0,#041b42 100%);
+  box-shadow:inset 0 1px 0 rgb(255 255 255/.18),inset 0 0 0 1px rgb(140 200 255/.24),0 2px 6px -2px rgb(0 10 40/.6);
+  transition:transform .32s cubic-bezier(.22,1,.36,1);margin:0;padding:0}
+.kv-cta .kv-cta__seta svg{display:block;width:46%;height:46%;flex:none;color:#fff;stroke:currentColor;fill:none}
+.kv-cta.kv-cta.kv-cta:focus-visible{outline:2px solid #8fd3ff;outline-offset:4px}
+/* em seção de fundo claro o anel claro dava 1,6:1 com o fundo: lá ele é azul-escuro (≥3:1) */
+.kv-cta.kv-cta.kv-cta--claro:focus-visible,.kv-cta.kv-cta.kv-cta--framer:focus-visible{outline-color:#0b4a9c}
+/* o hover nunca clareia a face (o branco perderia contraste): sobe 2px, acende o halo e a seta anda.
+   Fora do ponteiro fino o hover não mexe em nada (o "sobe" antigo das seções grudava no toque) */
+.kv-cta.kv-cta.kv-cta:hover{color:#fff;filter:none;transform:none;opacity:1;background-color:var(--kv-cta-base,#1462c2);
+  background-image:var(--kv-cta-face,linear-gradient(180deg,#3a8fe8 0,#1d71d0 14%,#1767c8 28%,#1360bf 50%,#0b4a9c 100%));
+  box-shadow:inset 0 1px 0 rgb(255 255 255/.4),inset 0 -3px 0 rgb(0 16 56/.42),0 14px 32px -12px rgb(35 137 230/.92),0 0 0 4px rgb(35 137 230/.14)}
+@media (hover:hover) and (pointer:fine){
+  .kv-cta.kv-cta.kv-cta:hover{transform:translateY(-2px)}
+  .kv-cta.kv-cta.kv-cta:hover::before{opacity:1}
+  .kv-cta.kv-cta.kv-cta:hover .kv-cta__seta{transform:translateX(3px)}
+}
+/* depois do hover, para o apertar vencer também com o dedo em cima */
+.kv-cta.kv-cta.kv-cta:active{transform:scale(.98)}
+@media (prefers-reduced-motion:no-preference){
+  .kv-cta.kv-cta.kv-cta--pulso{animation:kv-cta-pulo .64s cubic-bezier(.22,1,.36,1)}
+  .kv-cta.kv-cta.kv-cta--pulso::after{animation:kv-cta-anel 1.15s cubic-bezier(.16,1,.3,1)}
+  .kv-cta.kv-cta.kv-cta--pulso::before{animation:kv-cta-halo 1.25s ease-out}
+  .kv-cta.kv-cta--pulso .kv-cta__luz::before{animation:kv-cta-luz 1.05s cubic-bezier(.45,.05,.3,1) .04s}
+  .kv-cta.kv-cta--pulso .kv-cta__seta svg,.kv-cta.kv-cta:hover .kv-cta__seta svg{animation:kv-cta-seta .7s cubic-bezier(.65,0,.35,1) .1s}
+}
+@keyframes kv-cta-pulo{0%{scale:1}26%{scale:1.045}62%{scale:1.006}100%{scale:1}}
+@keyframes kv-cta-anel{0%{opacity:.9;transform:scale(1)}100%{opacity:0;transform:scale(var(--kv-cta-sx,1.07),var(--kv-cta-sy,1.38))}}
+@keyframes kv-cta-halo{0%{opacity:0}18%{opacity:1}100%{opacity:0}}
+@keyframes kv-cta-luz{from{transform:translateX(-120%) skewX(-18deg)}to{transform:translateX(250%) skewX(-18deg)}}
+@keyframes kv-cta-seta{0%{transform:none}44%{transform:translateX(150%)}45%{transform:translateX(-150%)}100%{transform:none}}
+
+/* tamanhos por lugar: a barra é a zona compacta (44px); o menu do celular, 52px na largura toda; menu e popup são
+   largos: a folga da esquerda = direita + bola + vão, e o texto fica no centro exato do botão */
+.kv-cta.kv-cta.kv-cta--barra{--kv-cta-h:44px;--kv-cta-bola:32px;gap:10px;padding:0 6px 0 18px;font-size:15px}
+.kv-cta.kv-cta.kv-cta--menu{--kv-cta-h:52px;--kv-cta-bola:38px;width:100%;padding:0 8px 0 calc(var(--kv-cta-bola) + 22px);font-size:16px}
+.kv-cta.kv-cta.kv-cta--popup{--kv-cta-h:56px;height:auto;margin-top:6px;padding:0 8px 0 calc(var(--kv-cta-bola) + 22px)}
+.kv-cta.kv-cta.kv-cta--largo{width:100%;padding:0 8px 0 calc(var(--kv-cta-bola) + 22px)}
+.kv-cta.kv-cta.kv-cta--framer{flex:none}
+@media (max-width:599.98px){
+  .kv-cta.kv-cta.kv-cta{--kv-cta-h:52px;--kv-cta-bola:36px;gap:10px;padding:0 7px 0 20px;font-size:16px}
+  .kv-cta.kv-cta.kv-cta--hero{padding:0 7px 0 16px}
+  .kv-cta.kv-cta.kv-cta--barra{--kv-cta-h:44px;--kv-cta-bola:30px;gap:8px;padding:0 6px 0 14px;font-size:14px}
+  .kv-cta.kv-cta.kv-cta--menu{--kv-cta-h:52px;--kv-cta-bola:38px;padding:0 8px 0 calc(var(--kv-cta-bola) + 18px)}
+  .kv-cta.kv-cta.kv-cta--popup,.kv-cta.kv-cta.kv-cta--largo{padding:0 7px 0 calc(var(--kv-cta-bola) + 17px)}
+  /* molde LATAM (KirvusPay/Framer): par de CTAs (país, app) continua LADO A LADO, divisão 55/45 pelo espaço */
+  .kvmx-pais__acc>.kv-cta.kv-cta.kv-cta,.kvapp__ctas>.kv-cta.kv-cta.kv-cta{flex:1.25 1 0;gap:8px;padding:0 6px 0 14px;--kv-cta-bola:32px}
+  .kvmx-pais__acc>.kvmx-pais__sec,.kvapp__ctas>:not(.kv-cta){flex:1 1 0;padding-left:12px;padding-right:12px}
+}
+@media (max-width:399.98px){
+  .kvmx-pais__acc>.kv-cta.kv-cta.kv-cta,.kvapp__ctas>.kv-cta.kv-cta.kv-cta{font-size:15px;padding:0 5px 0 12px}
+}
+@media (max-width:359.98px){
+  .kv-cta.kv-cta.kv-cta{gap:8px;font-size:15px}
+  .kv-cta.kv-cta.kv-cta--hero{--kv-cta-bola:32px;padding:0 6px 0 12px}
+  .kv-cta.kv-cta.kv-cta--barra{--kv-cta-bola:26px;gap:6px;padding:0 4px 0 10px;font-size:13.5px}
+  .kvmx-pais__acc{flex-wrap:nowrap;gap:6px}
+  .kvmx-pais__acc>.kv-cta.kv-cta.kv-cta{min-width:0;flex:1.2 1 0;font-size:14px;gap:6px;padding:0 4px 0 10px;--kv-cta-bola:28px}
+  .kvmx-pais__acc>.kvmx-pais__sec{min-width:0;flex:1 1 0;font-size:14px;padding-left:8px;padding-right:8px}
+}
+@media (prefers-reduced-motion:reduce){.kv-cta.kv-cta.kv-cta{translate:none;transition-duration:.01s}}

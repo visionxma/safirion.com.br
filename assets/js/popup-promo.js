@@ -98,6 +98,18 @@
 
   var cx, alvoAnterior, aberto = false;
 
+  /* botão de criar conta kv-cta (25/11/2026): com o kit na página (_ext/kv-cta.css), o popup nasce com o MESMO botão
+     da barra e das seções (luz, texto e o círculo com a seta); sem o kit, o botão antigo com o "›". O texto mora no
+     .kv-cta__txt: o kv-cta.js só promove o que ainda não tem esse miolo, e o rótulo traduzido nunca apaga a seta. */
+  var SETA = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" ' +
+    'stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+  function BOTAO(href) {
+    if (!document.getElementById("kv-cta-css"))
+      return '<a class="pp__btn" href="' + href + '">' + T.btn + ' <span aria-hidden="true">&rsaquo;</span></a>';
+    return '<a class="pp__btn kv-cta kv-cta--popup" href="' + href + '"><span class="kv-cta__luz" aria-hidden="true"></span>' +
+      '<span class="kv-cta__txt">' + T.btn + '</span><span class="kv-cta__seta" aria-hidden="true">' + SETA + '</span></a>';
+  }
+
   function montar() {
     var el = document.createElement("div");
     el.className = "pp";
@@ -116,7 +128,7 @@
           '<p>' + T.p1 + '</p>' +
           '<p>' + T.p2 + '</p>' +
           '<p class="pp__nota">' + T.nota + '</p>' +
-          '<a class="pp__btn" href="' + CADASTRO.replace(/&/g, "&amp;").replace(/"/g, "&quot;") + '">' + T.btn + ' <span aria-hidden="true">&rsaquo;</span></a>' +
+          BOTAO(CADASTRO.replace(/&/g, "&amp;").replace(/"/g, "&quot;")) +
           '<a class="pp__entrar" href="' + LOGIN.replace(/&/g, "&amp;").replace(/"/g, "&quot;") + '"><span>' + CONTA + '</span><span class="pp__entrar-acao">' + ENTRAR + '</span></a>' +
           '<p class="pp__mini">' + T.mini + '</p>' +
         '</div>' +
