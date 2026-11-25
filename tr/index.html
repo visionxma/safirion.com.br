@@ -380,15 +380,19 @@
 <link id="kv-cta-css" rel="stylesheet" href="/_ext/kv-cta.css?v=959cb939"><style id="kv-cta-site">/* molde Safirion Broker (safirion.com.br): ajustes do kv-cta (25/11/2026, medidos no kv-cta-medir) */
 /* par da hero: o LOGIN/plataforma (btn--lg, 17px de respiro + linha de 25px) dava 61px e esticava o kv-cta junto;
    o secundário acompanha a altura do botão (56 no computador, 52 no celular), sem mudar cor nem texto */
-.hero__acts>.btn--ghost{min-height:56px;padding-block:0;display:inline-flex;align-items:center;justify-content:center}
-@media (max-width:640px){.hero__acts>.btn--ghost{min-height:52px}}
-/* cupom (WELCOME100) e rodapé: o par dividia a linha ao meio e "Criar conta" saía com reticências (151px em 1024,
-   113px em 320; o árabe nem cabia). O secundário fica do tamanho do rótulo dele e o kv-cta leva o resto da linha */
-.sb-bilhete__acoes>.btn--ghost,.ft__acts>.btn--ghost{flex:0 1 auto;padding-inline:14px}
-.sb-bilhete__acoes>.kv-cta.kv-cta.kv-cta,.ft__acts>.kv-cta.kv-cta.kv-cta{flex:1 1 0;padding-right:7px;font-size:15px}
+.hero__acts.hero__acts>.btn--ghost{min-height:56px;padding-block:0;display:inline-flex;align-items:center;justify-content:center}
+@media (max-width:640px){.hero__acts.hero__acts>.btn--ghost{min-height:52px}}
+/* cupom (WELCOME100) e rodapé: o par dividia a linha ao meio e o rótulo saía com reticências ("Criar conta" com
+   151px em 1024 e 113 em 320, "Créer un compte" com 140, "Copiar cupom" com 48). O kv-cta leva a maior parte da
+   linha e os dois rótulos podem quebrar em duas linhas dentro do botão, nunca reticências */
+.sb-bilhete__acoes.sb-bilhete__acoes,.ft__acts.ft__acts{flex-wrap:nowrap}
+.sb-bilhete__acoes.sb-bilhete__acoes>.btn--ghost,.ft__acts.ft__acts>.btn--ghost{flex:1 1 0;min-width:0;padding:6px 12px;line-height:1.2;text-align:center;white-space:normal;text-wrap:balance}
+.ft__acts.ft__acts>.btn--ghost{flex:0 1 auto}
+.sb-bilhete__acoes>.kv-cta.kv-cta.kv-cta,.ft__acts>.kv-cta.kv-cta.kv-cta{flex:1.5 1 0;padding-right:7px;font-size:15px;line-height:1.15}
+.sb-bilhete__acoes>.kv-cta .kv-cta__txt,.ft__acts>.kv-cta .kv-cta__txt{white-space:normal;text-overflow:clip;text-wrap:balance}
 @media (max-width:420px){
-  .sb-bilhete__acoes>.kv-cta.kv-cta.kv-cta,.ft__acts>.kv-cta.kv-cta.kv-cta{--kv-cta-bola:32px;gap:8px;padding:0 6px 0 14px}
-  .sb-bilhete__acoes>.btn--ghost,.ft__acts>.btn--ghost{padding-inline:12px}
+  .sb-bilhete__acoes>.kv-cta.kv-cta.kv-cta,.ft__acts>.kv-cta.kv-cta.kv-cta{--kv-cta-bola:30px;gap:6px;padding:0 6px 0 12px;font-size:14px}
+  .sb-bilhete__acoes.sb-bilhete__acoes>.btn--ghost,.ft__acts.ft__acts>.btn--ghost{padding:6px 10px;font-size:13px}
 }
 /* árabe (dir="rtl"): o kit é desenhado da esquerda para a direita (respiro de 28px antes do texto e 8px antes do
    círculo, seta que aponta e anda para a direita). Em rtl a fila se invertia e o respiro ficava do lado errado.
@@ -399,11 +403,11 @@
    até 320, como no computador: o kv-cta leva 57% da linha e o rótulo longo (de, bn, fil, fr) quebra em até duas
    linhas dentro da pílula, nunca reticências; o secundário também quebra em duas */
 @media (max-width:600px){
-  .hero__acts{flex-wrap:nowrap}
-  .hero__acts>.btn{flex:1 1 0;min-width:0}
+  .hero__acts.hero__acts{flex-wrap:nowrap}
+  .hero__acts.hero__acts>.btn{flex:1 1 0;min-width:0}
   .hero__acts>.kv-cta.kv-cta.kv-cta{flex:1.32 1 0;--kv-cta-bola:30px;gap:6px;padding:0 6px 0 12px;font-size:14px;line-height:1.15}
   .hero__acts>.kv-cta .kv-cta__txt{white-space:normal;text-overflow:clip;overflow-wrap:normal;hyphens:none;text-wrap:balance}
-  .hero__acts>.btn--ghost{padding:6px 10px;font-size:13px;line-height:1.2;text-align:center;white-space:normal;text-wrap:balance}
+  .hero__acts.hero__acts>.btn--ghost{padding:6px 10px;font-size:13px;line-height:1.2;text-align:center;white-space:normal;text-wrap:balance}
 }</style></head>
 <body>
 
