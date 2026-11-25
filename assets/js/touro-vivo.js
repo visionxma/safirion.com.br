@@ -57,6 +57,13 @@
     parado(st.el);
   }
 
+  // rede lenta ou vídeo que não toca: em 4,5 s DE TELA À VISTA fica o touro parado. Aba aberta em
+  // segundo plano não conta (o Safari não toca vídeo em aba escondida): quem chega depois vê a corrida
+  function armar(st) {
+    clearTimeout(st.relogio);
+    st.relogio = setTimeout(() => { if (!st.rodando && emTela && !document.hidden) ficarParado(st); }, 4500);
+  }
+
   function tocar(st) {
     if (!st.pronto || !emTela || document.hidden) return;
     const p = st.video.play();
@@ -81,7 +88,7 @@
     if (semEntrada) ficarParado(st);
     const url = fonte(st);
     if (!url) { ficarParado(st); return st; }
-    st.relogio = setTimeout(() => { if (!st.rodando && emTela) ficarParado(st); }, 4500);
+    armar(st);
 
     v.addEventListener('playing', () => {
       if (st.rodando) return;
@@ -305,6 +312,7 @@
   function ligar() {
     if (!ativa) return;
     if (emTela && !document.hidden) {
+      if (!ativa.rodando && !ativa.parado && ativa.video) armar(ativa);
       if (ativa.video && ativa.video.paused) tocar(ativa);
       ativa.tAnt = null;
       if (!raf && ativa.rodando) raf = requestAnimationFrame(quadro);
