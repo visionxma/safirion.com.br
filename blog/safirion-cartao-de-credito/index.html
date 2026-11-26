@@ -79,6 +79,35 @@
   .hero__acts>.kv-cta.kv-cta.kv-cta{flex:1.32 1 0;--kv-cta-bola:30px;gap:6px;padding:0 6px 0 12px;font-size:14px;line-height:1.15}
   .hero__acts>.kv-cta .kv-cta__txt{white-space:normal;text-overflow:clip;overflow-wrap:normal;hyphens:none;text-wrap:balance}
   .hero__acts.hero__acts>.btn--ghost{padding:6px 10px;font-size:13px;line-height:1.2;text-align:center;white-space:normal;text-wrap:balance}
+}
+/* botão grande solto no corpo (fr: "Rejoignez le broker maintenant" em 265px a 320): no celular o rótulo quebra em
+   até duas linhas dentro da pílula, nunca reticências */
+@media (max-width:600px){
+  .btn--lg.kv-cta .kv-cta__txt{white-space:normal;text-overflow:clip;overflow-wrap:normal;hyphens:none;text-wrap:balance;line-height:1.15}
+}
+/* par do cupom (.cp-acoes) e da página 404 (.nf__acts): empilhava a ≤360 e cortava "Criar conta" a 390. No celular
+   fica lado a lado como o do bilhete; no computador continua como o site desenhou */
+@media (max-width:600px){
+  .cp-acoes.cp-acoes,.nf__acts.nf__acts{flex-wrap:nowrap}
+  .cp-acoes.cp-acoes>.btn--ghost,.nf__acts.nf__acts>.btn--ghost{flex:1 1 0;min-width:0;padding:6px 12px;line-height:1.2;text-align:center;white-space:normal;text-wrap:balance}
+  .cp-acoes>.kv-cta.kv-cta.kv-cta,.nf__acts>.kv-cta.kv-cta.kv-cta{flex:1.5 1 0;min-width:0;padding-right:7px;font-size:15px;line-height:1.15}
+  .cp-acoes>.kv-cta .kv-cta__txt,.nf__acts>.kv-cta .kv-cta__txt{white-space:normal;text-overflow:clip;text-wrap:balance}
+}
+@media (max-width:420px){
+  .cp-acoes>.kv-cta.kv-cta.kv-cta,.nf__acts>.kv-cta.kv-cta.kv-cta{--kv-cta-bola:30px;gap:6px;padding:0 6px 0 12px;font-size:14px}
+  .cp-acoes.cp-acoes>.btn--ghost,.nf__acts.nf__acts>.btn--ghost{padding:6px 10px;font-size:13px}
+}
+/* par do fim do artigo (.pg-ctas: Abrir conta + Blog): empilhava a ≤390 e no computador fica lado a lado. Mesma regra
+   do latam.css: o kv-cta fica na largura do próprio rótulo e o Blog divide o resto; abaixo de 360 a letra vai a 14 px */
+@media (max-width:599.98px){
+  html body .pg-ctas{flex-wrap:nowrap;gap:8px}
+  html body .pg-ctas>.kv-cta.kv-cta.kv-cta{flex:0 0 auto;min-width:0;gap:8px;padding:0 6px 0 14px;--kv-cta-bola:32px}
+  html body .pg-ctas>:not(.kv-cta){flex:1 1 0;min-width:0;padding-left:10px;padding-right:10px}
+}
+@media (max-width:359.98px){
+  html body .pg-ctas{gap:6px}
+  html body .pg-ctas>.kv-cta.kv-cta.kv-cta{font-size:14px;gap:5px;padding:0 4px 0 10px;--kv-cta-bola:26px}
+  html body .pg-ctas>:not(.kv-cta){font-size:14px;padding-left:4px;padding-right:4px;white-space:normal;line-height:1.15;text-align:center}
 }</style></head>
 <body class="pg-corpo bl-corpo" data-dec="," data-mais="Ver mais (+" data-menos="Ver menos (−">
 
@@ -97,7 +126,8 @@
 <header class="hdr" id="hdr">
   <div class="hdr__in">
     <a class="hdr__logo" href="/" aria-label="Safirion — página inicial">
-      <img src="/assets/icons/safirion-logo-horizontal.svg?v=b8bdab6a" alt="Safirion" width="260" height="26">
+      <img class="hdr__marca" src="/assets/icons/safirion-logo-horizontal.svg?v=b8bdab6a" alt="Safirion" width="260" height="26">
+      <img class="hdr__simbolo" src="/assets/icons/safirion-icon.svg?v=fc1d510b" alt="" width="28" height="28">
     </a>
     <nav class="hdr__nav" aria-label="Seções da página">
       <a href="/#o-que-e">A plataforma</a>

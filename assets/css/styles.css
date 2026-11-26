@@ -292,6 +292,12 @@ strong,b{font-weight:600;color:var(--ink-strong)}
 .hdr--simbolo .hdr__logo .hdr__simbolo{display:block}
 .hdr--curto .btn .rot-longo{display:none}
 .hdr--curto .btn .rot-curto{display:inline}
+/* 3º degrau do topo (main.js, ajustarTopo): com o símbolo e o rótulo curto ainda faltava espaço a 320 px em fr, ru, sv
+   e vi. Sai o respiro (margem da cápsula, recuo do logo, folga do Entrar e do criar conta); letra e alvo ficam */
+.hdr.hdr--apertado .hdr__in{width:calc(100% - 16px)}
+.hdr.hdr--apertado .hdr__logo{margin-inline-start:2px}
+.hdr.hdr--apertado .hdr__side>.btn--ghost{padding-inline:6px;letter-spacing:0}
+.hdr.hdr--apertado .hdr__side>.kv-cta.kv-cta.kv-cta{padding-inline-start:6px}
 @media (prefers-reduced-motion:reduce){
   .hdr__in::before,.hdr__logo,.hdr__side{transition:opacity .2s linear}
   .hdr__in::before{transform:none}

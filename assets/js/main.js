@@ -41,7 +41,7 @@
     var logo = hdrIn.querySelector('.hdr__logo');
     var lado = hdrIn.querySelector('.hdr__side');
     if (!logo || !lado) return;
-    hdr.classList.remove('hdr--sem-abas', 'hdr--simbolo', 'hdr--curto');
+    hdr.classList.remove('hdr--sem-abas', 'hdr--simbolo', 'hdr--curto', 'hdr--apertado');
     var cs = getComputedStyle(hdrIn);
     var gap = parseFloat(cs.columnGap) || 0;
     var bordas = parseFloat(cs.paddingLeft) + parseFloat(cs.paddingRight) + parseFloat(cs.borderLeftWidth) + parseFloat(cs.borderRightWidth);
@@ -56,6 +56,9 @@
     if (comAbas() && pede() + folga > largura) hdr.classList.add('hdr--sem-abas');
     if (pede() > largura && logo.querySelector('.hdr__simbolo')) hdr.classList.add('hdr--simbolo');
     if (pede() > largura && lado.querySelector('.rot-curto')) hdr.classList.add('hdr--curto');
+    /* 3º degrau (25/11/2026): a 320 px o rótulo curto ainda não cabia em fr, ru, sv e vi (o botão de criar conta
+       encostava na borda); aperta o respiro das laterais, nunca a letra nem o alvo de toque */
+    if (pede() > largura) hdr.classList.add('hdr--apertado');
     var recuo = 0;
     if (computador) {
       var cabe = pede() + 48;
